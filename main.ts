@@ -18,7 +18,7 @@ const sound = async (fileName: string, input: string) => {
   });
   const buffer = Buffer.from(await response.arrayBuffer());
   console.log(`sound generated: ${input}, ${buffer.length}`);
-  const filePath = path.resolve("./scratchpad" + fileName);
+  const filePath = path.resolve("./scratchpad/" + fileName);
   await fs.promises.writeFile(filePath, buffer);
 }
 
