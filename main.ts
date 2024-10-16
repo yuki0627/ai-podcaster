@@ -80,7 +80,7 @@ const main = async () => {
   jsonData.script.forEach((input: any) => {
     const filePath = path.resolve("./scratchpad/" + input.key + ".mp3");
     command.input(filePath);
-    command.input('anullsrc=r=44100:cl=stereo').inputOptions(['-t 0.2']);
+    // command.input('anullsrc=r=44100:cl=stereo').inputOptions(['-t 0.2']);
   });
 
   const promise = new Promise((resolve, reject) => {
