@@ -4,6 +4,7 @@ import OpenAI from "openai";
 import dotenv from "dotenv";
 import { GraphAI } from 'graphai';
 import * as agents from "@graphai/agents";
+import ffmpeg from 'fluent-ffmpeg';
 
 dotenv.config();
 
@@ -72,6 +73,29 @@ const main = async () => {
   graph.injectValue("script", jsonData.script);
   const results = await graph.run();
   console.log(results);
+
+  // Combine the MP3 files using ffmpeg
+  const outputFile = path.resolve("./scratchpad/" + name + ".mp3");
+  const command = ffmpeg();
+  jsonData.script.forEach((input: any) => {
+    const filePath = path.resolve("./scratchpad/" + input.key + ".mp3");
+    command.input(filePath);
+    command.input('anullsrc=r=44100:cl=stereo').inputOptions(['-t 0.2']);
+  });
+
+  const promise = new Promise((resolve, reject) => {
+    command
+    .on('end', () => {
+      console.log('MP3 files have been successfully combined.');
+      resolve(0);
+    })
+    .on('error', (err: any) => {
+      console.error('Error while combining MP3 files:', err);
+      reject(err);
+    })
+    .mergeToFile(outputFile, path.dirname(outputFile));
+  });
+  await promise;
 }
 
 main();
