@@ -48,9 +48,8 @@ const main = async () => {
         graph: {
           nodes: {
             b: {
-              agent: "copyAgent",
-              console: {
-                before: true,
+              agent: (input: {text:string}) => {
+                console.log(input.text);
               },
               inputs: {
                 text: ":row.text"
