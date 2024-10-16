@@ -75,7 +75,7 @@ const main = async () => {
   console.log(results);
 
   // Combine the MP3 files using ffmpeg
-  const outputFile = path.resolve("./scratchpad/" + name + ".mp3");
+  const outputFile = path.resolve("./output/" + name + ".mp3");
   const command = ffmpeg();
   jsonData.script.forEach((element: any) => {
     const filePath = path.resolve("./scratchpad/" + element.key + ".mp3");
