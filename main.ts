@@ -122,9 +122,9 @@ const addMusic = async (jsonData:any, voiceFile:string, name:string) => {
         // Mix the delayed speech and the background music
         `[a0][a1]amix=inputs=2:duration=longest:dropout_transition=3[amixed]`,
         // Trim the output to the length of speech + 8 seconds
-        `[amixed]atrim=start=0:end=${totalDuration}`,
+        `[amixed]atrim=start=0:end=${totalDuration}[trimmed]`,
         // Add fade out effect for the last 2 seconds
-        //`[trimmed]afade=t=out:st=${totalDuration - 2}:d=2[final]`
+        `[trimmed]afade=t=out:st=${totalDuration - 4}:d=4`
        ])
       .on('error', (err) => {
         console.error('Error: ' + err.message);
