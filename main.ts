@@ -26,10 +26,14 @@ const sound = async (fileName: string, input: string) => {
 
 }
 
-const foo = async (input: {text:string}) => {
-  setTimeout(() => {
-    console.log(input.text);
-  }, 1000);
+const foo = async (input: { text:string, key:string }) => {
+  const filePath = path.resolve("./scratchpad/" + input.key + ".txt");
+  if (fs.existsSync(filePath)) {
+    console.log("skpped", input.key);
+  } else {
+    console.log("generating", input.key);
+    fs.writeFileSync(filePath, input.text);
+  }
 };
 
 const graph_data = {
@@ -46,7 +50,8 @@ const graph_data = {
           b: {
             agent: foo,
             inputs: {
-              text: ":row.text"
+              text: ":row.text",
+              key: ":row.key"
             }
           }
         }
@@ -59,16 +64,12 @@ const main = async () => {
   const arg2 = process.argv[2];
   const scriptPath = path.resolve(arg2);
   const parsedPath = path.parse(scriptPath);
+  const name = parsedPath.name;
   const data = fs.readFileSync(scriptPath, 'utf-8');
   const jsonData = JSON.parse(data);
-  console.log(parsedPath.name);
-  console.log(jsonData.title);
-  console.log(jsonData.script.length);
-  /*
-  jsonData.script.map((element, index) => {
-    element["key"] = index;
+  jsonData.script.forEach((element:any, index: number) => {
+    element["key"] = name + index;
   });
-  */
 
   const graph = new GraphAI(graph_data, { ...agents });
   graph.injectValue("script", jsonData.script);
