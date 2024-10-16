@@ -77,9 +77,18 @@ const main = async () => {
   // Combine the MP3 files using ffmpeg
   const outputFile = path.resolve("./scratchpad/" + name + ".mp3");
   const command = ffmpeg();
-  jsonData.script.forEach((input: any) => {
-    const filePath = path.resolve("./scratchpad/" + input.key + ".mp3");
+  jsonData.script.forEach((element: any) => {
+    const filePath = path.resolve("./scratchpad/" + element.key + ".mp3");
     command.input(filePath);
+      // Measure and log the timestamp of each section
+    ffmpeg.ffprobe(filePath, (err, metadata) => {
+      if (err) {
+        console.error('Error while getting metadata:', err);
+      } else {
+        element["duration"] = metadata.format.duration;
+      }
+    });
+
     // command.input('anullsrc=r=44100:cl=stereo').inputOptions(['-t 0.2']);
   });
 
@@ -95,7 +104,11 @@ const main = async () => {
     })
     .mergeToFile(outputFile, path.dirname(outputFile));
   });
+
   await promise;
+
+  const outputScript = path.resolve("./output/" + name + ".json");
+  fs.writeFileSync(outputScript, JSON.stringify(jsonData, null, 2));
 }
 
 main();

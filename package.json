@@ -4,8 +4,8 @@
   "description": "",
   "main": "main.ts",
   "scripts": {
-    "gen": "ts-node  main.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "gen": "ts-node main.ts",
+    "test": "ts-node test.ts"
   },
   "repository": "git+ssh://git@github.com/snakajima/ai-podcaster.git",
   "author": "snakajima",
