@@ -58,23 +58,7 @@ const graph_data = {
   }
 };
 
-const main = async () => {
-  const arg2 = process.argv[2];
-  const scriptPath = path.resolve(arg2);
-  const parsedPath = path.parse(scriptPath);
-  const name = parsedPath.name;
-  const data = fs.readFileSync(scriptPath, 'utf-8');
-  const jsonData = JSON.parse(data);
-  jsonData.script.forEach((element:any, index: number) => {
-    element["key"] = name + index;
-  });
-
-  const graph = new GraphAI(graph_data, { ...agents });
-  graph.injectValue("script", jsonData.script);
-  const results = await graph.run();
-  console.log(results);
-
-  // Combine the MP3 files using ffmpeg
+const combineFiles = async (jsonData:any, name: string) => {
   const outputFile = path.resolve("./output/" + name + ".mp3");
   const command = ffmpeg();
   jsonData.script.forEach((element: any) => {
@@ -109,6 +93,52 @@ const main = async () => {
 
   const outputScript = path.resolve("./output/" + name + ".json");
   fs.writeFileSync(outputScript, JSON.stringify(jsonData, null, 2));
+
+  return outputFile;
+}
+
+const addMusic = async (jsonData:any, voiceFile:string, name:string) => {
+  const outputFile = path.resolve("./output/" + name + "_bgm.mp3");
+  const musicFile = path.resolve("./music/Theme1.mp3");
+  const command = ffmpeg();
+  command
+  .input(musicFile)
+  .input(voiceFile)
+  .complexFilter([
+    // Add a 2-second delay to the speech
+    '[1:a]adelay=2000|2000[a1]', // 2000ms delay for both left and right channels
+    // Adjust the initial volume of the background music and add a fade out effect
+    '[0:a]volume=0.5,volume=0.2:enable=\'between(t,2,4)\'[a0]',
+    // Mix the delayed speech and the background music
+    '[a0][a1]amix=inputs=2:duration=longest:dropout_transition=3',
+  ])
+  .on('error', (err) => {
+    console.error('Error: ' + err.message);
+  })
+  .on('end', () => {
+    console.log('File has been created successfully');
+  })
+  .save(outputFile);
+}
+
+const main = async () => {
+  const arg2 = process.argv[2];
+  const scriptPath = path.resolve(arg2);
+  const parsedPath = path.parse(scriptPath);
+  const name = parsedPath.name;
+  const data = fs.readFileSync(scriptPath, 'utf-8');
+  const jsonData = JSON.parse(data);
+  jsonData.script.forEach((element:any, index: number) => {
+    element["key"] = name + index;
+  });
+
+  const graph = new GraphAI(graph_data, { ...agents });
+  graph.injectValue("script", jsonData.script);
+  const results = await graph.run();
+  console.log(results);
+
+  const voiceFile = await combineFiles(jsonData, name);
+  await addMusic(jsonData, voiceFile, name);
 }
 
 main();
