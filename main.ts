@@ -2,6 +2,8 @@ import fs from "fs";
 import path from "path";
 import OpenAI from "openai";
 import dotenv from "dotenv";
+import { GraphAI } from 'graphai';
+import * as agents from "@graphai/agents";
 
 dotenv.config();
 
@@ -20,6 +22,8 @@ const sound = async (fileName: string, input: string) => {
   console.log(`sound generated: ${input}, ${buffer.length}`);
   const filePath = path.resolve("./scratchpad/" + fileName);
   await fs.promises.writeFile(filePath, buffer);
+
+
 }
 
 const main = async () => {
@@ -31,6 +35,28 @@ const main = async () => {
   console.log(parsedPath.name);
   console.log(jsonData.title);
   console.log(jsonData.script.length);
+
+  const graph_data = {
+    version: 0.5,
+    nodes: {
+      a: {
+        value: "Hello"
+      },
+      b: {
+        agent: "copyAgent",
+        console: {
+          before: true,
+          after: true,
+        },
+        inputs: {
+          foo: ":a"
+        }
+      }
+    }
+  };
+  const graph = new GraphAI(graph_data, { ...agents });
+  const results = await graph.run();
+  console.log(results);
 }
 
 main();
