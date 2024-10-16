@@ -108,7 +108,7 @@ const addMusic = async (jsonData:any, voiceFile:string, name:string) => {
     // Add a 2-second delay to the speech
     '[1:a]adelay=2000|2000[a1]', // 2000ms delay for both left and right channels
     // Adjust the initial volume of the background music and add a fade out effect
-    '[0:a]volume=0.5,volume=0.2:enable=\'between(t,2,4)\'[a0]',
+    '[0:a]volume=0.5,volume=0.25:enable=\'gte(t,4)\'[a0]', // Start at 0.5, fade to 0.2 starting at 2 seconds
     // Mix the delayed speech and the background music
     '[a0][a1]amix=inputs=2:duration=longest:dropout_transition=3',
   ])
