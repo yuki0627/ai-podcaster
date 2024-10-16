@@ -99,26 +99,36 @@ const combineFiles = async (jsonData:any, name: string) => {
 
 const addMusic = async (jsonData:any, voiceFile:string, name:string) => {
   const outputFile = path.resolve("./output/" + name + "_bgm.mp3");
-  const musicFile = path.resolve("./music/Theme1.mp3");
-  const command = ffmpeg();
-  command
-  .input(musicFile)
-  .input(voiceFile)
-  .complexFilter([
-    // Add a 2-second delay to the speech
-    '[1:a]adelay=2000|2000[a1]', // 2000ms delay for both left and right channels
-    // Adjust the initial volume of the background music and add a fade out effect
-    '[0:a]volume=0.5,volume=0.25:enable=\'gte(t,4)\'[a0]', // Start at 0.5, fade to 0.2 starting at 2 seconds
-    // Mix the delayed speech and the background music
-    '[a0][a1]amix=inputs=2:duration=longest:dropout_transition=3',
-  ])
-  .on('error', (err) => {
-    console.error('Error: ' + err.message);
-  })
-  .on('end', () => {
-    console.log('File has been created successfully');
-  })
-  .save(outputFile);
+  const musicFile = path.resolve("./music/Theme1ex.mp3");
+  ffmpeg.ffprobe(voiceFile, (err, metadata) => {
+    if (err) {
+      console.error('Error getting metadata: ' + err.message);
+      return;
+    }
+  
+    const speechDuration = metadata.format.duration;
+    const totalDuration = speechDuration ?? 0 + 4;
+
+    const command = ffmpeg();
+    command
+      .input(musicFile)
+      .input(voiceFile)
+      .complexFilter([
+        // Add a 2-second delay to the speech
+        '[1:a]adelay=4000|4000[a1]', // 4000ms delay for both left and right channels
+        // Set the background music volume to 0.5
+        '[0:a]volume=0.3[a0]',
+        // Mix the delayed speech and the background music
+        '[a0][a1]amix=inputs=2:duration=longest:dropout_transition=3',
+      ])
+      .on('error', (err) => {
+        console.error('Error: ' + err.message);
+      })
+      .on('end', () => {
+        console.log('File has been created successfully');
+      })
+      .save(outputFile);
+  });
 }
 
 const main = async () => {
