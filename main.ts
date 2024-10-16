@@ -116,14 +116,14 @@ const addMusic = async (jsonData:any, voiceFile:string, name:string) => {
       .input(voiceFile)
       .complexFilter([
         // Add a 2-second delay to the speech
-        '[1:a]adelay=4000|4000[a1]', // 4000ms delay for both left and right channels
-        // Set the background music volume to 0.3
-        `[0:a]volume=0.3[a0]`,
+        '[1:a]adelay=4000|4000, volume=4[a1]', // 4000ms delay for both left and right channels
+        // Set the background music volume to 0.2
+        `[0:a]volume=0.2[a0]`,
         // Mix the delayed speech and the background music
         `[a0][a1]amix=inputs=2:duration=longest:dropout_transition=3[amixed]`,
         // Trim the output to the length of speech + 8 seconds
         `[amixed]atrim=start=0:end=${totalDuration}[trimmed]`,
-        // Add fade out effect for the last 2 seconds
+        // Add fade out effect for the last 4 seconds
         `[trimmed]afade=t=out:st=${totalDuration - 4}:d=4`
        ])
       .on('error', (err) => {
