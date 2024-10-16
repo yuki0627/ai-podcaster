@@ -17,6 +17,7 @@
   "dependencies": {
     "@graphai/agents": "^0.0.28",
     "dotenv": "^16.4.5",
+    "fluent-ffmpeg": "^2.1.3",
     "graphai": "^0.5.8",
     "openai": "^4.67.3"
   }

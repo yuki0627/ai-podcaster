@@ -11,7 +11,7 @@ const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY
 });
 
-const sound = async (fileName: string, input: string) => {
+const sound = async (filePath: string, input: string) => {
   const response = await openai.audio.speech.create({
     model: "tts-1",
     voice: "shimmer",
@@ -20,19 +20,16 @@ const sound = async (fileName: string, input: string) => {
   });
   const buffer = Buffer.from(await response.arrayBuffer());
   console.log(`sound generated: ${input}, ${buffer.length}`);
-  const filePath = path.resolve("./scratchpad/" + fileName);
   await fs.promises.writeFile(filePath, buffer);
-
-
 }
 
 const foo = async (input: { text:string, key:string }) => {
-  const filePath = path.resolve("./scratchpad/" + input.key + ".txt");
+  const filePath = path.resolve("./scratchpad/" + input.key + ".mp3");
   if (fs.existsSync(filePath)) {
     console.log("skpped", input.key);
   } else {
     console.log("generating", input.key);
-    fs.writeFileSync(filePath, input.text);
+    await sound(filePath, input.text);
   }
 };
 
