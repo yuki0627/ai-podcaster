@@ -39,8 +39,8 @@ const main = async () => {
   const graph_data = {
     version: 0.5,
     nodes: {
-      a: {
-        value: "Hello"
+      script: {
+        value: ["a", "b"]
       },
       b: {
         agent: "copyAgent",
@@ -49,12 +49,13 @@ const main = async () => {
           after: true,
         },
         inputs: {
-          foo: ":a"
+          item: ":script"
         }
       }
     }
   };
   const graph = new GraphAI(graph_data, { ...agents });
+  graph.injectValue("script", jsonData.script);
   const results = await graph.run();
   console.log(results);
 }
