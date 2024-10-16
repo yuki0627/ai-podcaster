@@ -32,6 +32,29 @@ const foo = async (input: {text:string}) => {
   }, 1000);
 };
 
+const graph_data = {
+  version: 0.5,
+  nodes: {
+    script: {
+      value: []
+    },
+    map: {
+      agent: "mapAgent",
+      inputs: { rows: ":script" },
+      graph: {
+        nodes: {
+          b: {
+            agent: foo,
+            inputs: {
+              text: ":row.text"
+            }
+          }
+        }
+      },
+    }
+  }
+};
+
 const main = async () => {
   const arg2 = process.argv[2];
   const scriptPath = path.resolve(arg2);
@@ -41,29 +64,12 @@ const main = async () => {
   console.log(parsedPath.name);
   console.log(jsonData.title);
   console.log(jsonData.script.length);
+  /*
+  jsonData.script.map((element, index) => {
+    element["key"] = index;
+  });
+  */
 
-  const graph_data = {
-    version: 0.5,
-    nodes: {
-      script: {
-        value: []
-      },
-      map: {
-        agent: "mapAgent",
-        inputs: { rows: ":script" },
-        graph: {
-          nodes: {
-            b: {
-              agent: foo,
-              inputs: {
-                text: ":row.text"
-              }
-            }
-          }
-        },
-      }
-    }
-  };
   const graph = new GraphAI(graph_data, { ...agents });
   graph.injectValue("script", jsonData.script);
   const results = await graph.run();
