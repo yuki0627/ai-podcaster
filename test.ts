@@ -23,14 +23,7 @@ const sound = async (fileName: string, input: string) => {
 }
 
 const main = async () => {
-  const arg2 = process.argv[2];
-  const scriptPath = path.resolve(arg2);
-  const parsedPath = path.parse(scriptPath);
-  const data = fs.readFileSync(scriptPath, 'utf-8');
-  const jsonData = JSON.parse(data);
-  console.log(parsedPath.name);
-  console.log(jsonData.title);
-  console.log(jsonData.script.length);
+  await sound("test.mp3", "Hello World");
 }
 
 main();
