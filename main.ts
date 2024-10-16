@@ -26,6 +26,12 @@ const sound = async (fileName: string, input: string) => {
 
 }
 
+const foo = async (input: {text:string}) => {
+  setTimeout(() => {
+    console.log(input.text);
+  }, 1000);
+};
+
 const main = async () => {
   const arg2 = process.argv[2];
   const scriptPath = path.resolve(arg2);
@@ -48,9 +54,7 @@ const main = async () => {
         graph: {
           nodes: {
             b: {
-              agent: (input: {text:string}) => {
-                console.log(input.text);
-              },
+              agent: foo,
               inputs: {
                 text: ":row.text"
               }
