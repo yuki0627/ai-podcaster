@@ -40,17 +40,24 @@ const main = async () => {
     version: 0.5,
     nodes: {
       script: {
-        value: ["a", "b"]
+        value: []
       },
-      b: {
-        agent: "copyAgent",
-        console: {
-          before: true,
-          after: true,
+      map: {
+        agent: "mapAgent",
+        inputs: { rows: ":script" },
+        graph: {
+          nodes: {
+            b: {
+              agent: "copyAgent",
+              console: {
+                before: true,
+              },
+              inputs: {
+                text: ":row.text"
+              }
+            }
+          }
         },
-        inputs: {
-          item: ":script"
-        }
       }
     }
   };
