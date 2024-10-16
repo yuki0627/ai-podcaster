@@ -24,7 +24,7 @@ const sound = async (filePath: string, input: string) => {
   await fs.promises.writeFile(filePath, buffer);
 }
 
-const foo = async (input: { text:string, key:string }) => {
+const text2speech = async (input: { text:string, key:string }) => {
   const filePath = path.resolve("./scratchpad/" + input.key + ".mp3");
   if (fs.existsSync(filePath)) {
     console.log("skpped", input.key);
@@ -46,7 +46,7 @@ const graph_data = {
       graph: {
         nodes: {
           b: {
-            agent: foo,
+            agent: text2speech,
             inputs: {
               text: ":row.text",
               key: ":row.key"
