@@ -1,4 +1,4 @@
-generate a podcast script based on this topic in the JSON format using the opening statement below.
+generate a podcast script based on this topic in the JSON format using the opening statement below. Monologue by the Host.
 
 ```json
 {
