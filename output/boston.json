@@ -6,19 +6,19 @@
       "speaker": "Host",
       "text": "Hello and welcome to another episode of 'life is artificial', where we explore the cutting edge of technology, innovation, and what the future could look like.",
       "key": "boston0",
-      "duration": 9.936
+      "duration": 9.912
     },
     {
       "speaker": "Host",
       "text": "Today, we're diving into an incredibly exciting development in the world of robotics and artificial intelligence. Imagine a future where robots don’t just automate factory floors, but can also perform sophisticated tasks, adapt to new environments, and perhaps even become our companions. Well, that future might be closer than you think.",
       "key": "boston1",
-      "duration": 21.168
+      "duration": 21.12
     },
     {
       "speaker": "Host",
       "text": "Boston Dynamics, the robotics company famous for their jaw-dropping videos of their agile robots, and Toyota Research Institute, a leader in artificial intelligence research, have just announced a joint research agreement. Their goal? To create general-purpose humanoid robots that are capable of tackling some of the toughest real-world challenges.",
       "key": "boston2",
-      "duration": 21.864
+      "duration": 21.792
     },
     {
       "speaker": "Host",
@@ -30,78 +30,36 @@
       "speaker": "Host",
       "text": "So what exactly are Large Behavior Models, and why are they so important? These LBMs are a bit like foundation models, but for physical behavior. They allow robots to not only respond to commands, but to understand context, learn from their environment, and perform tasks they've never explicitly been programmed for. It’s all about creating the kind of flexible, adaptive intelligence that makes robots far more useful in unpredictable settings.",
       "key": "boston4",
-      "duration": 27.888
+      "duration": 27.912
     },
     {
-      "speaker": "Guest",
-      "text": "Joining us today is an expert in robotics and AI, Dr. Emily Carter. Dr. Carter, welcome to the show.",
+      "speaker": "Host",
+      "text": "One of the biggest challenges in robotics is the gap between hardware and software. Atlas, for instance, is amazing in terms of its hardware capabilities—its mobility, its strength, and its dexterity are unmatched. But what has been lacking in most humanoid robots is the ability to use all of those capabilities effectively in unstructured, real-world environments. This is where TRI’s AI comes in. By utilizing Large Behavior Models, we can give Atlas the ability to understand what’s around it, make decisions, and adapt, which is key to creating robots that are genuinely useful beyond the lab.",
       "key": "boston5",
-      "duration": 6
+      "duration": 37.224
     },
     {
-      "speaker": "Dr. Emily Carter",
-      "text": "Thank you, it's great to be here. I think this partnership between Boston Dynamics and Toyota Research Institute is genuinely a huge leap forward for robotics, and I'm excited to break it down for your listeners.",
+      "speaker": "Host",
+      "text": "Take the example of manipulating objects. TRI has been working on AI models for dexterous manipulation—this means not just picking up an object, but understanding how to handle it depending on its shape, weight, and even fragility. TRI’s diffusion policy approach, which uses generative AI, has made it possible for robots to handle complex objects with more human-like skill. When you combine that with Atlas's physical capabilities, the potential applications are mind-blowing.",
       "key": "boston6",
-      "duration": 13.296
+      "duration": 29.904
     },
     {
       "speaker": "Host",
-      "text": "We're thrilled to have you here, Dr. Carter. So, can you explain to us why combining Atlas, a hardware powerhouse, with TRI's AI capabilities, is such a game changer for the industry?",
+      "text": "It certainly sounds like we're heading towards a future where robots could assist in environments like hospitals, homes, or even in disaster response situations. Think about search and rescue, where you need robots to navigate through rubble or uneven terrain, or even helping in homes for elderly care, providing assistance with daily activities. The idea here is to make robots general-purpose enough to learn tasks on the go, based on what they observe and experience. It’s a future where robots aren't just tools, but partners that amplify what humans can do.",
       "key": "boston7",
-      "duration": 11.208
-    },
-    {
-      "speaker": "Dr. Emily Carter",
-      "text": "Absolutely. One of the biggest challenges in robotics is the gap between hardware and software. Atlas, for instance, is amazing in terms of its hardware capabilities—its mobility, its strength, and its dexterity are unmatched. But what has been lacking in most humanoid robots is the ability to use all of those capabilities effectively in unstructured, real-world environments. This is where TRI’s AI comes in. By utilizing Large Behavior Models, we can give Atlas the ability to understand what’s around it, make decisions, and adapt, which is key to creating robots that are genuinely useful beyond the lab.",
-      "key": "boston8",
-      "duration": 37.92
-    },
-    {
-      "speaker": "Host",
-      "text": "Right, because as impressive as Atlas is in terms of mechanics, without the intelligence to adapt, it’s still limited in the real world.",
-      "key": "boston9",
-      "duration": 8.424
-    },
-    {
-      "speaker": "Dr. Emily Carter",
-      "text": "Exactly. Take the example of manipulating objects. TRI has been working on AI models for dexterous manipulation—this means not just picking up an object, but understanding how to handle it depending on its shape, weight, and even fragility. TRI’s diffusion policy approach, which uses generative AI, has made it possible for robots to handle complex objects with more human-like skill. When you combine that with Atlas's physical capabilities, the potential applications are mind-blowing.",
-      "key": "boston10",
-      "duration": 30.456
-    },
-    {
-      "speaker": "Host",
-      "text": "It certainly sounds like we're heading towards a future where robots could assist in environments like hospitals, homes, or even in disaster response situations. What kinds of applications do you see emerging from this partnership?",
-      "key": "boston11",
-      "duration": 14.52
-    },
-    {
-      "speaker": "Dr. Emily Carter",
-      "text": "The possibilities are truly vast. Think about search and rescue, where you need robots to navigate through rubble or uneven terrain, or even helping in homes for elderly care, providing assistance with daily activities. The idea here is to make robots general-purpose enough to learn tasks on the go, based on what they observe and experience. It’s a future where robots aren't just tools, but partners that amplify what humans can do.",
-      "key": "boston12",
-      "duration": 27.144
+      "duration": 35.28
     },
     {
       "speaker": "Host",
       "text": "Fascinating. It really feels like we're at the start of a new era for robotics. For listeners who want to know more about this partnership, Boston Dynamics and TRI are both working on pushing these robots to tackle real-world challenges, and it's going to be very exciting to see what comes next.",
-      "key": "boston13",
-      "duration": 18.6
-    },
-    {
-      "speaker": "Host",
-      "text": "Dr. Carter, thank you so much for joining us today and sharing your insights.",
-      "key": "boston14",
-      "duration": 4.8
-    },
-    {
-      "speaker": "Dr. Emily Carter",
-      "text": "It was my pleasure. Thanks for having me.",
-      "key": "boston15",
-      "duration": 2.52
+      "key": "boston8",
+      "duration": 18.624
     },
     {
       "speaker": "Host",
       "text": "And to our listeners, stay tuned for more episodes of 'life is artificial', where we bring you the latest from the world of technology, innovation, and the incredible things on the horizon. Until next time!",
-      "key": "boston16",
+      "key": "boston9",
       "duration": 12.792
     }
   ]
