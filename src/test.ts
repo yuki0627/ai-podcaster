@@ -6,7 +6,7 @@ import dotenv from "dotenv";
 dotenv.config();
 
 const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY
+  apiKey: process.env.OPENAI_API_KEY,
 });
 
 const sound = async (fileName: string, input: string) => {
@@ -20,10 +20,10 @@ const sound = async (fileName: string, input: string) => {
   console.log(`sound generated: ${input}, ${buffer.length}`);
   const filePath = path.resolve("./scratchpad/" + fileName);
   await fs.promises.writeFile(filePath, buffer);
-}
+};
 
 const main = async () => {
   await sound("test.mp3", "Hello World");
-}
+};
 
 main();
