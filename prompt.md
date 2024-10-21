@@ -1,9 +1,13 @@
-generate a podcast script based on this topic in the JSON format using the opening statement below. Monologue by the Host.
+generate a podcast script based on this topic in the JSON format using the opening statement below. Monologue by the Host. Complete story.
+Clearly mention the news source.
+News source:
+Article url: ...
 
 ```json
 {
   title: "(title of this episode)",
   description: "(short description of this episode)",
+  reference: "(url to the article)",
   script:[
     {
       speaker: "Host",
