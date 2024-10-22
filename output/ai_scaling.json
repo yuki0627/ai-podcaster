@@ -17,9 +17,9 @@
     },
     {
       "speaker": "Host",
-      "text": "This discussion was inspired by a paper titled 'SITUATIONAL AWARENESS: The Decade Ahead,' written by Leopold Aschenbrenner, a former engineer at OpenAI. Aschenbrenner makes a bold prediction: by 2027, we could see the emergence of AGI, or Artificial General Intelligence. This is an AI that could theoretically perform any intellectual task a human can, and possibly more. But why does he think this could happen so soon? Well, it all comes down to something called 'scale'.",
+      "text": "This discussion was inspired by a paper titled 'SITUATIONAL AWARENESS: The Decade Ahead,' written by Leopold Aschenbrenner, a former engineer at OpenAI. Aschenbrenner makes a bold prediction: by 2027, we could see the emergence of A.G.I, or Artificial General Intelligence. This is an AI that could theoretically perform any intellectual task a human can, and possibly more. But why does he think this could happen so soon? Well, it all comes down to something called 'scale'.",
       "key": "ai_scaling2",
-      "duration": 30.144
+      "duration": 30.192
     },
     {
       "speaker": "Host",
@@ -43,7 +43,7 @@
       "speaker": "Host",
       "text": "Imagine if you could create better software just by spending more money on computing power and data. That's exactly what AI allows us to do today. And it has created a new kind of race among tech giants—Google, Microsoft, Meta, Amazon, and even Tesla—all trying to build the most powerful AI systems by investing billions into what we call 'AI superclusters.' These are massive computer systems designed to train incredibly large AI models.",
       "key": "ai_scaling6",
-      "duration": 27.624
+      "duration": 27.648
     },
     {
       "speaker": "Host",
