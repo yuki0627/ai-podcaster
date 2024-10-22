@@ -32,33 +32,11 @@ const text2speech = async (input: { text: string; key: string }) => {
     console.log("generating", input.key);
     await sound(filePath, input.text);
   }
+  return true;
 };
 
-const graph_data = {
-  version: 0.5,
-  nodes: {
-    script: {
-      value: [],
-    },
-    map: {
-      agent: "mapAgent",
-      inputs: { rows: ":script" },
-      graph: {
-        nodes: {
-          b: {
-            agent: text2speech,
-            inputs: {
-              text: ":row.text",
-              key: ":row.key",
-            },
-          },
-        },
-      },
-    },
-  },
-};
-
-const combineFiles = async (jsonData: any, name: string) => {
+const combineFiles = async (inputs: { jsonData: any; name: string }) => {
+  const { name, jsonData } = inputs;
   const outputFile = path.resolve("./output/" + name + ".mp3");
   const command = ffmpeg();
   jsonData.script.forEach((element: any) => {
@@ -97,7 +75,12 @@ const combineFiles = async (jsonData: any, name: string) => {
   return outputFile;
 };
 
-const addMusic = async (jsonData: any, voiceFile: string, name: string) => {
+const addMusic = async (inputs: {
+  jsonData: any;
+  voiceFile: string;
+  name: string;
+}) => {
+  const { jsonData, voiceFile, name } = inputs;
   const outputFile = path.resolve("./output/" + name + "_bgm.mp3");
   const musicFile = path.resolve("./music/Theme1ex.mp3");
   ffmpeg.ffprobe(voiceFile, (err, metadata) => {
@@ -136,6 +119,48 @@ const addMusic = async (jsonData: any, voiceFile: string, name: string) => {
   });
 };
 
+const graph_data = {
+  version: 0.5,
+  nodes: {
+    name: {
+      value: "",
+    },
+    jsonData: {
+      value: {},
+    },
+    map: {
+      agent: "mapAgent",
+      inputs: { rows: ":jsonData.script" },
+      graph: {
+        nodes: {
+          b: {
+            agent: text2speech,
+            inputs: {
+              text: ":row.text",
+              key: ":row.key",
+            },
+          },
+        },
+      },
+      isResult: true,
+    },
+    combineFiles: {
+      agent: combineFiles,
+      inputs: { map: ":map", jsonData: ":jsonData", name: ":name" },
+      isResult: true,
+    },
+    addMusic: {
+      agent: addMusic,
+      inputs: {
+        voiceFile: ":combineFiles",
+        jsonData: ":jsonData",
+        name: ":name",
+      },
+      isResult: true,
+    },
+  },
+};
+
 const main = async () => {
   const arg2 = process.argv[2];
   const scriptPath = path.resolve(arg2);
@@ -148,12 +173,13 @@ const main = async () => {
   });
 
   const graph = new GraphAI(graph_data, { ...agents });
-  graph.injectValue("script", jsonData.script);
+  graph.injectValue("jsonData", jsonData);
+  graph.injectValue("name", name);
   const results = await graph.run();
   console.log(results);
 
-  const voiceFile = await combineFiles(jsonData, name);
-  await addMusic(jsonData, voiceFile, name);
+  // const voiceFile = await combineFiles(jsonData, name);
+  // await addMusic(jsonData, voiceFile, name);
 };
 
 main();
