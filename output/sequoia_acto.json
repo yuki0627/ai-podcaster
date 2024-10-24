@@ -1,0 +1,79 @@
+{
+  "title": "Generative AI's Next Act: Thinking Fast, Thinking Slow",
+  "description": "In this episode, we discuss Sequoia Capital's latest insights into the evolution of Generative AI, from rapid response models to more deliberate reasoning systems. We'll explore how OpenAI's 'Strawberry' model represents a major leap forward in AI thinking and what this means for the future of applications, startups, and the tech ecosystem.",
+  "reference": "https://www.sequoiacap.com/article/generative-ais-act-o1/",
+  "script": [
+    {
+      "speaker": "Host",
+      "text": "Hello and welcome to another episode of 'life is artificial', where we explore the cutting edge of technology, innovation, and what the future could look like.",
+      "key": "sequoia_acto0",
+      "duration": 9.864
+    },
+    {
+      "speaker": "Host",
+      "text": "Today, we're diving into a fascinating piece of news from Sequoia Capital titled 'Generative AI's Act o1.' It's been two years since the Generative AI revolution began, and we're witnessing a major shift in how these models operate. If you thought AI was only about quickly predicting the next word in a sentence, think again. There's a lot more happening now, and it's all about teaching AI to 'think slow'—to reason, strategize, and solve problems in real time.",
+      "key": "sequoia_acto1",
+      "duration": 29.04
+    },
+    {
+      "speaker": "Host",
+      "text": "The Sequoia article emphasizes that generative AI is evolving from 'System 1'—those fast, pre-trained responses we're familiar with in chatbots—to 'System 2,' which is about deliberate and more complex reasoning. Think of it like how humans sometimes rely on instinct but also need time to pause, evaluate, and consider options before making decisions. This is what AI is now starting to do.",
+      "key": "sequoia_acto2",
+      "duration": 24.888
+    },
+    {
+      "speaker": "Host",
+      "text": "At the heart of this transition is OpenAI's latest model, named 'o1,' also known as 'Strawberry.' What makes Strawberry different from previous AI models is its use of 'inference-time compute.' Now, that's a fancy term, but it essentially means that instead of always giving an instant response, the model can stop, consider the situation, and reason about the answer before speaking. Just like how AlphaGo defeated the legendary Go master Lee Sedol back in 2016 by thinking multiple moves ahead, these generative AI models are now applying similar logic. They run scenarios, score possible outcomes, and provide responses with higher accuracy.",
+      "key": "sequoia_acto3",
+      "duration": 40.944
+    },
+    {
+      "speaker": "Host",
+      "text": "You might be wondering, why is this important? Well, this evolution in AI reasoning opens the door for a new generation of applications that require more than just pattern recognition. AI can now better tackle complex problems—coding, math, scientific reasoning—tasks that require more thought than just giving a quick answer. For example, imagine you're trying to solve a tricky geometry problem. Instead of giving you a pre-learned formula, the AI might visualize the shape, reason through the steps, and give you a thoughtful response.",
+      "key": "sequoia_acto4",
+      "duration": 33.456
+    },
+    {
+      "speaker": "Host",
+      "text": "Sequoia's article also highlights a crucial point: this isn't just a theoretical leap. It's already impacting the market. We have companies like Factory, which are building agentic applications that think like experts in their specific domains—like software engineering or customer support. These AI agents don't just spit out answers; they take on tasks, break them down, simulate scenarios, and even seek human feedback before finalizing a solution.",
+      "key": "sequoia_acto5",
+      "duration": 28.2
+    },
+    {
+      "speaker": "Host",
+      "text": "This shift is creating a race in the tech world—an inference race. It's no longer just about having massive models trained on endless data, but also about how much computing power you can apply when the model is running to think deeply and reason. The more time these models are given, the better they get at thinking, which is pushing the boundaries of what's possible. Imagine a future where an AI could spend hours or even days reasoning about some of humanity's biggest unsolved problems, like the Riemann Hypothesis or Asimov's last question.",
+      "key": "sequoia_acto6",
+      "duration": 34.056
+    },
+    {
+      "speaker": "Host",
+      "text": "The other exciting implication here is how this evolution impacts startups and entrepreneurs. As Sequoia points out, while infrastructure and model development may be dominated by big players like OpenAI, AWS, and Google, there’s still a massive opportunity for those who can build innovative applications on top of these models. Think about AI-powered services tailored to specific domains—medicine, law, cybersecurity—the possibilities are enormous.",
+      "key": "sequoia_acto7",
+      "duration": 28.248
+    },
+    {
+      "speaker": "Host",
+      "text": "What's really happening is a shift from 'software-as-a-service' to 'service-as-a-software.' Companies aren't just providing software tools anymore; they're offering complete services. AI does the work, and customers pay based on outcomes rather than a software license. This means a world where AI agents are employed as personal assistants, lawyers, engineers, and customer service reps—getting paid based on the work they complete rather than just existing as a tool on your desktop.",
+      "key": "sequoia_acto8",
+      "duration": 30.168
+    },
+    {
+      "speaker": "Host",
+      "text": "In closing, it's clear that generative AI is entering a new phase—one that goes beyond rapid response to more thoughtful reasoning. This evolution, as Sequoia describes, is bringing us closer to truly agentic AI applications that could change the way we work, learn, and even solve some of the toughest challenges out there. It’s not just about AI answering our questions anymore; it’s about AI reasoning with us, solving problems alongside us, and perhaps someday making breakthroughs that we never thought possible.",
+      "key": "sequoia_acto9",
+      "duration": 32.184
+    },
+    {
+      "speaker": "Host",
+      "text": "If you want to dig deeper into this fascinating evolution of generative AI, be sure to check out Sequoia Capital's article, 'Generative AI's Act o1.' I've linked the article in the show notes, and it's definitely worth a read if you're interested in understanding where AI is headed next.",
+      "key": "sequoia_acto10",
+      "duration": 18.264
+    },
+    {
+      "speaker": "Host",
+      "text": "That's all for today’s episode of 'life is artificial.' If you found this discussion interesting, make sure to subscribe and share it with anyone who’s curious about the future of AI and technology. Until next time, keep thinking big, stay curious, and remember—the future is artificial.",
+      "key": "sequoia_acto11",
+      "duration": 17.784
+    }
+  ]
+}

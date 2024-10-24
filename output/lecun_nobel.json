@@ -1,0 +1,79 @@
+{
+  "title": "How Close Are We to Machines Reaching Human-Level Intelligence?",
+  "description": "In this episode, we dive into the fascinating conversation around AI's journey toward human-level intelligence. Join us as we discuss insights from Yann LeCun's lecture on what it will take for machines to understand the world like we do.",
+  "reference": "https://www.youtube.com/watch?v=pjqKHOeykp8",
+  "script": [
+    {
+      "speaker": "Host",
+      "text": "Hello and welcome to another episode of 'life is artificial', where we explore the cutting edge of technology, innovation, and what the future could look like.",
+      "key": "lecun_nobel0",
+      "duration": 9.936
+    },
+    {
+      "speaker": "Host",
+      "text": "Today, we are diving into a fascinating and complex question: how close are we to machines reaching human-level intelligence? To help us explore this topic, we'll be drawing from an insightful lecture given by Yann LeCun, as part of the Subra Suresh Distinguished Lecture Series. You can find the full talk on YouTube; the link is in the show notes.",
+      "key": "lecun_nobel1",
+      "duration": 21.816
+    },
+    {
+      "speaker": "Host",
+      "text": "Yann LeCun, who is a Chief AI Scientist at Meta and one of the key people behind the success of deep learning, presented an ambitious vision of how machines could potentially match, or even surpass, human cognitive abilities. But he also made it clear that there are some pretty big challenges ahead. So let's unpack some of the main ideas from his talk.",
+      "key": "lecun_nobel2",
+      "duration": 22.2
+    },
+    {
+      "speaker": "Host",
+      "text": "LeCun starts by emphasizing what he calls the 'three big questions' of human intelligence. One of these is: 'What is intelligence?'—a question that has fascinated scientists, philosophers, and even science fiction writers for centuries. For LeCun, understanding intelligence goes beyond just building smart machines—it's about recreating the same sophisticated abilities that living beings have developed through millions of years of evolution.",
+      "key": "lecun_nobel3",
+      "duration": 27.816
+    },
+    {
+      "speaker": "Host",
+      "text": "He talks about two types of cognitive processes that humans use, which he calls System 1 and System 2. System 1 refers to the kind of quick, intuitive actions we make without much conscious effort—like catching a falling glass before it hits the floor. In contrast, System 2 involves the deliberate, thoughtful process we use when, say, we're solving a difficult math problem. According to LeCun, today's AI is mostly in the realm of System 1—it's fast and reactive, but it lacks the ability to deeply reason or plan like humans do.",
+      "key": "lecun_nobel4",
+      "duration": 34.08
+    },
+    {
+      "speaker": "Host",
+      "text": "The next piece of the puzzle LeCun presents is the importance of hierarchical planning. He describes this as a crucial element of human intelligence. Think of planning a trip to another city: we don't think about it as a continuous sequence of muscle movements, but rather as a series of increasingly specific goals—buying a plane ticket, packing a bag, getting to the airport. The ability to break down a goal into smaller, manageable parts is something we do without thinking, but it's incredibly difficult for AI to achieve. This is what LeCun calls hierarchical planning, and it's a major area of research to get machines closer to human-level problem-solving.",
+      "key": "lecun_nobel5",
+      "duration": 41.496
+    },
+    {
+      "speaker": "Host",
+      "text": "LeCun also discusses why current approaches, like large language models, aren't enough on their own. He points out that while these models can seem very smart—passing bar exams or writing impressive essays—they don't genuinely understand the world. They are not capable of reasoning through complex situations or making abstract plans in the way that even young children can. The key, he argues, is to move beyond systems that simply predict the next word in a sequence and instead develop AI that understands and interacts with the physical world. In this context, he brings up the concept of world models—models that can help machines understand the consequences of their actions, much like we do.",
+      "key": "lecun_nobel6",
+      "duration": 43.968
+    },
+    {
+      "speaker": "Host",
+      "text": "Another really thought-provoking idea from LeCun's lecture is his skepticism about current AI methods like reinforcement learning, which he sees as limited in scope. He believes that in order to truly build intelligent machines, we need to move towards what he calls energy-based models—methods that can optimize their goals in a way that mimics human thought processes. He makes a bold point: we need to abandon generative models if we want to create something truly capable of understanding.",
+      "key": "lecun_nobel7",
+      "duration": 31.056
+    },
+    {
+      "speaker": "Host",
+      "text": "I think what's most interesting about LeCun's vision is how he challenges some of the most popular trends in AI today—like generative models and reinforcement learning. He’s not saying they aren’t useful; rather, they might not be the right tools if we’re aiming for human-level intelligence. This is a reminder that sometimes, even in fields as advanced as AI, we have to rethink our approach entirely.",
+      "key": "lecun_nobel8",
+      "duration": 25.296
+    },
+    {
+      "speaker": "Host",
+      "text": "He also mentioned something quite intriguing—the concept of 'AMI', which stands for Advanced Machine Intelligence, as an alternative to the term AGI or Artificial General Intelligence. LeCun doesn’t like the term 'general' because human intelligence isn’t really general; it's actually very specialized in certain areas. He prefers to think about AI in terms of advancing intelligence in ways that are directly useful to humanity—helping us solve specific challenges rather than attempting to replicate every aspect of human cognition.",
+      "key": "lecun_nobel9",
+      "duration": 33.624
+    },
+    {
+      "speaker": "Host",
+      "text": "In closing, Yann LeCun's lecture gives us a lot to think about regarding the future of AI. He suggests that if we want machines to truly become intelligent partners in our lives, we need to rethink how we train them to understand the world. We need systems that don't just regurgitate information, but can reason, plan, and interact intelligently, much like we do. This vision feels a lot closer to the way we think about true intelligence, as opposed to simply being good at recognizing patterns or generating text.",
+      "key": "lecun_nobel10",
+      "duration": 32.28
+    },
+    {
+      "speaker": "Host",
+      "text": "So, what do you think? Are we heading in the right direction with AI, or are we stuck in a loop of refining the same old methods? As we explore this journey toward human-level intelligence, it's clear that there are still many paths we need to explore, and a lot of lessons to learn along the way. Thanks for tuning in to this episode of 'life is artificial'. Stay curious, stay critical, and until next time—keep questioning the future.",
+      "key": "lecun_nobel11",
+      "duration": 27.168
+    }
+  ]
+}
