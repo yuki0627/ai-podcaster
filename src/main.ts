@@ -75,6 +75,14 @@ const combineFiles = async (inputs: { jsonData: any; name: string }) => {
   return outputFile;
 };
 
+const writeTranslatedJson = async (inputs: { jsonData: any; name: string }) => {
+  const { name, jsonData } = inputs;
+  const outputScript = path.resolve("./output/" + name + "_ja.json");
+  const textData:string = JSON.stringify(jsonData, null, 2); 
+  fs.writeFileSync(outputScript, textData);
+  return outputScript;
+};
+
 const addMusic = async (inputs: {
   jsonData: any;
   voiceFile: string;
@@ -157,6 +165,16 @@ const graph_data = {
       },
       isResult: true,
     },
+    translate: {
+      agent: "openAIAgent",
+      inputs: {
+        prompt: "Translate all the text in this JSON file into Japanese, leaving the JSON format as is. \n ${:jsonData.toJSON()}",
+      }
+    },
+    wwriteTranslate: {
+      agent: writeTranslatedJson,
+      inputs: { jsonData: ":translate.text.jsonParse()", name: ":name" },
+    }
   },
 };
 
