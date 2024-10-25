@@ -170,12 +170,10 @@ const graph_data = {
     },
     title: {
       agent: "copyAgent",
-      isResult: true,
       params: {
         namedKey: "title"
       },
       console: {
-        before: true,
         after: true
       },
       inputs: {
