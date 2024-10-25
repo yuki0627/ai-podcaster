@@ -75,6 +75,7 @@ const combineFiles = async (inputs: { jsonData: any; name: string }) => {
   return outputFile;
 };
 
+/*
 const writeTranslatedJson = async (inputs: { jsonData: any; name: string }) => {
   const { name, jsonData } = inputs;
   const outputScript = path.resolve("./output/" + name + "_ja.json");
@@ -82,6 +83,7 @@ const writeTranslatedJson = async (inputs: { jsonData: any; name: string }) => {
   fs.writeFileSync(outputScript, textData);
   return outputScript;
 };
+*/
 
 const addMusic = async (inputs: {
   jsonData: any;
@@ -125,6 +127,7 @@ const addMusic = async (inputs: {
       })
       .save(outputFile);
   });
+  return outputFile;
 };
 
 const graph_data = {
@@ -165,6 +168,23 @@ const graph_data = {
       },
       isResult: true,
     },
+    title: {
+      agent: "copyAgent",
+      isResult: true,
+      params: {
+        namedKey: "title"
+      },
+      console: {
+        before: true,
+        after: true
+      },
+      inputs: {
+        title: ":jsonData.title",
+        description: ":jsonData.description",
+        reference: ":jsonData.reference"
+      }
+    },
+    /*
     translate: {
       agent: "openAIAgent",
       inputs: {
@@ -175,6 +195,7 @@ const graph_data = {
       agent: writeTranslatedJson,
       inputs: { jsonData: ":translate.text.jsonParse()", name: ":name" },
     }
+    */
   },
 };
 
