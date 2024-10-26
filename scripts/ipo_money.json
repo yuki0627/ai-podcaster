@@ -1,0 +1,64 @@
+{
+    "title": "Why Do IPOs Leave So Much Money on the Table?",
+    "description": "In this episode, we dive into the intriguing world of IPO underpricing. Why do companies leave millions of dollars on the table? What incentives are at play between underwriters, shareholders, and executives? Join us as we unravel the complexities behind IPO pricing and the surprising reasons issuers seem perfectly content with leaving money on the table.",
+    "reference": "https://site.warrington.ufl.edu/ritter/files/WhyDont_Ritter2019_Sept25.pdf",
+    "script": [
+      {
+        "speaker": "Host",
+        "text": "Hello and welcome to another episode of 'life is artificial', where we explore the cutting edge of technology, innovation, and what the future could look like."
+      },
+      {
+        "speaker": "Host",
+        "text": "Today, we're going to tackle a fascinating topic in the world of finance: Why do companies seem okay with leaving millions—sometimes even billions—of dollars on the table when they go public? This isn't just a minor trend; it's a recurring phenomenon in the IPO market, and there's a lot more to it than meets the eye."
+      },
+      {
+        "speaker": "Host",
+        "text": "Our news source for today's discussion is an article by Jay R. Ritter from the University of Florida titled, 'Why Don’t Issuers Get Upset About Leaving Money on the Table in IPOs'. You can find the full text at the link provided in the show notes."
+      },
+      {
+        "speaker": "Host",
+        "text": "For starters, let's define what we mean by 'leaving money on the table'. In the context of Initial Public Offerings, or IPOs, this phrase refers to the difference between the offer price of a company's stock and the closing price on its first day of trading. The bigger the difference, the more money was 'left on the table'. Imagine pricing your home at $200,000, only for it to be bought and resold the same day for $260,000. You'd be missing out on $60,000. That's what many companies do during IPOs."
+      },
+      {
+        "speaker": "Host",
+        "text": "Now, according to the research, from July 2009 to June 2019, the average first-day return for U.S. IPOs was 16%, and for venture capital-backed IPOs, it was even higher, at 21%. During this period, companies left more than $43 billion on the table. That's a mind-boggling figure, isn't it?"
+      },
+      {
+        "speaker": "Host",
+        "text": "So why aren't executives upset about this? Why aren't they trying to push that offer price higher to capture all that value? It turns out there are some really interesting behavioral and structural reasons behind this. One of these is rooted in a theory known as 'prospect theory'."
+      },
+      {
+        "speaker": "Host",
+        "text": "Prospect theory suggests that issuers tend to focus on the change in their wealth rather than the absolute value. In simple terms, if they see a big increase in their paper wealth on the first day of trading, that increase often outweighs the perceived 'loss' from the money left on the table. It’s as if they are integrating the good news and not worrying about what could have been."
+      },
+      {
+        "speaker": "Host",
+        "text": "And then, there's the role of the underwriters—the middlemen in this process. Underwriters, like real estate agents, get a percentage of the sales. They actually benefit from underpricing IPOs. Why? Because they can allocate those underpriced shares to their most profitable clients, such as hedge funds and institutional investors, who then reward the underwriters with future business and higher commissions. This arrangement, known as 'soft dollars', effectively misaligns the interests of underwriters with those of the companies going public."
+      },
+      {
+        "speaker": "Host",
+        "text": "Underwriters want a lower offer price because it makes marketing the IPO easier and helps keep their buy-side clients happy. For the company going public, however, this means less immediate capital and a lower valuation on day one—at least on paper. But many executives are satisfied with the IPO because they still see a significant increase in their company's valuation from pre-IPO expectations. It's almost like the thrill of seeing your stock price jump makes you forget how much more you could have had."
+      },
+      {
+        "speaker": "Host",
+        "text": "Take the example of Ceridian HCM's IPO in April 2018. They sold 21 million shares at $22 each, but by the end of the first trading day, the price had jumped to $31.21. This meant that $193 million was left on the table. The interesting thing is that Ceridian wasn't upset about it. In fact, they retained the same underwriters, Goldman Sachs and JP Morgan, for their follow-on offering later that year. It seems that despite leaving so much on the table, they were still happy with the results."
+      },
+      {
+        "speaker": "Host",
+        "text": "So what's the takeaway here? Going public is costly, not just because of the underwriting fees but also because of the money left on the table. The interests of underwriters and issuers are not always aligned, and underwriters have an incentive to keep offer prices low for their own benefit."
+      },
+      {
+        "speaker": "Host",
+        "text": "This is where alternative models like direct listings and auctions come in. In these methods, there's no room for underwriters to allocate underpriced shares to their favorite clients because there is no underpricing to begin with. Companies like Spotify and Slack have already used direct listings to avoid leaving money on the table, and it's likely that we'll see more of this in the future."
+      },
+      {
+        "speaker": "Host",
+        "text": "To wrap things up, IPO underpricing is a complex puzzle. While it seems irrational to leave so much money on the table, psychological factors, incentives for underwriters, and even traditional practices keep the system in place. But with growing awareness, we might see more companies looking to keep that money in their own pockets rather than handing it over to Wall Street."
+      },
+      {
+        "speaker": "Host",
+        "text": "Thanks for joining me today on 'life is artificial'. If you found this discussion insightful, please subscribe and share it with your friends. And if you want to dive deeper, check out the full article by Jay R. Ritter at the link in our show notes. Until next time, keep questioning, keep learning, and stay curious."
+      }
+    ]
+  }
+  

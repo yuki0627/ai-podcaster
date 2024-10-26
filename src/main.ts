@@ -177,7 +177,7 @@ const graph_data = {
         after: true
       },
       inputs: {
-        title: "\n${:jsonData.title}\n\n${:jsonData.description}\nReference:${:jsonData.reference}\n",
+        title: "\n${:jsonData.title}\n\n${:jsonData.description}\nReference: ${:jsonData.reference}\n",
         waitFor: ":addMusic"
       }
     },
