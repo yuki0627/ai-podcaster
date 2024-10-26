@@ -32,7 +32,7 @@ const graph_data = {
     translate: {
       agent: "openAIAgent",
       inputs: {
-        prompt: "Translate all the text in this JSON file into Japanese, leaving the JSON format as is. \n ${:jsonData.toJSON()}",
+        prompt: "Translate all the text in this JSON file into Japanese, leaving the JSON format as is. Do not tranlate the podcast title, 'Life is Artificial' \n ${:jsonData.toJSON()}",
       }
     },
     writeTranslate: {
