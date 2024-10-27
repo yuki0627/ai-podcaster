@@ -137,7 +137,7 @@ const main = async () => {
     { path: path.resolve(`./output/${name}_1.png`), duration: 3 },  // Display image1.jpg for 5 seconds
     { path: path.resolve(`./output/${name}_2.png`), duration: 5 },  // Display image1.jpg for 5 seconds
   ];
-  const outputVideoPath = path.join(__dirname, 'output.mp4');
+  const outputVideoPath =path.resolve("./output/" + name + "_ja.mp4");
   
   createVideo(audioPath, images, outputVideoPath);
 };

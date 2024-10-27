@@ -5,7 +5,8 @@
   "main": "main.ts",
   "scripts": {
     "gen": "ts-node ./src/main.ts",
-    "tra": "ts-node ./src/translate.ts",
+    "ja": "ts-node ./src/translate.ts",
+    "mov": "ts-node ./src/movie.ts",
     "test": "ts-node ./src/test.ts",
     "format": "prettier --write '{src,scripts}/**/*.{ts,json}'"
   },
