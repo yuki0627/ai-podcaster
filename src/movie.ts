@@ -118,9 +118,9 @@ const main = async () => {
   const parsedPath = path.parse(scriptPath);
   const name = parsedPath.name;
   const jaScriptPath = path.resolve("./output/" + name + "_ja.json");
-  const data = fs.readFileSync(jaScriptPath, "utf-8");
-  const jsonData = JSON.parse(data);
-  jsonData.script.forEach((element: any, index: number) => {
+  const dataJa = fs.readFileSync(jaScriptPath, "utf-8");
+  const jsonDataJa = JSON.parse(dataJa);
+  jsonDataJa.script.forEach((element: any, index: number) => {
     console.log();
     renderJapaneseTextToPNG(
       element["text"],
