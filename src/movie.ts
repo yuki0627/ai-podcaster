@@ -131,12 +131,14 @@ const main = async () => {
     });    
   });
 
+  const tmScriptPath = path.resolve("./output/" + name + ".json");
+  const dataTm = fs.readFileSync(tmScriptPath, "utf-8");
+  const jsonDataTm = JSON.parse(dataTm);
+
   const audioPath = path.resolve("./output/" + name + "_bgm.mp3");
-  const images: ImageDetails[] = [
-    { path: path.resolve(`./output/${name}_0.png`), duration: 1 },  // Display image1.jpg for 5 seconds
-    { path: path.resolve(`./output/${name}_1.png`), duration: 3 },  // Display image1.jpg for 5 seconds
-    { path: path.resolve(`./output/${name}_2.png`), duration: 5 },  // Display image1.jpg for 5 seconds
-  ];
+  const images: ImageDetails[] = jsonDataTm.script.map((item: any, index: number) => {
+    return { path: path.resolve(`./output/${name}_${index}.png`), duration: 1 };
+  });
   const outputVideoPath =path.resolve("./output/" + name + "_ja.mp4");
   
   createVideo(audioPath, images, outputVideoPath);
