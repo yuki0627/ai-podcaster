@@ -79,7 +79,8 @@ const createVideo = (audioPath: string, images: ImageDetails[], outputVideoPath:
   images.forEach((image, index) => {
     // Add filter for each image
     filterComplexParts.push(`[${index}:v]scale=1920:1080,setsar=1,format=yuv420p,trim=duration=${image.duration},setpts=PTS+${startTime}/TB[v${index}]`);
-    startTime += image.duration; // Update start time for the next image
+    startTime = image.duration; // Update start time for the next image
+    console.log("startTime", startTime)
   });
 
   // Concatenate the trimmed images
@@ -139,7 +140,7 @@ const main = async () => {
   const images: ImageDetails[] = jsonDataTm.script.map((item: any, index: number) => {
     const duration = (index === 0) ? item.duration + 4 : item.duration;
     console.log(duration);
-    return { path: path.resolve(`./output/${name}_${index}.png`), duration: 2 };
+    return { path: path.resolve(`./output/${name}_${index}.png`), duration: Math.round(duration) };
   });
   const outputVideoPath =path.resolve("./output/" + name + "_ja.mp4");
   
