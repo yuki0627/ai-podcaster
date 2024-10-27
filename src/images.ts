@@ -72,28 +72,30 @@ const createVideo = (audioPath: string, images: ImageDetails[], outputVideoPath:
     command = command.input(image.path);
   });
 
-  // Build filter_complex string
+  // Build filter_complex string to manage start times
   const filterComplexParts: string[] = [];
 
-  // Trim each image to its duration and prepare for concatenation
+  let startTime = 0; // Start time for each image
   images.forEach((image, index) => {
-    filterComplexParts.push(`[${index}:v]scale=1920:1080,setsar=1,fps=25,trim=duration=${image.duration}[v${index}]`);
+    // Add filter for each image
+    filterComplexParts.push(`[${index}:v]scale=1920:1080,setsar=1,format=yuv420p,trim=duration=${image.duration},setpts=PTS+${startTime}/TB[v${index}]`);
+    startTime += image.duration; // Update start time for the next image
   });
 
   // Concatenate the trimmed images
   const concatInput = images.map((_, index) => `[v${index}]`).join('');
   filterComplexParts.push(`${concatInput}concat=n=${images.length}:v=1:a=0[v]`);
 
-  // Apply filter complex for concatenation and map audio input
+  // Apply the filter complex for concatenation and map audio input
   command
     .complexFilter(filterComplexParts)
     .input(audioPath) // Add audio input
     .outputOptions([
-      '-map [v]',   // Map the video stream
+      '-map [v]',          // Map the video stream
       '-map ' + images.length + ':a', // Map the audio stream (audio is the next input after all images)
-      '-c:v libx264',  // Set video codec
-      '-r 30',         // Set frame rate
-      '-pix_fmt yuv420p' // Set pixel format for better compatibility
+      '-c:v libx264',      // Set video codec
+      '-r 30',             // Set frame rate
+      '-pix_fmt yuv420p'   // Set pixel format for better compatibility
     ])
     .on('start', (cmdLine) => {
       console.log('Started FFmpeg with command:', cmdLine);
