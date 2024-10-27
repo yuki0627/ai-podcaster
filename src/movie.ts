@@ -120,7 +120,7 @@ const main = async () => {
   const jaScriptPath = path.resolve("./output/" + name + "_ja.json");
   const dataJa = fs.readFileSync(jaScriptPath, "utf-8");
   const jsonDataJa = JSON.parse(dataJa);
-  jsonDataJa.script.forEach((element: any, index: number) => {
+  await jsonDataJa.script.forEach((element: any, index: number) => {
     console.log();
     renderJapaneseTextToPNG(
       element["text"],
@@ -137,7 +137,9 @@ const main = async () => {
 
   const audioPath = path.resolve("./output/" + name + "_bgm.mp3");
   const images: ImageDetails[] = jsonDataTm.script.map((item: any, index: number) => {
-    return { path: path.resolve(`./output/${name}_${index}.png`), duration: 1 };
+    const duration = (index === 0) ? item.duration + 4 : item.duration;
+    console.log(duration);
+    return { path: path.resolve(`./output/${name}_${index}.png`), duration: 2 };
   });
   const outputVideoPath =path.resolve("./output/" + name + "_ja.mp4");
   
