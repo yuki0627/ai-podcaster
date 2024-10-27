@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import sharp from 'sharp';
+import ffmpeg from 'fluent-ffmpeg';
 
 async function renderJapaneseTextToPNG(
   text: string,
@@ -58,16 +59,44 @@ async function renderJapaneseTextToPNG(
   console.log(`Image saved to ${outputFilePath}`);
 }
 
-/*
-// Usage
-renderJapaneseTextToPNG(
-  "2018年4月にCeridian HCMがIPOを行った例を考えてみましょう。彼らは1株22ドルで2100万株を売りましたが、取引初日の終了時には価格が31.21ドルに上昇しました。これにより、1億9300万ドルがテーブルの上に残されました。興味深いことは、Ceridianがそれに不満を持っていなかったことです。実際、彼らは同じアンダーライターであるゴールドマン・サックスとJPモルガンを、その年の後半に行われた続編の提供にも引き続き雇用しました。テーブルの上に多くのお金を残したにもかかわらず、結果にはまだ満足していたようです。",
-  960, // Image width in pixels
-  './output/output.png' // Output file path
-).catch((err) => {
-  console.error('Error generating PNG:', err);
-});
-*/
+interface ImageDetails {
+  path: string;
+  duration: number; // Duration in seconds for each image
+}
+
+const createVideo = (audioPath: string, images: ImageDetails[], outputVideoPath: string) => {
+  let command = ffmpeg();
+
+  // Add each image input and set the duration for each one
+  images.forEach((image, index) => {
+    command = command.input(image.path)
+      .inputOptions(`-t ${image.duration}`); // Set the duration for each image
+  });
+
+  // Add the audio input
+  command = command.input(audioPath);
+
+  // Output video settings
+  command
+    .on('start', (cmdLine) => {
+      console.log('Started FFmpeg with command:', cmdLine);
+    })
+    .on('error', (err, stdout, stderr) => {
+      console.error('Error occurred:', err);
+      console.error('FFmpeg stdout:', stdout);
+      console.error('FFmpeg stderr:', stderr);
+    })
+    .on('end', () => {
+      console.log('Video created successfully!');
+    })
+    .outputOptions([
+      '-c:v libx264',  // Set the video codec to H.264
+      '-r 30',         // Set the frame rate (e.g., 30 fps)
+      '-pix_fmt yuv420p' // Set pixel format for better compatibility
+    ])
+    .output(outputVideoPath)
+    .run();
+};
 
 const main = async () => {
   const arg2 = process.argv[2];
@@ -87,6 +116,16 @@ const main = async () => {
       console.error('Error generating PNG:', err);
     });    
   });
+
+  const audioPath = path.resolve("./output/" + name + "_bgm.mp3");
+  const images: ImageDetails[] = [
+    { path: path.resolve(`./output/${name}_0.png`), duration: 1 },  // Display image1.jpg for 5 seconds
+    { path: path.resolve(`./output/${name}_1.png`), duration: 3 },  // Display image1.jpg for 5 seconds
+    { path: path.resolve(`./output/${name}_2.png`), duration: 5 },  // Display image1.jpg for 5 seconds
+  ];
+  const outputVideoPath = path.join(__dirname, 'output.mp4');
+  
+  createVideo(audioPath, images, outputVideoPath);
 };
 
 main();
