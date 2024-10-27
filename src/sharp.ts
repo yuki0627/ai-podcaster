@@ -2,10 +2,11 @@ import sharp from 'sharp';
 
 async function renderJapaneseTextToPNG(
   text: string,
-  fontSize: number,
   imageWidth: number,
   outputFilePath: string
 ) {
+  const columns = Math.sqrt(text.length/2) * 2;
+  const fontSize = imageWidth / columns;  
   const lineHeight = fontSize * 1.2;
 
   // Estimate the character width as approximately half the font size.
@@ -43,10 +44,9 @@ async function renderJapaneseTextToPNG(
 
 // Usage
 renderJapaneseTextToPNG(
-  'これは日本語のテキストで、スペースがなく連続して描画される必要があります。適切にレンダリングできるかテストします。',
-  24, // Font size in pixels
+  "今日の物語は、Tenstorrentのコミュニティハイライトシリーズの素晴らしい記事から来ています。記事のタイトルは 'Tenstorrent Wormhole Series Part 1: Physicalities' です。一緒に読んだり深く掘り下げたりしたい場合は、このエピソードの説明にあるリンクをチェックしてください。",
   400, // Image width in pixels
-  'output.png' // Output file path
+  './output/output.png' // Output file path
 ).catch((err) => {
   console.error('Error generating PNG:', err);
 });

@@ -1,0 +1,60 @@
+{
+    "title": "Kids Making Their Own Little Language Models",
+    "description": "In this episode, we dive into a fascinating program designed to teach kids how artificial intelligence works by allowing them to build their own miniature language models. Discover how this initiative is sparking creativity and technological literacy in young minds.",
+    "reference": "https://www.technologyreview.com/2024/10/25/1106168/kids-are-learning-how-to-make-their-own-little-language-models/",
+    "script": [
+      {
+        "speaker": "Host",
+        "text": "Hello and welcome to another episode of 'life is artificial,' where we explore the cutting edge of technology, innovation, and what the future could look like."
+      },
+      {
+        "speaker": "Host",
+        "text": "Today, we have a truly fascinating story for you. Imagine being a kid and not just learning about artificial intelligence, but actually building your very own mini language model. How incredible would that be? Well, this is exactly what a new program called 'Little Language Models' is enabling."
+      },
+      {
+        "speaker": "Host",
+        "text": "The program was developed by Manuj and Shruti Dhariwal, two PhD researchers at MIT's Media Lab. Their goal? To help kids understand AI by letting them get hands-on, building their own small-scale versions of language models. And you know what? This approach really breaks the stereotype of AI being this complex, intimidating concept only meant for tech experts. Instead, it brings AI to a level where a ten-year-old can understand it, experiment with it, and even have fun doing it."
+      },
+      {
+        "speaker": "Host",
+        "text": "One of the students involved in this program is Luca, a young AI enthusiast who's only ten years old. He described it as 'very interesting' to learn how the technology works. Luca was even able to use what he learned to think about incorporating AI into a game he's developing. How cool is that? You can already see how empowering it is for these kids to see themselves not just as users of technology, but as builders."
+      },
+      {
+        "speaker": "Host",
+        "text": "But how does Little Language Models actually work? The program starts with simple, playful concepts to teach kids the basics of AI. For example, the kids use a pair of dice to learn about probabilistic thinking, which is a foundational concept for language models. It teaches them that AI makes decisions based on probabilities, predicting the most likely next word in a sequence—just like rolling dice to see which side comes up."
+      },
+      {
+        "speaker": "Host",
+        "text": "What I find particularly impactful is how this approach helps kids understand the very real challenges and limitations of AI, like bias. The program lets students adjust the variables to simulate biased datasets. For instance, they could create dice that favor certain outcomes more than others, demonstrating how biases in data can lead to biased AI results. This provides an accessible way to understand one of the big issues surrounding AI—how the data used to train models affects the fairness of their outputs."
+      },
+      {
+        "speaker": "Host",
+        "text": "Shruti Dhariwal, one of the creators, explained that they want children to view themselves as builders of AI technology, not just passive users. This aligns with the broader goal of making technology accessible and fostering creativity, especially at a young age. The program doesn't just focus on theory; it offers kids a chance to experiment with AI concepts like Markov chains, where previous outcomes affect what comes next. They can build little projects like AI-generated Lego houses, with rules they set themselves."
+      },
+      {
+        "speaker": "Host",
+        "text": "The program is rolling out on the Dhariwals' education platform, coco.build, starting in mid-November, and it's already being trialed in schools. And there's a bigger vision here—one that encourages kids to see AI as a tool they can shape and use creatively. It's about building data literacy, giving young minds the resources they need to navigate a world increasingly influenced by AI."
+      },
+      {
+        "speaker": "Host",
+        "text": "It's really inspiring to see the Dhariwals and their advisor, Mitch Resnick, who also co-created Scratch, pushing the envelope on what technology education can be. By allowing kids to work on projects that excite them, based on their own passions, they're making sure that learning isn't just educational, but also incredibly fun and meaningful."
+      },
+      {
+        "speaker": "Host",
+        "text": "Emma Callow, a learning experience designer, pointed out that there's a real lack of playful resources and tools that teach children about data and AI in a creative way. Many schools are still cautious about using AI, focusing more on safety than on its educational potential. But initiatives like Little Language Models are starting to change that mindset, showing the benefits of getting hands-on with technology."
+      },
+      {
+        "speaker": "Host",
+        "text": "So, where does that leave us? Well, it's clear that the future of AI isn't just about technical breakthroughs—it's about who gets to be a part of those breakthroughs. Programs like Little Language Models are giving kids the tools to not only understand AI but to shape it, to use it wisely and creatively. And who knows? Maybe these early experiences will lead to a new generation of ethical, innovative AI creators who think deeply about the technology they build."
+      },
+      {
+        "speaker": "Host",
+        "text": "If you want to learn more about this amazing program, you can check out the full article on MIT Technology Review. I've left the link in the episode description. That's it for today's episode of 'life is artificial.' Stay curious, stay inspired, and remember—AI isn't just for the experts. It’s for anyone who’s willing to explore and create."
+      },
+      {
+        "speaker": "Host",
+        "text": "Thanks for listening, and we'll see you in the next episode."
+      }
+    ]
+  }
+  
