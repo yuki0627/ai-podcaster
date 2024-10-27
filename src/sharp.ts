@@ -5,21 +5,35 @@ async function renderJapaneseTextToPNG(
   imageWidth: number,
   outputFilePath: string
 ) {
-  const columns = Math.sqrt(text.length/2) * 2;
-  const fontSize = imageWidth / columns;  
+  const columns = Math.sqrt(text.length / 2) * 2;
+  const fontSize = imageWidth / columns;
   const lineHeight = fontSize * 1.2;
 
-  // Estimate the character width as approximately half the font size.
-  const charWidthEstimate = fontSize * 1.0;
-  const maxCharsPerLine = Math.floor(imageWidth / charWidthEstimate);
-
   const lines: string[] = [];
-  let startIndex = 0;
+  let currentLine = '';
+  let currentWidth = 0;
 
-  // Wrap text by the calculated max characters per line
-  while (startIndex < text.length) {
-    lines.push(text.slice(startIndex, startIndex + maxCharsPerLine));
-    startIndex += maxCharsPerLine;
+  // Iterate over each character and determine line breaks based on character width estimate
+  for (let i = 0; i < text.length; i++) {
+    const char = text[i];
+    const code = char.charCodeAt(0);
+    const isAnsi = code < 255;
+    const isCapital = code >= 0x40 && code < 0x60; 
+    const charWidth = isAnsi ? (isCapital ? fontSize * 0.8 : fontSize * 0.5) : fontSize;
+
+    if (currentWidth + charWidth > imageWidth) {
+      lines.push(currentLine);
+      currentLine = char;
+      currentWidth = charWidth;
+    } else {
+      currentLine += char;
+      currentWidth += charWidth;
+    }
+  }
+
+  // Push the last line if there's any remaining text
+  if (currentLine) {
+    lines.push(currentLine);
   }
 
   const imageHeight = lines.length * lineHeight;
@@ -44,8 +58,8 @@ async function renderJapaneseTextToPNG(
 
 // Usage
 renderJapaneseTextToPNG(
-  "今日の物語は、Tenstorrentのコミュニティハイライトシリーズの素晴らしい記事から来ています。記事のタイトルは 'Tenstorrent Wormhole Series Part 1: Physicalities' です。一緒に読んだり深く掘り下げたりしたい場合は、このエピソードの説明にあるリンクをチェックしてください。",
-  400, // Image width in pixels
+  "2018年4月にCeridian HCMがIPOを行った例を考えてみましょう。彼らは1株22ドルで2100万株を売りましたが、取引初日の終了時には価格が31.21ドルに上昇しました。これにより、1億9300万ドルがテーブルの上に残されました。興味深いことは、Ceridianがそれに不満を持っていなかったことです。実際、彼らは同じアンダーライターであるゴールドマン・サックスとJPモルガンを、その年の後半に行われた続編の提供にも引き続き雇用しました。テーブルの上に多くのお金を残したにもかかわらず、結果にはまだ満足していたようです。",
+  960, // Image width in pixels
   './output/output.png' // Output file path
 ).catch((err) => {
   console.error('Error generating PNG:', err);
