@@ -67,17 +67,34 @@ interface ImageDetails {
 const createVideo = (audioPath: string, images: ImageDetails[], outputVideoPath: string) => {
   let command = ffmpeg();
 
-  // Add each image input and set the duration for each one
-  images.forEach((image, index) => {
-    command = command.input(image.path)
-      .inputOptions(`-t ${image.duration}`); // Set the duration for each image
+  // Add each image input
+  images.forEach((image) => {
+    command = command.input(image.path);
   });
 
-  // Add the audio input
-  command = command.input(audioPath);
+  // Build filter_complex string
+  const filterComplexParts: string[] = [];
 
-  // Output video settings
+  // Trim each image to its duration and prepare for concatenation
+  images.forEach((image, index) => {
+    filterComplexParts.push(`[${index}:v]scale=1920:1080,setsar=1,fps=25,trim=duration=${image.duration}[v${index}]`);
+  });
+
+  // Concatenate the trimmed images
+  const concatInput = images.map((_, index) => `[v${index}]`).join('');
+  filterComplexParts.push(`${concatInput}concat=n=${images.length}:v=1:a=0[v]`);
+
+  // Apply filter complex for concatenation and map audio input
   command
+    .complexFilter(filterComplexParts)
+    .input(audioPath) // Add audio input
+    .outputOptions([
+      '-map [v]',   // Map the video stream
+      '-map ' + images.length + ':a', // Map the audio stream (audio is the next input after all images)
+      '-c:v libx264',  // Set video codec
+      '-r 30',         // Set frame rate
+      '-pix_fmt yuv420p' // Set pixel format for better compatibility
+    ])
     .on('start', (cmdLine) => {
       console.log('Started FFmpeg with command:', cmdLine);
     })
@@ -89,11 +106,6 @@ const createVideo = (audioPath: string, images: ImageDetails[], outputVideoPath:
     .on('end', () => {
       console.log('Video created successfully!');
     })
-    .outputOptions([
-      '-c:v libx264',  // Set the video codec to H.264
-      '-r 30',         // Set the frame rate (e.g., 30 fps)
-      '-pix_fmt yuv420p' // Set pixel format for better compatibility
-    ])
     .output(outputVideoPath)
     .run();
 };
@@ -110,7 +122,7 @@ const main = async () => {
     console.log();
     renderJapaneseTextToPNG(
       element["text"],
-      960, // Image width in pixels
+      1920, // Image width in pixels
       `./output/${name}_${index}.png` // Output file path
     ).catch((err) => {
       console.error('Error generating PNG:', err);
