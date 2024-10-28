@@ -83,7 +83,6 @@ const createVideo = (audioPath: string, images: ImageDetails[], outputVideoPath:
     // Add filter for each image
     filterComplexParts.push(`[${index}:v]scale=${c_imageWidth}:${c_imageHeight},setsar=1,format=yuv420p,trim=duration=${image.duration},setpts=PTS+${startTime}/TB[v${index}]`);
     startTime = image.duration; // Update start time for the next image
-    console.log("startTime", startTime)
   });
 
   // Concatenate the trimmed images
@@ -102,7 +101,7 @@ const createVideo = (audioPath: string, images: ImageDetails[], outputVideoPath:
       '-pix_fmt yuv420p'   // Set pixel format for better compatibility
     ])
     .on('start', (cmdLine) => {
-      console.log('Started FFmpeg with command:', cmdLine);
+      console.log('Started FFmpeg ...'); // with command:', cmdLine);
     })
     .on('error', (err, stdout, stderr) => {
       console.error('Error occurred:', err);
@@ -125,8 +124,7 @@ const main = async () => {
   const dataJa = fs.readFileSync(jaScriptPath, "utf-8");
   const jsonDataJa = JSON.parse(dataJa);
   await jsonDataJa.script.forEach(async (element: any, index: number) => {
-    console.log();
-    renderJapaneseTextToPNG(
+    await renderJapaneseTextToPNG(
       element["text"],
       c_imageWidth, // Image width in pixels
       `./output/${name}_${index}.png` // Output file path
@@ -142,7 +140,6 @@ const main = async () => {
   const audioPath = path.resolve("./output/" + name + "_bgm.mp3");
   const images: ImageDetails[] = jsonDataTm.script.map((item: any, index: number) => {
     const duration = (index === 0) ? item.duration + 4 : item.duration;
-    console.log(duration);
     return { path: path.resolve(`./output/${name}_${index}.png`), duration };
   });
   const outputVideoPath =path.resolve("./output/" + name + "_ja.mp4");
