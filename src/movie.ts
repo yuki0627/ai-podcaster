@@ -122,14 +122,15 @@ const main = async () => {
   const jaScriptPath = path.resolve("./output/" + name + "_ja.json");
   const dataJa = fs.readFileSync(jaScriptPath, "utf-8");
   const jsonDataJa = JSON.parse(dataJa);
-  await jsonDataJa.script.forEach(async (element: any, index: number) => {
-    await renderJapaneseTextToPNG(
+  const promises = jsonDataJa.script.map((element: any, index: number) => {
+    return renderJapaneseTextToPNG(
       element["text"],
       `./output/${name}_${index}.png` // Output file path
     ).catch((err) => {
       console.error('Error generating PNG:', err);
     });    
   });
+  await Promise.all(promises);
 
   const tmScriptPath = path.resolve("./output/" + name + ".json");
   const dataTm = fs.readFileSync(tmScriptPath, "utf-8");
