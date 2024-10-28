@@ -26,7 +26,11 @@ async function renderJapaneseTextToPNG(
     const isCapital = code >= 0x40 && code < 0x60; 
     const charWidth = isAnsi ? (isCapital ? fontSize * 0.8 : fontSize * 0.5) : fontSize;
 
-    if (currentWidth + charWidth > c_imageWidth) {
+    if (char === '\n') {
+      lines.push(currentLine);
+      currentLine = '';
+      currentWidth = 0;
+    } else if (currentWidth + charWidth > c_imageWidth) {
       lines.push(currentLine);
       currentLine = char;
       currentWidth = charWidth;
@@ -125,7 +129,7 @@ const main = async () => {
   const promises = jsonDataJa.script.map((element: any, index: number) => {
     return renderJapaneseTextToPNG(
       element["text"],
-      `./output/${name}_${index}.png` // Output file path
+      `./scratchpad/${name}_${index}.png` // Output file path
     ).catch((err) => {
       console.error('Error generating PNG:', err);
     });    
@@ -139,7 +143,7 @@ const main = async () => {
   const audioPath = path.resolve("./output/" + name + "_bgm.mp3");
   const images: ImageDetails[] = jsonDataTm.script.map((item: any, index: number) => {
     const duration = (index === 0) ? item.duration + 4 : item.duration;
-    return { path: path.resolve(`./output/${name}_${index}.png`), duration };
+    return { path: path.resolve(`./scratchpad/${name}_${index}.png`), duration };
   });
   const outputVideoPath =path.resolve("./output/" + name + "_ja.mp4");
   
