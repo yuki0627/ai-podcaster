@@ -8,11 +8,10 @@ const c_imageHeight = 720; // not 1080
 
 async function renderJapaneseTextToPNG(
   text: string,
-  imageWidth: number,
   outputFilePath: string
 ) {
   const columns = Math.sqrt(text.length / 2) * 2;
-  const fontSize = imageWidth / Math.max(columns, 20);
+  const fontSize = c_imageWidth / Math.max(columns, 20);
   const lineHeight = fontSize * 1.2;
 
   const lines: string[] = [];
@@ -27,7 +26,7 @@ async function renderJapaneseTextToPNG(
     const isCapital = code >= 0x40 && code < 0x60; 
     const charWidth = isAnsi ? (isCapital ? fontSize * 0.8 : fontSize * 0.5) : fontSize;
 
-    if (currentWidth + charWidth > imageWidth) {
+    if (currentWidth + charWidth > c_imageWidth) {
       lines.push(currentLine);
       currentLine = char;
       currentWidth = charWidth;
@@ -126,7 +125,6 @@ const main = async () => {
   await jsonDataJa.script.forEach(async (element: any, index: number) => {
     await renderJapaneseTextToPNG(
       element["text"],
-      c_imageWidth, // Image width in pixels
       `./output/${name}_${index}.png` // Output file path
     ).catch((err) => {
       console.error('Error generating PNG:', err);
