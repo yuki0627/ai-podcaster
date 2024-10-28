@@ -3,6 +3,9 @@ import path from "path";
 import sharp from 'sharp';
 import ffmpeg from 'fluent-ffmpeg';
 
+const c_imageWidth = 1280; // not 1920
+const c_imageHeight = 720; // not 1080
+
 async function renderJapaneseTextToPNG(
   text: string,
   imageWidth: number,
@@ -78,7 +81,7 @@ const createVideo = (audioPath: string, images: ImageDetails[], outputVideoPath:
   let startTime = 0; // Start time for each image
   images.forEach((image, index) => {
     // Add filter for each image
-    filterComplexParts.push(`[${index}:v]scale=1920:1080,setsar=1,format=yuv420p,trim=duration=${image.duration},setpts=PTS+${startTime}/TB[v${index}]`);
+    filterComplexParts.push(`[${index}:v]scale=${c_imageWidth}:${c_imageHeight},setsar=1,format=yuv420p,trim=duration=${image.duration},setpts=PTS+${startTime}/TB[v${index}]`);
     startTime = image.duration; // Update start time for the next image
     console.log("startTime", startTime)
   });
@@ -121,11 +124,11 @@ const main = async () => {
   const jaScriptPath = path.resolve("./output/" + name + "_ja.json");
   const dataJa = fs.readFileSync(jaScriptPath, "utf-8");
   const jsonDataJa = JSON.parse(dataJa);
-  await jsonDataJa.script.forEach((element: any, index: number) => {
+  await jsonDataJa.script.forEach(async (element: any, index: number) => {
     console.log();
     renderJapaneseTextToPNG(
       element["text"],
-      1920, // Image width in pixels
+      c_imageWidth, // Image width in pixels
       `./output/${name}_${index}.png` // Output file path
     ).catch((err) => {
       console.error('Error generating PNG:', err);
@@ -140,7 +143,7 @@ const main = async () => {
   const images: ImageDetails[] = jsonDataTm.script.map((item: any, index: number) => {
     const duration = (index === 0) ? item.duration + 4 : item.duration;
     console.log(duration);
-    return { path: path.resolve(`./output/${name}_${index}.png`), duration: Math.round(duration) };
+    return { path: path.resolve(`./output/${name}_${index}.png`), duration };
   });
   const outputVideoPath =path.resolve("./output/" + name + "_ja.mp4");
   
