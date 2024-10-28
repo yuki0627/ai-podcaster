@@ -123,9 +123,20 @@ const main = async () => {
   const scriptPath = path.resolve(arg2);
   const parsedPath = path.parse(scriptPath);
   const name = parsedPath.name;
+  const data = fs.readFileSync(scriptPath, "utf-8");
+  const jsonData = JSON.parse(data);
+  //
   const jaScriptPath = path.resolve("./output/" + name + "_ja.json");
   const dataJa = fs.readFileSync(jaScriptPath, "utf-8");
   const jsonDataJa = JSON.parse(dataJa);
+  //
+  await renderJapaneseTextToPNG(
+    `${jsonData.title}\n\n${jsonData.description}\n${jsonDataJa.description}`,
+    `./scratchpad/${name}_00.png` // Output file path
+  ).catch((err) => {
+    console.error('Error generating PNG:', err);
+  });    
+
   const promises = jsonDataJa.script.map((element: any, index: number) => {
     return renderJapaneseTextToPNG(
       element["text"],
@@ -142,12 +153,16 @@ const main = async () => {
 
   const audioPath = path.resolve("./output/" + name + "_bgm.mp3");
   const images: ImageDetails[] = jsonDataTm.script.map((item: any, index: number) => {
-    const duration = (index === 0) ? item.duration + 4 : item.duration;
+    const duration = item.duration;
     return { path: path.resolve(`./scratchpad/${name}_${index}.png`), duration };
   });
   const outputVideoPath =path.resolve("./output/" + name + "_ja.mp4");
+  const titleImage: ImageDetails = {
+    path: path.resolve(`./scratchpad/${name}_00.png`), duration:4
+  };
+  const imagesWithTitle = [titleImage].concat(images);
   
-  createVideo(audioPath, images, outputVideoPath);
+  createVideo(audioPath, imagesWithTitle, outputVideoPath);
 };
 
 main();
