@@ -1,0 +1,73 @@
+{
+  "title": "Small Modular Reactors: Powering the Future of Data Centers",
+  "description": "In this episode, we discuss how a small nuclear reactor developed by Deep Atomic could revolutionize energy solutions for data centers, and what this means for the AI industry.",
+  "reference": "https://interestingengineering.com/energy/swiss-nuclear-reactor-for-data-centers",
+  "script": [
+    {
+      "speaker": "Host",
+      "text": "Hello and welcome to another episode of 'life is artificial', where we explore the cutting edge of technology, innovation, and what the future could look like.",
+      "key": "small_swedish_reactor0",
+      "duration": 9.936
+    },
+    {
+      "speaker": "Host",
+      "text": "Today, we're diving into a story straight out of Switzerland, where a small nuclear reactor is set to change the game for energy-hungry data centers. Imagine a compact, highly efficient power solution that can power your favorite cloud services, artificial intelligence applications, and even cryptocurrency operations, all while producing zero carbon emissions. Let's get into it.",
+      "key": "small_swedish_reactor1",
+      "duration": 23.808
+    },
+    {
+      "speaker": "Host",
+      "text": "The news source for today's episode is an article titled '60 MW: Small Swiss nuclear reactor to supercharge data centers, feed hungry AI,' available on Interesting Engineering. Deep Atomic, a Swiss nuclear energy startup, has developed a small modular reactor called the MK60, designed to tackle the increasing energy demands of data centers. Data centers, as you know, are the backbone of our digital world, supporting everything from AI applications to cloud storage. But they require a massive amount of energy, which often becomes a major bottleneck for growth and sustainability.",
+      "key": "small_swedish_reactor2",
+      "duration": 37.104
+    },
+    {
+      "speaker": "Host",
+      "text": "Deep Atomic's solution to this problem is their 60 MW small modular reactor, or SMR. This reactor provides 60 megawatts of electricity along with 60 megawatts of cooling power—two things data centers desperately need. The reactor is designed to be installed on-site at these data centers, delivering reliable, zero-carbon power while also significantly reducing cooling costs and environmental impact. Think about that: one small nuclear reactor, specifically designed to sit right where the data is being processed. It can make our digital infrastructure more efficient, greener, and more scalable.",
+      "key": "small_swedish_reactor3",
+      "duration": 38.616
+    },
+    {
+      "speaker": "Host",
+      "text": "Freddy Mondale, the head of engineering at Deep Atomic, calls the 60 MW capacity a 'sweet spot' for data centers. It’s large enough to handle significant computational infrastructure, yet small enough to allow for modular deployment and scaling. This smaller scale not only makes deployment easier but also reduces the initial capital costs compared to larger reactors, while offering the flexibility to expand by adding more units as energy demands grow.",
+      "key": "small_swedish_reactor4",
+      "duration": 28.944
+    },
+    {
+      "speaker": "Host",
+      "text": "But it's not just about energy efficiency. The reactor's sophisticated safety features enable its placement close to urban areas, allowing for edge data centers that reduce latency and offer faster services for AI applications. Imagine a future where these reactors are positioned close to cities, powering not only data centers but potentially other urban energy needs.",
+      "key": "small_swedish_reactor5",
+      "duration": 23.4
+    },
+    {
+      "speaker": "Host",
+      "text": "And this isn't happening in isolation. Tech giants like Google, Microsoft, and OpenAI are racing to acquire nuclear power to feed their energy-hungry data centers. Google recently signed its first contract to purchase electricity from small modular reactors, and Microsoft is set to reopen a former US nuclear plant to meet its own growing energy needs. Clearly, there's a trend here. The energy demands of AI, cloud computing, and even cryptocurrency are pushing us to innovate and rethink how we generate power.",
+      "key": "small_swedish_reactor6",
+      "duration": 32.016
+    },
+    {
+      "speaker": "Host",
+      "text": "What stands out about Deep Atomic’s approach is their philosophy of 'design to be built.' They aren’t reinventing nuclear technology; rather, they're refining existing, proven tech for practical use in the data center industry. Rea Stark, Co-founder and Chief Design Officer at Deep Atomic, pointed out that this strategy allows for smoother regulatory processes and efficient scaling, which are essential for wide adoption.",
+      "key": "small_swedish_reactor7",
+      "duration": 26.496
+    },
+    {
+      "speaker": "Host",
+      "text": "The potential implications of this development are massive. We could be looking at a future where data centers, which currently have a huge carbon footprint, become nearly carbon-neutral. Imagine AI and cloud services running on clean, round-the-clock nuclear power. That’s the kind of leap forward we need if we want to keep up with growing digital demands without causing more harm to our planet.",
+      "key": "small_swedish_reactor8",
+      "duration": 25.032
+    },
+    {
+      "speaker": "Host",
+      "text": "If you'd like to read more about this exciting innovation, head over to Interesting Engineering and look up the article '60 MW: Small Swiss nuclear reactor to supercharge data centers, feed hungry AI.' You'll find all the details about the MK60 reactor and Deep Atomic’s vision for the future of energy. The link is available in our show notes.",
+      "key": "small_swedish_reactor9",
+      "duration": 22.344
+    },
+    {
+      "speaker": "Host",
+      "text": "That's it for today's episode of 'life is artificial.' If you enjoyed this episode and want to hear more stories about the future of technology and innovation, make sure to subscribe and leave us a review. Your feedback helps us bring you the content you love. Until next time, keep imagining the future!",
+      "key": "small_swedish_reactor10",
+      "duration": 19.056
+    }
+  ]
+}
