@@ -1,0 +1,73 @@
+{
+  "title": "Tesla's FSD Upgrade: From Hardware 3 to Hardware 4",
+  "description": "Exploring Tesla's plan to upgrade HW3 vehicles to HW4 for Full Self-Driving (FSD) customers, the reasons behind it, and Elon Musk's promise to 'do the right thing' for Tesla owners.",
+  "reference": "https://www.teslarati.com/tesla-upgrade-hw3-cars-hardware-4-fsd-customers/#google_vignette",
+  "script": [
+    {
+      "speaker": "Host",
+      "text": "Hello and welcome to another episode of 'life is artificial', where we explore the cutting edge of technology, innovation, and what the future could look like.",
+      "key": "tesla_hw3_hw40",
+      "duration": 9.936
+    },
+    {
+      "speaker": "Host",
+      "text": "Today, we're diving into some big news from Tesla, and for those of you who are following the evolution of Full Self-Driving technology, this one's a must-listen. According to a recent article on Teslarati, Tesla is making moves to upgrade its Hardware 3 cars to Hardware 4 for those who purchased Full Self-Driving, or FSD. The news source is Teslarati, and you can find the full story at teslarati.com.",
+      "key": "tesla_hw3_hw41",
+      "duration": 25.584
+    },
+    {
+      "speaker": "Host",
+      "text": "So, here's what's going on: during Tesla's third-quarter earnings call, Elon Musk and Tesla executives discussed some important plans. It turns out, there’s a possibility that Hardware 3—the tech found in a lot of current Tesla vehicles—might not be enough to achieve the safety standards needed for true, unsupervised Full Self-Driving. As we know, Tesla's been pushing the envelope on autonomous driving for years, and getting to that point where cars can drive entirely on their own without human intervention requires an incredibly high bar for safety.",
+      "key": "tesla_hw3_hw42",
+      "duration": 35.04
+    },
+    {
+      "speaker": "Host",
+      "text": "Elon Musk admitted there's a chance that Hardware 3 won’t reach this level, which might leave some customers with outdated technology when it comes to FSD capabilities. To ensure that these loyal customers aren't left behind, Musk made a commitment: if Hardware 3 doesn't make the cut, Tesla will upgrade those cars to Hardware 4 at no cost to the customer. That’s a pretty big promise, especially for a company that prides itself on staying at the forefront of automotive technology.",
+      "key": "tesla_hw3_hw43",
+      "duration": 31.008
+    },
+    {
+      "speaker": "Host",
+      "text": "Now, let's pause for a moment and think about the significance of this. Hardware 4 is reportedly several times more capable than Hardware 3, meaning it can handle more data, process it faster, and ultimately enable a much safer and more reliable Full Self-Driving experience. For Tesla owners with Hardware 3, this means that Tesla is willing to invest in keeping their vehicles cutting-edge, rather than leaving them to lag behind the latest tech advancements.",
+      "key": "tesla_hw3_hw44",
+      "duration": 29.448
+    },
+    {
+      "speaker": "Host",
+      "text": "Musk even stated that the upgrade is possible because the system has been designed to be upgradable. It’s not a simple swap, but Tesla has been forward-thinking enough to make the vehicle architecture modular in this way. He also made a great point—he said, 'Do the right thing for customers, and they will do the right thing for you.' That’s a pretty clear statement about Tesla’s customer-first approach. It’s all about building trust and ensuring that those who have invested in Tesla's technology are getting the best possible experience.",
+      "key": "tesla_hw3_hw45",
+      "duration": 34.056
+    },
+    {
+      "speaker": "Host",
+      "text": "Of course, there are some concerns about this plan. Members of the Tesla community have pointed out that retrofitting HW3 vehicles with HW4 could place a lot of strain on Tesla’s service centers. That’s definitely a valid point. The logistics of upgrading thousands—potentially tens of thousands—of vehicles is no small feat. It could impact service availability and cause delays, but Musk seems confident that Tesla will be able to manage it.",
+      "key": "tesla_hw3_hw46",
+      "duration": 28.224
+    },
+    {
+      "speaker": "Host",
+      "text": "From a customer perspective, though, it’s a pretty sweet deal. Imagine buying a car today and knowing that even if the tech becomes obsolete in a couple of years, the company will upgrade it for free. That’s a major reassurance for anyone who’s already bought into Tesla’s vision of autonomous driving.",
+      "key": "tesla_hw3_hw47",
+      "duration": 18.912
+    },
+    {
+      "speaker": "Host",
+      "text": "And let’s be honest, it’s also a testament to how fast technology evolves. Just a couple of years ago, Hardware 3 was state-of-the-art, and now we’re talking about Hardware 4 as being significantly better. This rapid evolution is exactly why companies like Tesla need to stay flexible and forward-thinking. If the goal is truly autonomous vehicles—ones that can take you from point A to point B without you even touching the wheel—then every piece of hardware and software needs to be able to support that, safely and reliably.",
+      "key": "tesla_hw3_hw48",
+      "duration": 33.408
+    },
+    {
+      "speaker": "Host",
+      "text": "So what do you think about Tesla's promise to upgrade HW3 cars to HW4 for those who bought FSD? Do you think it's the right move, or are there too many logistical challenges involved? I'd love to hear your thoughts—reach out on social media, and let's continue the conversation.",
+      "key": "tesla_hw3_hw49",
+      "duration": 17.856
+    },
+    {
+      "speaker": "Host",
+      "text": "As always, thank you for tuning in to 'life is artificial.' If you want to read the full article for yourself, head over to Teslarati—the link is in the show notes. Stay curious, stay informed, and I'll catch you in the next episode.",
+      "key": "tesla_hw3_hw410",
+      "duration": 14.448
+    }
+  ]
+}

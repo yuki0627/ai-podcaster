@@ -1,0 +1,60 @@
+{
+    "title": "The Rise of AI: Service-as-Software and the System of Agents",
+    "description": "In this episode, we discuss the evolution of software from tools to autonomous AI workers, exploring how AI agents are reshaping industries and redefining the future of work.",
+    "reference": "https://foundationcapital.com/system-of-agents/",
+    "script": [
+      {
+        "speaker": "Host",
+        "text": "Hello and welcome to another episode of 'life is artificial', where we explore the cutting edge of technology, innovation, and what the future could look like."
+      },
+      {
+        "speaker": "Host",
+        "text": "Today, we're diving into a fascinating concept called 'Service-as-Software,' where software is no longer just a tool that helps humans organize their work. Instead, it evolves into a service provider, capable of understanding, executing, and even improving upon tasks that humans used to do. This transformation is being driven by AI agents, and it's opening up a $4.6 trillion opportunity for startups and established companies alike. Our source today is an article titled 'A System of Agents brings Service-as-Software to life,' published by Foundation Capital."
+      },
+      {
+        "speaker": "Host",
+        "text": "So, what does 'Service-as-Software' really mean? Well, traditionally, software was like a sophisticated assistant—something like Salesforce that helps sales reps keep track of their interactions and streamline their workflows. But it still relies heavily on manual data entry and structured inputs. It wasn't perfect; a lot of valuable information ended up lost, particularly the unstructured data—like the rich context of actual sales activities, emails, or impromptu conversations."
+      },
+      {
+        "speaker": "Host",
+        "text": "The first phase of this evolution was about creating a 'workflow-based world.' Software acted as a 'System of Record,' helping us document our work, organize tasks, and streamline some manual processes. But it was far from the intelligent worker we really needed. It was more like a digitized filing cabinet. Enter Phase Two: AI-driven automation. This is where AI agents come into play, leveraging the power of large language models—or LLMs—to process vast amounts of unstructured data in real time, which was simply not possible before."
+      },
+      {
+        "speaker": "Host",
+        "text": "These AI agents take things a step further. Imagine a software that doesn’t just wait for a salesperson to input that a deal is '80% likely to close.' Instead, an AI agent could automatically analyze signals like the CFO getting copied into emails or technical documents being shared with higher-level stakeholders. It actively picks up on real-time signals and builds a picture that helps make accurate predictions about where deals are headed. It becomes proactive rather than reactive."
+      },
+      {
+        "speaker": "Host",
+        "text": "Now, let's talk about Phase Three—the future—a concept called the 'System of Agents.' Imagine multiple AI agents, each specializing in different tasks, working collaboratively to achieve shared goals. It’s like having a virtual team of experts—each AI agent knows its role and learns continuously from the other agents and from humans. This System of Agents is more than just software—it is a 'System of Work' that can truly operate autonomously. Just as human teams have different roles like sales reps, solution engineers, and account executives, AI agents can complement each other. One focuses on prospect engagement, another handles technical details, while a third manages deal closure strategies."
+      },
+      {
+        "speaker": "Host",
+        "text": "It’s exciting because this moves beyond the traditional idea of 'software as a tool'—it’s now the worker itself. These AI agents aren’t just replacing tasks that humans used to do; they're also capable of creating new categories of work, areas where humans might never have had the time or resources to contribute. For example, imagine a wealth management firm where personalized gifts are typically sent to high-net-worth clients. Today, only a handful of such clients might receive gifts because humans simply don’t have the time. Now picture an AI agent that analyzes client data to identify and send personalized gifts to every single client—because it has the time and capacity to do so. This isn't just replacing human labor; it’s expanding possibilities."
+      },
+      {
+        "speaker": "Host",
+        "text": "The Foundation Capital article also highlights some key considerations for builders. For instance, AI agents can help position themselves at the source of data creation, allowing them to own the pathway of actions that follow. Instead of waiting for structured data to be manually input into a CRM or ERP system, AI agents can capture data as it’s being created—whether it’s through voice, APIs, or emails. This shifts business processes from 'record first, act later' to 'act first, record seamlessly.' And it means AI solutions can now tap into a much bigger market opportunity: workforce spending rather than just software budgets."
+      },
+      {
+        "speaker": "Host",
+        "text": "It’s also worth noting the broader implications for pricing models. With AI agents autonomously delivering real outcomes, we’re seeing a shift away from traditional seat-based pricing models to outcome-based models. Instead of charging customers based on the number of users, the value of AI solutions will be tied to what they actually deliver—whether it's a resolved support case, a closed deal, or an improved system uptime."
+      },
+      {
+        "speaker": "Host",
+        "text": "This shift towards autonomous intelligence is not just about making software better. It’s about fundamentally changing how we think about work—how tasks get done, how decisions are made, and how services are delivered. We're talking about systems that are not only automating repetitive, rule-based processes but are also understanding the context, applying reasoning, and contributing to new types of work that were previously unimaginable."
+      },
+      {
+        "speaker": "Host",
+        "text": "So, as we move forward, the big question is: How can companies tap into this opportunity? How can startups and enterprises alike leverage AI agents to transform their services and become more efficient, effective, and innovative? If you're someone who's building with agents, Foundation Capital wants to hear from you."
+      },
+      {
+        "speaker": "Host",
+        "text": "And with that, we've reached the end of today's exploration into the world of 'Service-as-Software' and the rise of the System of Agents. A big thanks to Foundation Capital for the insights shared in their article. If you'd like to read the full piece, you can find it at foundationcapital.com, or just click the link in the episode description."
+      },
+      {
+        "speaker": "Host",
+        "text": "Thank you for tuning in to 'life is artificial.' If you enjoyed today's episode, be sure to subscribe and share it with friends who are curious about the future of technology. Until next time, keep questioning, keep learning, and stay curious."
+      }
+    ]
+  }
+  
