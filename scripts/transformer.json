@@ -1,7 +1,7 @@
 {
     "title": "Transformers: Unpacking the Attention Mechanism Revolution",
     "description": "Dive into the fascinating world of the Transformer model, its attention mechanism, and how it's revolutionizing natural language processing.",
-    "reference": "https://example.com/transformer-article",
+    "reference": "https://arxiv.org/abs/2401.02038v2",
     "script": [
       {
         "speaker": "Host",
