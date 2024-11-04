@@ -1,0 +1,67 @@
+{
+  "title": "Net Neutrality’s Future: FCC vs. the Broadband Industry",
+  "description": "In this episode, we dive into the latest developments in the ongoing battle over net neutrality, examining the arguments from both the FCC and the broadband industry as they play out in the courts. Will the FCC retain its power to regulate internet service providers, or is this the end of net neutrality?",
+  "reference": "https://www.theverge.com/2024/10/31/24284435/fcc-net-neutrality-isp-sixth-circuit-oral-arguments",
+  "script": [
+    {
+      "speaker": "Host",
+      "text": "Hello and welcome to another episode of 'Life is Artificial,' where we explore the cutting edge of technology, innovation, and what the future could look like.",
+      "key": "net_neutrality_two0",
+      "duration": 9.936
+    },
+    {
+      "speaker": "Host",
+      "text": "Today, we’re diving into a big story on net neutrality, based on a recent article from The Verge by Lauren Feiner. Net neutrality has been a hot topic in the tech and policy world for years, and once again, it’s making waves in the courts. The FCC, or Federal Communications Commission, and the broadband industry recently faced off in front of a panel of judges in the Sixth Circuit Court of Appeals. The question? Whether the FCC should be able to enforce net neutrality rules.",
+      "key": "net_neutrality_two1",
+      "duration": 29.976
+    },
+    {
+      "speaker": "Host",
+      "text": "Let’s start with a bit of background. Net neutrality rules require internet service providers, or ISPs, to be 'common carriers,' meaning they’re not allowed to selectively slow down or throttle internet traffic. These rules first came into play under President Obama’s administration but were later repealed by the FCC under President Trump. Then, in April of this year, the Biden administration’s FCC reinstated those rules. However, the implementation hit a snag when the Sixth Circuit Court of Appeals put the rules on hold to consider arguments from both sides. And now, here we are, with the FCC and broadband industry representatives arguing over whether the FCC even has the authority to enforce net neutrality.",
+      "key": "net_neutrality_two2",
+      "duration": 44.928
+    },
+    {
+      "speaker": "Host",
+      "text": "During the recent oral arguments, two judges appointed by President George W. Bush and one by President Trump heard from both sides. A big part of the debate revolves around the FCC’s authority to categorize ISPs as 'telecommunications services' under Title II, rather than as 'information services' under Title I, which would mean lighter regulation. Title II classification would allow the FCC to place stricter regulations on ISPs, effectively enforcing net neutrality. But the broadband industry, represented by attorney Jeffrey Wall, argues that the FCC is overstepping its bounds, pushing to regulate the internet in ways that go beyond just net neutrality. Wall calls this a 'power grab,' claiming it could lead to broad regulation of everything from pricing to plan offerings in the ISP space.",
+      "key": "net_neutrality_two3",
+      "duration": 50.064
+    },
+    {
+      "speaker": "Host",
+      "text": "On the other side, the FCC’s attorney Jacob Lewis defended the agency's stance, arguing that Congress intended for the FCC to decide whether ISPs should be categorized under Title II. He made the case that even though different FCC administrations have flip-flopped on the classification over the years, the agency still holds the 'general authority' to make that call.",
+      "key": "net_neutrality_two4",
+      "duration": 23.208
+    },
+    {
+      "speaker": "Host",
+      "text": "A critical legal point in this case is the 'major questions' doctrine, which has recently become a factor in limiting the powers of federal agencies. This doctrine argues that agencies can’t make major policy decisions without clear authorization from Congress. Another influential legal principle at play here is the end of what’s called 'Chevron deference.' Previously, courts would defer to federal agencies on interpretations of ambiguous laws in their area of expertise. Now, in this post-Chevron era, the courts are more likely to decide for themselves whether policies like net neutrality should be in place, rather than simply deferring to the FCC’s judgment.",
+      "key": "net_neutrality_two5",
+      "duration": 41.832
+    },
+    {
+      "speaker": "Host",
+      "text": "The judges seemed to focus a lot on this concept of regulatory authority. One judge, Raymond Kethledge, likened it to the Occupational Safety and Health Administration’s attempt to enforce vaccine mandates, which the Supreme Court rejected last year, arguing that it went beyond OSHA’s intended authority. Kethledge hinted that it might be different for the FCC, though, given the Communications Act does categorize services as either Title I or Title II, suggesting that Congress might indeed expect the FCC to make those classifications.",
+      "key": "net_neutrality_two6",
+      "duration": 33.816
+    },
+    {
+      "speaker": "Host",
+      "text": "So, where does this leave us? Well, the appeals court’s decision will have major implications for net neutrality’s future. If the court sides with the FCC, it could give the green light for these net neutrality rules to go into effect. But if the broadband industry wins, it could signal the end of the FCC’s ability to enforce net neutrality altogether. And this battle might not end here. There’s a strong possibility that, whichever side loses, they’ll take it to the Supreme Court, making this another monumental case in the ongoing debate over federal regulatory authority and the future of the open internet.",
+      "key": "net_neutrality_two7",
+      "duration": 38.328
+    },
+    {
+      "speaker": "Host",
+      "text": "So there you have it — net neutrality is once again at a crossroads, and much of the decision comes down to legal interpretations of congressional authority and regulatory reach. Whether or not the FCC can continue regulating ISPs as common carriers could shape how we experience the internet in the future, impacting everything from streaming speeds to the overall accessibility of online content.",
+      "key": "net_neutrality_two8",
+      "duration": 25.248
+    },
+    {
+      "speaker": "Host",
+      "text": "Thank you for tuning in to 'Life is Artificial.' If you want to learn more about this case, check out the full article by Lauren Feiner on The Verge. I’ll drop the link in the episode description. Stay tuned for more deep dives into the world of tech and policy, and I’ll catch you next time!",
+      "key": "net_neutrality_two9",
+      "duration": 18.264
+    }
+  ]
+}
