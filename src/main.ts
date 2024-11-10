@@ -92,7 +92,7 @@ const addMusic = async (inputs: {
 }) => {
   const { jsonData, voiceFile, name } = inputs;
   const outputFile = path.resolve("./output/" + name + "_bgm.mp3");
-  const musicFile = path.resolve("./music/Theme1ex.mp3");
+  const musicFile = path.resolve(process.env.PATH_BGM ?? "./music/StarlitNoirEx.mp3");
   ffmpeg.ffprobe(voiceFile, (err, metadata) => {
     if (err) {
       console.error("Error getting metadata: " + err.message);

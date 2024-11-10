@@ -1,0 +1,79 @@
+{
+  "title": "Rethinking AI: OpenAI's New Approach with System Two Thinking",
+  "description": "In this episode, we explore OpenAI scientist Noam Brown's groundbreaking presentation at the TED AI Conference, where he discussed a new AI paradigm shift known as 'system two thinking'.",
+  "reference": "https://venturebeat.com/ai/openai-noam-brown-stuns-ted-ai-conference-20-seconds-of-thinking-worth-100000x-more-data/",
+  "script": [
+    {
+      "speaker": "Host",
+      "text": "Hello and welcome to another episode of 'Life is Artificial,' where we explore the cutting edge of technology, innovation, and what the future could look like.",
+      "key": "openai_o1_noam_brown0",
+      "duration": 9.864
+    },
+    {
+      "speaker": "Host",
+      "text": "Today, we’re diving into a fascinating new development in artificial intelligence that could change the very foundation of how AI works. This news comes from OpenAI scientist Noam Brown, who recently made waves at the TED AI Conference in San Francisco. The headline? '20 seconds of thinking worth 100,000 times more data.' Sounds intriguing, right? Let’s unpack it.",
+      "key": "openai_o1_noam_brown1",
+      "duration": 24.288
+    },
+    {
+      "speaker": "Host",
+      "text": "According to VentureBeat, Noam Brown’s presentation was nothing short of eye-opening. He was there to introduce a new approach in AI called 'system two thinking,' which aims to make AI smarter and more thoughtful rather than just faster. If you’ve heard of the book *Thinking, Fast and Slow* by psychologist Daniel Kahneman, you might recognize the concept of system two thinking. It’s the idea of slowing down to think more deeply and carefully, especially when solving complex problems.",
+      "key": "openai_o1_noam_brown2",
+      "duration": 30.504
+    },
+    {
+      "speaker": "Host",
+      "text": "Up until now, most AI advancements have focused on scaling, using more data and more computing power to get results. But Noam Brown argues that this approach is starting to hit its limits. Instead, he says, it’s time for a shift—away from just processing data quickly and toward reasoning more deliberately. This is where OpenAI’s new model, the 'o1 model,' comes into play. It’s designed to bring this slower, more thoughtful system two thinking into AI decision-making.",
+      "key": "openai_o1_noam_brown3",
+      "duration": 29.424
+    },
+    {
+      "speaker": "Host",
+      "text": "So what exactly is system two thinking? It’s essentially a mode of thought that takes time, mimicking how humans slow down and focus on complex challenges. Brown shared a story about his early work on an AI poker model called Libratus. During testing, he found that if Libratus took just 20 seconds to think before making a move, it could perform as well as if it had been trained with 100,000 times more data. At first, he thought this was a bug. But after repeated testing, it became clear that this slower, deliberate thinking was incredibly powerful.",
+      "key": "openai_o1_noam_brown4",
+      "duration": 36.12
+    },
+    {
+      "speaker": "Host",
+      "text": "This story helped illustrate his point that AI doesn’t always need more data—it sometimes just needs more time to think things through. And this insight has led to the development of the o1 model, OpenAI’s latest creation. It’s built specifically for fields that demand high levels of accuracy and complex reasoning, like scientific research, coding, and strategic decision-making.",
+      "key": "openai_o1_noam_brown5",
+      "duration": 24.096
+    },
+    {
+      "speaker": "Host",
+      "text": "Here’s a concrete example of what o1 can do. In a qualifying exam for the International Mathematics Olympiad, o1 scored an impressive 83% accuracy, compared to the 13% scored by an earlier model, GPT-4o. This leap in performance is attributed to o1’s ability to reason through complex problems—something that makes it ideal for industries where precision is critical, such as finance, healthcare, and energy.",
+      "key": "openai_o1_noam_brown6",
+      "duration": 26.928
+    },
+    {
+      "speaker": "Host",
+      "text": "What does this mean for businesses? Well, this system two thinking approach could improve outcomes and reduce costs by achieving high accuracy without needing exponential increases in data or computing power. Brown used cancer treatment as an example. If a new AI-driven treatment took just a little longer to process but was far more accurate, wouldn’t it be worth it?",
+      "key": "openai_o1_noam_brown7",
+      "duration": 23.232
+    },
+    {
+      "speaker": "Host",
+      "text": "However, this new approach isn’t without its challenges. The o1 model is slower and more expensive to run than traditional AI models, with reports suggesting it could cost $15 per million input tokens and $60 per million output tokens. While this may limit its use in everyday applications, the investment might be worth it for high-stakes industries where the cost of inaccuracy is far higher.",
+      "key": "openai_o1_noam_brown8",
+      "duration": 25.776
+    },
+    {
+      "speaker": "Host",
+      "text": "Interestingly, this slower, more thoughtful AI model could shake up the competition among tech giants. Companies like Google and Meta have heavily invested in fast, multimodal AI models. Google’s Gemini AI, for instance, is optimized for tasks across different data types, like text and images. But OpenAI’s focus on deep reasoning may set it apart in areas that require serious decision-making capabilities.",
+      "key": "openai_o1_noam_brown9",
+      "duration": 25.392
+    },
+    {
+      "speaker": "Host",
+      "text": "In closing, Brown believes AI is at a critical turning point. We now have the ability to scale up not just data processing but also intelligent, thoughtful decision-making. The big takeaway? AI’s next major evolution may not be in how fast it works, but in how deeply it thinks. This shift could redefine what AI can do for us and how it fits into our lives and industries.",
+      "key": "openai_o1_noam_brown10",
+      "duration": 23.352
+    },
+    {
+      "speaker": "Host",
+      "text": "Thanks for tuning in to 'Life is Artificial.' If you’re curious about this new AI shift, check out the full article on VentureBeat titled, 'OpenAI scientist Noam Brown stuns TED AI Conference: 20 seconds of thinking worth 100,000x more data.' The link is in the description. As always, stay curious, and I’ll catch you in the next episode.",
+      "key": "openai_o1_noam_brown11",
+      "duration": 22.488
+    }
+  ]
+}
