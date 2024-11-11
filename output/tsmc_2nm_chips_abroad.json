@@ -1,0 +1,85 @@
+{
+  "title": "TSMC’s 2nm Chips: Taiwan's Technology Protection and Global Impact",
+  "description": "In this episode, we dive into Taiwan's latest move to protect its semiconductor technology, ensuring TSMC's 2-nanometer chips remain homebound. We explore how this impacts global partnerships, geopolitics, and the U.S.-China tech race.",
+  "reference": "https://www.taipeitimes.com/News/biz/archives/2024/11/08/2003826545",
+  "script": [
+    {
+      "speaker": "Host",
+      "text": "Hello and welcome to another episode of 'Life is Artificial,' where we explore the cutting edge of technology, innovation, and what the future could look like.",
+      "key": "tsmc_2nm_chips_abroad0",
+      "duration": 9.96
+    },
+    {
+      "speaker": "Host",
+      "text": "Today, we’re focusing on a significant story in the tech world that underscores the importance of technological sovereignty and the ongoing strategic tension between leading powers. We're talking about Taiwan Semiconductor Manufacturing Co., better known as TSMC, and its newly reinforced commitment to keep its latest 2-nanometer chip technology within Taiwan.",
+      "key": "tsmc_2nm_chips_abroad1",
+      "duration": 23.016
+    },
+    {
+      "speaker": "Host",
+      "text": "This news comes from a recent article published by Taipei Times titled 'TSMC cannot make 2nm chips abroad now: MOEA,' which discusses the steps Taiwan is taking to protect its crown jewel—its semiconductor technology. TSMC is one of the world’s leading chip manufacturers, and its advanced 2-nanometer chips represent some of the most cutting-edge technology in the semiconductor industry.",
+      "key": "tsmc_2nm_chips_abroad2",
+      "duration": 24.912
+    },
+    {
+      "speaker": "Host",
+      "text": "According to the article, Taiwan's Ministry of Economic Affairs recently confirmed that Taiwan has enacted strict technology protection laws that prevent TSMC from producing its 2-nanometer chips outside of Taiwan. This law essentially forces TSMC to keep its most advanced manufacturing within Taiwan’s borders. J.W. Kuo, Taiwan’s Minister of Economic Affairs, emphasized that while TSMC might eventually produce these advanced chips abroad, the core technologies will remain in Taiwan to safeguard the nation’s technological assets.",
+      "key": "tsmc_2nm_chips_abroad3",
+      "duration": 33.768
+    },
+    {
+      "speaker": "Host",
+      "text": "So why is this significant? Well, for one, it highlights Taiwan's determination to protect its technological leadership and retain control over its semiconductor innovations. Given TSMC’s dominance in chip manufacturing, this move positions Taiwan not only as a technology leader but as a critical player in the global tech landscape.",
+      "key": "tsmc_2nm_chips_abroad4",
+      "duration": 20.856
+    },
+    {
+      "speaker": "Host",
+      "text": "This story also comes amid concerns that TSMC might feel pressured to move some of its 2-nanometer production to its Arizona facilities in the U.S., following the recent re-election of former U.S. President Donald Trump. Trump's administration has been vocal about reshoring advanced manufacturing, particularly in strategically important fields like semiconductors.",
+      "key": "tsmc_2nm_chips_abroad5",
+      "duration": 23.28
+    },
+    {
+      "speaker": "Host",
+      "text": "However, according to TSMC’s current roadmap, production of the 2-nanometer chips in the U.S. is planned for much later, with the next generation of chips, known as the A-16, expected to enter production around 2026. Their first Arizona plant will begin producing 4-nanometer chips soon, with plans to expand to 3-nanometer and possibly 2-nanometer production in future Arizona facilities by 2028 or later.",
+      "key": "tsmc_2nm_chips_abroad6",
+      "duration": 27.984
+    },
+    {
+      "speaker": "Host",
+      "text": "TSMC's choice to keep its latest technology within Taiwan underscores the geopolitical tensions surrounding semiconductor manufacturing and the implications for U.S.-China relations. As the U.S. seeks to strengthen its technological edge over China, Taiwan's control over advanced semiconductor production becomes an increasingly critical element in this global tech rivalry.",
+      "key": "tsmc_2nm_chips_abroad7",
+      "duration": 23.712
+    },
+    {
+      "speaker": "Host",
+      "text": "Interestingly, the chairman of the Taiwan Semiconductor Industry Association, Cliff Hou, who is also a senior vice president at TSMC, commented that the outcome of the U.S. presidential election doesn’t fundamentally alter the longstanding collaboration between Taiwan and the United States. However, he did mention that some adjustments might occur, suggesting flexibility in the face of political shifts. This suggests that while there is some sensitivity to U.S. policies, Taiwan sees this partnership as steady and resilient.",
+      "key": "tsmc_2nm_chips_abroad8",
+      "duration": 33
+    },
+    {
+      "speaker": "Host",
+      "text": "Aside from this, Hou emphasized that Taiwan must continue to innovate to stay competitive. To maintain its position, he suggested that Taiwan should invest even more in semiconductor R&D and expand expertise within its supply chain. He even proposed Taiwan attract foreign partners to establish design and materials centers locally, strengthening Taiwan’s position in the global tech ecosystem.",
+      "key": "tsmc_2nm_chips_abroad9",
+      "duration": 24.888
+    },
+    {
+      "speaker": "Host",
+      "text": "The article also briefly touches on another key piece of news relevant to Taiwan and the global tech race: TSMC is reportedly planning to halt the supply of advanced AI chips and GPUs to China, following U.S. Department of Commerce rules. This move could be a major blow to China’s AI and chip design industry, potentially impacting its competitiveness in cutting-edge AI applications. It’s another example of how deeply intertwined technological capability and geopolitics have become.",
+      "key": "tsmc_2nm_chips_abroad10",
+      "duration": 30.576
+    },
+    {
+      "speaker": "Host",
+      "text": "In summary, Taiwan’s stance on TSMC’s 2-nanometer technology reflects the country’s commitment to safeguarding its semiconductor industry amidst global power shifts and growing competition. With TSMC’s advanced chip production staying home, Taiwan’s position as a critical player in global technology remains secure—for now. And with ongoing partnerships, steady R&D investments, and geopolitical tensions, this space will be one to watch closely.",
+      "key": "tsmc_2nm_chips_abroad11",
+      "duration": 28.128
+    },
+    {
+      "speaker": "Host",
+      "text": "Thanks for tuning in to this episode of 'Life is Artificial.' If you enjoyed this deep dive into the world of semiconductors, don't forget to subscribe and follow us for more episodes. Until next time, stay curious about the world of technology!",
+      "key": "tsmc_2nm_chips_abroad12",
+      "duration": 15.408
+    }
+  ]
+}
