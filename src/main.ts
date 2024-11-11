@@ -50,8 +50,6 @@ const combineFiles = async (inputs: { jsonData: any; name: string }) => {
         element["duration"] = metadata.format.duration;
       }
     });
-
-    // command.input('anullsrc=r=44100:cl=stereo').inputOptions(['-t 0.2']);
   });
 
   const promise = new Promise((resolve, reject) => {
@@ -75,22 +73,11 @@ const combineFiles = async (inputs: { jsonData: any; name: string }) => {
   return outputFile;
 };
 
-/*
-const writeTranslatedJson = async (inputs: { jsonData: any; name: string }) => {
-  const { name, jsonData } = inputs;
-  const outputScript = path.resolve("./output/" + name + "_ja.json");
-  const textData:string = JSON.stringify(jsonData, null, 2); 
-  fs.writeFileSync(outputScript, textData);
-  return outputScript;
-};
-*/
-
 const addMusic = async (inputs: {
-  jsonData: any;
   voiceFile: string;
   name: string;
 }) => {
-  const { jsonData, voiceFile, name } = inputs;
+  const { voiceFile, name } = inputs;
   const outputFile = path.resolve("./output/" + name + "_bgm.mp3");
   const musicFile = path.resolve(process.env.PATH_BGM ?? "./music/StarsBeyondEx.mp3");
   ffmpeg.ffprobe(voiceFile, (err, metadata) => {
@@ -163,7 +150,6 @@ const graph_data = {
       agent: addMusic,
       inputs: {
         voiceFile: ":combineFiles",
-        jsonData: ":jsonData",
         name: ":name",
       },
       isResult: true,
