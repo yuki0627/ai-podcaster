@@ -38,16 +38,18 @@ const text2speech = async (input: { text: string; key: string }) => {
 const combineFiles = async (inputs: { jsonData: any; name: string }) => {
   const { name, jsonData } = inputs;
   const outputFile = path.resolve("./output/" + name + ".mp3");
+  const silentPath = path.resolve("./music/silent300.mp3");
   const command = ffmpeg();
   jsonData.script.forEach((element: any) => {
     const filePath = path.resolve("./scratchpad/" + element.key + ".mp3");
     command.input(filePath);
+    command.input(silentPath);
     // Measure and log the timestamp of each section
     ffmpeg.ffprobe(filePath, (err, metadata) => {
       if (err) {
         console.error("Error while getting metadata:", err);
       } else {
-        element["duration"] = metadata.format.duration;
+        element["duration"] = metadata.format.duration! + 0.3;
       }
     });
   });
