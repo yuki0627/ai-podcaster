@@ -39,17 +39,19 @@ const combineFiles = async (inputs: { jsonData: any; name: string }) => {
   const { name, jsonData } = inputs;
   const outputFile = path.resolve("./output/" + name + ".mp3");
   const silentPath = path.resolve("./music/silent300.mp3");
+  const silentLastPath = path.resolve("./music/silent800.mp3");
   const command = ffmpeg();
-  jsonData.script.forEach((element: any) => {
+  jsonData.script.forEach((element: any, index: number) => {
     const filePath = path.resolve("./scratchpad/" + element.key + ".mp3");
+    const isLast = index === jsonData.script.length - 2;
     command.input(filePath);
-    command.input(silentPath);
+    command.input(isLast ? silentLastPath : silentPath);
     // Measure and log the timestamp of each section
     ffmpeg.ffprobe(filePath, (err, metadata) => {
       if (err) {
         console.error("Error while getting metadata:", err);
       } else {
-        element["duration"] = metadata.format.duration! + 0.3;
+        element["duration"] = metadata.format.duration! + (isLast ? 0.8 : 0.3);
       }
     });
   });
