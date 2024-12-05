@@ -12,10 +12,10 @@ const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
 
-const sound = async (filePath: string, input: string, key: string) => {
+const sound = async (filePath: string, input: string, key: string, speaker: string) => {
   const response = await openai.audio.speech.create({
     model: "tts-1",
-    voice: "shimmer",
+    voice: (speaker === "Host") ? "shimmer" : "echo",
     // response_format: "aac",
     input,
   });
@@ -24,13 +24,13 @@ const sound = async (filePath: string, input: string, key: string) => {
   await fs.promises.writeFile(filePath, buffer);
 };
 
-const text2speech = async (input: { text: string; key: string }) => {
+const text2speech = async (input: { text: string; key: string, speaker: string }) => {
   const filePath = path.resolve("./scratchpad/" + input.key + ".mp3");
   if (fs.existsSync(filePath)) {
-    console.log("skpped", input.key);
+    console.log("skpped", input.key, input.speaker);
   } else {
-    console.log("generating", input.key);
-    await sound(filePath, input.text, input.key);
+    console.log("generating", input.key, input.speaker);
+    await sound(filePath, input.text, input.key, input.speaker);
   }
   return true;
 };
@@ -140,6 +140,7 @@ const graph_data = {
             inputs: {
               text: ":row.text",
               key: ":row.key",
+              speaker: ":row.speaker"
             },
           },
         },

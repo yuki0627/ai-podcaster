@@ -1,0 +1,306 @@
+{
+  "title": "Tim Cook Wants Apple to Literally Save Your Life",
+  "description": "Tim Cook discusses Apple's new AI venture, Apple Intelligence, its privacy-centric approach, and Apple's future in health technology.",
+  "script": [
+    {
+      "speaker": "Host",
+      "text": "Hello, Tim. Thank you for taking the time to talk with me today. It’s always fascinating to come back to Apple Park. The campus feels more vibrant each time I visit.",
+      "key": "wired_timcook0",
+      "duration": 10.524000000000001
+    },
+    {
+      "speaker": "Guest",
+      "text": "Thank you. It’s great to have you here. I’m really proud of how the campus has evolved since we started—it was a big, 100-year decision.",
+      "key": "wired_timcook1",
+      "duration": 9.252
+    },
+    {
+      "speaker": "Host",
+      "text": "We’re at an interesting point in the tech world. Companies are either positioning themselves for long-term dominance or risking a fall. I want to talk about Apple's next big move: Apple Intelligence. It’s your first major step into generative AI. Some think it’s a bit late compared to competitors—others say this is classic Apple timing. What’s your take?",
+      "key": "wired_timcook2",
+      "duration": 22.548000000000002
+    },
+    {
+      "speaker": "Guest",
+      "text": "We’ve always approached things this way. Classic Apple, as you put it. We believe it’s not always about being first; it’s about getting it right. The iPod wasn’t the first MP3 player, but it was the first to make digital music truly accessible and enjoyable for people. This is our approach to AI—finding that intersection between innovation, utility, and privacy.",
+      "key": "wired_timcook3",
+      "duration": 23.076
+    },
+    {
+      "speaker": "Host",
+      "text": "Speaking of privacy, it seems to be a big differentiator for Apple Intelligence. Can you talk a little about that focus?",
+      "key": "wired_timcook4",
+      "duration": 7.8839999999999995
+    },
+    {
+      "speaker": "Guest",
+      "text": "Privacy is key to everything we do. We’ve integrated AI into our products in a way that respects user privacy. Most of the AI runs on the device itself, rather than relying on cloud processing. For more advanced AI tasks, the computation happens in secure areas of our data centers, but we try to keep as much as possible on the device. It’s a hallmark of our approach.",
+      "key": "wired_timcook5",
+      "duration": 23.412
+    },
+    {
+      "speaker": "Host",
+      "text": "How did Apple prepare for the AI revolution? It seems like you’ve been laying the groundwork for years.",
+      "key": "wired_timcook6",
+      "duration": 6.78
+    },
+    {
+      "speaker": "Guest",
+      "text": "Exactly. Back in 2018, we brought in John Giannandrea from Google to lead AI. We redirected some of our efforts, including pulling the plug on the smart-car project, to focus on AI and machine learning. This helped us build the foundation needed for Apple Intelligence.",
+      "key": "wired_timcook7",
+      "duration": 17.580000000000002
+    },
+    {
+      "speaker": "Host",
+      "text": "So, now that you’ve launched Apple Intelligence, what’s been most useful to you personally?",
+      "key": "wired_timcook8",
+      "duration": 5.9639999999999995
+    },
+    {
+      "speaker": "Guest",
+      "text": "I get a lot of emails—users, employees, partners, you name it. Having AI help summarize responses and prioritize the most important ones is a game changer. And of course, there are fun features too, like Image Playground, which lets you create custom emoji with verbal prompts.",
+      "key": "wired_timcook9",
+      "duration": 17.364
+    },
+    {
+      "speaker": "Host",
+      "text": "I heard you say that Apple Intelligence could even make you funnier, which seems a bit surprising.",
+      "key": "wired_timcook10",
+      "duration": 6.492
+    },
+    {
+      "speaker": "Guest",
+      "text": "I think it’s about making people friendlier, which can often come across as being funnier. It enhances the way you communicate—adds a bit more polish and humor.",
+      "key": "wired_timcook11",
+      "duration": 10.236
+    },
+    {
+      "speaker": "Host",
+      "text": "You’ve always emphasized how Apple’s products are personal. Does it concern you that having AI write responses might degrade the authenticity of communication?",
+      "key": "wired_timcook12",
+      "duration": 10.356
+    },
+    {
+      "speaker": "Guest",
+      "text": "I don’t think so. The AI is still reflecting your own thoughts and intentions. It’s a tool that helps polish and improve what you’re trying to convey, but the ideas come from you. It’s similar to how a word processor or music software enhances productivity—it doesn’t take away from your authorship.",
+      "key": "wired_timcook13",
+      "duration": 19.068
+    },
+    {
+      "speaker": "Host",
+      "text": "How do you address the concern that people may rely on AI so much that they forget basic skills? Like writing a professional letter, for example.",
+      "key": "wired_timcook14",
+      "duration": 9.468
+    },
+    {
+      "speaker": "Guest",
+      "text": "That’s a question that comes up whenever there’s a technological advancement. People worried that calculators would erode math skills, or that search engines would lead to people not memorizing things anymore. I think technology has always been about making processes more efficient and freeing people up to focus on higher-level thinking.",
+      "key": "wired_timcook15",
+      "duration": 21.012
+    },
+    {
+      "speaker": "Host",
+      "text": "Privacy seems critical when AI tools stitch together personal data, like emails and calendars, to be useful. How does Apple maintain privacy in such cases?",
+      "key": "wired_timcook16",
+      "duration": 9.948
+    },
+    {
+      "speaker": "Guest",
+      "text": "We have a deep commitment to privacy. A lot of Apple Intelligence runs on-device, but for users who need powerful models, we’ve crafted private cloud compute with the same privacy standards as our devices. It’s about making sure privacy and intelligence aren’t at odds.",
+      "key": "wired_timcook17",
+      "duration": 16.716
+    },
+    {
+      "speaker": "Host",
+      "text": "Switching gears a bit, let’s talk about your custom silicon chips. They seem to be a key part of Apple’s success lately.",
+      "key": "wired_timcook18",
+      "duration": 7.811999999999999
+    },
+    {
+      "speaker": "Guest",
+      "text": "Absolutely. It’s a huge enabler. We’ve always believed in owning the core technologies that our products are built on. Custom silicon has allowed us to push the boundaries of performance and efficiency.",
+      "key": "wired_timcook19",
+      "duration": 12.996
+    },
+    {
+      "speaker": "Host",
+      "text": "With Apple using OpenAI’s ChatGPT, do you foresee building your own large language models in the future?",
+      "key": "wired_timcook20",
+      "duration": 6.827999999999999
+    },
+    {
+      "speaker": "Guest",
+      "text": "I wouldn’t rule anything out, but right now we felt that OpenAI was ahead, and it made sense to collaborate to bring that capability to our customers. We wanted to integrate it in a way that respects user choice and privacy.",
+      "key": "wired_timcook21",
+      "duration": 14.34
+    },
+    {
+      "speaker": "Host",
+      "text": "There have been rumors of a cooling-off between Apple and OpenAI. Any truth to that?",
+      "key": "wired_timcook22",
+      "duration": 5.604
+    },
+    {
+      "speaker": "Guest",
+      "text": "No, there’s no truth behind that. Our MO is not to invest broadly in other companies. It’s rare when we do, like with ARM back in the day. We look for strategic alignment rather than investment opportunities.",
+      "key": "wired_timcook23",
+      "duration": 13.236
+    },
+    {
+      "speaker": "Host",
+      "text": "One major difference is that OpenAI is focused on AGI—artificial general intelligence. Is that something Apple is pursuing?",
+      "key": "wired_timcook24",
+      "duration": 8.028
+    },
+    {
+      "speaker": "Guest",
+      "text": "We’re focused on technology that changes people’s lives today. We’re thoughtful about what AGI could mean, not just for Apple, but for the world. There are immense opportunities, but we also need guardrails. AGI is still quite far off, and we’ll figure out what needs to be done as we go.",
+      "key": "wired_timcook25",
+      "duration": 18.204
+    },
+    {
+      "speaker": "Host",
+      "text": "Developing AI requires a lot of infrastructure and power. How does this align with Apple’s goal of being carbon-neutral by 2030?",
+      "key": "wired_timcook26",
+      "duration": 9.180000000000001
+    },
+    {
+      "speaker": "Guest",
+      "text": "It’s challenging, but we’re committed to our 2030 goal. More data centers mean more renewable energy, and we’ve already reduced our carbon footprint significantly since 2015, even while growing our business.",
+      "key": "wired_timcook27",
+      "duration": 14.724
+    },
+    {
+      "speaker": "Host",
+      "text": "Let’s discuss the Vision Pro. Reports suggest it hasn’t sold as expected. What’s your view on that?",
+      "key": "wired_timcook28",
+      "duration": 6.468
+    },
+    {
+      "speaker": "Guest",
+      "text": "Vision Pro is an early adopter product—targeted at those who want tomorrow’s technology today. We’re focused on building an ecosystem, and that’s flourishing. I’m using it all the time, and I’m seeing more and more apps being developed for it.",
+      "key": "wired_timcook29",
+      "duration": 15.516
+    },
+    {
+      "speaker": "Host",
+      "text": "I heard Stevie Wonder had a demo of the Vision Pro and loved it. What was that experience like?",
+      "key": "wired_timcook30",
+      "duration": 6.3
+    },
+    {
+      "speaker": "Guest",
+      "text": "Stevie is a friend of Apple, and his feedback is invaluable. Accessibility has always been part of our design process from the beginning, not something we add later, and his perspective helps us make our products better.",
+      "key": "wired_timcook31",
+      "duration": 14.100000000000001
+    },
+    {
+      "speaker": "Host",
+      "text": "Let’s talk about health technology. You’ve mentioned that health might be Apple’s greatest contribution. Could you elaborate?",
+      "key": "wired_timcook32",
+      "duration": 8.004
+    },
+    {
+      "speaker": "Guest",
+      "text": "I really believe that. Starting with the Apple Watch, which began as a way to monitor heart rate, we expanded into health metrics like EKGs and AFib detection. Now we’re working on monitoring sleep apnea. The feedback we receive from users is incredible—stories of lives saved. Health is an area where we see a lot of opportunity to make a meaningful impact.",
+      "key": "wired_timcook33",
+      "duration": 22.668
+    },
+    {
+      "speaker": "Host",
+      "text": "Apple plans to add hearing loss correction to AirPods. Are you looking to compete with traditional hearing aids?",
+      "key": "wired_timcook34",
+      "duration": 7.38
+    },
+    {
+      "speaker": "Guest",
+      "text": "It’s not about competing. It’s about helping people who might not even realize they have hearing loss. There’s still a stigma around hearing aids, and AirPods can help people self-diagnose in a less intimidating way. It’s the democratization of health.",
+      "key": "wired_timcook35",
+      "duration": 16.02
+    },
+    {
+      "speaker": "Host",
+      "text": "If Apple devices analyze biometric data in real time, they could diagnose health conditions before doctors can. Are you exploring this?",
+      "key": "wired_timcook36",
+      "duration": 8.82
+    },
+    {
+      "speaker": "Guest",
+      "text": "We’re always looking into what’s possible. We have ongoing research, and while I’m not announcing anything today, I can say we’re committed to making advances in health. It’s an area we’ve put a lot of time and effort into.",
+      "key": "wired_timcook37",
+      "duration": 13.956000000000001
+    },
+    {
+      "speaker": "Host",
+      "text": "Where do you see the future of the iPhone? Will there be an iPhone 30?",
+      "key": "wired_timcook38",
+      "duration": 4.9799999999999995
+    },
+    {
+      "speaker": "Guest",
+      "text": "The iPhone has a long life ahead. There will continue to be innovation, and as long as we can improve people’s experiences, we’ll keep iterating. The iPhone 16 is worlds apart from the original iPhone, and we’ll keep pushing.",
+      "key": "wired_timcook39",
+      "duration": 14.412
+    },
+    {
+      "speaker": "Host",
+      "text": "Apple Park is seven years old now. Has anything surprised you about how it turned out?",
+      "key": "wired_timcook40",
+      "duration": 5.7
+    },
+    {
+      "speaker": "Guest",
+      "text": "I’m constantly impressed by how it fosters collaboration. It was designed with that in mind, and it’s exceeded my expectations. It also serves as a connection to Steve—he’s always present here, whether it’s in the theater named after him or just in the spirit of the campus.",
+      "key": "wired_timcook41",
+      "duration": 17.364
+    },
+    {
+      "speaker": "Host",
+      "text": "You’ve moved to pre-recorded keynotes instead of live presentations. Will you ever go back to live events?",
+      "key": "wired_timcook42",
+      "duration": 6.9959999999999996
+    },
+    {
+      "speaker": "Guest",
+      "text": "During Covid, we found that we could reach a much larger audience with pre-recorded videos. While I do miss the energy of a live keynote, the primary focus is engaging as many people as possible.",
+      "key": "wired_timcook43",
+      "duration": 12.516
+    },
+    {
+      "speaker": "Host",
+      "text": "With lawsuits against Apple and other tech giants, do you feel there’s been a change in how the public views Big Tech?",
+      "key": "wired_timcook44",
+      "duration": 7.74
+    },
+    {
+      "speaker": "Guest",
+      "text": "I think each company should be evaluated individually. When it comes to Apple, we always put ourselves in the shoes of the user—thinking about what’s best for their privacy and security. That’s our story, and we’re prepared to tell it in court if needed.",
+      "key": "wired_timcook45",
+      "duration": 16.14
+    },
+    {
+      "speaker": "Host",
+      "text": "How long do you see yourself continuing as CEO of Apple?",
+      "key": "wired_timcook46",
+      "duration": 3.876
+    },
+    {
+      "speaker": "Guest",
+      "text": "I get asked that more often now, as my hair turns gray. I love this place. It’s been the privilege of my life to be here, and I’ll keep going until I feel it’s time to move on. But Apple has been such a big part of my life, it’s hard to imagine what comes next.",
+      "key": "wired_timcook47",
+      "duration": 16.5
+    },
+    {
+      "speaker": "Host",
+      "text": "You often leave questions about your legacy to others, but what do you think Apple’s legacy will be?",
+      "key": "wired_timcook48",
+      "duration": 7.088
+    },
+    {
+      "speaker": "Guest",
+      "text": "I think Apple will be remembered for delivering great products that genuinely improve people’s lives. We hear from users about how Apple products help them, whether it’s staying connected during a natural disaster or tracking their health. That’s what we do, and that’s the legacy I hope we leave.",
+      "key": "wired_timcook49",
+      "duration": 18.924
+    }
+  ]
+}
