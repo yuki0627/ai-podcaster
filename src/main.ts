@@ -31,7 +31,11 @@ const text2speech = async (input: { text: string; key: string, speaker: string, 
     console.log("skpped", input.key, input.speaker, tts);
   } else {
     console.log("generating", input.key, input.speaker, tts);
-    await tts_openAI(filePath, input.text, input.key, input.speaker);
+    if (tts === "openAI") {
+      await tts_openAI(filePath, input.text, input.key, input.speaker);
+    } else {
+      throw Error("Invalid TTS: " + tts);
+    }
   }
   return true;
 };
