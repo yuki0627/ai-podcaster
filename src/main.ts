@@ -4,27 +4,12 @@ import OpenAI from "openai";
 import dotenv from "dotenv";
 import { GraphAI } from "graphai";
 import * as agents from "@graphai/agents";
-import { fileWriteAgent } from "@graphai/vanilla_node_agents";
+import { ttsNijivoiceAgent } from "@graphai/tts_nijivoice_agent";
+import { ttsOpenaiAgent } from "@graphai/tts_openai_agent";
+import { fileWriteAgent, pathUtilsAgent } from "@graphai/vanilla_node_agents";
 import ffmpeg from "fluent-ffmpeg";
 
 dotenv.config();
-
-const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
-});
-const nijovoiceApiKey = process.env.NIJIVOICE_API_KEY ?? "";
-
-const tts_openAI = async (filePath: string, input: string, key: string, speaker: string) => {
-  const response = await openai.audio.speech.create({
-    model: "tts-1",
-    voice: (speaker === "Host") ? "shimmer" : "echo",
-    // response_format: "aac",
-    input,
-  });
-  const buffer = Buffer.from(await response.arrayBuffer());
-  //  console.log(filePath, buffer);
-  return { buffer, filePath };
-};
 
 const tts_nijivoice = async (filePath: string, input: string, key: string, speaker: string) => {
   const voiceId = (speaker === "Host") ? "b9277ce3-ba1c-4f6f-9a65-c05ca102ded0" : "bc06c63f-fef6-43b6-92f7-67f919bd5dae";
@@ -177,23 +162,69 @@ const graph_data = {
       inputs: { rows: ":jsonData.script", script: ":jsonData" },
       graph: {
         nodes: {
+          path: {
+            agent: "pathUtilsAgent",
+            params: {
+              method: "resolve",
+            },
+            inputs: {
+              dirs: ["scratchpad", "${:row.key}.mp3"], 
+            },
+          },
+          isNiji: {
+            agent: "compareAgent",
+            inputs: {
+              array: [
+                ":script.tts",
+                "==",
+                "nijivoice",
+              ]
+            },
+          },
           b: {
-            agent: text2speech,
+            unless: ":isNiji",
+            agent: "ttsOpenaiAgent",
             inputs: {
               text: ":row.text",
-              key: ":row.key",
-              speaker: ":row.speaker",
-              script: ":script",
             },
-            console: { after: true},
           },
           w: {
-            console: { after: true, before: true},
             agent: "fileWriteAgent",
             priority: 1,
             inputs: {
-              file: ":b.filePath",
+              file: ":path.path",
               text: ":b.buffer",
+            },
+            params: {
+              baseDir: "/",
+            },
+          },
+          v: {
+            agent: "compareAgent",
+            inputs: {
+              array: [
+                ":script.speaker",
+                "==",
+                "Host",
+              ]
+            },
+            // TODO
+            // const voiceId = (speaker === "Host") ? "b9277ce3-ba1c-4f6f-9a65-c05ca102ded0" : "bc06c63f-fef6-43b6-92f7-67f919bd5dae";
+          },
+          b2: {
+            if: ":isNiji",
+            agent: "ttsNijivoiceAgent",
+            inputs: {
+              text: ":row.text",
+              voiceId: "b9277ce3-ba1c-4f6f-9a65-c05ca102ded0",
+            },
+          },
+          w2: {
+            agent: "fileWriteAgent",
+            priority: 1,
+            inputs: {
+              file: ":path.path",
+              text: ":b2.buffer",
             },
             params: {
               baseDir: "/",
@@ -254,7 +285,7 @@ const main = async () => {
     element["key"] = name + index;
   });
 
-  const graph = new GraphAI(graph_data, { ...agents, fileWriteAgent });
+  const graph = new GraphAI(graph_data, { ...agents, fileWriteAgent, pathUtilsAgent, ttsOpenaiAgent, ttsNijivoiceAgent });
   graph.injectValue("jsonData", jsonData);
   graph.injectValue("name", name);
   const results = await graph.run();
