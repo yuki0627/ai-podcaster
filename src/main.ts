@@ -26,7 +26,8 @@ const tts_openAI = async (filePath: string, input: string, key: string, speaker:
 };
 
 const tts_nijivoice = async (filePath: string, input: string, key: string, speaker: string) => {
-  const url = 'https://api.nijivoice.com/api/platform/v1/voice-actors/id/generate-voice';
+  const voiceId = "90031163-c497-44f3-a8a6-e45e4d0cb8f6";
+  const url = `https://api.nijivoice.com/api/platform/v1/voice-actors/${voiceId}/generate-voice`;
   const options = {
     method: 'POST',
     headers: {
@@ -36,15 +37,23 @@ const tts_nijivoice = async (filePath: string, input: string, key: string, speak
     },
     body: JSON.stringify({
       format: 'mp3',
-      speed: 1.0,
+      speed: '1.0',
       script: input
     })
   };
-  
-  fetch(url, options)
-    .then(res => res.json())
-    .then(json => console.log(json))
-    .catch(err => console.error(err));
+
+  try {
+    const res = await fetch(url, options)
+    const json: any = await res.json();
+    console.log(json)
+    const res2 = await fetch(json.generatedVoice.audioFileDownloadUrl);
+    // Get the MP3 data as a buffer
+    const buffer = Buffer.from(await res2.arrayBuffer());
+    console.log(`sound generated: ${key}, ${buffer.length}`);
+    await fs.promises.writeFile(filePath, buffer);
+  } catch(e) {
+    console.error(e);
+  }
 };
 
 const text2speech = async (input: { text: string; key: string, speaker: string, script: any }) => {
