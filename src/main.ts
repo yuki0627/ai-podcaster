@@ -11,6 +11,7 @@ dotenv.config();
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
+const nijovoiceApiKey = process.env.NIJIVOICE_API_KEY ?? "";
 
 const tts_openAI = async (filePath: string, input: string, key: string, speaker: string) => {
   const response = await openai.audio.speech.create({
@@ -25,15 +26,25 @@ const tts_openAI = async (filePath: string, input: string, key: string, speaker:
 };
 
 const tts_nijivoice = async (filePath: string, input: string, key: string, speaker: string) => {
-  const response = await openai.audio.speech.create({
-    model: "tts-1",
-    voice: (speaker === "Host") ? "shimmer" : "echo",
-    // response_format: "aac",
-    input,
-  });
-  const buffer = Buffer.from(await response.arrayBuffer());
-  console.log(`sound generated: ${key}, ${buffer.length}`);
-  await fs.promises.writeFile(filePath, buffer);
+  const url = 'https://api.nijivoice.com/api/platform/v1/voice-actors/id/generate-voice';
+  const options = {
+    method: 'POST',
+    headers: {
+      "x-api-key": nijovoiceApiKey,
+      accept: 'application/json',
+      'content-type': 'application/json'
+    },
+    body: JSON.stringify({
+      format: 'mp3',
+      speed: 1.0,
+      script: input
+    })
+  };
+  
+  fetch(url, options)
+    .then(res => res.json())
+    .then(json => console.log(json))
+    .catch(err => console.error(err));
 };
 
 const text2speech = async (input: { text: string; key: string, speaker: string, script: any }) => {
