@@ -12,7 +12,7 @@ const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
 
-const sound = async (filePath: string, input: string, key: string, speaker: string) => {
+const tts_openAI = async (filePath: string, input: string, key: string, speaker: string) => {
   const response = await openai.audio.speech.create({
     model: "tts-1",
     voice: (speaker === "Host") ? "shimmer" : "echo",
@@ -24,13 +24,14 @@ const sound = async (filePath: string, input: string, key: string, speaker: stri
   await fs.promises.writeFile(filePath, buffer);
 };
 
-const text2speech = async (input: { text: string; key: string, speaker: string }) => {
+const text2speech = async (input: { text: string; key: string, speaker: string, script: any }) => {
   const filePath = path.resolve("./scratchpad/" + input.key + ".mp3");
+  const tts = input.script.tts ?? "openAI";
   if (fs.existsSync(filePath)) {
-    console.log("skpped", input.key, input.speaker);
+    console.log("skpped", input.key, input.speaker, tts);
   } else {
-    console.log("generating", input.key, input.speaker);
-    await sound(filePath, input.text, input.key, input.speaker);
+    console.log("generating", input.key, input.speaker, tts);
+    await tts_openAI(filePath, input.text, input.key, input.speaker);
   }
   return true;
 };
@@ -132,7 +133,7 @@ const graph_data = {
     },
     map: {
       agent: "mapAgent",
-      inputs: { rows: ":jsonData.script" },
+      inputs: { rows: ":jsonData.script", script: ":jsonData" },
       graph: {
         nodes: {
           b: {
@@ -140,7 +141,8 @@ const graph_data = {
             inputs: {
               text: ":row.text",
               key: ":row.key",
-              speaker: ":row.speaker"
+              speaker: ":row.speaker",
+              script: ":script",
             },
           },
         },
