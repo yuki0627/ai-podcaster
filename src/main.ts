@@ -1,8 +1,9 @@
+import fsPromise from "fs/promises";
 import fs from "fs";
 import path from "path";
 import OpenAI from "openai";
 import dotenv from "dotenv";
-import { GraphAI } from "graphai";
+import { GraphAI, AgentFilterFunction } from "graphai";
 import * as agents from "@graphai/agents";
 import { ttsNijivoiceAgent } from "@graphai/tts_nijivoice_agent";
 import { ttsOpenaiAgent } from "@graphai/tts_openai_agent";
@@ -136,6 +137,7 @@ const graph_data = {
             agent: "ttsOpenaiAgent",
             inputs: {
               text: ":row.text",
+              file: ":path.path",
             },
           },
           w: {
@@ -143,10 +145,7 @@ const graph_data = {
             priority: 1,
             inputs: {
               file: ":path.path",
-              text: ":b.buffer",
-            },
-            params: {
-              baseDir: "/",
+              buffer: ":b.buffer",
             },
           },
           v: {
@@ -166,6 +165,7 @@ const graph_data = {
             if: ":isNiji",
             agent: "ttsNijivoiceAgent",
             inputs: {
+              file: ":path.path",
               text: ":row.text",
               voiceId: ":v",
             },
@@ -175,10 +175,7 @@ const graph_data = {
             priority: 1,
             inputs: {
               file: ":path.path",
-              text: ":b2.buffer",
-            },
-            params: {
-              baseDir: "/",
+              buffer: ":b2.buffer",
             },
           },
         },
@@ -225,6 +222,29 @@ const graph_data = {
   },
 };
 
+
+const fileCacheAgentFilter: AgentFilterFunction = async (context, next) => {
+  const { namedInputs } = context;
+  const { file } = namedInputs;
+  try {
+    await fsPromise.access(file);
+    console.log("cache hit: " + file);
+    return true;
+  } catch (e) {
+    console.log("no cache: " + file);
+    return next(context)
+  }  
+  
+};
+
+const agentFilters = [
+  {
+    name: "fileCacheAgentFilter",
+    agent: fileCacheAgentFilter,
+    nodeIds: ["b", "w", "b2", "w2"],
+  },
+];
+
 const main = async () => {
   const arg2 = process.argv[2];
   const scriptPath = path.resolve(arg2);
@@ -236,7 +256,7 @@ const main = async () => {
     element["key"] = name + index;
   });
 
-  const graph = new GraphAI(graph_data, { ...agents, fileWriteAgent, pathUtilsAgent, ttsOpenaiAgent, ttsNijivoiceAgent });
+  const graph = new GraphAI(graph_data, { ...agents, fileWriteAgent, pathUtilsAgent, ttsOpenaiAgent, ttsNijivoiceAgent }, {agentFilters});
   graph.injectValue("jsonData", jsonData);
   graph.injectValue("name", name);
   const results = await graph.run();
