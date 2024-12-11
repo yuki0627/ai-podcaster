@@ -46,6 +46,11 @@
   resolved "https://registry.yarnpkg.com/@graphai/agent_utils/-/agent_utils-0.0.2.tgz#c04f9bcbb07a78710e63362ec84008b7153adab4"
   integrity sha512-pAB45O/YQ/vQQoIRNtlgWGTVNn1f1DrpzRj7WzdsAtTOim7gkr6Mjp5QR9Ue+U/xVdgNRDRws6qLm1CYin/VWw==
 
+"@graphai/agent_utils@0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@graphai/agent_utils/-/agent_utils-0.0.3.tgz#95dff049247c4ad0da20443062654fb1826061f7"
+  integrity sha512-dybbO54rI9E1XfNaHhxLT9xES7G9KC2mXyDYaKvvcDF3bSF6/870CzQb3AOxqzy6WadkKPO+oFye85RM8uNaHg==
+
 "@graphai/agents@^0.1.0":
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/@graphai/agents/-/agents-0.1.0.tgz#85ca71e4c364ac0022b042499ee6ea65579170fa"
@@ -162,6 +167,13 @@
   integrity sha512-yR2Jothiir+2Sv4lzjvFcgsYIQz2n2EqE7G1C0pPNh9jiN0KTViDA2iZMv7wwtLRhCB98qF6wZI0tgq0izmGQA==
   dependencies:
     "@graphai/agent_utils" "0.0.2"
+
+"@graphai/vanilla_node_agents@^0.2.5":
+  version "0.2.5"
+  resolved "https://registry.yarnpkg.com/@graphai/vanilla_node_agents/-/vanilla_node_agents-0.2.5.tgz#69c53bddf043a687c71773ee4ec5a28a93c54072"
+  integrity sha512-w4j1Y0yYjK+sk7+Et4TR8pX/MdVlUoVF7i0+yo8M+9pP29zRDG7beGlErOXnswRF2ObVPi3QlRsWpjoG7Q2dfQ==
+  dependencies:
+    "@graphai/agent_utils" "0.0.3"
 
 "@graphql-typed-document-node/core@^3.2.0":
   version "3.2.0"
