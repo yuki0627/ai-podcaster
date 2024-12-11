@@ -54,13 +54,12 @@ const combineFiles = async (inputs: { jsonData: any; name: string }) => {
   return outputFile;
 };
 
-const addMusic = async (inputs: {
-  voiceFile: string;
-  name: string;
-}) => {
+const addMusic = async (inputs: { voiceFile: string; name: string }) => {
   const { voiceFile, name } = inputs;
   const outputFile = path.resolve("./output/" + name + "_bgm.mp3");
-  const musicFile = path.resolve(process.env.PATH_BGM ?? "./music/StarsBeyondEx.mp3");
+  const musicFile = path.resolve(
+    process.env.PATH_BGM ?? "./music/StarsBeyondEx.mp3",
+  );
   ffmpeg.ffprobe(voiceFile, (err, metadata) => {
     if (err) {
       console.error("Error getting metadata: " + err.message);
@@ -119,17 +118,13 @@ const graph_data = {
               method: "resolve",
             },
             inputs: {
-              dirs: ["scratchpad", "${:row.key}.mp3"], 
+              dirs: ["scratchpad", "${:row.key}.mp3"],
             },
           },
           isNiji: {
             agent: "compareAgent",
             inputs: {
-              array: [
-                ":script.tts",
-                "==",
-                "nijivoice",
-              ]
+              array: [":script.tts", "==", "nijivoice"],
             },
           },
           b: {
@@ -151,14 +146,13 @@ const graph_data = {
           v: {
             agent: "compareAgent",
             inputs: {
-              array: [
-                ":row.speaker",
-                "==",
-                "Host",
-              ]
+              array: [":row.speaker", "==", "Host"],
             },
             params: {
-              value: {true: "b9277ce3-ba1c-4f6f-9a65-c05ca102ded0", false: "bc06c63f-fef6-43b6-92f7-67f919bd5dae" }
+              value: {
+                true: "b9277ce3-ba1c-4f6f-9a65-c05ca102ded0",
+                false: "bc06c63f-fef6-43b6-92f7-67f919bd5dae",
+              },
             },
           },
           b2: {
@@ -197,15 +191,16 @@ const graph_data = {
     title: {
       agent: "copyAgent",
       params: {
-        namedKey: "title"
+        namedKey: "title",
       },
       console: {
-        after: true
+        after: true,
       },
       inputs: {
-        title: "\n${:jsonData.title}\n\n${:jsonData.description}\nReference: ${:jsonData.reference}\n",
-        waitFor: ":addMusic"
-      }
+        title:
+          "\n${:jsonData.title}\n\n${:jsonData.description}\nReference: ${:jsonData.reference}\n",
+        waitFor: ":addMusic",
+      },
     },
     /*
     translate: {
@@ -222,7 +217,6 @@ const graph_data = {
   },
 };
 
-
 const fileCacheAgentFilter: AgentFilterFunction = async (context, next) => {
   const { namedInputs } = context;
   const { file } = namedInputs;
@@ -232,9 +226,8 @@ const fileCacheAgentFilter: AgentFilterFunction = async (context, next) => {
     return true;
   } catch (e) {
     console.log("no cache: " + file);
-    return next(context)
-  }  
-  
+    return next(context);
+  }
 };
 
 const agentFilters = [
@@ -256,7 +249,17 @@ const main = async () => {
     element["key"] = name + index;
   });
 
-  const graph = new GraphAI(graph_data, { ...agents, fileWriteAgent, pathUtilsAgent, ttsOpenaiAgent, ttsNijivoiceAgent }, {agentFilters});
+  const graph = new GraphAI(
+    graph_data,
+    {
+      ...agents,
+      fileWriteAgent,
+      pathUtilsAgent,
+      ttsOpenaiAgent,
+      ttsNijivoiceAgent,
+    },
+    { agentFilters },
+  );
   graph.injectValue("jsonData", jsonData);
   graph.injectValue("name", name);
   const results = await graph.run();
