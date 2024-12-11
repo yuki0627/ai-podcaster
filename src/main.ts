@@ -24,6 +24,18 @@ const tts_openAI = async (filePath: string, input: string, key: string, speaker:
   await fs.promises.writeFile(filePath, buffer);
 };
 
+const tts_nijivoice = async (filePath: string, input: string, key: string, speaker: string) => {
+  const response = await openai.audio.speech.create({
+    model: "tts-1",
+    voice: (speaker === "Host") ? "shimmer" : "echo",
+    // response_format: "aac",
+    input,
+  });
+  const buffer = Buffer.from(await response.arrayBuffer());
+  console.log(`sound generated: ${key}, ${buffer.length}`);
+  await fs.promises.writeFile(filePath, buffer);
+};
+
 const text2speech = async (input: { text: string; key: string, speaker: string, script: any }) => {
   const filePath = path.resolve("./scratchpad/" + input.key + ".mp3");
   const tts = input.script.tts ?? "openAI";
@@ -33,6 +45,8 @@ const text2speech = async (input: { text: string; key: string, speaker: string, 
     console.log("generating", input.key, input.speaker, tts);
     if (tts === "openAI") {
       await tts_openAI(filePath, input.text, input.key, input.speaker);
+    } else if (tts === "nijivoice") {
+        await tts_nijivoice(filePath, input.text, input.key, input.speaker);
     } else {
       throw Error("Invalid TTS: " + tts);
     }
