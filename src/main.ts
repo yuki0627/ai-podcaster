@@ -11,56 +11,6 @@ import ffmpeg from "fluent-ffmpeg";
 
 dotenv.config();
 
-const tts_nijivoice = async (filePath: string, input: string, key: string, speaker: string) => {
-  const voiceId = (speaker === "Host") ? "b9277ce3-ba1c-4f6f-9a65-c05ca102ded0" : "bc06c63f-fef6-43b6-92f7-67f919bd5dae";
-  const url = `https://api.nijivoice.com/api/platform/v1/voice-actors/${voiceId}/generate-voice`;
-  const options = {
-    method: 'POST',
-    headers: {
-      "x-api-key": nijovoiceApiKey,
-      accept: 'application/json',
-      'content-type': 'application/json'
-    },
-    body: JSON.stringify({
-      format: 'mp3',
-      speed: '1.0',
-      script: input
-    })
-  };
-
-  try {
-    const res = await fetch(url, options)
-    const json: any = await res.json();
-    //console.log(json)
-    const res2 = await fetch(json.generatedVoice.audioFileDownloadUrl);
-    // Get the MP3 data as a buffer
-    const buffer = Buffer.from(await res2.arrayBuffer());
-    console.log(`sound generated: ${key}, ${buffer.length}`);
-    return { buffer, filePath };
-    // await fs.promises.writeFile(filePath, buffer);
-  } catch(e) {
-    console.error(e);
-  }
-};
-
-const text2speech = async (input: { text: string; key: string, speaker: string, script: any }) => {
-  const filePath = path.resolve("./scratchpad/" + input.key + ".mp3");
-  const tts = input.script.tts ?? "openAI";
-  if (fs.existsSync(filePath)) {
-    console.log("skpped", input.key, input.speaker, tts);
-  } else {
-    console.log("generating", input.key, input.speaker, tts);
-    if (tts === "openAI") {
-      return await tts_openAI(filePath, input.text, input.key, input.speaker);
-    } else if (tts === "nijivoice") {
-      return await tts_nijivoice(filePath, input.text, input.key, input.speaker);
-    } else {
-      throw Error("Invalid TTS: " + tts);
-    }
-  }
-  return true;
-};
-
 const combineFiles = async (inputs: { jsonData: any; name: string }) => {
   const { name, jsonData } = inputs;
   const outputFile = path.resolve("./output/" + name + ".mp3");
@@ -203,20 +153,21 @@ const graph_data = {
             agent: "compareAgent",
             inputs: {
               array: [
-                ":script.speaker",
+                ":row.speaker",
                 "==",
                 "Host",
               ]
             },
-            // TODO
-            // const voiceId = (speaker === "Host") ? "b9277ce3-ba1c-4f6f-9a65-c05ca102ded0" : "bc06c63f-fef6-43b6-92f7-67f919bd5dae";
+            params: {
+              value: {true: "b9277ce3-ba1c-4f6f-9a65-c05ca102ded0", false: "bc06c63f-fef6-43b6-92f7-67f919bd5dae" }
+            },
           },
           b2: {
             if: ":isNiji",
             agent: "ttsNijivoiceAgent",
             inputs: {
               text: ":row.text",
-              voiceId: "b9277ce3-ba1c-4f6f-9a65-c05ca102ded0",
+              voiceId: ":v",
             },
           },
           w2: {

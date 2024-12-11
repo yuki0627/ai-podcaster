@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/snakajima/ai-podcaster#readme",
   "dependencies": {
-    "@graphai/agents": "^0.2.2",
+    "@graphai/agents": "^0.2.3",
     "@graphai/tts_nijivoice_agent": "^0.0.1",
     "@graphai/tts_openai_agent": "^0.0.1",
     "@graphai/vanilla_node_agents": "^0.2.6",
