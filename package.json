@@ -19,6 +19,7 @@
   "homepage": "https://github.com/snakajima/ai-podcaster#readme",
   "dependencies": {
     "@graphai/agents": "^0.1.0",
+    "@graphai/vanilla_node_agents": "^0.2.5",
     "@types/fluent-ffmpeg": "^2.1.26",
     "@types/sharp": "^0.32.0",
     "dotenv": "^16.4.5",

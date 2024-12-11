@@ -4,6 +4,7 @@ import OpenAI from "openai";
 import dotenv from "dotenv";
 import { GraphAI } from "graphai";
 import * as agents from "@graphai/agents";
+import { fileWriteAgent } from "@graphai/vanilla_node_agents";
 import ffmpeg from "fluent-ffmpeg";
 
 dotenv.config();
@@ -21,8 +22,8 @@ const tts_openAI = async (filePath: string, input: string, key: string, speaker:
     input,
   });
   const buffer = Buffer.from(await response.arrayBuffer());
-  console.log(`sound generated: ${key}, ${buffer.length}`);
-  await fs.promises.writeFile(filePath, buffer);
+  //  console.log(filePath, buffer);
+  return { buffer, filePath };
 };
 
 const tts_nijivoice = async (filePath: string, input: string, key: string, speaker: string) => {
@@ -50,7 +51,8 @@ const tts_nijivoice = async (filePath: string, input: string, key: string, speak
     // Get the MP3 data as a buffer
     const buffer = Buffer.from(await res2.arrayBuffer());
     console.log(`sound generated: ${key}, ${buffer.length}`);
-    await fs.promises.writeFile(filePath, buffer);
+    return { buffer, filePath };
+    // await fs.promises.writeFile(filePath, buffer);
   } catch(e) {
     console.error(e);
   }
@@ -64,9 +66,9 @@ const text2speech = async (input: { text: string; key: string, speaker: string, 
   } else {
     console.log("generating", input.key, input.speaker, tts);
     if (tts === "openAI") {
-      await tts_openAI(filePath, input.text, input.key, input.speaker);
+      return await tts_openAI(filePath, input.text, input.key, input.speaker);
     } else if (tts === "nijivoice") {
-        await tts_nijivoice(filePath, input.text, input.key, input.speaker);
+      return await tts_nijivoice(filePath, input.text, input.key, input.speaker);
     } else {
       throw Error("Invalid TTS: " + tts);
     }
@@ -183,6 +185,19 @@ const graph_data = {
               speaker: ":row.speaker",
               script: ":script",
             },
+            console: { after: true},
+          },
+          w: {
+            console: { after: true, before: true},
+            agent: "fileWriteAgent",
+            priority: 1,
+            inputs: {
+              file: ":b.filePath",
+              text: ":b.buffer",
+            },
+            params: {
+              baseDir: "/",
+            },
           },
         },
       },
@@ -239,7 +254,7 @@ const main = async () => {
     element["key"] = name + index;
   });
 
-  const graph = new GraphAI(graph_data, { ...agents });
+  const graph = new GraphAI(graph_data, { ...agents, fileWriteAgent });
   graph.injectValue("jsonData", jsonData);
   graph.injectValue("name", name);
   const results = await graph.run();
