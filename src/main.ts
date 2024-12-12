@@ -1,83 +1,19 @@
+import fsPromise from "fs/promises";
 import fs from "fs";
 import path from "path";
 import OpenAI from "openai";
 import dotenv from "dotenv";
-import { GraphAI } from "graphai";
+import { GraphAI, AgentFilterFunction } from "graphai";
 import * as agents from "@graphai/agents";
-import { fileWriteAgent } from "@graphai/vanilla_node_agents";
+import { ttsNijivoiceAgent } from "@graphai/tts_nijivoice_agent";
+import { ttsOpenaiAgent } from "@graphai/tts_openai_agent";
+import { fileWriteAgent, pathUtilsAgent } from "@graphai/vanilla_node_agents";
 import ffmpeg from "fluent-ffmpeg";
 
 dotenv.config();
 
-const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
-});
-const nijovoiceApiKey = process.env.NIJIVOICE_API_KEY ?? "";
-
-const tts_openAI = async (filePath: string, input: string, key: string, speaker: string) => {
-  const response = await openai.audio.speech.create({
-    model: "tts-1",
-    voice: (speaker === "Host") ? "shimmer" : "echo",
-    // response_format: "aac",
-    input,
-  });
-  const buffer = Buffer.from(await response.arrayBuffer());
-  //  console.log(filePath, buffer);
-  return { buffer, filePath };
-};
-
 const rion_takanashi_voice = "b9277ce3-ba1c-4f6f-9a65-c05ca102ded0" // たかなし りおん
 const ben_carter_voice = "bc06c63f-fef6-43b6-92f7-67f919bd5dae" // ベン・カーター
-
-const tts_nijivoice = async (filePath: string, input: string, key: string, speaker: string) => {
-  const voiceId = (speaker === "Host") ? rion_takanashi_voice : ben_carter_voice;
-  const url = `https://api.nijivoice.com/api/platform/v1/voice-actors/${voiceId}/generate-voice`;
-  const options = {
-    method: 'POST',
-    headers: {
-      "x-api-key": nijovoiceApiKey,
-      accept: 'application/json',
-      'content-type': 'application/json'
-    },
-    body: JSON.stringify({
-      format: 'mp3',
-      speed: '1.0',
-      script: input
-    })
-  };
-
-  try {
-    const res = await fetch(url, options)
-    const json: any = await res.json();
-    //console.log(json)
-    const res2 = await fetch(json.generatedVoice.audioFileDownloadUrl);
-    // Get the MP3 data as a buffer
-    const buffer = Buffer.from(await res2.arrayBuffer());
-    console.log(`sound generated: ${key}, ${buffer.length}`);
-    return { buffer, filePath };
-    // await fs.promises.writeFile(filePath, buffer);
-  } catch(e) {
-    console.error(e);
-  }
-};
-
-const text2speech = async (input: { text: string; key: string, speaker: string, script: any }) => {
-  const filePath = path.resolve("./scratchpad/" + input.key + ".mp3");
-  const tts = input.script.tts ?? "openAI";
-  if (fs.existsSync(filePath)) {
-    console.log("skpped", input.key, input.speaker, tts);
-  } else {
-    console.log("generating", input.key, input.speaker, tts);
-    if (tts === "openAI") {
-      return await tts_openAI(filePath, input.text, input.key, input.speaker);
-    } else if (tts === "nijivoice") {
-      return await tts_nijivoice(filePath, input.text, input.key, input.speaker);
-    } else {
-      throw Error("Invalid TTS: " + tts);
-    }
-  }
-  return true;
-};
 
 const combineFiles = async (inputs: { jsonData: any; name: string }) => {
   const { name, jsonData } = inputs;
@@ -121,13 +57,12 @@ const combineFiles = async (inputs: { jsonData: any; name: string }) => {
   return outputFile;
 };
 
-const addMusic = async (inputs: {
-  voiceFile: string;
-  name: string;
-}) => {
+const addMusic = async (inputs: { voiceFile: string; name: string }) => {
   const { voiceFile, name } = inputs;
   const outputFile = path.resolve("./output/" + name + "_bgm.mp3");
-  const musicFile = path.resolve(process.env.PATH_BGM ?? "./music/StarsBeyondEx.mp3");
+  const musicFile = path.resolve(
+    process.env.PATH_BGM ?? "./music/StarsBeyondEx.mp3",
+  );
   ffmpeg.ffprobe(voiceFile, (err, metadata) => {
     if (err) {
       console.error("Error getting metadata: " + err.message);
@@ -180,26 +115,64 @@ const graph_data = {
       inputs: { rows: ":jsonData.script", script: ":jsonData" },
       graph: {
         nodes: {
+          path: {
+            agent: "pathUtilsAgent",
+            params: {
+              method: "resolve",
+            },
+            inputs: {
+              dirs: ["scratchpad", "${:row.key}.mp3"],
+            },
+          },
+          isNiji: {
+            agent: "compareAgent",
+            inputs: {
+              array: [":script.tts", "==", "nijivoice"],
+            },
+          },
           b: {
-            agent: text2speech,
+            unless: ":isNiji",
+            agent: "ttsOpenaiAgent",
             inputs: {
               text: ":row.text",
-              key: ":row.key",
-              speaker: ":row.speaker",
-              script: ":script",
+              file: ":path.path",
             },
-            console: { after: true},
           },
           w: {
-            console: { after: true, before: true},
             agent: "fileWriteAgent",
             priority: 1,
             inputs: {
-              file: ":b.filePath",
-              text: ":b.buffer",
+              file: ":path.path",
+              buffer: ":b.buffer",
+            },
+          },
+          v: {
+            agent: "compareAgent",
+            inputs: {
+              array: [":row.speaker", "==", "Host"],
             },
             params: {
-              baseDir: "/",
+              value: {
+                true: rion_takanashi_voice,
+                false: ben_carter_voice,
+              },
+            },
+          },
+          b2: {
+            if: ":isNiji",
+            agent: "ttsNijivoiceAgent",
+            inputs: {
+              file: ":path.path",
+              text: ":row.text",
+              voiceId: ":v",
+            },
+          },
+          w2: {
+            agent: "fileWriteAgent",
+            priority: 1,
+            inputs: {
+              file: ":path.path",
+              buffer: ":b2.buffer",
             },
           },
         },
@@ -221,15 +194,16 @@ const graph_data = {
     title: {
       agent: "copyAgent",
       params: {
-        namedKey: "title"
+        namedKey: "title",
       },
       console: {
-        after: true
+        after: true,
       },
       inputs: {
-        title: "\n${:jsonData.title}\n\n${:jsonData.description}\nReference: ${:jsonData.reference}\n",
-        waitFor: ":addMusic"
-      }
+        title:
+          "\n${:jsonData.title}\n\n${:jsonData.description}\nReference: ${:jsonData.reference}\n",
+        waitFor: ":addMusic",
+      },
     },
     /*
     translate: {
@@ -246,6 +220,27 @@ const graph_data = {
   },
 };
 
+const fileCacheAgentFilter: AgentFilterFunction = async (context, next) => {
+  const { namedInputs } = context;
+  const { file } = namedInputs;
+  try {
+    await fsPromise.access(file);
+    console.log("cache hit: " + file);
+    return true;
+  } catch (e) {
+    console.log("no cache: " + file);
+    return next(context);
+  }
+};
+
+const agentFilters = [
+  {
+    name: "fileCacheAgentFilter",
+    agent: fileCacheAgentFilter,
+    nodeIds: ["b", "w", "b2", "w2"],
+  },
+];
+
 const main = async () => {
   const arg2 = process.argv[2];
   const scriptPath = path.resolve(arg2);
@@ -257,7 +252,17 @@ const main = async () => {
     element["key"] = name + index;
   });
 
-  const graph = new GraphAI(graph_data, { ...agents, fileWriteAgent });
+  const graph = new GraphAI(
+    graph_data,
+    {
+      ...agents,
+      fileWriteAgent,
+      pathUtilsAgent,
+      ttsOpenaiAgent,
+      ttsNijivoiceAgent,
+    },
+    { agentFilters },
+  );
   graph.injectValue("jsonData", jsonData);
   graph.injectValue("name", name);
   const results = await graph.run();
