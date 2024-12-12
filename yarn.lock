@@ -16,10 +16,10 @@
     node-fetch "^2.6.7"
     web-streams-polyfill "^3.2.1"
 
-"@anthropic-ai/sdk@^0.27.3":
-  version "0.27.3"
-  resolved "https://registry.yarnpkg.com/@anthropic-ai/sdk/-/sdk-0.27.3.tgz#592cdd873c85ffab9589ae6f2e250cbf150e1475"
-  integrity sha512-IjLt0gd3L4jlOfilxVXTifn42FnVffMgDC04RJK1KDZpmkBWLv0XC92MVVmkxrFZNS/7l3xWgP/I3nqtX1sQHw==
+"@anthropic-ai/sdk@^0.32.1":
+  version "0.32.1"
+  resolved "https://registry.yarnpkg.com/@anthropic-ai/sdk/-/sdk-0.32.1.tgz#d22c8ebae2adccc59d78fb416e89de337ff09014"
+  integrity sha512-U9JwTrDvdQ9iWuABVsMLj8nJVwAyQz6QXvgLsVhryhCEPkLsbcP/MXxm+jYcAwLoV8ESbaTTjnD4kuAFa+Hyjg==
   dependencies:
     "@types/node" "^18.11.18"
     "@types/node-fetch" "^2.6.4"
@@ -36,142 +36,145 @@
   dependencies:
     tslib "^2.4.0"
 
-"@google/generative-ai@^0.17.1":
-  version "0.17.2"
-  resolved "https://registry.yarnpkg.com/@google/generative-ai/-/generative-ai-0.17.2.tgz#c5d4456ba64cba950c644da7a75e3d4ce6c97623"
-  integrity sha512-TRKwCCqFe8JawNpvwk5FNcE9CQGUUjROiUxpH+uUR46sjLkgsR2v4+clu2axxnzEd9rnMpUNAJriUXeEu0zFBw==
-
-"@graphai/agent_utils@0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@graphai/agent_utils/-/agent_utils-0.0.2.tgz#c04f9bcbb07a78710e63362ec84008b7153adab4"
-  integrity sha512-pAB45O/YQ/vQQoIRNtlgWGTVNn1f1DrpzRj7WzdsAtTOim7gkr6Mjp5QR9Ue+U/xVdgNRDRws6qLm1CYin/VWw==
+"@google/generative-ai@^0.21.0":
+  version "0.21.0"
+  resolved "https://registry.yarnpkg.com/@google/generative-ai/-/generative-ai-0.21.0.tgz#a5011aab9e6082e706937b26ef23445933fa0d15"
+  integrity sha512-7XhUbtnlkSEZK15kN3t+tzIMxsbKm/dSkKBFalj+20NvPKe1kBY7mR2P7vuijEn+f06z5+A8bVGKO0v39cr6Wg==
 
 "@graphai/agent_utils@0.0.3":
   version "0.0.3"
   resolved "https://registry.yarnpkg.com/@graphai/agent_utils/-/agent_utils-0.0.3.tgz#95dff049247c4ad0da20443062654fb1826061f7"
   integrity sha512-dybbO54rI9E1XfNaHhxLT9xES7G9KC2mXyDYaKvvcDF3bSF6/870CzQb3AOxqzy6WadkKPO+oFye85RM8uNaHg==
 
-"@graphai/agents@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@graphai/agents/-/agents-0.1.0.tgz#85ca71e4c364ac0022b042499ee6ea65579170fa"
-  integrity sha512-kDfcIv1O/W0jWMGS6HMV45epmrpV41eZSAmYMQXAGOo5JuwAQCcb4IBNs4pn9P7grYEpvQ6owS5mNiy+iThdAQ==
+"@graphai/agents@^0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@graphai/agents/-/agents-0.2.3.tgz#343e627a6311d2ab1171338fd2a5524b8eb6cfd9"
+  integrity sha512-bMiLEaOYL1rel/qVa69DtY27kuDZufpbur17e9d8jbtDgtZrf+nCgbbDGBe718NZHegwTMTV/YhQ1KGLH0L27g==
   dependencies:
-    "@graphai/data_agents" "^0.0.3"
-    "@graphai/input_agents" "^0.1.0"
-    "@graphai/llm_agents" "^0.0.22"
-    "@graphai/service_agents" "^0.0.5"
-    "@graphai/sleeper_agents" "^0.1.0"
-    "@graphai/vanilla" "^0.1.1"
+    "@graphai/data_agents" "^0.2.0"
+    "@graphai/input_agents" "^0.2.0"
+    "@graphai/llm_agents" "^0.2.1"
+    "@graphai/service_agents" "^0.2.0"
+    "@graphai/sleeper_agents" "^0.2.0"
+    "@graphai/vanilla" "^0.2.6"
 
-"@graphai/anthropic_agent@^0.0.7":
-  version "0.0.7"
-  resolved "https://registry.yarnpkg.com/@graphai/anthropic_agent/-/anthropic_agent-0.0.7.tgz#1a137b2db64addc30e51869dc31a91a32014e69a"
-  integrity sha512-nmcw9aqCyYKEBUPu5x9pGwPbQ9nXgxaySinJj8P3xdI6m/Gk16uhz4GcPBsPKAB4DuDncAE3P9nf5wYwTm0eEQ==
+"@graphai/anthropic_agent@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@graphai/anthropic_agent/-/anthropic_agent-0.2.0.tgz#e58fbddb0fec436b9e66655f0435668b4bd5e67f"
+  integrity sha512-0iRngnVZNsUKN7sfcKkkDIz5XsMDSHN6G7LImP4q146r/sgzx4+lKhgRGqSuFJd3aAa7mCnhiabyttmACKJV+A==
   dependencies:
-    "@anthropic-ai/sdk" "^0.27.3"
+    "@anthropic-ai/sdk" "^0.32.1"
     "@graphai/llm_utils" "^0.0.2"
 
-"@graphai/data_agents@^0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@graphai/data_agents/-/data_agents-0.0.3.tgz#fe3af97e25c4f999922691348aa5c38e22a99dd3"
-  integrity sha512-zUHC3oYilzisOvmFLAbOHI3Paj6CgApCnIbYsvFNkIYdg2BLm1e8iYfJhiz8N8/E4owPDvKaugdWHJDD4/wbrg==
+"@graphai/data_agents@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@graphai/data_agents/-/data_agents-0.2.0.tgz#a5cc62c40b36953afd9ef84166d6bb367e67aef3"
+  integrity sha512-hMhI74ua763/WT5tfX8IgcKaBBPyUg8+qkanMG8jOPnnFF26LS2rDTwtXHBKtNEiL49NVkW/AFAFAuYHbLW/hQ==
   dependencies:
     deepmerge "^4.3.1"
 
-"@graphai/gemini_agent@^0.0.5":
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/@graphai/gemini_agent/-/gemini_agent-0.0.5.tgz#ba28ca0b239dd94c6d210d753d8839256a22dde9"
-  integrity sha512-t/cbJ5zet2Cz5et3hzs+60Gbf5HOaK+D3ZsS9KoCgqAc+QnRgQ7wDby5sTDlTZgBayBRHeIJMD8HS0G7sLvKGQ==
+"@graphai/gemini_agent@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@graphai/gemini_agent/-/gemini_agent-0.2.0.tgz#b44f3439d74821e6d64429bc71ad755bef69db58"
+  integrity sha512-UPlXSr3YXwilLCsN6d/bBiwyPydRz14U5wL+8lDeqdZWRywqHigz+iHtEqx3zLOZ6+c3knzPTKe3rePzWv4miw==
   dependencies:
-    "@google/generative-ai" "^0.17.1"
+    "@google/generative-ai" "^0.21.0"
     "@graphai/llm_utils" "^0.0.2"
 
-"@graphai/groq_agent@^0.0.8":
-  version "0.0.8"
-  resolved "https://registry.yarnpkg.com/@graphai/groq_agent/-/groq_agent-0.0.8.tgz#35419678b93725bb9db146e2418942d4ed0c1708"
-  integrity sha512-HfCNQYGKK9hHZACtt7wvKmHxPpvH1Sc6reWWEftEV1IzIRv8BKhou7IuAO8aPD1scp2RdIbwvfBCRgoDvgS0ug==
+"@graphai/groq_agent@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@graphai/groq_agent/-/groq_agent-0.2.0.tgz#1fc905566efdc7432c81bc9e38c1e7a8acb13aa7"
+  integrity sha512-17X/+aeK1HCwomfm3p+mnJg6YjepmvL9CNwgoBeutoampB1dT/YuoB65O6P2G22elvHpvY8CKb50iOjp6DYRDA==
   dependencies:
     "@graphai/llm_utils" "^0.0.2"
-    groq-sdk "^0.7.0"
+    groq-sdk "^0.9.0"
 
-"@graphai/input_agents@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@graphai/input_agents/-/input_agents-0.1.0.tgz#e2666dc079fe3bbcfdb0723ef2cb6e35e849e17c"
-  integrity sha512-YTwiBEM2T+92Zhh342RQfBo9fcqqfsc8eALFsRa0OQ4qOB53BG4cmEeWPJzg+Hcp12Z3nBgmTMWYnnm9+NPGjw==
+"@graphai/input_agents@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@graphai/input_agents/-/input_agents-0.2.0.tgz#15c99d95152a6d23b1a2b6b28104a8ee075663f2"
+  integrity sha512-iXg0CzyQpA2Jo17yUqe5nFWoOjzK/49/84OUGZjyn2Qp9kYoZvTTRGCrXGxwlrcFRqzITz0Y1g0h+Ume768Kcw==
   dependencies:
-    "@inquirer/prompts" "^5.0.0"
+    "@inquirer/prompts" "^7.0.1"
 
-"@graphai/llm_agents@^0.0.22":
-  version "0.0.22"
-  resolved "https://registry.yarnpkg.com/@graphai/llm_agents/-/llm_agents-0.0.22.tgz#241cc0ff71a6a209256338c984b896923f8bedd6"
-  integrity sha512-eRWhEsQlCLCQaSCgVgFB79OrZxaTT4xq7BU4GeIk5IYb+pOKfkp5UIrKTAa1fI/Rs+JdR3LczTT/ZsvLVu1GHQ==
+"@graphai/llm_agents@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@graphai/llm_agents/-/llm_agents-0.2.1.tgz#742116e63222dd4ab27a13eb9f9e8ce6ae51c9a0"
+  integrity sha512-H2dMb+uhgaPgHServ0PcSlAe2TwtakVAhY7Zzvx/F3h7tgO6BFi7NVy5FIun4ydHwMig6IqeNUF1jn5xRipSgQ==
   dependencies:
-    "@graphai/anthropic_agent" "^0.0.7"
-    "@graphai/gemini_agent" "^0.0.5"
-    "@graphai/groq_agent" "^0.0.8"
-    "@graphai/openai_agent" "^0.0.10"
-    "@graphai/replicate_agent" "^0.0.3"
-    "@graphai/slashgpt_agent" "^0.0.5"
-    tiktoken "^1.0.16"
+    "@graphai/anthropic_agent" "^0.2.0"
+    "@graphai/gemini_agent" "^0.2.0"
+    "@graphai/groq_agent" "^0.2.0"
+    "@graphai/openai_agent" "^0.2.0"
+    "@graphai/replicate_agent" "^0.2.0"
+    "@graphai/slashgpt_agent" "^0.2.0"
+    tiktoken "^1.0.17"
 
 "@graphai/llm_utils@^0.0.2":
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/@graphai/llm_utils/-/llm_utils-0.0.2.tgz#3923a225c2a5063f81bc2d89111a8a2f4bbdcb4f"
   integrity sha512-V8mFEgPjnyS6PVdiIo5ug4WExgTh4qJcqkuqJ2iyFkRJgWL+R4IF/MRxt0BVgVjpOwjeXjzYkRYhJZ6GD6xIdg==
 
-"@graphai/openai_agent@^0.0.10":
-  version "0.0.10"
-  resolved "https://registry.yarnpkg.com/@graphai/openai_agent/-/openai_agent-0.0.10.tgz#5b2f3bafd106f76659ba49e3b1f63b698ff3b517"
-  integrity sha512-bHCVvoMxamPDdoghoYTXy0xYssYh3LCDWYVct8HTFSSu7i5V7aKrtmdGyN/kBCyCcx1hErJ1pefwizNuv9wG7g==
+"@graphai/openai_agent@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@graphai/openai_agent/-/openai_agent-0.2.0.tgz#6d6625bb6a7c8c6689ea6f54d0658195667bb9a2"
+  integrity sha512-bd8caHFWrQzCKjcf33FYHX2yn+lsI2hx9WfBzLFRdUNs7uyYAKhZ+CyEPaF9H7emiyS8Mw2qH3+KBF1GcvHcKg==
   dependencies:
     "@graphai/llm_utils" "^0.0.2"
-    openai "^4.62.1"
-    tiktoken "^1.0.16"
+    openai "^4.75.0"
 
-"@graphai/replicate_agent@^0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@graphai/replicate_agent/-/replicate_agent-0.0.3.tgz#f0920aa87ab5ac3caaa2ce9f2851ee4d9ceaf421"
-  integrity sha512-3bR8FCT2ZiI6jQ0xkdWs3B4t55b/ROBHQ0LhEiFjFjq4hVoFmBsZunPhL2koDOpYECVeQwx7wiEq5RMqvEAiMw==
+"@graphai/replicate_agent@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@graphai/replicate_agent/-/replicate_agent-0.2.0.tgz#a0cd847debbfd9c6233e28875496fa8af5fc4925"
+  integrity sha512-Z2HJuO673iG3eUG/d04zCU3qb3VqlGkQ3wnaZiUUc5QUqBaBvDiK7wqOO4Dc1JzGmwN/dOQtYpePYH6LHWdN7A==
   dependencies:
     "@graphai/llm_utils" "^0.0.2"
-    replicate "^0.32.1"
-    tiktoken "^1.0.16"
+    replicate "^1.0.1"
 
-"@graphai/service_agents@^0.0.5":
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/@graphai/service_agents/-/service_agents-0.0.5.tgz#8ee9befaac9d8226d0099f800516c8e707ac9540"
-  integrity sha512-YoujLhUY8L0vQoYWe59OC1bmGXZyXEFSe3BPF/oHtddwmbCzaEdSIe243i7ubiiP+rtHjpYJp5QBTondJxFHYA==
+"@graphai/service_agents@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@graphai/service_agents/-/service_agents-0.2.0.tgz#774277ed53e57631666e8e38757de7599f9a7f4d"
+  integrity sha512-3qq+N9sx/GUMXAqKg4gLSsMrAc3j+xvqK2Qie788JsKAL9QDjxR0FGtmhgXFOmIY0lxiiYvSrrt6G14UFrP2lA==
   dependencies:
     "@types/xml2js" "^0.4.14"
     deepmerge "^4.3.1"
     wikipedia "^2.1.2"
     xml2js "^0.6.2"
 
-"@graphai/slashgpt_agent@^0.0.5":
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/@graphai/slashgpt_agent/-/slashgpt_agent-0.0.5.tgz#c29465cf02e2a5822e06f6e7a2878506df6e3e6b"
-  integrity sha512-QN0BEFrQttbssQTYTpQJNjj/kPBFkKAPvf74OeEIUl/Mf9S1zrC/daKUbVNZ0oAQlfn4jTfKfsFvD6SYFj0USg==
+"@graphai/slashgpt_agent@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@graphai/slashgpt_agent/-/slashgpt_agent-0.2.0.tgz#27eb27cee592bc924425315cf10e1f4ce1835cdc"
+  integrity sha512-rd7WyYiDhEFTAcFoLqcNh/AdZR8h9VnYB+GqbOe1yckGdA2Szd/2U/udi6IHRj6ns3LYbuTEkz2kPmaeUU9Vuw==
   dependencies:
     slashgpt "^0.1.4"
 
-"@graphai/sleeper_agents@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@graphai/sleeper_agents/-/sleeper_agents-0.1.0.tgz#f5d2f1fae3b798648acbeccec87bf94ea96951b0"
-  integrity sha512-XC5IdgYsPuKRQGCF7bIp5iYjKL55EujZ/gvwDFkioA7V1ld/QGVi7/pW0sIveg5sWgRfDcMpGKvRixtKbkcjHw==
+"@graphai/sleeper_agents@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@graphai/sleeper_agents/-/sleeper_agents-0.2.0.tgz#8d908d72573334340814c5d62a5118ec2d6c9c01"
+  integrity sha512-OMI4Jap5V+uFGLi8IU6Pa7J3B0We/6xEyWA/f7JeaSfmtQs8/yv8wTtJHO+3E6WcUeiCGuuFy6+3ffFXwcO91g==
   dependencies:
     deepmerge "^4.3.1"
 
-"@graphai/vanilla@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@graphai/vanilla/-/vanilla-0.1.1.tgz#cfe5999da13a83d09044747a5005ac5c3543283d"
-  integrity sha512-yR2Jothiir+2Sv4lzjvFcgsYIQz2n2EqE7G1C0pPNh9jiN0KTViDA2iZMv7wwtLRhCB98qF6wZI0tgq0izmGQA==
-  dependencies:
-    "@graphai/agent_utils" "0.0.2"
+"@graphai/tts_nijivoice_agent@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@graphai/tts_nijivoice_agent/-/tts_nijivoice_agent-0.0.1.tgz#24cd026739d3b6f7a6bd7dacf708379e097cc476"
+  integrity sha512-p4Zk4CTzQ5j7/8ScA+cLf7uTJgVwCYZaki/P06GkKV+A2pv/isvKVp8WIBZjgEEFUY7+puq6KfgAxRfvOpZccg==
 
-"@graphai/vanilla_node_agents@^0.2.5":
-  version "0.2.5"
-  resolved "https://registry.yarnpkg.com/@graphai/vanilla_node_agents/-/vanilla_node_agents-0.2.5.tgz#69c53bddf043a687c71773ee4ec5a28a93c54072"
-  integrity sha512-w4j1Y0yYjK+sk7+Et4TR8pX/MdVlUoVF7i0+yo8M+9pP29zRDG7beGlErOXnswRF2ObVPi3QlRsWpjoG7Q2dfQ==
+"@graphai/tts_openai_agent@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@graphai/tts_openai_agent/-/tts_openai_agent-0.0.1.tgz#8c6482ebfa82f10115ef60a6061e133d0b6f5a06"
+  integrity sha512-lnuB64a9nMBulXDeuATOx9lejOQ81BxIJ2tQcgGjofBNC8yRhd0kiFWP+CrCAW2/JKOicDwwItyG0V4DMsO0sA==
+
+"@graphai/vanilla@^0.2.6":
+  version "0.2.6"
+  resolved "https://registry.yarnpkg.com/@graphai/vanilla/-/vanilla-0.2.6.tgz#37160fbc24d8081436faa6904f987fd892d8e52c"
+  integrity sha512-WHQv8KS6N2cUmxJua2qHIG3NkZ1YG2pemrVrOS6SaFSLWPZOxZRXjU5Nq5DXJjMHxj2+eVJRZ6R/+DYoiGd5OA==
+  dependencies:
+    "@graphai/agent_utils" "0.0.3"
+
+"@graphai/vanilla_node_agents@^0.2.6":
+  version "0.2.6"
+  resolved "https://registry.yarnpkg.com/@graphai/vanilla_node_agents/-/vanilla_node_agents-0.2.6.tgz#d51656c8a4dcfb9f712bb18cd1ef5ee78d37f86a"
+  integrity sha512-cmkmkuDHHJYCi3VVe5AbcJQnDojQ1Y0qWu+/D34uWWlHzyNZ87JWLJIFL14YcaL8+aIWv/LmQ36hMrxqm+IeBA==
   dependencies:
     "@graphai/agent_utils" "0.0.3"
 
@@ -312,162 +315,143 @@
   resolved "https://registry.yarnpkg.com/@img/sharp-win32-x64/-/sharp-win32-x64-0.33.5.tgz#56f00962ff0c4e0eb93d34a047d29fa995e3e342"
   integrity sha512-MpY/o8/8kj+EcnxwvrP4aTJSWw/aZ7JIGR4aBeZkZw5B7/Jn+tY9/VNwtcoGmdT7GfggGIU4kygOMSbYnOrAbg==
 
-"@inquirer/checkbox@^2.5.0":
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/@inquirer/checkbox/-/checkbox-2.5.0.tgz#41c5c9dd332c0a8fa159be23982ce080d0b199d4"
-  integrity sha512-sMgdETOfi2dUHT8r7TT1BTKOwNvdDGFDXYWtQ2J69SvlYNntk9I/gJe7r5yvMwwsuKnYbuRs3pNhx4tgNck5aA==
+"@inquirer/checkbox@^4.0.3":
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/@inquirer/checkbox/-/checkbox-4.0.3.tgz#cbd9694e925964f5b0432cc84ab107a8d7a8202d"
+  integrity sha512-CEt9B4e8zFOGtc/LYeQx5m8nfqQeG/4oNNv0PUvXGG0mys+wR/WbJ3B4KfSQ4Fcr3AQfpiuFOi3fVvmPfvNbxw==
   dependencies:
-    "@inquirer/core" "^9.1.0"
-    "@inquirer/figures" "^1.0.5"
-    "@inquirer/type" "^1.5.3"
+    "@inquirer/core" "^10.1.1"
+    "@inquirer/figures" "^1.0.8"
+    "@inquirer/type" "^3.0.1"
     ansi-escapes "^4.3.2"
     yoctocolors-cjs "^2.1.2"
 
-"@inquirer/confirm@^3.2.0":
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/@inquirer/confirm/-/confirm-3.2.0.tgz#6af1284670ea7c7d95e3f1253684cfbd7228ad6a"
-  integrity sha512-oOIwPs0Dvq5220Z8lGL/6LHRTEr9TgLHmiI99Rj1PJ1p1czTys+olrgBqZk4E2qC0YTzeHprxSQmoHioVdJ7Lw==
+"@inquirer/confirm@^5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@inquirer/confirm/-/confirm-5.1.0.tgz#061cd0790c8debe092353589a501211b0d6c53ef"
+  integrity sha512-osaBbIMEqVFjTX5exoqPXs6PilWQdjaLhGtMDXMXg/yxkHXNq43GlxGyTA35lK2HpzUgDN+Cjh/2AmqCN0QJpw==
   dependencies:
-    "@inquirer/core" "^9.1.0"
-    "@inquirer/type" "^1.5.3"
+    "@inquirer/core" "^10.1.1"
+    "@inquirer/type" "^3.0.1"
 
-"@inquirer/core@^9.1.0":
-  version "9.2.1"
-  resolved "https://registry.yarnpkg.com/@inquirer/core/-/core-9.2.1.tgz#677c49dee399c9063f31e0c93f0f37bddc67add1"
-  integrity sha512-F2VBt7W/mwqEU4bL0RnHNZmC/OxzNx9cOYxHqnXX3MP6ruYvZUZAW9imgN9+h/uBT/oP8Gh888J2OZSbjSeWcg==
+"@inquirer/core@^10.1.1":
+  version "10.1.1"
+  resolved "https://registry.yarnpkg.com/@inquirer/core/-/core-10.1.1.tgz#801e82649fb64bcb2b5e4667397ff8c25bccebab"
+  integrity sha512-rmZVXy9iZvO3ZStEe/ayuuwIJ23LSF13aPMlLMTQARX6lGUBDHGV8UB5i9MRrfy0+mZwt5/9bdy8llszSD3NQA==
   dependencies:
-    "@inquirer/figures" "^1.0.6"
-    "@inquirer/type" "^2.0.0"
-    "@types/mute-stream" "^0.0.4"
-    "@types/node" "^22.5.5"
-    "@types/wrap-ansi" "^3.0.0"
+    "@inquirer/figures" "^1.0.8"
+    "@inquirer/type" "^3.0.1"
     ansi-escapes "^4.3.2"
     cli-width "^4.1.0"
-    mute-stream "^1.0.0"
+    mute-stream "^2.0.0"
     signal-exit "^4.1.0"
     strip-ansi "^6.0.1"
     wrap-ansi "^6.2.0"
     yoctocolors-cjs "^2.1.2"
 
-"@inquirer/editor@^2.2.0":
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/@inquirer/editor/-/editor-2.2.0.tgz#a41eb7b151bd9a6bc3c0b69219d02d82547bc387"
-  integrity sha512-9KHOpJ+dIL5SZli8lJ6xdaYLPPzB8xB9GZItg39MBybzhxA16vxmszmQFrRwbOA918WA2rvu8xhDEg/p6LXKbw==
+"@inquirer/editor@^4.2.0":
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/@inquirer/editor/-/editor-4.2.0.tgz#469a00e876afebcfc574bf8114e40c40795688c1"
+  integrity sha512-Z3LeGsD3WlItDqLxTPciZDbGtm0wrz7iJGS/uUxSiQxef33ZrBq7LhsXg30P7xrWz1kZX4iGzxxj5SKZmJ8W+w==
   dependencies:
-    "@inquirer/core" "^9.1.0"
-    "@inquirer/type" "^1.5.3"
+    "@inquirer/core" "^10.1.1"
+    "@inquirer/type" "^3.0.1"
     external-editor "^3.1.0"
 
-"@inquirer/expand@^2.3.0":
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/@inquirer/expand/-/expand-2.3.0.tgz#afc44aee303315a85563e9d0275e658f0ee0e701"
-  integrity sha512-qnJsUcOGCSG1e5DTOErmv2BPQqrtT6uzqn1vI/aYGiPKq+FgslGZmtdnXbhuI7IlT7OByDoEEqdnhUnVR2hhLw==
+"@inquirer/expand@^4.0.3":
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/@inquirer/expand/-/expand-4.0.3.tgz#7593b841d9355c4e7a047071b33e5a58f202ac96"
+  integrity sha512-MDszqW4HYBpVMmAoy/FA9laLrgo899UAga0itEjsYrBthKieDZNc0e16gdn7N3cQ0DSf/6zsTBZMuDYDQU4ktg==
   dependencies:
-    "@inquirer/core" "^9.1.0"
-    "@inquirer/type" "^1.5.3"
+    "@inquirer/core" "^10.1.1"
+    "@inquirer/type" "^3.0.1"
     yoctocolors-cjs "^2.1.2"
 
-"@inquirer/figures@^1.0.5", "@inquirer/figures@^1.0.6":
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/@inquirer/figures/-/figures-1.0.7.tgz#d050ccc0eabfacc0248c4ff647a9dfba1b01594b"
-  integrity sha512-m+Trk77mp54Zma6xLkLuY+mvanPxlE4A7yNKs2HBiyZ4UkVs28Mv5c/pgWrHeInx+USHeX/WEPzjrWrcJiQgjw==
+"@inquirer/figures@^1.0.8":
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/@inquirer/figures/-/figures-1.0.8.tgz#d9e414a1376a331a0e71b151fea27c48845788b0"
+  integrity sha512-tKd+jsmhq21AP1LhexC0pPwsCxEhGgAkg28byjJAd+xhmIs8LUX8JbUc3vBf3PhLxWiB5EvyBE5X7JSPAqMAqg==
 
-"@inquirer/input@^2.3.0":
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/@inquirer/input/-/input-2.3.0.tgz#9b99022f53780fecc842908f3f319b52a5a16865"
-  integrity sha512-XfnpCStx2xgh1LIRqPXrTNEEByqQWoxsWYzNRSEUxJ5c6EQlhMogJ3vHKu8aXuTacebtaZzMAHwEL0kAflKOBw==
+"@inquirer/input@^4.1.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@inquirer/input/-/input-4.1.0.tgz#54b484550c3ecb2e7bf62149a14e9784f08efe6b"
+  integrity sha512-16B8A9hY741yGXzd8UJ9R8su/fuuyO2e+idd7oVLYjP23wKJ6ILRIIHcnXe8/6AoYgwRS2zp4PNsW/u/iZ24yg==
   dependencies:
-    "@inquirer/core" "^9.1.0"
-    "@inquirer/type" "^1.5.3"
+    "@inquirer/core" "^10.1.1"
+    "@inquirer/type" "^3.0.1"
 
-"@inquirer/number@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@inquirer/number/-/number-1.1.0.tgz#4dac004021ea67c89552a261564f103a494cac96"
-  integrity sha512-ilUnia/GZUtfSZy3YEErXLJ2Sljo/mf9fiKc08n18DdwdmDbOzRcTv65H1jjDvlsAuvdFXf4Sa/aL7iw/NanVA==
+"@inquirer/number@^3.0.3":
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/@inquirer/number/-/number-3.0.3.tgz#e3dd7520e21e9708fea9465b73d20ac851f5f60d"
+  integrity sha512-HA/W4YV+5deKCehIutfGBzNxWH1nhvUC67O4fC9ufSijn72yrYnRmzvC61dwFvlXIG1fQaYWi+cqNE9PaB9n6Q==
   dependencies:
-    "@inquirer/core" "^9.1.0"
-    "@inquirer/type" "^1.5.3"
+    "@inquirer/core" "^10.1.1"
+    "@inquirer/type" "^3.0.1"
 
-"@inquirer/password@^2.2.0":
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/@inquirer/password/-/password-2.2.0.tgz#0b6f26336c259c8a9e5f5a3f2e1a761564f764ba"
-  integrity sha512-5otqIpgsPYIshqhgtEwSspBQE40etouR8VIxzpJkv9i0dVHIpyhiivbkH9/dGiMLdyamT54YRdGJLfl8TFnLHg==
+"@inquirer/password@^4.0.3":
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/@inquirer/password/-/password-4.0.3.tgz#17af6d8983e2e5c0f231b382ef5c78a8b4b63e95"
+  integrity sha512-3qWjk6hS0iabG9xx0U1plwQLDBc/HA/hWzLFFatADpR6XfE62LqPr9GpFXBkLU0KQUaIXZ996bNG+2yUvocH8w==
   dependencies:
-    "@inquirer/core" "^9.1.0"
-    "@inquirer/type" "^1.5.3"
+    "@inquirer/core" "^10.1.1"
+    "@inquirer/type" "^3.0.1"
     ansi-escapes "^4.3.2"
 
-"@inquirer/prompts@^5.0.0":
-  version "5.5.0"
-  resolved "https://registry.yarnpkg.com/@inquirer/prompts/-/prompts-5.5.0.tgz#5805aa15a13180017829aa31d071fd37a43b735d"
-  integrity sha512-BHDeL0catgHdcHbSFFUddNzvx/imzJMft+tWDPwTm3hfu8/tApk1HrooNngB2Mb4qY+KaRWF+iZqoVUPeslEog==
+"@inquirer/prompts@^7.0.1":
+  version "7.2.0"
+  resolved "https://registry.yarnpkg.com/@inquirer/prompts/-/prompts-7.2.0.tgz#15010df2257a243866480513d36f3e19c98d7fb1"
+  integrity sha512-ZXYZ5oGVrb+hCzcglPeVerJ5SFwennmDOPfXq1WyeZIrPGySLbl4W6GaSsBFvu3WII36AOK5yB8RMIEEkBjf8w==
   dependencies:
-    "@inquirer/checkbox" "^2.5.0"
-    "@inquirer/confirm" "^3.2.0"
-    "@inquirer/editor" "^2.2.0"
-    "@inquirer/expand" "^2.3.0"
-    "@inquirer/input" "^2.3.0"
-    "@inquirer/number" "^1.1.0"
-    "@inquirer/password" "^2.2.0"
-    "@inquirer/rawlist" "^2.3.0"
-    "@inquirer/search" "^1.1.0"
-    "@inquirer/select" "^2.5.0"
+    "@inquirer/checkbox" "^4.0.3"
+    "@inquirer/confirm" "^5.1.0"
+    "@inquirer/editor" "^4.2.0"
+    "@inquirer/expand" "^4.0.3"
+    "@inquirer/input" "^4.1.0"
+    "@inquirer/number" "^3.0.3"
+    "@inquirer/password" "^4.0.3"
+    "@inquirer/rawlist" "^4.0.3"
+    "@inquirer/search" "^3.0.3"
+    "@inquirer/select" "^4.0.3"
 
-"@inquirer/rawlist@^2.3.0":
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/@inquirer/rawlist/-/rawlist-2.3.0.tgz#6b2c0da39c1cd855af5608b2d627681cdac7277d"
-  integrity sha512-zzfNuINhFF7OLAtGHfhwOW2TlYJyli7lOUoJUXw/uyklcwalV6WRXBXtFIicN8rTRK1XTiPWB4UY+YuW8dsnLQ==
+"@inquirer/rawlist@^4.0.3":
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/@inquirer/rawlist/-/rawlist-4.0.3.tgz#9964521d3470e153e7e11f228a53cf0afefb217c"
+  integrity sha512-5MhinSzfmOiZlRoPezfbJdfVCZikZs38ja3IOoWe7H1dxL0l3Z2jAUgbBldeyhhOkELdGvPlBfQaNbeLslib1w==
   dependencies:
-    "@inquirer/core" "^9.1.0"
-    "@inquirer/type" "^1.5.3"
+    "@inquirer/core" "^10.1.1"
+    "@inquirer/type" "^3.0.1"
     yoctocolors-cjs "^2.1.2"
 
-"@inquirer/search@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@inquirer/search/-/search-1.1.0.tgz#665928cac2326b9501ddafbb8606ce4823b3106b"
-  integrity sha512-h+/5LSj51dx7hp5xOn4QFnUaKeARwUCLs6mIhtkJ0JYPBLmEYjdHSYh7I6GrLg9LwpJ3xeX0FZgAG1q0QdCpVQ==
+"@inquirer/search@^3.0.3":
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/@inquirer/search/-/search-3.0.3.tgz#791f19a4ee87d65816fd3bb17bd8d76bc11bff07"
+  integrity sha512-mQTCbdNolTGvGGVCJSI6afDwiSGTV+fMLPEIMDJgIV6L/s3+RYRpxt6t0DYnqMQmemnZ/Zq0vTIRwoHT1RgcTg==
   dependencies:
-    "@inquirer/core" "^9.1.0"
-    "@inquirer/figures" "^1.0.5"
-    "@inquirer/type" "^1.5.3"
+    "@inquirer/core" "^10.1.1"
+    "@inquirer/figures" "^1.0.8"
+    "@inquirer/type" "^3.0.1"
     yoctocolors-cjs "^2.1.2"
 
-"@inquirer/select@^2.5.0":
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/@inquirer/select/-/select-2.5.0.tgz#345c6908ecfaeef3d84ddd2f9feb2f487c558efb"
-  integrity sha512-YmDobTItPP3WcEI86GvPo+T2sRHkxxOq/kXmsBjHS5BVXUgvgZ5AfJjkvQvZr03T81NnI3KrrRuMzeuYUQRFOA==
+"@inquirer/select@^4.0.3":
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/@inquirer/select/-/select-4.0.3.tgz#24a9d744685608ff26262fccb41fa93b4dac615f"
+  integrity sha512-OZfKDtDE8+J54JYAFTUGZwvKNfC7W/gFCjDkcsO7HnTH/wljsZo9y/FJquOxMy++DY0+9l9o/MOZ8s5s1j5wmw==
   dependencies:
-    "@inquirer/core" "^9.1.0"
-    "@inquirer/figures" "^1.0.5"
-    "@inquirer/type" "^1.5.3"
+    "@inquirer/core" "^10.1.1"
+    "@inquirer/figures" "^1.0.8"
+    "@inquirer/type" "^3.0.1"
     ansi-escapes "^4.3.2"
     yoctocolors-cjs "^2.1.2"
 
-"@inquirer/type@^1.5.3":
-  version "1.5.5"
-  resolved "https://registry.yarnpkg.com/@inquirer/type/-/type-1.5.5.tgz#303ea04ce7ad2e585b921b662b3be36ef7b4f09b"
-  integrity sha512-MzICLu4yS7V8AA61sANROZ9vT1H3ooca5dSmI1FjZkzq7o/koMsRfQSzRtFo+F3Ao4Sf1C0bpLKejpKB/+j6MA==
-  dependencies:
-    mute-stream "^1.0.0"
-
-"@inquirer/type@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@inquirer/type/-/type-2.0.0.tgz#08fa513dca2cb6264fe1b0a2fabade051444e3f6"
-  integrity sha512-XvJRx+2KR3YXyYtPUUy+qd9i7p+GO9Ko6VIIpWlBrpWwXDv8WLFeHTxz35CfQFUiBMLXlGHhGzys7lqit9gWag==
-  dependencies:
-    mute-stream "^1.0.0"
+"@inquirer/type@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@inquirer/type/-/type-3.0.1.tgz#619ce9f65c3e114d8e39c41822bed3440d20b478"
+  integrity sha512-+ksJMIy92sOAiAccGpcKZUc3bYO07cADnscIxHBknEm3uNts3movSmBofc1908BNy5edKscxYeAdaX1NXkHS6A==
 
 "@types/fluent-ffmpeg@^2.1.26":
   version "2.1.26"
   resolved "https://registry.yarnpkg.com/@types/fluent-ffmpeg/-/fluent-ffmpeg-2.1.26.tgz#b3d5353527269eb2fc4e90b3014e51d9c210caab"
   integrity sha512-0JVF3wdQG+pN0ImwWD0bNgJiKF2OHg/7CDBHw5UIbRTvlnkgGHK6V5doE54ltvhud4o31/dEiHm23CAlxFiUQg==
-  dependencies:
-    "@types/node" "*"
-
-"@types/mute-stream@^0.0.4":
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/@types/mute-stream/-/mute-stream-0.0.4.tgz#77208e56a08767af6c5e1237be8888e2f255c478"
-  integrity sha512-CPM9nzrCPPJHQNA9keH9CVkVI+WR5kMa+7XEs5jcGQ0VoAGnLv242w8lIVgwAEfmE4oufJRaTc9PNLQl0ioAow==
   dependencies:
     "@types/node" "*"
 
@@ -479,7 +463,7 @@
     "@types/node" "*"
     form-data "^4.0.0"
 
-"@types/node@*", "@types/node@^22.5.5":
+"@types/node@*":
   version "22.8.0"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-22.8.0.tgz#193c6f82f9356ce0e6bba86b59f2ffe06e7e320b"
   integrity sha512-84rafSBHC/z1i1E3p0cJwKA+CfYDNSXX9WSZBRopjIzLET8oNt6ht2tei4C7izwDeEiLLfdeSVBv1egOH916hg==
@@ -499,11 +483,6 @@
   integrity sha512-OOi3kL+FZDnPhVzsfD37J88FNeZh6gQsGcLc95NbeURRGvmSjeXiDcyWzF2o3yh/gQAUn2uhh/e+CPCa5nwAxw==
   dependencies:
     sharp "*"
-
-"@types/wrap-ansi@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@types/wrap-ansi/-/wrap-ansi-3.0.0.tgz#18b97a972f94f60a679fd5c796d96421b9abb9fd"
-  integrity sha512-ltIpx+kM7g/MLRZfkbL7EsCEjfzCcScLpkg37eXEtx5kmrAKBkTJwd1GIAjDSL8wTpM6Hzn5YO4pSb91BEwu1g==
 
 "@types/xml2js@^0.4.14":
   version "0.4.14"
@@ -649,10 +628,10 @@ detect-libc@^2.0.3:
   resolved "https://registry.yarnpkg.com/detect-libc/-/detect-libc-2.0.3.tgz#f0cd503b40f9939b894697d19ad50895e30cf700"
   integrity sha512-bwy0MGW55bG41VqxxypOsdSdGqLwXPI/focwgTYCFMbdUiBAxLg9CFzG08sz2aqzknwiX7Hkl0bQENjg8iLByw==
 
-dotenv@^16.4.5:
-  version "16.4.5"
-  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-16.4.5.tgz#cdd3b3b604cb327e286b4762e13502f717cb099f"
-  integrity sha512-ZmdL2rui+eB2YwhsWzjInR8LldtZHGDoQ1ugH85ppHKwpUHL7j7rN0Ti9NCnGiQbhaZ11FpR+7ao1dNsmduNUg==
+dotenv@^16.4.7:
+  version "16.4.7"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-16.4.7.tgz#0e20c5b82950140aa99be360a8a5f52335f53c26"
+  integrity sha512-47qPchRCykZC03FhkYAhrvwU4xDBFIj1QPqaarj6mdM/hgUzfPHcpkHJOn3mJAufFeeAxAzeGsr5X0M4k6fLZQ==
 
 emoji-regex@^8.0.0:
   version "8.0.0"
@@ -718,10 +697,10 @@ formdata-node@^4.3.2:
     node-domexception "1.0.0"
     web-streams-polyfill "4.0.0-beta.3"
 
-graphai@^0.5.9:
-  version "0.5.12"
-  resolved "https://registry.yarnpkg.com/graphai/-/graphai-0.5.12.tgz#442b27a6c2207ff7558709cf84a8f0a2673c334f"
-  integrity sha512-/tRXU5sqYY0PSlTnRwR52Zsd309RXUb4yOJklIz3PZXJooO+Fzv2forbC5m25tLOyRpFUH01AWqeogoPDXZ1MA==
+graphai@^0.6.4:
+  version "0.6.5"
+  resolved "https://registry.yarnpkg.com/graphai/-/graphai-0.6.5.tgz#5eed5cf00c7c70d0043d8c7b1738c1d2df85bbed"
+  integrity sha512-I9MQ0iigMRVI5HQdEHyfaPzTKH/a1TUAZXenVd2t3xProW77XDpbl7yMHRMFsSTcLfNYTB8gHaL4ohUDmVf/cA==
 
 graphql-request@^6.1.0:
   version "6.1.0"
@@ -750,10 +729,10 @@ groq-sdk@^0.5.0:
     node-fetch "^2.6.7"
     web-streams-polyfill "^3.2.1"
 
-groq-sdk@^0.7.0:
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/groq-sdk/-/groq-sdk-0.7.0.tgz#30ac2fa5073f9368e22c78309e5b6154741788eb"
-  integrity sha512-OgPqrRtti5MjEVclR8sgBHrhSkTLdFCmi47yrEF29uJZaiCkX3s7bXpnMhq8Lwoe1f4AwgC0qGOeHXpeSgu5lg==
+groq-sdk@^0.9.0:
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/groq-sdk/-/groq-sdk-0.9.0.tgz#6389e08894470f2e8ec7a22ba5c3f6df796fc152"
+  integrity sha512-Kdbl65yOwd5ga+UZd3KCULnoOlcPV7qJ+FfemivVpu3bOZeT7WJWh/ywAuivwJ7aJzcXmwf6x5t9x0MV0ZmR0A==
   dependencies:
     "@types/node" "^18.11.18"
     "@types/node-fetch" "^2.6.4"
@@ -821,10 +800,10 @@ ms@^2.0.0:
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.3.tgz#574c8138ce1d2b5861f0b44579dbadd60c6615b2"
   integrity sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==
 
-mute-stream@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/mute-stream/-/mute-stream-1.0.0.tgz#e31bd9fe62f0aed23520aa4324ea6671531e013e"
-  integrity sha512-avsJQhyd+680gKXyG/sQc0nXaC6rBkPOfyHYcFb9+hdkqQkR9bdnkJ0AMZhke0oesPqIO+mFFJ+IdBc7mst4IA==
+mute-stream@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/mute-stream/-/mute-stream-2.0.0.tgz#a5446fc0c512b71c83c44d908d5c7b7b4c493b2b"
+  integrity sha512-WWdIxpyjEn+FhQJQQv9aQAYlHoNVdzIzUySNV1gHUPDSdZJ3yZn7pAAbQcV7B56Mvu881q9FZV+0Vx2xC44VWA==
 
 node-domexception@1.0.0:
   version "1.0.0"
@@ -838,7 +817,7 @@ node-fetch@^2.6.12, node-fetch@^2.6.7:
   dependencies:
     whatwg-url "^5.0.0"
 
-openai@^4.53.0, openai@^4.62.1:
+openai@^4.53.0:
   version "4.68.4"
   resolved "https://registry.yarnpkg.com/openai/-/openai-4.68.4.tgz#f8d684c1f2408d362164ad71916e961941aeedd1"
   integrity sha512-LRinV8iU9VQplkr25oZlyrsYGPGasIwYN8KFMAAFTHHLHjHhejtJ5BALuLFrkGzY4wfbKhOhuT+7lcHZ+F3iEA==
@@ -855,6 +834,19 @@ openai@^4.67.3:
   version "4.67.3"
   resolved "https://registry.yarnpkg.com/openai/-/openai-4.67.3.tgz#a7c1b59cb9eca064f3ff3d439b7bf51487d88a49"
   integrity sha512-HT2tZgjLgRqbLQNKmYtjdF/4TQuiBvg1oGvTDhwpSEQzxo6/oM1us8VQ53vBK2BiKvCxFuq6gKGG70qfwrNhKg==
+  dependencies:
+    "@types/node" "^18.11.18"
+    "@types/node-fetch" "^2.6.4"
+    abort-controller "^3.0.0"
+    agentkeepalive "^4.2.1"
+    form-data-encoder "1.7.2"
+    formdata-node "^4.3.2"
+    node-fetch "^2.6.7"
+
+openai@^4.75.0:
+  version "4.76.1"
+  resolved "https://registry.yarnpkg.com/openai/-/openai-4.76.1.tgz#3e844cef2f2d55814ff7c6e134700eacb7c9897b"
+  integrity sha512-ci63/WFEMd6QjjEVeH0pV7hnFS6CCqhgJydSti4Aak/8uo2SpgzKjteUDaY+OkwziVj11mi6j+0mRUIiGKUzWw==
   dependencies:
     "@types/node" "^18.11.18"
     "@types/node-fetch" "^2.6.4"
@@ -902,10 +894,10 @@ replicate@^0.31.1:
   optionalDependencies:
     readable-stream ">=4.0.0"
 
-replicate@^0.32.1:
-  version "0.32.1"
-  resolved "https://registry.yarnpkg.com/replicate/-/replicate-0.32.1.tgz#e582bc659d83262d10037da8f02d505c4943fb84"
-  integrity sha512-OmzyDVx3P9FXVXcFrzWft8XW8LjyGo65qRCwUPJwbjBZS4Z89pQFX+ZUfYlHwcfIHGtP4/Pf0uis+XJiznKacQ==
+replicate@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/replicate/-/replicate-1.0.1.tgz#c1f4bdd4fc29bbaf44af07662d23a858409421e9"
+  integrity sha512-EY+rK1YR5bKHcM9pd6WyaIbv6m2aRIvHfHDh51j/LahlHTLKemTYXF6ptif2sLa+YospupAsIoxw8Ndt5nI3vg==
   optionalDependencies:
     readable-stream ">=4.0.0"
 
@@ -1008,7 +1000,7 @@ strip-ansi@^6.0.0, strip-ansi@^6.0.1:
   dependencies:
     ansi-regex "^5.0.1"
 
-tiktoken@^1.0.16:
+tiktoken@^1.0.17:
   version "1.0.17"
   resolved "https://registry.yarnpkg.com/tiktoken/-/tiktoken-1.0.17.tgz#53b9b38b8b1a9c6996cded21f6ef0ff473fae265"
   integrity sha512-UuFHqpy/DxOfNiC3otsqbx3oS6jr5uKdQhB/CvDEroZQbVHt+qAK+4JbIooabUWKU9g6PpsFylNu9Wcg4MxSGA==
