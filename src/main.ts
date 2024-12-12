@@ -12,16 +12,29 @@ import ffmpeg from "fluent-ffmpeg";
 
 dotenv.config();
 
+type ScriptData = {
+  "speaker": string;
+  "text": string;
+};
+
+type JSONData = {
+  "title": string;
+  "description": string;
+  "reference": string;
+  "script": ScriptData[];
+}
+
+
 const rion_takanashi_voice = "b9277ce3-ba1c-4f6f-9a65-c05ca102ded0" // たかなし りおん
 const ben_carter_voice = "bc06c63f-fef6-43b6-92f7-67f919bd5dae" // ベン・カーター
 
-const combineFiles = async (inputs: { jsonData: any; name: string }) => {
+const combineFiles = async (inputs: { jsonData: JSONData; name: string }) => {
   const { name, jsonData } = inputs;
   const outputFile = path.resolve("./output/" + name + ".mp3");
   const silentPath = path.resolve("./music/silent300.mp3");
   const silentLastPath = path.resolve("./music/silent800.mp3");
   const command = ffmpeg();
-  jsonData.script.forEach((element: any, index: number) => {
+  jsonData.script.forEach((element: ScriptData, index: number) => {
     const filePath = path.resolve("./scratchpad/" + element.key + ".mp3");
     const isLast = index === jsonData.script.length - 2;
     command.input(filePath);
@@ -248,7 +261,7 @@ const main = async () => {
   const name = parsedPath.name;
   const data = fs.readFileSync(scriptPath, "utf-8");
   const jsonData = JSON.parse(data);
-  jsonData.script.forEach((element: any, index: number) => {
+  jsonData.script.forEach((element: ScriptData, index: number) => {
     element["key"] = name + index;
   });
 
