@@ -12,6 +12,9 @@ import ffmpeg from "fluent-ffmpeg";
 
 dotenv.config();
 
+const rion_takanashi_voice = "b9277ce3-ba1c-4f6f-9a65-c05ca102ded0" // たかなし りおん
+const ben_carter_voice = "bc06c63f-fef6-43b6-92f7-67f919bd5dae" // ベン・カーター
+
 const combineFiles = async (inputs: { jsonData: any; name: string }) => {
   const { name, jsonData } = inputs;
   const outputFile = path.resolve("./output/" + name + ".mp3");
@@ -150,8 +153,8 @@ const graph_data = {
             },
             params: {
               value: {
-                true: "b9277ce3-ba1c-4f6f-9a65-c05ca102ded0",
-                false: "bc06c63f-fef6-43b6-92f7-67f919bd5dae",
+                true: rion_takanashi_voice,
+                false: ben_carter_voice,
               },
             },
           },
