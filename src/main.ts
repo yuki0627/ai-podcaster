@@ -26,8 +26,11 @@ const tts_openAI = async (filePath: string, input: string, key: string, speaker:
   return { buffer, filePath };
 };
 
+const rion_takanashi_voice = "b9277ce3-ba1c-4f6f-9a65-c05ca102ded0" // たかなし りおん
+const ben_carter_voice = "bc06c63f-fef6-43b6-92f7-67f919bd5dae" // ベン・カーター
+
 const tts_nijivoice = async (filePath: string, input: string, key: string, speaker: string) => {
-  const voiceId = (speaker === "Host") ? "b9277ce3-ba1c-4f6f-9a65-c05ca102ded0" : "bc06c63f-fef6-43b6-92f7-67f919bd5dae";
+  const voiceId = (speaker === "Host") ? rion_takanashi_voice : ben_carter_voice;
   const url = `https://api.nijivoice.com/api/platform/v1/voice-actors/${voiceId}/generate-voice`;
   const options = {
     method: 'POST',
