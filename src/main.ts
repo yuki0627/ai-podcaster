@@ -1,16 +1,14 @@
+import "dotenv/config";
 import fsPromise from "fs/promises";
 import fs from "fs";
 import path from "path";
 import OpenAI from "openai";
-import dotenv from "dotenv";
 import { GraphAI, AgentFilterFunction, GraphData } from "graphai";
 import * as agents from "@graphai/agents";
 import { ttsNijivoiceAgent } from "@graphai/tts_nijivoice_agent";
 import { ttsOpenaiAgent } from "@graphai/tts_openai_agent";
 import { fileWriteAgent, pathUtilsAgent } from "@graphai/vanilla_node_agents";
 import ffmpeg from "fluent-ffmpeg";
-
-dotenv.config();
 
 type ScriptData = {
   "speaker": string;
@@ -25,7 +23,6 @@ type JSONData = {
   "reference": string;
   "script": ScriptData[];
 }
-
 
 const rion_takanashi_voice = "b9277ce3-ba1c-4f6f-9a65-c05ca102ded0" // たかなし りおん
 const ben_carter_voice = "bc06c63f-fef6-43b6-92f7-67f919bd5dae" // ベン・カーター
