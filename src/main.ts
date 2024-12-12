@@ -3,7 +3,7 @@ import fs from "fs";
 import path from "path";
 import OpenAI from "openai";
 import dotenv from "dotenv";
-import { GraphAI, AgentFilterFunction } from "graphai";
+import { GraphAI, AgentFilterFunction, GraphData } from "graphai";
 import * as agents from "@graphai/agents";
 import { ttsNijivoiceAgent } from "@graphai/tts_nijivoice_agent";
 import { ttsOpenaiAgent } from "@graphai/tts_openai_agent";
@@ -15,6 +15,8 @@ dotenv.config();
 type ScriptData = {
   "speaker": string;
   "text": string;
+  "key": string;
+  "duration": number;
 };
 
 type JSONData = {
@@ -113,7 +115,7 @@ const addMusic = async (inputs: { voiceFile: string; name: string }) => {
   return outputFile;
 };
 
-const graph_data = {
+const graph_data: GraphData = {
   version: 0.5,
   concurrency: 1, // for nijovoice
   nodes: {
