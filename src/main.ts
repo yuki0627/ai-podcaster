@@ -8,7 +8,7 @@ import * as agents from "@graphai/agents";
 // import { ttsOpenaiAgent } from "@graphai/tts_openai_agent";
 import ttsNijivoiceAgent from "./agents/tts_nijivoice_agent";
 import ttsOpenaiAgent from "./agents/tts_openai_agent";
-import { fileWriteAgent, pathUtilsAgent } from "@graphai/vanilla_node_agents";
+import { pathUtilsAgent } from "@graphai/vanilla_node_agents";
 import ffmpeg from "fluent-ffmpeg";
 
 type ScriptData = {
@@ -151,14 +151,6 @@ const graph_data: GraphData = {
               file: ":path.path",
             },
           },
-          w: {
-            agent: "fileWriteAgent",
-            priority: 1,
-            inputs: {
-              file: ":path.path",
-              buffer: ":tts_OpenAI.buffer",
-            },
-          },
           v: {
             agent: "compareAgent",
             inputs: {
@@ -171,21 +163,6 @@ const graph_data: GraphData = {
               },
             },
           },
-          /*
-          merger: {
-            agent: (namedInputs) => {
-              return { buffer: namedInputs.buffers[0] };
-            },
-            anyInput: true,
-            inputs: {
-              buffers: [":tts_openAI.buffer", "tts_Niji.buffer"]
-            },
-            console: {
-              before: true,
-              after: true,
-            }
-          },
-          */
           tts_Niji: {
             if: ":isNiji",
             agent: "ttsNijivoiceAgent",
@@ -193,14 +170,6 @@ const graph_data: GraphData = {
               file: ":path.path",
               text: ":row.text",
               voiceId: ":v",
-            },
-          },
-          w2: {
-            agent: "fileWriteAgent",
-            priority: 1,
-            inputs: {
-              file: ":path.path",
-              buffer: ":tts_Niji.buffer",
             },
           },
         },
@@ -256,8 +225,15 @@ const fileCacheAgentFilter: AgentFilterFunction = async (context, next) => {
     console.log("cache hit: " + file);
     return true;
   } catch (e) {
-    console.log("no cache: " + file);
-    return next(context);
+    const output = await next(context) as Record<string, any>;
+    const buffer = output ? output["buffer"] : undefined;
+    if (buffer) {
+      console.log("writing: " + file);
+      fs.writeFileSync(file, buffer);
+      return true;
+    }
+    console.log("no cache, no buffer: " + file);
+    return false;
   }
 };
 
@@ -265,7 +241,7 @@ const agentFilters = [
   {
     name: "fileCacheAgentFilter",
     agent: fileCacheAgentFilter,
-    nodeIds: ["tts_OpenAI", "w", "tts_Niji", "w2"],
+    nodeIds: ["tts_OpenAI", "tts_Niji"],
   },
 ];
 
@@ -284,7 +260,6 @@ const main = async () => {
     graph_data,
     {
       ...agents,
-      fileWriteAgent,
       pathUtilsAgent,
       ttsOpenaiAgent,
       ttsNijivoiceAgent,
