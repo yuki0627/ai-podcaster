@@ -142,7 +142,7 @@ const graph_data: GraphData = {
               array: [":script.tts", "==", "nijivoice"],
             },
           },
-          b: {
+          tts_OpenAI: {
             unless: ":isNiji",
             agent: "ttsOpenaiAgent",
             inputs: {
@@ -155,7 +155,7 @@ const graph_data: GraphData = {
             priority: 1,
             inputs: {
               file: ":path.path",
-              buffer: ":b.buffer",
+              buffer: ":tts_OpenAI.buffer",
             },
           },
           v: {
@@ -185,7 +185,7 @@ const graph_data: GraphData = {
             }
           },
           */
-          b2: {
+          tts_Niji: {
             if: ":isNiji",
             agent: "ttsNijivoiceAgent",
             inputs: {
@@ -199,7 +199,7 @@ const graph_data: GraphData = {
             priority: 1,
             inputs: {
               file: ":path.path",
-              buffer: ":b2.buffer",
+              buffer: ":tts_Niji.buffer",
             },
           },
         },
@@ -264,7 +264,7 @@ const agentFilters = [
   {
     name: "fileCacheAgentFilter",
     agent: fileCacheAgentFilter,
-    nodeIds: ["b", "w", "b2", "w2"],
+    nodeIds: ["tts_OpenAI", "w", "tts_Niji", "w2"],
   },
 ];
 
