@@ -7,13 +7,13 @@
       "speaker": "Host",
       "text": "先生、今日は韓国で起きた戒厳令のことを教えてもらえますか？",
       "key": "korea_marshal_law0",
-      "duration": 4.7147
+      "duration": 4.68855
     },
     {
       "speaker": "Guest",
       "text": "もちろんだよ、太郎くん。韓国で最近、大統領が「戒厳令」っていうのを突然宣言したんだ。",
       "key": "korea_marshal_law1",
-      "duration": 7.5098
+      "duration": 7.6404
     },
     {
       "speaker": "Host",
@@ -25,79 +25,79 @@
       "speaker": "Guest",
       "text": "簡単に言うと、国がすごく危ない状態にあるとき、軍隊を使って人々の自由を制限するためのものなんだ。たとえば、政治活動を禁止したり、人の集まりを取り締まったりするんだよ。",
       "key": "korea_marshal_law3",
-      "duration": 14.536750000000001
+      "duration": 14.4845
     },
     {
       "speaker": "Host",
       "text": "それって怖いですね。なんでそんなことをしたんですか？",
       "key": "korea_marshal_law4",
-      "duration": 3.8004
+      "duration": 3.9049
     },
     {
       "speaker": "Guest",
       "text": "大統領は「国会がうまく機能していないから」と言っていたけど、実際には自分の立場を守るために使ったように見えるんだ。それで、軍隊が国会に突入して、議員たちを捕まえようとしたんだ。",
       "key": "korea_marshal_law5",
-      "duration": 14.144900000000002
+      "duration": 14.19715
     },
     {
       "speaker": "Host",
       "text": "ええっ！？国会議員を捕まえようとするなんて、すごく危ないことじゃないですか。",
       "key": "korea_marshal_law6",
-      "duration": 5.4460999999999995
+      "duration": 5.3155
     },
     {
       "speaker": "Guest",
       "text": "その通りだよ。もし軍隊が国会を占拠していたら、国会で戒厳令を解除することもできなかったかもしれない。つまり、大統領がずっと自分の好きなように国を支配できるようになってしまうんだ。",
       "key": "korea_marshal_law7",
-      "duration": 14.458350000000001
+      "duration": 14.353900000000001
     },
     {
       "speaker": "Host",
       "text": "韓国ではどうなったんですか？",
       "key": "korea_marshal_law8",
-      "duration": 2.0241
+      "duration": 2.07635
     },
     {
       "speaker": "Guest",
       "text": "幸い、野党の議員や市民たちが急いで集まって抗議して、6時間後に戒厳令は解除されたんだ。でも、ほんの少しの違いで、韓国の民主主義が大きく傷つけられるところだったんだよ。",
       "key": "korea_marshal_law9",
-      "duration": 13.4657
+      "duration": 13.36125
     },
     {
       "speaker": "Host",
       "text": "それは大変なことですね…。日本ではそんなこと起きないんですか？",
       "key": "korea_marshal_law10",
-      "duration": 4.68855
+      "duration": 4.66245
     },
     {
       "speaker": "Guest",
       "text": "実はね、今、日本でも似たような話があるんだよ。自民党が「緊急事態宣言」を憲法に追加しようとしているんだ。",
       "key": "korea_marshal_law11",
-      "duration": 8.5808
+      "duration": 8.685300000000002
     },
     {
       "speaker": "Host",
       "text": "緊急事態宣言って、韓国の戒厳令と同じようなものなんですか？",
       "key": "korea_marshal_law12",
-      "duration": 4.871449999999999
+      "duration": 4.8453
     },
     {
       "speaker": "Guest",
       "text": "似ている部分があるね。たとえば、総理大臣が「社会秩序の混乱の危険があるから」と言えば、特別な権限を使って国を動かすことができるんだ。法律と同じ力を持つ命令を出したり、地方自治体に指示を出したりすることができるんだよ。",
       "key": "korea_marshal_law13",
-      "duration": 17.20125
+      "duration": 16.9661
     },
     {
       "speaker": "Host",
       "text": "それって便利そうですけど、なんだか心配です。",
       "key": "korea_marshal_law14",
-      "duration": 3.6698
+      "duration": 3.59145
     },
     {
       "speaker": "Guest",
       "text": "そうだね。もちろん、緊急時には素早い対応が必要だから便利な面もあるけど、その権限が濫用されると、とても危険なんだ。たとえば、総理大臣が自分に都合のいいように国を動かしたり、国民の自由を奪ったりすることができるようになってしまうかもしれない。",
       "key": "korea_marshal_law15",
-      "duration": 18.3506
+      "duration": 18.40285
     },
     {
       "speaker": "Host",
@@ -109,7 +109,7 @@
       "speaker": "Guest",
       "text": "完全にあり得ないとは言えないからこそ、注意が必要なんだ。私たち国民は、自民党の改憲案が権力の濫用を防ぐための適切な制限を含んでいるのかをしっかり監視し、声を上げることが求められる。民主主義が損なわれるのを防ぐために、私たち一人ひとりが積極的に関心を持つことが大切なんだよ。",
       "key": "korea_marshal_law17",
-      "duration": 23.0004
+      "duration": 22.922050000000002
     }
   ]
 }

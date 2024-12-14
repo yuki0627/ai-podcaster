@@ -4,10 +4,10 @@ import fs from "fs";
 import path from "path";
 import { GraphAI, AgentFilterFunction, GraphData } from "graphai";
 import * as agents from "@graphai/agents";
-// import { ttsNijivoiceAgent } from "@graphai/tts_nijivoice_agent";
-// import { ttsOpenaiAgent } from "@graphai/tts_openai_agent";
-import ttsNijivoiceAgent from "./agents/tts_nijivoice_agent";
-import ttsOpenaiAgent from "./agents/tts_openai_agent";
+import { ttsNijivoiceAgent } from "@graphai/tts_nijivoice_agent";
+import { ttsOpenaiAgent } from "@graphai/tts_openai_agent";
+// import ttsNijivoiceAgent from "./agents/tts_nijivoice_agent";
+// import ttsOpenaiAgent from "./agents/tts_openai_agent";
 import { pathUtilsAgent } from "@graphai/vanilla_node_agents";
 import ffmpeg from "fluent-ffmpeg";
 
@@ -115,7 +115,7 @@ const addMusic = async (inputs: { voiceFile: string; name: string }) => {
 
 const graph_data: GraphData = {
   version: 0.5,
-  concurrency: 1, // for nijovoice
+  concurrency: 8,
   nodes: {
     name: {
       value: "",
@@ -229,7 +229,7 @@ const fileCacheAgentFilter: AgentFilterFunction = async (context, next) => {
     const buffer = output ? output["buffer"] : undefined;
     if (buffer) {
       console.log("writing: " + file);
-      fs.writeFileSync(file, buffer);
+      await fsPromise.writeFile(file, buffer);
       return true;
     }
     console.log("no cache, no buffer: " + file);
@@ -255,6 +255,9 @@ const main = async () => {
   jsonData.script.forEach((element: ScriptData, index: number) => {
     element["key"] = name + index;
   });
+  if (jsonData.tts ===  "nijivoice") {
+    graph_data.concurrency = 1;    
+  }
 
   const graph = new GraphAI(
     graph_data,
