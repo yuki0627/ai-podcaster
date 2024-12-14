@@ -170,6 +170,21 @@ const graph_data: GraphData = {
               },
             },
           },
+          /*
+          merger: {
+            agent: (namedInputs) => {
+              return { buffer: namedInputs.buffers[0] };
+            },
+            anyInput: true,
+            inputs: {
+              buffers: [":tts_openAI.buffer", "tts_Niji.buffer"]
+            },
+            console: {
+              before: true,
+              after: true,
+            }
+          },
+          */
           b2: {
             if: ":isNiji",
             agent: "ttsNijivoiceAgent",
