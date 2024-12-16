@@ -133,8 +133,8 @@ const graph_tts: GraphData = {
       },
       params: {
         value: {
-          true: ":voices.$0",
-          false: ":voices.$1",
+          true: ":script.voices.$0",
+          false: ":script.voices.$1",
         },
       },
     },
@@ -162,12 +162,9 @@ const graph_data: GraphData = {
     script: {
       value: {},
     },
-    voices: {
-      value: [],
-    },
     map: {
       agent: "mapAgent",
-      inputs: { rows: ":script.script", script: ":script", voices: ":voices" },
+      inputs: { rows: ":script.script", script: ":script" },
       graph: graph_tts,
     },
     combineFiles: {
@@ -232,24 +229,23 @@ const main = async () => {
   const arg2 = process.argv[2];
   const scriptPath = path.resolve(arg2);
   const parsedPath = path.parse(scriptPath);
-  const name = parsedPath.name;
+  const filename = parsedPath.name;
   const data = fs.readFileSync(scriptPath, "utf-8");
   const script = JSON.parse(data) as PodcastScript;
   script.script.forEach((element: ScriptData, index: number) => {
-    element["filename"] = name + index;
+    element["filename"] = filename + index;
   });
   const ttsNode = graph_tts.nodes.tts as ComputedNodeData;
-  const voicesNode = graph_data.nodes.voices as StaticNodeData;
   if (script.tts ===  "nijivoice") {
     graph_data.concurrency = 1;
-    voicesNode.value = script.voices ?? [
+    script.voices = script.voices ?? [
       rion_takanashi_voice,
       ben_carter_voice,
     ];
     ttsNode.agent = "ttsNijivoiceAgent";
   } else {
     graph_data.concurrency = 8;
-    voicesNode.value = script.voices ?? [
+    script.voices = script.voices ?? [
       "shimmer",
       "echo"
     ];
@@ -267,7 +263,7 @@ const main = async () => {
     { agentFilters },
   );
   graph.injectValue("script", script);
-  graph.injectValue("filename", name);
+  graph.injectValue("filename", filename);
   const results = await graph.run();
   console.log(results);
 };
