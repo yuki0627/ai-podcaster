@@ -113,7 +113,7 @@ const addMusic = async (inputs: { voiceFile: string; name: string }) => {
   return outputFile;
 };
 
-const graph_tss: GraphData = {
+const graph_tts: GraphData = {
   nodes: {
     path: {
       agent: "pathUtilsAgent",
@@ -163,7 +163,7 @@ const graph_data: GraphData = {
     map: {
       agent: "mapAgent",
       inputs: { rows: ":jsonData.script", script: ":jsonData", voiceIds: ":voiceIds" },
-      graph: graph_tss,
+      graph: graph_tts,
     },
     combineFiles: {
       agent: combineFiles,
@@ -245,7 +245,7 @@ const main = async () => {
   jsonData.script.forEach((element: ScriptData, index: number) => {
     element["key"] = name + index;
   });
-  const ttsNode = graph_tss.nodes.tts as ComputedNodeData;
+  const ttsNode = graph_tts.nodes.tts as ComputedNodeData;
   if (jsonData.tts ===  "nijivoice") {
     graph_data.concurrency = 1;
     ttsNode.agent = "ttsNijivoiceAgent";
