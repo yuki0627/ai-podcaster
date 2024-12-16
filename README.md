@@ -18,6 +18,29 @@ OPENAI_API_KEY={your OpenAI key}
 4. Run ```yarn run gen {path to the script file}```.
 5. The output will be generated in the ./output folder.
 
+# Script format
+
+```JSON
+{
+  "title": "title of the podcast",
+  "description": "The description of the podcast.",
+  "reference": "URL to the source data",
+  "tts": "openAI", // or "nijivoice"
+  "voices": ["nova", "onyx"], // TTS-specific voice identifiers (host and others)
+  "script": [
+    {
+      "speaker": "Host",
+      "text": "words from the host."
+    },
+    {
+      "speaker": "Guest",
+      "text": "words from the guest."
+    },
+    ...
+  ]
+}
+```
+
 ## Translate the script into Japanese
 
 Run ```yarn run ja {path to the script file}```
