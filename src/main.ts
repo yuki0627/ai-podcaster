@@ -25,6 +25,7 @@ type PodcastScript = {
   "tts": string | undefined; // default: openAI
   "voices": string[] | undefined;
   "script": ScriptData[];
+  "filename": string; // generated
 }
 
 const rion_takanashi_voice = "b9277ce3-ba1c-4f6f-9a65-c05ca102ded0" // たかなし りおん
@@ -156,9 +157,6 @@ const graph_data: GraphData = {
   version: 0.5,
   concurrency: 8,
   nodes: {
-    filename: {
-      value: "",
-    },
     script: {
       value: {},
     },
@@ -169,14 +167,14 @@ const graph_data: GraphData = {
     },
     combineFiles: {
       agent: combineFiles,
-      inputs: { map: ":map", script: ":script", filename: ":filename" },
+      inputs: { map: ":map", script: ":script", filename: ":script.filename" },
       isResult: true,
     },
     addBGM: {
       agent: addBGM,
       inputs: {
         voiceFile: ":combineFiles",
-        filename: ":filename",
+        filename: ":script.filename",
       },
       isResult: true,
     },
@@ -229,11 +227,11 @@ const main = async () => {
   const arg2 = process.argv[2];
   const scriptPath = path.resolve(arg2);
   const parsedPath = path.parse(scriptPath);
-  const filename = parsedPath.name;
   const data = fs.readFileSync(scriptPath, "utf-8");
   const script = JSON.parse(data) as PodcastScript;
+  script.filename = parsedPath.name;
   script.script.forEach((element: ScriptData, index: number) => {
-    element["filename"] = filename + index;
+    element["filename"] = script.filename + index;
   });
   const ttsNode = graph_tts.nodes.tts as ComputedNodeData;
   if (script.tts ===  "nijivoice") {
@@ -263,7 +261,6 @@ const main = async () => {
     { agentFilters },
   );
   graph.injectValue("script", script);
-  graph.injectValue("filename", filename);
   const results = await graph.run();
   console.log(results);
 };
