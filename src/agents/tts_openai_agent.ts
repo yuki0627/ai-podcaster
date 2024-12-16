@@ -2,14 +2,14 @@ import { AgentFunction, AgentFunctionInfo } from "graphai";
 import OpenAI from "openai";
 
 export const ttsOpenaiAgent: AgentFunction = async ({ namedInputs, params }) => {
-  const { text, voiceId } = namedInputs;
-  const { apiKey, model, throwError } = params;
+  const { text } = namedInputs;
+  const { apiKey, model, voice, throwError } = params;
   const openai = new OpenAI({ apiKey });
 
   try {
     const response = await openai.audio.speech.create({
       model: model ?? "tts-1",
-      voice: voiceId ?? "shimmer",
+      voice: voice ?? "shimmer",
       input: text,
     });
     const buffer = Buffer.from(await response.arrayBuffer());
