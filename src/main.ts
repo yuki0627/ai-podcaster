@@ -113,6 +113,56 @@ const addMusic = async (inputs: { voiceFile: string; name: string }) => {
   return outputFile;
 };
 
+const graph_tss: GraphData = {
+  nodes: {
+    path: {
+      agent: "pathUtilsAgent",
+      params: {
+        method: "resolve",
+      },
+      inputs: {
+        dirs: ["scratchpad", "${:row.key}.mp3"],
+      },
+    },
+    isNiji: {
+      agent: "compareAgent",
+      inputs: {
+        array: [":script.tts", "==", "nijivoice"],
+      },
+    },
+    voice: {
+      agent: "compareAgent",
+      inputs: {
+        array: [":row.speaker", "==", "Host"],
+      },
+      params: {
+        value: {
+          true: ":voiceIds.$0",
+          false: ":voiceIds.$1",
+        },
+      },
+    },
+    tts_OpenAI: {
+      unless: ":isNiji",
+      agent: "ttsOpenaiAgent",
+      inputs: {
+        text: ":row.text",
+        file: ":path.path",
+        voiceId: ":voice",
+      },
+    },
+    tts_Niji: {
+      if: ":isNiji",
+      agent: "ttsNijivoiceAgent",
+      inputs: {
+        file: ":path.path",
+        text: ":row.text",
+        voiceId: ":voice",
+      },
+    },
+  },
+};
+
 const graph_data: GraphData = {
   version: 0.5,
   concurrency: 8,
@@ -129,55 +179,7 @@ const graph_data: GraphData = {
     map: {
       agent: "mapAgent",
       inputs: { rows: ":jsonData.script", script: ":jsonData", voiceIds: ":voiceIds" },
-      graph: {
-        nodes: {
-          path: {
-            agent: "pathUtilsAgent",
-            params: {
-              method: "resolve",
-            },
-            inputs: {
-              dirs: ["scratchpad", "${:row.key}.mp3"],
-            },
-          },
-          isNiji: {
-            agent: "compareAgent",
-            inputs: {
-              array: [":script.tts", "==", "nijivoice"],
-            },
-          },
-          voice: {
-            agent: "compareAgent",
-            inputs: {
-              array: [":row.speaker", "==", "Host"],
-            },
-            params: {
-              value: {
-                true: ":voiceIds.$0",
-                false: ":voiceIds.$1",
-              },
-            },
-          },
-          tts_OpenAI: {
-            unless: ":isNiji",
-            agent: "ttsOpenaiAgent",
-            inputs: {
-              text: ":row.text",
-              file: ":path.path",
-              voiceId: ":voice",
-            },
-          },
-          tts_Niji: {
-            if: ":isNiji",
-            agent: "ttsNijivoiceAgent",
-            inputs: {
-              file: ":path.path",
-              text: ":row.text",
-              voiceId: ":voice",
-            },
-          },
-        },
-      },
+      graph: graph_tss,
     },
     combineFiles: {
       agent: combineFiles,
