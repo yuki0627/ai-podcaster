@@ -234,22 +234,22 @@ const main = async () => {
   const parsedPath = path.parse(scriptPath);
   const name = parsedPath.name;
   const data = fs.readFileSync(scriptPath, "utf-8");
-  const jsonData = JSON.parse(data);
-  jsonData.script.forEach((element: ScriptData, index: number) => {
+  const script = JSON.parse(data) as PodcastScript;
+  script.script.forEach((element: ScriptData, index: number) => {
     element["key"] = name + index;
   });
   const ttsNode = graph_tts.nodes.tts as ComputedNodeData;
   const voicesNode = graph_data.nodes.voices as StaticNodeData;
-  if (jsonData.tts ===  "nijivoice") {
+  if (script.tts ===  "nijivoice") {
     graph_data.concurrency = 1;
-    voicesNode.value = jsonData.voices ?? [
+    voicesNode.value = script.voices ?? [
       rion_takanashi_voice,
       ben_carter_voice,
     ];
     ttsNode.agent = "ttsNijivoiceAgent";
   } else {
     graph_data.concurrency = 8;
-    voicesNode.value = jsonData.voices ?? [
+    voicesNode.value = script.voices ?? [
       "shimmer",
       "echo"
     ];
@@ -266,7 +266,7 @@ const main = async () => {
     },
     { agentFilters },
   );
-  graph.injectValue("script", jsonData);
+  graph.injectValue("script", script);
   graph.injectValue("name", name);
   const results = await graph.run();
   console.log(results);
