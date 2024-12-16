@@ -131,8 +131,8 @@ const graph_tts: GraphData = {
       },
       params: {
         value: {
-          true: ":voiceIds.$0",
-          false: ":voiceIds.$1",
+          true: ":voices.$0",
+          false: ":voices.$1",
         },
       },
     },
@@ -160,12 +160,12 @@ const graph_data: GraphData = {
     jsonData: {
       value: {},
     },
-    voiceIds: {
+    voices: {
       value: [],
     },
     map: {
       agent: "mapAgent",
-      inputs: { rows: ":jsonData.script", script: ":jsonData", voiceIds: ":voiceIds" },
+      inputs: { rows: ":jsonData.script", script: ":jsonData", voices: ":voices" },
       graph: graph_tts,
     },
     combineFiles: {
@@ -249,17 +249,17 @@ const main = async () => {
     element["key"] = name + index;
   });
   const ttsNode = graph_tts.nodes.tts as ComputedNodeData;
-  const voiceIdsNode = graph_data.nodes.voiceIds as StaticNodeData;
+  const voicesNode = graph_data.nodes.voices as StaticNodeData;
   if (jsonData.tts ===  "nijivoice") {
     graph_data.concurrency = 1;
-    voiceIdsNode.value = [
+    voicesNode.value = [
       rion_takanashi_voice,
       ben_carter_voice,
     ];
     ttsNode.agent = "ttsNijivoiceAgent";
   } else {
     graph_data.concurrency = 8;
-    voiceIdsNode.value = [
+    voicesNode.value = jsonData.voices ?? [
       "shimmer",
       "echo"
     ];
