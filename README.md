@@ -20,13 +20,13 @@ OPENAI_API_KEY={your OpenAI key}
 
 # Script format
 
-```JSON
+```Javascript
 {
   "title": "title of the podcast",
   "description": "The description of the podcast.",
-  "reference": "URL to the source data",
-  "tts": "openAI", // or "nijivoice"
-  "voices": ["nova", "onyx"], // TTS-specific voice identifiers (host and others)
+  "reference": "URL to the source data", // optional
+  "tts": "openAI", // or "nijivoice", default is "openAI"
+  "voices": ["nova", "onyx"], // TTS-specific voice identifiers (host and others), optional.
   "script": [
     {
       "speaker": "Host",
