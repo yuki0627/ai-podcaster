@@ -156,7 +156,7 @@ const graph_data: GraphData = {
   version: 0.5,
   concurrency: 8,
   nodes: {
-    name: {
+    filename: {
       value: "",
     },
     script: {
@@ -172,14 +172,14 @@ const graph_data: GraphData = {
     },
     combineFiles: {
       agent: combineFiles,
-      inputs: { map: ":map", script: ":script", filename: ":name" },
+      inputs: { map: ":map", script: ":script", filename: ":filename" },
       isResult: true,
     },
     addBGM: {
       agent: addBGM,
       inputs: {
         voiceFile: ":combineFiles",
-        filename: ":name",
+        filename: ":filename",
       },
       isResult: true,
     },
@@ -267,7 +267,7 @@ const main = async () => {
     { agentFilters },
   );
   graph.injectValue("script", script);
-  graph.injectValue("name", name);
+  graph.injectValue("filename", name);
   const results = await graph.run();
   console.log(results);
 };
