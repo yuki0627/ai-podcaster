@@ -159,7 +159,7 @@ const graph_data: GraphData = {
     name: {
       value: "",
     },
-    jsonData: {
+    script: {
       value: {},
     },
     voices: {
@@ -167,12 +167,12 @@ const graph_data: GraphData = {
     },
     map: {
       agent: "mapAgent",
-      inputs: { rows: ":jsonData.script", script: ":jsonData", voices: ":voices" },
+      inputs: { rows: ":script.script", script: ":script", voices: ":voices" },
       graph: graph_tts,
     },
     combineFiles: {
       agent: combineFiles,
-      inputs: { map: ":map", script: ":jsonData", name: ":name" },
+      inputs: { map: ":map", script: ":script", name: ":name" },
       isResult: true,
     },
     addBGM: {
@@ -193,22 +193,10 @@ const graph_data: GraphData = {
       },
       inputs: {
         title:
-          "\n${:jsonData.title}\n\n${:jsonData.description}\nReference: ${:jsonData.reference}\n",
+          "\n${:script.title}\n\n${:script.description}\nReference: ${:script.reference}\n",
         waitFor: ":addBGM",
       },
     },
-    /*
-    translate: {
-      agent: "openAIAgent",
-      inputs: {
-        prompt: "Translate all the text in this JSON file into Japanese, leaving the JSON format as is. \n ${:jsonData.toJSON()}",
-      }
-    },
-    wwriteTranslate: {
-      agent: writeTranslatedJson,
-      inputs: { jsonData: ":translate.text.jsonParse()", name: ":name" },
-    }
-    */
   },
 };
 
@@ -278,13 +266,10 @@ const main = async () => {
     },
     { agentFilters },
   );
-  graph.injectValue("jsonData", jsonData);
+  graph.injectValue("script", jsonData);
   graph.injectValue("name", name);
   const results = await graph.run();
   console.log(results);
-
-  // const voiceFile = await combineFiles(jsonData, name);
-  // await addBGM(jsonData, voiceFile, name);
 };
 
 main();
