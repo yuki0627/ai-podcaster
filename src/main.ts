@@ -151,7 +151,7 @@ const graph_data: GraphData = {
               file: ":path.path",
             },
           },
-          v: {
+          voice: {
             agent: "compareAgent",
             inputs: {
               array: [":row.speaker", "==", "Host"],
@@ -169,7 +169,7 @@ const graph_data: GraphData = {
             inputs: {
               file: ":path.path",
               text: ":row.text",
-              voiceId: ":v",
+              voiceId: ":voice",
             },
           },
         },
