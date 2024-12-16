@@ -146,14 +146,6 @@ const graph_data: GraphData = {
               array: [":script.tts", "==", "nijivoice"],
             },
           },
-          tts_OpenAI: {
-            unless: ":isNiji",
-            agent: "ttsOpenaiAgent",
-            inputs: {
-              text: ":row.text",
-              file: ":path.path",
-            },
-          },
           voice: {
             agent: "compareAgent",
             inputs: {
@@ -164,6 +156,15 @@ const graph_data: GraphData = {
                 true: ":voiceIds.$0",
                 false: ":voiceIds.$1",
               },
+            },
+          },
+          tts_OpenAI: {
+            unless: ":isNiji",
+            agent: "ttsOpenaiAgent",
+            inputs: {
+              text: ":row.text",
+              file: ":path.path",
+              voiceId: ":voice",
             },
           },
           tts_Niji: {
