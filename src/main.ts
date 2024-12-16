@@ -143,6 +143,9 @@ const graph_tts: GraphData = {
         file: ":path.path",
         voiceId: ":voice",
       },
+      params: {
+        throwError: true,
+      },
     },
   },
 };
