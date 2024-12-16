@@ -31,9 +31,9 @@ type PodcastScript = {
 const rion_takanashi_voice = "b9277ce3-ba1c-4f6f-9a65-c05ca102ded0" // たかなし りおん
 const ben_carter_voice = "bc06c63f-fef6-43b6-92f7-67f919bd5dae" // ベン・カーター
 
-const combineFiles = async (inputs: { script: PodcastScript; filename: string }) => {
-  const { filename, script } = inputs;
-  const outputFile = path.resolve("./output/" + filename + ".mp3");
+const combineFiles = async (inputs: { script: PodcastScript }) => {
+  const { script } = inputs;
+  const outputFile = path.resolve("./output/" + script.filename + ".mp3");
   const silentPath = path.resolve("./music/silent300.mp3");
   const silentLastPath = path.resolve("./music/silent800.mp3");
   const command = ffmpeg();
@@ -67,7 +67,7 @@ const combineFiles = async (inputs: { script: PodcastScript; filename: string })
 
   await promise;
 
-  const outputScript = path.resolve("./output/" + filename + ".json");
+  const outputScript = path.resolve("./output/" + script.filename + ".json");
   fs.writeFileSync(outputScript, JSON.stringify(script, null, 2));
 
   return outputFile;
@@ -167,7 +167,7 @@ const graph_data: GraphData = {
     },
     combineFiles: {
       agent: combineFiles,
-      inputs: { map: ":map", script: ":script", filename: ":script.filename" },
+      inputs: { map: ":map", script: ":script" },
       isResult: true,
     },
     addBGM: {
