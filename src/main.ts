@@ -2,7 +2,7 @@ import "dotenv/config";
 import fsPromise from "fs/promises";
 import fs from "fs";
 import path from "path";
-import { GraphAI, AgentFilterFunction, GraphData } from "graphai";
+import { GraphAI, AgentFilterFunction, GraphData, ComputedNodeData } from "graphai";
 import * as agents from "@graphai/agents";
 import { ttsNijivoiceAgent } from "@graphai/tts_nijivoice_agent";
 import { ttsOpenaiAgent } from "@graphai/tts_openai_agent";
@@ -124,12 +124,6 @@ const graph_tss: GraphData = {
         dirs: ["scratchpad", "${:row.key}.mp3"],
       },
     },
-    isNiji: {
-      agent: "compareAgent",
-      inputs: {
-        array: [":script.tts", "==", "nijivoice"],
-      },
-    },
     voice: {
       agent: "compareAgent",
       inputs: {
@@ -142,21 +136,11 @@ const graph_tss: GraphData = {
         },
       },
     },
-    tts_OpenAI: {
-      unless: ":isNiji",
+    tts: {
       agent: "ttsOpenaiAgent",
       inputs: {
         text: ":row.text",
         file: ":path.path",
-        voiceId: ":voice",
-      },
-    },
-    tts_Niji: {
-      if: ":isNiji",
-      agent: "ttsNijivoiceAgent",
-      inputs: {
-        file: ":path.path",
-        text: ":row.text",
         voiceId: ":voice",
       },
     },
@@ -247,7 +231,7 @@ const agentFilters = [
   {
     name: "fileCacheAgentFilter",
     agent: fileCacheAgentFilter,
-    nodeIds: ["tts_OpenAI", "tts_Niji"],
+    nodeIds: ["tts", "tts_Niji"],
   },
 ];
 
@@ -261,8 +245,10 @@ const main = async () => {
   jsonData.script.forEach((element: ScriptData, index: number) => {
     element["key"] = name + index;
   });
+  const ttsNode = graph_tss.nodes.tts as ComputedNodeData;
   if (jsonData.tts ===  "nijivoice") {
-    graph_data.concurrency = 1;    
+    graph_data.concurrency = 1;
+    ttsNode.agent = "ttsNijivoiceAgent";
   }
 
   const graph = new GraphAI(
