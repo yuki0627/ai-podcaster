@@ -123,9 +123,15 @@ const graph_data: GraphData = {
     jsonData: {
       value: {},
     },
+    voiceIds: {
+      value: [
+        rion_takanashi_voice,
+        ben_carter_voice,
+      ],
+    },
     map: {
       agent: "mapAgent",
-      inputs: { rows: ":jsonData.script", script: ":jsonData" },
+      inputs: { rows: ":jsonData.script", script: ":jsonData", voiceIds: ":voiceIds" },
       graph: {
         nodes: {
           path: {
@@ -158,8 +164,8 @@ const graph_data: GraphData = {
             },
             params: {
               value: {
-                true: rion_takanashi_voice,
-                false: ben_carter_voice,
+                true: ":voiceIds.$0",
+                false: ":voiceIds.$1",
               },
             },
           },
