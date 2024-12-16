@@ -30,15 +30,15 @@ type PodcastScript = {
 const rion_takanashi_voice = "b9277ce3-ba1c-4f6f-9a65-c05ca102ded0" // たかなし りおん
 const ben_carter_voice = "bc06c63f-fef6-43b6-92f7-67f919bd5dae" // ベン・カーター
 
-const combineFiles = async (inputs: { jsonData: PodcastScript; name: string }) => {
-  const { name, jsonData } = inputs;
+const combineFiles = async (inputs: { script: PodcastScript; name: string }) => {
+  const { name, script } = inputs;
   const outputFile = path.resolve("./output/" + name + ".mp3");
   const silentPath = path.resolve("./music/silent300.mp3");
   const silentLastPath = path.resolve("./music/silent800.mp3");
   const command = ffmpeg();
-  jsonData.script.forEach((element: ScriptData, index: number) => {
+  script.script.forEach((element: ScriptData, index: number) => {
     const filePath = path.resolve("./scratchpad/" + element.key + ".mp3");
-    const isLast = index === jsonData.script.length - 2;
+    const isLast = index === script.script.length - 2;
     command.input(filePath);
     command.input(isLast ? silentLastPath : silentPath);
     // Measure and log the timestamp of each section
@@ -67,7 +67,7 @@ const combineFiles = async (inputs: { jsonData: PodcastScript; name: string }) =
   await promise;
 
   const outputScript = path.resolve("./output/" + name + ".json");
-  fs.writeFileSync(outputScript, JSON.stringify(jsonData, null, 2));
+  fs.writeFileSync(outputScript, JSON.stringify(script, null, 2));
 
   return outputFile;
 };
@@ -172,7 +172,7 @@ const graph_data: GraphData = {
     },
     combineFiles: {
       agent: combineFiles,
-      inputs: { map: ":map", jsonData: ":jsonData", name: ":name" },
+      inputs: { map: ":map", script: ":jsonData", name: ":name" },
       isResult: true,
     },
     addBGM: {
