@@ -2,18 +2,22 @@
   "title": "Understanding Korean Martial Law and its Implications for Japan",
   "description": "An insightful discussion on the recent declaration of martial law in Korea and its potential consequences, along with parallels to Japan's constitutional considerations.",
   "tts": "nijivoice",
+  "voices": [
+    "29769284-3fc5-40a6-963a-17e111784d6d",
+    "1fc717fe-ebf9-402b-9d8c-c59cda93d5dc"
+  ],
   "script": [
     {
       "speaker": "Host",
       "text": "先生、今日は韓国で起きた戒厳令のことを教えてもらえますか？",
       "key": "korea_marshal_law0",
-      "duration": 4.68855
+      "duration": 4.8191999999999995
     },
     {
       "speaker": "Guest",
       "text": "もちろんだよ、太郎くん。韓国で最近、大統領が「戒厳令」っていうのを突然宣言したんだ。",
       "key": "korea_marshal_law1",
-      "duration": 7.6404
+      "duration": 6.8306
     },
     {
       "speaker": "Host",

@@ -70,7 +70,7 @@ const combineFiles = async (inputs: { jsonData: JSONData; name: string }) => {
   return outputFile;
 };
 
-const addMusic = async (inputs: { voiceFile: string; name: string }) => {
+const addBGM = async (inputs: { voiceFile: string; name: string }) => {
   const { voiceFile, name } = inputs;
   const outputFile = path.resolve("./output/" + name + "_bgm.mp3");
   const musicFile = path.resolve(
@@ -137,7 +137,7 @@ const graph_tts: GraphData = {
       },
     },
     tts: {
-      agent: "ttsOpenaiAgent",
+      agent: "ttsOpenaiAgent", // to be replaced
       inputs: {
         text: ":row.text",
         file: ":path.path",
@@ -173,8 +173,8 @@ const graph_data: GraphData = {
       inputs: { map: ":map", jsonData: ":jsonData", name: ":name" },
       isResult: true,
     },
-    addMusic: {
-      agent: addMusic,
+    addBGM: {
+      agent: addBGM,
       inputs: {
         voiceFile: ":combineFiles",
         name: ":name",
@@ -192,7 +192,7 @@ const graph_data: GraphData = {
       inputs: {
         title:
           "\n${:jsonData.title}\n\n${:jsonData.description}\nReference: ${:jsonData.reference}\n",
-        waitFor: ":addMusic",
+        waitFor: ":addBGM",
       },
     },
     /*
@@ -282,7 +282,7 @@ const main = async () => {
   console.log(results);
 
   // const voiceFile = await combineFiles(jsonData, name);
-  // await addMusic(jsonData, voiceFile, name);
+  // await addBGM(jsonData, voiceFile, name);
 };
 
 main();

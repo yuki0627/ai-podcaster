@@ -3,18 +3,22 @@
   "reference": "https://www.wired.com/story/big-interview-tim-cook-wants-apple-to-literally-save-your-life/",
   "description": "Tim Cook discusses Apple's new AI venture, Apple Intelligence, its privacy-centric approach, and Apple's future in health technology.",
   "tts": "openAI",
+  "voices": [
+    "nova",
+    "onyx"
+  ],
   "script": [
     {
       "speaker": "Host",
       "text": "Hello, Tim. Thank you for taking the time to talk with me today. It’s always fascinating to come back to Apple Park. The campus feels more vibrant each time I visit.",
       "key": "wired_timcook0",
-      "duration": 10.572000000000001
+      "duration": 9.780000000000001
     },
     {
       "speaker": "Guest",
       "text": "Thank you. It’s great to have you here. I’m really proud of how the campus has evolved since we started—it was a big, 100-year decision.",
       "key": "wired_timcook1",
-      "duration": 9.252
+      "duration": 8.628
     },
     {
       "speaker": "Host",
@@ -26,7 +30,7 @@
       "speaker": "Guest",
       "text": "We’ve always approached things this way. Classic Apple, as you put it. We believe it’s not always about being first; it’s about getting it right. The iPod wasn’t the first MP3 player, but it was the first to make digital music truly accessible and enjoyable for people. This is our approach to AI—finding that intersection between innovation, utility, and privacy.",
       "key": "wired_timcook3",
-      "duration": 23.076
+      "duration": 22.38
     },
     {
       "speaker": "Host",
