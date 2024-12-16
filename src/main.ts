@@ -5,9 +5,9 @@ import path from "path";
 import { GraphAI, AgentFilterFunction, GraphData, ComputedNodeData, StaticNodeData } from "graphai";
 import * as agents from "@graphai/agents";
 import { ttsNijivoiceAgent } from "@graphai/tts_nijivoice_agent";
-import { ttsOpenaiAgent } from "@graphai/tts_openai_agent";
+// import { ttsOpenaiAgent } from "@graphai/tts_openai_agent";
 // import ttsNijivoiceAgent from "./agents/tts_nijivoice_agent";
-// import ttsOpenaiAgent from "./agents/tts_openai_agent";
+import ttsOpenaiAgent from "./agents/tts_openai_agent";
 import { pathUtilsAgent } from "@graphai/vanilla_node_agents";
 import ffmpeg from "fluent-ffmpeg";
 
