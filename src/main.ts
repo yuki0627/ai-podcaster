@@ -252,7 +252,7 @@ const main = async () => {
   const voicesNode = graph_data.nodes.voices as StaticNodeData;
   if (jsonData.tts ===  "nijivoice") {
     graph_data.concurrency = 1;
-    voicesNode.value = [
+    voicesNode.value = jsonData.voices ?? [
       rion_takanashi_voice,
       ben_carter_voice,
     ];
