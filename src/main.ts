@@ -2,7 +2,7 @@ import "dotenv/config";
 import fsPromise from "fs/promises";
 import fs from "fs";
 import path from "path";
-import { GraphAI, AgentFilterFunction, GraphData, ComputedNodeData } from "graphai";
+import { GraphAI, AgentFilterFunction, GraphData, ComputedNodeData, StaticNodeData } from "graphai";
 import * as agents from "@graphai/agents";
 import { ttsNijivoiceAgent } from "@graphai/tts_nijivoice_agent";
 import { ttsOpenaiAgent } from "@graphai/tts_openai_agent";
@@ -246,9 +246,21 @@ const main = async () => {
     element["key"] = name + index;
   });
   const ttsNode = graph_tts.nodes.tts as ComputedNodeData;
+  const voiceIdsNode = graph_data.nodes.voiceIds as StaticNodeData;
   if (jsonData.tts ===  "nijivoice") {
     graph_data.concurrency = 1;
+    voiceIdsNode.value = [
+      rion_takanashi_voice,
+      ben_carter_voice,
+    ];
     ttsNode.agent = "ttsNijivoiceAgent";
+  } else {
+    graph_data.concurrency = 8;
+    voiceIdsNode.value = [
+      "shimmer",
+      "echo"
+    ];
+    ttsNode.agent = "ttsOpenaiAgent";
   }
 
   const graph = new GraphAI(
@@ -263,10 +275,6 @@ const main = async () => {
   );
   graph.injectValue("jsonData", jsonData);
   graph.injectValue("name", name);
-  graph.injectValue("voiceIds", [
-    rion_takanashi_voice,
-    ben_carter_voice,
-]);
   const results = await graph.run();
   console.log(results);
 
