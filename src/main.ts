@@ -124,10 +124,7 @@ const graph_data: GraphData = {
       value: {},
     },
     voiceIds: {
-      value: [
-        rion_takanashi_voice,
-        ben_carter_voice,
-      ],
+      value: [],
     },
     map: {
       agent: "mapAgent",
@@ -277,6 +274,10 @@ const main = async () => {
   );
   graph.injectValue("jsonData", jsonData);
   graph.injectValue("name", name);
+  graph.injectValue("voiceIds", [
+    rion_takanashi_voice,
+    ben_carter_voice,
+]);
   const results = await graph.run();
   console.log(results);
 
