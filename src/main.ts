@@ -14,8 +14,8 @@ import ffmpeg from "fluent-ffmpeg";
 type ScriptData = {
   "speaker": string;
   "text": string;
-  "key": string;
-  "duration": number;
+  "duration": number; // generated
+  "filename": string; // generated
 };
 
 type PodcastScript = {
@@ -30,14 +30,14 @@ type PodcastScript = {
 const rion_takanashi_voice = "b9277ce3-ba1c-4f6f-9a65-c05ca102ded0" // たかなし りおん
 const ben_carter_voice = "bc06c63f-fef6-43b6-92f7-67f919bd5dae" // ベン・カーター
 
-const combineFiles = async (inputs: { script: PodcastScript; name: string }) => {
-  const { name, script } = inputs;
-  const outputFile = path.resolve("./output/" + name + ".mp3");
+const combineFiles = async (inputs: { script: PodcastScript; filename: string }) => {
+  const { filename, script } = inputs;
+  const outputFile = path.resolve("./output/" + filename + ".mp3");
   const silentPath = path.resolve("./music/silent300.mp3");
   const silentLastPath = path.resolve("./music/silent800.mp3");
   const command = ffmpeg();
   script.script.forEach((element: ScriptData, index: number) => {
-    const filePath = path.resolve("./scratchpad/" + element.key + ".mp3");
+    const filePath = path.resolve("./scratchpad/" + element.filename + ".mp3");
     const isLast = index === script.script.length - 2;
     command.input(filePath);
     command.input(isLast ? silentLastPath : silentPath);
@@ -66,15 +66,15 @@ const combineFiles = async (inputs: { script: PodcastScript; name: string }) => 
 
   await promise;
 
-  const outputScript = path.resolve("./output/" + name + ".json");
+  const outputScript = path.resolve("./output/" + filename + ".json");
   fs.writeFileSync(outputScript, JSON.stringify(script, null, 2));
 
   return outputFile;
 };
 
-const addBGM = async (inputs: { voiceFile: string; name: string }) => {
-  const { voiceFile, name } = inputs;
-  const outputFile = path.resolve("./output/" + name + "_bgm.mp3");
+const addBGM = async (inputs: { voiceFile: string; filename: string }) => {
+  const { voiceFile, filename } = inputs;
+  const outputFile = path.resolve("./output/" + filename + "_bgm.mp3");
   const musicFile = path.resolve(
     process.env.PATH_BGM ?? "./music/StarsBeyondEx.mp3",
   );
@@ -123,7 +123,7 @@ const graph_tts: GraphData = {
         method: "resolve",
       },
       inputs: {
-        dirs: ["scratchpad", "${:row.key}.mp3"],
+        dirs: ["scratchpad", "${:row.filename}.mp3"],
       },
     },
     voice: {
@@ -172,14 +172,14 @@ const graph_data: GraphData = {
     },
     combineFiles: {
       agent: combineFiles,
-      inputs: { map: ":map", script: ":script", name: ":name" },
+      inputs: { map: ":map", script: ":script", filename: ":name" },
       isResult: true,
     },
     addBGM: {
       agent: addBGM,
       inputs: {
         voiceFile: ":combineFiles",
-        name: ":name",
+        filename: ":name",
       },
       isResult: true,
     },
@@ -236,7 +236,7 @@ const main = async () => {
   const data = fs.readFileSync(scriptPath, "utf-8");
   const script = JSON.parse(data) as PodcastScript;
   script.script.forEach((element: ScriptData, index: number) => {
-    element["key"] = name + index;
+    element["filename"] = name + index;
   });
   const ttsNode = graph_tts.nodes.tts as ComputedNodeData;
   const voicesNode = graph_data.nodes.voices as StaticNodeData;
