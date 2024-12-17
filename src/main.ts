@@ -24,8 +24,10 @@ type PodcastScript = {
   "reference": string;
   "tts": string | undefined; // default: openAI
   "voices": string[] | undefined;
+  "speakers": string[] | undefined;
   "script": ScriptData[];
   "filename": string; // generated
+  "voicemap": Map<string, string>; // generated
 }
 
 const rion_takanashi_voice = "b9277ce3-ba1c-4f6f-9a65-c05ca102ded0" // たかなし りおん
@@ -128,15 +130,14 @@ const graph_tts: GraphData = {
       },
     },
     voice: {
-      agent: "compareAgent",
-      inputs: {
-        array: [":row.speaker", "==", "Host"],
+      agent: (namedInputs: any) => {
+        const { speaker, voicemap, voice0 } = namedInputs;
+        return voicemap[speaker] ?? voice0; 
       },
-      params: {
-        value: {
-          true: ":script.voices.$0",
-          false: ":script.voices.$1",
-        },
+      inputs: {
+        speaker: ":row.speaker",
+        voicemap: ":script.voicemap",
+        voice0: ":script.voices.$0"
       },
     },
     tts: {
@@ -233,6 +234,7 @@ const main = async () => {
   script.script.forEach((element: ScriptData, index: number) => {
     element["filename"] = script.filename + index;
   });
+
   const ttsNode = graph_tts.nodes.tts as ComputedNodeData;
   if (script.tts ===  "nijivoice") {
     graph_data.concurrency = 1;
@@ -249,6 +251,11 @@ const main = async () => {
     ];
     ttsNode.agent = "ttsOpenaiAgent";
   }
+  const speakers = script.speakers ?? ["Host", "Guest"];
+  script.voicemap = speakers.reduce((map: any, speaker: string, index: number) => {
+    map[speaker] = script.voices![index];
+    return map;
+  }, {});
 
   const graph = new GraphAI(
     graph_data,
