@@ -154,10 +154,10 @@
   dependencies:
     deepmerge "^4.3.1"
 
-"@graphai/tts_nijivoice_agent@^0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@graphai/tts_nijivoice_agent/-/tts_nijivoice_agent-0.0.1.tgz#24cd026739d3b6f7a6bd7dacf708379e097cc476"
-  integrity sha512-p4Zk4CTzQ5j7/8ScA+cLf7uTJgVwCYZaki/P06GkKV+A2pv/isvKVp8WIBZjgEEFUY7+puq6KfgAxRfvOpZccg==
+"@graphai/tts_nijivoice_agent@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@graphai/tts_nijivoice_agent/-/tts_nijivoice_agent-0.0.2.tgz#b16f81de36d8d779ebb95bcde0aae55fdf0dfba8"
+  integrity sha512-YoP2uK0kaWfIocxk3GObYoq8MOLHfLT5na99a8KQdYqEiPBcOzYB1Ho9w7It9k+kmr0ZIqcRtVnN9ur1COK1KA==
 
 "@graphai/tts_openai_agent@^0.0.1":
   version "0.0.1"
@@ -697,10 +697,10 @@ formdata-node@^4.3.2:
     node-domexception "1.0.0"
     web-streams-polyfill "4.0.0-beta.3"
 
-graphai@^0.6.4:
-  version "0.6.5"
-  resolved "https://registry.yarnpkg.com/graphai/-/graphai-0.6.5.tgz#5eed5cf00c7c70d0043d8c7b1738c1d2df85bbed"
-  integrity sha512-I9MQ0iigMRVI5HQdEHyfaPzTKH/a1TUAZXenVd2t3xProW77XDpbl7yMHRMFsSTcLfNYTB8gHaL4ohUDmVf/cA==
+graphai@^0.6.8:
+  version "0.6.8"
+  resolved "https://registry.yarnpkg.com/graphai/-/graphai-0.6.8.tgz#8e1fe9f188d5e6469c8b7744883c1289271f08c1"
+  integrity sha512-+TDEwK7BuPLmueYP3U/ovK8EJ7JqKCNn1CLq3oZ0JAbcO+dYs6CqYYWdKlQYcuuxIKT5WEBDVZdWMJHwl0ANXQ==
 
 graphql-request@^6.1.0:
   version "6.1.0"
