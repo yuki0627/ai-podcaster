@@ -2,11 +2,12 @@
     "title": "AppleがAI向けサーバー用チップを開発中",
     "description": "AppleがAI向けのチップ開発を通じて、自社のAIサービスを完成させるための話。Broadcomとの協業や、チップレット技術、Nvidiaとの関係にも触れます。",
     "tts": "nijivoice",
+    "voices": ["c05bf02d-bed2-4335-aa69-0798e9e85205", "b9277ce3-ba1c-4f6f-9a65-c05ca102ded0", "bc06c63f-fef6-43b6-92f7-67f919bd5dae"],
     "speakers": ["Announcer", "Student", "Teacher"],
     "script": [
       {
         "speaker": "Announcer",
-        "text": "今日はAppleが開発している新しいAI向けのチップについて、大太郎くんが先生に聞きます。"
+        "text": "今日はAppleが開発している新しいAI向けのチップについて、太郎くんが先生に聞きます。"
       },
       {
         "speaker": "Student",
@@ -22,7 +23,7 @@
       },
       {
         "speaker": "Teacher",
-        "text": "AIサーバーは、AIのしごとをしてくれる「スーパーコンピュータ」だよ。小さなAIならスマホで動かせるんだけど、大きくて賢いAIを動かす場合には、AIサーバーの助けるかりる必要があるんだ。"
+        "text": "AIサーバーは、AIのしごとをしてくれる「スーパーコンピュータ」のことだよ。小さなAIならスマホで動かせるんだけど、大きくて賢いAIを動かす場合には、AIサーバーの助けを借りる必要があるんだ。"
       },
       {
         "speaker": "Student",
