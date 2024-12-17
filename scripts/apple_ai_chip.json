@@ -1,0 +1,57 @@
+{
+    "title": "AppleがAI向けサーバー用チップを開発中",
+    "description": "AppleがAI向けのチップ開発を通じて、自社のAIサービスを完成させるための話。Broadcomとの協業や、チップレット技術、Nvidiaとの関係にも触れます。",
+    "tts": "nijivoice",
+    "speakers": ["Announcer", "Student", "Teacher"],
+    "script": [
+      {
+        "speaker": "Announcer",
+        "text": "今日はAppleが開発している新しいAI向けのチップについて、大太郎くんが先生に聞きます。"
+      },
+      {
+        "speaker": "Student",
+        "text": "先生、Appleが自分でAIのためのチップを作っていると聞いたんですが、それってどういうことですか？"
+      },
+      {
+        "speaker": "Teacher",
+        "text": "いい質問だね。Appleは自分たちの「AIサーバー」で使うために、特別なチップを開発しているんだ。これは「Baltra」というコードネームがつけられているよ。"
+      },
+      {
+        "speaker": "Student",
+        "text": "AIサーバーってなんですか？"
+      },
+      {
+        "speaker": "Teacher",
+        "text": "AIサーバーは、AIのしごとをしてくれる「スーパーコンピュータ」だよ。小さなAIならスマホで動かせるんだけど、大きくて賢いAIを動かす場合には、AIサーバーの助けるかりる必要があるんだ。"
+      },
+      {
+        "speaker": "Student",
+        "text": "Broadcomってなんですか？"
+      },
+      {
+        "speaker": "Teacher",
+        "text": "Broadcomは、チップを連携させて、より早く計算をできる技術を強く持っている会社だよ。Appleも、Broadcomの技術を使ってチップをネットワークで連携させるんだ。これで複数のチップが一緒に動けるのが強みだよ。"
+      },
+      {
+        "speaker": "Student",
+        "text": "Nvidiaとは違うんですか？"
+      },
+      {
+        "speaker": "Teacher",
+        "text": "Nvidiaは、この仕事で世界一のシェアを持つ大手会社なんだ。大手テクノロジー会社の多くはNvidiaのチップを使っているけれど、Appleは「自分たちのチップで安全に動かせたい」って思って、自実現を目指しているんだよ。だから、そのためにBaltraを開発しているともいわれているよ。"
+      },
+      {
+        "speaker": "Student",
+        "text": "Nvidiaに依存しないのはすごいですね！Appleのチップが完成したら、もっとたくさんのAIが使えるようになるんですね！"
+      },
+      {
+        "speaker": "Teacher",
+        "text": "そうだよ！。たとえば、ありとあらゆる可能性を考えて、もっと速く、安全にAIが働いてくれるようになる。Appleの新しいチップが完成するのは2026年だと言われているよ。楽しみだね！"
+      },
+      {
+        "speaker": "Student",
+        "text": "はい！働くまでの流れを見るのが楽しみです！"
+      }
+    ]
+  }
+  
