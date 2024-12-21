@@ -207,7 +207,7 @@ const fileCacheAgentFilter: AgentFilterFunction = async (context, next) => {
   const { file } = namedInputs;
   try {
     await fsPromise.access(file);
-    console.log("cache hit: " + file);
+    console.log("cache hit: " + file, namedInputs.text.slice(0, 10));
     return true;
   } catch (e) {
     const output = (await next(context)) as Record<string, any>;
