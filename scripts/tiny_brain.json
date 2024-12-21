@@ -1,56 +1,55 @@
 {
-    "title": "Tiny Brains and Flying Machines: Neuromorphic Technology and the Future of Robotics",
-    "description": "Explore how neuromorphic technology is making autonomous insect-sized robots a reality, mimicking biological brains for energy-efficient flight.",
-    "reference": "https://interestingengineering.com/innovation/neuromorphic-technology-drone-flight",
-    "script": [
-      {
-        "speaker": "Host",
-        "text": "Hello and welcome to another episode of 'Life is Artificial', where we explore the cutting edge of technology, innovation, and what the future could look like."
-      },
-      {
-        "speaker": "Host",
-        "text": "Today, we're diving into a story that's straight out of a sci-fi movie. Imagine tiny flying robots, about the size of insects, that are intelligent enough to maneuver on their own—robots that could help with search and rescue missions, monitor the environment, or even assist in precision agriculture. Well, thanks to advances in neuromorphic technology, this future might be closer than we think."
-      },
-      {
-        "speaker": "Host",
-        "text": "Our story today comes from an article titled 'New neural tech could power insect-sized intelligent flying robots' on Interesting Engineering. Let me set the scene for you. Picture a small drone, a bit larger than a bumblebee, hovering over a flower, recognizing its surroundings, adjusting its position in space—all autonomously. The researchers at Delft University of Technology have been working on something that makes this possible."
-      },
-      {
-        "speaker": "Host",
-        "text": "The breakthrough here is something called neuromorphic technology, which mimics the way biological brains work. They use what are known as spiking neural networks—a type of network that closely resembles the way neurons in our brains fire. In this project, the team developed a five-layer spiking neural network with 28,800 neurons to process raw, event-based camera data and estimate the camera's 3D motion."
-      },
-      {
-        "speaker": "Host",
-        "text": "Think of it like this: instead of capturing full-frame images like your regular camera, these drones use event-based cameras that only register changes, like movement. It's like having eyes that only pay attention when something changes in your field of view. That makes this system extremely efficient in terms of both power and processing—and that's a crucial feature when you're trying to make insect-sized robots that can fly on their own."
-      },
-      {
-        "speaker": "Host",
-        "text": "This technology is a major step forward because it allows the drone to autonomously control its position in space—it can hover, it can land, it can even maneuver sideways. All of this is happening thanks to a neuromorphic processor, specifically Intel's Loihi processor, which consumes less than one watt of power. To put that into perspective, that's incredibly low compared to traditional processors, making this tech ideal for tiny, battery-powered robots."
-      },
-      {
-        "speaker": "Host",
-        "text": "What's really interesting about this setup is how the researchers approached the learning process. They separated the vision component from the control component. The vision system was trained with self-supervised learning on real event data from the drone, which means it learned from its own experiences without needing an instructor to label everything. And for control, they used a highly efficient simulator with an evolutionary algorithm. This two-step learning process helps bridge the gap between the virtual training environment and the real world, often referred to as the 'reality gap.'"
-      },
-      {
-        "speaker": "Host",
-        "text": "The drone demonstrated its capabilities in real-world tests—flying over a texture-rich, flat surface and handling different lighting conditions with surprising efficiency. This could have significant applications in the future. Imagine autonomous flying robots that could enter areas too dangerous for humans, like collapsed buildings after an earthquake, or even assist in monitoring crops more efficiently than traditional drones."
-      },
-      {
-        "speaker": "Host",
-        "text": "The implications of neuromorphic processing go beyond just drones. This is about making robotics more biologically inspired, more energy-efficient, and ultimately more capable of handling complex, real-world environments. These small but intelligent flying machines could pave the way for the next generation of robots that are not only functional but also adaptable to changing situations, just like living creatures."
-      },
-      {
-        "speaker": "Host",
-        "text": "So, what does this mean for the future? Well, if researchers can continue to make these systems smaller and even more efficient, we might one day see fully autonomous robots that are as small as insects, working seamlessly in our environments, from pollinating plants to performing tasks that require a high level of precision."
-      },
-      {
-        "speaker": "Host",
-        "text": "That's all for today's episode of 'Life is Artificial.' If you'd like to read more about this fascinating development, you can find the full article on Interesting Engineering—I'll drop the link in the episode description."
-      },
-      {
-        "speaker": "Host",
-        "text": "Thank you for tuning in. Make sure to subscribe if you haven't already, and share this episode with anyone who loves exploring the future of technology. Until next time, keep imagining, keep innovating, and remember—life is artificial, but the possibilities are very real."
-      }
-    ]
-  }
-  
+  "title": "Tiny Brains and Flying Machines: Neuromorphic Technology and the Future of Robotics",
+  "description": "Explore how neuromorphic technology is making autonomous insect-sized robots a reality, mimicking biological brains for energy-efficient flight.",
+  "reference": "https://interestingengineering.com/innovation/neuromorphic-technology-drone-flight",
+  "script": [
+    {
+      "speaker": "Host",
+      "text": "Hello and welcome to another episode of 'Life is Artificial', where we explore the cutting edge of technology, innovation, and what the future could look like."
+    },
+    {
+      "speaker": "Host",
+      "text": "Today, we're diving into a story that's straight out of a sci-fi movie. Imagine tiny flying robots, about the size of insects, that are intelligent enough to maneuver on their own—robots that could help with search and rescue missions, monitor the environment, or even assist in precision agriculture. Well, thanks to advances in neuromorphic technology, this future might be closer than we think."
+    },
+    {
+      "speaker": "Host",
+      "text": "Our story today comes from an article titled 'New neural tech could power insect-sized intelligent flying robots' on Interesting Engineering. Let me set the scene for you. Picture a small drone, a bit larger than a bumblebee, hovering over a flower, recognizing its surroundings, adjusting its position in space—all autonomously. The researchers at Delft University of Technology have been working on something that makes this possible."
+    },
+    {
+      "speaker": "Host",
+      "text": "The breakthrough here is something called neuromorphic technology, which mimics the way biological brains work. They use what are known as spiking neural networks—a type of network that closely resembles the way neurons in our brains fire. In this project, the team developed a five-layer spiking neural network with 28,800 neurons to process raw, event-based camera data and estimate the camera's 3D motion."
+    },
+    {
+      "speaker": "Host",
+      "text": "Think of it like this: instead of capturing full-frame images like your regular camera, these drones use event-based cameras that only register changes, like movement. It's like having eyes that only pay attention when something changes in your field of view. That makes this system extremely efficient in terms of both power and processing—and that's a crucial feature when you're trying to make insect-sized robots that can fly on their own."
+    },
+    {
+      "speaker": "Host",
+      "text": "This technology is a major step forward because it allows the drone to autonomously control its position in space—it can hover, it can land, it can even maneuver sideways. All of this is happening thanks to a neuromorphic processor, specifically Intel's Loihi processor, which consumes less than one watt of power. To put that into perspective, that's incredibly low compared to traditional processors, making this tech ideal for tiny, battery-powered robots."
+    },
+    {
+      "speaker": "Host",
+      "text": "What's really interesting about this setup is how the researchers approached the learning process. They separated the vision component from the control component. The vision system was trained with self-supervised learning on real event data from the drone, which means it learned from its own experiences without needing an instructor to label everything. And for control, they used a highly efficient simulator with an evolutionary algorithm. This two-step learning process helps bridge the gap between the virtual training environment and the real world, often referred to as the 'reality gap.'"
+    },
+    {
+      "speaker": "Host",
+      "text": "The drone demonstrated its capabilities in real-world tests—flying over a texture-rich, flat surface and handling different lighting conditions with surprising efficiency. This could have significant applications in the future. Imagine autonomous flying robots that could enter areas too dangerous for humans, like collapsed buildings after an earthquake, or even assist in monitoring crops more efficiently than traditional drones."
+    },
+    {
+      "speaker": "Host",
+      "text": "The implications of neuromorphic processing go beyond just drones. This is about making robotics more biologically inspired, more energy-efficient, and ultimately more capable of handling complex, real-world environments. These small but intelligent flying machines could pave the way for the next generation of robots that are not only functional but also adaptable to changing situations, just like living creatures."
+    },
+    {
+      "speaker": "Host",
+      "text": "So, what does this mean for the future? Well, if researchers can continue to make these systems smaller and even more efficient, we might one day see fully autonomous robots that are as small as insects, working seamlessly in our environments, from pollinating plants to performing tasks that require a high level of precision."
+    },
+    {
+      "speaker": "Host",
+      "text": "That's all for today's episode of 'Life is Artificial.' If you'd like to read more about this fascinating development, you can find the full article on Interesting Engineering—I'll drop the link in the episode description."
+    },
+    {
+      "speaker": "Host",
+      "text": "Thank you for tuning in. Make sure to subscribe if you haven't already, and share this episode with anyone who loves exploring the future of technology. Until next time, keep imagining, keep innovating, and remember—life is artificial, but the possibilities are very real."
+    }
+  ]
+}

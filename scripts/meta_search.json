@@ -1,60 +1,59 @@
 {
-    "title": "Meta's AI Moves: Breaking Free from Google and Microsoft",
-    "description": "In this episode, we discuss Meta's latest development: an AI-powered search engine that aims to lessen the company's reliance on Google and Microsoft. We look at the implications of Meta's efforts and how this could reshape the AI landscape.",
-    "reference": "https://www.theinformation.com/articles/meta-develops-ai-search-engine-to-lessen-reliance-on-google-microsoft?rc=rvvbkr",
-    "script": [
-      {
-        "speaker": "Host",
-        "text": "Hello and welcome to another episode of 'Life is Artificial', where we explore the cutting edge of technology, innovation, and what the future could look like."
-      },
-      {
-        "speaker": "Host",
-        "text": "Today, we're diving into some big news coming out of Meta. According to an article by Kalley Huang on The Information, titled 'Meta Develops AI Search Engine to Lessen Reliance on Google, Microsoft,' Meta is working on a brand-new AI search engine. The goal? To reduce its dependence on Google Search and Microsoft's Bing for providing information to users through its AI chatbot, Meta AI."
-      },
-      {
-        "speaker": "Host",
-        "text": "If you've been following the world of tech, you know that Meta—formerly known as Facebook—has been making huge strides in the field of artificial intelligence. The company has already introduced Meta AI as an integrated chatbot in its various platforms, including Facebook, Instagram, WhatsApp, and Messenger. But, up until now, Meta has relied on Google and Microsoft to power the search functionality of its chatbot, especially for queries about current events, news, sports, and stocks."
-      },
-      {
-        "speaker": "Host",
-        "text": "Meta's move to develop its own search engine is quite significant. Think about it: relying on your competitors to power key functionalities of your own services is a tricky game. It means that Google or Microsoft could, at any point, decide to pull the plug on their support, leaving Meta's chatbot in a precarious position. By developing its own web-crawling technology, Meta is trying to ensure that its AI capabilities are self-sufficient, and not at the mercy of others."
-      },
-      {
-        "speaker": "Host",
-        "text": "The article mentions that Meta has already been working on web-crawling and indexing for at least eight months, led by senior engineering manager Xueyuan Su. Their team has been focused on accessing websites, indexing their pages, and organizing them into databases—much like how traditional search engines operate. The plan is for Meta AI to eventually use these web indices to answer relevant questions."
-      },
-      {
-        "speaker": "Host",
-        "text": "And that's not all. In another strategic move, Meta has struck a deal with Reuters to provide additional news coverage to the Meta AI chatbot. This way, Meta can further diversify its information sources and ensure that users get answers to their questions directly from reputable news outlets."
-      },
-      {
-        "speaker": "Host",
-        "text": "This push towards building an AI search engine is reflective of Meta's broader strategy to make its AI chatbot a central part of its ecosystem. In August, Mark Zuckerberg mentioned that Meta AI already has over 185 million weekly active users, a number that suggests it is quickly catching up to OpenAI's ChatGPT, which has over 250 million weekly users. The distinction here is that while ChatGPT has been popular with software engineers for generating or vetting code, Meta AI's integration across its social platforms means that it reaches an entirely different audience—one that’s more focused on social interactions, content, and real-time events."
-      },
-      {
-        "speaker": "Host",
-        "text": "But there's more to it than just competition. This development is about positioning Meta for a future where AI plays a much bigger role in our daily lives. Meta AI isn’t just designed to answer trivia questions or provide the latest headlines. The ultimate goal is to create AI agents that can perform complex tasks on behalf of users—things like developing software or even managing business operations, making it a powerful tool across all of Meta's applications."
-      },
-      {
-        "speaker": "Host",
-        "text": "This isn't the first time Meta has felt the sting of being overly dependent on another tech giant. Just a few years ago, changes made by Apple significantly impacted Meta’s ability to generate ad revenue through its iPhone apps. That experience taught Meta an important lesson: having autonomy over core technologies and data access is crucial for a company's long-term success."
-      },
-      {
-        "speaker": "Host",
-        "text": "Meta's web-crawler technology has been publicly disclosed since July, and according to the company, it's being used for 'use cases such as training AI models or improving products by indexing content directly.' However, not everyone is on board—some websites, like The New York Times, have blocked Meta's bot from accessing their content, highlighting the pushback that can come from media organizations that are protective of their data."
-      },
-      {
-        "speaker": "Host",
-        "text": "So, what does this all mean for the future of AI and search? Well, Meta is making it clear that it doesn't want to be just another player in the AI space—it wants to lead. By building its own search engine and reducing reliance on Google and Microsoft, Meta is setting the stage for a more independent and potentially transformative AI ecosystem. This also means more competition in the search engine market, which could ultimately be good for innovation and for us as consumers."
-      },
-      {
-        "speaker": "Host",
-        "text": "It’s definitely going to be interesting to see how this all plays out, especially as more companies try to integrate AI into their existing platforms and create entirely new experiences for users. Will Meta be able to challenge Google and Bing in the search engine space? Only time will tell."
-      },
-      {
-        "speaker": "Host",
-        "text": "That's it for today’s episode of 'Life is Artificial.' If you want to read the original article, you can find it at The Information with the link provided in the episode description. As always, if you enjoyed this episode, please subscribe and share it with your friends. Thanks for tuning in, and until next time, keep exploring the artificial side of life!"
-      }
-    ]
-  }
-  
+  "title": "Meta's AI Moves: Breaking Free from Google and Microsoft",
+  "description": "In this episode, we discuss Meta's latest development: an AI-powered search engine that aims to lessen the company's reliance on Google and Microsoft. We look at the implications of Meta's efforts and how this could reshape the AI landscape.",
+  "reference": "https://www.theinformation.com/articles/meta-develops-ai-search-engine-to-lessen-reliance-on-google-microsoft?rc=rvvbkr",
+  "script": [
+    {
+      "speaker": "Host",
+      "text": "Hello and welcome to another episode of 'Life is Artificial', where we explore the cutting edge of technology, innovation, and what the future could look like."
+    },
+    {
+      "speaker": "Host",
+      "text": "Today, we're diving into some big news coming out of Meta. According to an article by Kalley Huang on The Information, titled 'Meta Develops AI Search Engine to Lessen Reliance on Google, Microsoft,' Meta is working on a brand-new AI search engine. The goal? To reduce its dependence on Google Search and Microsoft's Bing for providing information to users through its AI chatbot, Meta AI."
+    },
+    {
+      "speaker": "Host",
+      "text": "If you've been following the world of tech, you know that Meta—formerly known as Facebook—has been making huge strides in the field of artificial intelligence. The company has already introduced Meta AI as an integrated chatbot in its various platforms, including Facebook, Instagram, WhatsApp, and Messenger. But, up until now, Meta has relied on Google and Microsoft to power the search functionality of its chatbot, especially for queries about current events, news, sports, and stocks."
+    },
+    {
+      "speaker": "Host",
+      "text": "Meta's move to develop its own search engine is quite significant. Think about it: relying on your competitors to power key functionalities of your own services is a tricky game. It means that Google or Microsoft could, at any point, decide to pull the plug on their support, leaving Meta's chatbot in a precarious position. By developing its own web-crawling technology, Meta is trying to ensure that its AI capabilities are self-sufficient, and not at the mercy of others."
+    },
+    {
+      "speaker": "Host",
+      "text": "The article mentions that Meta has already been working on web-crawling and indexing for at least eight months, led by senior engineering manager Xueyuan Su. Their team has been focused on accessing websites, indexing their pages, and organizing them into databases—much like how traditional search engines operate. The plan is for Meta AI to eventually use these web indices to answer relevant questions."
+    },
+    {
+      "speaker": "Host",
+      "text": "And that's not all. In another strategic move, Meta has struck a deal with Reuters to provide additional news coverage to the Meta AI chatbot. This way, Meta can further diversify its information sources and ensure that users get answers to their questions directly from reputable news outlets."
+    },
+    {
+      "speaker": "Host",
+      "text": "This push towards building an AI search engine is reflective of Meta's broader strategy to make its AI chatbot a central part of its ecosystem. In August, Mark Zuckerberg mentioned that Meta AI already has over 185 million weekly active users, a number that suggests it is quickly catching up to OpenAI's ChatGPT, which has over 250 million weekly users. The distinction here is that while ChatGPT has been popular with software engineers for generating or vetting code, Meta AI's integration across its social platforms means that it reaches an entirely different audience—one that’s more focused on social interactions, content, and real-time events."
+    },
+    {
+      "speaker": "Host",
+      "text": "But there's more to it than just competition. This development is about positioning Meta for a future where AI plays a much bigger role in our daily lives. Meta AI isn’t just designed to answer trivia questions or provide the latest headlines. The ultimate goal is to create AI agents that can perform complex tasks on behalf of users—things like developing software or even managing business operations, making it a powerful tool across all of Meta's applications."
+    },
+    {
+      "speaker": "Host",
+      "text": "This isn't the first time Meta has felt the sting of being overly dependent on another tech giant. Just a few years ago, changes made by Apple significantly impacted Meta’s ability to generate ad revenue through its iPhone apps. That experience taught Meta an important lesson: having autonomy over core technologies and data access is crucial for a company's long-term success."
+    },
+    {
+      "speaker": "Host",
+      "text": "Meta's web-crawler technology has been publicly disclosed since July, and according to the company, it's being used for 'use cases such as training AI models or improving products by indexing content directly.' However, not everyone is on board—some websites, like The New York Times, have blocked Meta's bot from accessing their content, highlighting the pushback that can come from media organizations that are protective of their data."
+    },
+    {
+      "speaker": "Host",
+      "text": "So, what does this all mean for the future of AI and search? Well, Meta is making it clear that it doesn't want to be just another player in the AI space—it wants to lead. By building its own search engine and reducing reliance on Google and Microsoft, Meta is setting the stage for a more independent and potentially transformative AI ecosystem. This also means more competition in the search engine market, which could ultimately be good for innovation and for us as consumers."
+    },
+    {
+      "speaker": "Host",
+      "text": "It’s definitely going to be interesting to see how this all plays out, especially as more companies try to integrate AI into their existing platforms and create entirely new experiences for users. Will Meta be able to challenge Google and Bing in the search engine space? Only time will tell."
+    },
+    {
+      "speaker": "Host",
+      "text": "That's it for today’s episode of 'Life is Artificial.' If you want to read the original article, you can find it at The Information with the link provided in the episode description. As always, if you enjoyed this episode, please subscribe and share it with your friends. Thanks for tuning in, and until next time, keep exploring the artificial side of life!"
+    }
+  ]
+}

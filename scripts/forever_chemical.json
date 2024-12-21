@@ -1,52 +1,51 @@
 {
-    "title": "Forever Chemicals: Unseen Threats and How We Can Protect Ourselves",
-    "description": "In this episode, we uncover the impact of 'forever chemicals' on our health and explore what we can do to reduce exposure to these dangerous substances.",
-    "reference": "https://www.ifm.org/news-insights/forever-chemicals-clinical-interventions/",
-    "script": [
-      {
-        "speaker": "Host",
-        "text": "Hello and welcome to another episode of 'life is artificial', where we explore the cutting edge of technology, innovation, and what the future could look like."
-      },
-      {
-        "speaker": "Host",
-        "text": "Today, we're going to talk about something that isn’t just futuristic – it's already here, and it's affecting all of us right now. We’re talking about per- and polyfluoroalkyl substances, or PFAS, better known as 'forever chemicals'. These synthetic substances are used in everything from firefighting foams to cosmetics, and they’re called 'forever chemicals' because they don’t break down in the environment. As a result, they're everywhere – in our water, our food, and even in our bodies."
-      },
-      {
-        "speaker": "Host",
-        "text": "Today’s episode is based on an article from the Institute for Functional Medicine titled 'Health Impacts of Forever Chemicals & Clinical Interventions'. You can find the article at the link in our show notes for a deeper dive into this important topic."
-      },
-      {
-        "speaker": "Host",
-        "text": "So, what are PFAS exactly? PFAS are a class of over 4,700 different chemicals that are used for their unique stability and resistance to heat, water, and oil. This means they're extremely useful in many applications, from non-stick pans to water-repellent clothing. But there’s a dark side to this amazing stability. PFAS are incredibly difficult to degrade, which means they stay in our environment – and in our bodies – for a very long time."
-      },
-      {
-        "speaker": "Host",
-        "text": "The U.S. Environmental Protection Agency recently issued an advisory warning about PFAS contamination in drinking water, highlighting that even very small amounts of some PFAS can pose health risks. In fact, a recent biomonitoring study showed that PFAS are present in over 98% of Americans' blood samples. These 'forever chemicals' have become so pervasive that it’s almost impossible to avoid exposure."
-      },
-      {
-        "speaker": "Host",
-        "text": "What does this mean for our health? Unfortunately, the health impacts of PFAS are concerning. They have been linked to liver disease, increased cancer risks, thyroid issues, diabetes, and even adverse effects during pregnancy. PFAS can bioaccumulate in our bodies, meaning that with each exposure, more of these chemicals get stored in our tissues. Over time, this can lead to serious health problems. For instance, high levels of certain PFAS have been associated with a 4.5 times greater risk of developing liver cancer. Other studies suggest links to thyroid disorders and a higher risk of developing diabetes, especially in middle-aged women."
-      },
-      {
-        "speaker": "Host",
-        "text": "Major sources of PFAS exposure include contaminated drinking water, certain types of foods, and household products. If you've ever used a non-stick frying pan, waterproof jacket, or stain-resistant carpet, you may have been exposed to PFAS. Drinking water, in particular, has been identified as a significant route of exposure for many people. Fortunately, there are some steps we can take to mitigate our exposure, such as using high-quality water filtration systems, choosing PFAS-free products, and making some dietary changes."
-      },
-      {
-        "speaker": "Host",
-        "text": "Functional medicine, which looks at how to address the 'total toxic load' in the body, has some interesting approaches to managing PFAS exposure. This includes personalized detoxification strategies that aim to support the body’s natural detox mechanisms, such as increasing fiber intake, promoting glutathione production – which is one of the body’s most powerful antioxidants – and even using sauna therapies to help eliminate certain toxicants through sweat. The goal is to reduce the overall 'body burden' of these toxic chemicals."
-      },
-      {
-        "speaker": "Host",
-        "text": "But perhaps one of the most important things we can do is educate ourselves and those around us about these chemicals. As a listener, I encourage you to take a moment to look at the products you use every day – your cookware, your cosmetics, your clothing. Are they labeled as PFAS-free? Are there safer alternatives you could consider? And if you’re concerned about your water supply, there are steps you can take to test for PFAS and install filters that can help."
-      },
-      {
-        "speaker": "Host",
-        "text": "This is a huge topic, and we’re only scratching the surface today. PFAS are a part of a larger conversation about how we interact with our environment and what the future of health and sustainability might look like. In upcoming episodes, we’ll continue to explore these kinds of issues – how technology and science can help us solve these challenges, and what we as individuals can do to protect ourselves and our families."
-      },
-      {
-        "speaker": "Host",
-        "text": "Thank you for joining me today on 'life is artificial'. If you found this episode informative, please share it with friends and family – the more people who understand these issues, the better equipped we all are to make safer choices. And as always, feel free to subscribe, leave a review, and check out our show notes for more resources on this topic. Until next time, take care of yourselves, and stay informed."
-      }
-    ]
-  }
-  
+  "title": "Forever Chemicals: Unseen Threats and How We Can Protect Ourselves",
+  "description": "In this episode, we uncover the impact of 'forever chemicals' on our health and explore what we can do to reduce exposure to these dangerous substances.",
+  "reference": "https://www.ifm.org/news-insights/forever-chemicals-clinical-interventions/",
+  "script": [
+    {
+      "speaker": "Host",
+      "text": "Hello and welcome to another episode of 'life is artificial', where we explore the cutting edge of technology, innovation, and what the future could look like."
+    },
+    {
+      "speaker": "Host",
+      "text": "Today, we're going to talk about something that isn’t just futuristic – it's already here, and it's affecting all of us right now. We’re talking about per- and polyfluoroalkyl substances, or PFAS, better known as 'forever chemicals'. These synthetic substances are used in everything from firefighting foams to cosmetics, and they’re called 'forever chemicals' because they don’t break down in the environment. As a result, they're everywhere – in our water, our food, and even in our bodies."
+    },
+    {
+      "speaker": "Host",
+      "text": "Today’s episode is based on an article from the Institute for Functional Medicine titled 'Health Impacts of Forever Chemicals & Clinical Interventions'. You can find the article at the link in our show notes for a deeper dive into this important topic."
+    },
+    {
+      "speaker": "Host",
+      "text": "So, what are PFAS exactly? PFAS are a class of over 4,700 different chemicals that are used for their unique stability and resistance to heat, water, and oil. This means they're extremely useful in many applications, from non-stick pans to water-repellent clothing. But there’s a dark side to this amazing stability. PFAS are incredibly difficult to degrade, which means they stay in our environment – and in our bodies – for a very long time."
+    },
+    {
+      "speaker": "Host",
+      "text": "The U.S. Environmental Protection Agency recently issued an advisory warning about PFAS contamination in drinking water, highlighting that even very small amounts of some PFAS can pose health risks. In fact, a recent biomonitoring study showed that PFAS are present in over 98% of Americans' blood samples. These 'forever chemicals' have become so pervasive that it’s almost impossible to avoid exposure."
+    },
+    {
+      "speaker": "Host",
+      "text": "What does this mean for our health? Unfortunately, the health impacts of PFAS are concerning. They have been linked to liver disease, increased cancer risks, thyroid issues, diabetes, and even adverse effects during pregnancy. PFAS can bioaccumulate in our bodies, meaning that with each exposure, more of these chemicals get stored in our tissues. Over time, this can lead to serious health problems. For instance, high levels of certain PFAS have been associated with a 4.5 times greater risk of developing liver cancer. Other studies suggest links to thyroid disorders and a higher risk of developing diabetes, especially in middle-aged women."
+    },
+    {
+      "speaker": "Host",
+      "text": "Major sources of PFAS exposure include contaminated drinking water, certain types of foods, and household products. If you've ever used a non-stick frying pan, waterproof jacket, or stain-resistant carpet, you may have been exposed to PFAS. Drinking water, in particular, has been identified as a significant route of exposure for many people. Fortunately, there are some steps we can take to mitigate our exposure, such as using high-quality water filtration systems, choosing PFAS-free products, and making some dietary changes."
+    },
+    {
+      "speaker": "Host",
+      "text": "Functional medicine, which looks at how to address the 'total toxic load' in the body, has some interesting approaches to managing PFAS exposure. This includes personalized detoxification strategies that aim to support the body’s natural detox mechanisms, such as increasing fiber intake, promoting glutathione production – which is one of the body’s most powerful antioxidants – and even using sauna therapies to help eliminate certain toxicants through sweat. The goal is to reduce the overall 'body burden' of these toxic chemicals."
+    },
+    {
+      "speaker": "Host",
+      "text": "But perhaps one of the most important things we can do is educate ourselves and those around us about these chemicals. As a listener, I encourage you to take a moment to look at the products you use every day – your cookware, your cosmetics, your clothing. Are they labeled as PFAS-free? Are there safer alternatives you could consider? And if you’re concerned about your water supply, there are steps you can take to test for PFAS and install filters that can help."
+    },
+    {
+      "speaker": "Host",
+      "text": "This is a huge topic, and we’re only scratching the surface today. PFAS are a part of a larger conversation about how we interact with our environment and what the future of health and sustainability might look like. In upcoming episodes, we’ll continue to explore these kinds of issues – how technology and science can help us solve these challenges, and what we as individuals can do to protect ourselves and our families."
+    },
+    {
+      "speaker": "Host",
+      "text": "Thank you for joining me today on 'life is artificial'. If you found this episode informative, please share it with friends and family – the more people who understand these issues, the better equipped we all are to make safer choices. And as always, feel free to subscribe, leave a review, and check out our show notes for more resources on this topic. Until next time, take care of yourselves, and stay informed."
+    }
+  ]
+}

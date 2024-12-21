@@ -1,52 +1,51 @@
 {
-    "title": "SoundScope: The Future of Hearing in Noisy Environments",
-    "description": "Discover how a revolutionary lightweight glasses device named SoundScope is redefining how we experience sound in noisy settings like parties, concerts, and more.",
-    "reference": "https://example.com/soundscope-announcement",
-    "script": [
-      {
-        "speaker": "Host",
-        "text": "Hello and welcome to another episode of 'Life is Artificial,' where we explore the cutting edge of technology, innovation, and what the future could look like."
-      },
-      {
-        "speaker": "Host",
-        "text": "Today, I want to talk about a fascinating piece of technology that could change the way we experience sound in noisy environments. Imagine yourself at a loud party, a bustling street, or even a rock concert. Engaging in a conversation might feel impossible, but what if I told you there's a device that could help you isolate the voice of the person you're talking to, no matter how chaotic the background noise is? Enter SoundScope."
-      },
-      {
-        "speaker": "Host",
-        "text": "SoundScope is a lightweight glasses device that combines advanced audio processing with cutting-edge visual tracking technology. Unlike traditional hearing aids or noise-canceling devices, this gadget takes a completely new approach. It uses an array of cameras to track your eye movements, focusing on what you're looking at—like the mouth of the person you're talking to."
-      },
-      {
-        "speaker": "Host",
-        "text": "At the same time, SoundScope employs an array of microphones and bone-conducting speakers to pick up and deliver sound directly to your ears. But here’s where the magic happens: the device uses a blend of machine learning and traditional signal processing to dynamically and in real-time isolate and enhance the sound of your target. And all of this is done with an incredibly low latency—less than 10 milliseconds for audio processing and under 100 milliseconds for focus adjustments."
-      },
-      {
-        "speaker": "Host",
-        "text": "Imagine talking to someone across a crowded room at a noisy party. With SoundScope, it’s as if you have a direct audio connection to that person, cutting through all the ambient chaos. The device doesn’t just enhance sound for people with hearing impairments; it’s designed for everyone. Whether you're at a professional conference, navigating a noisy public space, or just enjoying a concert, SoundScope opens up a whole new realm of communication."
-      },
-      {
-        "speaker": "Host",
-        "text": "This technology could have applications far beyond social settings. Think about emergency responders communicating in disaster zones or professionals coordinating in industrial settings. The potential is vast."
-      },
-      {
-        "speaker": "Host",
-        "text": "What makes SoundScope truly innovative is its hybrid processing model. It uses machine learning to determine the type of sound processing required for a specific situation. Then, a specialized signal processor executes the task in real time, ensuring both flexibility and speed. This approach maximizes the device's ability to adapt to different environments while maintaining a seamless user experience."
-      },
-      {
-        "speaker": "Host",
-        "text": "The creators of SoundScope have also taken comfort and usability seriously. The glasses are lightweight and designed for daily wear, making them suitable for extended use without fatigue. And by using bone-conducting speakers, they eliminate the need for traditional earbuds or headphones, keeping your ears free."
-      },
-      {
-        "speaker": "Host",
-        "text": "So, when can you get your hands on this revolutionary device? SoundScope is expected to hit the market in early 2025, with pre-orders opening soon. Whether you're someone who struggles in noisy environments or just wants a futuristic edge to your daily interactions, this might just be the gadget for you."
-      },
-      {
-        "speaker": "Host",
-        "text": "That’s all for today’s episode of 'Life is Artificial.' If you’re as excited about SoundScope as I am, let me know your thoughts! You can find more details about this innovative device in the episode reference linked in the description."
-      },
-      {
-        "speaker": "Host",
-        "text": "Until next time, keep exploring, keep innovating, and remember, the future is closer than you think. Take care!"
-      }
-    ]
-  }
-  
+  "title": "SoundScope: The Future of Hearing in Noisy Environments",
+  "description": "Discover how a revolutionary lightweight glasses device named SoundScope is redefining how we experience sound in noisy settings like parties, concerts, and more.",
+  "reference": "https://example.com/soundscope-announcement",
+  "script": [
+    {
+      "speaker": "Host",
+      "text": "Hello and welcome to another episode of 'Life is Artificial,' where we explore the cutting edge of technology, innovation, and what the future could look like."
+    },
+    {
+      "speaker": "Host",
+      "text": "Today, I want to talk about a fascinating piece of technology that could change the way we experience sound in noisy environments. Imagine yourself at a loud party, a bustling street, or even a rock concert. Engaging in a conversation might feel impossible, but what if I told you there's a device that could help you isolate the voice of the person you're talking to, no matter how chaotic the background noise is? Enter SoundScope."
+    },
+    {
+      "speaker": "Host",
+      "text": "SoundScope is a lightweight glasses device that combines advanced audio processing with cutting-edge visual tracking technology. Unlike traditional hearing aids or noise-canceling devices, this gadget takes a completely new approach. It uses an array of cameras to track your eye movements, focusing on what you're looking at—like the mouth of the person you're talking to."
+    },
+    {
+      "speaker": "Host",
+      "text": "At the same time, SoundScope employs an array of microphones and bone-conducting speakers to pick up and deliver sound directly to your ears. But here’s where the magic happens: the device uses a blend of machine learning and traditional signal processing to dynamically and in real-time isolate and enhance the sound of your target. And all of this is done with an incredibly low latency—less than 10 milliseconds for audio processing and under 100 milliseconds for focus adjustments."
+    },
+    {
+      "speaker": "Host",
+      "text": "Imagine talking to someone across a crowded room at a noisy party. With SoundScope, it’s as if you have a direct audio connection to that person, cutting through all the ambient chaos. The device doesn’t just enhance sound for people with hearing impairments; it’s designed for everyone. Whether you're at a professional conference, navigating a noisy public space, or just enjoying a concert, SoundScope opens up a whole new realm of communication."
+    },
+    {
+      "speaker": "Host",
+      "text": "This technology could have applications far beyond social settings. Think about emergency responders communicating in disaster zones or professionals coordinating in industrial settings. The potential is vast."
+    },
+    {
+      "speaker": "Host",
+      "text": "What makes SoundScope truly innovative is its hybrid processing model. It uses machine learning to determine the type of sound processing required for a specific situation. Then, a specialized signal processor executes the task in real time, ensuring both flexibility and speed. This approach maximizes the device's ability to adapt to different environments while maintaining a seamless user experience."
+    },
+    {
+      "speaker": "Host",
+      "text": "The creators of SoundScope have also taken comfort and usability seriously. The glasses are lightweight and designed for daily wear, making them suitable for extended use without fatigue. And by using bone-conducting speakers, they eliminate the need for traditional earbuds or headphones, keeping your ears free."
+    },
+    {
+      "speaker": "Host",
+      "text": "So, when can you get your hands on this revolutionary device? SoundScope is expected to hit the market in early 2025, with pre-orders opening soon. Whether you're someone who struggles in noisy environments or just wants a futuristic edge to your daily interactions, this might just be the gadget for you."
+    },
+    {
+      "speaker": "Host",
+      "text": "That’s all for today’s episode of 'Life is Artificial.' If you’re as excited about SoundScope as I am, let me know your thoughts! You can find more details about this innovative device in the episode reference linked in the description."
+    },
+    {
+      "speaker": "Host",
+      "text": "Until next time, keep exploring, keep innovating, and remember, the future is closer than you think. Take care!"
+    }
+  ]
+}

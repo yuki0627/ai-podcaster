@@ -1,68 +1,67 @@
 {
-    "title": "Wayve's Next Frontier: Mastering American Roads",
-    "description": "Wayve's driverless cars are about to take on one of their biggest challenges yet—switching from driving on the left in London to driving on the right in the US. How does a general-purpose AI adapt to such a fundamental change? Let's dive in.",
-    "reference": "https://www.technologyreview.com/2024/10/24/1106156/wayve-driverless-cars-us-biggest-challenges-yet/",
-    "script": [
-      {
-        "speaker": "Host",
-        "text": "Hello and welcome to another episode of 'life is artificial', where we explore the cutting edge of technology, innovation, and what the future could look like."
-      },
-      {
-        "speaker": "Host",
-        "text": "Today, we're talking about Wayve, a driverless-car startup from the UK that's taking its self-driving technology to the streets of the United States. But what makes this move so significant is the major shift their AI has to make—switching from driving on the left-hand side of the road, as in the UK, to the right-hand side, as in the US. This might sound like a small change to us humans, but for an AI system, it's a true test of adaptability."
-      },
-      {
-        "speaker": "Host",
-        "text": "Our story today comes from MIT Technology Review in an article titled, 'How Wayve's driverless cars will meet one of their biggest challenges yet.' I've linked the article in our show notes if you'd like to dive into all the details later on."
-      },
-      {
-        "speaker": "Host",
-        "text": "So, what's the big deal here? Well, Wayve's technology stands apart from many of its rivals because it takes a different approach. Instead of programming specific rules or using multiple specialized models for different tasks—like recognizing pedestrians or deciding how to navigate intersections—Wayve has developed an end-to-end learning model. This means that a single large model handles everything that a driver would do. It learns how to navigate through experience, much like a human being."
-      },
-      {
-        "speaker": "Host",
-        "text": "Imagine you were used to driving in London, always on the left, and suddenly, you're on a highway in California. You have to rewire your habits—like which way to turn, how to navigate intersections, and even how you perceive the road around you. For an AI system, these habits are not pre-programmed, they're learned through countless hours of training. Wayve's AI has to 'unlearn' years of driving on the left and re-train itself to drive on the right—without simply swapping out a 'driving direction' module, because that doesn’t exist in its architecture."
-      },
-      {
-        "speaker": "Host",
-        "text": "Silvius Rus, Wayve's vice president of software, points out that even for experienced human drivers, this switch isn't easy. But what's really impressive here is Wayve's confidence that their AI model will adapt smoothly, thanks to the general-purpose nature of their technology. They argue that because the model learns holistically, it should be capable of adapting to new environments and new rules with minimal retraining."
-      },
-      {
-        "speaker": "Host",
-        "text": "To give you some context, Wayve has already tested their model across multiple UK cities without specific location-based training. And now, they are extending that capability to San Francisco—a place with different traffic rules, driving cultures, and of course, the right-hand drive system. It's a bold move, but it's also a crucial test of their technology. Can Wayve's AI handle American streets just as confidently as it handles London?"
-      },
-      {
-        "speaker": "Host",
-        "text": "In the article, Rus describes how they are delving deep into the model to understand how it handles different driving scenarios—almost like giving the AI a brain scan. They want to know whether driving on the left versus the right is a fundamental part of how the AI thinks, or if it's something that can be easily overridden. They’re even using an advanced simulation tool called PRISM-1 to put their model through countless hypothetical situations, making sure it knows what to do when real-world challenges arise."
-      },
-      {
-        "speaker": "Host",
-        "text": "Of course, the broader context here is the intense competition in the autonomous vehicle space. Wayve isn't just going up against local traffic conditions—they're competing with some of the biggest names in tech and transportation, including Waymo, Cruise, and Tesla. These companies have been making headlines with their driverless cars, and some have even rolled out robotaxi services in American cities. Wayve, however, believes its adaptive learning approach gives it an edge in scaling to new environments."
-      },
-      {
-        "speaker": "Host",
-        "text": "But it's not without challenges. The entire driverless car industry has faced setbacks recently, with incidents involving Cruise and Tesla drawing scrutiny from regulators. It raises an important question: How safe are these AI systems in environments full of unpredictable human behavior? Some experts, like Saber Fallah from the University of Surrey, believe we won't have true robotaxis until all human drivers are off the road. The complexity of human behavior and the countless edge cases of city driving are still major obstacles for autonomous systems."
-      },
-      {
-        "speaker": "Host",
-        "text": "Wayve is betting big on their AI’s adaptability. They plan to start in the US by testing an advanced driver assistance system, similar to Tesla’s, which they will offer to existing car manufacturers. This is their first step towards full autonomy, and their vision is to gather experience from many different cars and environments. As Silvius Rus puts it, 'The path to full self-driving is easier if you go level by level.'"
-      },
-      {
-        "speaker": "Host",
-        "text": "But here's where it gets even more ambitious. Driving is just the beginning for Wayve. Rus mentioned that what they're really building is an AI that could eventually control all sorts of machines—whether they have wheels, wings, or legs. Think about that: the same AI that could drive you home one day could also pilot a drone or even operate robots in other environments. It's about creating an embodied AI capable of interacting with the world across different forms."
-      },
-      {
-        "speaker": "Host",
-        "text": "To wrap up, Wayve's journey from the streets of London to the hilly roads of San Francisco is a fascinating example of how far AI has come—and how much further it still needs to go. From learning the simple yet critical detail of which side of the road to drive on, to aiming for a future where it controls machines of all kinds, Wayve is setting its sights high."
-      },
-      {
-        "speaker": "Host",
-        "text": "What do you think about this approach? Can a single AI model really be general enough to adapt to all these changes? Is Wayve's vision of an adaptable, embodied AI a realistic one? I'd love to hear your thoughts. Don't forget to check out the full article from MIT Technology Review, linked in our description, for a deeper dive into Wayve's strategy."
-      },
-      {
-        "speaker": "Host",
-        "text": "Thank you for tuning into 'life is artificial'. If you enjoyed this episode, please subscribe and share it with others who are fascinated by the future of AI and driverless cars. Until next time, stay curious and keep exploring the possibilities of our artificial world."
-      }
-    ]
-  }
-  
+  "title": "Wayve's Next Frontier: Mastering American Roads",
+  "description": "Wayve's driverless cars are about to take on one of their biggest challenges yet—switching from driving on the left in London to driving on the right in the US. How does a general-purpose AI adapt to such a fundamental change? Let's dive in.",
+  "reference": "https://www.technologyreview.com/2024/10/24/1106156/wayve-driverless-cars-us-biggest-challenges-yet/",
+  "script": [
+    {
+      "speaker": "Host",
+      "text": "Hello and welcome to another episode of 'life is artificial', where we explore the cutting edge of technology, innovation, and what the future could look like."
+    },
+    {
+      "speaker": "Host",
+      "text": "Today, we're talking about Wayve, a driverless-car startup from the UK that's taking its self-driving technology to the streets of the United States. But what makes this move so significant is the major shift their AI has to make—switching from driving on the left-hand side of the road, as in the UK, to the right-hand side, as in the US. This might sound like a small change to us humans, but for an AI system, it's a true test of adaptability."
+    },
+    {
+      "speaker": "Host",
+      "text": "Our story today comes from MIT Technology Review in an article titled, 'How Wayve's driverless cars will meet one of their biggest challenges yet.' I've linked the article in our show notes if you'd like to dive into all the details later on."
+    },
+    {
+      "speaker": "Host",
+      "text": "So, what's the big deal here? Well, Wayve's technology stands apart from many of its rivals because it takes a different approach. Instead of programming specific rules or using multiple specialized models for different tasks—like recognizing pedestrians or deciding how to navigate intersections—Wayve has developed an end-to-end learning model. This means that a single large model handles everything that a driver would do. It learns how to navigate through experience, much like a human being."
+    },
+    {
+      "speaker": "Host",
+      "text": "Imagine you were used to driving in London, always on the left, and suddenly, you're on a highway in California. You have to rewire your habits—like which way to turn, how to navigate intersections, and even how you perceive the road around you. For an AI system, these habits are not pre-programmed, they're learned through countless hours of training. Wayve's AI has to 'unlearn' years of driving on the left and re-train itself to drive on the right—without simply swapping out a 'driving direction' module, because that doesn’t exist in its architecture."
+    },
+    {
+      "speaker": "Host",
+      "text": "Silvius Rus, Wayve's vice president of software, points out that even for experienced human drivers, this switch isn't easy. But what's really impressive here is Wayve's confidence that their AI model will adapt smoothly, thanks to the general-purpose nature of their technology. They argue that because the model learns holistically, it should be capable of adapting to new environments and new rules with minimal retraining."
+    },
+    {
+      "speaker": "Host",
+      "text": "To give you some context, Wayve has already tested their model across multiple UK cities without specific location-based training. And now, they are extending that capability to San Francisco—a place with different traffic rules, driving cultures, and of course, the right-hand drive system. It's a bold move, but it's also a crucial test of their technology. Can Wayve's AI handle American streets just as confidently as it handles London?"
+    },
+    {
+      "speaker": "Host",
+      "text": "In the article, Rus describes how they are delving deep into the model to understand how it handles different driving scenarios—almost like giving the AI a brain scan. They want to know whether driving on the left versus the right is a fundamental part of how the AI thinks, or if it's something that can be easily overridden. They’re even using an advanced simulation tool called PRISM-1 to put their model through countless hypothetical situations, making sure it knows what to do when real-world challenges arise."
+    },
+    {
+      "speaker": "Host",
+      "text": "Of course, the broader context here is the intense competition in the autonomous vehicle space. Wayve isn't just going up against local traffic conditions—they're competing with some of the biggest names in tech and transportation, including Waymo, Cruise, and Tesla. These companies have been making headlines with their driverless cars, and some have even rolled out robotaxi services in American cities. Wayve, however, believes its adaptive learning approach gives it an edge in scaling to new environments."
+    },
+    {
+      "speaker": "Host",
+      "text": "But it's not without challenges. The entire driverless car industry has faced setbacks recently, with incidents involving Cruise and Tesla drawing scrutiny from regulators. It raises an important question: How safe are these AI systems in environments full of unpredictable human behavior? Some experts, like Saber Fallah from the University of Surrey, believe we won't have true robotaxis until all human drivers are off the road. The complexity of human behavior and the countless edge cases of city driving are still major obstacles for autonomous systems."
+    },
+    {
+      "speaker": "Host",
+      "text": "Wayve is betting big on their AI’s adaptability. They plan to start in the US by testing an advanced driver assistance system, similar to Tesla’s, which they will offer to existing car manufacturers. This is their first step towards full autonomy, and their vision is to gather experience from many different cars and environments. As Silvius Rus puts it, 'The path to full self-driving is easier if you go level by level.'"
+    },
+    {
+      "speaker": "Host",
+      "text": "But here's where it gets even more ambitious. Driving is just the beginning for Wayve. Rus mentioned that what they're really building is an AI that could eventually control all sorts of machines—whether they have wheels, wings, or legs. Think about that: the same AI that could drive you home one day could also pilot a drone or even operate robots in other environments. It's about creating an embodied AI capable of interacting with the world across different forms."
+    },
+    {
+      "speaker": "Host",
+      "text": "To wrap up, Wayve's journey from the streets of London to the hilly roads of San Francisco is a fascinating example of how far AI has come—and how much further it still needs to go. From learning the simple yet critical detail of which side of the road to drive on, to aiming for a future where it controls machines of all kinds, Wayve is setting its sights high."
+    },
+    {
+      "speaker": "Host",
+      "text": "What do you think about this approach? Can a single AI model really be general enough to adapt to all these changes? Is Wayve's vision of an adaptable, embodied AI a realistic one? I'd love to hear your thoughts. Don't forget to check out the full article from MIT Technology Review, linked in our description, for a deeper dive into Wayve's strategy."
+    },
+    {
+      "speaker": "Host",
+      "text": "Thank you for tuning into 'life is artificial'. If you enjoyed this episode, please subscribe and share it with others who are fascinated by the future of AI and driverless cars. Until next time, stay curious and keep exploring the possibilities of our artificial world."
+    }
+  ]
+}

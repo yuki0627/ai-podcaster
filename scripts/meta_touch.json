@@ -1,60 +1,59 @@
 {
-    "title": "Touching the Future: Advances in Embodied AI",
-    "description": "Exploring Meta's latest advancements in embodied AI, focusing on touch perception, dexterity, and human-robot interaction, and what it means for the future of robotics.",
-    "reference": "https://ai.meta.com/blog/fair-robotics-open-source/",
-    "script": [
-      {
-        "speaker": "Host",
-        "text": "Hello and welcome to another episode of 'life is artificial', where we explore the cutting edge of technology, innovation, and what the future could look like."
-      },
-      {
-        "speaker": "Host",
-        "text": "Today, we're diving into some fascinating new developments in the world of embodied AI, courtesy of the brilliant minds over at Meta's Fundamental AI Research, or FAIR, team. Our focus is on touch perception, dexterity, and human-robot interaction—essential components that could make future robots not only more capable but also more relatable."
-      },
-      {
-        "speaker": "Host",
-        "text": "So, let's start by painting a picture. Imagine a world where robots can truly interact with their surroundings as naturally as you and I do. They can reach out, grasp objects, understand textures, even differentiate between something as delicate as a flower petal and something as firm as a coffee mug. It sounds like science fiction, but Meta's FAIR team is working to make this a reality. Their latest efforts focus on giving robots an essential sense—the sense of touch."
-      },
-      {
-        "speaker": "Host",
-        "text": "The news comes from Meta's blog titled 'Advancing embodied AI through progress in touch perception, dexterity, and human-robot interaction.' And it's all about turning artificial intelligence into something more embodied—in other words, AI that isn't just in our phones or our computers, but in the physical, tangible world around us. You can find the full article at ai.meta.com/blog/fair-robotics-open-source, and I'll be drawing from that today."
-      },
-      {
-        "speaker": "Host",
-        "text": "Meta's researchers are making big strides with a set of new tools that push the boundaries of what's possible in robotics. Let me introduce you to Meta Sparsh, the first general-purpose encoder for vision-based tactile sensing. The name 'Sparsh' comes from Sanskrit, meaning 'touch,' which is quite fitting for a technology meant to help robots understand the world through a sense that's been elusive until now. Sparsh uses advances in self-supervised learning, which allows it to learn from the physical world without needing meticulously labeled data. Imagine a robot that's capable of feeling its way around—understanding the slipperiness of a surface or the firmness of an object without needing thousands of examples."
-      },
-      {
-        "speaker": "Host",
-        "text": "But that's not all. Meta has also introduced Digit 360, an artificial fingertip that can do some incredible things. Picture a fingertip that not only detects the pressure and force of a touch but can sense vibrations, heat, and even odors. Digit 360 has over 18 sensing features and can perceive forces as small as one millinewton. The research team likens it to having a robot's version of a human peripheral nervous system—a system that can react to stimuli locally and almost instantaneously, much like our reflexes. This kind of capability is crucial for a future where robots could be assisting in surgery, helping out in hazardous environments, or simply making our lives at home a little easier."
-      },
-      {
-        "speaker": "Host",
-        "text": "Meta isn't stopping with just the sensors. They're also developing Meta Digit Plexus, which integrates tactile sensing across a whole robot hand. It's like giving a robot the ability to feel through every part of its hand, from fingertips to palm. This kind of tactile perception will be key for robots that need to manipulate delicate objects or perform dexterous tasks. Imagine a robot helping a factory worker by picking up parts or packaging items—tasks that are simple for a human but extremely challenging for a machine without this sense of touch."
-      },
-      {
-        "speaker": "Host",
-        "text": "And it's not just about the physical world. Meta's research team is also looking at the social and collaborative aspect of robotics. They introduced a new benchmark called PARTNR—a standardized framework for evaluating planning and reasoning in human-robot collaboration. PARTNR is designed to make sure that AI agents can not only perform tasks on their own but can also work side by side with humans, taking into account physical-world constraints like time and space. It's a step toward a future where robots are not just tools, but real partners in our daily lives."
-      },
-      {
-        "speaker": "Host",
-        "text": "Now, partnerships are a big part of how these advancements will reach the real world. Meta has teamed up with GelSight Inc and Wonik Robotics to bring these tactile sensors to market. GelSight will manufacture and distribute Digit 360, which is expected to be available next year. Meanwhile, Wonik Robotics will be producing a new robotic hand, fully integrated with Meta Digit Plexus, set to launch soon as well. This collaboration will help researchers worldwide access these innovations and advance the field of tactile robotics even further."
-      },
-      {
-        "speaker": "Host",
-        "text": "The potential applications here are vast—from healthcare and prosthetics to virtual reality and beyond. Imagine a prosthetic hand that can truly feel or a virtual reality experience where you can touch and feel virtual objects as if they were real. These are the kinds of advancements that could redefine the boundary between the digital and physical worlds, creating experiences that are richer and more immersive."
-      },
-      {
-        "speaker": "Host",
-        "text": "As we look to the future, it's clear that these advances in touch perception and dexterity are more than just technical achievements. They're steps toward a future where robots and AI can be more integrated into our daily lives—helping, understanding, and even collaborating with us in ways that were previously the domain of science fiction. It's about turning these agents into true partners—partners that can not only work around us but also learn our preferences, adapt to our needs, and make our lives better."
-      },
-      {
-        "speaker": "Host",
-        "text": "If you're interested in learning more, I encourage you to check out the article at ai.meta.com/blog/fair-robotics-open-source. It's an exciting time for embodied AI, and I can't wait to see how these innovations continue to evolve."
-      },
-      {
-        "speaker": "Host",
-        "text": "Thank you for joining me today on 'life is artificial'. If you enjoyed this episode, be sure to subscribe and share it with others who are just as curious about the future as we are. Until next time, keep dreaming of what the future could hold—because it's closer than you think."
-      }
-    ]
-  }
-  
+  "title": "Touching the Future: Advances in Embodied AI",
+  "description": "Exploring Meta's latest advancements in embodied AI, focusing on touch perception, dexterity, and human-robot interaction, and what it means for the future of robotics.",
+  "reference": "https://ai.meta.com/blog/fair-robotics-open-source/",
+  "script": [
+    {
+      "speaker": "Host",
+      "text": "Hello and welcome to another episode of 'life is artificial', where we explore the cutting edge of technology, innovation, and what the future could look like."
+    },
+    {
+      "speaker": "Host",
+      "text": "Today, we're diving into some fascinating new developments in the world of embodied AI, courtesy of the brilliant minds over at Meta's Fundamental AI Research, or FAIR, team. Our focus is on touch perception, dexterity, and human-robot interaction—essential components that could make future robots not only more capable but also more relatable."
+    },
+    {
+      "speaker": "Host",
+      "text": "So, let's start by painting a picture. Imagine a world where robots can truly interact with their surroundings as naturally as you and I do. They can reach out, grasp objects, understand textures, even differentiate between something as delicate as a flower petal and something as firm as a coffee mug. It sounds like science fiction, but Meta's FAIR team is working to make this a reality. Their latest efforts focus on giving robots an essential sense—the sense of touch."
+    },
+    {
+      "speaker": "Host",
+      "text": "The news comes from Meta's blog titled 'Advancing embodied AI through progress in touch perception, dexterity, and human-robot interaction.' And it's all about turning artificial intelligence into something more embodied—in other words, AI that isn't just in our phones or our computers, but in the physical, tangible world around us. You can find the full article at ai.meta.com/blog/fair-robotics-open-source, and I'll be drawing from that today."
+    },
+    {
+      "speaker": "Host",
+      "text": "Meta's researchers are making big strides with a set of new tools that push the boundaries of what's possible in robotics. Let me introduce you to Meta Sparsh, the first general-purpose encoder for vision-based tactile sensing. The name 'Sparsh' comes from Sanskrit, meaning 'touch,' which is quite fitting for a technology meant to help robots understand the world through a sense that's been elusive until now. Sparsh uses advances in self-supervised learning, which allows it to learn from the physical world without needing meticulously labeled data. Imagine a robot that's capable of feeling its way around—understanding the slipperiness of a surface or the firmness of an object without needing thousands of examples."
+    },
+    {
+      "speaker": "Host",
+      "text": "But that's not all. Meta has also introduced Digit 360, an artificial fingertip that can do some incredible things. Picture a fingertip that not only detects the pressure and force of a touch but can sense vibrations, heat, and even odors. Digit 360 has over 18 sensing features and can perceive forces as small as one millinewton. The research team likens it to having a robot's version of a human peripheral nervous system—a system that can react to stimuli locally and almost instantaneously, much like our reflexes. This kind of capability is crucial for a future where robots could be assisting in surgery, helping out in hazardous environments, or simply making our lives at home a little easier."
+    },
+    {
+      "speaker": "Host",
+      "text": "Meta isn't stopping with just the sensors. They're also developing Meta Digit Plexus, which integrates tactile sensing across a whole robot hand. It's like giving a robot the ability to feel through every part of its hand, from fingertips to palm. This kind of tactile perception will be key for robots that need to manipulate delicate objects or perform dexterous tasks. Imagine a robot helping a factory worker by picking up parts or packaging items—tasks that are simple for a human but extremely challenging for a machine without this sense of touch."
+    },
+    {
+      "speaker": "Host",
+      "text": "And it's not just about the physical world. Meta's research team is also looking at the social and collaborative aspect of robotics. They introduced a new benchmark called PARTNR—a standardized framework for evaluating planning and reasoning in human-robot collaboration. PARTNR is designed to make sure that AI agents can not only perform tasks on their own but can also work side by side with humans, taking into account physical-world constraints like time and space. It's a step toward a future where robots are not just tools, but real partners in our daily lives."
+    },
+    {
+      "speaker": "Host",
+      "text": "Now, partnerships are a big part of how these advancements will reach the real world. Meta has teamed up with GelSight Inc and Wonik Robotics to bring these tactile sensors to market. GelSight will manufacture and distribute Digit 360, which is expected to be available next year. Meanwhile, Wonik Robotics will be producing a new robotic hand, fully integrated with Meta Digit Plexus, set to launch soon as well. This collaboration will help researchers worldwide access these innovations and advance the field of tactile robotics even further."
+    },
+    {
+      "speaker": "Host",
+      "text": "The potential applications here are vast—from healthcare and prosthetics to virtual reality and beyond. Imagine a prosthetic hand that can truly feel or a virtual reality experience where you can touch and feel virtual objects as if they were real. These are the kinds of advancements that could redefine the boundary between the digital and physical worlds, creating experiences that are richer and more immersive."
+    },
+    {
+      "speaker": "Host",
+      "text": "As we look to the future, it's clear that these advances in touch perception and dexterity are more than just technical achievements. They're steps toward a future where robots and AI can be more integrated into our daily lives—helping, understanding, and even collaborating with us in ways that were previously the domain of science fiction. It's about turning these agents into true partners—partners that can not only work around us but also learn our preferences, adapt to our needs, and make our lives better."
+    },
+    {
+      "speaker": "Host",
+      "text": "If you're interested in learning more, I encourage you to check out the article at ai.meta.com/blog/fair-robotics-open-source. It's an exciting time for embodied AI, and I can't wait to see how these innovations continue to evolve."
+    },
+    {
+      "speaker": "Host",
+      "text": "Thank you for joining me today on 'life is artificial'. If you enjoyed this episode, be sure to subscribe and share it with others who are just as curious about the future as we are. Until next time, keep dreaming of what the future could hold—because it's closer than you think."
+    }
+  ]
+}

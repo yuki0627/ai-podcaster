@@ -15,7 +15,7 @@ const openai = new OpenAI({
 const writeTranslatedJson = async (inputs: { jsonData: any; name: string }) => {
   const { name, jsonData } = inputs;
   const outputScript = path.resolve("./output/" + name + "_ja.json");
-  const textData:string = JSON.stringify(jsonData, null, 2); 
+  const textData: string = JSON.stringify(jsonData, null, 2);
   fs.writeFileSync(outputScript, textData);
   return outputScript;
 };
@@ -32,14 +32,15 @@ const graph_data = {
     translate: {
       agent: "openAIAgent",
       inputs: {
-        prompt: "このJSONデータに含まれたテキストをすべて日本語に翻訳して、同じJSONフォーマットで返して。ただし、 podcastのタイトル, 'Life is Artificial' は訳さずにそのままで。\n ${:jsonData.toJSON()}",
-      }
+        prompt:
+          "このJSONデータに含まれたテキストをすべて日本語に翻訳して、同じJSONフォーマットで返して。ただし、 podcastのタイトル, 'Life is Artificial' は訳さずにそのままで。\n ${:jsonData.toJSON()}",
+      },
     },
     writeTranslate: {
       agent: writeTranslatedJson,
       isResult: true,
       inputs: { jsonData: ":translate.text.jsonParse()", name: ":name" },
-    }
+    },
   },
 };
 

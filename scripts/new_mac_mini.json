@@ -1,56 +1,55 @@
 {
-    "title": "Mac Mini with M4 Pro: A Game-Changer for On-Prem AI?",
-    "description": "In this episode, we discuss the newly released Mac mini with the M4 Pro chip and how it could be a revolutionary solution for running AI on-premise, both for individuals and enterprises.",
-    "reference": "https://www.macrumors.com/guide/m4-mac-mini/",
-    "script": [
-      {
-        "speaker": "Host",
-        "text": "Hello and welcome to another episode of 'life is artificial', where we explore the cutting edge of technology, innovation, and what the future could look like."
-      },
-      {
-        "speaker": "Host",
-        "text": "Today, we're diving into a big announcement from Apple that might have just reshaped the AI landscape, especially when it comes to on-premise solutions. We're talking about the brand new Mac mini equipped with the M4 Pro chip, and why it might just be a game-changer for running AI models both for individual developers and for enterprises."
-      },
-      {
-        "speaker": "Host",
-        "text": "Now, if you're anything like me, you've probably been following the rise of AI and how it's becoming integral to businesses. But running AI models, especially large language models, can be quite expensive. Many enterprises have been using Nvidia's high-end GPUs, like the A100 or H100, which are fantastic but also extremely pricey—we're talking $30,000 or more. And availability can be an issue too, with supply often failing to keep up with demand."
-      },
-      {
-        "speaker": "Host",
-        "text": "Enter Apple's new Mac mini with the M4 Pro chip. This compact powerhouse is configurable with a 12-core CPU, 16-core GPU, 16-core Neural Engine, and a whopping 64GB of unified memory—all for just $1,999. That's a fraction of the cost of the typical AI server setups we see using Nvidia's GPUs. The combination of price and power could make it an ideal choice for running small to medium-sized AI models on-premise." 
-      },
-      {
-        "speaker": "Host",
-        "text": "And let me tell you why this matters. Companies are increasingly looking to take AI in-house, especially for privacy-sensitive tasks like using internal customer data for models, or deploying retrieval-augmented generation systems. Having an affordable, yet powerful, on-premise solution means businesses don’t have to worry about exposing their data to cloud APIs or paying hefty monthly bills for API calls."
-      },
-      {
-        "speaker": "Host",
-        "text": "We used to hear that on-premise solutions were old-fashioned—that the future was all in the cloud. SaaS and cloud computing were supposed to be the new wave. But with open-source large language models becoming a real alternative, we're seeing a reversal of that trend. Companies want more control over their data and fewer ongoing costs, and on-prem hardware like this Mac mini makes that possible."
-      },
-      {
-        "speaker": "Host",
-        "text": "Imagine being able to buy several of these Mac minis and create your own AI cluster for less than the price of a single Nvidia A100. Sure, Nvidia GPUs are incredibly powerful, but the unified memory architecture on the M4 Pro is perfect for handling these tasks efficiently. It's a whole new level of accessibility, bringing AI capabilities to companies that previously couldn't justify the cost of enterprise-grade Nvidia hardware." 
-      },
-      {
-        "speaker": "Host",
-        "text": "Another interesting point here is the cost-performance tradeoff. For many AI models, especially small to medium-sized language models, memory capacity is the main bottleneck. And the Mac mini, with its unified memory, could be more than sufficient for such models. This kind of solution could empower smaller companies, startups, and even educational institutions to get their hands on the tech needed to innovate without breaking the bank." 
-      },
-      {
-        "speaker": "Host",
-        "text": "And what about the implications for Nvidia? Well, it's no secret that they've been reluctant to make higher memory capacity GPUs widely available for consumer use. After all, if people could build GPU clusters with consumer hardware, the demand for their more lucrative server-grade products would fall. So, in a sense, Apple might have found a niche here—one that Nvidia's pricing strategy has inadvertently left open."
-      },
-      {
-        "speaker": "Host",
-        "text": "This Mac mini could end up being a fantastic choice for industries like healthcare, finance, and research, where data privacy is key, and the cost of cloud APIs or Nvidia's enterprise solutions is just too prohibitive. And honestly, it's going to be very interesting to see how this plays out. Will we start seeing on-premise AI servers becoming mainstream again, powered by consumer-level Apple hardware?"
-      },
-      {
-        "speaker": "Host",
-        "text": "So, what's your take on this? Would you consider buying a Mac mini with the M4 Pro for your own AI experiments or as part of your enterprise solution? I think this kind of accessibility could usher in a whole new wave of innovation. Not just for individuals, but for companies looking to push boundaries without needing a massive budget."
-      },
-      {
-        "speaker": "Host",
-        "text": "That wraps up today’s episode. Thanks for tuning into 'life is artificial'. If you enjoyed this discussion, make sure to subscribe and share it with anyone who loves talking about the future of AI. I can't wait to see how the AI landscape continues to evolve with innovations like this. Until next time, keep your curiosity alive and stay ahead of the curve." 
-      }
-    ]
-  }
-  
+  "title": "Mac Mini with M4 Pro: A Game-Changer for On-Prem AI?",
+  "description": "In this episode, we discuss the newly released Mac mini with the M4 Pro chip and how it could be a revolutionary solution for running AI on-premise, both for individuals and enterprises.",
+  "reference": "https://www.macrumors.com/guide/m4-mac-mini/",
+  "script": [
+    {
+      "speaker": "Host",
+      "text": "Hello and welcome to another episode of 'life is artificial', where we explore the cutting edge of technology, innovation, and what the future could look like."
+    },
+    {
+      "speaker": "Host",
+      "text": "Today, we're diving into a big announcement from Apple that might have just reshaped the AI landscape, especially when it comes to on-premise solutions. We're talking about the brand new Mac mini equipped with the M4 Pro chip, and why it might just be a game-changer for running AI models both for individual developers and for enterprises."
+    },
+    {
+      "speaker": "Host",
+      "text": "Now, if you're anything like me, you've probably been following the rise of AI and how it's becoming integral to businesses. But running AI models, especially large language models, can be quite expensive. Many enterprises have been using Nvidia's high-end GPUs, like the A100 or H100, which are fantastic but also extremely pricey—we're talking $30,000 or more. And availability can be an issue too, with supply often failing to keep up with demand."
+    },
+    {
+      "speaker": "Host",
+      "text": "Enter Apple's new Mac mini with the M4 Pro chip. This compact powerhouse is configurable with a 12-core CPU, 16-core GPU, 16-core Neural Engine, and a whopping 64GB of unified memory—all for just $1,999. That's a fraction of the cost of the typical AI server setups we see using Nvidia's GPUs. The combination of price and power could make it an ideal choice for running small to medium-sized AI models on-premise."
+    },
+    {
+      "speaker": "Host",
+      "text": "And let me tell you why this matters. Companies are increasingly looking to take AI in-house, especially for privacy-sensitive tasks like using internal customer data for models, or deploying retrieval-augmented generation systems. Having an affordable, yet powerful, on-premise solution means businesses don’t have to worry about exposing their data to cloud APIs or paying hefty monthly bills for API calls."
+    },
+    {
+      "speaker": "Host",
+      "text": "We used to hear that on-premise solutions were old-fashioned—that the future was all in the cloud. SaaS and cloud computing were supposed to be the new wave. But with open-source large language models becoming a real alternative, we're seeing a reversal of that trend. Companies want more control over their data and fewer ongoing costs, and on-prem hardware like this Mac mini makes that possible."
+    },
+    {
+      "speaker": "Host",
+      "text": "Imagine being able to buy several of these Mac minis and create your own AI cluster for less than the price of a single Nvidia A100. Sure, Nvidia GPUs are incredibly powerful, but the unified memory architecture on the M4 Pro is perfect for handling these tasks efficiently. It's a whole new level of accessibility, bringing AI capabilities to companies that previously couldn't justify the cost of enterprise-grade Nvidia hardware."
+    },
+    {
+      "speaker": "Host",
+      "text": "Another interesting point here is the cost-performance tradeoff. For many AI models, especially small to medium-sized language models, memory capacity is the main bottleneck. And the Mac mini, with its unified memory, could be more than sufficient for such models. This kind of solution could empower smaller companies, startups, and even educational institutions to get their hands on the tech needed to innovate without breaking the bank."
+    },
+    {
+      "speaker": "Host",
+      "text": "And what about the implications for Nvidia? Well, it's no secret that they've been reluctant to make higher memory capacity GPUs widely available for consumer use. After all, if people could build GPU clusters with consumer hardware, the demand for their more lucrative server-grade products would fall. So, in a sense, Apple might have found a niche here—one that Nvidia's pricing strategy has inadvertently left open."
+    },
+    {
+      "speaker": "Host",
+      "text": "This Mac mini could end up being a fantastic choice for industries like healthcare, finance, and research, where data privacy is key, and the cost of cloud APIs or Nvidia's enterprise solutions is just too prohibitive. And honestly, it's going to be very interesting to see how this plays out. Will we start seeing on-premise AI servers becoming mainstream again, powered by consumer-level Apple hardware?"
+    },
+    {
+      "speaker": "Host",
+      "text": "So, what's your take on this? Would you consider buying a Mac mini with the M4 Pro for your own AI experiments or as part of your enterprise solution? I think this kind of accessibility could usher in a whole new wave of innovation. Not just for individuals, but for companies looking to push boundaries without needing a massive budget."
+    },
+    {
+      "speaker": "Host",
+      "text": "That wraps up today’s episode. Thanks for tuning into 'life is artificial'. If you enjoyed this discussion, make sure to subscribe and share it with anyone who loves talking about the future of AI. I can't wait to see how the AI landscape continues to evolve with innovations like this. Until next time, keep your curiosity alive and stay ahead of the curve."
+    }
+  ]
+}

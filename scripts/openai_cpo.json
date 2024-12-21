@@ -1,67 +1,67 @@
 {
-    "title": "The Future of AI: Insights from OpenAI's CPO Kevin Weil",
-    "description": "Join us as we explore the future of AI, product management challenges, and the rapidly changing AI landscape with insights from Kevin Weil, OpenAI's Chief Product Officer.",
-    "reference": "https://www.youtube.com/watch?v=VsmEMUiPXIs",
-    "script": [
-      {
-        "speaker": "Host",
-        "text": "Hello and welcome to another episode of 'Life is Artificial', where we explore the cutting edge of technology, innovation, and what the future could look like."
-      },
-      {
-        "speaker": "Host",
-        "text": "Today, we're diving into an interview with Kevin Weil, the Chief Product Officer at OpenAI. Kevin recently shared some fascinating insights at the Ray Summit 2024, and we're going to unpack what it all means for the future of AI, product management, and the broader tech ecosystem. If you’re curious about the latest in AI, this is the episode for you!"
-      },
-      {
-        "speaker": "Host",
-        "text": "Before we get started, just a quick note: today's episode is based on Kevin Weil's recent talk at the Ray Summit 2024. You can check out the full video on YouTube—just look up 'OpenAI CPO Kevin Weil on the Future of AI' or use the link in our show notes."
-      },
-      {
-        "speaker": "Host",
-        "text": "So, what's different about building AI products at OpenAI? According to Kevin Weil, the biggest difference compared to other places he’s worked—like Twitter or Instagram—is that OpenAI doesn’t have a 'fixed technology floor.' In most tech companies, you know what tools you're working with, and you use those tools to solve problems. But at OpenAI, the technology is advancing almost monthly. One month, AI models might be able to do something that was impossible just a few months ago. It's a unique challenge for product managers, but also an exhilarating one."
-      },
-      {
-        "speaker": "Host",
-        "text": "Kevin shared a story that really illustrates this challenge. An enterprise customer asked him if they could get a 60-day notice of any upcoming changes so they could prepare. Kevin's response? 'I would also like a 60-day notice of what we’re doing!' It really shows how fast things are moving, even for the people at the very center of these advancements."
-      },
-      {
-        "speaker": "Host",
-        "text": "Now, one of the key releases that Kevin highlighted was the introduction of 'distillation.' Distillation is about making larger, complex AI models into smaller versions that can still perform specific tasks with high efficiency. The idea is to make AI more accessible and cheaper. Kevin mentioned that the cost of using AI has dropped by 99% since the release of GPT-3. Imagine that: something that cost $100 two years ago is now down to just a dollar. This is enabling so many new use cases that were previously unimaginable."
-      },
-      {
-        "speaker": "Host",
-        "text": "One of the standout announcements from the Ray Summit was the real-time voice API, which Kevin described as 'super exciting.' Imagine an AI that can translate languages in real time, helping people communicate across language barriers. Kevin shared a personal experience from a recent trip to Seoul and Tokyo, where he used the advanced voice mode in ChatGPT to have real-time conversations with people without a common language. This kind of technology feels straight out of a science fiction novel, and yet it’s already in our pockets today."
-      },
-      {
-        "speaker": "Host",
-        "text": "Kevin also talked about the new AI model called 'o1.' Unlike previous models, which just spit out answers based on patterns, o1 is designed to reason through problems—almost like a human would. It forms hypotheses, tests them, and refines its answers based on its findings. This makes it especially powerful for tasks like science and mathematics, where logical reasoning is critical."
-      },
-      {
-        "speaker": "Host",
-        "text": "The implications of this reasoning capability are huge. Kevin mentioned that it could eventually be used for major scientific research—like tackling diseases that have long challenged humanity. Imagine an AI spending months, even years, reasoning through a problem that no human has been able to solve. It's a tantalizing prospect."
-      },
-      {
-        "speaker": "Host",
-        "text": "But AI isn’t just about complex reasoning. Kevin believes that everyday tasks will also change dramatically. AI will move from simply answering questions to taking on tasks for us—whether that’s organizing work, managing projects, or even writing legal briefs. It’s about building a more agentic AI that can work alongside us, helping us in ways that go beyond simple back-and-forth Q&A."
-      },
-      {
-        "speaker": "Host",
-        "text": "And then there's the topic of monetization. AI tools like ChatGPT are providing capabilities that can save thousands of dollars worth of work, yet only cost a fraction of that amount in API credits. The business model for AI is still evolving, but one thing is clear—AI's ability to make sophisticated work accessible and affordable is going to fundamentally reshape many industries."
-      },
-      {
-        "speaker": "Host",
-        "text": "Toward the end of the interview, Kevin also touched on the importance of values in AI development. OpenAI has published a model spec that defines how their models should behave, and they are committed to continuously improving it. This transparency is a cornerstone of their approach to making sure AI is used responsibly."
-      },
-      {
-        "speaker": "Host",
-        "text": "So, what’s the takeaway from Kevin Weil's insights? The world of AI is evolving incredibly fast. We're moving toward a future where AI is not only more powerful but also more integrated into our daily lives—speaking to us, helping us reason, and taking on complex tasks. And as Kevin said, the exciting thing is that we’re all part of shaping that future."
-      },
-      {
-        "speaker": "Host",
-        "text": "If you’re building products with AI, Kevin has some advice: don’t focus on filling small gaps in what AI can do today. Instead, focus on what’s just on the horizon—those problems that the next generation of models will be able to solve. That’s where the real opportunities are."
-      },
-      {
-        "speaker": "Host",
-        "text": "Thank you for joining me on this episode of 'Life is Artificial.' If you want to dive deeper into Kevin Weil's discussion, make sure to check out the video on YouTube—the link is in the description. And as always, if you enjoyed this episode, please like, subscribe, and share it with anyone interested in the future of technology. Until next time, keep imagining, keep building, and stay curious."
-      }
-    ]
-  }
+  "title": "The Future of AI: Insights from OpenAI's CPO Kevin Weil",
+  "description": "Join us as we explore the future of AI, product management challenges, and the rapidly changing AI landscape with insights from Kevin Weil, OpenAI's Chief Product Officer.",
+  "reference": "https://www.youtube.com/watch?v=VsmEMUiPXIs",
+  "script": [
+    {
+      "speaker": "Host",
+      "text": "Hello and welcome to another episode of 'Life is Artificial', where we explore the cutting edge of technology, innovation, and what the future could look like."
+    },
+    {
+      "speaker": "Host",
+      "text": "Today, we're diving into an interview with Kevin Weil, the Chief Product Officer at OpenAI. Kevin recently shared some fascinating insights at the Ray Summit 2024, and we're going to unpack what it all means for the future of AI, product management, and the broader tech ecosystem. If you’re curious about the latest in AI, this is the episode for you!"
+    },
+    {
+      "speaker": "Host",
+      "text": "Before we get started, just a quick note: today's episode is based on Kevin Weil's recent talk at the Ray Summit 2024. You can check out the full video on YouTube—just look up 'OpenAI CPO Kevin Weil on the Future of AI' or use the link in our show notes."
+    },
+    {
+      "speaker": "Host",
+      "text": "So, what's different about building AI products at OpenAI? According to Kevin Weil, the biggest difference compared to other places he’s worked—like Twitter or Instagram—is that OpenAI doesn’t have a 'fixed technology floor.' In most tech companies, you know what tools you're working with, and you use those tools to solve problems. But at OpenAI, the technology is advancing almost monthly. One month, AI models might be able to do something that was impossible just a few months ago. It's a unique challenge for product managers, but also an exhilarating one."
+    },
+    {
+      "speaker": "Host",
+      "text": "Kevin shared a story that really illustrates this challenge. An enterprise customer asked him if they could get a 60-day notice of any upcoming changes so they could prepare. Kevin's response? 'I would also like a 60-day notice of what we’re doing!' It really shows how fast things are moving, even for the people at the very center of these advancements."
+    },
+    {
+      "speaker": "Host",
+      "text": "Now, one of the key releases that Kevin highlighted was the introduction of 'distillation.' Distillation is about making larger, complex AI models into smaller versions that can still perform specific tasks with high efficiency. The idea is to make AI more accessible and cheaper. Kevin mentioned that the cost of using AI has dropped by 99% since the release of GPT-3. Imagine that: something that cost $100 two years ago is now down to just a dollar. This is enabling so many new use cases that were previously unimaginable."
+    },
+    {
+      "speaker": "Host",
+      "text": "One of the standout announcements from the Ray Summit was the real-time voice API, which Kevin described as 'super exciting.' Imagine an AI that can translate languages in real time, helping people communicate across language barriers. Kevin shared a personal experience from a recent trip to Seoul and Tokyo, where he used the advanced voice mode in ChatGPT to have real-time conversations with people without a common language. This kind of technology feels straight out of a science fiction novel, and yet it’s already in our pockets today."
+    },
+    {
+      "speaker": "Host",
+      "text": "Kevin also talked about the new AI model called 'o1.' Unlike previous models, which just spit out answers based on patterns, o1 is designed to reason through problems—almost like a human would. It forms hypotheses, tests them, and refines its answers based on its findings. This makes it especially powerful for tasks like science and mathematics, where logical reasoning is critical."
+    },
+    {
+      "speaker": "Host",
+      "text": "The implications of this reasoning capability are huge. Kevin mentioned that it could eventually be used for major scientific research—like tackling diseases that have long challenged humanity. Imagine an AI spending months, even years, reasoning through a problem that no human has been able to solve. It's a tantalizing prospect."
+    },
+    {
+      "speaker": "Host",
+      "text": "But AI isn’t just about complex reasoning. Kevin believes that everyday tasks will also change dramatically. AI will move from simply answering questions to taking on tasks for us—whether that’s organizing work, managing projects, or even writing legal briefs. It’s about building a more agentic AI that can work alongside us, helping us in ways that go beyond simple back-and-forth Q&A."
+    },
+    {
+      "speaker": "Host",
+      "text": "And then there's the topic of monetization. AI tools like ChatGPT are providing capabilities that can save thousands of dollars worth of work, yet only cost a fraction of that amount in API credits. The business model for AI is still evolving, but one thing is clear—AI's ability to make sophisticated work accessible and affordable is going to fundamentally reshape many industries."
+    },
+    {
+      "speaker": "Host",
+      "text": "Toward the end of the interview, Kevin also touched on the importance of values in AI development. OpenAI has published a model spec that defines how their models should behave, and they are committed to continuously improving it. This transparency is a cornerstone of their approach to making sure AI is used responsibly."
+    },
+    {
+      "speaker": "Host",
+      "text": "So, what’s the takeaway from Kevin Weil's insights? The world of AI is evolving incredibly fast. We're moving toward a future where AI is not only more powerful but also more integrated into our daily lives—speaking to us, helping us reason, and taking on complex tasks. And as Kevin said, the exciting thing is that we’re all part of shaping that future."
+    },
+    {
+      "speaker": "Host",
+      "text": "If you’re building products with AI, Kevin has some advice: don’t focus on filling small gaps in what AI can do today. Instead, focus on what’s just on the horizon—those problems that the next generation of models will be able to solve. That’s where the real opportunities are."
+    },
+    {
+      "speaker": "Host",
+      "text": "Thank you for joining me on this episode of 'Life is Artificial.' If you want to dive deeper into Kevin Weil's discussion, make sure to check out the video on YouTube—the link is in the description. And as always, if you enjoyed this episode, please like, subscribe, and share it with anyone interested in the future of technology. Until next time, keep imagining, keep building, and stay curious."
+    }
+  ]
+}

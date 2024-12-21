@@ -1,52 +1,51 @@
 {
-    "title": "The Future of AI Inference: A Race to the Edge",
-    "description": "In this episode, we dive deep into the evolving landscape of AI infrastructure, from the big players in the AI arms race to the rise of inference at the edge. Join us as we explore how companies are strategizing to make AI more accessible and affordable, and what that means for the future of computing.",
-    "reference": "https://x.com/RihardJarc/status/1846912757439901838",
-    "script": [
-      {
-        "speaker": "Host",
-        "text": "Hello and welcome to another episode of 'life is artificial', where we explore the cutting edge of technology, innovation, and what the future could look like."
-      },
-      {
-        "speaker": "Host",
-        "text": "Today, we're going to talk about the fascinating world of AI inference and why the technology that's quietly transforming our devices and data centers is about to change in a very big way."
-      },
-      {
-        "speaker": "Host",
-        "text": "For years, the high-performance AI game has been dominated by NVIDIA with its powerful GPUs and CUDA. These were the backbone for training massive AI models and handling complex computations. But now, a shift is happening. Inference, the process of making predictions from a trained model, is becoming the dominant player, and it’s not just happening in data centers but also in your pocket—on your phone, on your laptop, and everywhere in between."
-      },
-      {
-        "speaker": "Host",
-        "text": "This shift is fueled by commoditization. We're moving from a landscape where only the biggest companies could afford to train and deploy AI, to a new era where inference has become a cost-driven arms race. And this is where it gets interesting: The big players like Google, Meta, and Microsoft are in a frantic competition—an arms race where they spend blank checks to make sure their AI technology is ahead, even if it means taking losses. Meanwhile, for everyone else, the goal is simple: get the best performance for the least amount of money. And that's driving some big changes in how we think about hardware for AI."
-      },
-      {
-        "speaker": "Host",
-        "text": "Think about it like this: For the majority of AI users, the goal is to run their models wherever it's cheapest and easiest. Most people don't care about the underlying chip architecture—whether it’s NVIDIA's CUDA, Google’s TPU, or a new ASIC—they just want it to work. The emphasis is shifting from massive, centralized training to distributed, efficient inference, ideally right on the edge of our devices. The dream is that one day, your phone will do it all. It will have an AI that knows your schedule, understands your habits, and learns from you—all while keeping everything private and secure, without needing to rely on the cloud for every request."
-      },
-      {
-        "speaker": "Host",
-        "text": "The AI industry is divided into two worlds. The world of massive tech companies, the likes of which have deep enough pockets to pour billions into specialized hardware and enormous data centers, and then there’s the rest of the world. Companies, start-ups, individuals—those looking to run a model for customer support, optimize a supply chain, or even just enhance a mobile app. For them, it’s all about tokens per dollar. It’s all about cost-effective inference."
-      },
-      {
-        "speaker": "Host",
-        "text": "And there's a critical distinction here. Training AI, with huge models and endless data, is flashy and it makes the headlines. But the real impact of AI on our everyday lives, where it really scales, comes down to inference—where and how quickly we can deploy these trained models. Inference is what’s running behind your voice assistant, your smart camera, even your spam filter. And it's poised to grow massively, outpacing training, because it's what enables AI to be everywhere."
-      },
-      {
-        "speaker": "Host",
-        "text": "Another interesting thing to consider is the future of inference hardware itself. Imagine a future where your phone, your laptop, maybe even your watch has its own Neural Processing Unit, an NPU designed specifically for AI. This is where distributed compute for inference comes in—where the device you hold in your hand is doing more of the heavy lifting. Not only does that save costs by reducing the need for constant cloud access, but it also offers benefits like better privacy and a faster, more responsive AI experience."
-      },
-      {
-        "speaker": "Host",
-        "text": "The experts say that companies like Google are in an existential race—to make sure their AI capabilities don’t fall behind. If they do, it could mean losing their edge in search or any other core business. Meanwhile, companies like NVIDIA face pressure as more specialized chips enter the market—chips that are purpose-built for inference and could end up being far cheaper."
-      },
-      {
-        "speaker": "Host",
-        "text": "So, as we move forward, what will it look like? We're going to see more AI on the edge, more distributed compute, and more devices that are capable of running these models without a data center in sight. The commoditization of AI inference is paving the way for a future where personal, powerful AI is in everyone’s hands—literally."
-      },
-      {
-        "speaker": "Host",
-        "text": "That's all for today’s episode. I hope you enjoyed this dive into the evolving world of AI inference and how it’s set to change our future. If you liked this episode, don’t forget to subscribe and share it with anyone you think would love to hear more about the future of technology. Until next time, stay curious and keep exploring the amazing world of AI."
-      }
-    ]
-  }
-  
+  "title": "The Future of AI Inference: A Race to the Edge",
+  "description": "In this episode, we dive deep into the evolving landscape of AI infrastructure, from the big players in the AI arms race to the rise of inference at the edge. Join us as we explore how companies are strategizing to make AI more accessible and affordable, and what that means for the future of computing.",
+  "reference": "https://x.com/RihardJarc/status/1846912757439901838",
+  "script": [
+    {
+      "speaker": "Host",
+      "text": "Hello and welcome to another episode of 'life is artificial', where we explore the cutting edge of technology, innovation, and what the future could look like."
+    },
+    {
+      "speaker": "Host",
+      "text": "Today, we're going to talk about the fascinating world of AI inference and why the technology that's quietly transforming our devices and data centers is about to change in a very big way."
+    },
+    {
+      "speaker": "Host",
+      "text": "For years, the high-performance AI game has been dominated by NVIDIA with its powerful GPUs and CUDA. These were the backbone for training massive AI models and handling complex computations. But now, a shift is happening. Inference, the process of making predictions from a trained model, is becoming the dominant player, and it’s not just happening in data centers but also in your pocket—on your phone, on your laptop, and everywhere in between."
+    },
+    {
+      "speaker": "Host",
+      "text": "This shift is fueled by commoditization. We're moving from a landscape where only the biggest companies could afford to train and deploy AI, to a new era where inference has become a cost-driven arms race. And this is where it gets interesting: The big players like Google, Meta, and Microsoft are in a frantic competition—an arms race where they spend blank checks to make sure their AI technology is ahead, even if it means taking losses. Meanwhile, for everyone else, the goal is simple: get the best performance for the least amount of money. And that's driving some big changes in how we think about hardware for AI."
+    },
+    {
+      "speaker": "Host",
+      "text": "Think about it like this: For the majority of AI users, the goal is to run their models wherever it's cheapest and easiest. Most people don't care about the underlying chip architecture—whether it’s NVIDIA's CUDA, Google’s TPU, or a new ASIC—they just want it to work. The emphasis is shifting from massive, centralized training to distributed, efficient inference, ideally right on the edge of our devices. The dream is that one day, your phone will do it all. It will have an AI that knows your schedule, understands your habits, and learns from you—all while keeping everything private and secure, without needing to rely on the cloud for every request."
+    },
+    {
+      "speaker": "Host",
+      "text": "The AI industry is divided into two worlds. The world of massive tech companies, the likes of which have deep enough pockets to pour billions into specialized hardware and enormous data centers, and then there’s the rest of the world. Companies, start-ups, individuals—those looking to run a model for customer support, optimize a supply chain, or even just enhance a mobile app. For them, it’s all about tokens per dollar. It’s all about cost-effective inference."
+    },
+    {
+      "speaker": "Host",
+      "text": "And there's a critical distinction here. Training AI, with huge models and endless data, is flashy and it makes the headlines. But the real impact of AI on our everyday lives, where it really scales, comes down to inference—where and how quickly we can deploy these trained models. Inference is what’s running behind your voice assistant, your smart camera, even your spam filter. And it's poised to grow massively, outpacing training, because it's what enables AI to be everywhere."
+    },
+    {
+      "speaker": "Host",
+      "text": "Another interesting thing to consider is the future of inference hardware itself. Imagine a future where your phone, your laptop, maybe even your watch has its own Neural Processing Unit, an NPU designed specifically for AI. This is where distributed compute for inference comes in—where the device you hold in your hand is doing more of the heavy lifting. Not only does that save costs by reducing the need for constant cloud access, but it also offers benefits like better privacy and a faster, more responsive AI experience."
+    },
+    {
+      "speaker": "Host",
+      "text": "The experts say that companies like Google are in an existential race—to make sure their AI capabilities don’t fall behind. If they do, it could mean losing their edge in search or any other core business. Meanwhile, companies like NVIDIA face pressure as more specialized chips enter the market—chips that are purpose-built for inference and could end up being far cheaper."
+    },
+    {
+      "speaker": "Host",
+      "text": "So, as we move forward, what will it look like? We're going to see more AI on the edge, more distributed compute, and more devices that are capable of running these models without a data center in sight. The commoditization of AI inference is paving the way for a future where personal, powerful AI is in everyone’s hands—literally."
+    },
+    {
+      "speaker": "Host",
+      "text": "That's all for today’s episode. I hope you enjoyed this dive into the evolving world of AI inference and how it’s set to change our future. If you liked this episode, don’t forget to subscribe and share it with anyone you think would love to hear more about the future of technology. Until next time, stay curious and keep exploring the amazing world of AI."
+    }
+  ]
+}

@@ -1,7 +1,10 @@
 import { AgentFunction, AgentFunctionInfo } from "graphai";
 import OpenAI from "openai";
 
-export const ttsOpenaiAgent: AgentFunction = async ({ namedInputs, params }) => {
+export const ttsOpenaiAgent: AgentFunction = async ({
+  namedInputs,
+  params,
+}) => {
   const { text } = namedInputs;
   const { apiKey, model, voice, throwError } = params;
   const openai = new OpenAI({ apiKey });

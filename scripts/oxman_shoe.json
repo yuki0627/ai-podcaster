@@ -1,52 +1,51 @@
 {
-    "title": "Revolutionizing Footwear: The O° Biodegradable Shoe",
-    "description": "In this episode, we explore how OXMAN's new O° platform is revolutionizing footwear with biodegradable materials, producing zero microplastics, and transforming the way we think about sustainability in fashion.",
-    "reference": "https://www.prnewswire.com/news-releases/oxman-unveils-the-o-shoe--a-100-biodegradable-shoe-made-without-petrochemicals-producing-zero-microplastics-302293106.html",
-    "script": [
-      {
-        "speaker": "Host",
-        "text": "Hello and welcome to another episode of 'life is artificial', where we explore the cutting edge of technology, innovation, and what the future could look like."
-      },
-      {
-        "speaker": "Host",
-        "text": "Today, we're diving into a new and exciting development in sustainable fashion, one that could change the way we look at the shoes we wear every day. We'll be talking about the O° Shoe—a 100% biodegradable shoe created by OXMAN. This shoe isn't just a step forward for fashion; it's a leap towards addressing the massive environmental problems caused by traditional footwear manufacturing."
-      },
-      {
-        "speaker": "Host",
-        "text": "This news comes directly from a recent press release by OXMAN titled 'OXMAN Unveils the O° Shoe - a 100% Biodegradable Shoe made without Petrochemicals, producing Zero Microplastics'. You can find the full article on PR Newswire; I'll include the link in the episode notes."
-      },
-      {
-        "speaker": "Host",
-        "text": "Now, let's take a closer look at the O° Shoe. This is no ordinary shoe. It's produced using OXMAN's innovative O° platform, which merges biological, digital, material, and robotic technologies. And it's all about simplicity and sustainability—creating footwear from a single organic material that is fully biodegradable. No petrochemicals, no microplastics, no harmful chemicals. Just one material, made in one process, designed to disappear back into nature when its lifecycle ends."
-      },
-      {
-        "speaker": "Host",
-        "text": "The O° Shoe is made of a material called polyhydroxyalkanoates, or PHAs. PHAs are produced by bacteria that consume carbon sources like carbon dioxide or food waste. Not only does this reduce carbon in the atmosphere, but it also provides a versatile, biodegradable alternative to petroleum-based plastics. So when your O° shoes eventually wear out, they won't be polluting the environment—instead, they'll be breaking down naturally and even nourishing the earth."
-      },
-      {
-        "speaker": "Host",
-        "text": "OXMAN's innovation doesn't stop at the material itself. The shoes are manufactured in a completely different way from conventional footwear. There's no cut-and-sew assembly, no adhesives, no complex parts. Instead, the O° platform uses a combination of 3D printing and knitting technologies to create the shoes with minimal human intervention, and virtually no waste. This streamlined approach makes local, low-cost production possible—cutting down on the environmental impact of global supply chains."
-      },
-      {
-        "speaker": "Host",
-        "text": "I think this is an incredible example of what happens when technology meets sustainability. By using bacteria to create both the material and even the pigments for these shoes, OXMAN is showing that it's possible to rethink our production processes and make them much closer to nature's way of doing things. It's almost like growing a shoe rather than manufacturing it, which is a concept I find fascinating."
-      },
-      {
-        "speaker": "Host",
-        "text": "And let's talk a little about the numbers here. Each year, over 24 billion shoes are manufactured worldwide, with 300 million pairs ending up in landfills. These traditional shoes are made from multiple materials—often as many as 40 different components—making them very difficult to recycle. By contrast, the O° Shoe is made from just one material and is fully biodegradable. This kind of shift has the potential to drastically reduce the waste created by the footwear industry."
-      },
-      {
-        "speaker": "Host",
-        "text": "This approach to footwear is not only about reducing waste but also about rethinking our relationship with the things we use. Imagine a future where every product we consume—from the clothes we wear to the buildings we live in—is designed to have a life cycle that doesn't harm the planet. That's the vision OXMAN is working towards, and I think it's incredibly inspiring."
-      },
-      {
-        "speaker": "Host",
-        "text": "If you'd like to learn more about the O° Shoe and the technologies behind it, be sure to check out the press release on PR Newswire—the link is in the episode description. And as always, let me know your thoughts on this. Would you wear a shoe made entirely from bacteria-derived materials? Do you think this kind of innovation could become the norm in fashion and consumer goods?"
-      },
-      {
-        "speaker": "Host",
-        "text": "That's all for today. Thanks for tuning in to 'life is artificial'. If you enjoyed this episode, don't forget to subscribe and share it with someone who loves to stay on top of future-forward ideas. Until next time, keep imagining the future!"
-      }
-    ]
-  }
-  
+  "title": "Revolutionizing Footwear: The O° Biodegradable Shoe",
+  "description": "In this episode, we explore how OXMAN's new O° platform is revolutionizing footwear with biodegradable materials, producing zero microplastics, and transforming the way we think about sustainability in fashion.",
+  "reference": "https://www.prnewswire.com/news-releases/oxman-unveils-the-o-shoe--a-100-biodegradable-shoe-made-without-petrochemicals-producing-zero-microplastics-302293106.html",
+  "script": [
+    {
+      "speaker": "Host",
+      "text": "Hello and welcome to another episode of 'life is artificial', where we explore the cutting edge of technology, innovation, and what the future could look like."
+    },
+    {
+      "speaker": "Host",
+      "text": "Today, we're diving into a new and exciting development in sustainable fashion, one that could change the way we look at the shoes we wear every day. We'll be talking about the O° Shoe—a 100% biodegradable shoe created by OXMAN. This shoe isn't just a step forward for fashion; it's a leap towards addressing the massive environmental problems caused by traditional footwear manufacturing."
+    },
+    {
+      "speaker": "Host",
+      "text": "This news comes directly from a recent press release by OXMAN titled 'OXMAN Unveils the O° Shoe - a 100% Biodegradable Shoe made without Petrochemicals, producing Zero Microplastics'. You can find the full article on PR Newswire; I'll include the link in the episode notes."
+    },
+    {
+      "speaker": "Host",
+      "text": "Now, let's take a closer look at the O° Shoe. This is no ordinary shoe. It's produced using OXMAN's innovative O° platform, which merges biological, digital, material, and robotic technologies. And it's all about simplicity and sustainability—creating footwear from a single organic material that is fully biodegradable. No petrochemicals, no microplastics, no harmful chemicals. Just one material, made in one process, designed to disappear back into nature when its lifecycle ends."
+    },
+    {
+      "speaker": "Host",
+      "text": "The O° Shoe is made of a material called polyhydroxyalkanoates, or PHAs. PHAs are produced by bacteria that consume carbon sources like carbon dioxide or food waste. Not only does this reduce carbon in the atmosphere, but it also provides a versatile, biodegradable alternative to petroleum-based plastics. So when your O° shoes eventually wear out, they won't be polluting the environment—instead, they'll be breaking down naturally and even nourishing the earth."
+    },
+    {
+      "speaker": "Host",
+      "text": "OXMAN's innovation doesn't stop at the material itself. The shoes are manufactured in a completely different way from conventional footwear. There's no cut-and-sew assembly, no adhesives, no complex parts. Instead, the O° platform uses a combination of 3D printing and knitting technologies to create the shoes with minimal human intervention, and virtually no waste. This streamlined approach makes local, low-cost production possible—cutting down on the environmental impact of global supply chains."
+    },
+    {
+      "speaker": "Host",
+      "text": "I think this is an incredible example of what happens when technology meets sustainability. By using bacteria to create both the material and even the pigments for these shoes, OXMAN is showing that it's possible to rethink our production processes and make them much closer to nature's way of doing things. It's almost like growing a shoe rather than manufacturing it, which is a concept I find fascinating."
+    },
+    {
+      "speaker": "Host",
+      "text": "And let's talk a little about the numbers here. Each year, over 24 billion shoes are manufactured worldwide, with 300 million pairs ending up in landfills. These traditional shoes are made from multiple materials—often as many as 40 different components—making them very difficult to recycle. By contrast, the O° Shoe is made from just one material and is fully biodegradable. This kind of shift has the potential to drastically reduce the waste created by the footwear industry."
+    },
+    {
+      "speaker": "Host",
+      "text": "This approach to footwear is not only about reducing waste but also about rethinking our relationship with the things we use. Imagine a future where every product we consume—from the clothes we wear to the buildings we live in—is designed to have a life cycle that doesn't harm the planet. That's the vision OXMAN is working towards, and I think it's incredibly inspiring."
+    },
+    {
+      "speaker": "Host",
+      "text": "If you'd like to learn more about the O° Shoe and the technologies behind it, be sure to check out the press release on PR Newswire—the link is in the episode description. And as always, let me know your thoughts on this. Would you wear a shoe made entirely from bacteria-derived materials? Do you think this kind of innovation could become the norm in fashion and consumer goods?"
+    },
+    {
+      "speaker": "Host",
+      "text": "That's all for today. Thanks for tuning in to 'life is artificial'. If you enjoyed this episode, don't forget to subscribe and share it with someone who loves to stay on top of future-forward ideas. Until next time, keep imagining the future!"
+    }
+  ]
+}

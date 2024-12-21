@@ -1,56 +1,55 @@
 {
-    "title": "How AI Is Revolutionizing Math Tutoring for Kids",
-    "description": "In this episode, we dive into how AI is being used to enhance human tutors' ability to teach math effectively to children, particularly those from underserved communities. Let's explore the promise and potential of Tutor CoPilot, developed at Stanford University.",
-    "reference": "https://www.technologyreview.com/2024/10/28/1106251/this-ai-system-makes-human-tutors-better-at-teaching-children-math/",
-    "script": [
-      {
-        "speaker": "Host",
-        "text": "Hello and welcome to another episode of 'Life is Artificial,' where we explore the cutting edge of technology, innovation, and what the future could look like."
-      },
-      {
-        "speaker": "Host",
-        "text": "Today, we're talking about an exciting development in the field of education. Imagine a world where every child, regardless of their background, gets access to a quality education experience, with tutors that are just as knowledgeable and effective as the best teachers out there. Sound like science fiction? Well, thanks to AI, we might be closer to that future than you think."
-      },
-      {
-        "speaker": "Host",
-        "text": "Our story today comes from the folks at MIT Technology Review, and it's about a new AI system called Tutor CoPilot that helps human tutors become better at teaching math to children. Developed by researchers at Stanford University, this tool isn't here to replace educators; instead, it's designed to support and enhance their work, making tutoring more effective and accessible."
-      },
-      {
-        "speaker": "Host",
-        "text": "Tutor CoPilot is built on top of OpenAI's GPT-4, and it's integrated into a virtual tutoring platform called FEV Tutor. Essentially, it's a tool that allows tutors to tap into the expertise of experienced teachers during tutoring sessions. Imagine you're a tutor struggling to explain why a student's answer is incorrect. You press a button, and Tutor CoPilot generates helpful suggestions for how you could guide the student towards understanding the problem more deeply. It's like having a master teacher whispering in your ear, offering the best advice just when you need it."
-      },
-      {
-        "speaker": "Host",
-        "text": "This AI isn't meant to solve the problems directly for the student—it doesn't give them the answer. Instead, it nudges the tutor in the right direction. Maybe it suggests a question the tutor could ask to get the student thinking in a different way or encourages the tutor to focus on how the student approached the problem to begin with. It's all about promoting deeper learning and critical thinking, which is so important when it comes to subjects like math."
-      },
-      {
-        "speaker": "Host",
-        "text": "The researchers tested Tutor CoPilot with over 1,700 students from underserved communities in the US South, and the results were promising. Half of the tutors used Tutor CoPilot while teaching, and the other half did not. The students who had access to the AI-supported tutors were four percentage points more likely to pass their end-of-session assessments—66% versus 62%. Now, that might not sound like a huge difference, but when you're talking about education at scale, it adds up, especially for children who may not otherwise get this level of support."
-      },
-      {
-        "speaker": "Host",
-        "text": "One of the reasons Tutor CoPilot works so well is that it helps tutors emulate the teaching methods of more experienced educators. Instead of spending thousands of dollars training tutors in person, this system can be used for just $20 per tutor annually. That's a huge cost-saving and makes one-on-one quality tutoring more accessible, especially in districts that struggle with education inequality."
-      },
-      {
-        "speaker": "Host",
-        "text": "Mina Lee, an assistant professor of computer science at the University of Chicago who wasn't involved in the project, put it well. She said that this tool highlights how AI can augment human-to-human interaction. It's not about replacing teachers or tutors, it's about facilitating better connections and helping tutors learn to approach problems like experienced educators would. That's a powerful concept—using AI not as a substitute but as a companion to make human connections more meaningful."
-      },
-      {
-        "speaker": "Host",
-        "text": "And of course, there's more to explore. The team at Stanford is interested in understanding how well novice tutors remember the strategies taught by Tutor CoPilot. Essentially, how much of what the AI suggests sticks with the tutor after repeated use? They also want to figure out if this approach could be applied to other subjects beyond math, and to other age groups as well."
-      },
-      {
-        "speaker": "Host",
-        "text": "As always, with new technology, there are still questions and challenges. Rose Wang, one of the researchers, emphasized that they want to rigorously evaluate the tool before rolling it out more widely. They don't want to waste students' time by using an untested AI system in the classroom. It's refreshing to see a focus on thoughtful implementation rather than just deploying tech for the sake of it."
-      },
-      {
-        "speaker": "Host",
-        "text": "The potential here is huge—imagine if every tutor, regardless of their experience level, could give their students the kind of support that leads to lasting understanding. AI tools like Tutor CoPilot are just the beginning of how we can start bridging educational divides and offering every student the chance to learn in a way that suits them best."
-      },
-      {
-        "speaker": "Host",
-        "text": "That wraps up today's episode of 'Life is Artificial.' If you're interested in reading more about Tutor CoPilot, I've included the link to the MIT Technology Review article in the episode description. Thanks for tuning in, and if you liked what you heard, make sure to subscribe and share it with your friends. Let's keep exploring the fascinating ways AI is changing our world for the better."
-      }
-    ]
-  }
-  
+  "title": "How AI Is Revolutionizing Math Tutoring for Kids",
+  "description": "In this episode, we dive into how AI is being used to enhance human tutors' ability to teach math effectively to children, particularly those from underserved communities. Let's explore the promise and potential of Tutor CoPilot, developed at Stanford University.",
+  "reference": "https://www.technologyreview.com/2024/10/28/1106251/this-ai-system-makes-human-tutors-better-at-teaching-children-math/",
+  "script": [
+    {
+      "speaker": "Host",
+      "text": "Hello and welcome to another episode of 'Life is Artificial,' where we explore the cutting edge of technology, innovation, and what the future could look like."
+    },
+    {
+      "speaker": "Host",
+      "text": "Today, we're talking about an exciting development in the field of education. Imagine a world where every child, regardless of their background, gets access to a quality education experience, with tutors that are just as knowledgeable and effective as the best teachers out there. Sound like science fiction? Well, thanks to AI, we might be closer to that future than you think."
+    },
+    {
+      "speaker": "Host",
+      "text": "Our story today comes from the folks at MIT Technology Review, and it's about a new AI system called Tutor CoPilot that helps human tutors become better at teaching math to children. Developed by researchers at Stanford University, this tool isn't here to replace educators; instead, it's designed to support and enhance their work, making tutoring more effective and accessible."
+    },
+    {
+      "speaker": "Host",
+      "text": "Tutor CoPilot is built on top of OpenAI's GPT-4, and it's integrated into a virtual tutoring platform called FEV Tutor. Essentially, it's a tool that allows tutors to tap into the expertise of experienced teachers during tutoring sessions. Imagine you're a tutor struggling to explain why a student's answer is incorrect. You press a button, and Tutor CoPilot generates helpful suggestions for how you could guide the student towards understanding the problem more deeply. It's like having a master teacher whispering in your ear, offering the best advice just when you need it."
+    },
+    {
+      "speaker": "Host",
+      "text": "This AI isn't meant to solve the problems directly for the student—it doesn't give them the answer. Instead, it nudges the tutor in the right direction. Maybe it suggests a question the tutor could ask to get the student thinking in a different way or encourages the tutor to focus on how the student approached the problem to begin with. It's all about promoting deeper learning and critical thinking, which is so important when it comes to subjects like math."
+    },
+    {
+      "speaker": "Host",
+      "text": "The researchers tested Tutor CoPilot with over 1,700 students from underserved communities in the US South, and the results were promising. Half of the tutors used Tutor CoPilot while teaching, and the other half did not. The students who had access to the AI-supported tutors were four percentage points more likely to pass their end-of-session assessments—66% versus 62%. Now, that might not sound like a huge difference, but when you're talking about education at scale, it adds up, especially for children who may not otherwise get this level of support."
+    },
+    {
+      "speaker": "Host",
+      "text": "One of the reasons Tutor CoPilot works so well is that it helps tutors emulate the teaching methods of more experienced educators. Instead of spending thousands of dollars training tutors in person, this system can be used for just $20 per tutor annually. That's a huge cost-saving and makes one-on-one quality tutoring more accessible, especially in districts that struggle with education inequality."
+    },
+    {
+      "speaker": "Host",
+      "text": "Mina Lee, an assistant professor of computer science at the University of Chicago who wasn't involved in the project, put it well. She said that this tool highlights how AI can augment human-to-human interaction. It's not about replacing teachers or tutors, it's about facilitating better connections and helping tutors learn to approach problems like experienced educators would. That's a powerful concept—using AI not as a substitute but as a companion to make human connections more meaningful."
+    },
+    {
+      "speaker": "Host",
+      "text": "And of course, there's more to explore. The team at Stanford is interested in understanding how well novice tutors remember the strategies taught by Tutor CoPilot. Essentially, how much of what the AI suggests sticks with the tutor after repeated use? They also want to figure out if this approach could be applied to other subjects beyond math, and to other age groups as well."
+    },
+    {
+      "speaker": "Host",
+      "text": "As always, with new technology, there are still questions and challenges. Rose Wang, one of the researchers, emphasized that they want to rigorously evaluate the tool before rolling it out more widely. They don't want to waste students' time by using an untested AI system in the classroom. It's refreshing to see a focus on thoughtful implementation rather than just deploying tech for the sake of it."
+    },
+    {
+      "speaker": "Host",
+      "text": "The potential here is huge—imagine if every tutor, regardless of their experience level, could give their students the kind of support that leads to lasting understanding. AI tools like Tutor CoPilot are just the beginning of how we can start bridging educational divides and offering every student the chance to learn in a way that suits them best."
+    },
+    {
+      "speaker": "Host",
+      "text": "That wraps up today's episode of 'Life is Artificial.' If you're interested in reading more about Tutor CoPilot, I've included the link to the MIT Technology Review article in the episode description. Thanks for tuning in, and if you liked what you heard, make sure to subscribe and share it with your friends. Let's keep exploring the fascinating ways AI is changing our world for the better."
+    }
+  ]
+}

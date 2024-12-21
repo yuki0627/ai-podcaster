@@ -1,68 +1,67 @@
 {
-    "title": "Toyota's Bold Move into Air Mobility with Joby Aviation",
-    "description": "Exploring Toyota's $500 million investment in Joby Aviation and the future of electric air taxis.",
-    "reference": "https://www.jobyaviation.com/news/toyota-to-invest-500-million-in-joby-aviation/",
-    "script": [
-      {
-        "speaker": "Host",
-        "text": "Hello and welcome to another episode of 'Life is Artificial,' where we explore the cutting edge of technology, innovation, and what the future could look like."
-      },
-      {
-        "speaker": "Host",
-        "text": "Today, we’re diving into a big story that has the potential to redefine urban transportation as we know it. Toyota is investing an impressive $500 million into Joby Aviation, a company that's pioneering electric air taxis for commercial use. This is more than just another investment in electric vehicles—it's a vision for what air mobility could look like in the near future."
-      },
-      {
-        "speaker": "Host",
-        "text": "Before we get into the details, let me give credit to our source: the news comes directly from Toyota’s press release titled 'Toyota To Invest $500 Million in Joby Aviation.' You can find the full article on Joby Aviation’s website. We’ll also add the link in the episode description."
-      },
-      {
-        "speaker": "Host",
-        "text": "So, what exactly does this investment entail? Toyota's $500 million commitment to Joby is set to be completed in two equal parts, or tranches. The first tranche is scheduled to close later this year, while the second is planned for 2025. When fully realized, Toyota’s total investment in Joby will reach a remarkable $894 million. That’s a substantial backing, and it highlights just how serious Toyota is about electric air mobility."
-      },
-      {
-        "speaker": "Host",
-        "text": "But let’s step back a bit—who is Joby Aviation, and why is Toyota so interested in them? Joby is a California-based company developing electric vertical take-off and landing aircraft, or eVTOLs, specifically designed for passenger services in urban areas. Essentially, they’re building a fleet of air taxis that could soon be seen flying over our cities, offering fast, quiet, and environmentally friendly transportation."
-      },
-      {
-        "speaker": "Host",
-        "text": "Toyota and Joby’s relationship isn’t new. It actually began about seven years ago, when Toyota Ventures, Toyota’s early-stage venture capital arm, first invested in Joby. Since then, Toyota has not only invested financially but also contributed time and human resources, sharing their production expertise to help Joby refine its manufacturing processes."
-      },
-      {
-        "speaker": "Host",
-        "text": "This new $500 million investment marks a deepening of their partnership and includes a strategic alliance for manufacturing Joby’s aircraft. Toyota’s engineers have been working closely with Joby’s team in California, bringing insights from the Toyota Production System. They’re involved in everything from manufacturing method development to tooling design—skills that Toyota has honed over decades of building reliable, high-quality vehicles."
-      },
-      {
-        "speaker": "Host",
-        "text": "And it seems like Joby is making steady progress toward becoming commercially viable. In August 2024, Joby announced that they are over a third of the way through the fourth of five stages required for FAA type certification of their aircraft—a critical milestone in bringing air taxis to market. Joby’s also ramping up its production capabilities, having recently expanded its manufacturing facilities in Marina, California, which will more than double their manufacturing footprint."
-      },
-      {
-        "speaker": "Host",
-        "text": "In the words of Joby’s CEO, JoeBen Bevirt, Toyota’s knowledge and support have been instrumental to their success so far, and both companies are looking forward to realizing a shared vision for sustainable air travel. Tetsuo Ogawa, Toyota’s Operating Officer, echoed this sentiment by saying, 'We share Joby’s view that sustainable flight will be central to alleviating today’s persistent mobility challenges.'"
-      },
-      {
-        "speaker": "Host",
-        "text": "This partnership isn’t just about aircraft and investment—it's a clear signal of Toyota’s long-term strategy. Known for their contributions to eco-friendly road transportation, Toyota is now extending their mission to the skies. Since its inception, Toyota has been a leader in green technology with innovations like the Prius hybrid and Mirai fuel cell vehicle. Now, they’re aiming to transform into a comprehensive mobility company, and air taxis are a big part of that vision."
-      },
-      {
-        "speaker": "Host",
-        "text": "In addition to their financial support, Toyota has also signed a long-term agreement to supply essential powertrain and actuation components for Joby’s aircraft. This is a sign that Toyota is deeply integrated into the project and committed to helping Joby bring these air taxis to market."
-      },
-      {
-        "speaker": "Host",
-        "text": "As we look forward, Toyota’s ambition to help realize air mobility for personal travel shows their commitment to overcoming modern urban mobility challenges. The aim is a future where flying taxis are just as common as rideshares on the road, offering us a quick, sustainable way to travel across congested cities."
-      },
-      {
-        "speaker": "Host",
-        "text": "This announcement underscores a broader trend we’re seeing in the transportation industry, where traditional automotive giants are venturing into new forms of mobility. For Toyota, it’s part of a larger transformation—a move away from just producing vehicles to becoming a provider of broader mobility solutions."
-      },
-      {
-        "speaker": "Host",
-        "text": "So, what can we take away from all of this? Toyota’s investment in Joby Aviation reflects not only confidence in Joby’s electric air taxi technology but also Toyota’s commitment to a sustainable and innovative future. This partnership could very well shape the way we navigate our cities in the years to come."
-      },
-      {
-        "speaker": "Host",
-        "text": "That’s it for today’s episode! Thanks for tuning into 'Life is Artificial.' If you’re as excited about the future of transportation as we are, be sure to subscribe for more insights on the latest innovations. And don’t forget to check out the full article on Joby’s website to get all the details. Until next time, stay curious and keep exploring!"
-      }
-    ]
-  }
-  
+  "title": "Toyota's Bold Move into Air Mobility with Joby Aviation",
+  "description": "Exploring Toyota's $500 million investment in Joby Aviation and the future of electric air taxis.",
+  "reference": "https://www.jobyaviation.com/news/toyota-to-invest-500-million-in-joby-aviation/",
+  "script": [
+    {
+      "speaker": "Host",
+      "text": "Hello and welcome to another episode of 'Life is Artificial,' where we explore the cutting edge of technology, innovation, and what the future could look like."
+    },
+    {
+      "speaker": "Host",
+      "text": "Today, we’re diving into a big story that has the potential to redefine urban transportation as we know it. Toyota is investing an impressive $500 million into Joby Aviation, a company that's pioneering electric air taxis for commercial use. This is more than just another investment in electric vehicles—it's a vision for what air mobility could look like in the near future."
+    },
+    {
+      "speaker": "Host",
+      "text": "Before we get into the details, let me give credit to our source: the news comes directly from Toyota’s press release titled 'Toyota To Invest $500 Million in Joby Aviation.' You can find the full article on Joby Aviation’s website. We’ll also add the link in the episode description."
+    },
+    {
+      "speaker": "Host",
+      "text": "So, what exactly does this investment entail? Toyota's $500 million commitment to Joby is set to be completed in two equal parts, or tranches. The first tranche is scheduled to close later this year, while the second is planned for 2025. When fully realized, Toyota’s total investment in Joby will reach a remarkable $894 million. That’s a substantial backing, and it highlights just how serious Toyota is about electric air mobility."
+    },
+    {
+      "speaker": "Host",
+      "text": "But let’s step back a bit—who is Joby Aviation, and why is Toyota so interested in them? Joby is a California-based company developing electric vertical take-off and landing aircraft, or eVTOLs, specifically designed for passenger services in urban areas. Essentially, they’re building a fleet of air taxis that could soon be seen flying over our cities, offering fast, quiet, and environmentally friendly transportation."
+    },
+    {
+      "speaker": "Host",
+      "text": "Toyota and Joby’s relationship isn’t new. It actually began about seven years ago, when Toyota Ventures, Toyota’s early-stage venture capital arm, first invested in Joby. Since then, Toyota has not only invested financially but also contributed time and human resources, sharing their production expertise to help Joby refine its manufacturing processes."
+    },
+    {
+      "speaker": "Host",
+      "text": "This new $500 million investment marks a deepening of their partnership and includes a strategic alliance for manufacturing Joby’s aircraft. Toyota’s engineers have been working closely with Joby’s team in California, bringing insights from the Toyota Production System. They’re involved in everything from manufacturing method development to tooling design—skills that Toyota has honed over decades of building reliable, high-quality vehicles."
+    },
+    {
+      "speaker": "Host",
+      "text": "And it seems like Joby is making steady progress toward becoming commercially viable. In August 2024, Joby announced that they are over a third of the way through the fourth of five stages required for FAA type certification of their aircraft—a critical milestone in bringing air taxis to market. Joby’s also ramping up its production capabilities, having recently expanded its manufacturing facilities in Marina, California, which will more than double their manufacturing footprint."
+    },
+    {
+      "speaker": "Host",
+      "text": "In the words of Joby’s CEO, JoeBen Bevirt, Toyota’s knowledge and support have been instrumental to their success so far, and both companies are looking forward to realizing a shared vision for sustainable air travel. Tetsuo Ogawa, Toyota’s Operating Officer, echoed this sentiment by saying, 'We share Joby’s view that sustainable flight will be central to alleviating today’s persistent mobility challenges.'"
+    },
+    {
+      "speaker": "Host",
+      "text": "This partnership isn’t just about aircraft and investment—it's a clear signal of Toyota’s long-term strategy. Known for their contributions to eco-friendly road transportation, Toyota is now extending their mission to the skies. Since its inception, Toyota has been a leader in green technology with innovations like the Prius hybrid and Mirai fuel cell vehicle. Now, they’re aiming to transform into a comprehensive mobility company, and air taxis are a big part of that vision."
+    },
+    {
+      "speaker": "Host",
+      "text": "In addition to their financial support, Toyota has also signed a long-term agreement to supply essential powertrain and actuation components for Joby’s aircraft. This is a sign that Toyota is deeply integrated into the project and committed to helping Joby bring these air taxis to market."
+    },
+    {
+      "speaker": "Host",
+      "text": "As we look forward, Toyota’s ambition to help realize air mobility for personal travel shows their commitment to overcoming modern urban mobility challenges. The aim is a future where flying taxis are just as common as rideshares on the road, offering us a quick, sustainable way to travel across congested cities."
+    },
+    {
+      "speaker": "Host",
+      "text": "This announcement underscores a broader trend we’re seeing in the transportation industry, where traditional automotive giants are venturing into new forms of mobility. For Toyota, it’s part of a larger transformation—a move away from just producing vehicles to becoming a provider of broader mobility solutions."
+    },
+    {
+      "speaker": "Host",
+      "text": "So, what can we take away from all of this? Toyota’s investment in Joby Aviation reflects not only confidence in Joby’s electric air taxi technology but also Toyota’s commitment to a sustainable and innovative future. This partnership could very well shape the way we navigate our cities in the years to come."
+    },
+    {
+      "speaker": "Host",
+      "text": "That’s it for today’s episode! Thanks for tuning into 'Life is Artificial.' If you’re as excited about the future of transportation as we are, be sure to subscribe for more insights on the latest innovations. And don’t forget to check out the full article on Joby’s website to get all the details. Until next time, stay curious and keep exploring!"
+    }
+  ]
+}

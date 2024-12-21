@@ -2,7 +2,13 @@ import "dotenv/config";
 import fsPromise from "fs/promises";
 import fs from "fs";
 import path from "path";
-import { GraphAI, AgentFilterFunction, GraphData, ComputedNodeData, StaticNodeData } from "graphai";
+import {
+  GraphAI,
+  AgentFilterFunction,
+  GraphData,
+  ComputedNodeData,
+  StaticNodeData,
+} from "graphai";
 import * as agents from "@graphai/agents";
 // import { ttsNijivoiceAgent } from "@graphai/tts_nijivoice_agent";
 import { ttsOpenaiAgent } from "@graphai/tts_openai_agent";
@@ -12,26 +18,26 @@ import { pathUtilsAgent } from "@graphai/vanilla_node_agents";
 import ffmpeg from "fluent-ffmpeg";
 
 type ScriptData = {
-  "speaker": string;
-  "text": string;
-  "duration": number; // generated
-  "filename": string; // generated
+  speaker: string;
+  text: string;
+  duration: number; // generated
+  filename: string; // generated
 };
 
 type PodcastScript = {
-  "title": string;
-  "description": string;
-  "reference": string;
-  "tts": string | undefined; // default: openAI
-  "voices": string[] | undefined;
-  "speakers": string[] | undefined;
-  "script": ScriptData[];
-  "filename": string; // generated
-  "voicemap": Map<string, string>; // generated
-}
+  title: string;
+  description: string;
+  reference: string;
+  tts: string | undefined; // default: openAI
+  voices: string[] | undefined;
+  speakers: string[] | undefined;
+  script: ScriptData[];
+  filename: string; // generated
+  voicemap: Map<string, string>; // generated
+};
 
-const rion_takanashi_voice = "b9277ce3-ba1c-4f6f-9a65-c05ca102ded0" // たかなし りおん
-const ben_carter_voice = "bc06c63f-fef6-43b6-92f7-67f919bd5dae" // ベン・カーター
+const rion_takanashi_voice = "b9277ce3-ba1c-4f6f-9a65-c05ca102ded0"; // たかなし りおん
+const ben_carter_voice = "bc06c63f-fef6-43b6-92f7-67f919bd5dae"; // ベン・カーター
 
 const combineFiles = async (inputs: { script: PodcastScript }) => {
   const { script } = inputs;
@@ -132,12 +138,12 @@ const graph_tts: GraphData = {
     voice: {
       agent: (namedInputs: any) => {
         const { speaker, voicemap, voice0 } = namedInputs;
-        return voicemap[speaker] ?? voice0; 
+        return voicemap[speaker] ?? voice0;
       },
       inputs: {
         speaker: ":row.speaker",
         voicemap: ":script.voicemap",
-        voice0: ":script.voices.$0"
+        voice0: ":script.voices.$0",
       },
     },
     tts: {
@@ -204,7 +210,7 @@ const fileCacheAgentFilter: AgentFilterFunction = async (context, next) => {
     console.log("cache hit: " + file);
     return true;
   } catch (e) {
-    const output = await next(context) as Record<string, any>;
+    const output = (await next(context)) as Record<string, any>;
     const buffer = output ? output["buffer"] : undefined;
     if (buffer) {
       console.log("writing: " + file);
@@ -236,26 +242,23 @@ const main = async () => {
   });
 
   const ttsNode = graph_tts.nodes.tts as ComputedNodeData;
-  if (script.tts ===  "nijivoice") {
+  if (script.tts === "nijivoice") {
     graph_data.concurrency = 1;
-    script.voices = script.voices ?? [
-      rion_takanashi_voice,
-      ben_carter_voice,
-    ];
+    script.voices = script.voices ?? [rion_takanashi_voice, ben_carter_voice];
     ttsNode.agent = "ttsNijivoiceAgent";
   } else {
     graph_data.concurrency = 8;
-    script.voices = script.voices ?? [
-      "shimmer",
-      "echo"
-    ];
+    script.voices = script.voices ?? ["shimmer", "echo"];
     ttsNode.agent = "ttsOpenaiAgent";
   }
   const speakers = script.speakers ?? ["Host", "Guest"];
-  script.voicemap = speakers.reduce((map: any, speaker: string, index: number) => {
-    map[speaker] = script.voices![index];
-    return map;
-  }, {});
+  script.voicemap = speakers.reduce(
+    (map: any, speaker: string, index: number) => {
+      map[speaker] = script.voices![index];
+      return map;
+    },
+    {},
+  );
 
   const graph = new GraphAI(
     graph_data,

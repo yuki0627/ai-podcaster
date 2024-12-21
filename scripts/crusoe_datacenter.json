@@ -1,60 +1,59 @@
 {
-    "title": "Crusoe's $3.4B Bet on AI: 100,000 GPUs in the Heart of Texas",
-    "description": "In this episode, we dive into the details of Crusoe Energy's ambitious $3.4 billion joint venture to build an AI data center campus in Texas, featuring up to 100,000 GPUs to power the next wave of innovation in artificial intelligence.",
-    "reference": "https://siliconangle.com/2024/10/15/crusoe-3-4b-joint-venture-build-ai-data-center-campus-100000-gpus/",
-    "script": [
-      {
-        "speaker": "Host",
-        "text": "Hello and welcome to another episode of 'life is artificial', where we explore the cutting edge of technology, innovation, and what the future could look like."
-      },
-      {
-        "speaker": "Host",
-        "text": "Today, we're going to talk about an incredible leap forward in the world of artificial intelligence infrastructure. Crusoe Energy Systems, along with partners Blue Owl Capital and Primary Digital Infrastructure, has announced a massive $3.4 billion project to build an AI data center campus in Abilene, Texas. And let me tell you, this isn’t just any data center—it's designed to support up to 100,000 GPUs. That's right, 100,000 GPUs, all aimed at driving new breakthroughs in AI."
-      },
-      {
-        "speaker": "Host",
-        "text": "Now, let's back up a little and talk about Crusoe Energy Systems. Originally founded in 2018, Crusoe started off as a data center builder focused on cryptocurrency mining. Over time, they shifted gears and entered the AI market with Crusoe Cloud—a platform that offers access to high-performance GPUs, mainly from Nvidia. So, it was only a matter of time before they took a bigger leap into AI, and this new venture represents that leap."
-      },
-      {
-        "speaker": "Host",
-        "text": "The partners involved in this venture are also interesting. Blue Owl Capital is a publicly traded investment firm, while Primary Digital Infrastructure specializes in financing data centers. Together, these players have pooled their resources to fund this $3.4 billion venture, which will be built and operated by Crusoe. The data center campus is planned to be located in Abilene, Texas, a city that's no stranger to the evolving tech landscape."
-      },
-      {
-        "speaker": "Host",
-        "text": "The campus will be made up of two main facilities, offering nearly one million square feet of space and powered by 205 megawatts of electricity. To put that in perspective, one megawatt can power hundreds of homes, so you can imagine the scale we're talking about here. The power source will primarily come from renewable energy, with Crusoe even considering building an onsite solar power station down the line. This commitment to sustainability is something we love to see, especially when talking about massive data centers, which are notorious for their power consumption."
-      },
-      {
-        "speaker": "Host",
-        "text": "What's really fascinating is the cooling technology Crusoe plans to use. For the GPUs, they're implementing direct-to-chip liquid cooling—a cutting-edge approach that circulates coolant directly through the servers. GPUs are the workhorses of AI, handling immense computational loads, and they produce a lot of heat. By efficiently managing that heat with liquid cooling, Crusoe can maintain optimal performance. On top of that, they're installing traditional air cooling for servers that contain only CPUs."
-      },
-      {
-        "speaker": "Host",
-        "text": "But who is going to use all this computing power? Well, Crusoe has signed a long-term lease for this campus with a 'Fortune 100 hyperscale tenant.' According to industry speculation, that tenant is likely Oracle Corporation, and it looks like Oracle will use this facility to host AI workloads for OpenAI. Yes, that OpenAI—the developers behind ChatGPT, the language model that's now a household name. It seems that Microsoft is also involved in some capacity. You might recall that Microsoft invested $10 billion into OpenAI last January, making them OpenAI's exclusive cloud provider."
-      },
-      {
-        "speaker": "Host",
-        "text": "And here's where things get even more interesting. Oracle isn't the only company Microsoft is working with to support OpenAI's needs. Reports indicate that Microsoft has inked a similar deal with CoreWeave, a company that also specializes in infrastructure-as-a-service for AI. It's clear that the demand for AI computational power is skyrocketing, and companies like Microsoft, Oracle, and Crusoe are positioning themselves to meet that demand."
-      },
-      {
-        "speaker": "Host",
-        "text": "Think about it for a second—100,000 GPUs all working in concert to push the boundaries of what AI can do. Whether it's training large language models, running complex simulations, or pushing the limits of generative AI, these facilities will enable the next wave of advancements. It’s also a glimpse into the infrastructure behind the scenes that makes all the magic happen. Every chatbot, every recommendation system, every piece of AI-generated art—it all depends on computing power, and that's exactly what Crusoe and its partners are building in Texas."
-      },
-      {
-        "speaker": "Host",
-        "text": "So, why does this matter? Well, for one, it underscores the rapid growth and investment in AI infrastructure. The ability to build and operate data centers of this scale indicates a maturation in the industry—we're moving beyond the initial excitement of AI and into a phase where foundational infrastructure is becoming critical. It's no longer just about algorithms or models; it's also about having the muscle to run them, the space to house them, and the energy to power them."
-      },
-      {
-        "speaker": "Host",
-        "text": "It also makes you wonder about the future of AI infrastructure and where this is all heading. As companies like Crusoe, Oracle, Microsoft, and others make these big bets, we're seeing the formation of a new layer in the technology stack—one that is purpose-built for AI. It's both exciting and a little bit humbling to realize just how much hardware, energy, and investment goes into the technology we interact with so casually every day."
-      },
-      {
-        "speaker": "Host",
-        "text": "Well, that’s it for today’s episode. I hope you found this dive into the world of AI infrastructure as fascinating as I did. If you want to read more about the details of this project, be sure to check out the original article from Silicon Angle. The link is in the show notes."
-      },
-      {
-        "speaker": "Host",
-        "text": "Thanks for tuning in to 'life is artificial.' If you enjoyed today’s episode, make sure to subscribe, leave us a review, and share it with your friends who love tech as much as you do. I’ll be back soon with more stories about the technology that’s shaping our future. Until next time, stay curious!"
-      }
-    ]
-  }
-  
+  "title": "Crusoe's $3.4B Bet on AI: 100,000 GPUs in the Heart of Texas",
+  "description": "In this episode, we dive into the details of Crusoe Energy's ambitious $3.4 billion joint venture to build an AI data center campus in Texas, featuring up to 100,000 GPUs to power the next wave of innovation in artificial intelligence.",
+  "reference": "https://siliconangle.com/2024/10/15/crusoe-3-4b-joint-venture-build-ai-data-center-campus-100000-gpus/",
+  "script": [
+    {
+      "speaker": "Host",
+      "text": "Hello and welcome to another episode of 'life is artificial', where we explore the cutting edge of technology, innovation, and what the future could look like."
+    },
+    {
+      "speaker": "Host",
+      "text": "Today, we're going to talk about an incredible leap forward in the world of artificial intelligence infrastructure. Crusoe Energy Systems, along with partners Blue Owl Capital and Primary Digital Infrastructure, has announced a massive $3.4 billion project to build an AI data center campus in Abilene, Texas. And let me tell you, this isn’t just any data center—it's designed to support up to 100,000 GPUs. That's right, 100,000 GPUs, all aimed at driving new breakthroughs in AI."
+    },
+    {
+      "speaker": "Host",
+      "text": "Now, let's back up a little and talk about Crusoe Energy Systems. Originally founded in 2018, Crusoe started off as a data center builder focused on cryptocurrency mining. Over time, they shifted gears and entered the AI market with Crusoe Cloud—a platform that offers access to high-performance GPUs, mainly from Nvidia. So, it was only a matter of time before they took a bigger leap into AI, and this new venture represents that leap."
+    },
+    {
+      "speaker": "Host",
+      "text": "The partners involved in this venture are also interesting. Blue Owl Capital is a publicly traded investment firm, while Primary Digital Infrastructure specializes in financing data centers. Together, these players have pooled their resources to fund this $3.4 billion venture, which will be built and operated by Crusoe. The data center campus is planned to be located in Abilene, Texas, a city that's no stranger to the evolving tech landscape."
+    },
+    {
+      "speaker": "Host",
+      "text": "The campus will be made up of two main facilities, offering nearly one million square feet of space and powered by 205 megawatts of electricity. To put that in perspective, one megawatt can power hundreds of homes, so you can imagine the scale we're talking about here. The power source will primarily come from renewable energy, with Crusoe even considering building an onsite solar power station down the line. This commitment to sustainability is something we love to see, especially when talking about massive data centers, which are notorious for their power consumption."
+    },
+    {
+      "speaker": "Host",
+      "text": "What's really fascinating is the cooling technology Crusoe plans to use. For the GPUs, they're implementing direct-to-chip liquid cooling—a cutting-edge approach that circulates coolant directly through the servers. GPUs are the workhorses of AI, handling immense computational loads, and they produce a lot of heat. By efficiently managing that heat with liquid cooling, Crusoe can maintain optimal performance. On top of that, they're installing traditional air cooling for servers that contain only CPUs."
+    },
+    {
+      "speaker": "Host",
+      "text": "But who is going to use all this computing power? Well, Crusoe has signed a long-term lease for this campus with a 'Fortune 100 hyperscale tenant.' According to industry speculation, that tenant is likely Oracle Corporation, and it looks like Oracle will use this facility to host AI workloads for OpenAI. Yes, that OpenAI—the developers behind ChatGPT, the language model that's now a household name. It seems that Microsoft is also involved in some capacity. You might recall that Microsoft invested $10 billion into OpenAI last January, making them OpenAI's exclusive cloud provider."
+    },
+    {
+      "speaker": "Host",
+      "text": "And here's where things get even more interesting. Oracle isn't the only company Microsoft is working with to support OpenAI's needs. Reports indicate that Microsoft has inked a similar deal with CoreWeave, a company that also specializes in infrastructure-as-a-service for AI. It's clear that the demand for AI computational power is skyrocketing, and companies like Microsoft, Oracle, and Crusoe are positioning themselves to meet that demand."
+    },
+    {
+      "speaker": "Host",
+      "text": "Think about it for a second—100,000 GPUs all working in concert to push the boundaries of what AI can do. Whether it's training large language models, running complex simulations, or pushing the limits of generative AI, these facilities will enable the next wave of advancements. It’s also a glimpse into the infrastructure behind the scenes that makes all the magic happen. Every chatbot, every recommendation system, every piece of AI-generated art—it all depends on computing power, and that's exactly what Crusoe and its partners are building in Texas."
+    },
+    {
+      "speaker": "Host",
+      "text": "So, why does this matter? Well, for one, it underscores the rapid growth and investment in AI infrastructure. The ability to build and operate data centers of this scale indicates a maturation in the industry—we're moving beyond the initial excitement of AI and into a phase where foundational infrastructure is becoming critical. It's no longer just about algorithms or models; it's also about having the muscle to run them, the space to house them, and the energy to power them."
+    },
+    {
+      "speaker": "Host",
+      "text": "It also makes you wonder about the future of AI infrastructure and where this is all heading. As companies like Crusoe, Oracle, Microsoft, and others make these big bets, we're seeing the formation of a new layer in the technology stack—one that is purpose-built for AI. It's both exciting and a little bit humbling to realize just how much hardware, energy, and investment goes into the technology we interact with so casually every day."
+    },
+    {
+      "speaker": "Host",
+      "text": "Well, that’s it for today’s episode. I hope you found this dive into the world of AI infrastructure as fascinating as I did. If you want to read more about the details of this project, be sure to check out the original article from Silicon Angle. The link is in the show notes."
+    },
+    {
+      "speaker": "Host",
+      "text": "Thanks for tuning in to 'life is artificial.' If you enjoyed today’s episode, make sure to subscribe, leave us a review, and share it with your friends who love tech as much as you do. I’ll be back soon with more stories about the technology that’s shaping our future. Until next time, stay curious!"
+    }
+  ]
+}

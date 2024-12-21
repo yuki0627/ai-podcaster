@@ -2,7 +2,10 @@
   "title": "Understanding Korean Martial Law and its Implications for Japan",
   "description": "An insightful discussion on the recent declaration of martial law in Korea and its potential consequences, along with parallels to Japan's constitutional considerations.",
   "tts": "nijivoice",
-  "voices": ["29769284-3fc5-40a6-963a-17e111784d6d", "1fc717fe-ebf9-402b-9d8c-c59cda93d5dc"],
+  "voices": [
+    "29769284-3fc5-40a6-963a-17e111784d6d",
+    "1fc717fe-ebf9-402b-9d8c-c59cda93d5dc"
+  ],
   "script": [
     {
       "speaker": "Host",

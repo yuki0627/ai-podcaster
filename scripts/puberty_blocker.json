@@ -1,64 +1,63 @@
 {
-    "title": "Concealed Study on Puberty Blockers: A Deep Dive into Research Transparency",
-    "description": "In this episode, we uncover the story behind a suppressed study on puberty blockers, the ethics of concealing data, and what this means for public trust in science.",
-    "reference": "https://www.ncregister.com/cna/cna-20241024-doctor-concealed-puberty-blocker-study",
-    "script": [
-      {
-        "speaker": "Host",
-        "text": "Hello and welcome to another episode of 'life is artificial', where we explore the cutting edge of technology, innovation, and what the future could look like."
-      },
-      {
-        "speaker": "Host",
-        "text": "Today, we're delving into a controversial topic that's making headlines across the globe: the ethics of concealing scientific research. Specifically, we're talking about a recently uncovered story involving Dr. Johanna Olson-Kennedy, a lead researcher on a study about puberty blockers. According to an article by the National Catholic Register, titled 'Doctor Concealed Tax-Funded Puberty Blocker Study After It Did Not Show Mental Health Benefits,' there's more to this story than initially meets the eye."
-      },
-      {
-        "speaker": "Host",
-        "text": "Here's the gist of it: back in 2015, a study funded by the National Institutes of Health, to the tune of 6 million dollars, was conducted to determine the impact of puberty blockers on the mental health of children suffering from gender dysphoria. This study followed 95 children, whose average age was less than 11 and a half years old, over a period of two years. The goal? To find out if these children experienced improvements in their mental health after taking the drugs."
-      },
-      {
-        "speaker": "Host",
-        "text": "Now, after nine years, it turns out that Dr. Olson-Kennedy and her fellow researchers did not find any significant improvements. Instead of publishing these findings, Olson-Kennedy reportedly chose to withhold them. Why? Because of fears that the results could be 'weaponized' by critics, especially those opposed to providing puberty blockers to minors."
-      },
-      {
-        "speaker": "Host",
-        "text": "Let that sink in for a moment. A taxpayer-funded study, conducted with the explicit aim of determining the effectiveness of a medical treatment for children, yielded no evidence of mental health improvement—and the results were kept hidden. The consequences of such decisions go beyond just the scientific community; they affect real people, including children, parents, and policymakers who rely on such studies for guidance."
-      },
-      {
-        "speaker": "Host",
-        "text": "When asked why the results hadn't been published, Dr. Olson-Kennedy expressed concerns about the political climate. She was quoted as saying, 'I do not want our work to be weaponized. It has to be exactly on point, clear and concise. And that takes time.' These are certainly cautious words, but one can't help but question the integrity of a process that chooses to delay—or worse, avoid—releasing data because it doesn't fit a preferred narrative."
-      },
-      {
-        "speaker": "Host",
-        "text": "This story brings up several ethical questions. For one, is it ever justifiable for researchers to withhold findings that were funded by public money? Jane Anderson, vice president of the American College of Pediatricians, argues that scientific and financial integrity demands transparency, no matter the outcomes. Father Tadeusz Pacholczyk of the National Catholic Bioethics Center echoed similar sentiments, noting that individuals facing serious gender distress deserve accurate information—whether it's positive or negative."
-      },
-      {
-        "speaker": "Host",
-        "text": "This suppression isn't just a one-off incident either. As the article highlights, the World Professional Association for Transgender Health faced similar scrutiny in 2021 for changing guidelines under pressure from political entities. Age minimums for transgender drugs and surgeries were altered, and internal documents revealed an awareness of significant gaps in the research. Yet, rather than acknowledge these limitations, phrases like 'insufficient evidence' were removed to avoid giving ammunition to critics."
-      },
-      {
-        "speaker": "Host",
-        "text": "In Europe, particularly in the UK, the National Health Service has already decided to halt the use of puberty blockers for children with gender dysphoria, citing a lack of comprehensive evidence. A study by the Mayo Clinic also brought to light the potential irreversible side effects for boys taking these drugs, such as fertility issues and underdeveloped testes. And a 15-year study from the Netherlands reported that two-thirds of children who experienced gender dysphoria as adolescents eventually became comfortable with their biological sex."
-      },
-      {
-        "speaker": "Host",
-        "text": "Now, I'm not here to take a stance on whether puberty blockers are good or bad. My purpose is to spotlight the importance of transparency in science—especially when it involves children, public funding, and medical interventions with significant long-term consequences. We live in an era where public trust in science is more crucial than ever. Concealing or delaying research results—for whatever reason—can lead to an erosion of that trust."
-      },
-      {
-        "speaker": "Host",
-        "text": "We need to ask ourselves: If the science is to serve as the foundation of medical and public policy, how can we allow critical data to be concealed simply because it doesn't align with our expectations or desires? What kind of precedent does that set for the future of healthcare research, and more importantly, for the children whose lives could be affected by these treatments?"
-      },
-      {
-        "speaker": "Host",
-        "text": "This story serves as a sobering reminder that science must be objective and free from political interference. Whether the findings are convenient or inconvenient, they should be shared. As Dr. Joseph Meaney of the National Catholic Bioethics Center put it, 'It is highly unethical to conceal the results of a scientific study for personal or political reasons.' And I believe that this is something we all should agree on, regardless of where we stand on the larger issue of gender dysphoria."
-      },
-      {
-        "speaker": "Host",
-        "text": "So, what are your thoughts on this? Do you think it was right for Dr. Olson-Kennedy to withhold the study findings to avoid them being 'weaponized'? Or does public funding mean the public deserves to know, whatever the results might be? I'd love to hear your thoughts on this. Feel free to share your opinions on our social media channels."
-      },
-      {
-        "speaker": "Host",
-        "text": "Thank you for joining me today on 'life is artificial.' Remember, questioning is the foundation of science—and it's also how we grow as individuals. Until next time, stay curious and stay informed."
-      }
-    ]
-  }
-  
+  "title": "Concealed Study on Puberty Blockers: A Deep Dive into Research Transparency",
+  "description": "In this episode, we uncover the story behind a suppressed study on puberty blockers, the ethics of concealing data, and what this means for public trust in science.",
+  "reference": "https://www.ncregister.com/cna/cna-20241024-doctor-concealed-puberty-blocker-study",
+  "script": [
+    {
+      "speaker": "Host",
+      "text": "Hello and welcome to another episode of 'life is artificial', where we explore the cutting edge of technology, innovation, and what the future could look like."
+    },
+    {
+      "speaker": "Host",
+      "text": "Today, we're delving into a controversial topic that's making headlines across the globe: the ethics of concealing scientific research. Specifically, we're talking about a recently uncovered story involving Dr. Johanna Olson-Kennedy, a lead researcher on a study about puberty blockers. According to an article by the National Catholic Register, titled 'Doctor Concealed Tax-Funded Puberty Blocker Study After It Did Not Show Mental Health Benefits,' there's more to this story than initially meets the eye."
+    },
+    {
+      "speaker": "Host",
+      "text": "Here's the gist of it: back in 2015, a study funded by the National Institutes of Health, to the tune of 6 million dollars, was conducted to determine the impact of puberty blockers on the mental health of children suffering from gender dysphoria. This study followed 95 children, whose average age was less than 11 and a half years old, over a period of two years. The goal? To find out if these children experienced improvements in their mental health after taking the drugs."
+    },
+    {
+      "speaker": "Host",
+      "text": "Now, after nine years, it turns out that Dr. Olson-Kennedy and her fellow researchers did not find any significant improvements. Instead of publishing these findings, Olson-Kennedy reportedly chose to withhold them. Why? Because of fears that the results could be 'weaponized' by critics, especially those opposed to providing puberty blockers to minors."
+    },
+    {
+      "speaker": "Host",
+      "text": "Let that sink in for a moment. A taxpayer-funded study, conducted with the explicit aim of determining the effectiveness of a medical treatment for children, yielded no evidence of mental health improvement—and the results were kept hidden. The consequences of such decisions go beyond just the scientific community; they affect real people, including children, parents, and policymakers who rely on such studies for guidance."
+    },
+    {
+      "speaker": "Host",
+      "text": "When asked why the results hadn't been published, Dr. Olson-Kennedy expressed concerns about the political climate. She was quoted as saying, 'I do not want our work to be weaponized. It has to be exactly on point, clear and concise. And that takes time.' These are certainly cautious words, but one can't help but question the integrity of a process that chooses to delay—or worse, avoid—releasing data because it doesn't fit a preferred narrative."
+    },
+    {
+      "speaker": "Host",
+      "text": "This story brings up several ethical questions. For one, is it ever justifiable for researchers to withhold findings that were funded by public money? Jane Anderson, vice president of the American College of Pediatricians, argues that scientific and financial integrity demands transparency, no matter the outcomes. Father Tadeusz Pacholczyk of the National Catholic Bioethics Center echoed similar sentiments, noting that individuals facing serious gender distress deserve accurate information—whether it's positive or negative."
+    },
+    {
+      "speaker": "Host",
+      "text": "This suppression isn't just a one-off incident either. As the article highlights, the World Professional Association for Transgender Health faced similar scrutiny in 2021 for changing guidelines under pressure from political entities. Age minimums for transgender drugs and surgeries were altered, and internal documents revealed an awareness of significant gaps in the research. Yet, rather than acknowledge these limitations, phrases like 'insufficient evidence' were removed to avoid giving ammunition to critics."
+    },
+    {
+      "speaker": "Host",
+      "text": "In Europe, particularly in the UK, the National Health Service has already decided to halt the use of puberty blockers for children with gender dysphoria, citing a lack of comprehensive evidence. A study by the Mayo Clinic also brought to light the potential irreversible side effects for boys taking these drugs, such as fertility issues and underdeveloped testes. And a 15-year study from the Netherlands reported that two-thirds of children who experienced gender dysphoria as adolescents eventually became comfortable with their biological sex."
+    },
+    {
+      "speaker": "Host",
+      "text": "Now, I'm not here to take a stance on whether puberty blockers are good or bad. My purpose is to spotlight the importance of transparency in science—especially when it involves children, public funding, and medical interventions with significant long-term consequences. We live in an era where public trust in science is more crucial than ever. Concealing or delaying research results—for whatever reason—can lead to an erosion of that trust."
+    },
+    {
+      "speaker": "Host",
+      "text": "We need to ask ourselves: If the science is to serve as the foundation of medical and public policy, how can we allow critical data to be concealed simply because it doesn't align with our expectations or desires? What kind of precedent does that set for the future of healthcare research, and more importantly, for the children whose lives could be affected by these treatments?"
+    },
+    {
+      "speaker": "Host",
+      "text": "This story serves as a sobering reminder that science must be objective and free from political interference. Whether the findings are convenient or inconvenient, they should be shared. As Dr. Joseph Meaney of the National Catholic Bioethics Center put it, 'It is highly unethical to conceal the results of a scientific study for personal or political reasons.' And I believe that this is something we all should agree on, regardless of where we stand on the larger issue of gender dysphoria."
+    },
+    {
+      "speaker": "Host",
+      "text": "So, what are your thoughts on this? Do you think it was right for Dr. Olson-Kennedy to withhold the study findings to avoid them being 'weaponized'? Or does public funding mean the public deserves to know, whatever the results might be? I'd love to hear your thoughts on this. Feel free to share your opinions on our social media channels."
+    },
+    {
+      "speaker": "Host",
+      "text": "Thank you for joining me today on 'life is artificial.' Remember, questioning is the foundation of science—and it's also how we grow as individuals. Until next time, stay curious and stay informed."
+    }
+  ]
+}
