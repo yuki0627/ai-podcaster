@@ -2,7 +2,11 @@
   "title": "アップルの新しいAIチップ開発",
   "description": "アップルが初めて開発する人工知能用サーバーチップについて、中学生向けにわかりやすく解説",
   "tts": "nijivoice",
-  "voices": ["c05bf02d-bed2-4335-aa69-0798e9e85205", "b9277ce3-ba1c-4f6f-9a65-c05ca102ded0", "bc06c63f-fef6-43b6-92f7-67f919bd5dae"],
+  "voices": [
+    "c05bf02d-bed2-4335-aa69-0798e9e85205",
+    "b9277ce3-ba1c-4f6f-9a65-c05ca102ded0",
+    "bc06c63f-fef6-43b6-92f7-67f919bd5dae"
+  ],
   "speakers": ["Announcer", "Student", "Teacher"],
   "script": [
     {
