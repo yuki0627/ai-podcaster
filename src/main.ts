@@ -227,7 +227,7 @@ const agentFilters = [
   {
     name: "fileCacheAgentFilter",
     agent: fileCacheAgentFilter,
-    nodeIds: ["tts", "tts_Niji"],
+    nodeIds: ["tts"],
   },
 ];
 
