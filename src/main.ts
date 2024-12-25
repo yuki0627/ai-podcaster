@@ -34,6 +34,7 @@ type PodcastScript = {
   script: ScriptData[];
   filename: string; // generated
   voicemap: Map<string, string>; // generated
+  ttsAgent: string; // generated
 };
 
 const rion_takanashi_voice = "b9277ce3-ba1c-4f6f-9a65-c05ca102ded0"; // たかなし りおん
@@ -147,7 +148,7 @@ const graph_tts: GraphData = {
       },
     },
     tts: {
-      agent: "ttsOpenaiAgent", // to be replaced
+      agent: ":script.ttsAgent",
       inputs: {
         text: ":row.text",
         file: ":path.path",
@@ -245,11 +246,11 @@ const main = async () => {
   if (script.tts === "nijivoice") {
     graph_data.concurrency = 1;
     script.voices = script.voices ?? [rion_takanashi_voice, ben_carter_voice];
-    ttsNode.agent = "ttsNijivoiceAgent";
+    script.ttsAgent = "ttsNijivoiceAgent";
   } else {
     graph_data.concurrency = 8;
     script.voices = script.voices ?? ["shimmer", "echo"];
-    ttsNode.agent = "ttsOpenaiAgent";
+    script.ttsAgent = "ttsOpenaiAgent";
   }
   const speakers = script.speakers ?? ["Host", "Guest"];
   script.voicemap = speakers.reduce(

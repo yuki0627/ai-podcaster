@@ -697,10 +697,10 @@ formdata-node@^4.3.2:
     node-domexception "1.0.0"
     web-streams-polyfill "4.0.0-beta.3"
 
-graphai@^0.6.8:
-  version "0.6.8"
-  resolved "https://registry.yarnpkg.com/graphai/-/graphai-0.6.8.tgz#8e1fe9f188d5e6469c8b7744883c1289271f08c1"
-  integrity sha512-+TDEwK7BuPLmueYP3U/ovK8EJ7JqKCNn1CLq3oZ0JAbcO+dYs6CqYYWdKlQYcuuxIKT5WEBDVZdWMJHwl0ANXQ==
+graphai@^0.6.9:
+  version "0.6.9"
+  resolved "https://registry.yarnpkg.com/graphai/-/graphai-0.6.9.tgz#45d3fcbb0cd65d87b901e316f5cdecb1b694b82f"
+  integrity sha512-l5CcCcifdjy0+u/xSDKfXwDOry8QMHQ+qDbi3Ea3mDZL/XzwWil01LXLCJqqh8PTW2VPt1BHtDRg4N8d1din7A==
 
 graphql-request@^6.1.0:
   version "6.1.0"
