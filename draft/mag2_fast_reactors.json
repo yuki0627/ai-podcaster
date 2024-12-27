@@ -10,10 +10,10 @@
   "speakers": ["Announcer", "Student", "Teacher"],
   "script": [
     {
-        "speaker": "Announcer",
-        "text": "あなたのアンテナとなって、最新のテクノロジー情報をお届けするのが、Life is beautifulです。"
-      },
-      {
+      "speaker": "Announcer",
+      "text": "あなたのアンテナとなって、最新のテクノロジー情報をお届けするのが、Life is beautifulです。"
+    },
+    {
       "speaker": "Announcer",
       "text": "今日は、注目を集めている次世代原子炉について、太郎君が先生に質問します"
     },

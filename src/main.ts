@@ -235,14 +235,13 @@ const main = async () => {
   const arg2 = process.argv[2];
   const scriptPath = path.resolve(arg2);
   const parsedPath = path.parse(scriptPath);
-  const data = fs.readFileSync(scriptPath, "utf-8");
-  const script = JSON.parse(data) as PodcastScript;
+  const scriptData = fs.readFileSync(scriptPath, "utf-8");
+  const script = JSON.parse(scriptData) as PodcastScript;
   script.filename = parsedPath.name;
   script.script.forEach((element: ScriptData, index: number) => {
-    element["filename"] = script.filename + index;
+    element.filename = script.filename + index;
   });
 
-  const ttsNode = graph_tts.nodes.tts as ComputedNodeData;
   if (script.tts === "nijivoice") {
     graph_data.concurrency = 1;
     script.voices = script.voices ?? [rion_takanashi_voice, ben_carter_voice];
