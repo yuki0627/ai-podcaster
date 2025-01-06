@@ -15,7 +15,11 @@ Below, I’ll provide an example on a different topic in JSON format. Please fol
   "script": [
     {
       "speaker": "Announcer",
-      "text": "Welcome to another episode of Life is Beautiful by Satoshi Nakajima. Today's topic is about the recently declared martial law in Korea."
+      "text": "Welcome to another episode of Life is Beautiful by Satoshi Nakajima."
+    },
+    {
+      "speaker": "Announcer",
+      "text": "Today's topic is about the recently declared martial law in Korea."
     },
     {
       "speaker": "Student",
