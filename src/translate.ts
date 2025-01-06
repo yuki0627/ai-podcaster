@@ -4,13 +4,28 @@ import OpenAI from "openai";
 import dotenv from "dotenv";
 import { GraphAI } from "graphai";
 import * as agents from "@graphai/agents";
-import ffmpeg from "fluent-ffmpeg";
 
 dotenv.config();
 
-const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
-});
+type ScriptData = {
+  speaker: string;
+  text: string;
+  duration: number; // generated
+  filename: string; // generated
+};
+
+type PodcastScript = {
+  title: string;
+  description: string;
+  reference: string;
+  tts: string | undefined; // default: openAI
+  voices: string[] | undefined;
+  speakers: string[] | undefined;
+  script: ScriptData[];
+  filename: string; // generated
+  voicemap: Map<string, string>; // generated
+  ttsAgent: string; // generated
+};
 
 const writeTranslatedJson = async (inputs: { jsonData: any; name: string }) => {
   const { name, jsonData } = inputs;
@@ -34,6 +49,7 @@ const graph_data = {
       inputs: {
         prompt:
           "このJSONデータに含まれたテキストをすべて日本語に翻訳して、同じJSONフォーマットで返して。ただし、 podcastのタイトル, 'Life is Artificial' は訳さずにそのままで。\n ${:jsonData.toJSON()}",
+        response_format: { "type": "json_object" },          
       },
     },
     writeTranslate: {
@@ -48,16 +64,16 @@ const main = async () => {
   const arg2 = process.argv[2];
   const scriptPath = path.resolve(arg2);
   const parsedPath = path.parse(scriptPath);
-  const name = parsedPath.name;
-  const data = fs.readFileSync(scriptPath, "utf-8");
-  const jsonData = JSON.parse(data);
-  jsonData.script.forEach((element: any, index: number) => {
-    element["key"] = name + index;
+  const scriptData = fs.readFileSync(scriptPath, "utf-8");
+  const script = JSON.parse(scriptData) as PodcastScript;
+  script.filename = parsedPath.name;
+  script.script.forEach((element: any, index: number) => {
+    element["key"] = script.filename + index;
   });
 
   const graph = new GraphAI(graph_data, { ...agents });
-  graph.injectValue("jsonData", jsonData);
-  graph.injectValue("name", name);
+  graph.injectValue("jsonData", script);
+  graph.injectValue("name", script.filename);
   const results = await graph.run();
   console.log(results);
 
