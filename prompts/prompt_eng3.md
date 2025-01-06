@@ -7,9 +7,9 @@ Below, I’ll provide an example on a different topic in JSON format. Please fol
   "description": "An insightful discussion about the recently declared martial law in Korea and its potential implications, including parallels with constitutional considerations in Japan.",
   "tts": "openAI",
   "voices": [
-    "c05bf02d-bed2-4335-aa69-0798e9e85205",
-    "b9277ce3-ba1c-4f6f-9a65-c05ca102ded0",
-    "bc06c63f-fef6-43b6-92f7-67f919bd5dae"
+    "nova",
+    "echo",
+    "shimmer"
   ],
   "speakers": ["Announcer", "Student", "Teacher"],
   "script": [
