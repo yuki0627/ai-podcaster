@@ -1,4 +1,4 @@
-Please create a script in the form of a conversation between a Student and a Teacher, with the goal of explaining everything about this topic in a way that even a middle schooler can understand. However, be sure to cover all the key points. The opening line should always start with an introduction by an Announcer, saying:
+Please create a script as an artifact in the form of a conversation between a Student and a Teacher, with the goal of explaining everything about this topic in a way that even a middle schooler can understand. However, be sure to cover all the key points. The opening line should always start with an introduction by an Announcer, saying:
 "Welcome to another episode of Life is Beautiful by Satoshi Nakajima."
 Below, I’ll provide an example on a different topic in JSON format. Please follow this format.
 

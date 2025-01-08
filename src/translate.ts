@@ -49,7 +49,7 @@ const graph_data = {
       inputs: {
         prompt:
           "このJSONデータに含まれたテキストをすべて日本語に翻訳して、同じJSONフォーマットで返して。ただし、 podcastのタイトル, 'Life is Artificial' は訳さずにそのままで。\n ${:jsonData.toJSON()}",
-        response_format: { "type": "json_object" },          
+        response_format: { type: "json_object" },
       },
     },
     writeTranslate: {
