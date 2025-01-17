@@ -1,0 +1,156 @@
+{
+  "title": "中国のものづくり力について",
+  "description": "中国の製造業における優位性と、その影響について、中学生向けにわかりやすく解説する対話形式の台本。",
+  "tts": "nijivoice",
+  "voices": [
+    "c05bf02d-bed2-4335-aa69-0798e9e85205",
+    "b9277ce3-ba1c-4f6f-9a65-c05ca102ded0",
+    "bc06c63f-fef6-43b6-92f7-67f919bd5dae"
+  ],
+  "speakers": [
+    "Announcer",
+    "Student",
+    "Teacher"
+  ],
+  "script": [
+    {
+      "speaker": "Announcer",
+      "text": "米国で活躍するエンジニアが新しい技術やビジネスを分かりやすく解説する、中島聡のLife is beautiful。今日は、中国のものづくり力についての解説です。",
+      "filename": "x_andreesen_china0",
+      "duration": 13.25675
+    },
+    {
+      "speaker": "Student",
+      "text": "先生、最近ニュースで中国の技術力がすごいって聞いたんですけど、本当なんですか？",
+      "filename": "x_andreesen_china1",
+      "duration": 6.41265
+    },
+    {
+      "speaker": "Teacher",
+      "text": "うん、その通りだよ。特に3つの分野で、中国は世界をリードしているんだ。",
+      "filename": "x_andreesen_china2",
+      "duration": 6.8306
+    },
+    {
+      "speaker": "Student",
+      "text": "3つの分野って何ですか？",
+      "filename": "x_andreesen_china3",
+      "duration": 1.9196
+    },
+    {
+      "speaker": "Teacher",
+      "text": "1つ目は「ドローン」、2つ目は「自動車」、そして3つ目は「ロボット」なんだ。順番に説明していくね。",
+      "filename": "x_andreesen_china4",
+      "duration": 6.360399999999999
+    },
+    {
+      "speaker": "Student",
+      "text": "へぇ、ドローンって飛ばして遊ぶやつですよね？",
+      "filename": "x_andreesen_china5",
+      "duration": 3.4608
+    },
+    {
+      "speaker": "Teacher",
+      "text": "そうだね。実は世界中で使われているドローンの90%以上が中国製なんだよ。しかも、アメリカの軍隊が使うドローンにも、中国製の部品が使われているんだ。",
+      "filename": "x_andreesen_china6",
+      "duration": 11.3498
+    },
+    {
+      "speaker": "Student",
+      "text": "えっ！そんなに中国製が多いんですか？でも、アメリカはそれで大丈夫なんですか？",
+      "filename": "x_andreesen_china7",
+      "duration": 6.2559
+    },
+    {
+      "speaker": "Teacher",
+      "text": "実はそれが大きな問題になっているんだ。しかも、中国は電池の供給も握っているから、アメリカのドローン会社は苦労しているんだよ。",
+      "filename": "x_andreesen_china8",
+      "duration": 9.573450000000001
+    },
+    {
+      "speaker": "Student",
+      "text": "次は自動車なんですよね。中国の自動車ってどうなんですか？",
+      "filename": "x_andreesen_china9",
+      "duration": 4.29675
+    },
+    {
+      "speaker": "Teacher",
+      "text": "中国の自動車、特に電気自動車は、とても品質が良くて、しかも値段が安いんだ。これは、部品から完成品まで、すべてを効率よく作れる体制が整っているからなんだよ。",
+      "filename": "x_andreesen_china10",
+      "duration": 12.446950000000001
+    },
+    {
+      "speaker": "Student",
+      "text": "へぇ、すごいですね。でも3つ目のロボットって、普段見かけないですけど...",
+      "filename": "x_andreesen_china11",
+      "duration": 5.83795
+    },
+    {
+      "speaker": "Teacher",
+      "text": "面白い例を挙げると、アメリカのボストン・ダイナミクスという会社が作る犬型ロボットは5万ドル（約750万円）するんだけど、同じような機能を持つ中国製のロボットは1500ドル（約22万円）で買えるんだよ。",
+      "filename": "x_andreesen_china12",
+      "duration": 11.010200000000001
+    },
+    {
+      "speaker": "Student",
+      "text": "えっ！そんなに値段が違うんですか？どうしてですか？",
+      "filename": "x_andreesen_china13",
+      "duration": 4.0355
+    },
+    {
+      "speaker": "Teacher",
+      "text": "中国には、ロボットに使う何千もの部品を作る会社があって、効率よく安く作れるんだ。アメリカは新しい技術を考え出すのは得意だけど、実際に作る力では中国の方が上なんだよ。",
+      "filename": "x_andreesen_china14",
+      "duration": 14.0143
+    },
+    {
+      "speaker": "Student",
+      "text": "じゃあ、このままだとアメリカは中国に負けちゃうんですか？",
+      "filename": "x_andreesen_china15",
+      "duration": 3.9049
+    },
+    {
+      "speaker": "Teacher",
+      "text": "アメリカの専門家たちは、このことを深刻な問題だと考えているんだ。特に、これらの技術は軍事にも使えるから、国の安全にも関わる重要な問題なんだよ。",
+      "filename": "x_andreesen_china16",
+      "duration": 12.029
+    },
+    {
+      "speaker": "Student",
+      "text": "アメリカは何か対策を考えているんですか？",
+      "filename": "x_andreesen_china17",
+      "duration": 3.069
+    },
+    {
+      "speaker": "Teacher",
+      "text": "そこが問題なんだ。今のアメリカには、技術開発と中国への対応について、国全体としての明確な戦略がないんだよ。これからの世界では、技術力がますます重要になっていくから、この問題にしっかり取り組む必要があるんだ。",
+      "filename": "x_andreesen_china18",
+      "duration": 17.1751
+    },
+    {
+      "speaker": "Student",
+      "text": "なるほど。日本も気をつけないといけないですね。",
+      "filename": "x_andreesen_china19",
+      "duration": 3.74815
+    },
+    {
+      "speaker": "Teacher",
+      "text": "その通りだよ。でも、ただ心配するだけじゃなくて、日本の得意な分野をもっと伸ばしていくことが大切なんだ。技術の発展は、国際協力と競争の両方のバランスが重要なんだよ。",
+      "filename": "x_andreesen_china20",
+      "duration": 14.200800000000001
+    },
+    {
+      "speaker": "Student",
+      "text": "今日は中国の技術力について、よく分かりました。ありがとうございました！",
+      "filename": "x_andreesen_china21",
+      "duration": 5.34165
+    }
+  ],
+  "filename": "x_andreesen_china",
+  "ttsAgent": "ttsNijivoiceAgent",
+  "voicemap": {
+    "Announcer": "c05bf02d-bed2-4335-aa69-0798e9e85205",
+    "Student": "b9277ce3-ba1c-4f6f-9a65-c05ca102ded0",
+    "Teacher": "bc06c63f-fef6-43b6-92f7-67f919bd5dae"
+  }
+}
