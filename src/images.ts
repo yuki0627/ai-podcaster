@@ -89,6 +89,10 @@ const main = async () => {
       ...agents,
     },
   );
+
+  // DEBUG
+  jsonDataTm.imageTexts = [jsonDataTm.imageTexts[0]];
+
   graph.injectValue("script", jsonDataTm);
   const results = await graph.run();
 }
