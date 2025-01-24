@@ -50,14 +50,13 @@ const graph_data: GraphData = {
       inputs: { rows: ":script.imageInfo", script: ":script" },
       graph: {
         nodes: {
-          foo: {
-            agent: "copyAgent",
+          generate: {
+            agent: (namedInputs:{ row: { text:string, index: number} }) => {
+              console.log(namedInputs.row);
+            },
             inputs: {
               "row": ":row"
             },
-            console: {
-              before: true
-            }
           }
         }
       }
