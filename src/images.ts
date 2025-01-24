@@ -40,6 +40,12 @@ type PodcastScript = {
 
 const image_agent = async (namedInputs:{ row: { text:string, index: number}, suffix: string, script: ScriptData, prompt: string }) => {
   const { row, suffix, script, prompt } = namedInputs;
+  const imagePath = path.resolve(`./images/${script.filename}/${row.index}${suffix}.png`);
+  if (fs.existsSync(imagePath)) {
+    console.log("cached", imagePath);
+    return;
+  }
+
   const response = await openai.images.generate({
     model: "dall-e-3",
     prompt: prompt ? `${prompt}\n${row.text}` : row.text,
@@ -48,7 +54,6 @@ const image_agent = async (namedInputs:{ row: { text:string, index: number}, suf
   });
   
   const imageRes = await fetch(response.data[0].url!);
-  const imagePath = path.resolve(`./images/${script.filename}/${row.index}${suffix}.png`);
   const writer = fs.createWriteStream(imagePath);
   if (imageRes.body) {
     const reader = imageRes.body.getReader();
@@ -146,7 +151,7 @@ const main = async () => {
   );
 
   // DEBUG
-  jsonDataTm.imageInfo = [jsonDataTm.imageInfo[0]];
+  jsonDataTm.imageInfo = [jsonDataTm.imageInfo[0], jsonDataTm.imageInfo[1]];
 
   graph.injectValue("script", jsonDataTm);
   const results = await graph.run();

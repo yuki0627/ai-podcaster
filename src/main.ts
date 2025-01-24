@@ -264,8 +264,9 @@ const main = async () => {
     if (element.speaker !== "Announcer") {
       if (index > 0 && script.script[index-1].speaker === "Announcer") {
         prev.push({ index: index, text: `${script.title}\n${element.text}` });
+      } else {
+        prev.push({ index: index, text: `${script.script[index-1].text}\n${element.text}` });
       }
-      prev.push({ index: index, text: `${script.script[index-1].text}\n${element.text}` });
     }
     return prev;
   }, [] as any[]);
