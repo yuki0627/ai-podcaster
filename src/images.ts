@@ -35,6 +35,7 @@ type PodcastScript = {
   filename: string; // generated
   voicemap: Map<string, string>; // generated
   ttsAgent: string; // generated
+  imageTexts: string[]; // generated
 };
 
 const graph_data: GraphData = {
@@ -46,10 +47,18 @@ const graph_data: GraphData = {
     },
     map: {
       agent: "mapAgent",
-      inputs: { rows: ":script.script", script: ":script" },
+      inputs: { rows: ":script.imageTexts", script: ":script" },
       graph: {
         nodes: {
-
+          foo: {
+            agent: "copyAgent",
+            inputs: {
+              "row": ":row"
+            },
+            console: {
+              before: true
+            }
+          }
         }
       }
     },
@@ -64,6 +73,10 @@ const main = async () => {
   const script = JSON.parse(scriptData) as PodcastScript;
   script.filename = parsedPath.name;
 
+  const tmScriptPath = path.resolve("./output/" + parsedPath.name + ".json");
+  const dataTm = fs.readFileSync(tmScriptPath, "utf-8");
+  const jsonDataTm = JSON.parse(dataTm);
+
   console.log(script.filename);
   const currentDir = process.cwd();
   const imagesFolderDir = path.join(currentDir, "images");
@@ -74,16 +87,14 @@ const main = async () => {
   if (!fs.existsSync(imagesDir)) {
     fs.mkdirSync(imagesDir);
   }
-  const filtered = script.script.filter((element: ScriptData) => {
-    return element.speaker !== "Announcer";
-  });
-  const imageTexts = filtered.map((element: ScriptData, index: number) => {
-    if (index === 0) {
-      return element.text;
-    }
-    return `${filtered[index-1].text}\n${element.text}`;
-  });
-  console.log(imageTexts);
+  const graph = new GraphAI(
+    graph_data,
+    {
+      ...agents,
+    },
+  );
+  graph.injectValue("script", jsonDataTm);
+  const results = await graph.run();
 }
 
 main();
