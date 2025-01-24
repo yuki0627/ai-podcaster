@@ -1,0 +1,161 @@
+{
+  "title": "中国の巨大ソーラーウォールプロジェクト",
+  "description": "中国のクブチ砂漠で進行中の巨大太陽光発電プロジェクトについて、環境への影響や経済効果を含めた包括的な解説",
+  "tts": "nijivoice",
+  "voices": [
+    "afd7df65-0fdc-4d31-ae8b-a29f0f5eed62",
+    "a7619e48-bf6a-4f9f-843f-40485651257f",
+    "bc06c63f-fef6-43b6-92f7-67f919bd5dae"
+  ],
+  "charactors": [
+    "春玲",
+    "太郎",
+    "山田先生"
+  ],
+  "speakers": [
+    "Announcer",
+    "Student",
+    "Teacher"
+  ],
+  "script": [
+    {
+      "speaker": "Announcer",
+      "text": "米国で活躍するエンジニアが新しい技術やビジネスを分かりやすく解説する、中島聡のLife is beautiful。今日は、中国で建設中の世界最大級の太陽光発電施設、グレート・ソーラーウォールについての解説です。",
+      "filename": "great_solar_wall0",
+      "duration": 15.581650000000002
+    },
+    {
+      "speaker": "Student",
+      "text": "先生、ニュースで中国が「グレート・ソーラーウォール」っていう巨大な発電所を作ってるって聞いたんですけど、これって何ですか？",
+      "filename": "great_solar_wall1",
+      "duration": 6.7261
+    },
+    {
+      "speaker": "Teacher",
+      "text": "うん、これはすごく面白いプロジェクトなんだ。中国の内モンゴル自治区にあるクブチ砂漠で建設している、世界最大級の太陽光発電所なんだよ。",
+      "filename": "great_solar_wall2",
+      "duration": 11.16695
+    },
+    {
+      "speaker": "Student",
+      "text": "え！砂漠に発電所ですか？どれくらい大きいんですか？",
+      "filename": "great_solar_wall3",
+      "duration": 3.8788
+    },
+    {
+      "speaker": "Teacher",
+      "text": "長さが約400キロメートルもあるんだよ。東京から名古屋くらいまでの距離だね。幅も5キロメートルあって、とても広大な施設なんだ。",
+      "filename": "great_solar_wall4",
+      "duration": 10.618350000000001
+    },
+    {
+      "speaker": "Student",
+      "text": "すごい大きさですね！でも、なんで砂漠に作るんですか？",
+      "filename": "great_solar_wall5",
+      "duration": 3.7742999999999998
+    },
+    {
+      "speaker": "Teacher",
+      "text": "いい質問だね。砂漠には3つの大きな利点があるんだ。まず、日差しが強くて雲が少ないから、太陽光発電に最適なんだ。次に、広大な未使用地があるから大規模な施設が建設できる。そして、砂漠化を防ぐ効果もあるんだよ。",
+      "filename": "great_solar_wall6",
+      "duration": 18.716350000000002
+    },
+    {
+      "speaker": "Student",
+      "text": "砂漠化を防げるんですか？どうやって？",
+      "filename": "great_solar_wall7",
+      "duration": 2.80775
+    },
+    {
+      "speaker": "Teacher",
+      "text": "ソーラーパネルが砂を覆うことで、風による砂の移動を防ぐんだ。さらに、パネルの下で農業もできるように設計されているんだよ。",
+      "filename": "great_solar_wall8",
+      "duration": 9.41675
+    },
+    {
+      "speaker": "Student",
+      "text": "へぇ！パネルの下で作物が育つんですか？",
+      "filename": "great_solar_wall9",
+      "duration": 2.9905999999999997
+    },
+    {
+      "speaker": "Teacher",
+      "text": "そうなんだ。これを「営農型太陽光発電」って言うんだよ。パネルが強い日差しを遮ってくれるから、むしろ作物を育てやすい環境になるんだ。",
+      "filename": "great_solar_wall10",
+      "duration": 11.3237
+    },
+    {
+      "speaker": "Student",
+      "text": "すごいですね。でも、こんな大きな施設を作るのにお金がかかりそうです...",
+      "filename": "great_solar_wall11",
+      "duration": 4.9759
+    },
+    {
+      "speaker": "Teacher",
+      "text": "その通り。約48億ドル、日本円で約7兆円もかかる大規模プロジェクトなんだ。でも、完成すると年間480億キロワット時という膨大な電力を作り出せるんだよ。",
+      "filename": "great_solar_wall12",
+      "duration": 13.491850000000001
+    },
+    {
+      "speaker": "Student",
+      "text": "480億キロワット時？どれくらいの電気なんですか？",
+      "filename": "great_solar_wall13",
+      "duration": 3.40855
+    },
+    {
+      "speaker": "Teacher",
+      "text": "北京や天津といった大都市圏の電力需要を賄えるくらいの量なんだ。さらに、このプロジェクトで約5万人の雇用が生まれる予定で、地域の発展にも貢献するんだよ。",
+      "filename": "great_solar_wall14",
+      "duration": 11.297550000000001
+    },
+    {
+      "speaker": "Student",
+      "text": "環境にもいいし、電気も作れて、仕事も増えるなんて、すごいプロジェクトですね！",
+      "filename": "great_solar_wall15",
+      "duration": 4.68855
+    },
+    {
+      "speaker": "Teacher",
+      "text": "そうだね。二千三十年までには、このプロジェクトで年間約3,150万トンのCO2削減も期待できるんだ。これは、地球温暖化対策としても大きな貢献になるよ。",
+      "filename": "great_solar_wall16",
+      "duration": 13.9098
+    },
+    {
+      "speaker": "Student",
+      "text": "日本でもこういうプロジェクトはできないんですか？",
+      "filename": "great_solar_wall17",
+      "duration": 2.5204
+    },
+    {
+      "speaker": "Teacher",
+      "text": "日本は国土が狭いから、同じ規模は難しいけど、似たような取り組みは始まっているよ。例えば、使われていない農地を活用した太陽光発電など、場所や規模に合わせた工夫をしているんだ。",
+      "filename": "great_solar_wall18",
+      "duration": 13.8053
+    },
+    {
+      "speaker": "Student",
+      "text": "なるほど！環境にやさしい発電って、本当に大切なんですね。",
+      "filename": "great_solar_wall19",
+      "duration": 4.4796
+    },
+    {
+      "speaker": "Teacher",
+      "text": "その通り。これからの時代は、こういった再生可能エネルギーがますます重要になってくるんだよ。",
+      "filename": "great_solar_wall20",
+      "duration": 7.6701999999999995
+    },
+    {
+      "speaker": "Announcer",
+      "text": "ご視聴、ありがとうございました。次回の放送もお楽しみに。",
+      "filename": "great_solar_wall21",
+      "duration": 4.9759
+    }
+  ],
+  "filename": "great_solar_wall",
+  "ttsAgent": "ttsNijivoiceAgent",
+  "voicemap": {
+    "Announcer": "afd7df65-0fdc-4d31-ae8b-a29f0f5eed62",
+    "Student": "a7619e48-bf6a-4f9f-843f-40485651257f",
+    "Teacher": "bc06c63f-fef6-43b6-92f7-67f919bd5dae"
+  }
+}

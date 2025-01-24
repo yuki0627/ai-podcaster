@@ -1,0 +1,150 @@
+{
+  "title": "Z世代のコンテンツとの新しい関係性",
+  "description": "Z世代のコンテンツ消費傾向と、クリエイターエコノミーの進化について、中学生向けの対話形式で解説",
+  "tts": "nijivoice",
+  "reference": "https://x.com/jeremybssnt/status/1882450334473502812",
+  "voices": [
+    "afd7df65-0fdc-4d31-ae8b-a29f0f5eed62",
+    "a7619e48-bf6a-4f9f-843f-40485651257f",
+    "bc06c63f-fef6-43b6-92f7-67f919bd5dae"
+  ],
+  "charactors": [
+    "春玲",
+    "森野颯太",
+    "ベン・カーター"
+  ],
+  "speakers": [
+    "Announcer",
+    "Student",
+    "Teacher"
+  ],
+  "script": [
+    {
+      "speaker": "Announcer",
+      "text": "米国で活躍するエンジニアが新しい技術やビジネスを分かりやすく解説する、中島聡のLife is beautiful。今日は、若い世代のインターネットの使い方の変化についての解説です。",
+      "filename": "trump_jr0",
+      "duration": 12.9694
+    },
+    {
+      "speaker": "Student",
+      "text": "先生、最近よく「Z世代」って言葉を聞くんですけど、僕たちの世代のことですよね？どんな特徴があるんですか？",
+      "filename": "trump_jr1",
+      "duration": 7.1441
+    },
+    {
+      "speaker": "Teacher",
+      "text": "そうだね。Z世代は2000年前後に生まれた人たちのことを指すんだ。特に注目されているのは、みんながインターネットの使い方を大きく変えているということなんだよ。",
+      "filename": "trump_jr2",
+      "duration": 12.3947
+    },
+    {
+      "speaker": "Student",
+      "text": "インターネットの使い方を変えているって、どういうことですか？",
+      "filename": "trump_jr3",
+      "duration": 3.2518499999999997
+    },
+    {
+      "speaker": "Teacher",
+      "text": "例えばね、昔の人たちは動画を見たり記事を読んだりするだけだったんだけど、Z世代は違うんだ。動画にコメントをしたり、自分でも動画を作って共有したり、もっと積極的に参加しているんだよ。",
+      "filename": "trump_jr4",
+      "duration": 14.432250000000002
+    },
+    {
+      "speaker": "Student",
+      "text": "あー、確かに！TikTokとか、みんなダンスを真似して投稿したりしますよね。",
+      "filename": "trump_jr5",
+      "duration": 4.8191999999999995
+    },
+    {
+      "speaker": "Teacher",
+      "text": "その通り。そして、もう一つ大事なことがあるんだ。Z世代は「本物らしさ」をとても大切にしているんだよ。",
+      "filename": "trump_jr6",
+      "duration": 9.364500000000001
+    },
+    {
+      "speaker": "Student",
+      "text": "本物らしさって何ですか？",
+      "filename": "trump_jr7",
+      "duration": 1.7106000000000001
+    },
+    {
+      "speaker": "Teacher",
+      "text": "つまり、完璧に作られた広告やテレビ番組よりも、素のままの人の姿を見せる動画の方が好きなんだ。例えば、ユーチューバーが失敗する様子や悩みを話すような、飾らない姿勢のことだよ。",
+      "filename": "trump_jr8",
+      "duration": 13.8053
+    },
+    {
+      "speaker": "Student",
+      "text": "なるほど！確かに、テレビよりもユーチューブの方が見てて楽しいかも。でも、それって何か意味があるんですか？",
+      "filename": "trump_jr9",
+      "duration": 6.85675
+    },
+    {
+      "speaker": "Teacher",
+      "text": "とても大きな意味があるんだよ。例えば、政治の世界でも変化が起きているんだ。若い人たちは、ニュースよりもポッドキャストやゲーム配信で政治の話を聞くことが増えているんだ。",
+      "filename": "trump_jr10",
+      "duration": 13.36125
+    },
+    {
+      "speaker": "Student",
+      "text": "えっ！ゲーム配信で政治の話をするんですか？",
+      "filename": "trump_jr11",
+      "duration": 3.0428499999999996
+    },
+    {
+      "speaker": "Teacher",
+      "text": "そう。実は、テレビの政治討論番組よりも、人気ゲーマーの配信の方が多くの若者に見られているんだ。実際に、トランプ前大統領の息子のドナルド・トランプ・ジュニアさんは、ゲーム配信を政治的なメッセージを伝える場所として使ったんだよ。",
+      "filename": "trump_jr12",
+      "duration": 17.67145
+    },
+    {
+      "speaker": "Student",
+      "text": "へー！でも、インターネットの情報って本当に信頼できるんですか？",
+      "filename": "trump_jr13",
+      "duration": 4.08775
+    },
+    {
+      "speaker": "Teacher",
+      "text": "良い質問だね。確かに気をつけないといけない点もあるんだ。でも、Z世代は特定のクリエイターとの信頼関係をとても大切にしているんだ。信頼できるクリエイターは、いつも正直に情報を伝え、視聴者と対話を重ねているんだよ。実際、トランプ陣営はこの特徴をよく理解していて、選挙活動でもクリエイターとの対話を重視したんだ。従来のテレビ討論会よりも、オンラインでの対話の方が若い有権者には響いたようだね。",
+      "filename": "trump_jr14",
+      "duration": 31.8037
+    },
+    {
+      "speaker": "Student",
+      "text": "なるほど。じゃあ、これからはテレビとかの大きなメディアはなくなっちゃうんですか？",
+      "filename": "trump_jr15",
+      "duration": 4.9498
+    },
+    {
+      "speaker": "Teacher",
+      "text": "そうじゃないんだ。大切なのは、両方の良いところを活かすことなんだよ。トランプ陣営が成功したように、大きなメディアの専門的な取材力と、クリエイターの親しみやすさや本物らしさ、両方をうまく組み合わせることが重要なんだ。",
+      "filename": "trump_jr16",
+      "duration": 17.4102
+    },
+    {
+      "speaker": "Student",
+      "text": "僕たちの世代が作る未来、とても面白そうですね！",
+      "filename": "trump_jr17",
+      "duration": 3.40855
+    },
+    {
+      "speaker": "Teacher",
+      "text": "その通り。でも覚えておいてほしいのは、どんな形であれ、正しい情報を見分ける力と、思いやりを持ってコミュニケーションすることが大切だということだよ。",
+      "filename": "trump_jr18",
+      "duration": 11.8237
+    },
+    {
+      "speaker": "Announcer",
+      "text": "ご視聴、ありがとうございました。次回の放送もお楽しみに。",
+      "filename": "trump_jr19",
+      "duration": 4.9237
+    }
+  ],
+  "filename": "trump_jr",
+  "ttsAgent": "ttsNijivoiceAgent",
+  "voicemap": {
+    "Announcer": "afd7df65-0fdc-4d31-ae8b-a29f0f5eed62",
+    "Student": "a7619e48-bf6a-4f9f-843f-40485651257f",
+    "Teacher": "bc06c63f-fef6-43b6-92f7-67f919bd5dae"
+  }
+}
