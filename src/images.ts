@@ -58,10 +58,13 @@ const main = async () => {
   const filtered = script.script.filter((element: ScriptData) => {
     return element.speaker !== "Announcer";
   });
-  filtered.forEach((element: ScriptData) => {
-    console.log(element.speaker);
+  const sentances = filtered.map((element: ScriptData, index: number) => {
+    if (index === 0) {
+      return element.text;
+    }
+    return `${filtered[index-1].text}\n${element.text}`;
   });
-
+  console.log(sentances);
 }
 
 main();
