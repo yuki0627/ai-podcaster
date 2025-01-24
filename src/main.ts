@@ -35,6 +35,7 @@ type PodcastScript = {
   filename: string; // generated
   voicemap: Map<string, string>; // generated
   ttsAgent: string; // generated
+  imageTexts: string[]; // generated
 };
 
 const rion_takanashi_voice = "b9277ce3-ba1c-4f6f-9a65-c05ca102ded0"; // たかなし りおん
@@ -259,6 +260,15 @@ const main = async () => {
     },
     {},
   );
+  const filtered = script.script.filter((element: ScriptData) => {
+    return element.speaker !== "Announcer";
+  });
+  script.imageTexts = filtered.map((element: ScriptData, index: number) => {
+    if (index === 0) {
+      return `${script.title}\n${element.text}`;
+    }
+    return `${filtered[index-1].text}\n${element.text}`;
+  });
 
   const graph = new GraphAI(
     graph_data,

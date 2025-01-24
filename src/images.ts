@@ -37,6 +37,25 @@ type PodcastScript = {
   ttsAgent: string; // generated
 };
 
+const graph_data: GraphData = {
+  version: 0.5,
+  concurrency: 8,
+  nodes: {
+    script: {
+      value: {},
+    },
+    map: {
+      agent: "mapAgent",
+      inputs: { rows: ":script.script", script: ":script" },
+      graph: {
+        nodes: {
+
+        }
+      }
+    },
+  }
+}
+
 const main = async () => {
   const arg2 = process.argv[2];
   const scriptPath = path.resolve(arg2);
@@ -58,13 +77,13 @@ const main = async () => {
   const filtered = script.script.filter((element: ScriptData) => {
     return element.speaker !== "Announcer";
   });
-  const sentances = filtered.map((element: ScriptData, index: number) => {
+  const imageTexts = filtered.map((element: ScriptData, index: number) => {
     if (index === 0) {
       return element.text;
     }
     return `${filtered[index-1].text}\n${element.text}`;
   });
-  console.log(sentances);
+  console.log(imageTexts);
 }
 
 main();
