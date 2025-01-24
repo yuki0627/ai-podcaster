@@ -51,18 +51,19 @@ const graph_data: GraphData = {
       graph: {
         nodes: {
           generate: {
-            agent: async (namedInputs:{ row: { text:string, index: number}, suffix: string, script: ScriptData }) => {
-              console.log(namedInputs.row);
+            agent: async (namedInputs:{ row: { text:string, index: number}, suffix: string, script: ScriptData, prompt: string }) => {
+              const { row, suffix, script, prompt } = namedInputs;
+              console.log(row);
               const response = await openai.images.generate({
                 model: "dall-e-3",
-                prompt: namedInputs.row.text,
+                prompt: prompt ? `${prompt}\n${row.text}` : row.text,
                 n: 1,
                 size: "1024x1024",// "1792x1024",
               });
               
               console.log(response.data[0].url);
               const imageRes = await fetch(response.data[0].url!);
-              const imagePath = path.resolve(`./images/${namedInputs.script.filename}/${namedInputs.row.index}${namedInputs.suffix}.png`);
+              const imagePath = path.resolve(`./images/${script.filename}/${row.index}${suffix}.png`);
               const writer = fs.createWriteStream(imagePath);
               if (imageRes.body) {
                 const reader = imageRes.body.getReader();
@@ -90,7 +91,8 @@ const graph_data: GraphData = {
             inputs: {
               "row": ":row",
               "script": ":script",
-              "suffix": "p"
+              "suffix": "p",
+              "prompt": "以下のテキストに適した画像を、日本のアニメ風に描いて。",
             },
           }
         }
