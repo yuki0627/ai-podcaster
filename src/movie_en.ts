@@ -131,14 +131,18 @@ const main = async () => {
   const data = fs.readFileSync(scriptPath, "utf-8");
   const jsonData = JSON.parse(data);
   //
+  const jaScriptPath = path.resolve("./output/" + name + "_ja.json");
+  const dataJa = fs.readFileSync(jaScriptPath, "utf-8");
+  const jsonDataJa = JSON.parse(dataJa);
+  //
   await renderJapaneseTextToPNG(
-    `${jsonData.title}\n\n${jsonData.description}`,
+    `${jsonData.title}\n\n${jsonData.description}\n${jsonDataJa.description}`,
     `./scratchpad/${name}_00.png`, // Output file path
   ).catch((err) => {
     console.error("Error generating PNG:", err);
   });
 
-  const promises = jsonData.script.map((element: any, index: number) => {
+  const promises = jsonDataJa.script.map((element: any, index: number) => {
     return renderJapaneseTextToPNG(
       element["text"],
       `./scratchpad/${name}_${index}.png`, // Output file path
