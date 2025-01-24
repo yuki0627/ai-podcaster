@@ -1,4 +1,5 @@
 import dotenv from "dotenv";
+import OpenAI from "openai";
 import fs from "fs";
 import path from "path";
 import {
@@ -14,6 +15,7 @@ import { pathUtilsAgent } from "@graphai/vanilla_node_agents";
 import ffmpeg from "fluent-ffmpeg";
 
 dotenv.config();
+const openai = new OpenAI();
 
 type ScriptData = {
   speaker: string;
@@ -49,8 +51,16 @@ const graph_data: GraphData = {
       graph: {
         nodes: {
           generate: {
-            agent: (namedInputs:{ row: { text:string, index: number} }) => {
+            agent: async (namedInputs:{ row: { text:string, index: number} }) => {
               console.log(namedInputs.row);
+              const response = await openai.images.generate({
+                model: "dall-e-3",
+                prompt: namedInputs.row.text,
+                n: 1,
+                size: "1024x1024",
+              });
+              
+              console.log(response.data[0].url);
             },
             inputs: {
               "row": ":row"
