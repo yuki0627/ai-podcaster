@@ -69,21 +69,17 @@ const main = async () => {
   const arg2 = process.argv[2];
   const scriptPath = path.resolve(arg2);
   const parsedPath = path.parse(scriptPath);
-  const scriptData = fs.readFileSync(scriptPath, "utf-8");
-  const script = JSON.parse(scriptData) as PodcastScript;
-  script.filename = parsedPath.name;
 
   const tmScriptPath = path.resolve("./output/" + parsedPath.name + ".json");
   const dataTm = fs.readFileSync(tmScriptPath, "utf-8");
   const jsonDataTm = JSON.parse(dataTm);
 
-  console.log(script.filename);
   const currentDir = process.cwd();
   const imagesFolderDir = path.join(currentDir, "images");
   if (!fs.existsSync(imagesFolderDir)) {
     fs.mkdirSync(imagesFolderDir);
   }
-  const imagesDir = path.join(imagesFolderDir, script.filename);
+  const imagesDir = path.join(imagesFolderDir, jsonDataTm.filename);
   if (!fs.existsSync(imagesDir)) {
     fs.mkdirSync(imagesDir);
   }
