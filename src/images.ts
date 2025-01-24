@@ -38,6 +38,43 @@ type PodcastScript = {
   imageInfo: any[]; // generated
 };
 
+const image_agent = async (namedInputs:{ row: { text:string, index: number}, suffix: string, script: ScriptData, prompt: string }) => {
+  const { row, suffix, script, prompt } = namedInputs;
+  const response = await openai.images.generate({
+    model: "dall-e-3",
+    prompt: prompt ? `${prompt}\n${row.text}` : row.text,
+    n: 1,
+    size: "1024x1024",// "1792x1024",
+  });
+  
+  const imageRes = await fetch(response.data[0].url!);
+  const imagePath = path.resolve(`./images/${script.filename}/${row.index}${suffix}.png`);
+  const writer = fs.createWriteStream(imagePath);
+  if (imageRes.body) {
+    const reader = imageRes.body.getReader();
+    let done = false;
+
+    while (!done) {
+      const { value, done: readerDone } = await reader.read();
+      if (value) {
+        writer.write(Buffer.from(value));
+      }
+      done = readerDone;
+    }
+
+    writer.end();
+    console.log("generated", imagePath);
+  } else {
+    throw new Error("Response body is null or undefined");
+  }
+        
+  // Return a Promise that resolves when the writable stream is finished
+  await new Promise<void>((resolve, reject) => {
+    writer.on("finish", resolve);
+    writer.on("error", reject);
+  });
+};
+
 const graph_data: GraphData = {
   version: 0.5,
   concurrency: 8,
@@ -50,49 +87,31 @@ const graph_data: GraphData = {
       inputs: { rows: ":script.imageInfo", script: ":script" },
       graph: {
         nodes: {
-          generate: {
-            agent: async (namedInputs:{ row: { text:string, index: number}, suffix: string, script: ScriptData, prompt: string }) => {
-              const { row, suffix, script, prompt } = namedInputs;
-              console.log(row);
-              const response = await openai.images.generate({
-                model: "dall-e-3",
-                prompt: prompt ? `${prompt}\n${row.text}` : row.text,
-                n: 1,
-                size: "1024x1024",// "1792x1024",
-              });
-              
-              console.log(response.data[0].url);
-              const imageRes = await fetch(response.data[0].url!);
-              const imagePath = path.resolve(`./images/${script.filename}/${row.index}${suffix}.png`);
-              const writer = fs.createWriteStream(imagePath);
-              if (imageRes.body) {
-                const reader = imageRes.body.getReader();
-                let done = false;
-
-                while (!done) {
-                  const { value, done: readerDone } = await reader.read();
-                  if (value) {
-                    writer.write(Buffer.from(value));
-                  }
-                  done = readerDone;
-                }
-          
-                writer.end();
-              } else {
-                throw new Error("Response body is null or undefined");
-              }
-                    
-              // Return a Promise that resolves when the writable stream is finished
-              await new Promise<void>((resolve, reject) => {
-                writer.on("finish", resolve);
-                writer.on("error", reject);
-              });
-            },
+          plain: {
+            agent: image_agent,
             inputs: {
               "row": ":row",
               "script": ":script",
               "suffix": "p",
-              "prompt": "以下のテキストに適した画像を、日本のアニメ風に描いて。",
+              "prompt": "以下のテキストに適した画像を生成して。",
+            },
+          },
+          anime: {
+            agent: image_agent,
+            inputs: {
+              "row": ":row",
+              "script": ":script",
+              "suffix": "a",
+              "prompt": "以下のテキストに適した画像を、日本のアニメのイラスト風に描いて。",
+            },
+          },
+          water: {
+            agent: image_agent,
+            inputs: {
+              "row": ":row",
+              "script": ":script",
+              "suffix": "w",
+              "prompt": "以下のテキストに適した画像を、水彩画風に描いて。",
             },
           }
         }
