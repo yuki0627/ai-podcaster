@@ -262,7 +262,7 @@ const main = async () => {
   );
   script.imageInfo = script.script.reduce((prev, element: ScriptData, index: number) => {
     if (element.speaker !== "Announcer") {
-      if (index === 0) {
+      if (index > 0 && script.script[index-1].speaker === "Announcer") {
         prev.push({ index: index, text: `${script.title}\n${element.text}` });
       }
       prev.push({ index: index, text: `${script.script[index-1].text}\n${element.text}` });
