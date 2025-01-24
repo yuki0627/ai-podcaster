@@ -46,6 +46,23 @@ const main = async () => {
   script.filename = parsedPath.name;
 
   console.log(script.filename);
+  const currentDir = process.cwd();
+  const imagesFolderDir = path.join(currentDir, "images");
+  if (!fs.existsSync(imagesFolderDir)) {
+    try {
+      fs.mkdirSync(imagesFolderDir);
+    } catch (error) {
+      console.error(`Failed to create images folder: ${error}`);
+    }
+  }
+  const imagesDir = path.join(imagesFolderDir, script.filename);
+  if (!fs.existsSync(imagesDir)) {
+    try {
+      fs.mkdirSync(imagesDir);
+    } catch (error) {
+      console.error(`Failed to create ${script.filename} folder: ${error}`);
+    }
+  }
 };
 
 main();
