@@ -49,20 +49,19 @@ const main = async () => {
   const currentDir = process.cwd();
   const imagesFolderDir = path.join(currentDir, "images");
   if (!fs.existsSync(imagesFolderDir)) {
-    try {
-      fs.mkdirSync(imagesFolderDir);
-    } catch (error) {
-      console.error(`Failed to create images folder: ${error}`);
-    }
+    fs.mkdirSync(imagesFolderDir);
   }
   const imagesDir = path.join(imagesFolderDir, script.filename);
   if (!fs.existsSync(imagesDir)) {
-    try {
-      fs.mkdirSync(imagesDir);
-    } catch (error) {
-      console.error(`Failed to create ${script.filename} folder: ${error}`);
-    }
+    fs.mkdirSync(imagesDir);
   }
-};
+  const filtered = script.script.filter((element: ScriptData) => {
+    return element.speaker !== "Announcer";
+  });
+  filtered.forEach((element: ScriptData) => {
+    console.log(element.speaker);
+  });
+
+}
 
 main();
