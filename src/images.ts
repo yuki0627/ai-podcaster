@@ -35,7 +35,7 @@ type PodcastScript = {
   filename: string; // generated
   voicemap: Map<string, string>; // generated
   ttsAgent: string; // generated
-  imageTexts: string[]; // generated
+  imageInfo: any[]; // generated
 };
 
 const graph_data: GraphData = {
@@ -47,7 +47,7 @@ const graph_data: GraphData = {
     },
     map: {
       agent: "mapAgent",
-      inputs: { rows: ":script.imageTexts", script: ":script" },
+      inputs: { rows: ":script.imageInfo", script: ":script" },
       graph: {
         nodes: {
           foo: {
@@ -91,7 +91,7 @@ const main = async () => {
   );
 
   // DEBUG
-  jsonDataTm.imageTexts = [jsonDataTm.imageTexts[0]];
+  jsonDataTm.imageInfo = [jsonDataTm.imageInfo[0]];
 
   graph.injectValue("script", jsonDataTm);
   const results = await graph.run();
