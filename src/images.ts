@@ -82,7 +82,7 @@ const image_agent = async (namedInputs:{ row: { text:string, index: number}, suf
 
 const graph_data: GraphData = {
   version: 0.5,
-  concurrency: 8,
+  concurrency: 1,
   nodes: {
     script: {
       value: {},
@@ -151,7 +151,7 @@ const main = async () => {
   );
 
   // DEBUG
-  jsonDataTm.imageInfo = [jsonDataTm.imageInfo[0], jsonDataTm.imageInfo[1]];
+  // jsonDataTm.imageInfo = [jsonDataTm.imageInfo[0], jsonDataTm.imageInfo[1]];
 
   graph.injectValue("script", jsonDataTm);
   const results = await graph.run();
