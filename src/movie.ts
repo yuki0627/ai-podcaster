@@ -52,6 +52,9 @@ async function renderJapaneseTextToPNG(text: string, outputFilePath: string) {
   // Create SVG content for Japanese text rendering
   const svgContent = `
     <svg width="${c_imageWidth}" height="${Math.max(imageHeight, c_imageHeight)}" xmlns="http://www.w3.org/2000/svg">
+      <text x="0" y="${fontSize}" font-size="${fontSize}" font-family="Arial" fill="black">
+        ${lines.map((line, index) => `<tspan x="1" y="${fontSize + index * lineHeight + 2}">${line}</tspan>`).join("")}
+      </text>
       <text x="0" y="${fontSize}" font-size="${fontSize}" font-family="Arial" fill="white">
         ${lines.map((line, index) => `<tspan x="0" y="${fontSize + index * lineHeight}">${line}</tspan>`).join("")}
       </text>
