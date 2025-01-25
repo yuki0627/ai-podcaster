@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import sharp from "sharp";
 import ffmpeg from "fluent-ffmpeg";
+import { createCanvas, loadImage } from 'canvas';
 
 const c_imageWidth = 1280; // not 1920
 const c_imageHeight = 720; // not 1080
@@ -151,6 +152,21 @@ const main = async () => {
   const tmScriptPath = path.resolve("./output/" + name + ".json");
   const dataTm = fs.readFileSync(tmScriptPath, "utf-8");
   const jsonDataTm = JSON.parse(dataTm);
+
+  // add images
+  const imageInfo = jsonDataTm.imageInfo;
+  await imageInfo.forEach(async (element: { index: number, image: string }) => {
+    const { index, image } = element;
+    const imagePath = `./scratchpad/${name}_${index}.png`;
+    const image1 = await loadImage(imagePath);
+    const imageBG = await loadImage(image);
+    console.log(index, image, image1.width, image1.height);
+    const canvas = createCanvas(c_imageWidth, c_imageHeight);
+    const ctx = canvas.getContext('2d');
+    ctx.drawImage(imageBG, 0, 0);
+    const buffer = canvas.toBuffer('image/png');
+    fs.writeFileSync(imagePath, buffer);
+  });
 
   const audioPath = path.resolve("./output/" + name + "_bgm.mp3");
   const images: ImageDetails[] = jsonDataTm.script.map(
