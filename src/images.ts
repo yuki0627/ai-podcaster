@@ -2,7 +2,7 @@ import dotenv from "dotenv";
 import OpenAI from "openai";
 import fs from "fs";
 import path from "path";
-import { GraphAI, GraphData } from "graphai";
+import { GraphAI, GraphData, DefaultResultData } from "graphai";
 import * as agents from "@graphai/agents";
 
 dotenv.config();
@@ -37,12 +37,11 @@ const image_agent = async (namedInputs: {
   prompt: string;
 }) => {
   const { row, suffix, script, keywords, prompt } = namedInputs;
-  const imagePath = path.resolve(
-    `./images/${script.filename}/${row.index}${suffix}.png`,
-  );
+  const relativePath = `./images/${script.filename}/${row.index}${suffix}.png`;
+  const imagePath = path.resolve(relativePath);
   if (fs.existsSync(imagePath)) {
     console.log("cached", imagePath);
-    return;
+    return relativePath;
   }
 
   const response = await openai.images.generate({
@@ -77,6 +76,7 @@ const image_agent = async (namedInputs: {
     writer.on("finish", resolve);
     writer.on("error", reject);
   });
+  return relativePath;
 };
 
 const graph_data: GraphData = {
@@ -89,6 +89,7 @@ const graph_data: GraphData = {
     map: {
       agent: "mapAgent",
       inputs: { rows: ":script.imageInfo", script: ":script" },
+      isResult: true,
       graph: {
         nodes: {
           keywords: {
@@ -107,15 +108,6 @@ const graph_data: GraphData = {
               ],
             },
           },
-          output: {
-            agent: "copyAgent",
-            inputs: {
-              json: ":keywords.text",
-            },
-            console: {
-              after: true,
-            },
-          },
           plain: {
             agent: image_agent,
             inputs: {
@@ -125,6 +117,19 @@ const graph_data: GraphData = {
               suffix: "p",
               prompt: "以下のキーワードに適した画像を生成して。",
             },
+          },
+          output: {
+            agent: "copyAgent",
+            inputs: {
+              text: ":row.text",
+              index: ":row.index",
+              image: ":plain",
+              json: ":keywords.text",
+            },
+            console: {
+              after: true,
+            },
+            isResult: true,
           },
           /*
           anime: {
@@ -179,6 +184,14 @@ const main = async () => {
 
   graph.injectValue("script", jsonDataTm);
   const results = await graph.run();
+  if (results.map) {
+    const data = results.map as DefaultResultData[];
+    const info = data.map((element: any) => {
+      return element.output;
+    });
+    jsonDataTm.imageInfo = info;
+    fs.writeFileSync(tmScriptPath, JSON.stringify(jsonDataTm, null, 2));
+  }
 };
 
 main();
