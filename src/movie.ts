@@ -52,8 +52,7 @@ async function renderJapaneseTextToPNG(text: string, outputFilePath: string) {
   // Create SVG content for Japanese text rendering
   const svgContent = `
     <svg width="${c_imageWidth}" height="${Math.max(imageHeight, c_imageHeight)}" xmlns="http://www.w3.org/2000/svg">
-      <rect width="100%" height="100%" fill="white" />
-      <text x="0" y="${fontSize}" font-size="${fontSize}" font-family="Arial" fill="black">
+      <text x="0" y="${fontSize}" font-size="${fontSize}" font-family="Arial" fill="white">
         ${lines.map((line, index) => `<tspan x="0" y="${fontSize + index * lineHeight}">${line}</tspan>`).join("")}
       </text>
     </svg>
@@ -158,12 +157,12 @@ const main = async () => {
   await imageInfo.forEach(async (element: { index: number, image: string }) => {
     const { index, image } = element;
     const imagePath = `./scratchpad/${name}_${index}.png`;
-    const image1 = await loadImage(imagePath);
+    const imageText = await loadImage(imagePath);
     const imageBG = await loadImage(image);
-    console.log(index, image, image1.width, image1.height);
     const canvas = createCanvas(c_imageWidth, c_imageHeight);
     const ctx = canvas.getContext('2d');
     ctx.drawImage(imageBG, 0, 0);
+    ctx.drawImage(imageText, 0, 0);
     const buffer = canvas.toBuffer('image/png');
     fs.writeFileSync(imagePath, buffer);
   });
