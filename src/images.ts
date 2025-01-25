@@ -2,17 +2,8 @@ import dotenv from "dotenv";
 import OpenAI from "openai";
 import fs from "fs";
 import path from "path";
-import {
-  GraphAI,
-  GraphData,
-} from "graphai";
+import { GraphAI, GraphData } from "graphai";
 import * as agents from "@graphai/agents";
-// import { ttsNijivoiceAgent } from "@graphai/tts_nijivoice_agent";
-import { ttsOpenaiAgent } from "@graphai/tts_openai_agent";
-import ttsNijivoiceAgent from "./agents/tts_nijivoice_agent";
-// import ttsOpenaiAgent from "./agents/tts_openai_agent";
-import { pathUtilsAgent } from "@graphai/vanilla_node_agents";
-import ffmpeg from "fluent-ffmpeg";
 
 dotenv.config();
 const openai = new OpenAI();
@@ -38,9 +29,17 @@ type PodcastScript = {
   imageInfo: any[]; // generated
 };
 
-const image_agent = async (namedInputs:{ row: { text:string, index: number}, suffix: string, script: ScriptData, prompt: string }) => {
-  const { row, suffix, script, prompt } = namedInputs;
-  const imagePath = path.resolve(`./images/${script.filename}/${row.index}${suffix}.png`);
+const image_agent = async (namedInputs: {
+  row: { text: string; index: number };
+  suffix: string;
+  script: ScriptData;
+  keywords: string;
+  prompt: string;
+}) => {
+  const { row, suffix, script, keywords, prompt } = namedInputs;
+  const imagePath = path.resolve(
+    `./images/${script.filename}/${row.index}${suffix}.png`,
+  );
   if (fs.existsSync(imagePath)) {
     console.log("cached", imagePath);
     return;
@@ -48,11 +47,11 @@ const image_agent = async (namedInputs:{ row: { text:string, index: number}, suf
 
   const response = await openai.images.generate({
     model: "dall-e-3",
-    prompt: prompt ? `${prompt}\n${row.text}` : row.text,
+    prompt: prompt ? `${prompt}\n${keywords}` : row.text,
     n: 1,
-    size: "1024x1024",// "1792x1024",
+    size: "1024x1024", // "1792x1024",
   });
-  
+
   const imageRes = await fetch(response.data[0].url!);
   const writer = fs.createWriteStream(imagePath);
   if (imageRes.body) {
@@ -72,7 +71,7 @@ const image_agent = async (namedInputs:{ row: { text:string, index: number}, suf
   } else {
     throw new Error("Response body is null or undefined");
   }
-        
+
   // Return a Promise that resolves when the writable stream is finished
   await new Promise<void>((resolve, reject) => {
     writer.on("finish", resolve);
@@ -92,15 +91,42 @@ const graph_data: GraphData = {
       inputs: { rows: ":script.imageInfo", script: ":script" },
       graph: {
         nodes: {
+          keywords: {
+            agent: "openAIAgent",
+            inputs: {
+              messages: [
+                {
+                  role: "system",
+                  content:
+                    "与えられたテキストからキーワードを抜き出して、JSONのarrayで返して",
+                },
+                {
+                  role: "user",
+                  content: ":row.text",
+                },
+              ],
+            },
+          },
+          output: {
+            agent: "copyAgent",
+            inputs: {
+              json: ":keywords.text",
+            },
+            console: {
+              after: true,
+            },
+          },
           plain: {
             agent: image_agent,
             inputs: {
-              "row": ":row",
-              "script": ":script",
-              "suffix": "p",
-              "prompt": "以下のテキストに適した画像を生成して。",
+              row: ":row",
+              script: ":script",
+              keywords: ":keywords.text",
+              suffix: "p",
+              prompt: "以下のキーワードに適した画像を生成して。",
             },
           },
+          /*
           anime: {
             agent: image_agent,
             inputs: {
@@ -119,11 +145,12 @@ const graph_data: GraphData = {
               "prompt": "以下のテキストに適した画像を、水彩画風に描いて。",
             },
           }
-        }
-      }
+          */
+        },
+      },
     },
-  }
-}
+  },
+};
 
 const main = async () => {
   const arg2 = process.argv[2];
@@ -143,18 +170,15 @@ const main = async () => {
   if (!fs.existsSync(imagesDir)) {
     fs.mkdirSync(imagesDir);
   }
-  const graph = new GraphAI(
-    graph_data,
-    {
-      ...agents,
-    },
-  );
+  const graph = new GraphAI(graph_data, {
+    ...agents,
+  });
 
   // DEBUG
-  // jsonDataTm.imageInfo = [jsonDataTm.imageInfo[0], jsonDataTm.imageInfo[1]];
+  // jsonDataTm.imageInfo = [jsonDataTm.imageInfo[0]];
 
   graph.injectValue("script", jsonDataTm);
   const results = await graph.run();
-}
+};
 
 main();
