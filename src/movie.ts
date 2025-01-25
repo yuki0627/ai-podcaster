@@ -161,7 +161,7 @@ const main = async () => {
     const imageBG = await loadImage(image);
     const canvas = createCanvas(c_imageWidth, c_imageHeight);
     const ctx = canvas.getContext('2d');
-    ctx.drawImage(imageBG, 0, 0);
+    ctx.drawImage(imageBG, (c_imageWidth - c_imageHeight) / 2, 0, c_imageHeight, c_imageHeight);
     ctx.drawImage(imageText, 0, 0);
     const buffer = canvas.toBuffer('image/png');
     fs.writeFileSync(imagePath, buffer);
