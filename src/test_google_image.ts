@@ -1,22 +1,19 @@
-import { GoogleAuth } from 'google-auth-library';
 import dotenv from "dotenv";
 dotenv.config();
 
 // Replace with your project details
-const PROJECT_ID = process.env.GOOGLE_PROJECT_ID; // Your Google Cloud Project ID
-const ENDPOINT = `https://us-central1-aiplatform.googleapis.com/v1/projects/${PROJECT_ID}/locations/us-central1/publishers/google/models/text-to-image:predict`;
+const GOOGLE_PROJECT_ID = process.env.GOOGLE_PROJECT_ID; // Your Google Cloud Project ID
+const GOOGLE_IMAGEN_MODEL='imagen-3.0-generate-001';
+const ENDPOINT = `https://us-central1-aiplatform.googleapis.com/v1/projects/${GOOGLE_PROJECT_ID}/locations/us-central1/publishers/google/models/${GOOGLE_IMAGEN_MODEL}:predict`;
 
 // Replace with your API key or use a service account for authentication
-const API_KEY = process.env.GOOGLE_API_KEY; // Your Vertex AI API Key
+const GOOGLE_API_KEY = process.env.GOOGLE_API_KEY; // Your Vertex AI API Key
 
+console.log("Project ID", GOOGLE_PROJECT_ID);
+console.log("API Key", GOOGLE_API_KEY);
 // Function to generate an image from a text prompt
 async function generateImage(prompt: string): Promise<string> {
   try {
-    // Create a GoogleAuth instance for authentication (optional if using API Key directly)
-    const auth = new GoogleAuth({
-      scopes: ['https://www.googleapis.com/auth/cloud-platform'],
-    });
-
     // Prepare the payload for the API request
     const payload = {
       instances: [{
@@ -28,7 +25,7 @@ async function generateImage(prompt: string): Promise<string> {
     const response = await fetch(ENDPOINT, {
       method: 'POST',
       headers: {
-        'Authorization': `Bearer ${API_KEY}`, // Use API Key directly or client.getAccessToken() for service accounts
+        'Authorization': `Bearer ${GOOGLE_API_KEY}`, // Use API Key directly or client.getAccessToken() for service accounts
         'Content-Type': 'application/json',
       },
       body: JSON.stringify(payload),
