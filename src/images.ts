@@ -87,7 +87,7 @@ async function generateImage(prompt: string): Promise<Buffer> {
 }
 
 const image_agent = async (namedInputs: {
-  row: { text: string; index: number };
+  row: { index: number };
   suffix: string;
   script: PodcastScript;
 }) => {
@@ -171,7 +171,6 @@ const graph_data: GraphData = {
           output: {
             agent: "copyAgent",
             inputs: {
-              text: ":row.text",
               index: ":row.index",
               image: ":plain",
             },
