@@ -1,3 +1,4 @@
+import fs from "fs";
 import dotenv from "dotenv";
 dotenv.config();
 // import { GoogleGenerativeAI } from "@google/generative-ai";
@@ -20,7 +21,7 @@ console.log("Project ID", GOOGLE_PROJECT_ID);
 console.log("API Key", GOOGLE_API_KEY);
 console.log("GOOGLE_ACCESS_TOKEN", GOOGLE_ACCESS_TOKEN);
 // Function to generate an image from a text prompt
-async function generateImage(prompt: string): Promise<string> {
+async function generateImage(prompt: string): Promise<Buffer> {
   try {
     const auth = new GoogleAuth({
       scopes: ['https://www.googleapis.com/auth/cloud-platform'],
@@ -60,8 +61,12 @@ async function generateImage(prompt: string): Promise<string> {
     // Parse and return the generated image URL or data
     const predictions = responseData.predictions;
     if (predictions && predictions.length > 0) {
-      console.log(predictions);
-      return predictions[0].image; // Adjust based on the API response structure
+      const base64Image = predictions[0].bytesBase64Encoded;
+      if (base64Image) {
+        return Buffer.from(base64Image, 'base64'); // Decode the base64 image to a buffer
+      } else {
+        throw new Error('No base64-encoded image data returned from the API.');
+      }
     } else {
       throw new Error('No predictions returned from the API.');
     }
@@ -79,11 +84,11 @@ const main = async () => {
   console.log(result.response.text());
   */
 
-  const prompt = 'A futuristic city with flying cars and neon lights';
+  const prompt = 'huge solar farm in a desert, with length of 400km and width of 5km';
 
   try {
-    const imageUrl = await generateImage(prompt);
-    console.log('Generated Image URL:', imageUrl);
+    const imageBuffer = await generateImage(prompt);
+    fs.writeFileSync('./output/generated_image.png', imageBuffer);
   } catch (error) {
     console.error('Failed to generate image:', error);
   }
