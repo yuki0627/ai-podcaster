@@ -16,120 +16,140 @@
     {
       "speaker": "Announcer",
       "text": "米国で活躍するエンジニアが新しい技術やビジネスを分かりやすく解説する、中島聡のLife is beautiful。今日は、アメリカで発表された「スターゲート・プロジェクト」に、ついて解説します。",
+      "imagePrompt": "futuristic podcast studio with floating holographic displays showing AI technology news, clean minimal design, blue lighting",
       "filename": "stargate0",
       "duration": 13.309000000000001
     },
     {
       "speaker": "Student",
       "text": "先生、ニュースでスターゲート・プロジェクトのことを見たんですが、よく分からなかったので教えてください。",
+      "imagePrompt": "digital news headlines about AI project floating in cyberspace, glowing text, blueprint style background",
       "filename": "stargate1",
       "duration": 5.57675
     },
     {
       "speaker": "Teacher",
       "text": "うん、これはとても大きなニュースだね。簡単に言うと、アメリカでAI（人工知能）のための大きな設備を作るプロジェクトなんだ。",
+      "imagePrompt": "massive futuristic AI data center under construction, drone view, architectural visualization",
       "filename": "stargate2",
       "duration": 9.1555
     },
     {
       "speaker": "Student",
       "text": "どのくらい大きなプロジェクトなんですか？",
+      "imagePrompt": "3D holographic projection showing massive investment numbers and growth charts, blue and gold colors",
       "filename": "stargate3",
       "duration": 2.2853
     },
     {
       "speaker": "Teacher",
       "text": "とても大きいよ。4年間で75兆円（500億ドル）を投資する予定なんだ。これは日本の1年間の防衛費の約7倍くらいの金額になるんだよ。",
+      "imagePrompt": "dynamic visualization of financial comparison, stacks of gold bars, digital currency symbols, US and Japanese flags",
       "filename": "stargate4",
       "duration": 10.6445
     },
     {
       "speaker": "Student",
       "text": "えっ！そんなにすごい金額なんですか？何を作るんですか？",
+      "imagePrompt": "cutaway illustration of advanced supercomputer facility, quantum computers, cooling systems, photorealistic style",
       "filename": "stargate5",
       "duration": 3.98325
     },
     {
       "speaker": "Teacher",
       "text": "主にAIを動かすためのスーパーコンピュータや、それを置くための建物、そして必要な電力を供給する設備などを作るんだ。ChatGPTを作っているOpenエーアイという会社が中心になって進めていくんだよ。",
+      "imagePrompt": "high-tech data center interior with rows of supercomputers, OpenAI logo, power infrastructure, cool blue lighting",
       "filename": "stargate6",
       "duration": 14.69345
     },
     {
       "speaker": "Student",
       "text": "なんでそんなにたくさんのお金をかけるんですか？",
+      "imagePrompt": "strategic world map with AI technology hubs highlighted, connecting lines, technological supremacy visualization",
       "filename": "stargate7",
       "duration": 2.5987999999999998
     },
     {
       "speaker": "Teacher",
       "text": "大きく3つの理由があるんだ。1つ目は、アメリカがAI技術で世界をリードし続けたいから。2つ目は、たくさんの雇用を生み出せるから。そして3つ目は、国の安全保障にも役立つからなんだ。",
+      "imagePrompt": "triptych digital illustration: 1) AI innovation race 2) job creation visualization 3) cybersecurity shield, unified composition",
       "filename": "stargate8",
       "duration": 15.1637
     },
     {
       "speaker": "Student",
       "text": "安全保障って、どういうことですか？",
+      "imagePrompt": "cybersecurity concept visualization, digital shield protecting infrastructure, binary code, national defense symbols",
       "filename": "stargate9",
       "duration": 2.651
     },
     {
       "speaker": "Teacher",
       "text": "AIは今や国の力を左右する重要な技術になっているんだ。例えば、サイバー攻撃から国を守ったり、新しい技術を開発したりするのにAIが必要不可欠なんだよ。",
+      "imagePrompt": "AI-powered cyber defense system, abstract visualization of threat detection, protective digital barrier",
       "filename": "stargate10",
       "duration": 12.13345
     },
     {
       "speaker": "Student",
       "text": "どんな会社が参加するんですか？",
+      "imagePrompt": "corporate logos of Microsoft, NVIDIA, Oracle, SoftBank arranged in futuristic network visualization",
       "filename": "stargate11",
       "duration": 2.0502
     },
     {
       "speaker": "Teacher",
       "text": "日本のソフトバンク、それにマイクロソフト、エヌビディア、オラクルなど、世界的に有名なアイティー企業が参加するんだ。ソフトバンクの孫正義さんが会長になって、お金の面を担当することになっているよ。",
+      "imagePrompt": "global tech partnership visualization, connected company headquarters, digital finance flows, corporate collaboration",
       "filename": "stargate12",
       "duration": 15.215900000000001
     },
     {
       "speaker": "Student",
       "text": "日本の会社も参加するんですね！",
+      "imagePrompt": "US-Japan flags merged with tech symbols, partnership visualization, rising sun meeting silicon valley",
       "filename": "stargate13",
       "duration": 2.1547
     },
     {
       "speaker": "Teacher",
       "text": "そうなんだ。このプロジェクトは、アメリカのトランプ大統領が発表したんだけど、日本とアメリカの協力関係を示す良い例にもなっているんだよ。",
+      "imagePrompt": "symbolic handshake between US and Japan formed by circuit boards and AI networks, diplomatic technology collaboration",
       "filename": "stargate14",
       "duration": 10.0698
     },
     {
       "speaker": "Student",
       "text": "このプロジェクトで、私たちの生活は変わるんですか？",
+      "imagePrompt": "futuristic daily life scene with AI assistants, smart cities, advanced transportation, medical innovations",
       "filename": "stargate15",
       "duration": 3.4869499999999998
     },
     {
       "speaker": "Teacher",
       "text": "きっと変わっていくと思うよ。より賢いAIが開発されることで、医療や教育、環境問題など、様々な分野で新しい解決策が生まれるかもしれない。でも同時に、AIによって仕事が変わっていくことも考えられるから、私たちも新しい技術をよく理解して、うまく付き合っていく必要があるんだ。",
+      "imagePrompt": "split screen showing AI applications: medical diagnosis, virtual classrooms, environmental monitoring, workplace automation",
       "filename": "stargate16",
       "duration": 22.2951
     },
     {
       "speaker": "Student",
       "text": "なるほど。これからの世界がどう変わっていくのか、楽しみですね。",
+      "imagePrompt": "optimistic future city vista with advanced AI integration, sustainable technology, bright sunrise",
       "filename": "stargate17",
       "duration": 4.2445
     },
     {
       "speaker": "Teacher",
       "text": "その通りだね。この大きなプロジェクトが、よりよい未来を作るために役立つことを願っているよ。",
+      "imagePrompt": "hopeful vision of future society, harmony between AI and human life, sustainable utopian cityscape",
       "filename": "stargate18",
       "duration": 8.1404
     },
     {
       "speaker": "Announcer",
       "text": "ご視聴、ありがとうございました。この発表を受けて、関連する、オラクル、アームの株価が急上昇したことを付け加えておきます。では、次の回をお楽しみに。",
+      "imagePrompt": "stock market visualization showing rising tech stocks, Oracle and ARM logos, upward trending graphs",
       "filename": "stargate19",
       "duration": 11.9245
     }
@@ -145,110 +165,87 @@
     {
       "text": "スターゲート・プロジェクトとアメリカのAI戦略\n先生、ニュースでスターゲート・プロジェクトのことを見たんですが、よく分からなかったので教えてください。",
       "index": 1,
-      "image": "./images/stargate/1p.png",
-      "json": "```json\n[\n    \"スターゲート・プロジェクト\",\n    \"アメリカ\",\n    \"AI戦略\"\n]\n```"
+      "image": "./images/stargate/1p.png"
     },
     {
       "text": "先生、ニュースでスターゲート・プロジェクトのことを見たんですが、よく分からなかったので教えてください。\nうん、これはとても大きなニュースだね。簡単に言うと、アメリカでAI（人工知能）のための大きな設備を作るプロジェクトなんだ。",
       "index": 2,
-      "image": "./images/stargate/2p.png",
-      "json": "```json\n[\"スターゲート・プロジェクト\", \"ニュース\", \"アメリカ\", \"AI\", \"人工知能\", \"設備\"]\n```"
+      "image": "./images/stargate/2p.png"
     },
     {
       "text": "うん、これはとても大きなニュースだね。簡単に言うと、アメリカでAI（人工知能）のための大きな設備を作るプロジェクトなんだ。\nどのくらい大きなプロジェクトなんですか？",
       "index": 3,
-      "image": "./images/stargate/3p.png",
-      "json": "```json\n[\"アメリカ\", \"AI\", \"人工知能\", \"設備\", \"プロジェクト\"]\n```"
+      "image": "./images/stargate/3p.png"
     },
     {
       "text": "どのくらい大きなプロジェクトなんですか？\nとても大きいよ。4年間で75兆円（500億ドル）を投資する予定なんだ。これは日本の1年間の防衛費の約7倍くらいの金額になるんだよ。",
       "index": 4,
-      "image": "./images/stargate/4p.png",
-      "json": "```json\n[\n    \"プロジェクト\",\n    \"75兆円\",\n    \"500億ドル\",\n    \"投資\",\n    \"日本\",\n    \"防衛費\"\n]\n```"
+      "image": "./images/stargate/4p.png"
     },
     {
       "text": "とても大きいよ。4年間で75兆円（500億ドル）を投資する予定なんだ。これは日本の1年間の防衛費の約7倍くらいの金額になるんだよ。\nえっ！そんなにすごい金額なんですか？何を作るんですか？",
       "index": 5,
-      "image": "./images/stargate/5p.png",
-      "json": "```json\n[\"75兆円\", \"500億ドル\", \"投資\", \"日本\", \"防衛費\", \"4年間\"]\n```"
+      "image": "./images/stargate/5p.png"
     },
     {
       "text": "えっ！そんなにすごい金額なんですか？何を作るんですか？\n主にAIを動かすためのスーパーコンピュータや、それを置くための建物、そして必要な電力を供給する設備などを作るんだ。ChatGPTを作っているOpenエーアイという会社が中心になって進めていくんだよ。",
       "index": 6,
-      "image": "./images/stargate/6p.png",
-      "json": "```json\n[\n    \"AI\",\n    \"スーパーコンピュータ\",\n    \"建物\",\n    \"電力設備\",\n    \"ChatGPT\",\n    \"OpenAI\"\n]\n```"
+      "image": "./images/stargate/6p.png"
     },
     {
       "text": "主にAIを動かすためのスーパーコンピュータや、それを置くための建物、そして必要な電力を供給する設備などを作るんだ。ChatGPTを作っているOpenエーアイという会社が中心になって進めていくんだよ。\nなんでそんなにたくさんのお金をかけるんですか？",
       "index": 7,
-      "image": "./images/stargate/7p.png",
-      "json": "```json\n[\n    \"AI\",\n    \"スーパーコンピュータ\",\n    \"建物\",\n    \"電力設備\",\n    \"OpenAI\",\n    \"投資\"\n]\n```"
+      "image": "./images/stargate/7p.png"
     },
     {
       "text": "なんでそんなにたくさんのお金をかけるんですか？\n大きく3つの理由があるんだ。1つ目は、アメリカがAI技術で世界をリードし続けたいから。2つ目は、たくさんの雇用を生み出せるから。そして3つ目は、国の安全保障にも役立つからなんだ。",
       "index": 8,
-      "image": "./images/stargate/8p.png",
-      "json": "```json\n[\"アメリカ\", \"AI技術\", \"世界をリード\", \"雇用\", \"国の安全保障\"]\n```"
+      "image": "./images/stargate/8p.png"
     },
     {
       "text": "大きく3つの理由があるんだ。1つ目は、アメリカがAI技術で世界をリードし続けたいから。2つ目は、たくさんの雇用を生み出せるから。そして3つ目は、国の安全保障にも役立つからなんだ。\n安全保障って、どういうことですか？",
       "index": 9,
-      "image": "./images/stargate/9p.png",
-      "json": "```json\n[\"アメリカ\", \"AI技術\", \"世界をリード\", \"雇用\", \"国の安全保障\"]\n```"
+      "image": "./images/stargate/9p.png"
     },
     {
       "text": "安全保障って、どういうことですか？\nAIは今や国の力を左右する重要な技術になっているんだ。例えば、サイバー攻撃から国を守ったり、新しい技術を開発したりするのにAIが必要不可欠なんだよ。",
       "index": 10,
-      "image": "./images/stargate/10p.png",
-      "json": "```json\n[\"安全保障\", \"AI\", \"国の力\", \"サイバー攻撃\", \"技術開発\"]\n```"
+      "image": "./images/stargate/10p.png"
     },
     {
       "text": "AIは今や国の力を左右する重要な技術になっているんだ。例えば、サイバー攻撃から国を守ったり、新しい技術を開発したりするのにAIが必要不可欠なんだよ。\nどんな会社が参加するんですか？",
       "index": 11,
-      "image": "./images/stargate/11p.png",
-      "json": "```json\n[\"AI\", \"国の力\", \"サイバー攻撃\", \"技術開発\", \"会社参加\"]\n```"
+      "image": "./images/stargate/11p.png"
     },
     {
       "text": "どんな会社が参加するんですか？\n日本のソフトバンク、それにマイクロソフト、エヌビディア、オラクルなど、世界的に有名なアイティー企業が参加するんだ。ソフトバンクの孫正義さんが会長になって、お金の面を担当することになっているよ。",
       "index": 12,
-      "image": "./images/stargate/12p.png",
-      "json": "```json\n[\"ソフトバンク\", \"マイクロソフト\", \"エヌビディア\", \"オラクル\", \"孫正義\"]\n```"
+      "image": "./images/stargate/12p.png"
     },
     {
       "text": "日本のソフトバンク、それにマイクロソフト、エヌビディア、オラクルなど、世界的に有名なアイティー企業が参加するんだ。ソフトバンクの孫正義さんが会長になって、お金の面を担当することになっているよ。\n日本の会社も参加するんですね！",
       "index": 13,
-      "image": "./images/stargate/13p.png",
-      "json": "```json\n[\n    \"ソフトバンク\",\n    \"マイクロソフト\",\n    \"エヌビディア\",\n    \"オラクル\",\n    \"孫正義\",\n    \"アイティー企業\",\n    \"日本\"\n]\n```"
+      "image": "./images/stargate/13p.png"
     },
     {
       "text": "日本の会社も参加するんですね！\nそうなんだ。このプロジェクトは、アメリカのトランプ大統領が発表したんだけど、日本とアメリカの協力関係を示す良い例にもなっているんだよ。",
       "index": 14,
-      "image": "./images/stargate/14p.png",
-      "json": "```json\n[\"日本\", \"会社\", \"プロジェクト\", \"アメリカ\", \"トランプ大統領\", \"協力関係\"]\n```"
+      "image": "./images/stargate/14p.png"
     },
     {
       "text": "そうなんだ。このプロジェクトは、アメリカのトランプ大統領が発表したんだけど、日本とアメリカの協力関係を示す良い例にもなっているんだよ。\nこのプロジェクトで、私たちの生活は変わるんですか？",
       "index": 15,
-      "image": "./images/stargate/15p.png",
-      "json": "```json\n[\"プロジェクト\", \"アメリカ\", \"トランプ大統領\", \"日本\", \"協力関係\", \"生活\"]\n```"
+      "image": "./images/stargate/15p.png"
     },
     {
       "text": "このプロジェクトで、私たちの生活は変わるんですか？\nきっと変わっていくと思うよ。より賢いAIが開発されることで、医療や教育、環境問題など、様々な分野で新しい解決策が生まれるかもしれない。でも同時に、AIによって仕事が変わっていくことも考えられるから、私たちも新しい技術をよく理解して、うまく付き合っていく必要があるんだ。",
       "index": 16,
-      "image": "./images/stargate/16p.png",
-      "json": "```json\n[\"プロジェクト\", \"生活\", \"AI\", \"医療\", \"教育\", \"環境問題\", \"解決策\", \"仕事\", \"技術\"]\n```"
+      "image": "./images/stargate/16p.png"
     },
     {
       "text": "きっと変わっていくと思うよ。より賢いAIが開発されることで、医療や教育、環境問題など、様々な分野で新しい解決策が生まれるかもしれない。でも同時に、AIによって仕事が変わっていくことも考えられるから、私たちも新しい技術をよく理解して、うまく付き合っていく必要があるんだ。\nなるほど。これからの世界がどう変わっていくのか、楽しみですね。",
       "index": 17,
-      "image": "./images/stargate/17p.png",
-      "json": "```json\n[\"AI\", \"医療\", \"教育\", \"環境問題\", \"解決策\", \"仕事\", \"技術\"]\n```"
-    },
-    {
-      "text": "なるほど。これからの世界がどう変わっていくのか、楽しみですね。\nその通りだね。この大きなプロジェクトが、よりよい未来を作るために役立つことを願っているよ。",
-      "index": 18,
-      "image": "./images/stargate/18p.png",
-      "json": "```json\n[\n    \"未来\",\n    \"プロジェクト\",\n    \"変化\"\n]\n```"
+      "image": "./images/stargate/17p.png"
     }
   ]
 }

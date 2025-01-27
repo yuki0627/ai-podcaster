@@ -100,9 +100,7 @@ const image_agent = async (namedInputs: {
   }
 
   try {
-    console.log(script.script[row.index]);
     const imagePrompt = script.script[row.index].imagePrompt;
-    console.log("generating", imagePrompt);
     const imageBuffer = await generateImage(imagePrompt);
     fs.writeFileSync(imagePath, imageBuffer);
     console.log("generated", imagePrompt);
