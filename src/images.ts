@@ -157,7 +157,7 @@ const image_agent = async (namedInputs: {
 
 const graph_data: GraphData = {
   version: 0.5,
-  concurrency: 1,
+  concurrency: 4,
   nodes: {
     script: {
       value: {},
