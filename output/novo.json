@@ -48,17 +48,17 @@
     },
     {
       "speaker": "Teacher",
-      "text": "この会社は既に「オゼンピック」や「ウェゴビー」という肥満治療薬を作っているんだけど、今回はもっと効果の高い新薬を開発したんだ。実験では、体重の22%も減らすことができたんだよ。",
+      "text": "この会社は既に「オゼンピック」や「ウェゴビー」という肥満治療薬を作っているんだけど、今回はもっと効果の高い新薬を開発したんだ。実験では、体重の22パーセントも減らすことができたんだよ。",
       "imagePrompt": "modern medical visualization of weight loss progress chart, before-after comparison, clean medical illustration style",
       "filename": "novo4",
-      "duration": 12.9955
+      "duration": 13.64855
     },
     {
       "speaker": "Student",
-      "text": "22%も！？それはすごいですね。でも、なぜそんなに注目されているんですか？",
+      "text": "22パーセントも！？それはすごいですね。でも、なぜそんなに注目されているんですか？",
       "imagePrompt": "newspaper headlines and digital news screens showing breakthrough medical development, professional news media style",
       "filename": "novo5",
-      "duration": 5.1849
+      "duration": 5.6812499999999995
     },
     {
       "speaker": "Teacher",
@@ -132,10 +132,10 @@
     },
     {
       "speaker": "Teacher",
-      "text": "その通り！肥満を治療することで、糖尿病や心臓病のリスクも下がるんだ。だから、安全で効果的な薬を開発することは、多くの人の健康に役立つんだよ。ただし、新薬の開発には時間がかかるし、安全性も大切だから、慎重に進めていく必要があるんだ。これからの研究結果に期待しようね。",
+      "text": "その通り。肥満を治療することで、糖尿病や心臓病のリスクも下がるんだ。だから、安全で効果的な薬を開発することは、多くの人の健康に役立つんだよ。ただし、新薬の開発には時間がかかるし、安全性も大切だから、慎重に進めていく必要があるんだ。これからの研究結果に期待しようね。",
       "imagePrompt": "comprehensive healthcare visualization showing connection between obesity treatment and overall health improvement, professional medical illustration",
       "filename": "novo16",
-      "duration": 23.631
+      "duration": 23.3959
     },
     {
       "speaker": "Announcer",
@@ -177,7 +177,8 @@
       "image": "./images/novo/5p.png"
     },
     {
-      "index": 6
+      "index": 6,
+      "image": "./images/novo/6p.png"
     },
     {
       "index": 7,

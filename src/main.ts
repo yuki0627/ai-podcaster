@@ -243,6 +243,24 @@ const main = async () => {
     element.filename = script.filename + index;
   });
 
+  // Check if any script changes
+  const outputScript = path.resolve("./output/" + script.filename + ".json");
+  if (fs.existsSync(outputScript)) {
+    const prevData = fs.readFileSync(outputScript, "utf-8");
+    const prevScript = JSON.parse(prevData) as PodcastScript;
+    console.log("found output script", prevScript.filename);
+    script.script.forEach((element: ScriptData, index: number) => {
+      const prevText = prevScript.script[index].text;
+      if (element.text !== prevText) {
+        const filePath = path.resolve("./scratchpad/" + element.filename + ".mp3");
+        if (fs.existsSync(filePath)) {
+          console.log("deleting", element.filename);
+          fs.unlinkSync(filePath);
+        }
+      }
+    });
+  }
+
   if (script.tts === "nijivoice") {
     graph_data.concurrency = 1;
     script.voices = script.voices ?? [rion_takanashi_voice, ben_carter_voice];

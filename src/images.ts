@@ -79,7 +79,7 @@ async function generateImage(prompt: string): Promise<Buffer | undefined> {
         throw new Error("No base64-encoded image data returned from the API.");
       }
     } else {
-      console.log(response);
+      // console.log(response);
       console.log("No predictions returned from the API.", responseData);
       return undefined;
     }
