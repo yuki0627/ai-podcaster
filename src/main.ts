@@ -252,7 +252,9 @@ const main = async () => {
     script.script.forEach((element: ScriptData, index: number) => {
       const prevText = prevScript.script[index].text;
       if (element.text !== prevText) {
-        const filePath = path.resolve("./scratchpad/" + element.filename + ".mp3");
+        const filePath = path.resolve(
+          "./scratchpad/" + element.filename + ".mp3",
+        );
         if (fs.existsSync(filePath)) {
           console.log("deleting", element.filename);
           fs.unlinkSync(filePath);
