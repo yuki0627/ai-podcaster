@@ -162,13 +162,16 @@ const main = async () => {
     const imagePath = `./scratchpad/${name}_${index}.png`;
     const imageText = await loadImage(imagePath);
     const imageBG = await loadImage(image);
+    const bgWidth = imageBG.width;
+    const bgHeight = imageBG.height;
+    const viewWidth = bgWidth / bgHeight * c_imageHeight;
     const canvas = createCanvas(c_imageWidth, c_imageHeight);
     const ctx = canvas.getContext("2d");
     ctx.drawImage(
       imageBG,
-      (c_imageWidth - c_imageHeight) / 2,
+      (c_imageWidth - viewWidth) / 2,
       0,
-      c_imageHeight,
+      viewWidth,
       c_imageHeight,
     );
     ctx.drawImage(imageText, 0, 0);
