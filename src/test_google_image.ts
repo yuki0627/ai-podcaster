@@ -35,7 +35,10 @@ async function generateImage(prompt: string): Promise<string> {
     const payload = {
       instances: [{
         prompt: prompt,
-      }],
+      }], 
+      parameters: {
+        sampleCount: 1
+      }
     };
 
     // Make the API call using fetch
