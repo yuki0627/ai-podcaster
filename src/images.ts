@@ -13,8 +13,8 @@ const GOOGLE_PROJECT_ID = process.env.GOOGLE_PROJECT_ID; // Your Google Cloud Pr
 const GOOGLE_IMAGEN_MODEL = "imagen-3.0-fast-generate-001";
 const GOOGLE_IMAGEN_ENDPOINT = `https://us-central1-aiplatform.googleapis.com/v1/projects/${GOOGLE_PROJECT_ID}/locations/us-central1/publishers/google/models/${GOOGLE_IMAGEN_MODEL}:predict`;
 const tokenHolder = {
-  token: "undefined"
-}
+  token: "undefined",
+};
 
 type ScriptData = {
   speaker: string;

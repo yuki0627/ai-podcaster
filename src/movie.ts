@@ -173,7 +173,7 @@ const main = async () => {
     const imageBG = await loadImage(image);
     const bgWidth = imageBG.width;
     const bgHeight = imageBG.height;
-    const viewWidth = bgWidth / bgHeight * c_imageHeight;
+    const viewWidth = (bgWidth / bgHeight) * c_imageHeight;
     const canvas = createCanvas(c_imageWidth, c_imageHeight);
     const ctx = canvas.getContext("2d");
     ctx.drawImage(
