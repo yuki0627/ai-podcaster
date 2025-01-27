@@ -21,132 +21,154 @@
     {
       "speaker": "Announcer",
       "text": "米国で活躍するエンジニアが新しい技術やビジネスを分かりやすく解説する、中島聡のLife is beautiful。今日は、中国で建設中の世界最大級の太陽光発電施設、グレート・ソーラーウォールについての解説です。",
+      "imagePrompt": "Aerial view of massive solar panel array in Kubuqi Desert, China, stretching to horizon, photorealistic, golden sunset",
       "filename": "great_solar_wall0",
       "duration": 15.581650000000002
     },
     {
       "speaker": "Student",
       "text": "先生、ニュースで中国が「グレート・ソーラーウォール」っていう巨大な発電所を作ってるって聞いたんですけど、これって何ですか？",
+      "imagePrompt": "Solar panels in desert landscape, golden hour lighting, environmental technology focus",
       "filename": "great_solar_wall1",
       "duration": 6.7261
     },
     {
       "speaker": "Teacher",
       "text": "うん、これはすごく面白いプロジェクトなんだ。中国の内モンゴル自治区にあるクブチ砂漠で建設している、世界最大級の太陽光発電所なんだよ。",
+      "imagePrompt": "Vast desert landscape with gleaming solar panels, dramatic aerial view, Kubuqi Desert, photorealistic",
       "filename": "great_solar_wall2",
       "duration": 11.16695
     },
     {
       "speaker": "Student",
       "text": "え！砂漠に発電所ですか？どれくらい大きいんですか？",
+      "imagePrompt": "Solar panels in desert landscape, golden hour lighting, environmental technology focus",
       "filename": "great_solar_wall3",
       "duration": 3.8788
     },
     {
       "speaker": "Teacher",
       "text": "長さが約400キロメートルもあるんだよ。東京から名古屋くらいまでの距離だね。幅も5キロメートルあって、とても広大な施設なんだ。",
+      "imagePrompt": "Satellite view of solar wall installation in desert, showing massive scale, technical diagram overlay",
       "filename": "great_solar_wall4",
       "duration": 10.618350000000001
     },
     {
       "speaker": "Student",
       "text": "すごい大きさですね！でも、なんで砂漠に作るんですか？",
+      "imagePrompt": "Solar panels in desert landscape, golden hour lighting, environmental technology focus",
       "filename": "great_solar_wall5",
       "duration": 3.7742999999999998
     },
     {
       "speaker": "Teacher",
       "text": "いい質問だね。砂漠には3つの大きな利点があるんだ。まず、日差しが強くて雲が少ないから、太陽光発電に最適なんだ。次に、広大な未使用地があるから大規模な施設が建設できる。そして、砂漠化を防ぐ効果もあるんだよ。",
+      "imagePrompt": "Split view: intense desert sunlight, vast empty desert land, and green vegetation near solar panels, infographic style",
       "filename": "great_solar_wall6",
       "duration": 18.716350000000002
     },
     {
       "speaker": "Student",
       "text": "砂漠化を防げるんですか？どうやって？",
+      "imagePrompt": "Solar panels in desert landscape, golden hour lighting, environmental technology focus",
       "filename": "great_solar_wall7",
       "duration": 2.80775
     },
     {
       "speaker": "Teacher",
       "text": "ソーラーパネルが砂を覆うことで、風による砂の移動を防ぐんだ。さらに、パネルの下で農業もできるように設計されているんだよ。",
+      "imagePrompt": "Close-up of solar panels protecting desert soil, with visible anti-desertification effect, technical illustration",
       "filename": "great_solar_wall8",
       "duration": 9.41675
     },
     {
       "speaker": "Student",
       "text": "へぇ！パネルの下で作物が育つんですか？",
+      "imagePrompt": "Solar panels in desert landscape, golden hour lighting, environmental technology focus",
       "filename": "great_solar_wall9",
       "duration": 2.9905999999999997
     },
     {
       "speaker": "Teacher",
       "text": "そうなんだ。これを「営農型太陽光発電」って言うんだよ。パネルが強い日差しを遮ってくれるから、むしろ作物を育てやすい環境になるんだ。",
+      "imagePrompt": "Crops growing under elevated solar panels in desert, agrivoltaic system, cross-section diagram",
       "filename": "great_solar_wall10",
       "duration": 11.3237
     },
     {
       "speaker": "Student",
       "text": "すごいですね。でも、こんな大きな施設を作るのにお金がかかりそうです...",
+      "imagePrompt": "Solar panels in desert landscape, golden hour lighting, environmental technology focus",
       "filename": "great_solar_wall11",
       "duration": 4.9759
     },
     {
       "speaker": "Teacher",
       "text": "その通り。約48億ドル、日本円で約7兆円もかかる大規模プロジェクトなんだ。でも、完成すると年間480億キロワット時という膨大な電力を作り出せるんだよ。",
+      "imagePrompt": "Digital visualization of massive solar farm construction, with economic data overlay, infographic style",
       "filename": "great_solar_wall12",
       "duration": 13.491850000000001
     },
     {
       "speaker": "Student",
       "text": "480億キロワット時？どれくらいの電気なんですか？",
+      "imagePrompt": "Solar panels in desert landscape, golden hour lighting, environmental technology focus",
       "filename": "great_solar_wall13",
       "duration": 3.40855
     },
     {
       "speaker": "Teacher",
       "text": "北京や天津といった大都市圏の電力需要を賄えるくらいの量なんだ。さらに、このプロジェクトで約5万人の雇用が生まれる予定で、地域の発展にも貢献するんだよ。",
+      "imagePrompt": "Night view of illuminated Beijing skyline powered by solar energy, with power grid visualization",
       "filename": "great_solar_wall14",
       "duration": 11.297550000000001
     },
     {
       "speaker": "Student",
       "text": "環境にもいいし、電気も作れて、仕事も増えるなんて、すごいプロジェクトですね！",
+      "imagePrompt": "Solar panels in desert landscape, golden hour lighting, environmental technology focus",
       "filename": "great_solar_wall15",
       "duration": 4.68855
     },
     {
       "speaker": "Teacher",
       "text": "そうだね。二千三十年までには、このプロジェクトで年間約3,150万トンのCO2削減も期待できるんだ。これは、地球温暖化対策としても大きな貢献になるよ。",
+      "imagePrompt": "Environmental impact diagram showing CO2 reduction from solar wall, with visual metrics, clean design",
       "filename": "great_solar_wall16",
       "duration": 13.9098
     },
     {
       "speaker": "Student",
       "text": "日本でもこういうプロジェクトはできないんですか？",
+      "imagePrompt": "Japanese countryside with small-scale solar installation integrated with rice fields, aerial view",
       "filename": "great_solar_wall17",
       "duration": 2.5204
     },
     {
       "speaker": "Teacher",
       "text": "日本は国土が狭いから、同じ規模は難しいけど、似たような取り組みは始まっているよ。例えば、使われていない農地を活用した太陽光発電など、場所や規模に合わせた工夫をしているんだ。",
+      "imagePrompt": "Solar panels in desert landscape, golden hour lighting, environmental technology focus",
       "filename": "great_solar_wall18",
       "duration": 13.8053
     },
     {
       "speaker": "Student",
       "text": "なるほど！環境にやさしい発電って、本当に大切なんですね。",
+      "imagePrompt": "Solar panels in desert landscape, golden hour lighting, environmental technology focus",
       "filename": "great_solar_wall19",
       "duration": 4.4796
     },
     {
       "speaker": "Teacher",
       "text": "その通り。これからの時代は、こういった再生可能エネルギーがますます重要になってくるんだよ。",
+      "imagePrompt": "Future energy landscape showing various renewable sources: solar, wind, and hydro, optimistic visualization",
       "filename": "great_solar_wall20",
       "duration": 7.6701999999999995
     },
     {
       "speaker": "Announcer",
       "text": "ご視聴、ありがとうございました。次回の放送もお楽しみに。",
+      "imagePrompt": "Renewable energy infographic showing solar panels and wind turbines against blue sky, minimalist design",
       "filename": "great_solar_wall21",
       "duration": 4.9759
     }
@@ -162,122 +184,102 @@
     {
       "text": "中国の巨大ソーラーウォールプロジェクト\n先生、ニュースで中国が「グレート・ソーラーウォール」っていう巨大な発電所を作ってるって聞いたんですけど、これって何ですか？",
       "index": 1,
-      "image": "./images/great_solar_wall/1p.png",
-      "json": "```json\n[\"中国\", \"ソーラーウォール\", \"発電所\", \"プロジェクト\"]\n```"
+      "image": "./images/great_solar_wall/1p.png"
     },
     {
       "text": "先生、ニュースで中国が「グレート・ソーラーウォール」っていう巨大な発電所を作ってるって聞いたんですけど、これって何ですか？\nうん、これはすごく面白いプロジェクトなんだ。中国の内モンゴル自治区にあるクブチ砂漠で建設している、世界最大級の太陽光発電所なんだよ。",
       "index": 2,
-      "image": "./images/great_solar_wall/2p.png",
-      "json": "```json\n[\"中国\", \"グレート・ソーラーウォール\", \"発電所\", \"内モンゴル自治区\", \"クブチ砂漠\", \"太陽光発電所\"]\n```"
+      "image": "./images/great_solar_wall/2p.png"
     },
     {
       "text": "うん、これはすごく面白いプロジェクトなんだ。中国の内モンゴル自治区にあるクブチ砂漠で建設している、世界最大級の太陽光発電所なんだよ。\nえ！砂漠に発電所ですか？どれくらい大きいんですか？",
       "index": 3,
-      "image": "./images/great_solar_wall/3p.png",
-      "json": "```json\n[\"クブチ砂漠\", \"内モンゴル自治区\", \"太陽光発電所\", \"世界最大級\"]\n```"
+      "image": "./images/great_solar_wall/3p.png"
     },
     {
       "text": "え！砂漠に発電所ですか？どれくらい大きいんですか？\n長さが約400キロメートルもあるんだよ。東京から名古屋くらいまでの距離だね。幅も5キロメートルあって、とても広大な施設なんだ。",
       "index": 4,
-      "image": "./images/great_solar_wall/4p.png",
-      "json": "```json\n[\"砂漠\", \"発電所\", \"400キロメートル\", \"5キロメートル\", \"東京\", \"名古屋\", \"施設\"]\n```"
+      "image": "./images/great_solar_wall/4p.png"
     },
     {
       "text": "長さが約400キロメートルもあるんだよ。東京から名古屋くらいまでの距離だね。幅も5キロメートルあって、とても広大な施設なんだ。\nすごい大きさですね！でも、なんで砂漠に作るんですか？",
       "index": 5,
-      "image": "./images/great_solar_wall/5p.png",
-      "json": "```json\n[\"400キロメートル\", \"東京\", \"名古屋\", \"5キロメートル\", \"施設\", \"砂漠\"]\n```"
+      "image": "./images/great_solar_wall/5p.png"
     },
     {
       "text": "すごい大きさですね！でも、なんで砂漠に作るんですか？\nいい質問だね。砂漠には3つの大きな利点があるんだ。まず、日差しが強くて雲が少ないから、太陽光発電に最適なんだ。次に、広大な未使用地があるから大規模な施設が建設できる。そして、砂漠化を防ぐ効果もあるんだよ。",
       "index": 6,
-      "image": "./images/great_solar_wall/6p.png",
-      "json": "```json\n[\"砂漠\", \"太陽光発電\", \"未使用地\", \"砂漠化防止\"]\n```"
+      "image": "./images/great_solar_wall/6p.png"
     },
     {
       "text": "いい質問だね。砂漠には3つの大きな利点があるんだ。まず、日差しが強くて雲が少ないから、太陽光発電に最適なんだ。次に、広大な未使用地があるから大規模な施設が建設できる。そして、砂漠化を防ぐ効果もあるんだよ。\n砂漠化を防げるんですか？どうやって？",
       "index": 7,
-      "image": "./images/great_solar_wall/7p.png",
-      "json": "```json\n[\"砂漠\", \"利点\", \"太陽光発電\", \"未使用地\", \"大規模施設\", \"砂漠化防止\"]\n```"
+      "image": "./images/great_solar_wall/7p.png"
     },
     {
       "text": "砂漠化を防げるんですか？どうやって？\nソーラーパネルが砂を覆うことで、風による砂の移動を防ぐんだ。さらに、パネルの下で農業もできるように設計されているんだよ。",
       "index": 8,
-      "image": "./images/great_solar_wall/8p.png",
-      "json": "```json\n[\"砂漠化\", \"防止\", \"ソーラーパネル\", \"風\", \"砂の移動\", \"農業\"]\n```"
+      "image": "./images/great_solar_wall/8p.png"
     },
     {
       "text": "ソーラーパネルが砂を覆うことで、風による砂の移動を防ぐんだ。さらに、パネルの下で農業もできるように設計されているんだよ。\nへぇ！パネルの下で作物が育つんですか？",
       "index": 9,
-      "image": "./images/great_solar_wall/9p.png",
-      "json": "```json\n[\"ソーラーパネル\", \"砂\", \"風\", \"農業\", \"作物\"]\n```"
+      "image": "./images/great_solar_wall/9p.png"
     },
     {
       "text": "へぇ！パネルの下で作物が育つんですか？\nそうなんだ。これを「営農型太陽光発電」って言うんだよ。パネルが強い日差しを遮ってくれるから、むしろ作物を育てやすい環境になるんだ。",
       "index": 10,
-      "image": "./images/great_solar_wall/10p.png",
-      "json": "```json\n[\"営農型太陽光発電\", \"作物\", \"パネル\", \"日差し\"]\n```"
+      "image": "./images/great_solar_wall/10p.png"
     },
     {
       "text": "そうなんだ。これを「営農型太陽光発電」って言うんだよ。パネルが強い日差しを遮ってくれるから、むしろ作物を育てやすい環境になるんだ。\nすごいですね。でも、こんな大きな施設を作るのにお金がかかりそうです...",
       "index": 11,
-      "image": "./images/great_solar_wall/11p.png",
-      "json": "```json\n[\"営農型太陽光発電\", \"パネル\", \"日差し\", \"作物\", \"施設\", \"お金\"]\n```"
+      "image": "./images/great_solar_wall/11p.png"
     },
     {
       "text": "すごいですね。でも、こんな大きな施設を作るのにお金がかかりそうです...\nその通り。約48億ドル、日本円で約7兆円もかかる大規模プロジェクトなんだ。でも、完成すると年間480億キロワット時という膨大な電力を作り出せるんだよ。",
       "index": 12,
-      "image": "./images/great_solar_wall/12p.png",
-      "json": "```json\n[\n    \"施設\",\n    \"48億ドル\",\n    \"7兆円\",\n    \"大規模プロジェクト\",\n    \"480億キロワット時\",\n    \"電力\"\n]\n```"
+      "image": "./images/great_solar_wall/12p.png"
     },
     {
       "text": "その通り。約48億ドル、日本円で約7兆円もかかる大規模プロジェクトなんだ。でも、完成すると年間480億キロワット時という膨大な電力を作り出せるんだよ。\n480億キロワット時？どれくらいの電気なんですか？",
       "index": 13,
-      "image": "./images/great_solar_wall/13p.png",
-      "json": "```json\n[\"48億ドル\", \"日本円\", \"7兆円\", \"大規模プロジェクト\", \"年間480億キロワット時\", \"電力\"]\n```"
+      "image": "./images/great_solar_wall/13p.png"
     },
     {
       "text": "480億キロワット時？どれくらいの電気なんですか？\n北京や天津といった大都市圏の電力需要を賄えるくらいの量なんだ。さらに、このプロジェクトで約5万人の雇用が生まれる予定で、地域の発展にも貢献するんだよ。",
       "index": 14,
-      "image": "./images/great_solar_wall/14p.png",
-      "json": "```json\n[\"480億キロワット時\", \"電力需要\", \"北京\", \"天津\", \"大都市圏\", \"プロジェクト\", \"5万人\", \"雇用\", \"地域の発展\"]\n```"
+      "image": "./images/great_solar_wall/14p.png"
     },
     {
       "text": "北京や天津といった大都市圏の電力需要を賄えるくらいの量なんだ。さらに、このプロジェクトで約5万人の雇用が生まれる予定で、地域の発展にも貢献するんだよ。\n環境にもいいし、電気も作れて、仕事も増えるなんて、すごいプロジェクトですね！",
       "index": 15,
-      "image": "./images/great_solar_wall/15p.png",
-      "json": "```json\n[\n    \"北京\",\n    \"天津\",\n    \"大都市圏\",\n    \"電力需要\",\n    \"プロジェクト\",\n    \"5万人\",\n    \"雇用\",\n    \"地域の発展\",\n    \"環境\",\n    \"電気\",\n    \"仕事\"\n]\n```"
+      "image": "./images/great_solar_wall/15p.png"
     },
     {
       "text": "環境にもいいし、電気も作れて、仕事も増えるなんて、すごいプロジェクトですね！\nそうだね。二千三十年までには、このプロジェクトで年間約3,150万トンのCO2削減も期待できるんだ。これは、地球温暖化対策としても大きな貢献になるよ。",
       "index": 16,
-      "image": "./images/great_solar_wall/16p.png",
-      "json": "```json\n[\"環境\", \"電気\", \"仕事\", \"プロジェクト\", \"二千三十年\", \"CO2削減\", \"地球温暖化対策\"]\n```"
+      "image": "./images/great_solar_wall/16p.png"
     },
     {
       "text": "そうだね。二千三十年までには、このプロジェクトで年間約3,150万トンのCO2削減も期待できるんだ。これは、地球温暖化対策としても大きな貢献になるよ。\n日本でもこういうプロジェクトはできないんですか？",
       "index": 17,
-      "image": "./images/great_solar_wall/17p.png",
-      "json": "```json\n[\n    \"二千三十年\",\n    \"プロジェクト\",\n    \"年間約3,150万トン\",\n    \"CO2削減\",\n    \"地球温暖化対策\",\n    \"日本\"\n]\n```"
+      "image": "./images/great_solar_wall/17p.png"
     },
     {
       "text": "日本でもこういうプロジェクトはできないんですか？\n日本は国土が狭いから、同じ規模は難しいけど、似たような取り組みは始まっているよ。例えば、使われていない農地を活用した太陽光発電など、場所や規模に合わせた工夫をしているんだ。",
       "index": 18,
-      "image": "./images/great_solar_wall/18p.png",
-      "json": "```json\n[\"プロジェクト\", \"日本\", \"国土\", \"農地\", \"太陽光発電\", \"取り組み\"]\n```"
+      "image": "./images/great_solar_wall/18p.png"
     },
     {
       "text": "日本は国土が狭いから、同じ規模は難しいけど、似たような取り組みは始まっているよ。例えば、使われていない農地を活用した太陽光発電など、場所や規模に合わせた工夫をしているんだ。\nなるほど！環境にやさしい発電って、本当に大切なんですね。",
       "index": 19,
-      "image": "./images/great_solar_wall/19p.png",
-      "json": "```json\n[\"日本\", \"国土\", \"農地\", \"太陽光発電\", \"環境\", \"発電\"]\n```"
+      "image": "./images/great_solar_wall/19p.png"
     },
     {
       "text": "なるほど！環境にやさしい発電って、本当に大切なんですね。\nその通り。これからの時代は、こういった再生可能エネルギーがますます重要になってくるんだよ。",
       "index": 20,
-      "image": "./images/great_solar_wall/20p.png",
-      "json": "```json\n[\"環境にやさしい発電\", \"再生可能エネルギー\"]\n```"
+      "image": "./images/great_solar_wall/20p.png"
     }
   ]
 }

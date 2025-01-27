@@ -20,7 +20,7 @@ type ScriptData = {
   speaker: string;
   text: string;
   duration: number; // generated
-  filename: string; // generated
+  imagePrompt: string;
 };
 
 type PodcastScript = {
@@ -89,11 +89,9 @@ async function generateImage(prompt: string): Promise<Buffer> {
 const image_agent = async (namedInputs: {
   row: { text: string; index: number };
   suffix: string;
-  script: ScriptData;
-  keywords: string;
-  prompt: string;
+  script: PodcastScript;
 }) => {
-  const { row, suffix, script, keywords, prompt } = namedInputs;
+  const { row, suffix, script } = namedInputs;
   const relativePath = `./images/${script.filename}/${row.index}${suffix}.png`;
   const imagePath = path.resolve(relativePath);
   if (fs.existsSync(imagePath)) {
@@ -102,9 +100,12 @@ const image_agent = async (namedInputs: {
   }
 
   try {
-    const imageBuffer = await generateImage(prompt);
+    console.log(script.script[row.index]);
+    const imagePrompt = script.script[row.index].imagePrompt;
+    console.log("generating", imagePrompt);
+    const imageBuffer = await generateImage(imagePrompt);
     fs.writeFileSync(imagePath, imageBuffer);
-    console.log("generated");
+    console.log("generated", imagePrompt);
   } catch (error) {
     console.error("Failed to generate image:", error);
     throw error;
@@ -161,30 +162,12 @@ const graph_data: GraphData = {
       isResult: true,
       graph: {
         nodes: {
-          keywords: {
-            agent: "openAIAgent",
-            inputs: {
-              messages: [
-                {
-                  role: "system",
-                  content:
-                    "与えられたテキストからキーワードを抜き出して、JSONのarrayで返して",
-                },
-                {
-                  role: "user",
-                  content: ":row.text",
-                },
-              ],
-            },
-          },
           plain: {
             agent: image_agent,
             inputs: {
               row: ":row",
               script: ":script",
-              keywords: ":keywords.text",
               suffix: "p",
-              prompt: "以下のキーワードに適した画像を生成して。",
             },
           },
           output: {
@@ -193,33 +176,9 @@ const graph_data: GraphData = {
               text: ":row.text",
               index: ":row.index",
               image: ":plain",
-              json: ":keywords.text",
-            },
-            console: {
-              after: true,
             },
             isResult: true,
           },
-          /*
-          anime: {
-            agent: image_agent,
-            inputs: {
-              "row": ":row",
-              "script": ":script",
-              "suffix": "a",
-              "prompt": "以下のテキストに適した画像を、日本のアニメのイラスト風に描いて。",
-            },
-          },
-          water: {
-            agent: image_agent,
-            inputs: {
-              "row": ":row",
-              "script": ":script",
-              "suffix": "w",
-              "prompt": "以下のテキストに適した画像を、水彩画風に描いて。",
-            },
-          }
-          */
         },
       },
     },
