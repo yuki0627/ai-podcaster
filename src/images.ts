@@ -78,6 +78,8 @@ async function generateImage(prompt: string): Promise<Buffer> {
         throw new Error("No base64-encoded image data returned from the API.");
       }
     } else {
+      console.log(response);
+      console.log(responseData);
       throw new Error("No predictions returned from the API.");
     }
   } catch (error) {
@@ -101,9 +103,10 @@ const image_agent = async (namedInputs: {
 
   try {
     const imagePrompt = script.script[row.index].imagePrompt;
+    console.log("generating", imagePrompt);
     const imageBuffer = await generateImage(imagePrompt);
     fs.writeFileSync(imagePath, imageBuffer);
-    console.log("generated", imagePrompt);
+    console.log("generated:", imagePath);
   } catch (error) {
     console.error("Failed to generate image:", error);
     throw error;
