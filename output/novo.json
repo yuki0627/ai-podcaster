@@ -23,91 +23,91 @@
       "text": "米国で活躍するエンジニアが新しい技術やビジネスを分かりやすく解説する、中島聡のLife is beautiful。今日は、世界的な製薬会社による画期的な新薬開発についての解説です。",
       "imagePrompt": "modern pharmaceutical research laboratory with scientists working, clean white environment, advanced equipment",
       "filename": "novo0",
-      "duration": 13.491850000000001
+      "duration": 13.596350000000001
     },
     {
       "speaker": "Student",
       "text": "先生、アメリカでは肥満の人がすごく多いって聞きました。本当ですか？",
       "imagePrompt": "infographic showing obesity statistics in America, pie charts and graphs, professional medical illustration style",
       "filename": "novo1",
-      "duration": 13.64855
+      "duration": 4.76695
     },
     {
       "speaker": "Teacher",
       "text": "その通りだよ。アメリカでは、大人の4割以上が肥満なんだ。これは大きな問題になっていて、糖尿病や心臓病、がんなどの病気にもなりやすくなってしまうんだよ。",
       "imagePrompt": "medical illustration showing connection between obesity and various health conditions, professional healthcare infographic style",
       "filename": "novo2",
-      "duration": 13.021650000000001
+      "duration": 12.7604
     },
     {
       "speaker": "Student",
       "text": "それは大変ですね。でも最近、ノボ・ノルディスクという会社の株価が上がったって聞きました。肥満に効く薬を作っているんですか？",
       "imagePrompt": "stock market display showing rising graph, pharmaceutical company logo, clean business visualization",
       "filename": "novo3",
-      "duration": 12.9955
+      "duration": 7.9799999999999995
     },
     {
       "speaker": "Teacher",
       "text": "この会社は既に「オゼンピック」や「ウェゴビー」という肥満治療薬を作っているんだけど、今回はもっと効果の高い新薬を開発したんだ。実験では、体重の22%も減らすことができたんだよ。",
       "imagePrompt": "modern medical visualization of weight loss progress chart, before-after comparison, clean medical illustration style",
       "filename": "novo4",
-      "duration": 13.021650000000001
+      "duration": 12.9955
     },
     {
       "speaker": "Student",
       "text": "22%も！？それはすごいですね。でも、なぜそんなに注目されているんですか？",
       "imagePrompt": "newspaper headlines and digital news screens showing breakthrough medical development, professional news media style",
       "filename": "novo5",
-      "duration": 5.2894
+      "duration": 5.1849
     },
     {
       "speaker": "Teacher",
       "text": "実はね、この会社は最近ちょっと困ったことが続いていたんだ。他の新薬の実験であまりよくない結果が出たり、アメリカ政府が今ある薬の値段を下げるように言ってきたりしてね。",
       "imagePrompt": "business challenge concept visualization, abstract representation of pharmaceutical pricing and research setbacks",
       "filename": "novo6",
-      "duration": 12.9955
+      "duration": 13.021650000000001
     },
     {
       "speaker": "Student",
       "text": "それで株価も下がっていたんですか？",
       "imagePrompt": "stock market display showing previous decline then recent rise, financial data visualization",
       "filename": "novo7",
-      "duration": 2.1547
+      "duration": 2.07635
     },
     {
       "speaker": "Teacher",
       "text": "その通り。でも今回の新薬は、今までの薬と違って、二つの効果を一つの注射で実現できるんだ。それに、ライバル会社の薬より効果が高そうなんだよ。",
       "imagePrompt": "scientific visualization of dual-action medication mechanism, molecular structure, professional medical illustration",
       "filename": "novo8",
-      "duration": 13.674700000000001
+      "duration": 13.75305
     },
     {
       "speaker": "Student",
       "text": "へぇ、どうやってそんなことができるんですか？",
       "imagePrompt": "detailed molecular diagram showing combination of GLP-1 and amylin hormones, scientific visualization",
       "filename": "novo9",
-      "duration": 3.0951
+      "duration": 3.12125
     },
     {
       "speaker": "Teacher",
       "text": "この新薬は「アミクレチン」というんだけど、GLP-1というホルモンと、アミリンという別のホルモン、この二つの働きを一つの薬で実現したんだ。今までの薬は、二つの注射を打たないといけなかったんだよ。",
       "imagePrompt": "comparison visualization of old vs new treatment methods, single vs double injection, medical illustration style",
       "filename": "novo10",
-      "duration": 14.5106
+      "duration": 14.850200000000001
     },
     {
       "speaker": "Student",
       "text": "一つの注射で済むなら、患者さんも使いやすそうですね。",
       "imagePrompt": "modern medical delivery system visualization, simple and patient-friendly design, clean medical illustration",
       "filename": "novo11",
-      "duration": 3.2779499999999997
+      "duration": 3.0951
     },
     {
       "speaker": "Teacher",
       "text": "そうなんだ。それに、飲み薬のバージョンも研究しているんだよ。もし成功すれば、注射が苦手な人でも使えるようになるね。",
       "imagePrompt": "pharmaceutical research laboratory focused on pill development, scientists working with tablet formulations",
       "filename": "novo12",
-      "duration": 9.99145
+      "duration": 10.148150000000001
     },
     {
       "speaker": "Student",
@@ -121,7 +121,7 @@
       "text": "いい質問だね。今回の実験では、他の肥満治療薬と同じような副作用しか見られなかったって報告されているんだ。でも、まだ初期の実験段階だから、これからもっと詳しく調べていく必要があるんだよ。",
       "imagePrompt": "clinical trial process visualization, phases of drug testing, professional medical research illustration",
       "filename": "novo14",
-      "duration": 15.137550000000001
+      "duration": 14.432250000000002
     },
     {
       "speaker": "Student",
@@ -135,14 +135,14 @@
       "text": "その通り！肥満を治療することで、糖尿病や心臓病のリスクも下がるんだ。だから、安全で効果的な薬を開発することは、多くの人の健康に役立つんだよ。ただし、新薬の開発には時間がかかるし、安全性も大切だから、慎重に進めていく必要があるんだ。これからの研究結果に期待しようね。",
       "imagePrompt": "comprehensive healthcare visualization showing connection between obesity treatment and overall health improvement, professional medical illustration",
       "filename": "novo16",
-      "duration": 23.5004
+      "duration": 23.631
     },
     {
       "speaker": "Announcer",
       "text": "ご視聴、ありがとうございました。次回の放送もお楽しみに。",
       "imagePrompt": "podcast outro screen with 'Life is beautiful' logo and 'Thank you for watching' message, professional broadcast style",
       "filename": "novo17",
-      "duration": 4.9759
+      "duration": 4.9237
     }
   ],
   "filename": "novo",
@@ -157,55 +157,71 @@
       "index": 0
     },
     {
-      "index": 1
+      "index": 1,
+      "image": "./images/novo/1p.png"
     },
     {
-      "index": 2
+      "index": 2,
+      "image": "./images/novo/2p.png"
     },
     {
-      "index": 3
+      "index": 3,
+      "image": "./images/novo/3p.png"
     },
     {
-      "index": 4
+      "index": 4,
+      "image": "./images/novo/4p.png"
     },
     {
-      "index": 5
+      "index": 5,
+      "image": "./images/novo/5p.png"
     },
     {
       "index": 6
     },
     {
-      "index": 7
+      "index": 7,
+      "image": "./images/novo/7p.png"
     },
     {
-      "index": 8
+      "index": 8,
+      "image": "./images/novo/8p.png"
     },
     {
-      "index": 9
+      "index": 9,
+      "image": "./images/novo/9p.png"
     },
     {
-      "index": 10
+      "index": 10,
+      "image": "./images/novo/10p.png"
     },
     {
-      "index": 11
+      "index": 11,
+      "image": "./images/novo/11p.png"
     },
     {
-      "index": 12
+      "index": 12,
+      "image": "./images/novo/12p.png"
     },
     {
-      "index": 13
+      "index": 13,
+      "image": "./images/novo/13p.png"
     },
     {
-      "index": 14
+      "index": 14,
+      "image": "./images/novo/14p.png"
     },
     {
-      "index": 15
+      "index": 15,
+      "image": "./images/novo/15p.png"
     },
     {
-      "index": 16
+      "index": 16,
+      "image": "./images/novo/16p.png"
     },
     {
-      "index": 17
+      "index": 17,
+      "image": "./images/novo/17p.png"
     }
   ]
 }

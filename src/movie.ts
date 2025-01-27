@@ -168,24 +168,26 @@ const main = async () => {
   const imageInfo = jsonDataTm.imageInfo;
   await imageInfo.forEach(async (element: { index: number; image: string }) => {
     const { index, image } = element;
-    const imagePath = `./scratchpad/${name}_${index}.png`;
-    const imageText = await loadImage(imagePath);
-    const imageBG = await loadImage(image);
-    const bgWidth = imageBG.width;
-    const bgHeight = imageBG.height;
-    const viewWidth = (bgWidth / bgHeight) * c_imageHeight;
-    const canvas = createCanvas(c_imageWidth, c_imageHeight);
-    const ctx = canvas.getContext("2d");
-    ctx.drawImage(
-      imageBG,
-      (c_imageWidth - viewWidth) / 2,
-      0,
-      viewWidth,
-      c_imageHeight,
-    );
-    ctx.drawImage(imageText, 0, 0);
-    const buffer = canvas.toBuffer("image/png");
-    fs.writeFileSync(imagePath, buffer);
+    if (image) {
+      const imagePath = `./scratchpad/${name}_${index}.png`;
+      const imageText = await loadImage(imagePath);
+      const imageBG = await loadImage(image);
+      const bgWidth = imageBG.width;
+      const bgHeight = imageBG.height;
+      const viewWidth = (bgWidth / bgHeight) * c_imageHeight;
+      const canvas = createCanvas(c_imageWidth, c_imageHeight);
+      const ctx = canvas.getContext("2d");
+      ctx.drawImage(
+        imageBG,
+        (c_imageWidth - viewWidth) / 2,
+        0,
+        viewWidth,
+        c_imageHeight,
+      );
+      ctx.drawImage(imageText, 0, 0);
+      const buffer = canvas.toBuffer("image/png");
+      fs.writeFileSync(imagePath, buffer);
+    }
   });
 
   const audioPath = path.resolve("./output/" + name + "_bgm.mp3");

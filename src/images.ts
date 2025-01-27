@@ -37,7 +37,7 @@ type PodcastScript = {
   imageInfo: any[]; // generated
 };
 
-async function generateImage(prompt: string): Promise<Buffer> {
+async function generateImage(prompt: string): Promise<Buffer | undefined> {
   try {
     // Prepare the payload for the API request
     const payload = {
@@ -49,6 +49,7 @@ async function generateImage(prompt: string): Promise<Buffer> {
       parameters: {
         sampleCount: 1,
         aspectRatio: "16:9",
+        safetySetting: "block_only_high",
       },
     };
 
@@ -79,8 +80,8 @@ async function generateImage(prompt: string): Promise<Buffer> {
       }
     } else {
       console.log(response);
-      console.log(responseData);
-      throw new Error("No predictions returned from the API.");
+      console.log("No predictions returned from the API.", responseData);
+      return undefined;
     }
   } catch (error) {
     console.error("Error generating image:", error);
@@ -103,10 +104,14 @@ const image_agent = async (namedInputs: {
 
   try {
     const imagePrompt = script.script[row.index].imagePrompt;
-    console.log("generating", imagePrompt);
+    console.log("generating", row.index, imagePrompt);
     const imageBuffer = await generateImage(imagePrompt);
-    fs.writeFileSync(imagePath, imageBuffer);
-    console.log("generated:", imagePath);
+    if (imageBuffer) {
+      fs.writeFileSync(imagePath, imageBuffer);
+      console.log("generated:", imagePath);
+    } else {
+      return undefined;
+    }
   } catch (error) {
     console.error("Failed to generate image:", error);
     throw error;
