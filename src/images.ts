@@ -6,7 +6,15 @@ import { GraphAI, GraphData, DefaultResultData } from "graphai";
 import * as agents from "@graphai/agents";
 
 dotenv.config();
-const openai = new OpenAI();
+// const openai = new OpenAI();
+import { GoogleAuth } from "google-auth-library";
+
+const GOOGLE_PROJECT_ID = process.env.GOOGLE_PROJECT_ID; // Your Google Cloud Project ID
+const GOOGLE_IMAGEN_MODEL = "imagen-3.0-fast-generate-001";
+const GOOGLE_IMAGEN_ENDPOINT = `https://us-central1-aiplatform.googleapis.com/v1/projects/${GOOGLE_PROJECT_ID}/locations/us-central1/publishers/google/models/${GOOGLE_IMAGEN_MODEL}:predict`;
+const tokenHolder = {
+  token: "undefined"
+}
 
 type ScriptData = {
   speaker: string;
@@ -29,6 +37,55 @@ type PodcastScript = {
   imageInfo: any[]; // generated
 };
 
+async function generateImage(prompt: string): Promise<Buffer> {
+  try {
+    // Prepare the payload for the API request
+    const payload = {
+      instances: [
+        {
+          prompt: prompt,
+        },
+      ],
+      parameters: {
+        sampleCount: 1,
+        aspectRatio: "16:9",
+      },
+    };
+
+    // Make the API call using fetch
+    const response = await fetch(GOOGLE_IMAGEN_ENDPOINT, {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${tokenHolder.token}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(payload),
+    });
+
+    if (!response.ok) {
+      throw new Error(`Error: ${response.status} - ${response.statusText}`);
+    }
+
+    const responseData: any = await response.json();
+
+    // Parse and return the generated image URL or data
+    const predictions = responseData.predictions;
+    if (predictions && predictions.length > 0) {
+      const base64Image = predictions[0].bytesBase64Encoded;
+      if (base64Image) {
+        return Buffer.from(base64Image, "base64"); // Decode the base64 image to a buffer
+      } else {
+        throw new Error("No base64-encoded image data returned from the API.");
+      }
+    } else {
+      throw new Error("No predictions returned from the API.");
+    }
+  } catch (error) {
+    console.error("Error generating image:", error);
+    throw error;
+  }
+}
+
 const image_agent = async (namedInputs: {
   row: { text: string; index: number };
   suffix: string;
@@ -44,6 +101,16 @@ const image_agent = async (namedInputs: {
     return relativePath;
   }
 
+  try {
+    const imageBuffer = await generateImage(prompt);
+    fs.writeFileSync(imagePath, imageBuffer);
+    console.log("generated");
+  } catch (error) {
+    console.error("Failed to generate image:", error);
+    throw error;
+  }
+
+  /* Dalle.3
   const response = await openai.images.generate({
     model: "dall-e-3",
     prompt: prompt ? `${prompt}\n${keywords}` : row.text,
@@ -52,6 +119,7 @@ const image_agent = async (namedInputs: {
   });
 
   const imageRes = await fetch(response.data[0].url!);
+ 
   const writer = fs.createWriteStream(imagePath);
   if (imageRes.body) {
     const reader = imageRes.body.getReader();
@@ -76,6 +144,7 @@ const image_agent = async (namedInputs: {
     writer.on("finish", resolve);
     writer.on("error", reject);
   });
+  */
   return relativePath;
 };
 
@@ -158,6 +227,13 @@ const graph_data: GraphData = {
 };
 
 const main = async () => {
+  const auth = new GoogleAuth({
+    scopes: ["https://www.googleapis.com/auth/cloud-platform"],
+  });
+  const client = await auth.getClient();
+  const accessToken = await client.getAccessToken();
+  tokenHolder.token = accessToken.token!;
+
   const arg2 = process.argv[2];
   const scriptPath = path.resolve(arg2);
   const parsedPath = path.parse(scriptPath);
