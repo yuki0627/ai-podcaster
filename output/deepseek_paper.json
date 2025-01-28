@@ -132,10 +132,10 @@
     },
     {
       "speaker": "Teacher",
-      "text": "さらによくなったんだ。AIMEの成績は79.8パーセントまで上がって、世界最高レベルのAIと同じくらいの成績になったんだよ。数学以外でも、プログラミングのコンテストで上位3.7パーセントに入るなど、すごい成績を収めたんだ。",
+      "text": "さらによくなったんだ。AIMEの成績は78パーセントまで上がって、世界最高レベルのAIと同じくらいの成績になったんだよ。数学以外でも、プログラミングのコンテストで上位4パーセントに入るなど、すごい成績を収めたんだ。",
       "imagePrompt": "Trophy display showing multiple achievements across different domains, with floating percentage scores and ranking indicators, celebratory tech aesthetic",
       "filename": "deepseek_paper16",
-      "duration": 20.12695
+      "duration": 17.01835
     },
     {
       "speaker": "Student",
@@ -146,10 +146,10 @@
     },
     {
       "speaker": "Teacher",
-      "text": "うん、例えば一般的な知識を問うMMULというテストで90.8パーセントの正解率を記録したり、長い文章を理解して回答するのも得意になったりしたんだ。特に面白いのは、文章を書くときの「人間らしさ」も向上して、AlpacaEvalという評価で87.6パーセントという高い評価を得たんだよ。",
+      "text": "うん、例えば一般的な知識を問うMMULというテストで91パーセントの正解率を記録したり、長い文章を理解して回答するのも得意になったりしたんだ。特に面白いのは、文章を書くときの「人間らしさ」も向上して、AlpacaEvalという評価で88パーセントという高い評価を得たんだよ。",
       "imagePrompt": "AI-generated text samples with natural language flow indicators, showing human-like writing patterns, with high score overlays, professional visualization",
       "filename": "deepseek_paper18",
-      "duration": 23.3661
+      "duration": 20.72775
     },
     {
       "speaker": "Student",
@@ -160,10 +160,10 @@
     },
     {
       "speaker": "Teacher",
-      "text": "実はそこにも工夫があるんだ。「蒸留」という技術を使って、大きなAIの知識を小さなAIに移すことができるようになったんだよ。例えば、7Bモデルという比較的小さなAIでも、AIMEで55.5パーセントの正解率を達成できたんだ。",
+      "text": "実はそこにも工夫があるんだ。「蒸留」という技術を使って、大きなAIの知識を小さなAIに移すことができるようになったんだよ。例えば、7Bモデルという比較的小さなAIでも、AIMEで56パーセントの正解率を達成できたんだ。",
       "imagePrompt": "Knowledge distillation process visualization, showing large AI model condensing into smaller efficient model, with performance metrics, tech transfer illustration",
       "filename": "deepseek_paper20",
-      "duration": 19.7351
+      "duration": 17.20125
     },
     {
       "speaker": "Student",
@@ -231,91 +231,120 @@
   },
   "imageInfo": [
     {
-      "index": 0
+      "index": 0,
+      "image": "./images/deepseek_paper/0p.png"
     },
     {
-      "index": 1
+      "index": 1,
+      "image": "./images/deepseek_paper/1p.png"
     },
     {
-      "index": 2
+      "index": 2,
+      "image": "./images/deepseek_paper/2p.png"
     },
     {
-      "index": 3
+      "index": 3,
+      "image": "./images/deepseek_paper/3p.png"
     },
     {
-      "index": 4
+      "index": 4,
+      "image": "./images/deepseek_paper/4p.png"
     },
     {
-      "index": 5
+      "index": 5,
+      "image": "./images/deepseek_paper/5p.png"
     },
     {
-      "index": 6
+      "index": 6,
+      "image": "./images/deepseek_paper/6p.png"
     },
     {
-      "index": 7
+      "index": 7,
+      "image": "./images/deepseek_paper/7p.png"
     },
     {
-      "index": 8
+      "index": 8,
+      "image": "./images/deepseek_paper/8p.png"
     },
     {
-      "index": 9
+      "index": 9,
+      "image": "./images/deepseek_paper/9p.png"
     },
     {
-      "index": 10
+      "index": 10,
+      "image": "./images/deepseek_paper/10p.png"
     },
     {
-      "index": 11
+      "index": 11,
+      "image": "./images/deepseek_paper/11p.png"
     },
     {
-      "index": 12
+      "index": 12,
+      "image": "./images/deepseek_paper/12p.png"
     },
     {
-      "index": 13
+      "index": 13,
+      "image": "./images/deepseek_paper/13p.png"
     },
     {
-      "index": 14
+      "index": 14,
+      "image": "./images/deepseek_paper/14p.png"
     },
     {
-      "index": 15
+      "index": 15,
+      "image": "./images/deepseek_paper/15p.png"
     },
     {
-      "index": 16
+      "index": 16,
+      "image": "./images/deepseek_paper/16p.png"
     },
     {
-      "index": 17
+      "index": 17,
+      "image": "./images/deepseek_paper/17p.png"
     },
     {
-      "index": 18
+      "index": 18,
+      "image": "./images/deepseek_paper/18p.png"
     },
     {
-      "index": 19
+      "index": 19,
+      "image": "./images/deepseek_paper/19p.png"
     },
     {
-      "index": 20
+      "index": 20,
+      "image": "./images/deepseek_paper/20p.png"
     },
     {
-      "index": 21
+      "index": 21,
+      "image": "./images/deepseek_paper/21p.png"
     },
     {
-      "index": 22
+      "index": 22,
+      "image": "./images/deepseek_paper/22p.png"
     },
     {
-      "index": 23
+      "index": 23,
+      "image": "./images/deepseek_paper/23p.png"
     },
     {
-      "index": 24
+      "index": 24,
+      "image": "./images/deepseek_paper/24p.png"
     },
     {
-      "index": 25
+      "index": 25,
+      "image": "./images/deepseek_paper/25p.png"
     },
     {
-      "index": 26
+      "index": 26,
+      "image": "./images/deepseek_paper/26p.png"
     },
     {
-      "index": 27
+      "index": 27,
+      "image": "./images/deepseek_paper/27p.png"
     },
     {
-      "index": 28
+      "index": 28,
+      "image": "./images/deepseek_paper/28p.png"
     }
   ]
 }

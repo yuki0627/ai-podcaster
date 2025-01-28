@@ -92,7 +92,7 @@
     },
     {
       "speaker": "Teacher",
-      "text": "さらによくなったんだ。AIMEの成績は79.8パーセントまで上がって、世界最高レベルのAIと同じくらいの成績になったんだよ。数学以外でも、プログラミングのコンテストで上位3.7パーセントに入るなど、すごい成績を収めたんだ。",
+      "text": "さらによくなったんだ。AIMEの成績は78パーセントまで上がって、世界最高レベルのAIと同じくらいの成績になったんだよ。数学以外でも、プログラミングのコンテストで上位4パーセントに入るなど、すごい成績を収めたんだ。",
       "imagePrompt": "Trophy display showing multiple achievements across different domains, with floating percentage scores and ranking indicators, celebratory tech aesthetic"
     },
     {
@@ -102,7 +102,7 @@
     },
     {
       "speaker": "Teacher",
-      "text": "うん、例えば一般的な知識を問うMMULというテストで90.8パーセントの正解率を記録したり、長い文章を理解して回答するのも得意になったりしたんだ。特に面白いのは、文章を書くときの「人間らしさ」も向上して、AlpacaEvalという評価で87.6パーセントという高い評価を得たんだよ。",
+      "text": "うん、例えば一般的な知識を問うMMULというテストで91パーセントの正解率を記録したり、長い文章を理解して回答するのも得意になったりしたんだ。特に面白いのは、文章を書くときの「人間らしさ」も向上して、AlpacaEvalという評価で88パーセントという高い評価を得たんだよ。",
       "imagePrompt": "AI-generated text samples with natural language flow indicators, showing human-like writing patterns, with high score overlays, professional visualization"
     },
     {
@@ -112,7 +112,7 @@
     },
     {
       "speaker": "Teacher",
-      "text": "実はそこにも工夫があるんだ。「蒸留」という技術を使って、大きなAIの知識を小さなAIに移すことができるようになったんだよ。例えば、7Bモデルという比較的小さなAIでも、AIMEで55.5パーセントの正解率を達成できたんだ。",
+      "text": "実はそこにも工夫があるんだ。「蒸留」という技術を使って、大きなAIの知識を小さなAIに移すことができるようになったんだよ。例えば、7Bモデルという比較的小さなAIでも、AIMEで56パーセントの正解率を達成できたんだ。",
       "imagePrompt": "Knowledge distillation process visualization, showing large AI model condensing into smaller efficient model, with performance metrics, tech transfer illustration"
     },
     {
