@@ -3,12 +3,12 @@ import path from "path";
 import ffmpeg from "fluent-ffmpeg";
 import { createCanvas, loadImage } from "canvas";
 
-const c_imageWidth = 1280; // not 1920
-const c_imageHeight = 720; // not 1080
+const canvasWidth = 1280; // not 1920
+const canvasHeight = 720; // not 1080
 
 async function renderJapaneseTextToPNG(text: string, outputFilePath: string) {
   // const columns = Math.sqrt(text.length / 2) * 2;
-  const fontSize = 40; // c_imageWidth / Math.max(columns, 20);
+  const fontSize = 40; // canvasWidth / Math.max(columns, 20);
   const lineHeight = fontSize * 1.2;
 
   const lines: string[] = [];
@@ -31,7 +31,7 @@ async function renderJapaneseTextToPNG(text: string, outputFilePath: string) {
       lines.push(currentLine);
       currentLine = "";
       currentWidth = 0;
-    } else if (currentWidth + charWidth > c_imageWidth) {
+    } else if (currentWidth + charWidth > canvasWidth) {
       lines.push(currentLine);
       currentLine = char;
       currentWidth = charWidth;
@@ -46,19 +46,19 @@ async function renderJapaneseTextToPNG(text: string, outputFilePath: string) {
     lines.push(currentLine);
   }
 
-  const imageHeight = lines.length * lineHeight;
-  const textTop = c_imageHeight - imageHeight;
+  const textHeight = lines.length * lineHeight;
+  const textTop = canvasHeight - textHeight;
 
   // Create a canvas and a drawing context
-  const canvas = createCanvas(c_imageWidth, c_imageHeight);
+  const canvas = createCanvas(canvasWidth, canvasHeight);
   const context = canvas.getContext("2d");
 
   // Set background color
-  context.fillStyle = "rgba(0, 0, 0, 0.333)";
-  context.fillRect(0, textTop, c_imageWidth, imageHeight);
+  context.fillStyle = "rgba(0, 0, 0, 0.5)";
+  context.fillRect(0, textTop, canvasWidth, textHeight);
 
   // Set text styles
-  context.font = "bold 40px Arial";
+  context.font = `bold ${fontSize}px Arial`;
   context.fillStyle = "#ffffff";
   context.textAlign = "center";
   context.textBaseline = "top";
@@ -70,7 +70,7 @@ async function renderJapaneseTextToPNG(text: string, outputFilePath: string) {
   context.shadowBlur = 10;
 
   lines.forEach((line:string, index:number) => {
-    context.fillText(line, c_imageWidth / 2, textTop + lineHeight * index);
+    context.fillText(line, canvasWidth / 2, textTop + lineHeight * index);
   });
 
   // Save the image
@@ -104,7 +104,7 @@ const createVideo = (
   images.forEach((image, index) => {
     // Add filter for each image
     filterComplexParts.push(
-      `[${index}:v]scale=${c_imageWidth}:${c_imageHeight},setsar=1,format=yuv420p,trim=duration=${image.duration},setpts=PTS+${startTime}/TB[v${index}]`,
+      `[${index}:v]scale=${canvasWidth}:${canvasHeight},setsar=1,format=yuv420p,trim=duration=${image.duration},setpts=PTS+${startTime}/TB[v${index}]`,
     );
     startTime = image.duration; // Update start time for the next image
   });
@@ -178,15 +178,15 @@ const main = async () => {
       const imageBG = await loadImage(image);
       const bgWidth = imageBG.width;
       const bgHeight = imageBG.height;
-      const viewWidth = (bgWidth / bgHeight) * c_imageHeight;
-      const canvas = createCanvas(c_imageWidth, c_imageHeight);
+      const viewWidth = (bgWidth / bgHeight) * canvasHeight;
+      const canvas = createCanvas(canvasWidth, canvasHeight);
       const ctx = canvas.getContext("2d");
       ctx.drawImage(
         imageBG,
-        (c_imageWidth - viewWidth) / 2,
+        (canvasWidth - viewWidth) / 2,
         0,
         viewWidth,
-        c_imageHeight,
+        canvasHeight,
       );
       ctx.drawImage(imageText, 0, 0);
       const buffer = canvas.toBuffer("image/png");
