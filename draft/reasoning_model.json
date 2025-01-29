@@ -43,7 +43,7 @@
     },
     {
       "speaker": "Teacher",
-      "text": "（笑）そうそう。それと同じように、AIにも「考える過程」を表現させるようにしたんです。",
+      "text": "（笑）そうそう。それと同じように、AIにも「考える過程」を表現させるようにしたんだよ。",
       "imagePrompt": "Digital interface showing step-by-step problem solving process with progress bars and connecting lines, futuristic style"
     },
     {
@@ -148,7 +148,7 @@
     },
     {
       "speaker": "Announcer",
-      "text": "ご視聴ありがとうございました。次回の放送もお楽しみに。",
+      "text": "ご視聴、ありがとうございました。次回の放送もお楽しみに。",
       "imagePrompt": "Elegant closing banner with tech elements fading into background, professional broadcast style"
     }
   ]

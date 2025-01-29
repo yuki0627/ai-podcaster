@@ -1,0 +1,339 @@
+{
+  "title": "AIの思考プロセス - Chain of Thoughtの可能性",
+  "description": "最新のAI技術であるChain of Thought（思考の連鎖）について、その仕組みと将来性を高校生向けにわかりやすく解説する対話形式の台本",
+  "reference": "https://www.interconnects.ai/p/why-reasoning-models-will-generalize",
+  "tts": "nijivoice",
+  "voices": [
+    "afd7df65-0fdc-4d31-ae8b-a29f0f5eed62",
+    "a7619e48-bf6a-4f9f-843f-40485651257f",
+    "bc06c63f-fef6-43b6-92f7-67f919bd5dae"
+  ],
+  "charactors": [
+    "春玲",
+    "森野太郎",
+    "山田先生"
+  ],
+  "speakers": [
+    "Announcer",
+    "Student",
+    "Teacher"
+  ],
+  "script": [
+    {
+      "speaker": "Announcer",
+      "text": "米国で活躍するエンジニアが新しい技術やビジネスを分かりやすく解説する、中島聡のLife is beautiful。",
+      "imagePrompt": "Abstract tech background with glowing circuit patterns and binary code, modern minimalist design, soft blue tones",
+      "filename": "reasoning_model0",
+      "duration": 7.8755
+    },
+    {
+      "speaker": "Announcer",
+      "text": "今日は、最新のAI技術「Chain of Thought（思考の連鎖）」についての解説です。",
+      "imagePrompt": "Connected neural network nodes forming a chain pattern, abstract visualization of thought processes, clean modern style",
+      "filename": "reasoning_model1",
+      "duration": 4.7408
+    },
+    {
+      "speaker": "Student",
+      "text": "先生、最近よく聞く「Chain of Thought」って何ですか？新しいAIの技術なんですよね？",
+      "imagePrompt": "Question mark made of interconnected glowing dots, representing AI connections, floating in abstract space",
+      "filename": "reasoning_model2",
+      "duration": 5.6812499999999995
+    },
+    {
+      "speaker": "Teacher",
+      "text": "そうだね。簡単に言うと、AIが人間のように「考える過程」を示しながら結論を導き出す方法なんだ。",
+      "imagePrompt": "Split screen showing digital brain on one side and human brain on other side, connected by flowing light streams",
+      "filename": "reasoning_model3",
+      "duration": 8.37185
+    },
+    {
+      "speaker": "Teacher",
+      "text": "例えば、数学の問題を解くとき、私たちは「まずこれを計算して、次にこうして...」という風に段階を踏んで解いていくでしょう？",
+      "imagePrompt": "Mathematical equations and symbols flowing in steps, each step highlighted with gentle glow, clean whitespace background",
+      "filename": "reasoning_model4",
+      "duration": 8.815900000000001
+    },
+    {
+      "speaker": "Student",
+      "text": "はい！途中の計算を書かないと、先生に怒られますよね（笑）",
+      "imagePrompt": "Notebook page showing step-by-step math problem solving, each step connected by arrows, clean and organized layout",
+      "filename": "reasoning_model5",
+      "duration": 3.72205
+    },
+    {
+      "speaker": "Teacher",
+      "text": "（笑）そうそう。それと同じように、AIにも「考える過程」を表現させるようにしたんだよ。",
+      "imagePrompt": "Digital interface showing step-by-step problem solving process with progress bars and connecting lines, futuristic style",
+      "filename": "reasoning_model6",
+      "duration": 6.647749999999999
+    },
+    {
+      "speaker": "Teacher",
+      "text": "これまでのAIは、質問されたら答えだけを出していたんだけど、新しいAIは「どうやってその答えにたどり着いたか」も説明できるようになったんだよ。",
+      "imagePrompt": "Split screen: simple input/output diagram on left, complex flowchart with multiple steps on right, modern tech style",
+      "filename": "reasoning_model7",
+      "duration": 8.815900000000001
+    },
+    {
+      "speaker": "Student",
+      "text": "へぇ！でも、なんでそんな方法を思いついたんですか？",
+      "imagePrompt": "Lightbulb transforming into a network of connected thoughts, representing innovation, subtle tech elements",
+      "filename": "reasoning_model8",
+      "duration": 3.1995999999999998
+    },
+    {
+      "speaker": "Teacher",
+      "text": "実は、最初はプログラミングや数学の問題を解くために開発された方法なんだ。",
+      "imagePrompt": "Code snippets and mathematical formulas interweaving together, forming a coherent pattern, tech-minimal style",
+      "filename": "reasoning_model9",
+      "duration": 5.4460999999999995
+    },
+    {
+      "speaker": "Teacher",
+      "text": "これらの分野では、一つ間違えると全く違う結果になってしまうから、途中経過を確認することがとても大切なんだよ。",
+      "imagePrompt": "Branching paths diagram showing correct vs incorrect problem-solving routes, highlighted decision points",
+      "filename": "reasoning_model10",
+      "duration": 7.9799999999999995
+    },
+    {
+      "speaker": "Student",
+      "text": "なるほど！テストでも、答えは合ってても過程が間違ってると減点されますもんね。",
+      "imagePrompt": "Two parallel problem-solving paths: one with clear logical steps, one with jumbled steps but same answer",
+      "filename": "reasoning_model11",
+      "duration": 4.7408
+    },
+    {
+      "speaker": "Teacher",
+      "text": "その通り。でもね、面白いことに、この方法が予想以上に色んな分野で効果を発揮し始めているんだ。",
+      "imagePrompt": "Multiple industry icons connected by glowing lines, showing expansion of technology across different fields",
+      "filename": "reasoning_model12",
+      "duration": 8.63305
+    },
+    {
+      "speaker": "Teacher",
+      "text": "例えば、文章を書くときや、安全性を判断するとき、さらには創造的な作業でも活用されているんだよ。",
+      "imagePrompt": "Various symbols representing writing, safety, and creativity, connected by AI processing flows",
+      "filename": "reasoning_model13",
+      "duration": 7.5098
+    },
+    {
+      "speaker": "Student",
+      "text": "えっ！数学以外でも使えるんですか？",
+      "imagePrompt": "Diverse icons (art, music, writing) emerging from a central AI core, showing versatility",
+      "filename": "reasoning_model14",
+      "duration": 2.651
+    },
+    {
+      "speaker": "Teacher",
+      "text": "うん。例えば、小説を書くときでも「まず登場人物の性格を考えて、次にストーリーの展開を組み立てて...」というように、段階を踏んで考えることで、より良い作品が書けるようになってきているんだ。",
+      "imagePrompt": "Storyboard-style flowchart showing novel writing process, character profiles to plot points, clean minimal design",
+      "filename": "reasoning_model15",
+      "duration": 14.69345
+    },
+    {
+      "speaker": "Student",
+      "text": "すごいですね！でも、そうやって考える過程を見せるのって、AIにとって時間がかかりそうですけど...",
+      "imagePrompt": "Digital hourglass filled with flowing data particles, representing processing time",
+      "filename": "reasoning_model16",
+      "duration": 6.28205
+    },
+    {
+      "speaker": "Teacher",
+      "text": "鋭い指摘だね。確かに、一つ一つの段階を示しながら考えるので、単に答えだけを出すよりも時間はかかるんだ。でも、その分、より正確で信頼できる結果が得られるんだよ。",
+      "imagePrompt": "Balance scale weighing speed (lightning bolt) against accuracy (checkmark), with accuracy weighing more",
+      "filename": "reasoning_model17",
+      "duration": 14.30165
+    },
+    {
+      "speaker": "Student",
+      "text": "人間も、急いで結論を出すより、じっくり考えた方がいい答えが出せますもんね。",
+      "imagePrompt": "Two paths: fast rushed path (blurry/chaotic) vs. methodical path (clear/structured) leading to solution",
+      "filename": "reasoning_model18",
+      "duration": 4.7408
+    },
+    {
+      "speaker": "Teacher",
+      "text": "そうなんだ。実は、この「Chain of Thought」という方法は、人間の脳の働き方からヒントを得ているんだよ。私たちも、複雑な問題を解くときは、いくつかの段階に分けて考えているでしょう？",
+      "imagePrompt": "Human brain structure transitioning into digital neural network, showing similarity in pattern",
+      "filename": "reasoning_model19",
+      "duration": 14.5106
+    },
+    {
+      "speaker": "Student",
+      "text": "なるほど！でも、これからのAIはみんなこの方法を使うようになるんですか？",
+      "imagePrompt": "Multiple AI systems with some showing simple processing and others showing detailed chain of thought",
+      "filename": "reasoning_model20",
+      "duration": 4.9237
+    },
+    {
+      "speaker": "Teacher",
+      "text": "それは場合によるね。例えば、単純な計算や簡単な質問には、従来の速い方法の方が適しているかもしれない。",
+      "imagePrompt": "Split screen showing simple tasks with quick solutions vs complex problems with detailed analysis",
+      "filename": "reasoning_model21",
+      "duration": 8.5808
+    },
+    {
+      "speaker": "Teacher",
+      "text": "でも、複雑な問題や、正確さが重要な場面では、この新しい方法が活躍すると考えられているんだ。",
+      "imagePrompt": "Complex maze with multiple paths, showing AI choosing optimal route through detailed analysis",
+      "filename": "reasoning_model22",
+      "duration": 7.66655
+    },
+    {
+      "speaker": "Student",
+      "text": "AIも、状況に応じて使い分けが必要なんですね。",
+      "imagePrompt": "AI system with multiple processing modes, adapting to different types of tasks, shown as flexible pathway system",
+      "filename": "reasoning_model23",
+      "duration": 3.4347
+    },
+    {
+      "speaker": "Teacher",
+      "text": "その通り。これからのAIは、より人間らしく、柔軟に考えられるようになっていくと期待されているんだ。",
+      "imagePrompt": "Futuristic AI interface showing adaptive decision making, blending human-like intuition with computational power",
+      "filename": "reasoning_model24",
+      "duration": 8.16285
+    },
+    {
+      "speaker": "Teacher",
+      "text": "でも大切なのは、AIはあくまでも私たちの助けとなる道具だということ。人間の判断力や創造性は、まだまだAIには真似できない大切なものだよ。",
+      "imagePrompt": "Human hand and AI working together, complementary tools joining to solve problems, harmonious collaboration",
+      "filename": "reasoning_model25",
+      "duration": 11.7939
+    },
+    {
+      "speaker": "Student",
+      "text": "今日は未来のAIについて、たくさん勉強になりました！ありがとうございます！",
+      "imagePrompt": "Optimistic future vision of AI and human collaboration, bright and hopeful tech landscape",
+      "filename": "reasoning_model26",
+      "duration": 5.29305
+    },
+    {
+      "speaker": "Announcer",
+      "text": "ご視聴、ありがとうございました。次回の放送もお楽しみに。",
+      "imagePrompt": "Elegant closing banner with tech elements fading into background, professional broadcast style",
+      "filename": "reasoning_model27",
+      "duration": 4.89755
+    }
+  ],
+  "filename": "reasoning_model",
+  "ttsAgent": "ttsNijivoiceAgent",
+  "voicemap": {
+    "Announcer": "afd7df65-0fdc-4d31-ae8b-a29f0f5eed62",
+    "Student": "a7619e48-bf6a-4f9f-843f-40485651257f",
+    "Teacher": "bc06c63f-fef6-43b6-92f7-67f919bd5dae"
+  },
+  "imageInfo": [
+    {
+      "index": 0,
+      "image": "./images/reasoning_model/0p.png"
+    },
+    {
+      "index": 1,
+      "image": "./images/reasoning_model/1p.png"
+    },
+    {
+      "index": 2,
+      "image": "./images/reasoning_model/2p.png"
+    },
+    {
+      "index": 3,
+      "image": "./images/reasoning_model/3p.png"
+    },
+    {
+      "index": 4,
+      "image": "./images/reasoning_model/4p.png"
+    },
+    {
+      "index": 5,
+      "image": "./images/reasoning_model/5p.png"
+    },
+    {
+      "index": 6,
+      "image": "./images/reasoning_model/6p.png"
+    },
+    {
+      "index": 7,
+      "image": "./images/reasoning_model/7p.png"
+    },
+    {
+      "index": 8,
+      "image": "./images/reasoning_model/8p.png"
+    },
+    {
+      "index": 9,
+      "image": "./images/reasoning_model/9p.png"
+    },
+    {
+      "index": 10,
+      "image": "./images/reasoning_model/10p.png"
+    },
+    {
+      "index": 11,
+      "image": "./images/reasoning_model/11p.png"
+    },
+    {
+      "index": 12,
+      "image": "./images/reasoning_model/12p.png"
+    },
+    {
+      "index": 13,
+      "image": "./images/reasoning_model/13p.png"
+    },
+    {
+      "index": 14,
+      "image": "./images/reasoning_model/14p.png"
+    },
+    {
+      "index": 15,
+      "image": "./images/reasoning_model/15p.png"
+    },
+    {
+      "index": 16,
+      "image": "./images/reasoning_model/16p.png"
+    },
+    {
+      "index": 17,
+      "image": "./images/reasoning_model/17p.png"
+    },
+    {
+      "index": 18,
+      "image": "./images/reasoning_model/18p.png"
+    },
+    {
+      "index": 19,
+      "image": "./images/reasoning_model/19p.png"
+    },
+    {
+      "index": 20,
+      "image": "./images/reasoning_model/20p.png"
+    },
+    {
+      "index": 21,
+      "image": "./images/reasoning_model/21p.png"
+    },
+    {
+      "index": 22,
+      "image": "./images/reasoning_model/22p.png"
+    },
+    {
+      "index": 23,
+      "image": "./images/reasoning_model/23p.png"
+    },
+    {
+      "index": 24,
+      "image": "./images/reasoning_model/24p.png"
+    },
+    {
+      "index": 25,
+      "image": "./images/reasoning_model/25p.png"
+    },
+    {
+      "index": 26
+    },
+    {
+      "index": 27,
+      "image": "./images/reasoning_model/27p.png"
+    }
+  ]
+}
