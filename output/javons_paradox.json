@@ -1,0 +1,326 @@
+{
+  "title": "AI開発の効率化とジェボンズのパラドックス",
+  "description": "DeepSeekによるAI開発の効率化とそれに関連するジェボンズのパラドックスについて、高校生向けに分かりやすく解説する会話形式のスクリプト。",
+  "tts": "nijivoice",
+  "voices": [
+    "afd7df65-0fdc-4d31-ae8b-a29f0f5eed62",
+    "a7619e48-bf6a-4f9f-843f-40485651257f",
+    "bc06c63f-fef6-43b6-92f7-67f919bd5dae"
+  ],
+  "charactors": [
+    "春玲",
+    "森野颯太",
+    "ベン・カーター"
+  ],
+  "speakers": [
+    "Announcer",
+    "Student",
+    "Teacher"
+  ],
+  "script": [
+    {
+      "speaker": "Announcer",
+      "text": "米国で活躍するエンジニアが新しい技術やビジネスを分かりやすく解説する、中島聡のLife is beautiful。今日は、人工知能開発の新しい技術と、それが引き起こす意外な経済効果についての解説です。",
+      "imagePrompt": "Futuristic digital landscape with flowing data streams and AI neural networks, soft blue glow, minimal design, abstract representation of technology and economics, clean professional style",
+      "filename": "javons_paradox0",
+      "duration": 15.006950000000002
+    },
+    {
+      "speaker": "Student",
+      "text": "先生、ニュースでDeepSeekっていう会社が、人工知能の開発を少ない計算量でできるようにしたって聞いたんですけど、どういうことですか？",
+      "imagePrompt": "Complex AI computational graph being simplified, showing before and after optimization, circuit-like patterns, blue and white color scheme, technical yet elegant visualization",
+      "filename": "javons_paradox1",
+      "duration": 8.136750000000001
+    },
+    {
+      "speaker": "Teacher",
+      "text": "うん、いい質問だね。簡単に言うと、今までより少ないコンピューターのパワーでAIを作れるようになった、ということなんだ。",
+      "imagePrompt": "Modern server room with some servers dimmed or powered down, representing reduced computing power needs, cool blue lighting, clean minimalist style",
+      "filename": "javons_paradox2",
+      "duration": 9.939200000000001
+    },
+    {
+      "speaker": "Student",
+      "text": "それって、すごくいいことじゃないですか？でも、エヌビデアの株が下がったって聞いたんですが、どうしてでしょうか...",
+      "imagePrompt": "Stock market graph showing decline, with NVIDIA logo floating above, mixed with GPU circuit patterns, professional financial visualization style",
+      "filename": "javons_paradox3",
+      "duration": 6.85675
+    },
+    {
+      "speaker": "Teacher",
+      "text": "そうだね。多くの人は「コンピューターのパワーが少なくて済むなら、エヌビデアのジーピーユー（GPU）の需要も減るだろう」って考えたんだ。",
+      "imagePrompt": "Nvidia GPU cards floating in space with downward arrows, minimalist design, technical illustration style with dark background",
+      "filename": "javons_paradox4",
+      "duration": 8.7637
+    },
+    {
+      "speaker": "Student",
+      "text": "それは当然の考え方な気がします。効率が良くなれば、必要な量は減りますよね？",
+      "imagePrompt": "Abstract visualization of efficiency: simple arrows flowing through a streamlined funnel, minimalist design, cool tones",
+      "filename": "javons_paradox5",
+      "duration": 5.13265
+    },
+    {
+      "speaker": "Teacher",
+      "text": "実は、そうとは限らないんだ。これは「ジェボンズのパラドックス」という経済学の考え方で説明できるんだよ。",
+      "imagePrompt": "Elegant paradox visualization: intertwined arrows forming an impossible figure, mathematical symbols floating around, clean professional style",
+      "filename": "javons_paradox6",
+      "duration": 8.502450000000001
+    },
+    {
+      "speaker": "Student",
+      "text": "ジェボンズのパラドックス？難しそうな名前ですね...",
+      "imagePrompt": "Victorian-era economic graphs and mathematical equations floating in modern digital space, steampunk meets digital art style",
+      "filename": "javons_paradox7",
+      "duration": 3.5652999999999997
+    },
+    {
+      "speaker": "Teacher",
+      "text": "ジェボンズっていう経済学者が発見した面白い法則なんだ。例えば、車の燃費が良くなったとき、どうなると思う？",
+      "imagePrompt": "Split image: vintage portrait of Jevons on one side, modern fuel efficiency gauge on other side, connected by flowing data streams",
+      "filename": "javons_paradox8",
+      "duration": 7.9539
+    },
+    {
+      "speaker": "Student",
+      "text": "ガソリンの消費量が減るんじゃないですか？",
+      "imagePrompt": "Simple fuel gauge showing decreasing levels, clean infographic style, minimal design with focus on the gauge",
+      "filename": "javons_paradox9",
+      "duration": 2.3636999999999997
+    },
+    {
+      "speaker": "Teacher",
+      "text": "実は逆なんだ。燃費が良くなると、むしろガソリンの消費量が増えることが多いんだよ。",
+      "imagePrompt": "Paradoxical illustration: fuel efficiency meter rising alongside increasing fuel consumption graph, clean infographic style",
+      "filename": "javons_paradox10",
+      "duration": 7.22245
+    },
+    {
+      "speaker": "Student",
+      "text": "えっ！？なんでですか？",
+      "imagePrompt": "Question mark formed from intertwined arrows pointing in opposite directions, representing confusion and paradox, minimal design",
+      "filename": "javons_paradox11",
+      "duration": 1.63225
+    },
+    {
+      "speaker": "Teacher",
+      "text": "3つの理由があるんだ。1つ目は、コストが下がるから使う人が増えること。2つ目は、1回あたりの費用が安くなるから、もっと遠くまで行くようになること。3つ目は、節約したお金で新しい使い方が生まれることなんだ。",
+      "imagePrompt": "Three interconnected circular infographics showing: 1) growing user base, 2) expanding travel distances, 3) innovative new applications, professional business style",
+      "filename": "javons_paradox12",
+      "duration": 16.417550000000002
+    },
+    {
+      "speaker": "Student",
+      "text": "なるほど！じゃあ、AI開発でも同じことが起こるんですか？",
+      "imagePrompt": "AI neural network expanding and multiplying rather than shrinking, showing growth pattern, technical visualization style",
+      "filename": "javons_paradox13",
+      "duration": 3.8004
+    },
+    {
+      "speaker": "Teacher",
+      "text": "そうなんだ。マイクロソフトのCEOであるサティア・ナデラさんが、まさにそう指摘したんだよ。",
+      "imagePrompt": "Microsoft logo surrounded by expanding AI network patterns, professional corporate style with technological elements",
+      "filename": "javons_paradox14",
+      "duration": 7.01345
+    },
+    {
+      "speaker": "Student",
+      "text": "具体的にはどういうことが起こるんでしょうか？",
+      "imagePrompt": "Multiple small companies' logos connected to AI cloud services, showing democratization of AI technology, clean business illustration style",
+      "filename": "javons_paradox15",
+      "duration": 2.5987999999999998
+    },
+    {
+      "speaker": "Teacher",
+      "text": "例えば、今まではお金がかかりすぎてAIを作れなかった小さな会社でも、AIを作れるようになる。また、今までより大きなAIを作ろうとする会社も出てくる。結果として、コンピューターへの需要は、むしろ増える可能性が高いんだ。",
+      "imagePrompt": "Growing network of diverse-sized companies connected to AI systems, with upward trending graphs, professional business visualization",
+      "filename": "javons_paradox16",
+      "duration": 19.1343
+    },
+    {
+      "speaker": "Student",
+      "text": "へぇ〜！効率が良くなることで、逆に需要が増えるなんて、面白いですね。",
+      "imagePrompt": "Efficiency spiral leading to expansion rather than reduction, abstract geometric design showing growth pattern",
+      "filename": "javons_paradox17",
+      "duration": 4.45345
+    },
+    {
+      "speaker": "Teacher",
+      "text": "そうだね。このように、技術の進歩は思いもよらない結果をもたらすことがあるんだ。だから、単純に「効率が良くなったから需要は減る」という考え方は、危険かもしれないね。",
+      "imagePrompt": "Complex butterfly effect visualization: small technical improvement leading to massive market expansion, elegant flowing design",
+      "filename": "javons_paradox18",
+      "duration": 12.6559
+    },
+    {
+      "speaker": "Student",
+      "text": "そうなんですね。でも、もう一つ気になることがあります。この技術の進歩で、人工知能の開発はどうなっていくんでしょうか？",
+      "imagePrompt": "Futuristic AI development roadmap with branching paths and possibilities, professional technical visualization",
+      "filename": "javons_paradox19",
+      "duration": 8.424100000000001
+    },
+    {
+      "speaker": "Teacher",
+      "text": "実はね、ここが重要なポイントなんだ。MicrosoftやMetaのような大きな企業は、この効率化を使って投資を減らすんじゃなくて、もっと高度な人工知能の開発を加速させようとしているんだよ。",
+      "imagePrompt": "Major tech companies' logos connected to advanced AI systems, showing acceleration and expansion, corporate tech style",
+      "filename": "javons_paradox20",
+      "duration": 14.30165
+    },
+    {
+      "speaker": "Student",
+      "text": "もっと高度な人工知能というと？",
+      "imagePrompt": "Evolution of AI visualization: from simple patterns to complex consciousness representation, abstract technical art",
+      "filename": "javons_paradox21",
+      "duration": 2.2853
+    },
+    {
+      "speaker": "Teacher",
+      "text": "エージーアイ（AGI、人工汎用知能）やエーエスアイ（ASI、超人工知能）と呼ばれる、人間の能力と同じかそれを超えるような人工知能のことだね。今の効率化技術のおかげで、その開発スピードが予想以上に速くなるかもしれないんだ。",
+      "imagePrompt": "Ascending levels of AI capability from narrow AI to AGI to ASI, shown as increasingly complex neural networks, professional technical style",
+      "filename": "javons_paradox22",
+      "duration": 14.745700000000001
+    },
+    {
+      "speaker": "Student",
+      "text": "それって、すごいことですね。でも少し怖くも感じます...",
+      "imagePrompt": "Dual-tone illustration showing bright and dark aspects of advanced AI development, balanced visualization of progress and concern",
+      "filename": "javons_paradox23",
+      "duration": 3.6437
+    },
+    {
+      "speaker": "Teacher",
+      "text": "そうだね。技術の進歩は私たちの生活を豊かにしてくれる一方で、しっかりと考えていかなければならない課題も多いんだ。だからこそ、君たち若い世代にもこういった技術の動きに関心を持ってもらえると嬉しいな。",
+      "imagePrompt": "Balance scales weighing technology benefits against challenges, surrounded by progressive technology symbols, thoughtful professional style",
+      "filename": "javons_paradox24",
+      "duration": 16.051849999999998
+    },
+    {
+      "speaker": "Student",
+      "text": "はい！今日は本当にためになりました。ありがとうございます！",
+      "imagePrompt": "Sunrise over digital landscape, representing new dawn of AI technology, hopeful and inspiring visualization",
+      "filename": "javons_paradox25",
+      "duration": 4.4049000000000005
+    },
+    {
+      "speaker": "Announcer",
+      "text": "ご視聴、ありがとうございました。次回の放送もお楽しみに。",
+      "imagePrompt": "Elegant closing frame with digital elements and forward-pointing arrows, professional broadcast style",
+      "filename": "javons_paradox26",
+      "duration": 4.9237
+    }
+  ],
+  "filename": "javons_paradox",
+  "ttsAgent": "ttsNijivoiceAgent",
+  "voicemap": {
+    "Announcer": "afd7df65-0fdc-4d31-ae8b-a29f0f5eed62",
+    "Student": "a7619e48-bf6a-4f9f-843f-40485651257f",
+    "Teacher": "bc06c63f-fef6-43b6-92f7-67f919bd5dae"
+  },
+  "imageInfo": [
+    {
+      "index": 0,
+      "image": "./images/javons_paradox/0p.png"
+    },
+    {
+      "index": 1,
+      "image": "./images/javons_paradox/1p.png"
+    },
+    {
+      "index": 2,
+      "image": "./images/javons_paradox/2p.png"
+    },
+    {
+      "index": 3,
+      "image": "./images/javons_paradox/3p.png"
+    },
+    {
+      "index": 4,
+      "image": "./images/javons_paradox/4p.png"
+    },
+    {
+      "index": 5,
+      "image": "./images/javons_paradox/5p.png"
+    },
+    {
+      "index": 6,
+      "image": "./images/javons_paradox/6p.png"
+    },
+    {
+      "index": 7,
+      "image": "./images/javons_paradox/7p.png"
+    },
+    {
+      "index": 8
+    },
+    {
+      "index": 9,
+      "image": "./images/javons_paradox/9p.png"
+    },
+    {
+      "index": 10,
+      "image": "./images/javons_paradox/10p.png"
+    },
+    {
+      "index": 11,
+      "image": "./images/javons_paradox/11p.png"
+    },
+    {
+      "index": 12,
+      "image": "./images/javons_paradox/12p.png"
+    },
+    {
+      "index": 13,
+      "image": "./images/javons_paradox/13p.png"
+    },
+    {
+      "index": 14,
+      "image": "./images/javons_paradox/14p.png"
+    },
+    {
+      "index": 15,
+      "image": "./images/javons_paradox/15p.png"
+    },
+    {
+      "index": 16,
+      "image": "./images/javons_paradox/16p.png"
+    },
+    {
+      "index": 17,
+      "image": "./images/javons_paradox/17p.png"
+    },
+    {
+      "index": 18,
+      "image": "./images/javons_paradox/18p.png"
+    },
+    {
+      "index": 19,
+      "image": "./images/javons_paradox/19p.png"
+    },
+    {
+      "index": 20,
+      "image": "./images/javons_paradox/20p.png"
+    },
+    {
+      "index": 21,
+      "image": "./images/javons_paradox/21p.png"
+    },
+    {
+      "index": 22,
+      "image": "./images/javons_paradox/22p.png"
+    },
+    {
+      "index": 23
+    },
+    {
+      "index": 24,
+      "image": "./images/javons_paradox/24p.png"
+    },
+    {
+      "index": 25,
+      "image": "./images/javons_paradox/25p.png"
+    },
+    {
+      "index": 26,
+      "image": "./images/javons_paradox/26p.png"
+    }
+  ]
+}
