@@ -1,6 +1,5 @@
 import fs from "fs";
 import path from "path";
-import sharp from "sharp";
 import ffmpeg from "fluent-ffmpeg";
 import { createCanvas, loadImage } from "canvas";
 
@@ -49,6 +48,25 @@ async function renderJapaneseTextToPNG(text: string, outputFilePath: string) {
 
   const imageHeight = lines.length * lineHeight;
 
+  // Create a canvas and a drawing context
+  const canvas = createCanvas(c_imageWidth, c_imageHeight);
+  const context = canvas.getContext("2d");
+
+  // Set text styles
+  context.font = "bold 40px Arial";
+  context.fillStyle = "#000000";
+  context.textAlign = "center";
+  context.textBaseline = "bottom";
+
+  lines.forEach((line:string, index:number) => {
+    context.fillText(line, 0, lineHeight * index);
+  });
+
+  // Save the image
+  const buffer = canvas.toBuffer("image/png");
+  fs.writeFileSync(outputFilePath, buffer);
+
+  /*
   // Create SVG content for Japanese text rendering
   const svgContent = `
     <svg width="${c_imageWidth}" height="${Math.max(imageHeight, c_imageHeight)}" xmlns="http://www.w3.org/2000/svg">
@@ -72,7 +90,7 @@ async function renderJapaneseTextToPNG(text: string, outputFilePath: string) {
 
   // Use sharp to convert the SVG to PNG
   await sharp(Buffer.from(svgContent)).png().toFile(outputFilePath);
-
+  */
   console.log(`Image saved to ${outputFilePath}`);
 }
 
