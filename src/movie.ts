@@ -7,8 +7,8 @@ const canvasWidth = 1280; // not 1920
 const canvasHeight = 720; // not 1080
 
 async function renderJapaneseTextToPNG(text: string, outputFilePath: string) {
-  // const columns = Math.sqrt(text.length / 2) * 2;
-  const fontSize = 40; // canvasWidth / Math.max(columns, 20);
+  const fontSize = 40; 
+  const paddingX = 20;
   const lineHeight = fontSize * 1.2;
 
   const lines: string[] = [];
@@ -31,7 +31,7 @@ async function renderJapaneseTextToPNG(text: string, outputFilePath: string) {
       lines.push(currentLine);
       currentLine = "";
       currentWidth = 0;
-    } else if (currentWidth + charWidth > canvasWidth) {
+    } else if (currentWidth + charWidth > canvasWidth - paddingX * 2) {
       lines.push(currentLine);
       currentLine = char;
       currentWidth = charWidth;
