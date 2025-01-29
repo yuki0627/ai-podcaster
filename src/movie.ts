@@ -47,16 +47,15 @@ async function renderJapaneseTextToPNG(text: string, outputFilePath: string) {
   }
 
   const imageHeight = lines.length * lineHeight;
+  const textTop = c_imageHeight - imageHeight;
 
   // Create a canvas and a drawing context
   const canvas = createCanvas(c_imageWidth, c_imageHeight);
   const context = canvas.getContext("2d");
 
   // Set background color
-  context.fillStyle = "#000000";
-  context.globalAlpha = 0.5;
-  context.fillRect(0, 0, c_imageWidth, imageHeight);
-  context.globalAlpha = 1.0;
+  context.fillStyle = "rgba(0, 0, 0, 0.333)";
+  context.fillRect(0, textTop, c_imageWidth, imageHeight);
 
   // Set text styles
   context.font = "bold 40px Arial";
@@ -64,39 +63,20 @@ async function renderJapaneseTextToPNG(text: string, outputFilePath: string) {
   context.textAlign = "center";
   context.textBaseline = "top";
 
+  // Set shadow properties
+  context.shadowColor = "rgba(0, 0, 0, 0.8)";
+  context.shadowOffsetX = 5;
+  context.shadowOffsetY = 5;
+  context.shadowBlur = 10;
+
   lines.forEach((line:string, index:number) => {
-    context.fillText(line, c_imageWidth / 2, lineHeight * index);
+    context.fillText(line, c_imageWidth / 2, textTop + lineHeight * index);
   });
 
   // Save the image
   const buffer = canvas.toBuffer("image/png");
   fs.writeFileSync(outputFilePath, buffer);
 
-  /*
-  // Create SVG content for Japanese text rendering
-  const svgContent = `
-    <svg width="${c_imageWidth}" height="${Math.max(imageHeight, c_imageHeight)}" xmlns="http://www.w3.org/2000/svg">
-      <text x="0" y="${fontSize}" font-size="${fontSize}" font-family="Arial" fill="black">
-        ${lines.map((line, index) => `<tspan x="2" y="${fontSize + index * lineHeight + 2}">${line}</tspan>`).join("")}
-      </text>
-      <text x="0" y="${fontSize}" font-size="${fontSize}" font-family="Arial" fill="black">
-        ${lines.map((line, index) => `<tspan x="-2" y="${fontSize + index * lineHeight - 2}">${line}</tspan>`).join("")}
-      </text>
-      <text x="0" y="${fontSize}" font-size="${fontSize}" font-family="Arial" fill="black">
-        ${lines.map((line, index) => `<tspan x="2" y="${fontSize + index * lineHeight - 2}">${line}</tspan>`).join("")}
-      </text>
-      <text x="0" y="${fontSize}" font-size="${fontSize}" font-family="Arial" fill="black">
-        ${lines.map((line, index) => `<tspan x="-2" y="${fontSize + index * lineHeight + 2}">${line}</tspan>`).join("")}
-      </text>
-      <text x="0" y="${fontSize}" font-size="${fontSize}" font-family="Arial" fill="white">
-        ${lines.map((line, index) => `<tspan x="0" y="${fontSize + index * lineHeight}">${line}</tspan>`).join("")}
-      </text>
-    </svg>
-  `;
-
-  // Use sharp to convert the SVG to PNG
-  await sharp(Buffer.from(svgContent)).png().toFile(outputFilePath);
-  */
   console.log(`Image saved to ${outputFilePath}`);
 }
 
