@@ -7,8 +7,8 @@ const c_imageWidth = 1280; // not 1920
 const c_imageHeight = 720; // not 1080
 
 async function renderJapaneseTextToPNG(text: string, outputFilePath: string) {
-  const columns = Math.sqrt(text.length / 2) * 2;
-  const fontSize = c_imageWidth / Math.max(columns, 20);
+  // const columns = Math.sqrt(text.length / 2) * 2;
+  const fontSize = 40; // c_imageWidth / Math.max(columns, 20);
   const lineHeight = fontSize * 1.2;
 
   const lines: string[] = [];
@@ -53,12 +53,14 @@ async function renderJapaneseTextToPNG(text: string, outputFilePath: string) {
   const context = canvas.getContext("2d");
 
   // Set background color
-  context.fillStyle = "#ffffff";
+  context.fillStyle = "#000000";
+  context.globalAlpha = 0.5;
   context.fillRect(0, 0, c_imageWidth, imageHeight);
+  context.globalAlpha = 1.0;
 
   // Set text styles
   context.font = "bold 40px Arial";
-  context.fillStyle = "#000000";
+  context.fillStyle = "#ffffff";
   context.textAlign = "center";
   context.textBaseline = "top";
 
