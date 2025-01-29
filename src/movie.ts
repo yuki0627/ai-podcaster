@@ -52,14 +52,18 @@ async function renderJapaneseTextToPNG(text: string, outputFilePath: string) {
   const canvas = createCanvas(c_imageWidth, c_imageHeight);
   const context = canvas.getContext("2d");
 
+  // Set background color
+  context.fillStyle = "#ffffff";
+  context.fillRect(0, 0, c_imageWidth, imageHeight);
+
   // Set text styles
   context.font = "bold 40px Arial";
   context.fillStyle = "#000000";
   context.textAlign = "center";
-  context.textBaseline = "bottom";
+  context.textBaseline = "top";
 
   lines.forEach((line:string, index:number) => {
-    context.fillText(line, 0, lineHeight * index);
+    context.fillText(line, c_imageWidth / 2, lineHeight * index);
   });
 
   // Save the image
