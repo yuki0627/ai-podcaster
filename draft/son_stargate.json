@@ -7,12 +7,13 @@
     "a7619e48-bf6a-4f9f-843f-40485651257f",
     "bc06c63f-fef6-43b6-92f7-67f919bd5dae"
   ],
+  "reference": "https://www.theinformation.com/articles/how-softbanks-son-made-it-back-to-the-white-house",
   "charactors": ["春玲", "太郎", "中島先生"],
   "speakers": ["Announcer", "Student", "Teacher"],
   "script": [
     {
       "speaker": "Announcer",
-      "text": "米国で活躍するエンジニアが新しい技術やビジネスを分かりやすく解説する、中島聡のLife is beautiful。今日は、ソフトバンクグループの孫正義氏による400億ドル規模のAI投資計画についての解説です。",
+      "text": "米国で活躍するエンジニアが新しい技術やビジネスを分かりやすく解説する、中島聡のLife is beautiful。今日は、ソフトバンクグループによる400億ドル規模のAI投資計画についての解説です。",
       "imagePrompt": "Modern tech business district with SoftBank logo prominently displayed on a skyscraper at sunset, futuristic AI visualization floating in the sky, clean corporate style"
     },
     {
@@ -22,7 +23,7 @@
     },
     {
       "speaker": "Teacher",
-      "text": "そうだね。これは実は、トランプ大統領が発表した5,000億ドル（約75兆円）規模のStargateというAIデータセンタープロジェクトの一部なんだ。その中で孫さんは、約400億ドル（約6兆円）をデータセンターとOpenAIという会社に投資すると発表したんだよ。",
+      "text": "そうだね。これは実は、トランプ大統領が発表した五千億ドル（約75兆円）規模のStargateというAIデータセンタープロジェクトの一部なんだ。その中で孫正義さんは、約400億ドル（約6兆円）をデータセンターとオープンエーアイ（OpenAI）という会社に投資すると発表したんだよ。",
       "imagePrompt": "Massive modern data center interior with endless rows of servers, blue LED lights, with holographic projections of AI networks, cinematic lighting"
     },
     {
@@ -32,7 +33,7 @@
     },
     {
       "speaker": "Teacher",
-      "text": "孫さんは、AIこそが未来を変える技術だと考えているんだ。特に、OpenAIのようなAI企業が新しい技術を開発するには、莫大な計算能力が必要なんだよ。そのために必要な設備への投資なんだ。",
+      "text": "孫正義さんは、AIこそが未来を変える技術だと考えているんだ。特に、オープンエーアイ（OpenAI）のようなAI企業が新しい技術を開発するには、莫大な計算能力が必要なんだよ。そのために必要な設備への投資なんだ。",
       "imagePrompt": "Futuristic AI brain made of light and energy, surrounded by computing power visualization, quantum computing concepts, deep blue and white color scheme"
     },
     {
@@ -52,7 +53,7 @@
     },
     {
       "speaker": "Teacher",
-      "text": "それが孫さんの特徴的なところなんだ。彼は「未来に賭ける」ことを恐れない経営者として有名なんだよ。過去にも大きな借金をして投資し、成功も失敗も経験してきた。",
+      "text": "それが孫正義さんの特徴的なところなんだ。彼は「未来に賭ける」ことを恐れない経営者として有名なんだよ。過去にも大きな借金をして投資し、成功も失敗も経験してきた。",
       "imagePrompt": "Visionary looking through futuristic telescope towards bright horizon, surrounded by both success and failure symbols, inspirational tech style"
     },
     {
@@ -72,7 +73,7 @@
     },
     {
       "speaker": "Teacher",
-      "text": "孫さんは、ただお金を儲けることだけを考えているわけじゃないんだ。彼は「何百年先の未来を変えたい」という大きな夢を持っていて、その実現のためなら大きなリスクも取る。そして、その決断は時には直感的で、「準備、発射、狙い」という順番で物事を進めることもあるんだ。",
+      "text": "孫正義さんは、ただお金を儲けることだけを考えているわけじゃないんだ。彼は「何百年先の未来を変えたい」という大きな夢を持っていて、その実現のためなら大きなリスクも取る。そして、その決断は時には直感的で、「準備、発射、狙い」という順番で物事を進めることもあるんだ。",
       "imagePrompt": "Timeline visualization stretching hundreds of years into future, with technological milestones and innovations, inspiring sci-fi style"
     },
     {
@@ -82,7 +83,7 @@
     },
     {
       "speaker": "Teacher",
-      "text": "その通り。でも孫さんは、チャンスだと思ったら、細かい計画を立てる前に行動を起こすんだ。そして、行動しながら問題を解決していく。これは危険な方法に見えるけど、技術の進歩が速い世界では、準備に時間をかけすぎると、チャンスを逃してしまうこともあるんだよ。",
+      "text": "その通り。でも孫正義さんは、チャンスだと思ったら、細かい計画を立てる前に行動を起こすんだ。そして、行動しながら問題を解決していく。これは危険な方法に見えるけど、技術の進歩が速い世界では、準備に時間をかけすぎると、チャンスを逃してしまうこともあるんだよ。",
       "imagePrompt": "Fast-moving train leaving station while still under construction, symbolizing quick action and adaptation, dynamic tech style"
     },
     {
@@ -92,7 +93,7 @@
     },
     {
       "speaker": "Teacher",
-      "text": "正直、誰にも分からないね。実は発表直後に、中国のAI企業が「もっと安価にAIが作れる」と発表して、ソフトバンクの株価が10%も下がったんだ。でも、孫さんは短期的な結果よりも、長期的なビジョンを重視している。彼にとって大切なのは、歴史に残る大きな変化を起こすことなんだよ。",
+      "text": "正直、誰にも分からないね。実は発表直後に、中国のAI企業が「もっと安価にAIが作れる」と発表して、ソフトバンクの株価が10パーセントも下がったんだ。でも、孫正義さんは短期的な結果よりも、長期的なビジョンを重視している。彼にとって大切なのは、歴史に残る大きな変化を起こすことなんだよ。",
       "imagePrompt": "Stock market volatility chart with AI symbols, but showing long-term upward trend beyond short-term dips, visionary tech style"
     },
     {
@@ -112,7 +113,7 @@
     },
     {
       "speaker": "Announcer",
-      "text": "ご視聴ありがとうございました。次回の放送もお楽しみに。",
+      "text": "ご視聴、ありがとうございました。次回の放送もお楽しみに。",
       "imagePrompt": "Sunset over futuristic city skyline with 'To be continued' text floating in tech style, warm and promising atmosphere"
     }
   ]
