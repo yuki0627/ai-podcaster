@@ -108,6 +108,7 @@ const createVideo = (
     // Add filter for each image
     filterComplexParts.push(
       `[${index}:v]scale=${canvasWidth}:${canvasHeight},setsar=1,format=yuv420p,trim=duration=${image.duration},setpts=PTS+${startTime}/TB[v${index}]`,
+      //`[${index}:v]scale=${canvasWidth}:${canvasHeight},setsar=1,format=yuv420p,zoompan=z=zoom+0.0005:x=0:y=0:s=${canvasWidth}x${canvasHeight}:fps=30:d=${image.duration * 30},trim=duration=${image.duration},setpts=PTS+${startTime}/TB[v${index}]`,
     );
     startTime = image.duration; // Update start time for the next image
   });
