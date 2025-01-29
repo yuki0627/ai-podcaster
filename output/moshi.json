@@ -1,0 +1,306 @@
+{
+  "title": "AIによる新しい音声対話システム「Moshi」の詳細解説",
+  "description": "最新の音声対話システム「Moshi」について、その革新的な技術と意義を技術的な詳細も含めて高校生向けにわかりやすく解説する対話形式の台本。",
+  "tts": "nijivoice",
+  "voices": [
+    "afd7df65-0fdc-4d31-ae8b-a29f0f5eed62",
+    "a7619e48-bf6a-4f9f-843f-40485651257f",
+    "bc06c63f-fef6-43b6-92f7-67f919bd5dae"
+  ],
+  "charactors": [
+    "春玲",
+    "太郎",
+    "山田先生"
+  ],
+  "speakers": [
+    "Announcer",
+    "Student",
+    "Teacher"
+  ],
+  "script": [
+    {
+      "speaker": "Announcer",
+      "text": "米国で活躍するエンジニアが新しい技術やビジネスを分かりやすく解説する、中島聡のLife is beautiful。今日は、画期的な新しいAI音声対話システム、「Moshi」についての解説です。",
+      "imagePrompt": "Futuristic digital interface with glowing waveforms and AI text bubbles, minimalist tech aesthetic, soft blue gradient background",
+      "filename": "moshi0",
+      "duration": 13.9359
+    },
+    {
+      "speaker": "Student",
+      "text": "先生、ニュースで「Moshi」っていうAIの音声対話システムのことを聞いたんですが、どんなものなんですか？",
+      "imagePrompt": "Abstract visualization of AI voice system, floating sound waves transforming into digital patterns, cool tech blues",
+      "filename": "moshi1",
+      "duration": 5.81185
+    },
+    {
+      "speaker": "Teacher",
+      "text": "うん、とても面白い技術だよ。今までのAIの音声対話システムと、「Moshi」は大きく違うんだ。",
+      "imagePrompt": "Split screen showing traditional robotic voice interface vs modern organic flowing AI interface, contrasting designs",
+      "filename": "moshi2",
+      "duration": 8.528550000000001
+    },
+    {
+      "speaker": "Student",
+      "text": "今までのシステムとどう違うんですか？",
+      "imagePrompt": "Side-by-side comparison infographic of old vs new AI systems, minimalist icons, flowing connection lines",
+      "filename": "moshi3",
+      "duration": 2.2592
+    },
+    {
+      "speaker": "Teacher",
+      "text": "例えば、スマートフォンのSiriは、音声認識→テキスト変換→AI処理→音声合成という4つの段階を経て返事をするんだ。これは、料理の注文を4人で順番に伝えていくようなもので、時間がかかるし、途中で情報が失われることもあるんだよ。",
+      "imagePrompt": "Four connected circular nodes showing traditional AI processing steps, with degrading signal quality visualization, technical diagram style",
+      "filename": "moshi4",
+      "duration": 16.2608
+    },
+    {
+      "speaker": "Student",
+      "text": "なるほど。「Moshi」はそれと違うんですか？",
+      "imagePrompt": "Streamlined single-flow process diagram of Moshi system, elegant and simple design with flowing energy",
+      "filename": "moshi5",
+      "duration": 2.8339
+    },
+    {
+      "speaker": "Teacher",
+      "text": "そう。「Moshi」は音声を直接理解して返事ができる。まるで一人のコックさんが注文を聞いて直接料理を作るようなものなんだ。これを可能にしているのが「Helium」という7BパラメータのAIモデルと、「Mimi」という音声処理技術なんだよ。",
+      "imagePrompt": "Complex neural network visualization with 'Helium' and 'Mimi' labels, interconnected nodes with flowing data streams, deep blue and silver",
+      "filename": "moshi6",
+      "duration": 16.4437
+    },
+    {
+      "speaker": "Student",
+      "text": "7Bパラメータってなんですか？",
+      "imagePrompt": "Abstract visualization of 7 billion parameters as a vast network of glowing points and connections, sense of scale and complexity",
+      "filename": "moshi7",
+      "duration": 1.97185
+    },
+    {
+      "speaker": "Teacher",
+      "text": "AIの「脳」の大きさみたいなものだね。70億個の学習可能な部分があるということ。人間の脳の神経細胞は約1000億個あるから、まだまだ小さいけれど、対話に必要な処理はできる大きさなんだ。",
+      "imagePrompt": "Comparison visualization of AI neural network vs biological neural network, abstract representation with size proportion, blue digital vs organic patterns",
+      "filename": "moshi8",
+      "duration": 15.0853
+    },
+    {
+      "speaker": "Student",
+      "text": "へぇ、すごいですね。でも、どうやって音声を直接理解するんですか？",
+      "imagePrompt": "Dynamic sound wave transforming into digital patterns and meaning tokens, abstract visualization of voice understanding",
+      "filename": "moshi9",
+      "duration": 5.02815
+    },
+    {
+      "speaker": "Teacher",
+      "text": "これが「Mimi」という技術の面白いところなんだ。音声を「トークン」という小さな単位に分けるんだけど、それぞれのトークンに2つの情報を含めているんだ。",
+      "imagePrompt": "Split tokens visualization showing semantic and acoustic information, dual-nature particles with wave patterns",
+      "filename": "moshi10",
+      "duration": 10.148150000000001
+    },
+    {
+      "speaker": "Student",
+      "text": "2つの情報？",
+      "imagePrompt": "Detailed view of a single token containing both meaning (text/symbols) and acoustic (wavelength) information, holographic style",
+      "filename": "moshi11",
+      "duration": 1.3971500000000001
+    },
+    {
+      "speaker": "Teacher",
+      "text": "うん。一つは「意味的な情報」。例えば「こんにちは」という言葉の意味。もう一つは「音響的な情報」。声の調子や話し方の特徴といった情報だね。この2つを同時に処理できるから、言葉の意味だけでなく、話し方のニュアンスまで理解できるんだ。",
+      "imagePrompt": "Dual processing streams showing semantic analysis and acoustic pattern analysis merging together, flowing data visualization",
+      "filename": "moshi12",
+      "duration": 19.55225
+    },
+    {
+      "speaker": "Student",
+      "text": "なるほど！だから人間らしい会話ができるんですね。",
+      "imagePrompt": "Natural conversation flow visualization with both meaning and tone represented as interweaving streams of light",
+      "filename": "moshi13",
+      "duration": 3.51305
+    },
+    {
+      "speaker": "Teacher",
+      "text": "その通り。さらに「Inner Monologue（内部独白）」という技術も使っているんだ。これは人間が話すときのように、まず頭の中で言葉を考えて、それから声に出す、というプロセスを真似ているんだよ。",
+      "imagePrompt": "Abstract thought-to-speech process visualization, showing inner monologue as ethereal patterns transforming into sound waves",
+      "filename": "moshi14",
+      "duration": 15.24205
+    },
+    {
+      "speaker": "Student",
+      "text": "でも、人間の会話って、相手の話を聞きながら考えたりしますよね？",
+      "imagePrompt": "Multi-threaded conversation visualization showing parallel processing of listening and speaking streams",
+      "filename": "moshi15",
+      "duration": 4.2706
+    },
+    {
+      "speaker": "Teacher",
+      "text": "その通り。それを可能にしているのが「マルチストリーム処理」という技術なんだ。簡単に言うと、2つの耳と1つの口を持っているようなものだね。片方で話しながら、もう片方で相手の話を聞くことができる。だから、相づちを打ったり、話を遮ったりすることもできるんだ。",
+      "imagePrompt": "Complex parallel processing visualization showing multiple simultaneous audio streams, interweaving paths of communication",
+      "filename": "moshi16",
+      "duration": 20.335900000000002
+    },
+    {
+      "speaker": "Student",
+      "text": "処理速度はどのくらいなんですか？",
+      "imagePrompt": "High-speed processing visualization showing 0.16-second response time, motion blur effects with precise timescale",
+      "filename": "moshi17",
+      "duration": 1.9457
+    },
+    {
+      "speaker": "Teacher",
+      "text": "音声を聞いてから返事を始めるまでが約160ミリ秒。実用的には200ミリ秒くらいだね。人間の会話での一般的な反応時間が200ミリ秒から300ミリ秒くらいだから、人間と同じくらいの速さで会話できるんだ。",
+      "imagePrompt": "Timeline comparison of AI vs human response times, sleek infographic style with millisecond markers",
+      "filename": "moshi18",
+      "duration": 16.1041
+    },
+    {
+      "speaker": "Student",
+      "text": "すごい！でも、その技術って危なくないんですか？",
+      "imagePrompt": "Digital security visualization with AI voice watermarks and protection shields, cybersecurity concept",
+      "filename": "moshi19",
+      "duration": 3.4347
+    },
+    {
+      "speaker": "Teacher",
+      "text": "いい質問だね。開発者たちも安全性には特に気を使っているんだ。例えば、音声に電子透かしを入れて、これがAIの声だと分かるようにしている。また、有害な内容を話さないような制限もある。さらに、一人の声を真似て悪用されないような対策も施されているんだよ。",
+      "imagePrompt": "AI safety features visualization showing watermarking, content filtering, and voice protection as integrated security layers",
+      "filename": "moshi20",
+      "duration": 20.96285
+    },
+    {
+      "speaker": "Student",
+      "text": "じゃあ、将来はもっと身近でAIと会話できるようになるんですね？",
+      "imagePrompt": "Future vision of ambient AI interaction, showing subtle integrated AI interfaces in daily environment",
+      "filename": "moshi21",
+      "duration": 3.95715
+    },
+    {
+      "speaker": "Teacher",
+      "text": "そうだね。でも大切なのは、これはあくまでもツールだということ。人間の会話を完全に置き換えるものではなく、人間の活動を助けるものとして発展していくべきなんだ。その意味で、「Moshi」は技術と安全性、そして倫理面でもバランスの取れたシステムを目指しているんだよ。",
+      "imagePrompt": "Harmonious balance visualization of AI and human elements, yin-yang style with tech and organic patterns",
+      "filename": "moshi22",
+      "duration": 21.2241
+    },
+    {
+      "speaker": "Student",
+      "text": "なんだか未来が楽しみになってきました。ありがとうございました！",
+      "imagePrompt": "Optimistic future tech landscape with seamless AI integration, soft dawn lighting and hope-inspiring atmosphere",
+      "filename": "moshi23",
+      "duration": 4.1959
+    },
+    {
+      "speaker": "Announcer",
+      "text": "ご視聴、ありがとうございました。次回の放送もお楽しみに。",
+      "imagePrompt": "Elegant outro visualization with AI and tech elements fading into a clean, minimalist end card design",
+      "filename": "moshi24",
+      "duration": 5.02815
+    }
+  ],
+  "filename": "moshi",
+  "ttsAgent": "ttsNijivoiceAgent",
+  "voicemap": {
+    "Announcer": "afd7df65-0fdc-4d31-ae8b-a29f0f5eed62",
+    "Student": "a7619e48-bf6a-4f9f-843f-40485651257f",
+    "Teacher": "bc06c63f-fef6-43b6-92f7-67f919bd5dae"
+  },
+  "imageInfo": [
+    {
+      "index": 0,
+      "image": "./images/moshi/0p.png"
+    },
+    {
+      "index": 1,
+      "image": "./images/moshi/1p.png"
+    },
+    {
+      "index": 2,
+      "image": "./images/moshi/2p.png"
+    },
+    {
+      "index": 3,
+      "image": "./images/moshi/3p.png"
+    },
+    {
+      "index": 4,
+      "image": "./images/moshi/4p.png"
+    },
+    {
+      "index": 5,
+      "image": "./images/moshi/5p.png"
+    },
+    {
+      "index": 6,
+      "image": "./images/moshi/6p.png"
+    },
+    {
+      "index": 7,
+      "image": "./images/moshi/7p.png"
+    },
+    {
+      "index": 8,
+      "image": "./images/moshi/8p.png"
+    },
+    {
+      "index": 9,
+      "image": "./images/moshi/9p.png"
+    },
+    {
+      "index": 10,
+      "image": "./images/moshi/10p.png"
+    },
+    {
+      "index": 11,
+      "image": "./images/moshi/11p.png"
+    },
+    {
+      "index": 12,
+      "image": "./images/moshi/12p.png"
+    },
+    {
+      "index": 13,
+      "image": "./images/moshi/13p.png"
+    },
+    {
+      "index": 14,
+      "image": "./images/moshi/14p.png"
+    },
+    {
+      "index": 15,
+      "image": "./images/moshi/15p.png"
+    },
+    {
+      "index": 16,
+      "image": "./images/moshi/16p.png"
+    },
+    {
+      "index": 17,
+      "image": "./images/moshi/17p.png"
+    },
+    {
+      "index": 18,
+      "image": "./images/moshi/18p.png"
+    },
+    {
+      "index": 19,
+      "image": "./images/moshi/19p.png"
+    },
+    {
+      "index": 20,
+      "image": "./images/moshi/20p.png"
+    },
+    {
+      "index": 21,
+      "image": "./images/moshi/21p.png"
+    },
+    {
+      "index": 22,
+      "image": "./images/moshi/22p.png"
+    },
+    {
+      "index": 23,
+      "image": "./images/moshi/23p.png"
+    },
+    {
+      "index": 24,
+      "image": "./images/moshi/24p.png"
+    }
+  ]
+}
