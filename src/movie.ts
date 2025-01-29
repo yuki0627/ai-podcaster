@@ -27,12 +27,14 @@ async function renderJapaneseTextToPNG(text: string, outputFilePath: string) {
         ? fontSize * 0.8
         : fontSize * 0.5
       : fontSize;
+    const isTrailing = char === '。' || char === '、' 
+                      || char === '？' || char === '！';
 
     if (char === "\n") {
       lines.push(currentLine);
       currentLine = "";
       currentWidth = 0;
-    } else if (currentWidth + charWidth > canvasWidth - paddingX * 2) {
+    } else if (currentWidth + charWidth > canvasWidth - paddingX * 2 && !isTrailing) {
       lines.push(currentLine);
       currentLine = char;
       currentWidth = charWidth;
