@@ -8,7 +8,7 @@ const canvasHeight = 720; // not 1080
 
 async function renderJapaneseTextToPNG(text: string, outputFilePath: string) {
   const fontSize = 48; 
-  const paddingX = 24;
+  const paddingX = 48 * 2;
   const paddingY = 12;
   const lineHeight = fontSize + 8;
 
@@ -107,7 +107,7 @@ const createVideo = (
     // Add filter for each image
     filterComplexParts.push(
       // `[${index}:v]scale=${canvasWidth}:${canvasHeight},setsar=1,format=yuv420p,trim=duration=${image.duration},setpts=${startTime}/TB[v${index}]`,
-      `[${index}:v]scale=${canvasWidth*4}:${canvasHeight*4},setsar=1,format=yuv420p,zoompan=z=zoom+0.0005:x=iw/2-(iw/zoom/2):y=ih/2-(ih/zoom/2):s=${canvasWidth}x${canvasHeight}:fps=30:d=${image.duration * 30},trim=duration=${image.duration}[v${index}]`,
+      `[${index}:v]scale=${canvasWidth*4}:${canvasHeight*4},setsar=1,format=yuv420p,zoompan=z=zoom+0.0004:x=iw/2-(iw/zoom/2):y=ih-(ih/zoom):s=${canvasWidth}x${canvasHeight}:fps=30:d=${image.duration * 30},trim=duration=${image.duration}[v${index}]`,
     );
   });
 
