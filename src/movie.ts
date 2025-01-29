@@ -7,9 +7,10 @@ const canvasWidth = 1280; // not 1920
 const canvasHeight = 720; // not 1080
 
 async function renderJapaneseTextToPNG(text: string, outputFilePath: string) {
-  const fontSize = 40; 
-  const paddingX = 20;
-  const lineHeight = fontSize * 1.2;
+  const fontSize = 48; 
+  const paddingX = 24;
+  const paddingY = 12;
+  const lineHeight = fontSize + 8;
 
   const lines: string[] = [];
   let currentLine = "";
@@ -46,7 +47,7 @@ async function renderJapaneseTextToPNG(text: string, outputFilePath: string) {
     lines.push(currentLine);
   }
 
-  const textHeight = lines.length * lineHeight;
+  const textHeight = lines.length * lineHeight + paddingY * 2;
   const textTop = canvasHeight - textHeight;
 
   // Create a canvas and a drawing context
@@ -70,7 +71,7 @@ async function renderJapaneseTextToPNG(text: string, outputFilePath: string) {
   context.shadowBlur = 10;
 
   lines.forEach((line:string, index:number) => {
-    context.fillText(line, canvasWidth / 2, textTop + lineHeight * index);
+    context.fillText(line, canvasWidth / 2, textTop + lineHeight * index + paddingY);
   });
 
   // Save the image
