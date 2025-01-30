@@ -3,6 +3,7 @@
   "description": "基本機能を試すための短い会話",
   "tts": "nijivoice",
   "cache": false,
+  "speed": "0.8",
   "voices": [
     "dd8aac22-37c2-4a2c-9efb-7fc57c0c8f57",
     "47be8fda-8759-45c0-b8ff-c53241357eef"
@@ -20,13 +21,13 @@
       "speaker": "マスター",
       "text": "こんにちは、これはテスト音声です。",
       "filename": "sample0",
-      "duration": 3.04655
+      "duration": 3.0987999999999998
     },
     {
       "speaker": "わかば",
       "text": "はい、テストの応答です。",
       "filename": "sample1",
-      "duration": 2.54655
+      "duration": 2.6249
     }
   ],
   "filename": "sample",
