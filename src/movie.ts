@@ -7,7 +7,7 @@ const canvasWidth = 1280; // not 1920
 const canvasHeight = 720; // not 1080
 
 async function renderJapaneseTextToPNG(text: string, outputFilePath: string) {
-  const fontSize = 48; 
+  const fontSize = 48;
   const paddingX = 48 * 2;
   const paddingY = 12;
   const lineHeight = fontSize + 8;
@@ -27,14 +27,17 @@ async function renderJapaneseTextToPNG(text: string, outputFilePath: string) {
         ? fontSize * 0.8
         : fontSize * 0.5
       : fontSize;
-    const isTrailing = char === '。' || char === '、' 
-                      || char === '？' || char === '！';
+    const isTrailing =
+      char === "。" || char === "、" || char === "？" || char === "！";
 
     if (char === "\n") {
       lines.push(currentLine);
       currentLine = "";
       currentWidth = 0;
-    } else if (currentWidth + charWidth > canvasWidth - paddingX * 2 && !isTrailing) {
+    } else if (
+      currentWidth + charWidth > canvasWidth - paddingX * 2 &&
+      !isTrailing
+    ) {
       lines.push(currentLine);
       currentLine = char;
       currentWidth = charWidth;
@@ -72,8 +75,12 @@ async function renderJapaneseTextToPNG(text: string, outputFilePath: string) {
   context.shadowOffsetY = 5;
   context.shadowBlur = 10;
 
-  lines.forEach((line:string, index:number) => {
-    context.fillText(line, canvasWidth / 2, textTop + lineHeight * index + paddingY);
+  lines.forEach((line: string, index: number) => {
+    context.fillText(
+      line,
+      canvasWidth / 2,
+      textTop + lineHeight * index + paddingY,
+    );
   });
 
   // Save the image
@@ -107,7 +114,7 @@ const createVideo = (
     // Add filter for each image
     filterComplexParts.push(
       // `[${index}:v]scale=${canvasWidth}:${canvasHeight},setsar=1,format=yuv420p,trim=duration=${image.duration},setpts=${startTime}/TB[v${index}]`,
-      `[${index}:v]scale=${canvasWidth*4}:${canvasHeight*4},setsar=1,format=yuv420p,zoompan=z=zoom+0.0004:x=iw/2-(iw/zoom/2):y=ih-(ih/zoom):s=${canvasWidth}x${canvasHeight}:fps=30:d=${image.duration * 30},trim=duration=${image.duration}[v${index}]`,
+      `[${index}:v]scale=${canvasWidth * 4}:${canvasHeight * 4},setsar=1,format=yuv420p,zoompan=z=zoom+0.0004:x=iw/2-(iw/zoom/2):y=ih-(ih/zoom):s=${canvasWidth}x${canvasHeight}:fps=30:d=${image.duration * 30},trim=duration=${image.duration}[v${index}]`,
     );
   });
 
