@@ -1,0 +1,240 @@
+{
+  "title": "AIの知識の蒸留（ディスティレーション）について",
+  "description": "OpenAIの技術が中国企業によって模倣された事例を通じて、AIの知識の蒸留（ディスティレーション）という技術について解説する教育的な対話",
+  "tts": "nijivoice",
+  "voices": [
+    "afd7df65-0fdc-4d31-ae8b-a29f0f5eed62",
+    "a7619e48-bf6a-4f9f-843f-40485651257f",
+    "bc06c63f-fef6-43b6-92f7-67f919bd5dae"
+  ],
+  "charactors": [
+    "春玲",
+    "太郎",
+    "山田先生"
+  ],
+  "speakers": [
+    "Announcer",
+    "Student",
+    "Teacher"
+  ],
+  "script": [
+    {
+      "speaker": "Announcer",
+      "text": "米国で活躍するエンジニアが新しい技術やビジネスを分かりやすく解説する、中島聡のLife is beautiful。今日は、人工知能の世界で話題の'知識の蒸留'についての解説です。",
+      "imagePrompt": "Futuristic minimalist visualization of knowledge transfer between AIs, glowing neural networks in blues and purples against dark background, abstract digital art style",
+      "filename": "distillation0",
+      "duration": 12.891
+    },
+    {
+      "speaker": "Student",
+      "text": "先生、ニュースで'AIの知識の蒸留'っていう言葉を見たんですけど、どういう意味ですか？",
+      "imagePrompt": "Abstract digital newspaper headlines floating in cyberspace, with AI and distillation keywords highlighted, tech news visualization",
+      "filename": "distillation1",
+      "duration": 5.34165
+    },
+    {
+      "speaker": "Teacher",
+      "text": "ああ、最近話題になってるね。簡単に言うと、優秀なAIから別のAIに知識を教えることなんだ。人間で例えると、先生が生徒に教えるようなものかな。",
+      "imagePrompt": "Two abstract AI brains connected by streaming data particles, knowledge flowing from one to another, digital art style with soft blue glow",
+      "filename": "distillation2",
+      "duration": 13.75305
+    },
+    {
+      "speaker": "Student",
+      "text": "へえ、AIも人間みたいに学習できるんですね。でも、なんでそんなことが話題になってるんですか？",
+      "imagePrompt": "Multiple geometric shapes transforming and evolving, representing AI learning patterns, with flowing data streams, minimal tech aesthetic",
+      "filename": "distillation3",
+      "duration": 6.17755
+    },
+    {
+      "speaker": "Teacher",
+      "text": "実はね、アメリカのオープンエーアイ(OpenAI)という会社が開発した優秀なAIの知識が、中国の企業によって'蒸留'されて真似されたんじゃないかって問題になってるんだ。",
+      "imagePrompt": "World map with glowing connections between USA and China, abstract AI symbols floating above, digital distillation process visualization",
+      "filename": "distillation4",
+      "duration": 11.2192
+    },
+    {
+      "speaker": "Student",
+      "text": "えっ！それって、カンニングみたいなものですか？",
+      "imagePrompt": "Split screen showing original and copied digital patterns, with questioning symbols, abstract representation of AI replication",
+      "filename": "distillation5",
+      "duration": 2.6771499999999997
+    },
+    {
+      "speaker": "Teacher",
+      "text": "ちょっと違うんだ。オープンエーアイ(OpenAI)のAIが問題を解くときの'考え方'を見て、その解き方を別のAIが学んでいくんだよ。数学の問題で言えば、答えだけじゃなくて、解き方をしっかり見て理解するようなものかな。",
+      "imagePrompt": "Complex mathematical equations and patterns flowing between neural networks, showing problem-solving process, abstract digital visualization",
+      "filename": "distillation6",
+      "duration": 16.6788
+    },
+    {
+      "speaker": "Student",
+      "text": "なるほど...でも、それってすごく難しそうですよね？",
+      "imagePrompt": "Question marks around a brain",
+      "filename": "distillation7",
+      "duration": 3.4608
+    },
+    {
+      "speaker": "Teacher",
+      "text": "実はそうでもないんだ。最近、カリフォルニア大学バークレー校の学生たちが、たった450ドル（約7万円）で似たような技術を作ることに成功したんだよ。",
+      "imagePrompt": "Simple laptop with powerful AI visualization emerging from it, cost meter showing low numbers, minimalist tech illustration",
+      "filename": "distillation8",
+      "duration": 10.6706
+    },
+    {
+      "speaker": "Student",
+      "text": "えっ！そんなに安くできるんですか？どうやって？",
+      "imagePrompt": "Dollar signs transforming into AI circuits, cost-effective technology representation, minimal style with green and blue hues",
+      "filename": "distillation9",
+      "duration": 3.2779499999999997
+    },
+    {
+      "speaker": "Teacher",
+      "text": "彼らは、数学やプログラミングの問題を使って学習させたんだ。これらの分野は答えが明確だから、AIが正しく学習できたかどうかを確認しやすいんだよ。一万七千個の問題を解かせて、正しく解けた方法を学習させていったんだ。",
+      "imagePrompt": "Massive grid of mathematical problems and code snippets, with AI processing visualization, showing learning progress through data",
+      "filename": "distillation10",
+      "duration": 18.1939
+    },
+    {
+      "speaker": "Student",
+      "text": "へえ、まるで問題集の問題と解答の両方を読んで勉強してるみたいですね。",
+      "imagePrompt": "Digital workbook with AI solving various problems, progress bars and success indicators, abstract learning visualization",
+      "filename": "distillation11",
+      "duration": 4.9498
+    },
+    {
+      "speaker": "Teacher",
+      "text": "その通り。中国のDeepSeekというAIも同じような方法で学習したみたいだよ。問題を何度も解かせて、上手く解けた方法を覚えさせていったんだ。最終的には、難しい問題にもじっくり時間をかけて考えられるようになったんだって。",
+      "imagePrompt": "Progressive AI learning visualization, from simple to complex problems, showing evolutionary growth pattern in digital space",
+      "filename": "distillation12",
+      "duration": 17.1751
+    },
+    {
+      "speaker": "Student",
+      "text": "でも、オープンエーアイ(OpenAI)は怒ってるんですよね？",
+      "imagePrompt": "Abstract representation of digital intellectual property conflict, with contrasting red and blue energy patterns",
+      "filename": "distillation13",
+      "duration": 2.4158999999999997
+    },
+    {
+      "speaker": "Teacher",
+      "text": "そうだね。オープンエーアイは自社のAIの'考え方'を他の会社に見られたくなかったんだ。でも皮肉なことに、今度は中国の会社が自分たちのAIの'考え方'を公開しちゃったから、今度は他の会社がそれを真似できちゃうかもしれないんだよ。",
+      "imagePrompt": "Circular chain of AI knowledge transfer, showing multiple companies connected in a digital ecosystem, ironic cycle visualization",
+      "filename": "distillation14",
+      "duration": 16.18245
+    },
+    {
+      "speaker": "Student",
+      "text": "AIの世界って、本当に競争が激しいんですね...",
+      "imagePrompt": "Multiple AI entities racing in digital space, competitive tech landscape visualization with dynamic energy flows",
+      "filename": "distillation15",
+      "duration": 3.6959
+    },
+    {
+      "speaker": "Teacher",
+      "text": "その通り。でもね、この競争のおかげで、AIの技術はどんどん良くなっていくんだ。ただし、他社の技術を勝手に真似るのはよくないから、これからはルール作りも大切になってくるね。",
+      "imagePrompt": "Balance scale weighing innovation vs ethics in AI development, with regulatory framework elements, digital art style",
+      "filename": "distillation16",
+      "duration": 14.1188
+    },
+    {
+      "speaker": "Student",
+      "text": "なるほど。とても勉強になりました。ありがとうございます！",
+      "imagePrompt": "Harmonious integration of various AI technologies with ethical guidelines, peaceful digital landscape visualization",
+      "filename": "distillation17",
+      "duration": 4.431
+    },
+    {
+      "speaker": "Announcer",
+      "text": "ご視聴、ありがとうございました。次回の放送もお楽しみに。",
+      "imagePrompt": "Elegant outro screen with AI-themed design elements, looking forward to future episodes, minimal tech aesthetic",
+      "filename": "distillation18",
+      "duration": 4.9759
+    }
+  ],
+  "filename": "distillation",
+  "ttsAgent": "ttsNijivoiceAgent",
+  "voicemap": {
+    "Announcer": "afd7df65-0fdc-4d31-ae8b-a29f0f5eed62",
+    "Student": "a7619e48-bf6a-4f9f-843f-40485651257f",
+    "Teacher": "bc06c63f-fef6-43b6-92f7-67f919bd5dae"
+  },
+  "imageInfo": [
+    {
+      "index": 0,
+      "image": "./images/distillation/0p.png"
+    },
+    {
+      "index": 1,
+      "image": "./images/distillation/1p.png"
+    },
+    {
+      "index": 2,
+      "image": "./images/distillation/2p.png"
+    },
+    {
+      "index": 3,
+      "image": "./images/distillation/3p.png"
+    },
+    {
+      "index": 4,
+      "image": "./images/distillation/4p.png"
+    },
+    {
+      "index": 5,
+      "image": "./images/distillation/5p.png"
+    },
+    {
+      "index": 6,
+      "image": "./images/distillation/6p.png"
+    },
+    {
+      "index": 7,
+      "image": "./images/distillation/7p.png"
+    },
+    {
+      "index": 8,
+      "image": "./images/distillation/8p.png"
+    },
+    {
+      "index": 9,
+      "image": "./images/distillation/9p.png"
+    },
+    {
+      "index": 10,
+      "image": "./images/distillation/10p.png"
+    },
+    {
+      "index": 11,
+      "image": "./images/distillation/11p.png"
+    },
+    {
+      "index": 12,
+      "image": "./images/distillation/12p.png"
+    },
+    {
+      "index": 13,
+      "image": "./images/distillation/13p.png"
+    },
+    {
+      "index": 14,
+      "image": "./images/distillation/14p.png"
+    },
+    {
+      "index": 15,
+      "image": "./images/distillation/15p.png"
+    },
+    {
+      "index": 16,
+      "image": "./images/distillation/16p.png"
+    },
+    {
+      "index": 17,
+      "image": "./images/distillation/17p.png"
+    },
+    {
+      "index": 18,
+      "image": "./images/distillation/18p.png"
+    }
+  ]
+}

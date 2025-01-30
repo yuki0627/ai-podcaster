@@ -250,7 +250,7 @@ const main = async () => {
     const prevScript = JSON.parse(prevData) as PodcastScript;
     console.log("found output script", prevScript.filename);
     script.script.forEach((element: ScriptData, index: number) => {
-      const prevText = prevScript.script[index].text;
+      const prevText = prevScript.script[index]?.text ?? "";
       if (element.text !== prevText) {
         const filePath = path.resolve(
           "./scratchpad/" + element.filename + ".mp3",

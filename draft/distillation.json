@@ -42,8 +42,13 @@
     },
     {
       "speaker": "Teacher",
-      "text": "そうだね、似てるかもしれない。でもちょっと違うんだ。オープンエーアイ(OpenAI)のAIが問題を解くときの'考え方'を見て、その解き方を別のAIが学んでいくんだよ。数学の問題で言えば、答えだけじゃなくて、解き方をしっかり見て理解するようなものかな。",
+      "text": "ちょっと違うんだ。オープンエーアイ(OpenAI)のAIが問題を解くときの'考え方'を見て、その解き方を別のAIが学んでいくんだよ。数学の問題で言えば、答えだけじゃなくて、解き方をしっかり見て理解するようなものかな。",
       "imagePrompt": "Complex mathematical equations and patterns flowing between neural networks, showing problem-solving process, abstract digital visualization"
+    },
+    {
+      "speaker": "Student",
+      "text": "なるほど...でも、それってすごく難しそうですよね？",
+      "imagePrompt": "Question marks around a brain"
     },
     {
       "speaker": "Teacher",
@@ -57,12 +62,12 @@
     },
     {
       "speaker": "Teacher",
-      "text": "彼らは、数学やプログラミングの問題を使って学習させたんだ。これらの分野は答えが明確だから、AIが正しく学習できたかどうかを確認しやすいんだよ。17,000個の問題を解かせて、正しく解けた方法を学習させていったんだ。",
+      "text": "彼らは、数学やプログラミングの問題を使って学習させたんだ。これらの分野は答えが明確だから、AIが正しく学習できたかどうかを確認しやすいんだよ。一万七千個の問題を解かせて、正しく解けた方法を学習させていったんだ。",
       "imagePrompt": "Massive grid of mathematical problems and code snippets, with AI processing visualization, showing learning progress through data"
     },
     {
       "speaker": "Student",
-      "text": "へえ、まるで問題集を解いて勉強してるみたいですね。",
+      "text": "へえ、まるで問題集の問題と解答の両方を読んで勉強してるみたいですね。",
       "imagePrompt": "Digital workbook with AI solving various problems, progress bars and success indicators, abstract learning visualization"
     },
     {
@@ -77,13 +82,13 @@
     },
     {
       "speaker": "Teacher",
-      "text": "そうだね。オープンエーアイ(OpenAI)は自社のAIの'考え方'を他の会社に見られたくなかったんだ。でも皮肉なことに、今度は中国の会社が自分たちのAIの'考え方'を公開しちゃったから、今度は他の会社がそれを真似できちゃうかもしれないんだよ。",
+      "text": "そうだね。オープンエーアイは自社のAIの'考え方'を他の会社に見られたくなかったんだ。でも皮肉なことに、今度は中国の会社が自分たちのAIの'考え方'を公開しちゃったから、今度は他の会社がそれを真似できちゃうかもしれないんだよ。",
       "imagePrompt": "Circular chain of AI knowledge transfer, showing multiple companies connected in a digital ecosystem, ironic cycle visualization"
     },
     {
       "speaker": "Student",
       "text": "AIの世界って、本当に競争が激しいんですね...",
-      "imagePrompt": "Multiple AI entities racing in digital space, competitive tech landscape visualization with dynamic energy flows"
+      "imagePrompt": "Multiple AI entities racing in digital space"
     },
     {
       "speaker": "Teacher",
@@ -97,7 +102,7 @@
     },
     {
       "speaker": "Announcer",
-      "text": "ご視聴ありがとうございました。次回の放送もお楽しみに。",
+      "text": "ご視聴、ありがとうございました。次回の放送もお楽しみに。",
       "imagePrompt": "Elegant outro screen with AI-themed design elements, looking forward to future episodes, minimal tech aesthetic"
     }
   ]
