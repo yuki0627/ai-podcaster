@@ -19,6 +19,7 @@ import ffmpeg from "fluent-ffmpeg";
 import ffmpegInstaller from '@ffmpeg-installer/ffmpeg';
 import ffprobeInstaller from '@ffprobe-installer/ffprobe';
 import { GraphAI as NewGraphAI } from 'graphai'
+import ttsGoogleAgent from "./agents/tts_google_agent";
 
 ffmpeg.setFfmpegPath(ffmpegInstaller.path);
 ffmpeg.setFfprobePath(ffprobeInstaller.path);
@@ -111,9 +112,9 @@ const addBGM = async (inputs: { voiceFile: string; filename: string }) => {
       .input(voiceFile)
       .complexFilter([
         // Add a 2-second delay to the speech
-        "[1:a]adelay=4000|4000, volume=4[a1]", // 4000ms delay for both left and right channels
+        "[1:a]adelay=4000|4000, volume=1[a1]", // 4000ms delay for both left and right channels
         // Set the background music volume to 0.2
-        `[0:a]volume=4.8[a0]`,
+        `[0:a]volume=1[a0]`,
         // Mix the delayed speech and the background music
         `[a0][a1]amix=inputs=2:duration=longest:dropout_transition=3[amixed]`,
         // Trim the output to the length of speech + 8 seconds
@@ -269,7 +270,11 @@ const main = async () => {
     });
   }
 
-  if (script.tts === "nijivoice") {
+  if (script.tts === "google") {
+    graph_data.concurrency = 8;
+    script.voices = script.voices ?? ["ja-JP-Neural2-C", "ja-JP-Neural2-B"];
+    script.ttsAgent = "ttsGoogleAgent";
+  } else if (script.tts === "nijivoice") {
     graph_data.concurrency = 1;
     script.voices = script.voices ?? [rion_takanashi_voice, ben_carter_voice];
     script.ttsAgent = "ttsNijivoiceAgent";
@@ -299,6 +304,7 @@ const main = async () => {
       pathUtilsAgent,
       ttsOpenaiAgent,
       ttsNijivoiceAgent,
+      ttsGoogleAgent,
     },
     { agentFilters },
   );
