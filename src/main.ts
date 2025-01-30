@@ -113,7 +113,7 @@ const addBGM = async (inputs: { voiceFile: string; filename: string }) => {
         // Add a 2-second delay to the speech
         "[1:a]adelay=4000|4000, volume=4[a1]", // 4000ms delay for both left and right channels
         // Set the background music volume to 0.2
-        `[0:a]volume=0.2[a0]`,
+        `[0:a]volume=4.8[a0]`,
         // Mix the delayed speech and the background music
         `[a0][a1]amix=inputs=2:duration=longest:dropout_transition=3[amixed]`,
         // Trim the output to the length of speech + 8 seconds
