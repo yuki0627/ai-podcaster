@@ -147,17 +147,22 @@ const createVideo = (
 };
 
 const main = async () => {
-  const canvasInfo = {
-    width: 1280, // not 1920
-    height: 720 // not 1080
-  }
-  
   const arg2 = process.argv[2];
   const scriptPath = path.resolve(arg2);
   const parsedPath = path.parse(scriptPath);
   const name = parsedPath.name;
   const data = fs.readFileSync(scriptPath, "utf-8");
   const jsonData = JSON.parse(data);
+
+  const canvasInfo = {
+    width: 1280, // not 1920
+    height: 720 // not 1080
+  }
+  if (jsonData.aspectRatio === "9:16") {
+    canvasInfo.width = 720;
+    canvasInfo.height = 1280;
+  }  
+
   //
   await renderJapaneseTextToPNG(
     `${jsonData.title}\n\n${jsonData.description}`,
