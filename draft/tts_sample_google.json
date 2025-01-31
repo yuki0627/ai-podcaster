@@ -1,19 +1,18 @@
 {
   "title": "簡単な会話テスト",
   "description": "基本機能を試すための短い会話",
-  "tts": "nijivoice",
-  "cache": false,
-  "speed": "0.8",
+  "tts": "google",
+  "speed": "1.0",
   "voices": [
-    "dd8aac22-37c2-4a2c-9efb-7fc57c0c8f57",
-    "47be8fda-8759-45c0-b8ff-c53241357eef"
+    "ja-JP-Neural2-C",
+    "ja-JP-Neural2-B"
   ],
-  "charactors": ["燻", "エリオル"],
+  "charactors": ["ベン・カーター", "エリオル"],
   "speakers": ["マスター", "わかば"],
   "script": [
     {
       "speaker": "マスター",
-      "text": "こんにちは、これはテスト音声です。"
+      "text": "こんにちは、これはテスト音声です。介護医療の、相談窓口、はまリハの、開所式。"
     },
     {
       "speaker": "わかば",
