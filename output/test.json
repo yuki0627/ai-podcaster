@@ -2,12 +2,36 @@
   "title": "MASAI: A Modular Future for Software Engineering AI",
   "description": "Exploring MASAI, a modular approach for AI agents in software engineering that revolutionizes how complex coding issues are tackled.",
   "reference": "https://arxiv.org/abs/2406.11638",
+  "speed": 1.666,
+  "tts": "nijivoice",
+  "speakers": [
+    "Announcer",
+    "Student",
+    "Teacher"
+  ],
+  "voices": [
+    "afd7df65-0fdc-4d31-ae8b-a29f0f5eed62",
+    "a7619e48-bf6a-4f9f-843f-40485651257f",
+    "bc06c63f-fef6-43b6-92f7-67f919bd5dae"
+  ],
   "script": [
     {
-      "speaker": "Host",
-      "text": "Hello and welcome to another episode of 'life is artificial,' where we explore the cutting edge of technology, innovation, and what the future could look like. In today's episode, we dive into a recent paper titled 'MASAI: Modular Architecture for Software-engineering AI Agents.' We'll unpack the breakthroughs it presents and how these might transform the way software is developed and maintained in the future.",
-      "key": "test0",
-      "duration": 25.848
+      "speaker": "Announcer",
+      "text": "米国で活躍するエンジニアが新しい技術やビジネスを分かりやすく解説する、中島聡のLife is beautiful。今日は、アメリカで発表された「スターゲート・プロジェクト」に、ついて解説します。",
+      "filename": "test0",
+      "duration": 8.998800000000001
+    }
+  ],
+  "filename": "test",
+  "ttsAgent": "ttsNijivoiceAgent",
+  "voicemap": {
+    "Announcer": "afd7df65-0fdc-4d31-ae8b-a29f0f5eed62",
+    "Student": "a7619e48-bf6a-4f9f-843f-40485651257f",
+    "Teacher": "bc06c63f-fef6-43b6-92f7-67f919bd5dae"
+  },
+  "imageInfo": [
+    {
+      "index": 0
     }
   ]
 }
