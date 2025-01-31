@@ -3,10 +3,7 @@ import path from "path";
 import ffmpeg from "fluent-ffmpeg";
 import { createCanvas, loadImage } from "canvas";
 
-const canvasWidth = 1280; // not 1920
-const canvasHeight = 720; // not 1080
-
-async function renderJapaneseTextToPNG(text: string, outputFilePath: string) {
+async function renderJapaneseTextToPNG(text: string, outputFilePath: string, canvasInfo: any) {
   const fontSize = 48;
   const paddingX = 48 * 2;
   const paddingY = 12;
@@ -35,7 +32,7 @@ async function renderJapaneseTextToPNG(text: string, outputFilePath: string) {
       currentLine = "";
       currentWidth = 0;
     } else if (
-      currentWidth + charWidth > canvasWidth - paddingX * 2 &&
+      currentWidth + charWidth > canvasInfo.width - paddingX * 2 &&
       !isTrailing
     ) {
       lines.push(currentLine);
@@ -53,15 +50,15 @@ async function renderJapaneseTextToPNG(text: string, outputFilePath: string) {
   }
 
   const textHeight = lines.length * lineHeight + paddingY * 2;
-  const textTop = canvasHeight - textHeight;
+  const textTop = canvasInfo.height - textHeight;
 
   // Create a canvas and a drawing context
-  const canvas = createCanvas(canvasWidth, canvasHeight);
+  const canvas = createCanvas(canvasInfo.width, canvasInfo.height);
   const context = canvas.getContext("2d");
 
   // Set background color
   context.fillStyle = "rgba(0, 0, 0, 0.5)";
-  context.fillRect(0, textTop, canvasWidth, textHeight);
+  context.fillRect(0, textTop, canvasInfo.width, textHeight);
 
   // Set text styles
   context.font = `bold ${fontSize}px Arial`;
@@ -78,7 +75,7 @@ async function renderJapaneseTextToPNG(text: string, outputFilePath: string) {
   lines.forEach((line: string, index: number) => {
     context.fillText(
       line,
-      canvasWidth / 2,
+      canvasInfo.width / 2,
       textTop + lineHeight * index + paddingY,
     );
   });
@@ -99,6 +96,7 @@ const createVideo = (
   audioPath: string,
   images: ImageDetails[],
   outputVideoPath: string,
+  canvasInfo: any
 ) => {
   let command = ffmpeg();
 
@@ -113,8 +111,8 @@ const createVideo = (
   images.forEach((image, index) => {
     // Add filter for each image
     filterComplexParts.push(
-      // `[${index}:v]scale=${canvasWidth}:${canvasHeight},setsar=1,format=yuv420p,trim=duration=${image.duration},setpts=${startTime}/TB[v${index}]`,
-      `[${index}:v]scale=${canvasWidth * 4}:${canvasHeight * 4},setsar=1,format=yuv420p,zoompan=z=zoom+0.0004:x=iw/2-(iw/zoom/2):y=ih-(ih/zoom):s=${canvasWidth}x${canvasHeight}:fps=30:d=${image.duration * 30},trim=duration=${image.duration}[v${index}]`,
+      // `[${index}:v]scale=${canvasInfo.width}:${canvasInfo.height},setsar=1,format=yuv420p,trim=duration=${image.duration},setpts=${startTime}/TB[v${index}]`,
+      `[${index}:v]scale=${canvasInfo.width * 4}:${canvasInfo.height * 4},setsar=1,format=yuv420p,zoompan=z=zoom+0.0004:x=iw/2-(iw/zoom/2):y=ih-(ih/zoom):s=${canvasInfo.width}x${canvasInfo.height}:fps=30:d=${image.duration * 30},trim=duration=${image.duration}[v${index}]`,
     );
   });
 
@@ -149,6 +147,11 @@ const createVideo = (
 };
 
 const main = async () => {
+  const canvasInfo = {
+    width: 1280, // not 1920
+    height: 720 // not 1080
+  }
+  
   const arg2 = process.argv[2];
   const scriptPath = path.resolve(arg2);
   const parsedPath = path.parse(scriptPath);
@@ -159,6 +162,7 @@ const main = async () => {
   await renderJapaneseTextToPNG(
     `${jsonData.title}\n\n${jsonData.description}`,
     `./scratchpad/${name}_00.png`, // Output file path
+    canvasInfo
   ).catch((err) => {
     console.error("Error generating PNG:", err);
   });
@@ -167,6 +171,7 @@ const main = async () => {
     return renderJapaneseTextToPNG(
       element["text"],
       `./scratchpad/${name}_${index}.png`, // Output file path
+      canvasInfo
     ).catch((err) => {
       console.error("Error generating PNG:", err);
     });
@@ -187,15 +192,15 @@ const main = async () => {
       const imageBG = await loadImage(image);
       const bgWidth = imageBG.width;
       const bgHeight = imageBG.height;
-      const viewWidth = (bgWidth / bgHeight) * canvasHeight;
-      const canvas = createCanvas(canvasWidth, canvasHeight);
+      const viewWidth = (bgWidth / bgHeight) * canvasInfo.height;
+      const canvas = createCanvas(canvasInfo.width, canvasInfo.height);
       const ctx = canvas.getContext("2d");
       ctx.drawImage(
         imageBG,
-        (canvasWidth - viewWidth) / 2,
+        (canvasInfo.width - viewWidth) / 2,
         0,
         viewWidth,
-        canvasHeight,
+        canvasInfo.height,
       );
       ctx.drawImage(imageText, 0, 0);
       const buffer = canvas.toBuffer("image/png");
@@ -220,7 +225,7 @@ const main = async () => {
   };
   const imagesWithTitle = [titleImage].concat(images);
 
-  createVideo(audioPath, imagesWithTitle, outputVideoPath);
+  createVideo(audioPath, imagesWithTitle, outputVideoPath, canvasInfo);
 };
 
 main();
