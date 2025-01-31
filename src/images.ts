@@ -38,7 +38,10 @@ type PodcastScript = {
   imageInfo: any[]; // generated
 };
 
-async function generateImage(prompt: string, script: PodcastScript): Promise<Buffer | undefined> {
+async function generateImage(
+  prompt: string,
+  script: PodcastScript,
+): Promise<Buffer | undefined> {
   try {
     // Prepare the payload for the API request
     const payload = {

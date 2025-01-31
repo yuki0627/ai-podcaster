@@ -18,7 +18,7 @@ export const ttsNijivoiceAgent: AgentFunction = async ({
     },
     body: JSON.stringify({
       format: "mp3",
-      speed: speed ? ""+ speed : "1.0",
+      speed: speed ? "" + speed : "1.0",
       script: text,
     }),
   };

@@ -3,7 +3,11 @@ import path from "path";
 import ffmpeg from "fluent-ffmpeg";
 import { createCanvas, loadImage } from "canvas";
 
-async function renderJapaneseTextToPNG(text: string, outputFilePath: string, canvasInfo: any) {
+async function renderJapaneseTextToPNG(
+  text: string,
+  outputFilePath: string,
+  canvasInfo: any,
+) {
   const fontSize = 48;
   const paddingX = 48 * 2;
   const paddingY = 12;
@@ -96,7 +100,7 @@ const createVideo = (
   audioPath: string,
   images: ImageDetails[],
   outputVideoPath: string,
-  canvasInfo: any
+  canvasInfo: any,
 ) => {
   let command = ffmpeg();
 
@@ -156,18 +160,18 @@ const main = async () => {
 
   const canvasInfo = {
     width: 1280, // not 1920
-    height: 720 // not 1080
-  }
+    height: 720, // not 1080
+  };
   if (jsonData.aspectRatio === "9:16") {
     canvasInfo.width = 720;
     canvasInfo.height = 1280;
-  }  
+  }
 
   //
   await renderJapaneseTextToPNG(
     `${jsonData.title}\n\n${jsonData.description}`,
     `./scratchpad/${name}_00.png`, // Output file path
-    canvasInfo
+    canvasInfo,
   ).catch((err) => {
     console.error("Error generating PNG:", err);
   });
@@ -176,7 +180,7 @@ const main = async () => {
     return renderJapaneseTextToPNG(
       element["text"],
       `./scratchpad/${name}_${index}.png`, // Output file path
-      canvasInfo
+      canvasInfo,
     ).catch((err) => {
       console.error("Error generating PNG:", err);
     });
