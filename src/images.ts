@@ -27,6 +27,7 @@ type PodcastScript = {
   title: string;
   description: string;
   reference: string;
+  aspectRatio: string;
   tts: string | undefined; // default: openAI
   voices: string[] | undefined;
   speakers: string[] | undefined;
@@ -37,7 +38,7 @@ type PodcastScript = {
   imageInfo: any[]; // generated
 };
 
-async function generateImage(prompt: string): Promise<Buffer | undefined> {
+async function generateImage(prompt: string, script: PodcastScript): Promise<Buffer | undefined> {
   try {
     // Prepare the payload for the API request
     const payload = {
@@ -48,7 +49,7 @@ async function generateImage(prompt: string): Promise<Buffer | undefined> {
       ],
       parameters: {
         sampleCount: 1,
-        aspectRatio: "16:9",
+        aspectRatio: script.aspectRatio ?? "16:9",
         safetySetting: "block_only_high",
       },
     };
@@ -105,7 +106,7 @@ const image_agent = async (namedInputs: {
   try {
     const imagePrompt = script.script[row.index].imagePrompt;
     console.log("generating", row.index, imagePrompt);
-    const imageBuffer = await generateImage(imagePrompt);
+    const imageBuffer = await generateImage(imagePrompt, script);
     if (imageBuffer) {
       fs.writeFileSync(imagePath, imageBuffer);
       console.log("generated:", imagePath);
