@@ -96,6 +96,22 @@ const addBGM = async (inputs: { voiceFile: string; filename: string }) => {
   const musicFile = path.resolve(
     process.env.PATH_BGM ?? "./music/StarsBeyondEx.mp3",
   );
+
+  // まずBGMファイルの長さを取得
+  const bgmDuration = await new Promise<{duration: number, sampleRate: number}>((resolve, reject) => {
+    ffmpeg.ffprobe(musicFile, (err, metadata) => {
+      if (err) {
+        console.error("Error getting BGM metadata:", err);
+        reject(err);
+        return;
+      }
+      // サンプルレートも取得
+      const sampleRate = metadata.streams[0].sample_rate ?? 44100;
+      const duration = metadata.format.duration ?? 0;
+      resolve({ duration, sampleRate });
+    });
+  });
+
   ffmpeg.ffprobe(voiceFile, (err, metadata) => {
     if (err) {
       console.error("Error getting metadata: " + err.message);
@@ -104,23 +120,28 @@ const addBGM = async (inputs: { voiceFile: string; filename: string }) => {
 
     const speechDuration = metadata.format.duration;
     const totalDuration = 8 + Math.round(speechDuration ?? 0);
-    console.log("totalDucation:", speechDuration, totalDuration);
+    
+    // BGMの実際の長さに基づいてループ回数を計算
+    const numLoops = Math.ceil(totalDuration / bgmDuration.duration);
+    // ループサイズをBGMの長さ×サンプルレートで計算
+    const loopSize = Math.floor(bgmDuration.duration * bgmDuration.sampleRate);
+    
+    console.log("totalDuration:", speechDuration, totalDuration, 
+                "bgmDuration:", bgmDuration.duration, 
+                "sampleRate:", bgmDuration.sampleRate,
+                "loops:", numLoops,
+                "loopSize:", loopSize);
 
     const command = ffmpeg();
     command
       .input(musicFile)
       .input(voiceFile)
       .complexFilter([
-        // Add a 2-second delay to the speech
-        "[1:a]adelay=4000|4000, volume=4[a1]", // 4000ms delay for both left and right channels
-        // Set the background music volume to 0.2
-        `[0:a]volume=4[a0]`,
-        // Mix the delayed speech and the background music
-        `[a0][a1]amix=inputs=2:duration=longest:dropout_transition=3[amixed]`,
-        // Trim the output to the length of speech + 8 seconds
-        `[amixed]atrim=start=0:end=${totalDuration}[trimmed]`,
-        // Add fade out effect for the last 4 seconds
-        `[trimmed]afade=t=out:st=${totalDuration - 4}:d=4`,
+        "[1:a]adelay=4000|4000, volume=4[a1]",
+        `[0:a]volume=4,aloop=loop=${numLoops}:size=${loopSize}[a0]`,
+        `[a0][a1]amix=inputs=2:dropout_transition=3[amixed]`,
+        `[amixed]atrim=0:${totalDuration}[trimmed]`,
+        `[trimmed]afade=t=out:st=${totalDuration - 4}:d=4`
       ])
       .on("error", (err) => {
         console.error("Error: " + err.message);
