@@ -2,6 +2,8 @@
   "title": "AIの学習方法：強化学習と教師あり学習",
   "description": "人工知能の二つの重要な学習方法である強化学習と教師あり学習の違いについて、高校生にもわかりやすく解説する対話形式の内容。",
   "tts": "nijivoice",
+  "speed": 1.5,
+  "aspectRatio": "9:16",
   "voices": [
     "afd7df65-0fdc-4d31-ae8b-a29f0f5eed62",
     "a7619e48-bf6a-4f9f-843f-40485651257f",
@@ -10,11 +12,6 @@
   "charactors": ["春玲", "太郎", "山田先生"],
   "speakers": ["Announcer", "Student", "Teacher"],
   "script": [
-    {
-      "speaker": "Announcer",
-      "text": "米国で活躍するエンジニアが新しい技術やビジネスを分かりやすく解説する、中島聡のLife is beautiful。今日は、人工知能の学習方法についての解説です。",
-      "imagePrompt": "A modern, minimalist illustration of interconnected neural networks with soft blue gradient background, representing AI technology. Clean lines and geometric patterns suggesting advanced technology and innovation."
-    },
     {
       "speaker": "Student",
       "text": "先生、最近ニュースでよく「強化学習」って聞くんですけど、これって何ですか？",
@@ -62,7 +59,7 @@
     },
     {
       "speaker": "Teacher",
-      "text": "その通り！とてもいい例えだね。教師あり学習は、まさに学校の勉強みたいなんだ。一方、強化学習は部活動で新しい技を身につけるみたいなものかな。",
+      "text": "その通り。とてもいい例えだね。教師あり学習は、まさに学校の勉強みたいなんだ。一方、強化学習は部活動で新しい技を身につけるみたいなものかな。",
       "imagePrompt": "Split screen digital art: one side showing organized data patterns (supervised learning), other side showing progressive improvement through trial and error (reinforcement learning), connected by flowing energy."
     },
     {
@@ -92,7 +89,7 @@
     },
     {
       "speaker": "Teacher",
-      "text": "そう！実は人工知能の多くの技術は、人間の学習方法からヒントを得ているんだ。教師あり学習は学校での勉強に似ていて、強化学習は経験から学ぶ方法に似ているってことだね。",
+      "text": "そう。実は人工知能の多くの技術は、人間の学習方法からヒントを得ているんだ。教師あり学習は学校での勉強に似ていて、強化学習は経験から学ぶ方法に似ているってことだね。",
       "imagePrompt": "Artistic visualization of human brain patterns transforming into AI neural networks, showing the inspiration and connection between human and machine learning methods."
     },
     {
@@ -104,11 +101,6 @@
       "speaker": "Teacher",
       "text": "うん、とてもよく理解できたみたいで良かったよ。これからもAIの話題に興味を持ってくれたら嬉しいな。",
       "imagePrompt": "Optimistic future vision of AI and human collaboration, showing interconnected networks of human-inspired AI systems in warm, encouraging colors and modern design."
-    },
-    {
-      "speaker": "Announcer",
-      "text": "ご視聴ありがとうございました。次回の放送もお楽しみに。",
-      "imagePrompt": "Elegant closing graphic with AI-themed elements fading into a subtle background, suggesting continuation and future episodes, using clean modern design elements."
     }
   ]
 }
