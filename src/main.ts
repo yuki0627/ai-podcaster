@@ -111,10 +111,10 @@ const addBGM = async (inputs: { voiceFile: string; filename: string }) => {
       .input(musicFile)
       .input(voiceFile)
       .complexFilter([
+        // Loop the background music
+        "[0:a]aloop=loop=-1:size=2e+09[a0]",
         // Add a 2-second delay to the speech
         "[1:a]adelay=4000|4000, volume=1[a1]", // 4000ms delay for both left and right channels
-        // Set the background music volume to 0.2
-        `[0:a]volume=1[a0]`,
         // Mix the delayed speech and the background music
         `[a0][a1]amix=inputs=2:duration=longest:dropout_transition=3[amixed]`,
         // Trim the output to the length of speech + 8 seconds
