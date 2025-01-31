@@ -26,6 +26,7 @@ type ScriptData = {
 
 type PodcastScript = {
   title: string;
+  padding: number | undefined;
   description: string;
   reference: string;
   tts: string | undefined; // default: openAI
@@ -83,8 +84,8 @@ const combineFiles = async (inputs: { script: PodcastScript }) => {
   return outputFile;
 };
 
-const addBGM = async (inputs: { voiceFile: string; filename: string }) => {
-  const { voiceFile, filename } = inputs;
+const addBGM = async (inputs: { voiceFile: string; filename: string, script: PodcastScript }) => {
+  const { voiceFile, filename, script } = inputs;
   const outputFile = path.resolve("./output/" + filename + "_bgm.mp3");
   const musicFile = path.resolve(
     process.env.PATH_BGM ?? "./music/StarsBeyondEx.mp3",
@@ -96,7 +97,8 @@ const addBGM = async (inputs: { voiceFile: string; filename: string }) => {
     }
 
     const speechDuration = metadata.format.duration;
-    const totalDuration = 8 + Math.round(speechDuration ?? 0);
+    const padding = script.padding ?? 4000; // msec
+    const totalDuration = padding * 2 / 1000 + Math.round(speechDuration ?? 0);
     console.log("totalDucation:", speechDuration, totalDuration);
 
     const command = ffmpeg();
@@ -105,7 +107,7 @@ const addBGM = async (inputs: { voiceFile: string; filename: string }) => {
       .input(voiceFile)
       .complexFilter([
         // Add a 2-second delay to the speech
-        "[1:a]adelay=4000|4000, volume=4[a1]", // 4000ms delay for both left and right channels
+        `[1:a]adelay=${padding}|${padding}, volume=4[a1]`, // 4000ms delay for both left and right channels
         // Set the background music volume to 0.2
         `[0:a]volume=0.2[a0]`,
         // Mix the delayed speech and the background music
@@ -113,7 +115,7 @@ const addBGM = async (inputs: { voiceFile: string; filename: string }) => {
         // Trim the output to the length of speech + 8 seconds
         `[amixed]atrim=start=0:end=${totalDuration}[trimmed]`,
         // Add fade out effect for the last 4 seconds
-        `[trimmed]afade=t=out:st=${totalDuration - 4}:d=4`,
+        `[trimmed]afade=t=out:st=${totalDuration - padding/1000}:d=${padding}`,
       ])
       .on("error", (err) => {
         console.error("Error: " + err.message);
@@ -185,6 +187,7 @@ const graph_data: GraphData = {
       inputs: {
         voiceFile: ":combineFiles",
         filename: ":script.filename",
+        script: ":script",
       },
       isResult: true,
     },

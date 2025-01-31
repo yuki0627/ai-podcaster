@@ -3,6 +3,7 @@
   "description": "人工知能の二つの重要な学習方法である強化学習と教師あり学習の違いについて、高校生にもわかりやすく解説する対話形式の内容。",
   "tts": "nijivoice",
   "speed": 1.5,
+  "padding": 200,
   "aspectRatio": "9:16",
   "voices": [
     "afd7df65-0fdc-4d31-ae8b-a29f0f5eed62",
