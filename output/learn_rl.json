@@ -93,10 +93,10 @@
     },
     {
       "speaker": "Student",
-      "text": "じゃあ、どっちが better なんですか？",
+      "text": "じゃあ、どっちが良いんですか？",
       "imagePrompt": "Abstract scales balancing two different AI learning approaches, represented by distinct visual patterns and colors, floating in a tech-inspired space with data streams.",
       "filename": "learn_rl10",
-      "duration": 1.4494
+      "duration": 1.26655
     },
     {
       "speaker": "Teacher",
@@ -157,58 +157,76 @@
   },
   "imageInfo": [
     {
-      "index": 0
+      "index": 0,
+      "image": "./images/learn_rl/0p.png"
     },
     {
-      "index": 1
+      "index": 1,
+      "image": "./images/learn_rl/1p.png"
     },
     {
-      "index": 2
+      "index": 2,
+      "image": "./images/learn_rl/2p.png"
     },
     {
-      "index": 3
+      "index": 3,
+      "image": "./images/learn_rl/3p.png"
     },
     {
-      "index": 4
+      "index": 4,
+      "image": "./images/learn_rl/4p.png"
     },
     {
-      "index": 5
+      "index": 5,
+      "image": "./images/learn_rl/5p.png"
     },
     {
-      "index": 6
+      "index": 6,
+      "image": "./images/learn_rl/6p.png"
     },
     {
-      "index": 7
+      "index": 7,
+      "image": "./images/learn_rl/7p.png"
     },
     {
-      "index": 8
+      "index": 8,
+      "image": "./images/learn_rl/8p.png"
     },
     {
-      "index": 9
+      "index": 9,
+      "image": "./images/learn_rl/9p.png"
     },
     {
-      "index": 10
+      "index": 10,
+      "image": "./images/learn_rl/10p.png"
     },
     {
-      "index": 11
+      "index": 11,
+      "image": "./images/learn_rl/11p.png"
     },
     {
-      "index": 12
+      "index": 12,
+      "image": "./images/learn_rl/12p.png"
     },
     {
-      "index": 13
+      "index": 13,
+      "image": "./images/learn_rl/13p.png"
     },
     {
-      "index": 14
+      "index": 14,
+      "image": "./images/learn_rl/14p.png"
     },
     {
-      "index": 15
+      "index": 15,
+      "image": "./images/learn_rl/15p.png"
     },
     {
-      "index": 16
+      "index": 16,
+      "image": "./images/learn_rl/16p.png"
     },
     {
-      "index": 17
+      "index": 17,
+      "image": "./images/learn_rl/17p.png"
     }
   ]
 }

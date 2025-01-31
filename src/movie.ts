@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import ffmpeg from "fluent-ffmpeg";
 import { createCanvas, loadImage } from "canvas";
+import { json } from "stream/consumers";
 
 async function renderJapaneseTextToPNG(
   text: string,
@@ -230,7 +231,7 @@ const main = async () => {
   const outputVideoPath = path.resolve("./output/" + name + "_ja.mp4");
   const titleImage: ImageDetails = {
     path: path.resolve(`./scratchpad/${name}_00.png`),
-    duration: 4,
+    duration: jsonData.padding / 1000,
   };
   const imagesWithTitle = [titleImage].concat(images);
 
