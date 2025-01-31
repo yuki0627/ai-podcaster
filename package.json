@@ -20,6 +20,7 @@
   "dependencies": {
     "@ffmpeg-installer/ffmpeg": "^1.1.0",
     "@ffprobe-installer/ffprobe": "^2.1.2",
+    "@google-cloud/text-to-speech": "^5.8.0",
     "@google/generative-ai": "^0.21.0",
     "@graphai/agents": "^0.2.3",
     "@graphai/tts_nijivoice_agent": "^0.0.2",
