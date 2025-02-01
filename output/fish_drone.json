@@ -1,0 +1,193 @@
+{
+  "title": "海中ドローンによる魚の輸送革命",
+  "description": "K-Oceanが発表した革新的な海中ドローン輸送システム「AquaTransport」について、高校生向けにわかりやすく解説する対話形式の台本",
+  "tts": "nijivoice",
+  "voices": [
+    "afd7df65-0fdc-4d31-ae8b-a29f0f5eed62",
+    "a7619e48-bf6a-4f9f-843f-40485651257f",
+    "bc06c63f-fef6-43b6-92f7-67f919bd5dae"
+  ],
+  "charactors": [
+    "春玲",
+    "森野颯太",
+    "ベン・カーター"
+  ],
+  "speakers": [
+    "Announcer",
+    "Student",
+    "Teacher"
+  ],
+  "script": [
+    {
+      "speaker": "Announcer",
+      "text": "これは、AIを使った新しい製品やサービスを募集するアイデアソンに投稿されたアイデアのうち、最終選考に残ったものの一つです。",
+      "filename": "fish_drone0",
+      "duration": 9.051
+    },
+    {
+      "speaker": "Student",
+      "text": "先生、ニュースで見たんですけど、魚を運ぶドローンって本当にできるんですか？",
+      "filename": "fish_drone1",
+      "duration": 4.66245
+    },
+    {
+      "speaker": "Teacher",
+      "text": "ああ、K-Oceanという会社が発表した「AquaTransport」のことだね。これは本当に画期的な技術なんだ。海の中を自由に泳ぎ回れるドローンを使って、生きたまま魚を運ぶシステムなんだよ。",
+      "filename": "fish_drone2",
+      "duration": 14.69345
+    },
+    {
+      "speaker": "Student",
+      "text": "えっ！生きたまま運べるんですか？どうやって魚を安全に運ぶんですか？",
+      "filename": "fish_drone3",
+      "duration": 4.5318499999999995
+    },
+    {
+      "speaker": "Teacher",
+      "text": "このドローンには特別な機能が付いているんだ。中にはAIが搭載されていて、魚が快適に過ごせるように水温や酸素の量を常にチェックしているんだよ。まるで、魚のための小さな水族館みたいなものかな。",
+      "filename": "fish_drone4",
+      "duration": 16.15635
+    },
+    {
+      "speaker": "Student",
+      "text": "すごいですね！でも、海の中って危なくないんですか？",
+      "filename": "fish_drone5",
+      "duration": 3.6437
+    },
+    {
+      "speaker": "Teacher",
+      "text": "そこもAIの出番なんだ。海の流れや天気のデータをリアルタイムで分析して、一番安全で効率の良い航路を選んでくれる。他の船や障害物も自動で避けることができるんだよ。",
+      "filename": "fish_drone6",
+      "duration": 13.700800000000001
+    },
+    {
+      "speaker": "Student",
+      "text": "へぇ～。でも、なんでそんな複雑なシステムを作ったんですか？",
+      "filename": "fish_drone7",
+      "duration": 3.6437
+    },
+    {
+      "speaker": "Teacher",
+      "text": "大きく分けて2つの理由があるんだ。1つは環境への配慮。従来の漁船に比べて燃料をあまり使わないから、地球温暖化の原因となる二酸化炭素の排出を減らすことができる。もう1つは、魚の品質を保つため。生きたまま運べるから、新鮮な魚をお客さんに届けられるんだ。",
+      "filename": "fish_drone8",
+      "duration": 22.660800000000002
+    },
+    {
+      "speaker": "Student",
+      "text": "環境にも優しくて、おいしい魚が食べられるんですね！どんな場所で使われるんですか？",
+      "filename": "fish_drone9",
+      "duration": 5.34165
+    },
+    {
+      "speaker": "Teacher",
+      "text": "使い道は本当に幅広いんだよ。漁港から市場への輸送はもちろん、海辺のレストランに直接新鮮な魚を届けたり、水族館や研究所で海の生き物を安全に移動させたりすることもできる。来年の夏から予約が始まるらしいよ。",
+      "filename": "fish_drone10",
+      "duration": 17.1751
+    },
+    {
+      "speaker": "Student",
+      "text": "未来の技術って感じですね！でも、どうやってそんな複雑なシステムを作ったんですか？",
+      "filename": "fish_drone11",
+      "duration": 4.9759
+    },
+    {
+      "speaker": "Teacher",
+      "text": "そうだね。これはAI技術と海洋工学の粋を集めて作られているんだ。特に面白いのは、ドローンの中の環境をコントロールする技術さ。魚の種類によって必要な環境が違うから、それぞれに合わせて最適な状態を保つように設計されているんだよ。",
+      "filename": "fish_drone12",
+      "duration": 18.97755
+    },
+    {
+      "speaker": "Student",
+      "text": "へぇ～、魚の種類によって環境を変えられるんですか？",
+      "filename": "fish_drone13",
+      "duration": 3.7742999999999998
+    },
+    {
+      "speaker": "Teacher",
+      "text": "そうなんだ。例えば、マグロとヒラメでは好む水温が違うからね。AIがそれぞれの魚に合わせて最適な環境を作り出すんだ。これって、人工知能と生物学の知識を組み合わせた素晴らしい例だと思うよ。",
+      "filename": "fish_drone14",
+      "duration": 16.62655
+    },
+    {
+      "speaker": "Student",
+      "text": "科学技術ってすごいですね。将来、もっと便利になりそうです！",
+      "filename": "fish_drone15",
+      "duration": 4.32285
+    },
+    {
+      "speaker": "Teacher",
+      "text": "その通り！これは水産業の未来を変える可能性を持った技術なんだ。環境に優しく、効率的で、しかも魚の品質も保てる。こういった技術革新が、私たちの暮らしをより良いものにしていくんだよ。",
+      "filename": "fish_drone16",
+      "duration": 15.87265
+    },
+    {
+      "speaker": "Announcer",
+      "text": "ご視聴、ありがとうございます。とても面白いアイデアだと思いませんか？",
+      "filename": "fish_drone17",
+      "duration": 5.3155
+    }
+  ],
+  "filename": "fish_drone",
+  "ttsAgent": "ttsNijivoiceAgent",
+  "voicemap": {
+    "Announcer": "afd7df65-0fdc-4d31-ae8b-a29f0f5eed62",
+    "Student": "a7619e48-bf6a-4f9f-843f-40485651257f",
+    "Teacher": "bc06c63f-fef6-43b6-92f7-67f919bd5dae"
+  },
+  "imageInfo": [
+    {
+      "index": 0
+    },
+    {
+      "index": 1
+    },
+    {
+      "index": 2
+    },
+    {
+      "index": 3
+    },
+    {
+      "index": 4
+    },
+    {
+      "index": 5
+    },
+    {
+      "index": 6
+    },
+    {
+      "index": 7
+    },
+    {
+      "index": 8
+    },
+    {
+      "index": 9
+    },
+    {
+      "index": 10
+    },
+    {
+      "index": 11
+    },
+    {
+      "index": 12
+    },
+    {
+      "index": 13
+    },
+    {
+      "index": 14
+    },
+    {
+      "index": 15
+    },
+    {
+      "index": 16
+    },
+    {
+      "index": 17
+    }
+  ]
+}

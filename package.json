@@ -8,7 +8,7 @@
     "ja": "ts-node ./src/translate.ts",
     "mov": "ts-node ./src/movie.ts",
     "test": "ts-node ./src/test.ts",
-    "format": "prettier --write '{src,scripts,draft,scripts_mag2}/**/*.{ts,json}'"
+    "format": "prettier --write '{src,scripts,draft,ideason,scripts_mag2}/**/*.{ts,json}'"
   },
   "repository": "git+ssh://git@github.com/snakajima/ai-podcaster.git",
   "author": "snakajima",

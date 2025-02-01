@@ -84,7 +84,11 @@ const combineFiles = async (inputs: { script: PodcastScript }) => {
   return outputFile;
 };
 
-const addBGM = async (inputs: { voiceFile: string; filename: string, script: PodcastScript }) => {
+const addBGM = async (inputs: {
+  voiceFile: string;
+  filename: string;
+  script: PodcastScript;
+}) => {
   const { voiceFile, filename, script } = inputs;
   const outputFile = path.resolve("./output/" + filename + "_bgm.mp3");
   const musicFile = path.resolve(
@@ -98,7 +102,8 @@ const addBGM = async (inputs: { voiceFile: string; filename: string, script: Pod
 
     const speechDuration = metadata.format.duration;
     const padding = script.padding ?? 4000; // msec
-    const totalDuration = padding * 2 / 1000 + Math.round(speechDuration ?? 0);
+    const totalDuration =
+      (padding * 2) / 1000 + Math.round(speechDuration ?? 0);
     console.log("totalDucation:", speechDuration, totalDuration);
 
     const command = ffmpeg();
@@ -115,7 +120,7 @@ const addBGM = async (inputs: { voiceFile: string; filename: string, script: Pod
         // Trim the output to the length of speech + 8 seconds
         `[amixed]atrim=start=0:end=${totalDuration}[trimmed]`,
         // Add fade out effect for the last 4 seconds
-        `[trimmed]afade=t=out:st=${totalDuration - padding/1000}:d=${padding}`,
+        `[trimmed]afade=t=out:st=${totalDuration - padding / 1000}:d=${padding}`,
       ])
       .on("error", (err) => {
         console.error("Error: " + err.message);
