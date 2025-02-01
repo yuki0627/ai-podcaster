@@ -2,7 +2,7 @@ import { AgentFunction, AgentFunctionInfo } from "graphai";
 import ffmpeg from "fluent-ffmpeg";
 import path from "path";
 
-const addBGMAgent: AgentFunction = async ({namedInputs}) => {
+const addBGMAgent: AgentFunction<null, string, {voiceFile: string, filename: string, script: string}> = async ({namedInputs}) => {
   const { voiceFile, filename, script } = namedInputs;
   const outputFile = path.resolve("./output/" + filename + "_bgm.mp3");
   const musicFile = path.resolve(
@@ -51,8 +51,8 @@ const addBGMAgentInfo: AgentFunctionInfo = {
   mock: addBGMAgent,
   samples: [],
   description: "addBGMAgent",
-  category: ["tts"],
-  author: "isamu arimoto",
+  category: ["ffmpeg"],
+  author: "satoshi nakajima",
   repository: "https://github.com/snakajima/ai-podcaster",
   license: "MIT",
 };

@@ -14,9 +14,9 @@ import * as agents from "@graphai/agents";
 import { ttsOpenaiAgent } from "@graphai/tts_openai_agent";
 import ttsNijivoiceAgent from "./agents/tts_nijivoice_agent";
 import addBGMAgent from "./agents/add_bgm_agent";
+import combineFilesAgent from "./agents/combine_files_agent";
 // import ttsOpenaiAgent from "./agents/tts_openai_agent";
 import { pathUtilsAgent } from "@graphai/vanilla_node_agents";
-import ffmpeg from "fluent-ffmpeg";
 
 type ScriptData = {
   speaker: string;
@@ -43,47 +43,6 @@ type PodcastScript = {
 const rion_takanashi_voice = "b9277ce3-ba1c-4f6f-9a65-c05ca102ded0"; // たかなし りおん
 const ben_carter_voice = "bc06c63f-fef6-43b6-92f7-67f919bd5dae"; // ベン・カーター
 
-const combineFiles = async (inputs: { script: PodcastScript }) => {
-  const { script } = inputs;
-  const outputFile = path.resolve("./output/" + script.filename + ".mp3");
-  const silentPath = path.resolve("./music/silent300.mp3");
-  const silentLastPath = path.resolve("./music/silent800.mp3");
-  const command = ffmpeg();
-  script.script.forEach((element: ScriptData, index: number) => {
-    const filePath = path.resolve("./scratchpad/" + element.filename + ".mp3");
-    const isLast = index === script.script.length - 2;
-    command.input(filePath);
-    command.input(isLast ? silentLastPath : silentPath);
-    // Measure and log the timestamp of each section
-    ffmpeg.ffprobe(filePath, (err, metadata) => {
-      if (err) {
-        console.error("Error while getting metadata:", err);
-      } else {
-        element["duration"] = metadata.format.duration! + (isLast ? 0.8 : 0.3);
-      }
-    });
-  });
-
-  const promise = new Promise((resolve, reject) => {
-    command
-      .on("end", () => {
-        console.log("MP3 files have been successfully combined.");
-        resolve(0);
-      })
-      .on("error", (err: any) => {
-        console.error("Error while combining MP3 files:", err);
-        reject(err);
-      })
-      .mergeToFile(outputFile, path.dirname(outputFile));
-  });
-
-  await promise;
-
-  const outputScript = path.resolve("./output/" + script.filename + ".json");
-  fs.writeFileSync(outputScript, JSON.stringify(script, null, 2));
-
-  return outputFile;
-};
 
 const graph_tts: GraphData = {
   nodes: {
@@ -135,7 +94,7 @@ const graph_data: GraphData = {
       graph: graph_tts,
     },
     combineFiles: {
-      agent: combineFiles,
+      agent: "combineFilesAgent",
       inputs: { map: ":map", script: ":script" },
       isResult: true,
     },
@@ -255,6 +214,7 @@ const main = async () => {
       ttsOpenaiAgent,
       ttsNijivoiceAgent,
       addBGMAgent,
+      combineFilesAgent,
     },
     { agentFilters },
   );
