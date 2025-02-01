@@ -13,9 +13,10 @@ import * as agents from "@graphai/agents";
 // import { ttsNijivoiceAgent } from "@graphai/tts_nijivoice_agent";
 import { ttsOpenaiAgent } from "@graphai/tts_openai_agent";
 import ttsNijivoiceAgent from "./agents/tts_nijivoice_agent";
+import addBGMAgent from "./agents/add_bgm_agent";
+import combineFilesAgent from "./agents/combine_files_agent";
 // import ttsOpenaiAgent from "./agents/tts_openai_agent";
 import { pathUtilsAgent } from "@graphai/vanilla_node_agents";
-import ffmpeg from "fluent-ffmpeg";
 
 type ScriptData = {
   speaker: string;
@@ -42,91 +43,6 @@ type PodcastScript = {
 const rion_takanashi_voice = "b9277ce3-ba1c-4f6f-9a65-c05ca102ded0"; // たかなし りおん
 const ben_carter_voice = "bc06c63f-fef6-43b6-92f7-67f919bd5dae"; // ベン・カーター
 
-const combineFiles = async (inputs: { script: PodcastScript }) => {
-  const { script } = inputs;
-  const outputFile = path.resolve("./output/" + script.filename + ".mp3");
-  const silentPath = path.resolve("./music/silent300.mp3");
-  const silentLastPath = path.resolve("./music/silent800.mp3");
-  const command = ffmpeg();
-  script.script.forEach((element: ScriptData, index: number) => {
-    const filePath = path.resolve("./scratchpad/" + element.filename + ".mp3");
-    const isLast = index === script.script.length - 2;
-    command.input(filePath);
-    command.input(isLast ? silentLastPath : silentPath);
-    // Measure and log the timestamp of each section
-    ffmpeg.ffprobe(filePath, (err, metadata) => {
-      if (err) {
-        console.error("Error while getting metadata:", err);
-      } else {
-        element["duration"] = metadata.format.duration! + (isLast ? 0.8 : 0.3);
-      }
-    });
-  });
-
-  const promise = new Promise((resolve, reject) => {
-    command
-      .on("end", () => {
-        console.log("MP3 files have been successfully combined.");
-        resolve(0);
-      })
-      .on("error", (err: any) => {
-        console.error("Error while combining MP3 files:", err);
-        reject(err);
-      })
-      .mergeToFile(outputFile, path.dirname(outputFile));
-  });
-
-  await promise;
-
-  const outputScript = path.resolve("./output/" + script.filename + ".json");
-  fs.writeFileSync(outputScript, JSON.stringify(script, null, 2));
-
-  return outputFile;
-};
-
-const addBGM = async (inputs: { voiceFile: string; filename: string, script: PodcastScript }) => {
-  const { voiceFile, filename, script } = inputs;
-  const outputFile = path.resolve("./output/" + filename + "_bgm.mp3");
-  const musicFile = path.resolve(
-    process.env.PATH_BGM ?? "./music/StarsBeyondEx.mp3",
-  );
-  ffmpeg.ffprobe(voiceFile, (err, metadata) => {
-    if (err) {
-      console.error("Error getting metadata: " + err.message);
-      return;
-    }
-
-    const speechDuration = metadata.format.duration;
-    const padding = script.padding ?? 4000; // msec
-    const totalDuration = padding * 2 / 1000 + Math.round(speechDuration ?? 0);
-    console.log("totalDucation:", speechDuration, totalDuration);
-
-    const command = ffmpeg();
-    command
-      .input(musicFile)
-      .input(voiceFile)
-      .complexFilter([
-        // Add a 2-second delay to the speech
-        `[1:a]adelay=${padding}|${padding}, volume=4[a1]`, // 4000ms delay for both left and right channels
-        // Set the background music volume to 0.2
-        `[0:a]volume=0.2[a0]`,
-        // Mix the delayed speech and the background music
-        `[a0][a1]amix=inputs=2:duration=longest:dropout_transition=3[amixed]`,
-        // Trim the output to the length of speech + 8 seconds
-        `[amixed]atrim=start=0:end=${totalDuration}[trimmed]`,
-        // Add fade out effect for the last 4 seconds
-        `[trimmed]afade=t=out:st=${totalDuration - padding/1000}:d=${padding}`,
-      ])
-      .on("error", (err) => {
-        console.error("Error: " + err.message);
-      })
-      .on("end", () => {
-        console.log("File has been created successfully");
-      })
-      .save(outputFile);
-  });
-  return outputFile;
-};
 
 const graph_tts: GraphData = {
   nodes: {
@@ -178,12 +94,12 @@ const graph_data: GraphData = {
       graph: graph_tts,
     },
     combineFiles: {
-      agent: combineFiles,
+      agent: "combineFilesAgent",
       inputs: { map: ":map", script: ":script" },
       isResult: true,
     },
     addBGM: {
-      agent: addBGM,
+      agent: "addBGMAgent",
       inputs: {
         voiceFile: ":combineFiles",
         filename: ":script.filename",
@@ -297,6 +213,8 @@ const main = async () => {
       pathUtilsAgent,
       ttsOpenaiAgent,
       ttsNijivoiceAgent,
+      addBGMAgent,
+      combineFilesAgent,
     },
     { agentFilters },
   );
