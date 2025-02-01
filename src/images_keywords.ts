@@ -5,31 +5,10 @@ import path from "path";
 import { GraphAI, GraphData, DefaultResultData } from "graphai";
 import * as agents from "@graphai/agents";
 
+import { ScriptData } from "./type";
+
 dotenv.config();
 const openai = new OpenAI();
-
-type ScriptData = {
-  speaker: string;
-  text: string;
-  duration: number; // generated
-  filename: string; // generated
-};
-
-/*
-type PodcastScript = {
-  title: string;
-  description: string;
-  reference: string;
-  tts: string | undefined; // default: openAI
-  voices: string[] | undefined;
-  speakers: string[] | undefined;
-  script: ScriptData[];
-  filename: string; // generated
-  voicemap: Map<string, string>; // generated
-  ttsAgent: string; // generated
-  imageInfo: any[]; // generated
-};
-*/
 
 const image_agent = async (namedInputs: {
   row: { text: string; index: number };
