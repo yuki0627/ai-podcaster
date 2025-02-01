@@ -15,6 +15,7 @@ type ScriptData = {
   filename: string; // generated
 };
 
+/*
 type PodcastScript = {
   title: string;
   description: string;
@@ -28,6 +29,7 @@ type PodcastScript = {
   ttsAgent: string; // generated
   imageInfo: any[]; // generated
 };
+*/
 
 const image_agent = async (namedInputs: {
   row: { text: string; index: number };

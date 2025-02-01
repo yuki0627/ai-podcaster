@@ -1,5 +1,5 @@
 import dotenv from "dotenv";
-import OpenAI from "openai";
+// import OpenAI from "openai";
 import fs from "fs";
 import path from "path";
 import { GraphAI, GraphData, DefaultResultData } from "graphai";

@@ -6,8 +6,8 @@ import {
   GraphAI,
   AgentFilterFunction,
   GraphData,
-  ComputedNodeData,
-  StaticNodeData,
+  // ComputedNodeData,
+  // StaticNodeData,
 } from "graphai";
 import * as agents from "@graphai/agents";
 // import { ttsNijivoiceAgent } from "@graphai/tts_nijivoice_agent";
@@ -130,7 +130,7 @@ const fileCacheAgentFilter: AgentFilterFunction = async (context, next) => {
     await fsPromise.access(file);
     console.log("cache hit: " + file, namedInputs.text.slice(0, 10));
     return true;
-  } catch (e) {
+  } catch (__e) {
     const output = (await next(context)) as Record<string, any>;
     const buffer = output ? output["buffer"] : undefined;
     if (buffer) {

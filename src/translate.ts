@@ -1,6 +1,6 @@
 import fs from "fs";
 import path from "path";
-import OpenAI from "openai";
+// import OpenAI from "openai";
 import dotenv from "dotenv";
 import { GraphAI } from "graphai";
 import * as agents from "@graphai/agents";

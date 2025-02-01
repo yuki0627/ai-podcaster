@@ -1,5 +1,5 @@
 import "dotenv/config";
-import fsPromise from "fs/promises";
+// import fsPromise from "fs/promises";
 import fs from "fs";
 import path from "path";
 
