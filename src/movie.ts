@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import ffmpeg from "fluent-ffmpeg";
 import { createCanvas, loadImage } from "canvas";
-import { ScriptData, PodcastScript } from "./type";
+import { PodcastScript } from "./type";
 
 async function renderJapaneseTextToPNG(
   text: string,

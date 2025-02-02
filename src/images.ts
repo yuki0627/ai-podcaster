@@ -4,7 +4,7 @@ import fs from "fs";
 import path from "path";
 import { GraphAI, GraphData, DefaultResultData } from "graphai";
 import * as agents from "@graphai/agents";
-import { ScriptData, PodcastScript } from "./type";
+import { PodcastScript } from "./type";
 
 dotenv.config();
 // const openai = new OpenAI();
