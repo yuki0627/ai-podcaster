@@ -12,7 +12,7 @@ on:
       - main
 
 jobs:
-  web_build:
+  lint_test:
 
     runs-on: ubuntu-latest
     strategy:
