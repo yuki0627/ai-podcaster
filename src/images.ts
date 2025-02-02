@@ -4,6 +4,7 @@ import fs from "fs";
 import path from "path";
 import { GraphAI, GraphData, DefaultResultData } from "graphai";
 import * as agents from "@graphai/agents";
+import { ScriptData, PodcastScript } from "./type";
 
 dotenv.config();
 // const openai = new OpenAI();
@@ -14,28 +15,6 @@ const GOOGLE_IMAGEN_MODEL = "imagen-3.0-fast-generate-001";
 const GOOGLE_IMAGEN_ENDPOINT = `https://us-central1-aiplatform.googleapis.com/v1/projects/${GOOGLE_PROJECT_ID}/locations/us-central1/publishers/google/models/${GOOGLE_IMAGEN_MODEL}:predict`;
 const tokenHolder = {
   token: "undefined",
-};
-
-type ScriptData = {
-  speaker: string;
-  text: string;
-  duration: number; // generated
-  imagePrompt: string;
-};
-
-type PodcastScript = {
-  title: string;
-  description: string;
-  reference: string;
-  aspectRatio: string;
-  tts: string | undefined; // default: openAI
-  voices: string[] | undefined;
-  speakers: string[] | undefined;
-  script: ScriptData[];
-  filename: string; // generated
-  voicemap: Map<string, string>; // generated
-  ttsAgent: string; // generated
-  imageInfo: any[]; // generated
 };
 
 async function generateImage(

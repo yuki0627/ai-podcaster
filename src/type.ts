@@ -3,6 +3,7 @@ export type ScriptData = {
   text: string;
   duration: number; // generated
   filename: string; // generated
+  imagePrompt: string; // inserted by LLM
 };
 
 export type PodcastScript = {
@@ -18,4 +19,5 @@ export type PodcastScript = {
   voicemap: Map<string, string>; // generated
   ttsAgent: string; // generated
   imageInfo: any[]; // generated
+  aspectRatio: string | undefined; // "16:9" or "9:16"
 };
