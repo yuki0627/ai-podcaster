@@ -1,31 +1,12 @@
 import fs from "fs";
 import path from "path";
-import OpenAI from "openai";
+// import OpenAI from "openai";
 import dotenv from "dotenv";
 import { GraphAI } from "graphai";
 import * as agents from "@graphai/agents";
+import { PodcastScript } from "./type";
 
 dotenv.config();
-
-type ScriptData = {
-  speaker: string;
-  text: string;
-  duration: number; // generated
-  filename: string; // generated
-};
-
-type PodcastScript = {
-  title: string;
-  description: string;
-  reference: string;
-  tts: string | undefined; // default: openAI
-  voices: string[] | undefined;
-  speakers: string[] | undefined;
-  script: ScriptData[];
-  filename: string; // generated
-  voicemap: Map<string, string>; // generated
-  ttsAgent: string; // generated
-};
 
 const writeTranslatedJson = async (inputs: { jsonData: any; name: string }) => {
   const { name, jsonData } = inputs;

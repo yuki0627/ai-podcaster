@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import ffmpeg from "fluent-ffmpeg";
 import { createCanvas, loadImage } from "canvas";
-import { json } from "stream/consumers";
+// import { json } from "stream/consumers";
 
 async function renderJapaneseTextToPNG(
   text: string,
@@ -136,7 +136,7 @@ const createVideo = (
       "-r 30", // Set frame rate
       "-pix_fmt yuv420p", // Set pixel format for better compatibility
     ])
-    .on("start", (cmdLine) => {
+    .on("start", (__cmdLine) => {
       console.log("Started FFmpeg ..."); // with command:', cmdLine);
     })
     .on("error", (err, stdout, stderr) => {
