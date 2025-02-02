@@ -4,9 +4,11 @@ import path from "path";
 import fs from "fs";
 import { PodcastScript } from "../type";
 
-const combineFilesAgent: AgentFunction<null, string, { script: PodcastScript }> = async ({
-  namedInputs,
-}) => {
+const combineFilesAgent: AgentFunction<
+  null,
+  string,
+  { script: PodcastScript }
+> = async ({ namedInputs }) => {
   const { script } = namedInputs;
   const outputFile = path.resolve("./output/" + script.filename + ".mp3");
   const silentPath = path.resolve("./music/silent300.mp3");
