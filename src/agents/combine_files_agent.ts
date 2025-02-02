@@ -3,7 +3,9 @@ import ffmpeg from "fluent-ffmpeg";
 import path from "path";
 import fs from "fs";
 
-const combineFilesAgent: AgentFunction<null, string, {script: any} > = async ({namedInputs}) => {
+const combineFilesAgent: AgentFunction<null, string, { script: any }> = async ({
+  namedInputs,
+}) => {
   const { script } = namedInputs;
   const outputFile = path.resolve("./output/" + script.filename + ".mp3");
   const silentPath = path.resolve("./music/silent300.mp3");

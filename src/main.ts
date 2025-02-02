@@ -99,9 +99,12 @@ const graph_data: GraphData = {
     },
     addBGM: {
       agent: "addBGMAgent",
+      params: {
+        musicFileName: process.env.PATH_BGM ?? "./music/StarsBeyondEx.mp3",
+      },
       inputs: {
         voiceFile: ":combineFiles",
-        filename: ":script.filename",
+        outFileName: "./output/${:script.filename}_bgm.mp3",
         script: ":script",
       },
       isResult: true,
