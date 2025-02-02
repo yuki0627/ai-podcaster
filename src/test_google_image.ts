@@ -6,7 +6,7 @@ import { GoogleAuth } from "google-auth-library";
 
 // https://cloud.google.com/vertex-ai/generative-ai/docs/model-reference/imagen-api
 const GOOGLE_PROJECT_ID = process.env.GOOGLE_PROJECT_ID; // Your Google Cloud Project ID
-const GOOGLE_IMAGEN_MODEL = "imagen-3.0-generate-001";
+// const GOOGLE_IMAGEN_MODEL = "imagen-3.0-generate-001";
 const GOOGLE_IMAGEN_FAST_MODEL = "imagen-3.0-fast-generate-001";
 const GOOGLE_IMAGEN_ENDPOINT = `https://us-central1-aiplatform.googleapis.com/v1/projects/${GOOGLE_PROJECT_ID}/locations/us-central1/publishers/google/models/${GOOGLE_IMAGEN_FAST_MODEL}:predict`;
 

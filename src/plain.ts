@@ -1,27 +1,8 @@
 import "dotenv/config";
-import fsPromise from "fs/promises";
+// import fsPromise from "fs/promises";
 import fs from "fs";
 import path from "path";
-
-type ScriptData = {
-  speaker: string;
-  text: string;
-  duration: number; // generated
-  filename: string; // generated
-};
-
-type PodcastScript = {
-  title: string;
-  description: string;
-  reference: string;
-  tts: string | undefined; // default: openAI
-  voices: string[] | undefined;
-  speakers: string[] | undefined;
-  script: ScriptData[];
-  filename: string; // generated
-  voicemap: Map<string, string>; // generated
-  ttsAgent: string; // generated
-};
+import { ScriptData, PodcastScript } from "./type";
 
 const main = async () => {
   const arg2 = process.argv[2];
