@@ -7,7 +7,7 @@
     "gen": "ts-node ./src/main.ts",
     "ja": "ts-node ./src/translate.ts",
     "mov": "ts-node ./src/movie.ts",
-    "test": "ts-node ./src/test.ts",
+    "test": "rm -f scratchpad/test*.* && ts-node ./src/main.ts scripts/test.json && ts-node ./src/images.ts scripts/test.json && ts-node ./src/movie.ts scripts/test.json",
     "format": "prettier --write '{src,scripts,draft,ideason,scripts_mag2}/**/*.{ts,json}'"
   },
   "repository": "git+ssh://git@github.com/snakajima/ai-podcaster.git",

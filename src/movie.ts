@@ -231,7 +231,7 @@ const main = async () => {
   const outputVideoPath = path.resolve("./output/" + name + "_ja.mp4");
   const titleImage: ImageDetails = {
     path: path.resolve(`./scratchpad/${name}_00.png`),
-    duration: jsonData.padding / 1000,
+    duration: (jsonData.padding ?? 4000) / 1000,
   };
   const imagesWithTitle = [titleImage].concat(images);
 
