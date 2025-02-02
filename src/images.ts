@@ -187,7 +187,7 @@ const main = async () => {
 
   const tmScriptPath = path.resolve("./output/" + parsedPath.name + ".json");
   const dataTm = fs.readFileSync(tmScriptPath, "utf-8");
-  const jsonDataTm = JSON.parse(dataTm);
+  const jsonDataTm: PodcastScript = JSON.parse(dataTm);
 
   const currentDir = process.cwd();
   const imagesFolderDir = path.join(currentDir, "images");

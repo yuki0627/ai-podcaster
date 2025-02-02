@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import ffmpeg from "fluent-ffmpeg";
 import { createCanvas, loadImage } from "canvas";
-// import { json } from "stream/consumers";
+import { ScriptData, PodcastScript } from "./type";
 
 async function renderJapaneseTextToPNG(
   text: string,
@@ -157,7 +157,7 @@ const main = async () => {
   const parsedPath = path.parse(scriptPath);
   const name = parsedPath.name;
   const data = fs.readFileSync(scriptPath, "utf-8");
-  const jsonData = JSON.parse(data);
+  const jsonData: PodcastScript = JSON.parse(data);
 
   const canvasInfo = {
     width: 1280, // not 1920
@@ -190,7 +190,7 @@ const main = async () => {
 
   const tmScriptPath = path.resolve("./output/" + name + ".json");
   const dataTm = fs.readFileSync(tmScriptPath, "utf-8");
-  const jsonDataTm = JSON.parse(dataTm);
+  const jsonDataTm: PodcastScript = JSON.parse(dataTm);
 
   // add images
   const imageInfo = jsonDataTm.imageInfo;
