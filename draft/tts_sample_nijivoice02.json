@@ -3,7 +3,7 @@
   "description": "基本機能を試すための短い会話",
   "tts": "nijivoice",
   "cache": false,
-  "speed": "0.85",
+  "speed": "0.82",
   "voices": [
     "311a59fa-01b2-4d2e-9968-10d2034f8f86",
     "249d8d02-2c25-4a24-8faf-26d6f734b7bc"
