@@ -38,6 +38,7 @@ type PodcastScript = {
   tts: string | undefined; // default: openAI
   voices: string[] | undefined;
   speakers: string[] | undefined;
+  speed: number | undefined; // スピードパラメータを追加
   script: ScriptData[];
   filename: string; // generated
   voicemap: Map<string, string>; // generated
@@ -185,6 +186,7 @@ const graph_tts: GraphData = {
       params: {
         throwError: true,
         voice: ":voice",
+        speed: ":script.speed",
       },
     },
   },

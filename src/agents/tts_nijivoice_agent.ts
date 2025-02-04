@@ -7,6 +7,9 @@ export const ttsNijivoiceAgent: AgentFunction = async ({
   namedInputs,
 }) => {
   const { apiKey, throwError, voice, speed = "1.0" } = params;
+  console.log('Raw params:', params);  // paramsオブジェクト全体の内容を確認
+  console.log('Speed parameter:', speed);
+  console.log('Speed type:', typeof speed);
   const { text } = namedInputs;
   const url = `https://api.nijivoice.com/api/platform/v1/voice-actors/${voice}/generate-voice`;
   const options = {
