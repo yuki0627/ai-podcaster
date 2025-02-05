@@ -63,7 +63,11 @@ async function generateImage(
       }
     } else {
       // console.log(response);
-      console.log("No predictions returned from the API.", responseData, prompt);
+      console.log(
+        "No predictions returned from the API.",
+        responseData,
+        prompt,
+      );
       return undefined;
     }
   } catch (error) {
