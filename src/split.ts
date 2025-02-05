@@ -11,7 +11,7 @@ function splitIntoSentences(paragraph: string, minimum: number): string[] {
   return sentences
     .reduce<string[]>((acc, sentence, index, array) => {
       if (acc.length > 0 && acc[acc.length - 1].length < minimum) {
-        acc[acc.length - 1] += sentence;
+        acc[acc.length - 1] += "。" + sentence;
       } else {
         acc.push(sentence);
       }
