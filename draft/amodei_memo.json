@@ -4,7 +4,7 @@
   "tts": "nijivoice",
   "voices": [
     "afd7df65-0fdc-4d31-ae8b-a29f0f5eed62",
-    "a7619e48-bf6a-4f9f-843f-67f919bd5dae",
+    "a7619e48-bf6a-4f9f-843f-40485651257f",
     "bc06c63f-fef6-43b6-92f7-67f919bd5dae"
   ],
   "charactors": ["春玲", "太郎", "山田先生"],
@@ -27,7 +27,7 @@
     },
     {
       "speaker": "Teacher",
-      "text": "ああ、その件ね実はAnthropicというアメリカの大手AI企業のCEOが、この件について詳しい分析を発表したんだ。",
+      "text": "ああ、その件ね、実はAnthropicというアメリカの大手AI企業のCEOが、この件について詳しい分析を発表したんだ。",
       "imagePrompt": "Corporate presentation screen showing Anthropic's logo and analysis charts with AI performance metrics and cost comparisons"
     },
     {
@@ -72,7 +72,7 @@
     },
     {
       "speaker": "Teacher",
-      "text": "このことで、アメリカの半導体輸出規制がより重要になったと言えるんだよ。",
+      "text": "このことで、アメリカの半導体輸出規制が、より重要になったと言えるんだよ。",
       "imagePrompt": "Semiconductor supply chain map with highlighted export control points and security symbols"
     },
     {
@@ -82,7 +82,7 @@
     },
     {
       "speaker": "Teacher",
-      "text": "いい質問だねまず、AIの開発には「半導体チップ」というものが大量に必要なんだ。",
+      "text": "いい質問だね。まず、AIの開発には「半導体チップ」というものが大量に必要なんだ。",
       "imagePrompt": "Massive array of semiconductor chips arranged in a pattern, with AI processing symbols floating above"
     },
     {
@@ -97,17 +97,17 @@
     },
     {
       "speaker": "Teacher",
-      "text": "そうそして重要なのは、少量のチップなら隠して輸入することもできるけど、何百万個もとなると、それは物理的にも難しいし、その取引を隠すのも難しくなるんだ。",
+      "text": "そう、そして重要なのは、少量のチップなら隠して輸入することもできるけど、何百万個もとなると、それは物理的にも難しいし、その取引を隠すのも難しくなるんだ。",
       "imagePrompt": "Contrast between a small hidden package and massive visible shipping containers full of semiconductors"
     },
     {
       "speaker": "Student",
-      "text": "なるほどだから輸出規制が重要なんですね。",
+      "text": "なるほど、だから輸出規制が重要なんですね。",
       "imagePrompt": "Global trade routes with checkpoints and regulatory symbols, focusing on semiconductor shipments"
     },
     {
       "speaker": "Teacher",
-      "text": "その通りアメリカは、中国がそんなに大量のチップを手に入れられないようにしたいんだ。",
+      "text": "その通り。アメリカは、中国がそんなに大量のチップを手に入れられないようにしたいんだ。",
       "imagePrompt": "Strategic chess board with semiconductor pieces, showing trade regulation moves between USA and China"
     },
     {
@@ -122,12 +122,12 @@
     },
     {
       "speaker": "Teacher",
-      "text": "いい視点だね実際、DeepSeekの開発者たちは、純粋に良い技術を作りたいと考えている優秀な研究者たちなんだ。",
+      "text": "いい視点だね。実際、DeepSeekの開発者たちは、純粋に良い技術を作りたいと考えている優秀な研究者たちなんだ。",
       "imagePrompt": "Laboratory environment with pure research symbols versus strategic concerns represented as contrasting elements"
     },
     {
       "speaker": "Teacher",
-      "text": "でも問題は、中国では企業が政府の強い影響下にあって、開発された技術が軍事目的などに使われる可能性が高いということなんだ。",
+      "text": "でも問題は、中国では企業が政府の強い影響かにあって、開発された技術が軍事目的などに使われる可能性が高いということなんだ。",
       "imagePrompt": "Flow diagram showing technology transfer from commercial to military applications with government influence"
     },
     {
@@ -137,7 +137,7 @@
     },
     {
       "speaker": "Teacher",
-      "text": "その通り技術の発展自体は素晴らしいことだけど、それが世界の平和と安定を脅かす可能性があるときは、慎重に考える必要があるんだ。",
+      "text": "その通り。技術の発展自体は素晴らしいことだけど、それが世界の平和と安定を脅かす可能性があるときは、慎重に考える必要があるんだ。",
       "imagePrompt": "Double helix of technology progress intertwined with global stability indicators, showing both potential and risk"
     },
     {
@@ -147,7 +147,7 @@
     },
     {
       "speaker": "Student",
-      "text": "難しい問題ですねでも、よく分かりました。",
+      "text": "難しい問題ですね。でも、よく分かりました。",
       "imagePrompt": "Abstract representation of complex global tech relations resolving into clearer understanding"
     },
     {
@@ -157,7 +157,7 @@
     },
     {
       "speaker": "Announcer",
-      "text": "ご視聴ありがとうございました。",
+      "text": "ご視聴、ありがとうございました。",
       "imagePrompt": "Elegant closing frame with tech podcast elements and soft lighting"
     },
     {
