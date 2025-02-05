@@ -7,6 +7,8 @@
     "gen": "npx tsx ./src/main.ts",
     "ja": "npx tsx ./src/translate.ts",
     "mov": "npx tsx ./src/movie.ts",
+    "images": "npx tsx ./src/images.ts",
+    "split": "npx tsx ./src/split.ts",
     "test": "rm -f scratchpad/test*.* && npx tsx ./src/main.ts scripts/test.json && npx tsx ./src/images.ts scripts/test.json && npx tsx ./src/movie.ts scripts/test.json",
     "lint": "eslint src",
     "format": "prettier --write '{src,scripts,draft,ideason,scripts_mag2}/**/*.{ts,json}'"
