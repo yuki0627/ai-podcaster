@@ -33,7 +33,7 @@ const main = async () => {
   script.script = script.script.reduce<ScriptData[]>((prev, element) => {
     const sentences = splitIntoSentences(element.text, 10);
     sentences.forEach((sentence) => {
-      prev.push({ ...element, text: sentence });
+      prev.push({ ...element, text: sentence, caption: sentence });
     });
     return prev;
   }, []);
