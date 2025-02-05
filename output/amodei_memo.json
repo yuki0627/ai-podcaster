@@ -56,7 +56,7 @@
     {
       "speaker": "Student",
       "text": "えっ、そうなんですか？でも新聞では、すごく安いコストで優れたAIを作ったって書いてありましたよ？",
-      "imagePrompt": "Split screen showing contrasting newspaper headlines and real data visualization about AI development costs",
+      "imagePrompt": "Affordable AI development",
       "filename": "amodei_memo5",
       "duration": 6.5954999999999995
     },
@@ -252,100 +252,132 @@
   },
   "imageInfo": [
     {
-      "index": 0
+      "index": 0,
+      "image": "./images/amodei_memo/0p.png"
     },
     {
-      "index": 1
+      "index": 1,
+      "image": "./images/amodei_memo/1p.png"
     },
     {
-      "index": 2
+      "index": 2,
+      "image": "./images/amodei_memo/2p.png"
     },
     {
-      "index": 3
+      "index": 3,
+      "image": "./images/amodei_memo/3p.png"
     },
     {
-      "index": 4
+      "index": 4,
+      "image": "./images/amodei_memo/4p.png"
     },
     {
-      "index": 5
+      "index": 5,
+      "image": "./images/amodei_memo/5p.png"
     },
     {
-      "index": 6
+      "index": 6,
+      "image": "./images/amodei_memo/6p.png"
     },
     {
-      "index": 7
+      "index": 7,
+      "image": "./images/amodei_memo/7p.png"
     },
     {
-      "index": 8
+      "index": 8,
+      "image": "./images/amodei_memo/8p.png"
     },
     {
-      "index": 9
+      "index": 9,
+      "image": "./images/amodei_memo/9p.png"
     },
     {
-      "index": 10
+      "index": 10,
+      "image": "./images/amodei_memo/10p.png"
     },
     {
-      "index": 11
+      "index": 11,
+      "image": "./images/amodei_memo/11p.png"
     },
     {
-      "index": 12
+      "index": 12,
+      "image": "./images/amodei_memo/12p.png"
     },
     {
-      "index": 13
+      "index": 13,
+      "image": "./images/amodei_memo/13p.png"
     },
     {
-      "index": 14
+      "index": 14,
+      "image": "./images/amodei_memo/14p.png"
     },
     {
-      "index": 15
+      "index": 15,
+      "image": "./images/amodei_memo/15p.png"
     },
     {
-      "index": 16
+      "index": 16,
+      "image": "./images/amodei_memo/16p.png"
     },
     {
-      "index": 17
+      "index": 17,
+      "image": "./images/amodei_memo/17p.png"
     },
     {
-      "index": 18
+      "index": 18,
+      "image": "./images/amodei_memo/18p.png"
     },
     {
-      "index": 19
+      "index": 19,
+      "image": "./images/amodei_memo/19p.png"
     },
     {
-      "index": 20
+      "index": 20,
+      "image": "./images/amodei_memo/20p.png"
     },
     {
-      "index": 21
+      "index": 21,
+      "image": "./images/amodei_memo/21p.png"
     },
     {
-      "index": 22
+      "index": 22,
+      "image": "./images/amodei_memo/22p.png"
     },
     {
-      "index": 23
+      "index": 23,
+      "image": "./images/amodei_memo/23p.png"
     },
     {
-      "index": 24
+      "index": 24,
+      "image": "./images/amodei_memo/24p.png"
     },
     {
-      "index": 25
+      "index": 25,
+      "image": "./images/amodei_memo/25p.png"
     },
     {
-      "index": 26
+      "index": 26,
+      "image": "./images/amodei_memo/26p.png"
     },
     {
-      "index": 27
+      "index": 27,
+      "image": "./images/amodei_memo/27p.png"
     },
     {
-      "index": 28
+      "index": 28,
+      "image": "./images/amodei_memo/28p.png"
     },
     {
-      "index": 29
+      "index": 29,
+      "image": "./images/amodei_memo/29p.png"
     },
     {
-      "index": 30
+      "index": 30,
+      "image": "./images/amodei_memo/30p.png"
     },
     {
-      "index": 31
+      "index": 31,
+      "image": "./images/amodei_memo/31p.png"
     }
   ]
 }
