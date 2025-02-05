@@ -1,0 +1,319 @@
+{
+  "title": "Googleが変更したAI倫理指針について",
+  "description": "Googleが2024年に発表したAI倫理指針の変更点とその影響について、高校生向けの分かりやすい解説",
+  "tts": "nijivoice",
+  "voices": [
+    "afd7df65-0fdc-4d31-ae8b-a29f0f5eed62",
+    "a7619e48-bf6a-4f9f-843f-40485651257f",
+    "bc06c63f-fef6-43b6-92f7-67f919bd5dae"
+  ],
+  "charactors": [
+    "春玲",
+    "太郎",
+    "山田先生"
+  ],
+  "speakers": [
+    "Announcer",
+    "Student",
+    "Teacher"
+  ],
+  "script": [
+    {
+      "speaker": "Announcer",
+      "text": "米国で活躍するエンジニアが新しい技術やビジネスを分かりやすく解説する、中島聡のLife is beautiful。",
+      "filename": "google_ai_policy0",
+      "duration": 7.92775
+    },
+    {
+      "speaker": "Announcer",
+      "text": "今日は、Googleが発表したAI倫理指針の変更について解説します。",
+      "filename": "google_ai_policy1",
+      "duration": 5.1849
+    },
+    {
+      "speaker": "Student",
+      "text": "先生、ニュースでGoogleがAIの使い方についてのルールを変えたって聞いたんですけど、どういうことなんですか？",
+      "filename": "google_ai_policy2",
+      "duration": 6.41265
+    },
+    {
+      "speaker": "Teacher",
+      "text": "うん、大きなニュースだよね。",
+      "filename": "google_ai_policy3",
+      "duration": 3.069
+    },
+    {
+      "speaker": "Teacher",
+      "text": "GoogleはAIを開発する時の「これはやらない」というルールを変更したんだ。",
+      "filename": "google_ai_policy4",
+      "duration": 4.9498
+    },
+    {
+      "speaker": "Teacher",
+      "text": "特に重要なのは、今まで禁止していた軍事利用や監視技術への応用を可能にしたことだよ。",
+      "filename": "google_ai_policy5",
+      "duration": 6.7261
+    },
+    {
+      "speaker": "Student",
+      "text": "えっ、なんでそんな怖そうなことを許可するんですか？",
+      "filename": "google_ai_policy6",
+      "duration": 3.0951
+    },
+    {
+      "speaker": "Teacher",
+      "text": "大きく分けて2つの理由があるんだ。",
+      "filename": "google_ai_policy7",
+      "duration": 2.8339
+    },
+    {
+      "speaker": "Teacher",
+      "text": "1つは、世界の中で民主主義の国々がAI開発で主導権を握るべきだという考え方。",
+      "filename": "google_ai_policy8",
+      "duration": 7.1441
+    },
+    {
+      "speaker": "Teacher",
+      "text": "もう1つは、国の安全保障に貢献したいという理由だね。",
+      "filename": "google_ai_policy9",
+      "duration": 4.45345
+    },
+    {
+      "speaker": "Student",
+      "text": "でも、AIを軍事に使うのって危険じゃないんですか？",
+      "filename": "google_ai_policy10",
+      "duration": 3.38245
+    },
+    {
+      "speaker": "Teacher",
+      "text": "その通り、慎重に考える必要があるね。",
+      "filename": "google_ai_policy11",
+      "duration": 3.17345
+    },
+    {
+      "speaker": "Teacher",
+      "text": "実は2018年に、Googleの社員たちが軍事目的でのAI利用に反対して大規模な抗議活動を行ったんだ。",
+      "filename": "google_ai_policy12",
+      "duration": 8.24125
+    },
+    {
+      "speaker": "Teacher",
+      "text": "その時にこの制限が作られたんだよ。",
+      "filename": "google_ai_policy13",
+      "duration": 3.01675
+    },
+    {
+      "speaker": "Student",
+      "text": "じゃあ、なんで今になって変えることにしたんですか？",
+      "filename": "google_ai_policy14",
+      "duration": 2.6249
+    },
+    {
+      "speaker": "Teacher",
+      "text": "大きな理由の1つは、競争が激しくなってきたことだね。",
+      "filename": "google_ai_policy15",
+      "duration": 4.6102
+    },
+    {
+      "speaker": "Teacher",
+      "text": "例えば、OpenAIやAnthropicといった他のAI企業は、すでに軍事企業と協力関係を結んでいるんだ。",
+      "filename": "google_ai_policy16",
+      "duration": 7.56205
+    },
+    {
+      "speaker": "Teacher",
+      "text": "それに、中国との技術競争も激しくなってきている。",
+      "filename": "google_ai_policy17",
+      "duration": 4.1661
+    },
+    {
+      "speaker": "Student",
+      "text": "中国と関係があるんですか？",
+      "filename": "google_ai_policy18",
+      "duration": 1.9457
+    },
+    {
+      "speaker": "Teacher",
+      "text": "そうなんだ。最近、中国のAI企業がChatGPTみたいな高性能なAIを無料で公開して話題になったんだよ。",
+      "filename": "google_ai_policy19",
+      "duration": 8.502450000000001
+    },
+    {
+      "speaker": "Teacher",
+      "text": "アメリカの企業は、中国にAI開発で追い抜かれることを心配しているんだ。",
+      "filename": "google_ai_policy20",
+      "duration": 5.5245
+    },
+    {
+      "speaker": "Student",
+      "text": "でも、AIを兵器に使うのは怖いです...",
+      "filename": "google_ai_policy21",
+      "duration": 3.0428499999999996
+    },
+    {
+      "speaker": "Teacher",
+      "text": "その心配はもっともだね。",
+      "filename": "google_ai_policy22",
+      "duration": 2.5204
+    },
+    {
+      "speaker": "Teacher",
+      "text": "だからGoogleは、AIの使用には人間による監督を入れること、そして人権や国際法を守ることを約束しているんだ。",
+      "filename": "google_ai_policy23",
+      "duration": 8.998800000000001
+    },
+    {
+      "speaker": "Teacher",
+      "text": "でも、どこまでそれが守られるのか、私たちがしっかり見ていく必要があるよ。",
+      "filename": "google_ai_policy24",
+      "duration": 5.42
+    },
+    {
+      "speaker": "Student",
+      "text": "Googleの社員さんたちは、今回の変更をどう思っているんでしょう？",
+      "filename": "google_ai_policy25",
+      "duration": 3.9049
+    },
+    {
+      "speaker": "Teacher",
+      "text": "実際、今でも一部の社員は、イスラエル軍向けのAI技術提供に反対する声を上げているんだ。",
+      "filename": "google_ai_policy26",
+      "duration": 6.8828499999999995
+    },
+    {
+      "speaker": "Teacher",
+      "text": "技術の使い方については、常に議論が必要なんだよ。",
+      "filename": "google_ai_policy27",
+      "duration": 4.2445
+    },
+    {
+      "speaker": "Student",
+      "text": "技術って、使い方次第で良いことにも悪いことにもなるんですね。",
+      "filename": "google_ai_policy28",
+      "duration": 4.06165
+    },
+    {
+      "speaker": "Teacher",
+      "text": "その通り。だからこそ私たちは、新しい技術がどのように使われるのか、常に関心を持ち続けることが大切なんだ。",
+      "filename": "google_ai_policy29",
+      "duration": 9.91305
+    },
+    {
+      "speaker": "Announcer",
+      "text": "ご視聴ありがとうございました。",
+      "filename": "google_ai_policy30",
+      "duration": 2.02775
+    },
+    {
+      "speaker": "Announcer",
+      "text": "次回の放送もお楽しみに。",
+      "filename": "google_ai_policy31",
+      "duration": 2.6249
+    }
+  ],
+  "filename": "google_ai_policy",
+  "ttsAgent": "ttsNijivoiceAgent",
+  "voicemap": {
+    "Announcer": "afd7df65-0fdc-4d31-ae8b-a29f0f5eed62",
+    "Student": "a7619e48-bf6a-4f9f-843f-40485651257f",
+    "Teacher": "bc06c63f-fef6-43b6-92f7-67f919bd5dae"
+  },
+  "imageInfo": [
+    {
+      "index": 0
+    },
+    {
+      "index": 1
+    },
+    {
+      "index": 2
+    },
+    {
+      "index": 3
+    },
+    {
+      "index": 4
+    },
+    {
+      "index": 5
+    },
+    {
+      "index": 6
+    },
+    {
+      "index": 7
+    },
+    {
+      "index": 8
+    },
+    {
+      "index": 9
+    },
+    {
+      "index": 10
+    },
+    {
+      "index": 11
+    },
+    {
+      "index": 12
+    },
+    {
+      "index": 13
+    },
+    {
+      "index": 14
+    },
+    {
+      "index": 15
+    },
+    {
+      "index": 16
+    },
+    {
+      "index": 17
+    },
+    {
+      "index": 18
+    },
+    {
+      "index": 19
+    },
+    {
+      "index": 20
+    },
+    {
+      "index": 21
+    },
+    {
+      "index": 22
+    },
+    {
+      "index": 23
+    },
+    {
+      "index": 24
+    },
+    {
+      "index": 25
+    },
+    {
+      "index": 26
+    },
+    {
+      "index": 27
+    },
+    {
+      "index": 28
+    },
+    {
+      "index": 29
+    },
+    {
+      "index": 30
+    },
+    {
+      "index": 31
+    }
+  ]
+}
