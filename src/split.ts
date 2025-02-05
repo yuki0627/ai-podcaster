@@ -4,18 +4,18 @@ import { ScriptData, PodcastScript } from "./type";
 
 function splitIntoSentences(paragraph: string, minimum: number): string[] {
   let sentences = paragraph
-      .split("。") // Split by the Japanese full stop
-      .map(sentence => sentence.trim()) // Trim whitespace
-      .filter(sentence => sentence.length > 0) // Remove empty sentences
-      .map(sentence => sentence + "。"); // Add back the full stop to each sentence
-  
+    .split("。") // Split by the Japanese full stop
+    .map((sentence) => sentence.trim()) // Trim whitespace
+    .filter((sentence) => sentence.length > 0) // Remove empty sentences
+    .map((sentence) => sentence + "。"); // Add back the full stop to each sentence
+
   return sentences.reduce<string[]>((acc, sentence, index) => {
-      if (acc.length > 0 && acc[acc.length - 1].length < minimum) {
-          acc[acc.length - 1] += sentence;
-      } else {
-          acc.push(sentence);
-      }
-      return acc;
+    if (acc.length > 0 && acc[acc.length - 1].length < minimum) {
+      acc[acc.length - 1] += sentence;
+    } else {
+      acc.push(sentence);
+    }
+    return acc;
   }, []);
 }
 
@@ -24,9 +24,18 @@ const main = async () => {
   const scriptPath = path.resolve(arg2);
   const scriptData = fs.readFileSync(scriptPath, "utf-8");
   const script = JSON.parse(scriptData) as PodcastScript;
-  const str = script.script[2].text;
-  const array = splitIntoSentences(str, 10);
-  console.log(array);
+
+  const foo = script.script.reduce<ScriptData[]>((prev, element) => {
+    const sentences = splitIntoSentences(element.text, 10);
+    sentences.forEach((sentence) => {
+      prev.push({ ...element, text: sentence });
+    });
+    return prev;
+  }, []);
+
+  // const str = script.script[2].text;
+  // const array = splitIntoSentences(str, 10);
+  console.log(foo);
 };
 
 main();
