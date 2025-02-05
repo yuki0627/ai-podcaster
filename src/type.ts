@@ -1,6 +1,7 @@
 export type ScriptData = {
   speaker: string;
   text: string;
+  caption: string | undefined;
   duration: number; // generated
   filename: string; // generated
   imagePrompt: string; // inserted by LLM

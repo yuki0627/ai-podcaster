@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import ffmpeg from "fluent-ffmpeg";
 import { createCanvas, loadImage } from "canvas";
-import { PodcastScript } from "./type";
+import { ScriptData, PodcastScript } from "./type";
 
 async function renderJapaneseTextToPNG(
   text: string,
@@ -177,9 +177,9 @@ const main = async () => {
     console.error("Error generating PNG:", err);
   });
 
-  const promises = jsonData.script.map((element: any, index: number) => {
+  const promises = jsonData.script.map((element: ScriptData, index: number) => {
     return renderJapaneseTextToPNG(
-      element["text"],
+      element.caption ?? element.text,
       `./scratchpad/${name}_${index}.png`, // Output file path
       canvasInfo,
     ).catch((err) => {
