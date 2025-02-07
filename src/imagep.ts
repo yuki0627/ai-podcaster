@@ -25,8 +25,23 @@ const graph_data: GraphData = {
       inputs: {
         messages: [{
           role: "system",
-          content: "hello",
+          content: ":prompt",
+        },{
+          role: "user",
+          content: ":script",          
         }]
+      },
+      params: {
+        type: "json_object"
+      },
+    },
+    output: {
+      agent: "copyAgent",
+      inputs: {
+        text: ":llm.text"
+      },
+      params: {
+        namedKey: "text"
       },
       isResult: true
     }
@@ -49,8 +64,9 @@ const main = async () => {
   graph.injectValue("prompt", prompt);
   graph.injectValue("script", scriptData);
   const results = await graph.run();
-  console.log(results);
-
+  if (results) {
+    console.log(results.output);
+  }
 
   // fs.writeFileSync(scriptPath, JSON.stringify(script, null, 2));
 };
