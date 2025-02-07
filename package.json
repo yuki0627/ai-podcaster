@@ -8,6 +8,7 @@
     "ja": "npx tsx ./src/translate.ts",
     "mov": "npx tsx ./src/movie.ts",
     "images": "npx tsx ./src/images.ts",
+    "imagep": "npx tsx ./src/imagep.ts",
     "split": "npx tsx ./src/split.ts",
     "movie": "npx tsx ./src/movie.ts",
     "test": "rm -f scratchpad/test*.* && npx tsx ./src/main.ts scripts/test.json && npx tsx ./src/images.ts scripts/test.json && npx tsx ./src/movie.ts scripts/test.json",
