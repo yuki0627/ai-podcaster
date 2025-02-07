@@ -1,4 +1,4 @@
-We need to generate a series of images for this podcast. For each line, generate an appropriate text prompt for text-2-image AI, considering the flow of whole discussion and add it as "imagePrompt" property to the script. We don't want to show student, teacher or classroom in the image. Do not eliminate any lines.
+We need to generate a series of images for this podcast. For each line of given json, generate an appropriate text prompt for text-2-image AI, considering the flow of whole discussion and add it as "imagePrompt" property to the script. We don't want to show student, teacher or classroom in the image. Do not eliminate any lines.
 
 [Examples]
 A modern tech conference stage with a speaker discussing AI advancements, futuristic lighting and a large digital screen displaying AI-related graphics.

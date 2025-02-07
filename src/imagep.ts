@@ -32,8 +32,11 @@ const graph_data: GraphData = {
         }]
       },
       params: {
-        type: "json_object"
+        response_format: { 
+          type: "json_object"
+        }
       },
+      isResult: true
     },
     output: {
       agent: "copyAgent",
@@ -62,13 +65,13 @@ const main = async () => {
   );
   const prompt = fs.readFileSync("./prompts/image_prompt.md", "utf-8");
   graph.injectValue("prompt", prompt);
-  graph.injectValue("script", scriptData);
+  graph.injectValue("script", JSON.stringify(script, null, 2));
   const results = await graph.run();
   if (results) {
     console.log(results.output);
+    //fs.writeFileSync(scriptPath, JSON.stringify(results.output, null, 2));
   }
 
-  // fs.writeFileSync(scriptPath, JSON.stringify(script, null, 2));
 };
 
 main();
