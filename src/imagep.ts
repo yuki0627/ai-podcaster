@@ -1,7 +1,37 @@
+import dotenv from "dotenv";
 import fs from "fs";
 import path from "path";
 import { ScriptData, PodcastScript } from "./type";
+import {
+  GraphAI,
+  AgentFilterFunction,
+  GraphData,
+} from "graphai";
+import * as agents from "@graphai/agents";
 
+dotenv.config();
+
+const graph_data: GraphData = {
+  version: 0.5,
+  nodes: {
+    script: {
+      value: "",
+    },
+    prompt: {
+      value: "",
+    },
+    llm: {
+      agent: "openAIAgent",
+      inputs: {
+        messages: [{
+          role: "system",
+          content: "hello",
+        }]
+      },
+      isResult: true
+    }
+  }
+};
 
 const main = async () => {
   const arg2 = process.argv[2];
@@ -9,8 +39,18 @@ const main = async () => {
   const scriptData = fs.readFileSync(scriptPath, "utf-8");
   const script = JSON.parse(scriptData) as PodcastScript;
 
+  const graph = new GraphAI(
+    graph_data,
+    {
+      ...agents,
+    },
+  );
   const prompt = fs.readFileSync("./prompts/image_prompt.md", "utf-8");
-  console.log(prompt);
+  graph.injectValue("prompt", prompt);
+  graph.injectValue("script", scriptData);
+  const results = await graph.run();
+  console.log(results);
+
 
   // fs.writeFileSync(scriptPath, JSON.stringify(script, null, 2));
 };
