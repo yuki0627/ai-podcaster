@@ -138,7 +138,7 @@ const createVideo = (
       "-preset veryfast", // Faster encoding      
       "-map [v]", // Map the video stream
       "-map " + images.length * 2 + ":a", // Map the audio stream (audio is the next input after all images)
-      "-c:v libx264", // Set video codec
+      "-c:v h264_videotoolbox", // Set video codec
       "-r 30", // Set frame rate
       "-pix_fmt yuv420p", // Set pixel format for better compatibility
     ])
