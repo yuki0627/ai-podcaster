@@ -118,10 +118,10 @@ const createVideo = (
   images.forEach((image, index) => {
     // Add filter for each image
     filterComplexParts.push(
-      // `[${index}:v]scale=${canvasInfo.width}:${canvasInfo.height},setsar=1,format=yuv420p,trim=duration=${image.duration},setpts=${startTime}/TB[v${index}]`,
-      `[${index * 2 + 1}:v]scale=${canvasInfo.width * 4}:${canvasInfo.height * 4},setsar=1,format=yuv420p,zoompan=z=zoom+0.0004:x=iw/2-(iw/zoom/2):y=ih-(ih/zoom):s=${canvasInfo.width}x${canvasInfo.height}:fps=30:d=${image.duration * 30}[cap${index}];` + 
-      `[cap${index}]trim=duration=${image.duration}[v${index}]`,
-      //`[${index * 2 + 1}:v]format=rgba[ovr${index}];[${index * 2}:v][ovr${index}]overlay,trim=duration=${image.duration}[v${index}]`
+   // Resize background image to match canvas dimensions
+      `[${index * 2}:v]scale=${canvasInfo.width}:${canvasInfo.height},setsar=1,trim=duration=${image.duration}[bg${index}];` +
+      `[${index * 2 + 1}:v]scale=${canvasInfo.width * 4}:${canvasInfo.height * 4},setsar=1,format=rgba,zoompan=z=zoom+0.0004:x=iw/2-(iw/zoom/2):y=ih-(ih/zoom):s=${canvasInfo.width}x${canvasInfo.height}:fps=30:d=${image.duration * 30},trim=duration=${image.duration}[cap${index}];` + 
+      `[bg${index}][cap${index}]overlay=(W-w)/2:(H-h)/2:format=auto[v${index}]`
     );
   });
 
@@ -134,6 +134,7 @@ const createVideo = (
     .complexFilter(filterComplexParts)
     .input(audioPath) // Add audio input
     .outputOptions([
+      "-preset veryfast", // Faster encoding      
       "-map [v]", // Map the video stream
       "-map " + images.length * 2 + ":a", // Map the audio stream (audio is the next input after all images)
       "-c:v libx264", // Set video codec
@@ -243,6 +244,7 @@ const main = async () => {
     duration: (jsonData.padding ?? 4000) / 1000,
   };
   const imagesWithTitle = [titleImage].concat(images);
+  // const imagesWithTitle = [images[0], images[1]];
 
   createVideo(audioPath, imagesWithTitle, outputVideoPath, canvasInfo);
 };
