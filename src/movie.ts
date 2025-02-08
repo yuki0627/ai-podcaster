@@ -119,7 +119,8 @@ const createVideo = (
     // Add filter for each image
     filterComplexParts.push(
       // `[${index}:v]scale=${canvasInfo.width}:${canvasInfo.height},setsar=1,format=yuv420p,trim=duration=${image.duration},setpts=${startTime}/TB[v${index}]`,
-      `[${index * 2 + 1}:v]scale=${canvasInfo.width * 4}:${canvasInfo.height * 4},setsar=1,format=yuv420p,zoompan=z=zoom+0.0004:x=iw/2-(iw/zoom/2):y=ih-(ih/zoom):s=${canvasInfo.width}x${canvasInfo.height}:fps=30:d=${image.duration * 30},trim=duration=${image.duration}[v${index}]`,
+      `[${index * 2 + 1}:v]scale=${canvasInfo.width * 4}:${canvasInfo.height * 4},setsar=1,format=yuv420p,zoompan=z=zoom+0.0004:x=iw/2-(iw/zoom/2):y=ih-(ih/zoom):s=${canvasInfo.width}x${canvasInfo.height}:fps=30:d=${image.duration * 30}[cap${index}];` + 
+      `[cap${index}]trim=duration=${image.duration}[v${index}]`,
       //`[${index * 2 + 1}:v]format=rgba[ovr${index}];[${index * 2}:v][ovr${index}]overlay,trim=duration=${image.duration}[v${index}]`
     );
   });
