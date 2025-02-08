@@ -104,6 +104,7 @@ const createVideo = (
   outputVideoPath: string,
   canvasInfo: any,
 ) => {
+  const start = performance.now();
   let command = ffmpeg();
 
   // Add each image input
@@ -150,7 +151,8 @@ const createVideo = (
       console.error("FFmpeg stderr:", stderr);
     })
     .on("end", () => {
-      console.log("Video created successfully!");
+      const end = performance.now();
+      console.log(`Video created successfully! ${end - start}ms`);
     })
     .output(outputVideoPath)
     .run();
@@ -243,8 +245,8 @@ const main = async () => {
     pathCaption: path.resolve(`./scratchpad/${name}_00.png`), // HACK
     duration: (jsonData.padding ?? 4000) / 1000,
   };
-  const imagesWithTitle = [titleImage].concat(images);
-  // const imagesWithTitle = [images[0], images[1]];
+  // const imagesWithTitle = [titleImage].concat(images);
+  const imagesWithTitle = [images[0], images[1]];
 
   createVideo(audioPath, imagesWithTitle, outputVideoPath, canvasInfo);
 };
