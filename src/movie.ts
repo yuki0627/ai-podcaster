@@ -139,6 +139,9 @@ const createVideo = (
       "-map [v]", // Map the video stream
       "-map " + images.length * 2 + ":a", // Map the audio stream (audio is the next input after all images)
       "-c:v h264_videotoolbox", // Set video codec
+      "-b:v 5M", // bitrate (only for videotoolbox)
+      '-bufsize', '10M', // Add buffer size for better quality
+      '-maxrate', '7M', // Maximum bitrate
       "-r 30", // Set frame rate
       "-pix_fmt yuv420p", // Set pixel format for better compatibility
     ])
