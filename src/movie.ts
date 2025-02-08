@@ -138,7 +138,7 @@ const createVideo = (
       "-preset veryfast", // Faster encoding      
       "-map [v]", // Map the video stream
       "-map " + images.length * 2 + ":a", // Map the audio stream (audio is the next input after all images)
-      "-c:v hevc_videotoolbox", // Set video codec
+      "-c:v h264_videotoolbox", // Set video codec
       '-threads 8', '-filter_threads 8',
       "-b:v 5M", // bitrate (only for videotoolbox)
       '-bufsize', '10M', // Add buffer size for better quality
