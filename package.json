@@ -35,6 +35,7 @@
     "fluent-ffmpeg": "^2.1.3",
     "google-auth-library": "^9.15.1",
     "graphai": "^0.6.9",
+    "kokoro-js": "^1.1.1",
     "openai": "^4.67.3",
     "puppeteer": "^24.1.1",
     "sharp": "^0.33.5"
