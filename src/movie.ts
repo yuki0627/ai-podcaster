@@ -121,7 +121,7 @@ const createVideo = (
     filterComplexParts.push(
    // Resize background image to match canvas dimensions
       `[${index * 2}:v]scale=${canvasInfo.width}:${canvasInfo.height},setsar=1,trim=duration=${image.duration}[bg${index}];` +
-      `[${index * 2 + 1}:v]scale=${canvasInfo.width * 4}:${canvasInfo.height * 4},setsar=1,format=rgba,zoompan=z=zoom+0.0004:x=iw/2-(iw/zoom/2):y=ih-(ih/zoom):s=${canvasInfo.width}x${canvasInfo.height}:fps=30:d=${image.duration * 30},trim=duration=${image.duration}[cap${index}];` + 
+      `[${index * 2 + 1}:v]scale=${canvasInfo.width*2}:${canvasInfo.height*2},setsar=1,format=rgba,zoompan=z=zoom+0.0004:x=iw/2-(iw/zoom/2):y=ih-(ih/zoom):s=${canvasInfo.width}x${canvasInfo.height}:fps=30:d=${image.duration * 30},trim=duration=${image.duration}[cap${index}];` + 
       `[bg${index}][cap${index}]overlay=(W-w)/2:(H-h)/2:format=auto[v${index}]`
     );
   });
