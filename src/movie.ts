@@ -93,7 +93,8 @@ async function renderJapaneseTextToPNG(
 }
 
 interface ImageDetails {
-  path: string;
+  pathImage: string;
+  pathCaption: string;
   duration: number; // Duration in seconds for each image
 }
 
@@ -107,7 +108,7 @@ const createVideo = (
 
   // Add each image input
   images.forEach((image) => {
-    command = command.input(image.path);
+    command = command.input(image.pathImage);
   });
 
   // Build filter_complex string to manage start times
@@ -193,6 +194,7 @@ const main = async () => {
   const jsonDataTm: PodcastScript = JSON.parse(dataTm);
 
   // add images
+  /*
   const imageInfo = jsonDataTm.imageInfo;
   await imageInfo.forEach(async (element: { index: number; image: string }) => {
     const { index, image } = element;
@@ -217,20 +219,24 @@ const main = async () => {
       fs.writeFileSync(imagePath, buffer);
     }
   });
+  */
 
   const audioPath = path.resolve("./output/" + name + "_bgm.mp3");
   const images: ImageDetails[] = jsonDataTm.script.map(
     (item: any, index: number) => {
       const duration = item.duration;
+      // console.log(jsonDataTm.imageInfo[index].image);
       return {
-        path: path.resolve(`./scratchpad/${name}_${index}.png`),
+        pathImage: jsonDataTm.imageInfo[index].image ?? jsonDataTm.imageInfo[index-1].image, // HACK
+        pathCaption: path.resolve(`./scratchpad/${name}_${index}.png`),
         duration,
       };
     },
   );
   const outputVideoPath = path.resolve("./output/" + name + "_ja.mp4");
   const titleImage: ImageDetails = {
-    path: path.resolve(`./scratchpad/${name}_00.png`),
+    pathImage: path.resolve(`./scratchpad/${name}_00.png`),
+    pathCaption: path.resolve(`./scratchpad/${name}_00.png`), // HACK
     duration: (jsonData.padding ?? 4000) / 1000,
   };
   const imagesWithTitle = [titleImage].concat(images);
