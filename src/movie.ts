@@ -139,6 +139,7 @@ const createVideo = (
       "-map [v]", // Map the video stream
       "-map " + images.length * 2 + ":a", // Map the audio stream (audio is the next input after all images)
       "-c:v hevc_videotoolbox", // Set video codec
+      '-threads 8', '-filter_threads 8',
       "-b:v 5M", // bitrate (only for videotoolbox)
       '-bufsize', '10M', // Add buffer size for better quality
       '-maxrate', '7M', // Maximum bitrate
@@ -249,7 +250,7 @@ const main = async () => {
     duration: (jsonData.padding ?? 4000) / 1000,
   };
   // const imagesWithTitle = [titleImage].concat(images);
-  const imagesWithTitle = [images[0], images[1]];
+  const imagesWithTitle = [images[0], images[1], images[2], images[3]];
 
   createVideo(audioPath, imagesWithTitle, outputVideoPath, canvasInfo);
 };
