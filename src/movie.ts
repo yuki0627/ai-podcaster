@@ -108,7 +108,8 @@ const createVideo = (
 
   // Add each image input
   images.forEach((image) => {
-    command = command.input(image.pathImage);
+    // command = command.input(image.pathImage);
+    command = command.input(image.pathCaption);
   });
 
   // Build filter_complex string to manage start times
