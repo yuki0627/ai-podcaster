@@ -41,6 +41,7 @@ const main = async () => {
     script.images.push({
       imagePrompt: element.imagePrompt,
       index,
+      image: undefined
     });
     delete element.imagePrompt;
   });

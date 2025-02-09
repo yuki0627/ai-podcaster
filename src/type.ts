@@ -8,6 +8,12 @@ export type ScriptData = {
   imageIndex: number;
 };
 
+export type ImageInfo = {
+  index: number;
+  imagePrompt: string | undefined;
+  image: string | undefined; // path to the image
+};
+
 export type PodcastScript = {
   title: string;
   padding: number | undefined;
@@ -20,7 +26,7 @@ export type PodcastScript = {
   filename: string; // generated
   voicemap: Map<string, string>; // generated
   ttsAgent: string; // generated
-  imageInfo: any[]; // generated
+  // imageInfo: any[]; // generated
   aspectRatio: string | undefined; // "16:9" or "9:16"
-  images: any[]; // generated
+  images: ImageInfo[]; // generated
 };
