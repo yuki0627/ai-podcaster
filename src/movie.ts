@@ -119,10 +119,10 @@ const createVideo = (
   images.forEach((image, index) => {
     // Add filter for each image
     filterComplexParts.push(
-   // Resize background image to match canvas dimensions
+      // Resize background image to match canvas dimensions
       `[${index * 2}:v]scale=${canvasInfo.width}:${canvasInfo.height},setsar=1,trim=duration=${image.duration}[bg${index}];` +
-      `[${index * 2 + 1}:v]scale=${canvasInfo.width*2}:${canvasInfo.height*2},setsar=1,format=rgba,zoompan=z=zoom+0.0004:x=iw/2-(iw/zoom/2):y=ih-(ih/zoom):s=${canvasInfo.width}x${canvasInfo.height}:fps=30:d=${image.duration * 30},trim=duration=${image.duration}[cap${index}];` + 
-      `[bg${index}][cap${index}]overlay=(W-w)/2:(H-h)/2:format=auto[v${index}]`
+        `[${index * 2 + 1}:v]scale=${canvasInfo.width * 2}:${canvasInfo.height * 2},setsar=1,format=rgba,zoompan=z=zoom+0.0004:x=iw/2-(iw/zoom/2):y=ih-(ih/zoom):s=${canvasInfo.width}x${canvasInfo.height}:fps=30:d=${image.duration * 30},trim=duration=${image.duration}[cap${index}];` +
+        `[bg${index}][cap${index}]overlay=(W-w)/2:(H-h)/2:format=auto[v${index}]`,
     );
   });
 
@@ -135,14 +135,17 @@ const createVideo = (
     .complexFilter(filterComplexParts)
     .input(audioPath) // Add audio input
     .outputOptions([
-      "-preset veryfast", // Faster encoding      
+      "-preset veryfast", // Faster encoding
       "-map [v]", // Map the video stream
       "-map " + images.length * 2 + ":a", // Map the audio stream (audio is the next input after all images)
       "-c:v h264_videotoolbox", // Set video codec
-      '-threads 8', '-filter_threads 8',
+      "-threads 8",
+      "-filter_threads 8",
       "-b:v 5M", // bitrate (only for videotoolbox)
-      '-bufsize', '10M', // Add buffer size for better quality
-      '-maxrate', '7M', // Maximum bitrate
+      "-bufsize",
+      "10M", // Add buffer size for better quality
+      "-maxrate",
+      "7M", // Maximum bitrate
       "-r 30", // Set frame rate
       "-pix_fmt yuv420p", // Set pixel format for better compatibility
     ])
@@ -237,7 +240,9 @@ const main = async () => {
       const duration = item.duration;
       // console.log(jsonDataTm.imageInfo[index].image);
       return {
-        pathImage: jsonDataTm.imageInfo[index].image ?? jsonDataTm.imageInfo[index-1].image, // HACK
+        pathImage:
+          jsonDataTm.imageInfo[index].image ??
+          jsonDataTm.imageInfo[index - 1].image, // HACK
         pathCaption: path.resolve(`./scratchpad/${name}_${index}.png`),
         duration,
       };
