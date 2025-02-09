@@ -543,7 +543,8 @@
     },
     {
       "index": 14,
-      "imagePrompt": "An image showing a busy construction site with workers, next to a green 'Eco-Friendly' badge and a rail line."
+      "imagePrompt": "An image showing a busy construction site, next to a green 'Eco-Friendly' badge and a rail line.",
+      "image": "./images/ca_hispeed_rail/14p.png"
     },
     {
       "index": 15,

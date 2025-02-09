@@ -188,6 +188,8 @@ const main = async () => {
   const arg2 = process.argv[2];
   const scriptPath = path.resolve(arg2);
   const parsedPath = path.parse(scriptPath);
+  const scriptData = fs.readFileSync(scriptPath, "utf-8");
+  const script = JSON.parse(scriptData) as PodcastScript;
 
   const tmScriptPath = path.resolve("./output/" + parsedPath.name + ".json");
   const dataTm = fs.readFileSync(tmScriptPath, "utf-8");
@@ -206,10 +208,12 @@ const main = async () => {
     ...agents,
   });
 
+  script.filename = jsonDataTm.filename; // Hack: It allows us to use the source script
+
   // DEBUG
   // jsonDataTm.imageInfo = [jsonDataTm.imageInfo[0]];
 
-  graph.injectValue("script", jsonDataTm);
+  graph.injectValue("script", script);
   const results = await graph.run();
   if (results.map) {
     const data = results.map as DefaultResultData[];
