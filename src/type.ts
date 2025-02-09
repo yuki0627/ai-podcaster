@@ -4,7 +4,8 @@ export type ScriptData = {
   caption: string | undefined;
   duration: number; // generated
   filename: string; // generated
-  imagePrompt: string; // inserted by LLM
+  imagePrompt: string | undefined; // inserted by LLM
+  imageIndex: number;
 };
 
 export type PodcastScript = {
@@ -21,4 +22,5 @@ export type PodcastScript = {
   ttsAgent: string; // generated
   imageInfo: any[]; // generated
   aspectRatio: string | undefined; // "16:9" or "9:16"
+  images: any[]; // generated
 };
