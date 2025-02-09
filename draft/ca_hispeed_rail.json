@@ -12,87 +12,109 @@
   "script": [
     {
       "speaker": "Announcer",
-      "text": "新幹線は、高い技術力と正確なスケジュール管理で世界中から称賛されている日本の誇りです。しかし、同じ高速鉄道をアメリカで作ろうとしたら、どうなるのでしょうか？予算は4倍に膨れ上がり、完成時期は10年以上遅れ、いまだに完成の見通しが立っていない…。今日は、カリフォルニア州の高速鉄道計画が直面している問題から、大規模プロジェクトの難しさと、計画段階での慎重な検討の重要性について考えていきます。"
+      "speed": 1.5,
+      "text": "新幹線は、高い技術力と正確なスケジュール管理で世界中から称賛されている日本の誇りです。しかし、同じ高速鉄道をアメリカで作ろうとしたら、どうなるのでしょうか？予算は4倍に膨れ上がり、完成時期は10年以上遅れ、いまだに完成の見通しが立っていない…。今日は、カリフォルニア州の高速鉄道計画が直面している問題から、大規模プロジェクトの難しさと、計画段階での慎重な検討の重要性について考えていきます。",
+      "imagePrompt": "A sprawling construction site showcasing an ambitious but delayed high-speed rail project in California, with cranes and partially built tracks under a setting sun."
     },
     {
       "speaker": "Student",
-      "text": "先生、ニュースでカリフォルニアの高速鉄道計画について、トランプ大統領が「調査する」って言ってたんですけど、どういうことですか？"
+      "text": "先生、ニュースでカリフォルニアの高速鉄道計画について、トランプ大統領が「調査する」って言ってたんですけど、どういうことですか？",
+      "imagePrompt": "A political cartoon-style image showing a high-speed train labeled 'California Rail' being scrutinized by a magnifying glass labeled 'Investigation'."
     },
     {
       "speaker": "Teacher",
-      "text": "ああ、これは大きな問題になってるんだよ。カリフォルニア州が計画している高速鉄道プロジェクトが、予算も工期も大幅に超過してしまっているんだ。"
+      "text": "ああ、これは大きな問題になってるんだよ。カリフォルニア州が計画している高速鉄道プロジェクトが、予算も工期も大幅に超過してしまっているんだ。",
+      "imagePrompt": "An infographic illustrating the budget and timeline overrun of the California high-speed rail project with arrows pointing upwards."
     },
     {
       "speaker": "Student",
-      "text": "どのくらい予算オーバーしているんですか？"
+      "text": "どのくらい予算オーバーしているんですか？",
+      "imagePrompt": "A digital billboard displaying a budget graph, with a sharp upward trajectory symbolizing cost overruns."
     },
     {
       "speaker": "Teacher",
-      "text": "驚くべき数字なんだ。2008年に計画が始まった時は330億ドル（約5兆円）で完成する予定だったんだけど、今では1,280億ドル（約19兆円）以上かかると言われているんだよ。"
+      "text": "驚くべき数字なんだ。2008年に計画が始まった時は330億ドル（約5兆円）で完成する予定だったんだけど、今では1,280億ドル（約19兆円）以上かかると言われているんだよ。",
+      "imagePrompt": "A dramatic comparison image showing a modest train budget being dwarfed by a towering stack of cash representing current costs."
     },
     {
       "speaker": "Student",
-      "text": "えっ！4倍近く？そんなに増えちゃうんですか？"
+      "text": "えっ！4倍近く？そんなに増えちゃうんですか？",
+      "imagePrompt": "A shocked emoji face next to a multiplying budget symbol, with stacks of money increasing exponentially."
     },
     {
       "speaker": "Teacher",
-      "text": "そうなんだ。しかも、完成予定も大幅に遅れていて、当初は2028年までにサンフランシスコとロサンゼルスを結ぶ予定だったのが、今では2030年代後半になるかもしれないって言われているんだ。"
+      "text": "そうなんだ。しかも、完成予定も大幅に遅れていて、当初は2028年までにサンフランシスコとロサンゼルスを結ぶ予定だったのが、今では2030年代後半になるかもしれないって言われているんだ。",
+      "imagePrompt": "A futuristic calendar showing years rapidly flipping past, with a train route map slowly being completed."
     },
     {
       "speaker": "Student",
-      "text": "なんでそんなことになっちゃったんですか？"
+      "text": "なんでそんなことになっちゃったんですか？",
+      "imagePrompt": "A complex maze with a train at the start, symbolizing the challenges and detours in the project."
     },
     {
       "speaker": "Teacher",
-      "text": "いくつか大きな問題があるんだ。まず、2008年に住民投票で承認された時の約束が守られていないんだよ。例えば、列車は時速320キロ以上で走れることが条件だったんだけど、それが難しい区間があるんだ。"
+      "text": "いくつか大きな問題があるんだ。まず、2008年に住民投票で承認された時の約束が守られていないんだよ。例えば、列車は時速320キロ以上で走れることが条件だったんだけど、それが難しい区間があるんだ。",
+      "imagePrompt": "An image of a high-speed train trying to navigate a rocky, challenging terrain, with a speedometer stuck at a lower speed."
     },
     {
       "speaker": "Student",
-      "text": "他にも問題があるんですか？"
+      "text": "他にも問題があるんですか？",
+      "imagePrompt": "A checklist with multiple unchecked boxes, symbolizing unresolved issues."
     },
     {
       "speaker": "Teacher",
-      "text": "うん。もう一つ重要な約束は、運営が黒字になることだったんだ。政府からの補助金なしで運営できることが条件だったんだけど、それも難しそうなんだ。"
+      "text": "うん。もう一つ重要な約束は、運営が黒字になることだったんだ。政府からの補助金なしで運営できることが条件だったんだけど、それも難しそうなんだ。",
+      "imagePrompt": "A financial balance scale tipping towards 'Expenses', overshadowing 'Revenue', with a train on the scale."
     },
     {
       "speaker": "Student",
-      "text": "でも、工事は進んでいるんですよね？"
+      "text": "でも、工事は進んでいるんですよね？",
+      "imagePrompt": "A partially constructed high-speed rail line with cranes and workers actively building tracks."
     },
     {
       "speaker": "Teacher",
-      "text": "ある程度は進んでいるよ。高速鉄道局の発表によると、171マイル（約275キロ）が工事中で、60マイル（約97キロ）の線路基礎工事が完成しているんだ。でも、全線完成にはまだ1,000億ドル（約15兆円）も必要だって言われているんだよ。"
+      "text": "ある程度は進んでいるよ。高速鉄道局の発表によると、171マイル（約275キロ）が工事中で、60マイル（約97キロ）の線路基礎工事が完成しているんだ。でも、全線完成にはまだ1,000億ドル（約15兆円）も必要だって言われているんだよ。",
+      "imagePrompt": "A sprawling construction map with red progress markers indicating completed and pending sections of the rail."
     },
     {
       "speaker": "Student",
-      "text": "そんなにお金がかかるなら、やめちゃえば良いんじゃないですか？"
+      "text": "そんなにお金がかかるなら、やめちゃえば良いんじゃないですか？",
+      "imagePrompt": "A thought bubble with a giant question mark over an image of a halted construction site."
     },
     {
       "speaker": "Teacher",
-      "text": "実はそれが難しいんだ。すでに多くのお金を使って工事を始めているし、14,600人の雇用も生まれている。それに、環境に優しい交通手段として期待されているんだよ。"
+      "text": "実はそれが難しいんだ。すでに多くのお金を使って工事を始めているし、14,600人の雇用も生まれている。それに、環境に優しい交通手段として期待されているんだよ。",
+      "imagePrompt": "An image showing a busy construction site with workers, next to a green 'Eco-Friendly' badge and a rail line."
     },
     {
       "speaker": "Student",
-      "text": "日本の新幹線みたいに、もっとうまくできないんですかね。"
+      "text": "日本の新幹線みたいに、もっとうまくできないんですかね。",
+      "imagePrompt": "A contrast image showing a smoothly operating Japanese Shinkansen next to the under-construction California rail, symbolizing efficiency versus challenges."
     },
     {
       "speaker": "Teacher",
-      "text": "そうだね。日本の新幹線は世界でも成功例として知られているけど、アメリカは高速鉄道の建設経験が少ないんだ。それに、土地の買収や環境アセスメント、政治的な問題など、様々な課題があるんだよ。"
+      "text": "そうだね。日本の新幹線は世界でも成功例として知られているけど、アメリカは高速鉄道の建設経験が少ないんだ。それに、土地の買収や環境アセスメント、政治的な問題など、様々な課題があるんだよ。",
+      "imagePrompt": "A complex puzzle with pieces labeled land acquisition, environmental assessment, and political issues, partially assembled over a map of California."
     },
     {
       "speaker": "Student",
-      "text": "トランプ大統領の調査で何か変わるんでしょうか？"
+      "text": "トランプ大統領の調査で何か変わるんでしょうか？",
+      "imagePrompt": "An inquisitive eye looking through a magnifying glass at a high-speed train project, representing investigation and scrutiny."
     },
     {
       "speaker": "Teacher",
-      "text": "それはこれからの展開を見守る必要があるね。でも、このケースは大規模プロジェクトの難しさと、計画段階での慎重な検討の重要性を教えてくれる良い例になっているよ。"
+      "text": "それはこれからの展開を見守る必要があるね。でも、このケースは大規模プロジェクトの難しさと、計画段階での慎重な検討の重要性を教えてくれる良い例になっているよ。",
+      "imagePrompt": "A thoughtful scene with a blueprint and a model train, symbolizing careful planning and analysis."
     },
     {
       "speaker": "Student",
-      "text": "なるほど。税金を使う大きなプロジェクトは、最初の計画がすごく大切なんですね。"
+      "text": "なるほど。税金を使う大きなプロジェクトは、最初の計画がすごく大切なんですね。",
+      "imagePrompt": "An image of a blueprint with a giant pencil sketching out a meticulous plan, symbolizing the importance of initial planning."
     },
     {
       "speaker": "Announcer",
-      "text": "今回は、カリフォルニア高速鉄道計画の問題から、大規模プロジェクトの難しさについて学びました。当初の予算330億ドルが1,280億ドルに膨れ上がり、完成予定も2028年から2030年代後半へと大幅に遅れる中、私たちは重要な教訓を得ることができます。それは、プロジェクトの成功には、綿密な計画立案、透明性の高い運営、そして約束事項の確実な実行が不可欠だということ。日本の新幹線が世界に誇る正確性と効率性は、決して偶然ではないのです。ご視聴、ありがとうございました。次回の放送もお楽しみに。"
+      "text": "今回は、カリフォルニア高速鉄道計画の問題から、大規模プロジェクトの難しさについて学びました。当初の予算330億ドルが1,280億ドルに膨れ上がり、完成予定も2028年から2030年代後半へと大幅に遅れる中、私たちは重要な教訓を得ることができます。それは、プロジェクトの成功には、綿密な計画立案、透明性の高い運営、そして約束事項の確実な実行が不可欠だということ。日本の新幹線が世界に誇る正確性と効率性は、決して偶然ではないのです。ご視聴、ありがとうございました。次回の放送もお楽しみに。",
+      "imagePrompt": "A split image showing the chaotic construction site of California's rail project on one side and the sleek, efficient operation of Japan's Shinkansen on the other, highlighting lessons learned."
     }
   ]
 }
