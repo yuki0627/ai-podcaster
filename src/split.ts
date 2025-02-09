@@ -48,7 +48,9 @@ const main = async () => {
     splitIntoSentences(element.text, "。", 10).forEach((sentence) => {
       splitIntoSentences(sentence, "？", 10).forEach((sentence) => {
         splitIntoSentences(sentence, "！", 10).forEach((sentence) => {
-          prev.push({ ...element, text: sentence });
+          splitIntoSentences(sentence, "、", 15).forEach((sentence) => {
+            prev.push({ ...element, text: sentence });
+          });
         });
       });
     });

@@ -183,11 +183,13 @@ const main = async () => {
     },
     {},
   );
+  /*
   script.imageInfo = script.script.map((_: ScriptData, index: number) => {
     return {
       index: index,
     };
   });
+  */
 
   const graph = new GraphAI(
     graph_data,
