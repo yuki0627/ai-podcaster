@@ -2,6 +2,7 @@
   "title": "カリフォルニア高速鉄道計画の問題点",
   "description": "アメリカ・カリフォルニア州の高速鉄道計画における予算超過と遅延の問題、およびその調査に関する最新のニュースについての教育的な対話。",
   "tts": "nijivoice",
+  "reference": "https://californiaglobe.com/fl/pres-trump-to-investigate-californias-high-speed-rail-scheme-worst-managed-project-ive-seen/",
   "voices": [
     "afd7df65-0fdc-4d31-ae8b-a29f0f5eed62",
     "a7619e48-bf6a-4f9f-843f-40485651257f",
@@ -133,11 +134,11 @@
     },
     {
       "speaker": "Teacher",
-      "text": "今では千二百八十億ドル以上かかると言われているんだよ。",
+      "text": "今では千にひゃく八十億ドル以上かかると言われているんだよ。",
       "caption": "今では1,280億ドル（約19兆円）以上かかると言われているんだよ。",
       "imageIndex": 4,
       "filename": "ca_hispeed_rail15",
-      "duration": 4.21835
+      "duration": 4.0094
     },
     {
       "speaker": "Student",
@@ -292,11 +293,11 @@
     },
     {
       "speaker": "Teacher",
-      "text": "一万よんせん六百人の雇用も生まれている。",
+      "text": "一万よんせんろっぴゃく人の雇用も生まれている。",
       "caption": "14,600人の雇用も生まれている。",
       "imageIndex": 14,
       "filename": "ca_hispeed_rail37",
-      "duration": 3.3301999999999996
+      "duration": 3.2779499999999997
     },
     {
       "speaker": "Teacher",
