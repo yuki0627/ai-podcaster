@@ -255,8 +255,8 @@ const main = async () => {
     imageIndex: 0, // HACK
     duration: (jsonData.padding ?? 4000) / 1000,
   };
-  // const imagesWithTitle = [titleInfo].concat(captions);
-  const captionsWithTitle = [captions[0], captions[1], captions[5], captions[8]];
+  const captionsWithTitle = [titleInfo].concat(captions);
+  // const captionsWithTitle = [captions[0], captions[1], captions[5], captions[8]];
 
   createVideo(audioPath, captionsWithTitle, jsonDataTm.images, outputVideoPath, canvasInfo);
 };
