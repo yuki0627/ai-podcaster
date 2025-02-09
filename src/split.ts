@@ -40,6 +40,7 @@ const main = async () => {
     element.imageIndex = index;
     script.images.push({
       imagePrompt: element.imagePrompt,
+      index,
     });
     delete element.imagePrompt;
   });

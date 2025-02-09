@@ -77,7 +77,7 @@ async function generateImage(
 }
 
 const image_agent = async (namedInputs: {
-  row: { index: number };
+  row: { index: number, imagePrompt: string };
   suffix: string;
   script: PodcastScript;
 }) => {
@@ -90,9 +90,8 @@ const image_agent = async (namedInputs: {
   }
 
   try {
-    const imagePrompt = script.script[row.index].imagePrompt;
-    console.log("generating", row.index, imagePrompt);
-    const imageBuffer = await generateImage(imagePrompt, script);
+    console.log("generating", row.index, row.imagePrompt);
+    const imageBuffer = await generateImage(row.imagePrompt, script);
     if (imageBuffer) {
       fs.writeFileSync(imagePath, imageBuffer);
       console.log("generated:", imagePath);
@@ -151,7 +150,7 @@ const graph_data: GraphData = {
     },
     map: {
       agent: "mapAgent",
-      inputs: { rows: ":script.imageInfo", script: ":script" },
+      inputs: { rows: ":script.images", script: ":script" },
       isResult: true,
       graph: {
         nodes: {
@@ -167,6 +166,7 @@ const graph_data: GraphData = {
             agent: "copyAgent",
             inputs: {
               index: ":row.index",
+              imagePrompt: ":row.imagePrompt",
               image: ":plain",
             },
             isResult: true,
@@ -216,7 +216,7 @@ const main = async () => {
     const info = data.map((element: any) => {
       return element.output;
     });
-    jsonDataTm.imageInfo = info;
+    jsonDataTm.images = info;
     fs.writeFileSync(tmScriptPath, JSON.stringify(jsonDataTm, null, 2));
   }
 };
