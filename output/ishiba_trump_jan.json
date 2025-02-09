@@ -488,7 +488,8 @@
     },
     {
       "index": 16,
-      "imagePrompt": "A comprehensive illustration of the 2025 US-Japan summit, highlighting future-oriented cooperation in AI, space, and international peace."
+      "imagePrompt": "An illustration of the US-Japan relationship, highlighting future-oriented cooperation in AI, space, and international peace.",
+      "image": "./images/ishiba_trump_jan/16p.png"
     }
   ],
   "filename": "ishiba_trump_jan",
