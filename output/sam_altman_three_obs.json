@@ -620,10 +620,11 @@
     },
     {
       "speaker": "Announcer",
-      "text": "アルトマン氏が指摘する3つの観察—AIの能力向上、",
+      "text": "アルトマン氏が指摘する、みっつの観察<wait 0.2>AIの能力向上、",
+      "caption": "アルトマン氏が指摘する3つの観察—AIの能力向上、",
       "imageIndex": 28,
       "filename": "sam_altman_three_obs83",
-      "duration": 4.0355
+      "duration": 5.472245
     },
     {
       "speaker": "Announcer",
@@ -648,10 +649,11 @@
     },
     {
       "speaker": "Announcer",
-      "text": "「学び方を学ぶ力」、「人とのコミュニケーション能力」、「確かな価値観」という、",
+      "text": "「学び方を学ぶ力」、<wait 0.2>「人との、コミュニケーション能力」、<wait 0.2>「確かな価値観」<wait 0.1>という、",
+      "caption": "「学び方を学ぶ力」、「人とのコミュニケーション能力」、「確かな価値観」という、",
       "imageIndex": 28,
       "filename": "sam_altman_three_obs87",
-      "duration": 4.8453
+      "duration": 8.006122
     },
     {
       "speaker": "Announcer",
