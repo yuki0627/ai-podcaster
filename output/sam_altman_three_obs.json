@@ -700,120 +700,149 @@
   ],
   "images": [
     {
+      "index": 0,
       "imagePrompt": "A futuristic scene depicting the quiet but certain advancement of AI, with digital interfaces and abstract representations of AI technology shaping the future.",
-      "index": 0
+      "image": "./images/sam_altman_three_obs/0p.png"
     },
     {
+      "index": 1,
       "imagePrompt": "A digital illustration of the concept of Artificial General Intelligence (AGI), featuring symbols of diverse problem-solving capabilities in a neural network pattern.",
-      "index": 1
+      "image": "./images/sam_altman_three_obs/1p.png"
     },
     {
+      "index": 2,
       "imagePrompt": "An abstract visualization of AGI, showcasing a network of interconnected domains symbolizing the ability of AI to solve various problems like a human.",
-      "index": 2
+      "image": "./images/sam_altman_three_obs/2p.png"
     },
     {
+      "index": 3,
       "imagePrompt": "A conceptual image representing the potential impact of AI on human jobs, with robotic hands interacting with traditional tools in a futuristic setting.",
-      "index": 3
+      "image": "./images/sam_altman_three_obs/3p.png"
     },
     {
+      "index": 4,
       "imagePrompt": "A historical timeline showing the progression of technology from electricity to AGI, each innovation depicted with its transformative impact on society.",
-      "index": 4
+      "image": "./images/sam_altman_three_obs/4p.png"
     },
     {
+      "index": 5,
       "imagePrompt": "A dynamic visual of accelerating AI progress, with symbols of speed and growth such as arrows and digital data streams rushing forward.",
-      "index": 5
+      "image": "./images/sam_altman_three_obs/5p.png"
     },
     {
+      "index": 6,
       "imagePrompt": "A visualization of AI's increasing intelligence with resources, and rapidly decreasing costs, featuring digital graphs and falling price tags.",
-      "index": 6
+      "image": "./images/sam_altman_three_obs/6p.png"
     },
     {
+      "index": 7,
       "imagePrompt": "A striking image of a price chart for AI technology plummeting dramatically, with symbolic currency signs and digital analytics.",
-      "index": 7
+      "image": "./images/sam_altman_three_obs/7p.png"
     },
     {
+      "index": 8,
       "imagePrompt": "A futuristic cityscape transformed by AI, illustrating the explosive societal impact of advanced AI systems like GPT-4.",
-      "index": 8
+      "image": "./images/sam_altman_three_obs/8p.png"
     },
     {
+      "index": 9,
       "imagePrompt": "An imaginative depiction of AI's impact across various sectors, with icons representing healthcare, programming, and scientific advancements.",
-      "index": 9
+      "image": "./images/sam_altman_three_obs/9p.png"
     },
     {
+      "index": 10,
       "imagePrompt": "A digital illustration of AI collaborating in programming and medical research, with multiple AI entities working in unison.",
-      "index": 10
+      "image": "./images/sam_altman_three_obs/10p.png"
     },
     {
-      "imagePrompt": "A thought-provoking image exploring the dual nature of AI advancements, with contrasts between opportunity and fear.",
-      "index": 11
+      "index": 11,
+      "imagePrompt": "The future of AI and robot.",
+      "image": "./images/sam_altman_three_obs/11p.png"
     },
     {
+      "index": 12,
       "imagePrompt": "A balanced scale symbolizing the equitable distribution of AI benefits, with abstract representations of rights and resources.",
-      "index": 12
+      "image": "./images/sam_altman_three_obs/12p.png"
     },
     {
-      "imagePrompt": "A motivational scene of individuals empowered to contribute to AI's future, with symbols of education and innovation.",
-      "index": 13
+      "index": 13,
+      "imagePrompt": "A motivational scene of AI's future, with symbols of education and innovation.",
+      "image": "./images/sam_altman_three_obs/13p.png"
     },
     {
+      "index": 14,
       "imagePrompt": "An inspiring image of humans creatively using AI as a tool for positive global change, with vibrant colors and abstract ideas.",
-      "index": 14
+      "image": "./images/sam_altman_three_obs/14p.png"
     },
     {
+      "index": 15,
       "imagePrompt": "A motivating image of learning and exploration in AI, with educational symbols like books and digital interfaces.",
-      "index": 15
+      "image": "./images/sam_altman_three_obs/15p.png"
     },
     {
+      "index": 16,
       "imagePrompt": "A visionary image of future knowledge, with a diverse global community accessing unprecedented intelligence and creativity.",
-      "index": 16
+      "image": "./images/sam_altman_three_obs/16p.png"
     },
     {
+      "index": 17,
       "imagePrompt": "A strategic roadmap to future readiness, featuring key skills and competencies needed in the age of AI.",
-      "index": 17
+      "image": "./images/sam_altman_three_obs/17p.png"
     },
     {
+      "index": 18,
       "imagePrompt": "A dynamic image illustrating the concept of learning how to learn, with symbols of adaptability and quick comprehension.",
-      "index": 18
+      "image": "./images/sam_altman_three_obs/18p.png"
     },
     {
+      "index": 19,
       "imagePrompt": "A visual guide to learning strategies, with icons representing different fields of knowledge and creative thinking.",
-      "index": 19
+      "image": "./images/sam_altman_three_obs/19p.png"
     },
     {
+      "index": 20,
       "imagePrompt": "An artistic collage of diverse fields of knowledge, highlighting the fusion of creativity and interdisciplinary learning.",
-      "index": 20
+      "image": "./images/sam_altman_three_obs/20p.png"
     },
     {
+      "index": 21,
       "imagePrompt": "A thoughtful image depicting the importance of the second preparation step, with abstract symbols of communication.",
-      "index": 21
+      "image": "./images/sam_altman_three_obs/21p.png"
     },
     {
+      "index": 22,
       "imagePrompt": "A depiction of human connection and communication, with symbols of empathy, teamwork, and effective dialogue.",
-      "index": 22
+      "image": "./images/sam_altman_three_obs/22p.png"
     },
     {
+      "index": 23,
       "imagePrompt": "A visual representation of the importance of human relationships in the AI era, with intertwined hands and shared goals.",
-      "index": 23
+      "image": "./images/sam_altman_three_obs/23p.png"
     },
     {
+      "index": 24,
       "imagePrompt": "An introspective image of personal values guiding the use of AI, with symbolic representations of ethical decisions and societal impact.",
-      "index": 24
+      "image": "./images/sam_altman_three_obs/24p.png"
     },
     {
+      "index": 25,
       "imagePrompt": "A deep and thoughtful image illustrating the comprehensive preparation needed for the AI future, beyond mere technical skills.",
-      "index": 25
+      "image": "./images/sam_altman_three_obs/25p.png"
     },
     {
-      "imagePrompt": "An inspiring scene of young people ready to shape a brilliant future with AI, filled with hope and potential.",
-      "index": 26
+      "index": 26,
+      "imagePrompt": "A brilliant future with AI, filled with hope and potential.",
+      "image": "./images/sam_altman_three_obs/26p.png"
     },
     {
-      "imagePrompt": "A hopeful and determined image of a young person stepping towards the future, surrounded by symbols of preparation and ambition.",
-      "index": 27
+      "index": 27,
+      "imagePrompt": "A hopeful and determined image towards the future, surrounded by symbols of preparation and ambition.",
+      "image": "./images/sam_altman_three_obs/27p.png"
     },
     {
+      "index": 28,
       "imagePrompt": "A comprehensive summary image of AI's transformative role and human preparation, with symbolic representations of learning, communication, and values.",
-      "index": 28
+      "image": "./images/sam_altman_three_obs/28p.png"
     }
   ],
   "filename": "sam_altman_three_obs",
