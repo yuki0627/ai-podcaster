@@ -276,21 +276,31 @@ const main = async () => {
   // Check if any script changes
   const outputScript = path.resolve("./output/" + script.filename + ".json");
   if (fs.existsSync(outputScript)) {
-    const prevData = fs.readFileSync(outputScript, "utf-8");
-    const prevScript = JSON.parse(prevData) as PodcastScript;
-    console.log("found output script", prevScript.filename);
-    script.script.forEach((element: ScriptData, index: number) => {
-      const prevText = prevScript.script[index].text;
-      if (element.text !== prevText) {
-        const filePath = path.resolve(
-          "./scratchpad/" + element.filename + ".mp3",
-        );
-        if (fs.existsSync(filePath)) {
-          console.log("deleting", element.filename);
-          fs.unlinkSync(filePath);
+    try {
+      const prevData = fs.readFileSync(outputScript, "utf-8");
+      const prevScript = JSON.parse(prevData) as PodcastScript;
+      console.log("found output script", prevScript.filename);
+      
+      script.script.forEach((element: ScriptData, index: number) => {
+        // prevScript.scriptが存在し、かつ該当インデックスが存在する場合のみ比較を行う
+        if (prevScript.script && 
+            prevScript.script[index] && 
+            prevScript.script[index].text) {
+          const prevText = prevScript.script[index].text;
+          if (element.text !== prevText) {
+            const filePath = path.resolve(
+              "./scratchpad/" + element.filename + ".mp3",
+            );
+            if (fs.existsSync(filePath)) {
+              console.log("deleting", element.filename);
+              fs.unlinkSync(filePath);
+            }
+          }
         }
-      }
-    });
+      });
+    } catch (error) {
+      console.error("Error reading or parsing previous script:", error);
+    }
   }
 
   if (script.tts === "google") {
