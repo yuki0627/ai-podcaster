@@ -53,17 +53,19 @@ const main = async () => {
   const scriptData = fs.readFileSync(scriptPath, "utf-8");
   const script = JSON.parse(scriptData) as PodcastScript;
 
-  // Transfer imagePrompts to images.
-  script.images = [];
-  script.script.forEach((element, index) => {
-    element.imageIndex = index;
-    script.images.push({
-      imagePrompt: element.imagePrompt,
-      index,
-      image: undefined,
+  if (script.images === undefined) {
+    // Transfer imagePrompts to images.
+    script.images = [];
+    script.script.forEach((element, index) => {
+      element.imageIndex = index;
+      script.images.push({
+        imagePrompt: element.imagePrompt,
+        index,
+        image: undefined,
+      });
+      delete element.imagePrompt;
     });
-    delete element.imagePrompt;
-  });
+  }
 
   script.script = script.script.reduce<ScriptData[]>((prev, element) => {
     splitIntoSentences(element.text, "。", 7).forEach((sentence) => {

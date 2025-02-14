@@ -19,6 +19,16 @@ function replacePairs(str: string, replacements: Replacement[]): string {
 
 const replacements: Replacement[] = [
   { from: "Anthropic", to: "アンスロピック" },
+  { from: "OpenAI", to: "オープンエーアイ" },
+  { from: "AGI", to: "エージーアイ" },
+  { from: "TSMC", to: "ティーエスエムシー" },
+  { from: "1つ", to: "ひとつ" },
+  { from: "2つ", to: "ふたつ" },
+  { from: "3つ", to: "みっつ" },
+  { from: "4つ", to: "よっつ" },
+  { from: "5つ", to: "いつつ" },
+  { from: "危険な面", to: "危険なめん" },
+  { from: "その通り！", to: "その通り。" },
 ];
 
 const main = async () => {
@@ -28,9 +38,11 @@ const main = async () => {
   const script = JSON.parse(scriptData) as PodcastScript;
 
   script.script = script.script.map((element) => {
-    const voice_text = replacePairs(element.text, replacements);
+    const caption = element.caption ?? element.text;
+    const voice_text = replacePairs(caption, replacements);
     if (voice_text !== element.text) {
-      element.voice_text = voice_text;
+      element.text = voice_text;
+      element.caption = caption;
     }
     return element;
   });
