@@ -7,80 +7,98 @@
     "a7619e48-bf6a-4f9f-843f-40485651257f",
     "bc06c63f-fef6-43b6-92f7-67f919bd5dae"
   ],
-  "charactors": ["太郎", "山田先生", "アナウンサー"],
+  "charactors": ["太郎", "先生", "アナウンサー"],
   "speakers": ["Student", "Teacher", "Announcer"],
   "script": [
     {
       "speaker": "Announcer",
-      "text": "皆さん、こんにちは。今日は、私たちの日常生活や最新のAI技術にも深く関わる「条件付き確率」についてお話しします。「歩道が濡れているときは雨が降っているかもしれない」—このような日常的な推測から、AIが画像を認識する仕組みまで、実は同じ考え方が使われているんです。確率は単なる数学の問題ではなく、科学的な考え方の基礎となる重要な概念です。山田先生と太郎くんの対話を通じて、確率の面白さと重要性を一緒に学んでいきましょう。"
+      "text": "皆さん、こんにちは。今日は、私たちの日常生活や最新のAI技術にも深く関わる「条件付き確率」についてお話しします。「歩道が濡れているときは雨が降っているかもしれない」—このような日常的な推測から、AIが画像を認識する仕組みまで、実は同じ考え方が使われているんです。確率は単なる数学の問題ではなく、科学的な考え方の基礎となる重要な概念です。山田先生と太郎くんの対話を通じて、確率の面白さと重要性を一緒に学んでいきましょう。",
+      "imagePrompt": "An abstract representation of conditional probability, featuring a wet sidewalk and rain, blending into a digital network symbolizing AI image recognition."
     },
     {
       "speaker": "Student",
-      "text": "先生、今日は確率について質問があるんです。条件付き確率って何ですか？"
+      "text": "先生、今日は確率について質問があるんです。条件付き確率って何ですか？",
+      "imagePrompt": "A symbolic depiction of curiosity and inquiry, with abstract mathematical symbols floating around."
     },
     {
       "speaker": "Teacher",
-      "text": "良い質問だね、太郎くん。条件付き確率というのは、ある出来事が起きた時に、別の出来事が起こる可能性がどのくらいあるかを表すものなんだ。"
+      "text": "良い質問だね、太郎くん。条件付き確率というのは、ある出来事が起きた時に、別の出来事が起こる可能性がどのくらいあるかを表すものなんだ。",
+      "imagePrompt": "A conceptual visualization of conditional probability, featuring interlinked events and percentage signs."
     },
     {
       "speaker": "Student",
-      "text": "うーん、少し難しいですね。具体的な例はありますか？"
+      "text": "うーん、少し難しいですね。具体的な例はありますか？",
+      "imagePrompt": "An abstract illustration conveying a sense of confusion or contemplation, with soft blurred elements."
     },
     {
       "speaker": "Teacher",
-      "text": "そうだね。分かりやすい例を出すと、「歩道が濡れている時に、雨が降っている確率」というのが条件付き確率の良い例なんだ。"
+      "text": "そうだね。分かりやすい例を出すと、「歩道が濡れている時に、雨が降っている確率」というのが条件付き確率の良い例なんだ。",
+      "imagePrompt": "An artistic representation of a wet sidewalk with rain, symbolizing conditional probability."
     },
     {
       "speaker": "Student",
-      "text": "なるほど！歩道が濡れているのを見たら、たいてい雨が降っているってことですよね？"
+      "text": "なるほど！歩道が濡れているのを見たら、たいてい雨が降っているってことですよね？",
+      "imagePrompt": "A creative illustration of a person observing a wet sidewalk, with rain clouds overhead."
     },
     {
       "speaker": "Teacher",
-      "text": "その通り！これを数学的に書くと「P(雨が降っている | 歩道が濡れている)」と表すんだ。縦線の左側が「調べたいこと」で、右側が「既に分かっていること」というわけだね。"
+      "text": "その通り！これを数学的に書くと「P(雨が降っている | 歩道が濡れている)」と表すんだ。縦線の左側が「調べたいこと」で、右側が「既に分かっていること」というわけだね。",
+      "imagePrompt": "Mathematical symbols representing conditional probability, with a focus on the equation format."
     },
     {
       "speaker": "Student",
-      "text": "でも、歩道が濡れているのは、雨以外の理由もありますよね？例えば、誰かが水まきをしたとか。"
+      "text": "でも、歩道が濡れているのは、雨以外の理由もありますよね？例えば、誰かが水まきをしたとか。",
+      "imagePrompt": "An imaginative depiction of alternative scenarios for a wet sidewalk, like sprinklers or cleaning."
     },
     {
       "speaker": "Teacher",
-      "text": "その通り！でも、歩道が濡れている主な原因は雨だから、この確率はかなり高いんだ。つまり、歩道が濡れているのを見たら、「雨が降っている可能性が高い」と推測できるわけだね。"
+      "text": "その通り！でも、歩道が濡れている主な原因は雨だから、この確率はかなり高いんだ。つまり、歩道が濡れているのを見たら、「雨が降っている可能性が高い」と推測できるわけだね。",
+      "imagePrompt": "A conceptual image showing high probability of rain as the cause of a wet sidewalk, with probability percentages."
     },
     {
       "speaker": "Student",
-      "text": "ああ、なるほど！でも、これが科学とどう関係があるんですか？"
+      "text": "ああ、なるほど！でも、これが科学とどう関係があるんですか？",
+      "imagePrompt": "A thought-provoking image linking probability with scientific inquiry, featuring lab equipment and data."
     },
     {
       "speaker": "Teacher",
-      "text": "実は、科学の考え方の基本なんだよ。科学者は、観察した証拠（歩道が濡れている）から、その原因（雨が降っている）を推測することが多いんだ。"
+      "text": "実は、科学の考え方の基本なんだよ。科学者は、観察した証拠（歩道が濡れている）から、その原因（雨が降っている）を推測することが多いんだ。",
+      "imagePrompt": "A creative representation of scientific deduction, with observational evidence leading to hypotheses."
     },
     {
       "speaker": "Student",
-      "text": "へぇ、そうなんですか。AIとかにも関係があるんですか？"
+      "text": "へぇ、そうなんですか。AIとかにも関係があるんですか？",
+      "imagePrompt": "An imaginative link between probability and AI, with digital elements merging with scientific imagery."
     },
     {
       "speaker": "Teacher",
-      "text": "もちろん！例えば、AIが写真を見て「これは猫の写真です」と判断する時も、条件付き確率を使っているんだ。「この特徴を持つ画像が与えられた時に、それが猫である確率」を計算しているんだよ。"
+      "text": "もちろん！例えば、AIが写真を見て「これは猫の写真です」と判断する時も、条件付き確率を使っているんだ。「この特徴を持つ画像が与えられた時に、それが猫である確率」を計算しているんだよ。",
+      "imagePrompt": "A futuristic scene of AI analyzing an image with cat features, highlighting probability calculations."
     },
     {
       "speaker": "Student",
-      "text": "すごいですね！身近なところでこんなに使われているとは知りませんでした。"
+      "text": "すごいですね！身近なところでこんなに使われているとは知りませんでした。",
+      "imagePrompt": "A scene of surprising discovery, with everyday objects intertwining with mathematical elements."
     },
     {
       "speaker": "Teacher",
-      "text": "そうなんだ。昔、マクスウェルという有名な物理学者は「この世界の本当の論理は確率の計算なんだ」と言ったんだよ。なぜなら、現実の世界では、絶対に確実なことよりも、確率的な推論の方が役立つことが多いからなんだ。"
+      "text": "そうなんだ。昔、マクスウェルという有名な物理学者は「この世界の本当の論理は確率の計算なんだ」と言ったんだよ。なぜなら、現実の世界では、絶対に確実なことよりも、確率的な推論の方が役立つことが多いからなんだ。",
+      "imagePrompt": "A historical representation of Maxwell with abstract symbols of probability and logic."
     },
     {
       "speaker": "Student",
-      "text": "なるほど！確率って、数学の問題を解くためだけじゃなくて、もっと大事な意味があったんですね。"
+      "text": "なるほど！確率って、数学の問題を解くためだけじゃなくて、もっと大事な意味があったんですね。",
+      "imagePrompt": "An insightful visualization of probability as a fundamental concept beyond mathematics, with symbolic depth."
     },
     {
       "speaker": "Teacher",
-      "text": "その通り！確率は、不確かな世界で物事を理解し、判断を下すための強力な道具なんだよ。科学の研究でも、AIの開発でも、私たちの日常生活でも、とても重要な役割を果たしているんだ。"
+      "text": "その通り！確率は、不確かな世界で物事を理解し、判断を下すための強力な道具なんだよ。科学の研究でも、AIの開発でも、私たちの日常生活でも、とても重要な役割を果たしているんだ。",
+      "imagePrompt": "A powerful depiction of probability as a tool in science, AI, and daily life, interconnecting diverse fields."
     },
     {
       "speaker": "Announcer",
-      "text": "いかがでしたか？今回は条件付き確率について学びました。私たちが日常的に行っている「もしかしたら…かもしれない」という推測が、実は数学的な考え方に基づいているということ。そして、その考え方が現代の科学技術、特にAIの発展にも重要な役割を果たしているということを理解していただけたと思います。確率は、不確実な世界をより良く理解するための、私たちの強力な道具なのです。次回もお楽しみに！"
+      "text": "いかがでしたか？今回は条件付き確率について学びました。私たちが日常的に行っている「もしかしたら…かもしれない」という推測が、実は数学的な考え方に基づいているということ。そして、その考え方が現代の科学技術、特にAIの発展にも重要な役割を果たしているということを理解していただけたと思います。確率は、不確実な世界をより良く理解するための、私たちの強力な道具なのです。次回もお楽しみに！",
+      "imagePrompt": "An encompassing image symbolizing the integration of probability in daily life, science, and AI, with a futuristic touch."
     }
   ]
 }
