@@ -122,8 +122,9 @@
     },
     {
       "speaker": "Teacher",
-      "text": "その通り！これを数学的に書くと「P(雨が降っている | 歩道が濡れている)」と表すんだ。",
-      "imageIndex": 6
+      "text": "その通り。これを数学的に書くと、ピー、カッコ、雨が降っている、縦棒、歩道が濡れている、カッコ閉じ、と表すんだ。",
+      "imageIndex": 6,
+      "caption": "その通り！これを数学的に書くと「P(雨が降っている | 歩道が濡れている)」と表すんだ。"
     },
     {
       "speaker": "Teacher",
@@ -152,8 +153,9 @@
     },
     {
       "speaker": "Teacher",
-      "text": "その通り！でも、",
-      "imageIndex": 8
+      "text": "その通り。でも、",
+      "imageIndex": 8,
+      "caption": "その通り！でも、"
     },
     {
       "speaker": "Teacher",
@@ -192,12 +194,14 @@
     },
     {
       "speaker": "Teacher",
-      "text": "科学者は、観察した証拠（歩道が濡れている）から、",
+      "text": "科学者は、観察した証拠、歩道が濡れている、から、",
+      "caption": "科学者は、観察した証拠（歩道が濡れている）から、",
       "imageIndex": 10
     },
     {
       "speaker": "Teacher",
-      "text": "その原因（雨が降っている）を推測することが多いんだ。",
+      "text": "その原因、雨が降っている、を推測することが多いんだ。",
+      "caption": "その原因（雨が降っている）を推測することが多いんだ。",
       "imageIndex": 10
     },
     {
@@ -282,8 +286,9 @@
     },
     {
       "speaker": "Teacher",
-      "text": "その通り！確率は、",
-      "imageIndex": 16
+      "text": "その通り。確率は、",
+      "imageIndex": 16,
+      "caption": "その通り！確率は、"
     },
     {
       "speaker": "Teacher",
