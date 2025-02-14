@@ -43,6 +43,10 @@ function replacePairs(str: string, replacements: Replacement[]): string {
   return str;
 }
 
+const replacements: Replacement[] = [
+  { from: "Anthropic", to: "アンスロピック" },
+];
+
 const main = async () => {
   const arg2 = process.argv[2];
   const scriptPath = path.resolve(arg2);

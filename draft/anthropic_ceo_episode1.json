@@ -28,7 +28,8 @@
     {
       "speaker": "Announcer",
       "text": "AnthropicのCEOが2024年10月に発表した「Machines of Loving Grace」というエッセイをもとに、",
-      "imageIndex": 0
+      "imageIndex": 0,
+      "voice_text": "アンスロピックのCEOが2024年10月に発表した「Machines of Loving Grace」というエッセイをもとに、"
     },
     {
       "speaker": "Announcer",
@@ -53,7 +54,8 @@
     {
       "speaker": "Teacher",
       "text": "AIの開発企業であるAnthropicのCEOが、",
-      "imageIndex": 2
+      "imageIndex": 2,
+      "voice_text": "AIの開発企業であるアンスロピックのCEOが、"
     },
     {
       "speaker": "Teacher",
