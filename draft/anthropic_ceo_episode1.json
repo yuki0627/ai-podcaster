@@ -27,9 +27,14 @@
     },
     {
       "speaker": "Announcer",
-      "text": "アンスロピックのCEOが2024年10月に発表した「Machines of Loving Grace」というエッセイをもとに、",
       "imageIndex": 0,
-      "caption": "AnthropicのCEOが2024年10月に発表した「Machines of Loving Grace」というエッセイをもとに、"
+      "text": "アンスロピックのCEOが2024年10月に発表した、",
+      "caption": "AnthropicのCEOが2024年10月に発表した、"
+    },
+    {
+      "speaker": "Announcer",
+      "imageIndex": 0,
+      "text": "「Machines of Loving Grace」というエッセイをもとに、"
     },
     {
       "speaker": "Announcer",
