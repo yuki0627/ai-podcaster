@@ -7,16 +7,8 @@
     "a7619e48-bf6a-4f9f-843f-67f919bd5dae",
     "bc06c63f-fef6-43b6-92f7-67f919bd5dae"
   ],
-  "charactors": [
-    "アナウンサー",
-    "太郎",
-    "山田先生"
-  ],
-  "speakers": [
-    "Announcer",
-    "Student",
-    "Teacher"
-  ],
+  "charactors": ["アナウンサー", "太郎", "山田先生"],
+  "speakers": ["Announcer", "Student", "Teacher"],
   "script": [
     {
       "speaker": "Announcer",
