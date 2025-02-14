@@ -28,6 +28,21 @@ function splitIntoSentences(
     );
 }
 
+interface Replacement {
+  from: string;
+  to: string;
+}
+
+function replacePairs(str: string, replacements: Replacement[]): string {
+  replacements.forEach(({ from, to }) => {
+    // Escape any special regex characters in the 'from' string.
+    const escapedFrom = from.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const regex = new RegExp(escapedFrom, "g");
+    str = str.replace(regex, to);
+  });
+  return str;
+}
+
 const main = async () => {
   const arg2 = process.argv[2];
   const scriptPath = path.resolve(arg2);
@@ -47,11 +62,11 @@ const main = async () => {
   });
 
   script.script = script.script.reduce<ScriptData[]>((prev, element) => {
-    splitIntoSentences(element.text, "。", 10).forEach((sentence) => {
-      splitIntoSentences(sentence, "？", 10).forEach((sentence) => {
-        splitIntoSentences(sentence, "！", 10).forEach((sentence) => {
-          splitIntoSentences(sentence, "、", 15).forEach((sentence) => {
-            prev.push({ ...element, text: sentence });
+    splitIntoSentences(element.text, "。", 7).forEach((sentence) => {
+      splitIntoSentences(sentence, "？", 7).forEach((sentence) => {
+        splitIntoSentences(sentence, "！", 7).forEach((sentence) => {
+          splitIntoSentences(sentence, "、", 7).forEach((sentence) => {
+              prev.push({ ...element, text: sentence });
           });
         });
       });
