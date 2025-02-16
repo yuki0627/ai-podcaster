@@ -7,6 +7,7 @@
     "gen": "tsx ./src/main.ts",
     "ja": "ts-node ./src/translate.ts",
     "mov": "ts-node ./src/movie.ts",
+    "mp3join": "tsx ./src/mp3join.ts",
     "test": "ts-node ./src/test.ts",
     "format": "prettier --write '{src,scripts,draft,scripts_mag2}/**/*.{ts,json}'"
   },
