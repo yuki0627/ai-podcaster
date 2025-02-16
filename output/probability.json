@@ -544,7 +544,8 @@
     },
     {
       "index": 5,
-      "imagePrompt": "A creative illustration of a person observing a wet sidewalk, with rain clouds overhead."
+      "imagePrompt": "A illustration of a wet sidewalk, with rain clouds overhead.",
+      "image": "./images/probability/5p.png"
     },
     {
       "index": 6,
@@ -588,7 +589,8 @@
     },
     {
       "index": 14,
-      "imagePrompt": "A historical representation of Maxwell with abstract symbols of probability and logic."
+      "imagePrompt": "A Maxwell's equations.",
+      "image": "./images/probability/14p.png"
     },
     {
       "index": 15,
