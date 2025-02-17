@@ -537,7 +537,8 @@
     },
     {
       "index": 2,
-      "imagePrompt": "A high-tech lab scene with scientists analyzing a new AI chip, surrounded by holographic displays and data charts."
+      "imagePrompt": "A high-tech lab scene with a new AI chip, surrounded by holographic displays and data charts.",
+      "image": "./images/groq_2025feb/2p.png"
     },
     {
       "index": 3,
@@ -546,7 +547,8 @@
     },
     {
       "index": 4,
-      "imagePrompt": "A conceptual image of Groq's LPU depicted as a specialized athlete, with visual elements showing speed and focus on language processing."
+      "imagePrompt": "A specialized hardware, with visual elements showing speed and focus.",
+      "image": "./images/groq_2025feb/4p.png"
     },
     {
       "index": 5,
@@ -565,7 +567,8 @@
     },
     {
       "index": 8,
-      "imagePrompt": "An image of an innovative thinker, Jonathan Ross, conceiving Groq's vision, surrounded by tech designs and futuristic elements."
+      "imagePrompt": "An image of an innovation, surrounded by tech designs and futuristic elements.",
+      "image": "./images/groq_2025feb/8p.png"
     },
     {
       "index": 9,
@@ -599,7 +602,8 @@
     },
     {
       "index": 15,
-      "imagePrompt": "An enthusiastic young learner exploring AI technology, surrounded by books and digital tools in a futuristic setting."
+      "imagePrompt": "AI technology, surrounded by books and digital tools in a futuristic setting.",
+      "image": "./images/groq_2025feb/15p.png"
     },
     {
       "index": 16,
