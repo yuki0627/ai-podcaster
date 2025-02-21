@@ -3,6 +3,7 @@ import path from "path";
 import ffmpeg from "fluent-ffmpeg";
 import { createCanvas, loadImage } from "canvas";
 import { ScriptData, PodcastScript, ImageInfo } from "./type";
+import { on } from "events";
 
 async function renderJapaneseTextToPNG(
   text: string,
@@ -198,12 +199,21 @@ const main = async () => {
     console.error("Error generating PNG:", err);
   });
 
+  const images: ImageInfo[] = [];
   const promises = jsonData.script.map((element: ScriptData, index: number) => {
+    const imagePath = `./scratchpad/${name}_${index}.png`; // Output file path
     return renderJapaneseTextToPNG(
       element.caption ?? element.text,
-      `./scratchpad/${name}_${index}.png`, // Output file path
+      imagePath,
       canvasInfo,
-    ).catch((err) => {
+    ).then(() => {
+      const imageInfo: ImageInfo = {
+        index: index,
+        imagePrompt: element.imagePrompt,
+        image: imagePath,
+      };
+      images.push(imageInfo);
+    }).catch((err) => {
       console.error("Error generating PNG:", err);
     });
   });
@@ -263,7 +273,7 @@ const main = async () => {
   createVideo(
     audioPath,
     captionsWithTitle,
-    jsonDataTm.images,
+    images,
     outputVideoPath,
     canvasInfo,
   );
