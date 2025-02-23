@@ -8,6 +8,7 @@
     "ja": "ts-node ./src/translate.ts",
     "mov": "ts-node ./src/movie.ts",
     "mp3join": "tsx ./src/mp3join.ts",
+    "combine": "tsx ./src/combine.ts",
     "test": "ts-node ./src/test.ts",
     "format": "prettier --write '{src,scripts,draft,scripts_mag2}/**/*.{ts,json}'"
   },
