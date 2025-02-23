@@ -1,6 +1,6 @@
 import fs from "fs";
 import path from "path";
-import { ScriptData, PodcastScript } from "./type";
+import { PodcastScript } from "./type";
 
 interface Replacement {
   from: string;
