@@ -10,7 +10,8 @@
     "mp3join": "tsx ./src/mp3join.ts",
     "combine": "tsx ./src/combine.ts",
     "test": "ts-node ./src/test.ts",
-    "format": "prettier --write '{src,scripts,draft,scripts_mag2}/**/*.{ts,json}'"
+    "format": "prettier --write '{src,scripts,draft,scripts_mag2}/**/*.{ts,json}'",
+    "simple-movie": "tsx ./src/simple_movie.ts"
   },
   "repository": "git+ssh://git@github.com/snakajima/ai-podcaster.git",
   "author": "snakajima",
