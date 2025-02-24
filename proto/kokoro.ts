@@ -8,7 +8,8 @@ async function main() {
     device: "cpu", // Options: "wasm", "webgpu" (web) or "cpu" (node). If using "webgpu", we recommend using dtype="fp32".
   });
 
-  const text: string = "Life is like a box of chocolates. You never know what you're gonna get. Have fun!";
+  const text: string =
+    "Life is like a box of chocolates. You never know what you're gonna get. Have fun!";
   const audio = await tts.generate(text, {
     voice: "af_heart", // Use `tts.list_voices()` to list all available voices
   });

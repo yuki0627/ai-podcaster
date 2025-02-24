@@ -5,14 +5,14 @@ import { createCanvas } from "canvas";
 import { ScriptData, PodcastScript, ImageInfo } from "./type";
 
 type CanvasInfo = {
-  width: number,
-  height: number,
+  width: number;
+  height: number;
 };
 
 const separateText = (text: string, fontSize: number, actualWidth: number) => {
   let currentLine = "";
   let currentWidth = 0;
-  
+
   const lines: string = [];
   // Iterate over each character and determine line breaks based on character width estimate
   text.split("").forEach((char) => {
@@ -26,10 +26,7 @@ const separateText = (text: string, fontSize: number, actualWidth: number) => {
       lines.push(currentLine);
       currentLine = "";
       currentWidth = 0;
-    } else if (
-      currentWidth + charWidth > actualWidth &&
-      !isTrailing
-    ) {
+    } else if (currentWidth + charWidth > actualWidth && !isTrailing) {
       lines.push(currentLine);
       currentLine = char;
       currentWidth = charWidth;
@@ -213,18 +210,20 @@ const main = async () => {
       element.caption ?? element.text,
       imagePath,
       canvasInfo,
-    ).then(() => {
-      const item = jsonDataTm.script[index];
-      const caption: CaptionInfo = {
-        pathCaption: path.resolve(imagePath),
-        imageIndex: element.imageIndex,
-        duration: item.duration,
-      };
-      return caption;
-    }).catch((err) => {
-      console.error("Error generating PNG:", err);
-      throw err;
-    });
+    )
+      .then(() => {
+        const item = jsonDataTm.script[index];
+        const caption: CaptionInfo = {
+          pathCaption: path.resolve(imagePath),
+          imageIndex: element.imageIndex,
+          duration: item.duration,
+        };
+        return caption;
+      })
+      .catch((err) => {
+        console.error("Error generating PNG:", err);
+        throw err;
+      });
   });
   const captions: CaptionInfo[] = await Promise.all(promises);
 
