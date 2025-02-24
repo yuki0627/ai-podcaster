@@ -8,20 +8,12 @@ type CanvasInfo = {
   width: number,
   height: number,
 };
-async function renderJapaneseTextToPNG(
-  text: string,
-  outputFilePath: string,
-  canvasInfo: CanvasInfo,
-) {
-  const fontSize = 48;
-  const paddingX = 48 * 2;
-  const paddingY = 12;
-  const lineHeight = fontSize + 8;
 
-  const lines: string[] = [];
+const separateText = (text: string, fontSize: number, actualWidth: number) => {
   let currentLine = "";
   let currentWidth = 0;
-
+  
+  const lines: string = [];
   // Iterate over each character and determine line breaks based on character width estimate
   text.split("").forEach((char) => {
     const code = char.charCodeAt(0);
@@ -35,7 +27,7 @@ async function renderJapaneseTextToPNG(
       currentLine = "";
       currentWidth = 0;
     } else if (
-      currentWidth + charWidth > canvasInfo.width - paddingX * 2 &&
+      currentWidth + charWidth > actualWidth &&
       !isTrailing
     ) {
       lines.push(currentLine);
@@ -51,7 +43,22 @@ async function renderJapaneseTextToPNG(
   if (currentLine) {
     lines.push(currentLine);
   }
-  
+  return lines;
+};
+
+async function renderJapaneseTextToPNG(
+  text: string,
+  outputFilePath: string,
+  canvasInfo: CanvasInfo,
+) {
+  const fontSize = 48;
+  const paddingX = fontSize * 2;
+  const paddingY = 12;
+  const lineHeight = fontSize + 8;
+
+  const actualWidth = canvasInfo.width - paddingX * 2;
+  const lines = separateText(text, fontSize, actualWidth);
+  console.log(lines);
   const textHeight = lines.length * lineHeight + paddingY * 2;
   const textTop = canvasInfo.height - textHeight;
 
