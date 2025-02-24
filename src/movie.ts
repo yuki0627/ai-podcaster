@@ -58,7 +58,7 @@ async function renderJapaneseTextToPNG(
 
   const actualWidth = canvasInfo.width - paddingX * 2;
   const lines = separateText(text, fontSize, actualWidth);
-  console.log(lines);
+
   const textHeight = lines.length * lineHeight + paddingY * 2;
   const textTop = canvasInfo.height - textHeight;
 
