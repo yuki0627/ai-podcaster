@@ -89,7 +89,6 @@ const graph_data: GraphData = {
         text: ":script.toJSON()",
       },
       params: { baseDir: __dirname + "/../" },
-      console: true,
     },
     addBGM: {
       agent: "addBGMAgent",
