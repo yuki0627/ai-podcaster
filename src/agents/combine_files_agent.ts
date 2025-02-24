@@ -44,8 +44,8 @@ const combineFilesAgent: AgentFunction<
 
   await promise;
 
-  const outputScript = path.resolve("./output/" + script.filename + ".json");
-  fs.writeFileSync(outputScript, JSON.stringify(script, null, 2));
+  // const outputScript = path.resolve("./output/" + script.filename + ".json");
+  // fs.writeFileSync(outputScript, JSON.stringify(script, null, 2));
 
   return {
     fileName: outputFile,
