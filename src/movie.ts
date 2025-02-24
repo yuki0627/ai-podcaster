@@ -13,7 +13,7 @@ const separateText = (text: string, fontSize: number, actualWidth: number) => {
   let currentLine = "";
   let currentWidth = 0;
 
-  const lines: string = [];
+  const lines: string[] = [];
   // Iterate over each character and determine line breaks based on character width estimate
   text.split("").forEach((char) => {
     const code = char.charCodeAt(0);
