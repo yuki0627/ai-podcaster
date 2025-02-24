@@ -4,40 +4,30 @@ import ffmpeg from "fluent-ffmpeg";
 import { createCanvas, loadImage } from "canvas";
 import { ScriptData, PodcastScript, ImageInfo } from "./type";
 
-async function renderJapaneseTextToPNG(
-  text: string,
-  outputFilePath: string,
-  canvasInfo: any,
-) {
-  const fontSize = 48;
-  const paddingX = 48 * 2;
-  const paddingY = 12;
-  const lineHeight = fontSize + 8;
+type CanvasInfo = {
+  width: number,
+  height: number,
+};
 
-  const lines: string[] = [];
+const separateText = (text: string, fontSize: number, actualWidth: number) => {
   let currentLine = "";
   let currentWidth = 0;
-
+  
+  const lines: string = [];
   // Iterate over each character and determine line breaks based on character width estimate
-  for (let i = 0; i < text.length; i++) {
-    const char = text[i];
+  text.split("").forEach((char) => {
     const code = char.charCodeAt(0);
     const isAnsi = code < 255;
     const isCapital = code >= 0x40 && code < 0x60;
-    const charWidth = isAnsi
-      ? isCapital
-        ? fontSize * 0.8
-        : fontSize * 0.5
-      : fontSize;
-    const isTrailing =
-      char === "。" || char === "、" || char === "？" || char === "！";
+    const charWidth = (isAnsi ? (isCapital ? 0.8 : 0.5) : 1) * fontSize;
+    const isTrailing = ["。", "、", "？", "！"].includes(char);
 
     if (char === "\n") {
       lines.push(currentLine);
       currentLine = "";
       currentWidth = 0;
     } else if (
-      currentWidth + charWidth > canvasInfo.width - paddingX * 2 &&
+      currentWidth + charWidth > actualWidth &&
       !isTrailing
     ) {
       lines.push(currentLine);
@@ -47,12 +37,27 @@ async function renderJapaneseTextToPNG(
       currentLine += char;
       currentWidth += charWidth;
     }
-  }
+  });
 
   // Push the last line if there's any remaining text
   if (currentLine) {
     lines.push(currentLine);
   }
+  return lines;
+};
+
+async function renderJapaneseTextToPNG(
+  text: string,
+  outputFilePath: string,
+  canvasInfo: CanvasInfo,
+) {
+  const fontSize = 48;
+  const paddingX = fontSize * 2;
+  const paddingY = 12;
+  const lineHeight = fontSize + 8;
+
+  const actualWidth = canvasInfo.width - paddingX * 2;
+  const lines = separateText(text, fontSize, actualWidth);
 
   const textHeight = lines.length * lineHeight + paddingY * 2;
   const textTop = canvasInfo.height - textHeight;
@@ -103,7 +108,7 @@ const createVideo = (
   captions: CaptionInfo[],
   images: ImageInfo[],
   outputVideoPath: string,
-  canvasInfo: any,
+  canvasInfo: CanvasInfo,
 ) => {
   const start = performance.now();
   let command = ffmpeg();
