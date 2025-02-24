@@ -1,8 +1,8 @@
 import dotenv from "dotenv";
 import fs from "fs";
 import path from "path";
-import { ScriptData, PodcastScript } from "./type";
-import { GraphAI, AgentFilterFunction, GraphData } from "graphai";
+import { PodcastScript } from "./type";
+import { GraphAI, GraphData } from "graphai";
 import * as agents from "@graphai/agents";
 
 dotenv.config();

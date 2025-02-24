@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 import ffmpeg from "fluent-ffmpeg";
-import { createCanvas, loadImage } from "canvas";
+import { createCanvas } from "canvas";
 import { ScriptData, PodcastScript, ImageInfo } from "./type";
 
 type CanvasInfo = {

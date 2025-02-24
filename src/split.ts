@@ -7,7 +7,7 @@ function splitIntoSentences(
   divider: string,
   minimum: number,
 ): string[] {
-  let sentences = paragraph
+  const sentences = paragraph
     .split(divider) // Split by the Japanese full stop
     .map((sentence) => sentence.trim()) // Trim whitespace
     .filter((sentence) => sentence.length > 0); // Remove empty sentences
@@ -28,6 +28,7 @@ function splitIntoSentences(
     );
 }
 
+/*
 interface Replacement {
   from: string;
   to: string;
@@ -46,6 +47,7 @@ function replacePairs(str: string, replacements: Replacement[]): string {
 const replacements: Replacement[] = [
   { from: "Anthropic", to: "アンスロピック" },
 ];
+*/
 
 const main = async () => {
   const arg2 = process.argv[2];
