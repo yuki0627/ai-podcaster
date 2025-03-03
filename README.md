@@ -36,20 +36,44 @@ There are two ways to combine multiple audio files:
 To join all MP3 files in a directory:
 
 ```bash
-yarn mp3join /path/to/directory
+yarn mp3join /path/to/directory [gap_duration]
 ```
 
-This will combine all MP3 files in the specified directory in alphabetical order and create `combined_output.mp3` in the same directory.
+This will combine all MP3 files in the specified directory in alphabetical order and create `combined_output.mp3` in the same directory. By default, it adds a 2-second gap between songs. You can optionally specify a custom gap duration in seconds.
+
+Examples:
+```bash
+# デフォルトの2秒ギャップで結合
+yarn mp3join ./output
+
+# 3.5秒のギャップで結合
+yarn mp3join ./output 3.5
+```
+
+This is a simple concatenation without any additional effects or background music.
 
 ### Combine with BGM
 
 To combine specific MP3 files and add background music:
+BGM無しの2つのファイル(オープニングと1つ目の話題)をつなげてBGMを付けます
 
 ```bash
 yarn combine ./output/file1.mp3 ./output/file2.mp3 output_name
 ```
 
-This will create `./output/output_name_bgm.mp3`
+サンプル
+
+```bash
+yarn combine '/Users/yuki/projects/ai-podcaster/output/bk/000_opeining.mp3' '/Users/yuki/Desktop/radio-combined/2025-03-02/個別/music_cafe.mp3' hoge.mp3
+```
+
+This command performs a more complex audio processing:
+
+1. Combines the specified MP3 files with silent gaps between them
+2. Adds a 4-second delay at the beginning
+3. Mixes in background music that loops throughout the entire audio
+4. Applies fade effects at the end
+5. Creates `./output/output_name_bgm.mp3`
 
 ### Complete Workflow Example
 

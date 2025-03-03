@@ -8,7 +8,13 @@ import ffprobeInstaller from '@ffprobe-installer/ffprobe';
 ffmpeg.setFfmpegPath(ffmpegInstaller.path);
 ffmpeg.setFfprobePath(ffprobeInstaller.path);
 
-const joinMp3Files = async (directoryPath: string) => {
+interface JoinOptions {
+  gapDuration?: number; // 曲間のギャップ（秒）
+}
+
+const joinMp3Files = async (directoryPath: string, options: JoinOptions = {}) => {
+  const gapDuration = options.gapDuration ?? 2; // デフォルトは2秒
+
   // 指定されたディレクトリからmp3ファイルを取得
   const files = fs.readdirSync(directoryPath)
     .filter(file => file.toLowerCase().endsWith('.mp3'))
@@ -22,16 +28,25 @@ const joinMp3Files = async (directoryPath: string) => {
   const outputPath = path.join(directoryPath, 'combined_output.mp3');
   const command = ffmpeg();
 
-  // 各ファイルを入力として追加
-  files.forEach(file => {
+  // 各ファイルを入力として追加し、その間にギャップを挿入
+  files.forEach((file, index) => {
     const filePath = path.join(directoryPath, file);
     console.log(`Adding file: ${file}`);
     command.input(filePath);
   });
 
+  // フィルターを作成（ギャップを追加）
+  const filterComplex = files.map((_, index) => {
+    return `[${index}:a]apad=pad_dur=${gapDuration}[a${index}]`;
+  }).join(';');
+
+  const concatParts = files.map((_, index) => `[a${index}]`).join('');
+  const filterConcat = `${filterComplex};${concatParts}concat=n=${files.length}:v=0:a=1[out]`;
+
   // Promise化して実行
   await new Promise((resolve, reject) => {
     command
+      .complexFilter(filterConcat, 'out')
       .on('end', () => {
         console.log('MP3ファイルの結合が完了しました。');
         console.log(`出力ファイル: ${outputPath}`);
@@ -41,13 +56,14 @@ const joinMp3Files = async (directoryPath: string) => {
         console.error('エラーが発生しました:', err);
         reject(err);
       })
-      .mergeToFile(outputPath, path.dirname(outputPath));
+      .save(outputPath);
   });
 };
 
 // メイン実行部分
 const main = async () => {
   const directoryPath = process.argv[2];
+  const gapDuration = process.argv[3] ? parseFloat(process.argv[3]) : undefined;
 
   if (!directoryPath) {
     console.error('ディレクトリパスを指定してください。');
@@ -55,7 +71,7 @@ const main = async () => {
   }
 
   try {
-    await joinMp3Files(directoryPath);
+    await joinMp3Files(directoryPath, { gapDuration });
   } catch (error) {
     console.error('実行中にエラーが発生しました:', error);
     process.exit(1);
