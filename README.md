@@ -141,7 +141,7 @@ yarn simple-movie <音声ファイル> <画像ファイル> [出力ファイル�
 例：
 
 ```bash
-yarn simple-movie ./output/podcast.mp3 ./images/thumbnail.png my_video
+yarn simple-movie '/Users/yuki/Desktop/radio-combined/2025-03-03/2025-03-03_combined_output.mp3' '/Users/yuki/Desktop/ラジオ固定画像.png'
 ```
 
 これにより、音声の長さに合わせて画像を表示する動画が作成され、`./output/my_video.mp4`として保存されます。出力ファイル名は省略可能で、省略した場合は`./output/output.mp4`として保存されます。
