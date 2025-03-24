@@ -44,10 +44,10 @@ This will combine all MP3 files in the specified directory in alphabetical order
 Examples:
 ```bash
 # デフォルトの2秒ギャップで結合
-yarn mp3join ./output
+yarn mp3join /Users/yuki/Desktop/radio-combined/2025-03-17/個別
 
 # 3.5秒のギャップで結合
-yarn mp3join ./output 3.5
+yarn mp3join /Users/yuki/Desktop/radio-combined/2025-03-17/個別 3.5
 ```
 
 This is a simple concatenation without any additional effects or background music.
@@ -141,7 +141,7 @@ yarn simple-movie <音声ファイル> <画像ファイル> [出力ファイル�
 例：
 
 ```bash
-yarn simple-movie '/Users/yuki/Desktop/radio-combined/2025-03-03/2025-03-03_combined_output.mp3' '/Users/yuki/Desktop/ラジオ固定画像.png'
+yarn simple-movie '/Users/yuki/Desktop/radio-combined/2025-03-17/2025-03-17_combined_output.mp3' '/Users/yuki/Desktop/radio-combined/2025-03-17/ラジオ静止画_youtube用.png'
 ```
 
 これにより、音声の長さに合わせて画像を表示する動画が作成され、`./output/my_video.mp4`として保存されます。出力ファイル名は省略可能で、省略した場合は`./output/output.mp4`として保存されます。
