@@ -56,6 +56,7 @@ const graph_tts: GraphData = {
         voice: ":voice",
         speed: ":row.speed",
         speed_global: ":script.speed",
+        instructions: ":row.instructions"
       },
     },
   },

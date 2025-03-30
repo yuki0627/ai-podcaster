@@ -4,11 +4,13 @@
   "script": [
     {
       "speaker": "Host",
-      "text": "Hello and welcome to another episode of 'life is artificial', where we explore the cutting edge of technology, innovation, and what the future could look like."
+      "text": "Hello and welcome to another episode of 'life is artificial', where we explore the cutting edge of technology, innovation, and what the future could look like.",
+      "instructions": "Wispearing"
     },
     {
       "speaker": "Host",
-      "text": "こんにちは、ポッドキャスト版、ライフ・イズ・ビューティフルへようこそ。新しいテクノロジーについて分かりやすく語ります"
+      "text": "こんにちは、ポッドキャスト版、ライフ・イズ・ビューティフルへようこそ。新しいテクノロジーについて分かりやすく語ります",
+      "instructions": "赤ちゃんのように"
     }
   ]
 }
