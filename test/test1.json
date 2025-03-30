@@ -1,9 +1,9 @@
 {
   "title": "The Honey Trap vs. The Frontier: Engineering at Tesla and SpaceX",
   "description": "We dive into Elon Musk's philosophy on building environments where engineers can truly flourish, contrasting the comfort-focused 'honey trap' with the high-expectation culture at Tesla and SpaceX.",
-  "x-speakers": ["Host"],
-  "x-voices": [
-    "shimmer"
+  "speakers": ["Host", "Guest"],
+  "voices": [
+    "onyx", "shimmer"
   ],
   "script": [
     {
@@ -12,7 +12,7 @@
       "x-instructions": "Wispearing"
     },
     {
-      "speaker": "Host",
+      "speaker": "Guest",
       "text": "こんにちは、ポッドキャスト版、ライフ・イズ・ビューティフルへようこそ。新しいテクノロジーについて分かりやすく語ります",
       "x-instructions": "赤ちゃんのように"
     }
