@@ -7,672 +7,931 @@
     "a7619e48-bf6a-4f9f-843f-40485651257f",
     "bc06c63f-fef6-43b6-92f7-67f919bd5dae"
   ],
-  "charactors": ["春玲", "森野颯太", "ベン・カーター"],
-  "speakers": ["Announcer", "Student", "Teacher"],
+  "charactors": [
+    "春玲",
+    "森野颯太",
+    "ベン・カーター"
+  ],
+  "speakers": [
+    "Announcer",
+    "Student",
+    "Teacher"
+  ],
   "script": [
     {
       "speaker": "Announcer",
       "text": "本日の「文化探求シリーズ」では、",
-      "imageIndex": 0
+      "imageIndex": 0,
+      "filename": "kyoto_coffee0",
+      "duration": 2.7032499999999997
     },
     {
       "speaker": "Announcer",
       "text": "世界で注目を集める「京都スタイルコーヒー」の謎に迫ります。",
-      "imageIndex": 0
+      "imageIndex": 0,
+      "filename": "kyoto_coffee1",
+      "duration": 4.0355
     },
     {
       "speaker": "Announcer",
       "text": "1950年代に京都で生まれた水出しコーヒーの技法が、",
-      "imageIndex": 0
+      "imageIndex": 0,
+      "filename": "kyoto_coffee2",
+      "duration": 4.55795
     },
     {
       "speaker": "Announcer",
       "text": "なぜ海外で「京都スタイル」として評価され、",
       "caption": "なぜ海外で「KYOTO-STYLE」として評価され、",
-      "imageIndex": 0
+      "imageIndex": 0,
+      "filename": "kyoto_coffee3",
+      "duration": 3.0428499999999996
     },
     {
       "speaker": "Announcer",
       "text": "日本では別の名で呼ばれるのか。",
-      "imageIndex": 0
+      "imageIndex": 0,
+      "filename": "kyoto_coffee4",
+      "duration": 2.6771499999999997
     },
     {
       "speaker": "Announcer",
       "text": "伝統と革新が交差する京都の職人精神を通して、",
-      "imageIndex": 0
+      "imageIndex": 0,
+      "filename": "kyoto_coffee5",
+      "duration": 4.1139
     },
     {
       "speaker": "Announcer",
       "text": "日本文化の深層に迫る魅力的な旅へご案内します。",
-      "imageIndex": 0
+      "imageIndex": 0,
+      "filename": "kyoto_coffee6",
+      "duration": 4.0094
     },
     {
       "speaker": "Student",
       "text": "先生、最近ネットで「京都スタイルコーヒー」っていう言葉を見かけたんですけど、",
-      "imageIndex": 1
+      "imageIndex": 1,
+      "filename": "kyoto_coffee7",
+      "duration": 4.45345
     },
     {
       "speaker": "Student",
       "text": "これって何ですか？",
-      "imageIndex": 1
+      "imageIndex": 1,
+      "filename": "kyoto_coffee8",
+      "duration": 1.3971500000000001
     },
     {
       "speaker": "Teacher",
       "text": "ああ、いい質問だね太郎くん。",
-      "imageIndex": 2
+      "imageIndex": 2,
+      "filename": "kyoto_coffee9",
+      "duration": 2.9644999999999997
     },
     {
       "speaker": "Teacher",
       "text": "「京都スタイルコーヒー」というのは、",
-      "imageIndex": 2
+      "imageIndex": 2,
+      "filename": "kyoto_coffee10",
+      "duration": 2.5987999999999998
     },
     {
       "speaker": "Teacher",
       "text": "主に海外で使われている名前なんだよ。",
-      "imageIndex": 2
+      "imageIndex": 2,
+      "filename": "kyoto_coffee11",
+      "duration": 3.17345
     },
     {
       "speaker": "Teacher",
       "text": "実は水で抽出するコーヒー、",
-      "imageIndex": 2
+      "imageIndex": 2,
+      "filename": "kyoto_coffee12",
+      "duration": 2.80775
     },
     {
       "speaker": "Teacher",
       "text": "つまり「コールドブリュー」の一種で、",
-      "imageIndex": 2
+      "imageIndex": 2,
+      "filename": "kyoto_coffee13",
+      "duration": 2.54655
     },
     {
       "speaker": "Teacher",
       "text": "京都が発祥の地といわれているんだ。",
-      "imageIndex": 2
+      "imageIndex": 2,
+      "filename": "kyoto_coffee14",
+      "duration": 2.8861
     },
     {
       "speaker": "Student",
       "text": "コールドブリューって、",
-      "imageIndex": 3
+      "imageIndex": 3,
+      "filename": "kyoto_coffee15",
+      "duration": 1.63225
     },
     {
       "speaker": "Student",
       "text": "あの冷たいコーヒーですよね？",
-      "imageIndex": 3
+      "imageIndex": 3,
+      "filename": "kyoto_coffee16",
+      "duration": 1.9196
     },
     {
       "speaker": "Student",
       "text": "どうして京都が発祥なんですか？",
-      "imageIndex": 3
+      "imageIndex": 3,
+      "filename": "kyoto_coffee17",
+      "duration": 2.10245
     },
     {
       "speaker": "Teacher",
       "text": "そうそう、冷たい水でゆっくり時間をかけて抽出するコーヒーのことだよ。",
-      "imageIndex": 4
+      "imageIndex": 4,
+      "filename": "kyoto_coffee18",
+      "duration": 5.26325
     },
     {
       "speaker": "Teacher",
       "text": "実はその起源は昭和30年代、",
-      "imageIndex": 4
+      "imageIndex": 4,
+      "filename": "kyoto_coffee19",
+      "duration": 3.0951
     },
     {
       "speaker": "Teacher",
       "text": "1955年頃に京都の喫茶店、「はなふさ」という店で始まったんだ。",
       "caption": "1955年頃に京都の喫茶店「はなふさ」という店で始まったんだ。",
-      "imageIndex": 4
+      "imageIndex": 4,
+      "filename": "kyoto_coffee20",
+      "duration": 5.6812499999999995
     },
     {
       "speaker": "Teacher",
       "text": "お店の人と京都大学の化学を専攻する学生が一緒に開発したんだよ。",
-      "imageIndex": 4
+      "imageIndex": 4,
+      "filename": "kyoto_coffee21",
+      "duration": 5.158799999999999
     },
     {
       "speaker": "Student",
       "text": "え！そんな昔からあったんですか？",
-      "imageIndex": 5
+      "imageIndex": 5,
+      "filename": "kyoto_coffee22",
+      "duration": 2.33755
     },
     {
       "speaker": "Student",
       "text": "どんな方法だったんですか？",
-      "imageIndex": 5
+      "imageIndex": 5,
+      "filename": "kyoto_coffee23",
+      "duration": 1.73675
     },
     {
       "speaker": "Teacher",
       "text": "彼らは「ウォータードリップ」というシステムを考案したんだ。",
-      "imageIndex": 6
+      "imageIndex": 6,
+      "filename": "kyoto_coffee24",
+      "duration": 3.6437
     },
     {
       "speaker": "Teacher",
       "text": "氷水を少しずつ滴下させて、",
-      "imageIndex": 6
+      "imageIndex": 6,
+      "filename": "kyoto_coffee25",
+      "duration": 2.8339
     },
     {
       "speaker": "Teacher",
       "text": "12時間以上かけてコーヒーを抽出する方法さ。",
-      "imageIndex": 6
+      "imageIndex": 6,
+      "filename": "kyoto_coffee26",
+      "duration": 3.8526499999999997
     },
     {
       "speaker": "Teacher",
       "text": "この方法で作ると、",
-      "imageIndex": 6
+      "imageIndex": 6,
+      "filename": "kyoto_coffee27",
+      "duration": 2.2853
     },
     {
       "speaker": "Teacher",
       "text": "普通のホットコーヒーよりも酸味が抑えられて、",
-      "imageIndex": 6
+      "imageIndex": 6,
+      "filename": "kyoto_coffee28",
+      "duration": 3.4608
     },
     {
       "speaker": "Teacher",
       "text": "滑らかな口当たりになるんだよ。",
-      "imageIndex": 6
+      "imageIndex": 6,
+      "filename": "kyoto_coffee29",
+      "duration": 2.6249
     },
     {
       "speaker": "Student",
       "text": "なるほど。でも12時間もかかるなんて、",
-      "imageIndex": 7
+      "imageIndex": 7,
+      "filename": "kyoto_coffee30",
+      "duration": 3.14735
     },
     {
       "speaker": "Student",
       "text": "大変そうですね。",
-      "imageIndex": 7
+      "imageIndex": 7,
+      "filename": "kyoto_coffee31",
+      "duration": 1.5016500000000002
     },
     {
       "speaker": "Teacher",
       "text": "確かに時間はかかるけど、",
-      "imageIndex": 8
+      "imageIndex": 8,
+      "filename": "kyoto_coffee32",
+      "duration": 2.3897999999999997
     },
     {
       "speaker": "Teacher",
       "text": "それが風味を引き出す秘訣なんだ。",
-      "imageIndex": 8
+      "imageIndex": 8,
+      "filename": "kyoto_coffee33",
+      "duration": 2.8339
     },
     {
       "speaker": "Teacher",
       "text": "さらに面白いのは、",
-      "imageIndex": 8
+      "imageIndex": 8,
+      "filename": "kyoto_coffee34",
+      "duration": 2.1547
     },
     {
       "speaker": "Teacher",
       "text": "この技術が京都の伝統的な町家建築の特性と関係していたことだよ。",
-      "imageIndex": 8
+      "imageIndex": 8,
+      "filename": "kyoto_coffee35",
+      "duration": 5.158799999999999
     },
     {
       "speaker": "Student",
       "text": "町家と関係があるんですか？",
-      "imageIndex": 9
+      "imageIndex": 9,
+      "filename": "kyoto_coffee36",
+      "duration": 1.9196
     },
     {
       "speaker": "Student",
       "text": "どういうことですか？",
-      "imageIndex": 9
+      "imageIndex": 9,
+      "filename": "kyoto_coffee37",
+      "duration": 1.4755
     },
     {
       "speaker": "Teacher",
       "text": "京都の町家には「納戸」という床下の涼しい場所があって、",
-      "imageIndex": 10
+      "imageIndex": 10,
+      "filename": "kyoto_coffee38",
+      "duration": 4.2706
     },
     {
       "speaker": "Teacher",
       "text": "そこを自然の冷蔵庫のように使っていたんだ。",
-      "imageIndex": 10
+      "imageIndex": 10,
+      "filename": "kyoto_coffee39",
+      "duration": 3.17345
     },
     {
       "speaker": "Teacher",
       "text": "夏場でも温度管理ができて、",
-      "imageIndex": 10
+      "imageIndex": 10,
+      "filename": "kyoto_coffee40",
+      "duration": 2.57265
     },
     {
       "speaker": "Teacher",
       "text": "長時間の抽出でも品質が安定するという利点があったんだよ。",
-      "imageIndex": 10
+      "imageIndex": 10,
+      "filename": "kyoto_coffee41",
+      "duration": 4.32285
     },
     {
       "speaker": "Student",
       "text": "へえ、スゴイですね。",
-      "imageIndex": 11
+      "imageIndex": 11,
+      "filename": "kyoto_coffee42",
+      "duration": 2.07635
     },
     {
       "speaker": "Student",
       "text": "でも先生、「京都スタイル」って呼ばれているのに、",
-      "imageIndex": 11
+      "imageIndex": 11,
+      "filename": "kyoto_coffee43",
+      "duration": 3.3041
     },
     {
       "speaker": "Student",
       "text": "日本では別の名前で呼ばれているんですか？",
-      "imageIndex": 11
+      "imageIndex": 11,
+      "filename": "kyoto_coffee44",
+      "duration": 2.57265
     },
     {
       "speaker": "Teacher",
       "text": "そうなんだ。日本国内では「ダッチコーヒー」、「水出しコーヒー」、「氷滴コーヒー」など、",
       "caption": "そうなんだ。日本国内では「ダッチコーヒー」「水出しコーヒー」「氷滴コーヒー」など、",
-      "imageIndex": 12
+      "imageIndex": 12,
+      "filename": "kyoto_coffee45",
+      "duration": 6.073049999999999
     },
     {
       "speaker": "Teacher",
       "text": "いろんな名前で呼ばれていて、",
-      "imageIndex": 12
+      "imageIndex": 12,
+      "filename": "kyoto_coffee46",
+      "duration": 2.4681499999999996
     },
     {
       "speaker": "Teacher",
       "text": "「京都スタイル」という名前はあまり使われていないんだよ。",
-      "imageIndex": 12
+      "imageIndex": 12,
+      "filename": "kyoto_coffee47",
+      "duration": 3.6959
     },
     {
       "speaker": "Student",
       "text": "どうしてそんなに名前が違うんですか？",
-      "imageIndex": 13
+      "imageIndex": 13,
+      "filename": "kyoto_coffee48",
+      "duration": 2.23305
     },
     {
       "speaker": "Teacher",
       "text": "これには三つの理由があるんだ。",
-      "imageIndex": 14
+      "imageIndex": 14,
+      "filename": "kyoto_coffee49",
+      "duration": 2.54655
     },
     {
       "speaker": "Teacher",
       "text": "一つ目は、京都の職人さんたちが自分たちの技術を特別視せず、",
-      "imageIndex": 14
+      "imageIndex": 14,
+      "filename": "kyoto_coffee50",
+      "duration": 5.26325
     },
     {
       "speaker": "Teacher",
       "text": "「これは京都だけのものだ」と主張しなかったこと。",
-      "imageIndex": 14
+      "imageIndex": 14,
+      "filename": "kyoto_coffee51",
+      "duration": 3.38245
     },
     {
       "speaker": "Teacher",
       "text": "二つ目は、技術が個人から個人へと伝わる形で広がっていったこと。",
-      "imageIndex": 14
+      "imageIndex": 14,
+      "filename": "kyoto_coffee52",
+      "duration": 5.629
     },
     {
       "speaker": "Teacher",
       "text": "三つ目は、もともと「ダッチコーヒー」という名前が戦前から使われていたことだね。",
-      "imageIndex": 14
+      "imageIndex": 14,
+      "filename": "kyoto_coffee53",
+      "duration": 4.9498
     },
     {
       "speaker": "Student",
       "text": "なるほど。じゃあ「京都スタイル」って名前はどこから来たんですか？",
-      "imageIndex": 15
+      "imageIndex": 15,
+      "filename": "kyoto_coffee54",
+      "duration": 3.7742999999999998
     },
     {
       "speaker": "Teacher",
       "text": "それは2012年頃、",
-      "imageIndex": 16
+      "imageIndex": 16,
+      "filename": "kyoto_coffee55",
+      "duration": 2.4681499999999996
     },
     {
       "speaker": "Teacher",
       "text": "アメリカの「ブルーボトルコーヒー」というお店が日本を訪れて、",
-      "imageIndex": 16
+      "imageIndex": 16,
+      "filename": "kyoto_coffee56",
+      "duration": 4.1661
     },
     {
       "speaker": "Teacher",
       "text": "京都の抽出技術を見つけたときに始まったんだ。",
-      "imageIndex": 16
+      "imageIndex": 16,
+      "filename": "kyoto_coffee57",
+      "duration": 3.6437
     },
     {
       "speaker": "Teacher",
       "text": "彼らがニューヨーク店で「京都スタイル COLD BREW」として売り出したのが大きなきっかけになったんだよ。",
       "caption": "彼らがニューヨーク店で「KYOTO-STYLE COLD BREW」として売り出したのが大きなきっかけになったんだよ。",
-      "imageIndex": 16
+      "imageIndex": 16,
+      "filename": "kyoto_coffee58",
+      "duration": 5.70735
     },
     {
       "speaker": "Student",
       "text": "え、じゃあ海外の方が京都の技術を認めたということですか？",
-      "imageIndex": 17
+      "imageIndex": 17,
+      "filename": "kyoto_coffee59",
+      "duration": 4.1922500000000005
     },
     {
       "speaker": "Teacher",
       "text": "そう言えるね。海外では「京都」という名前に洗練された神秘性のイメージがあって、",
       "caption": "そう言えるね。海外では「KYOTO」という名前に洗練された神秘性のイメージがあって、",
-      "imageIndex": 18
+      "imageIndex": 18,
+      "filename": "kyoto_coffee60",
+      "duration": 6.3343
     },
     {
       "speaker": "Teacher",
       "text": "マーケティング的にも効果があったんだ。",
-      "imageIndex": 18
+      "imageIndex": 18,
+      "filename": "kyoto_coffee61",
+      "duration": 2.8861
     },
     {
       "speaker": "Teacher",
       "text": "結果的に、日本はつの技術が「京都スタイル」として世界に広まったというわけさ。",
       "caption": "結果的に、日本発の技術が「京都スタイル」として世界に広まったというわけさ。",
-      "imageIndex": 18
+      "imageIndex": 18,
+      "filename": "kyoto_coffee62",
+      "duration": 5.7334499999999995
     },
     {
       "speaker": "Student",
       "text": "それって、ちょっと皮肉ですね。",
-      "imageIndex": 19
+      "imageIndex": 19,
+      "filename": "kyoto_coffee63",
+      "duration": 1.89345
     },
     {
       "speaker": "Student",
       "text": "日本人が特別視しなかったものを外国人が評価して広めた感じですね。",
-      "imageIndex": 19
+      "imageIndex": 19,
+      "filename": "kyoto_coffee64",
+      "duration": 4.29675
     },
     {
       "speaker": "Teacher",
       "text": "鋭い観察だね。京都の文化には「形に囚われず本質を追求する精神」があるんだ。",
-      "imageIndex": 20
+      "imageIndex": 20,
+      "filename": "kyoto_coffee65",
+      "duration": 6.8045
     },
     {
       "speaker": "Teacher",
       "text": "ある京都のコーヒー店主は「現状に満足せず常に挑戦することが京都のスタイル」と言っていて、",
-      "imageIndex": 20
+      "imageIndex": 20,
+      "filename": "kyoto_coffee66",
+      "duration": 6.073049999999999
     },
     {
       "speaker": "Teacher",
       "text": "これが京都らしさを表しているんだよ。",
-      "imageIndex": 20
+      "imageIndex": 20,
+      "filename": "kyoto_coffee67",
+      "duration": 2.9644999999999997
     },
     {
       "speaker": "Student",
       "text": "なるほど。現在はどんな進化をしているんですか？",
-      "imageIndex": 21
+      "imageIndex": 21,
+      "filename": "kyoto_coffee68",
+      "duration": 3.35635
     },
     {
       "speaker": "Teacher",
       "text": "最初は浸漬法と呼ばれる水に漬ける方法だったけど、",
-      "imageIndex": 22
+      "imageIndex": 22,
+      "filename": "kyoto_coffee69",
+      "duration": 3.8788
     },
     {
       "speaker": "Teacher",
       "text": "1980年代に「滴下式抽出塔」という見た目も美しい装置が開発されたんだ。",
-      "imageIndex": 22
+      "imageIndex": 22,
+      "filename": "kyoto_coffee70",
+      "duration": 6.17755
     },
     {
       "speaker": "Teacher",
       "text": "そして2000年代には家庭でも簡単に作れる「パック式簡易キット」が登場したよ。",
-      "imageIndex": 22
+      "imageIndex": 22,
+      "filename": "kyoto_coffee71",
+      "duration": 5.158799999999999
     },
     {
       "speaker": "Student",
       "text": "家でも作れるんですね！",
-      "imageIndex": 23
+      "imageIndex": 23,
+      "filename": "kyoto_coffee72",
+      "duration": 1.63225
     },
     {
       "speaker": "Student",
       "text": "他にも新しい技術はあるんですか？",
-      "imageIndex": 23
+      "imageIndex": 23,
+      "filename": "kyoto_coffee73",
+      "duration": 2.2592
     },
     {
       "speaker": "Teacher",
       "text": "最近では伝統工芸との融合も進んでいるよ。",
-      "imageIndex": 24
+      "imageIndex": 24,
+      "filename": "kyoto_coffee74",
+      "duration": 3.6698
     },
     {
       "speaker": "Teacher",
       "text": "例えば西陣織の金箔加工技術を抽出装置に応用したり、",
-      "imageIndex": 24
+      "imageIndex": 24,
+      "filename": "kyoto_coffee75",
+      "duration": 4.79305
     },
     {
       "speaker": "Teacher",
       "text": "コーヒー豆の粕を肥料にする「コーヒー豆殻堆肥化プロジェクト」という環境に優しい取り組みもあるんだ。",
-      "imageIndex": 24
+      "imageIndex": 24,
+      "filename": "kyoto_coffee76",
+      "duration": 6.2559
     },
     {
       "speaker": "Teacher",
       "text": "さらに若手の職人さんたちは「三次元抽出法」という新技術も開発していて、",
-      "imageIndex": 24
+      "imageIndex": 24,
+      "filename": "kyoto_coffee77",
+      "duration": 5.629
     },
     {
       "speaker": "Teacher",
       "text": "2024年の世界バリスタ選手権で技術賞を受賞したんだよ。",
-      "imageIndex": 24
+      "imageIndex": 24,
+      "filename": "kyoto_coffee78",
+      "duration": 4.9498
     },
     {
       "speaker": "Student",
       "text": "すごいですね！伝統と新しい技術が混ざり合っているんですね。",
-      "imageIndex": 25
+      "imageIndex": 25,
+      "filename": "kyoto_coffee79",
+      "duration": 4.349
     },
     {
       "speaker": "Teacher",
       "text": "まさにその通り。",
-      "imageIndex": 26
+      "imageIndex": 26,
+      "filename": "kyoto_coffee80",
+      "duration": 2.0241
     },
     {
       "speaker": "Teacher",
       "text": "「京都スタイルコーヒー」は単なる飲み物ではなく、",
-      "imageIndex": 26
+      "imageIndex": 26,
+      "filename": "kyoto_coffee81",
+      "duration": 3.4608
     },
     {
       "speaker": "Teacher",
       "text": "職人の精神や文化、",
-      "imageIndex": 26
+      "imageIndex": 26,
+      "filename": "kyoto_coffee82",
+      "duration": 2.651
     },
     {
       "speaker": "Teacher",
       "text": "技術革新の物語を含んでいるんだ。",
-      "imageIndex": 26
+      "imageIndex": 26,
+      "filename": "kyoto_coffee83",
+      "duration": 3.2257
     },
     {
       "speaker": "Teacher",
       "text": "そして興味深いのは、",
-      "imageIndex": 26
+      "imageIndex": 26,
+      "filename": "kyoto_coffee84",
+      "duration": 2.23305
     },
     {
       "speaker": "Teacher",
       "text": "京都の人々がこの技術を「完成形」ではなく「過渡的状態」と捉えていて、",
-      "imageIndex": 26
+      "imageIndex": 26,
+      "filename": "kyoto_coffee85",
+      "duration": 5.02815
     },
     {
       "speaker": "Teacher",
       "text": "常に進化し続けるものと考えていることなんだよ。",
-      "imageIndex": 26
+      "imageIndex": 26,
+      "filename": "kyoto_coffee86",
+      "duration": 3.6698
     },
     {
       "speaker": "Student",
       "text": "コーヒーの話から日本文化の深さまで学べるなんて、",
-      "imageIndex": 27
+      "imageIndex": 27,
+      "filename": "kyoto_coffee87",
+      "duration": 3.14735
     },
     {
       "speaker": "Student",
       "text": "本当に面白いです。",
-      "imageIndex": 27
+      "imageIndex": 27,
+      "filename": "kyoto_coffee88",
+      "duration": 1.6061
     },
     {
       "speaker": "Student",
       "text": "ありがとうございました！",
-      "imageIndex": 27
+      "imageIndex": 27,
+      "filename": "kyoto_coffee89",
+      "duration": 1.4494
     },
     {
       "speaker": "Student",
       "text": "今度コーヒーショップに行ったとき、",
-      "imageIndex": 27
+      "imageIndex": 27,
+      "filename": "kyoto_coffee90",
+      "duration": 1.84125
     },
     {
       "speaker": "Student",
       "text": "水出しコーヒーを注文してみます！",
-      "imageIndex": 27
+      "imageIndex": 27,
+      "filename": "kyoto_coffee91",
+      "duration": 1.9979500000000001
     },
     {
       "speaker": "Teacher",
       "text": "ぜひ試してみてね。",
-      "imageIndex": 28
+      "imageIndex": 28,
+      "filename": "kyoto_coffee92",
+      "duration": 2.0241
     },
     {
       "speaker": "Teacher",
       "text": "飲みながら今日学んだ歴史や文化のことを思い出してみると、",
-      "imageIndex": 28
+      "imageIndex": 28,
+      "filename": "kyoto_coffee93",
+      "duration": 4.2706
     },
     {
       "speaker": "Teacher",
       "text": "より一層おいしく感じるかもしれないよ。",
-      "imageIndex": 28
+      "imageIndex": 28,
+      "filename": "kyoto_coffee94",
+      "duration": 3.069
     },
     {
       "speaker": "Announcer",
       "text": "今回の「文化探求シリーズ」では、",
-      "imageIndex": 29
+      "imageIndex": 29,
+      "filename": "kyoto_coffee95",
+      "duration": 2.651
     },
     {
       "speaker": "Announcer",
       "text": "京都発祥の水出しコーヒー技法とその国際的認知の道のりをご紹介しました。",
-      "imageIndex": 29
+      "imageIndex": 29,
+      "filename": "kyoto_coffee96",
+      "duration": 5.498349999999999
     },
     {
       "speaker": "Announcer",
       "text": "昭和30年代に生まれたこの技法は、",
-      "imageIndex": 29
+      "imageIndex": 29,
+      "filename": "kyoto_coffee97",
+      "duration": 3.2257
     },
     {
       "speaker": "Announcer",
       "text": "京都の伝統的な職人気質と先進性が融合した産物です。",
-      "imageIndex": 29
+      "imageIndex": 29,
+      "filename": "kyoto_coffee98",
+      "duration": 4.55795
     },
     {
       "speaker": "Announcer",
       "text": "日本国内では「水出しコーヒー」や「ダッチコーヒー」と呼ばれる一方、",
-      "imageIndex": 29
+      "imageIndex": 29,
+      "filename": "kyoto_coffee99",
+      "duration": 4.29675
     },
     {
       "speaker": "Announcer",
       "text": "海外では「京都スタイル」として評価されるという興味深い現象から、",
       "caption": "海外では「KYOTO-STYLE」として評価されるという興味深い現象から、",
-      "imageIndex": 29
+      "imageIndex": 29,
+      "filename": "kyoto_coffee100",
+      "duration": 4.5318499999999995
     },
     {
       "speaker": "Announcer",
       "text": "私たちは文化の伝播や価値観の違いについても学ぶことができました。",
-      "imageIndex": 29
+      "imageIndex": 29,
+      "filename": "kyoto_coffee101",
+      "duration": 4.76695
     },
     {
       "speaker": "Announcer",
       "text": "「完成形」ではなく「過渡的状態」として常に進化を続ける京都の精神は、",
-      "imageIndex": 29
+      "imageIndex": 29,
+      "filename": "kyoto_coffee102",
+      "duration": 5.02815
     },
     {
       "speaker": "Announcer",
       "text": "このコーヒー文化にも色濃く反映されているのです。",
-      "imageIndex": 29
+      "imageIndex": 29,
+      "filename": "kyoto_coffee103",
+      "duration": 3.4869499999999998
     },
     {
       "speaker": "Announcer",
       "text": "ご視聴いただき、",
-      "imageIndex": 29
+      "imageIndex": 29,
+      "filename": "kyoto_coffee104",
+      "duration": 1.73675
     },
     {
       "speaker": "Announcer",
       "text": "ありがとうございました。",
-      "imageIndex": 29
+      "imageIndex": 29,
+      "filename": "kyoto_coffee105",
+      "duration": 2.289
     },
     {
       "speaker": "Announcer",
       "text": "次回の「文化探求シリーズ」もお楽しみに。",
-      "imageIndex": 29
+      "imageIndex": 29,
+      "filename": "kyoto_coffee106",
+      "duration": 3.17345
     }
   ],
   "images": [
     {
+      "index": 0,
       "imagePrompt": "A scenic view of Kyoto with traditional architecture, depicting a blend of culture and innovation, symbolizing the origins of Kyoto-style coffee.",
-      "index": 0
+      "image": "./images/kyoto_coffee/0p.png"
     },
     {
+      "index": 1,
       "imagePrompt": "A digital search bar with 'Kyoto Style Coffee' showing up as a trending topic, highlighting curiosity and discovery.",
-      "index": 1
+      "image": "./images/kyoto_coffee/1p.png"
     },
     {
+      "index": 2,
       "imagePrompt": "A map of the world with a spotlight on Kyoto, illustrating the global recognition of Kyoto-style coffee.",
-      "index": 2
+      "image": "./images/kyoto_coffee/2p.png"
     },
     {
+      "index": 3,
       "imagePrompt": "A glass of cold brew coffee with condensation, set against a backdrop of Kyoto's iconic cityscape.",
-      "index": 3
+      "image": "./images/kyoto_coffee/3p.png"
     },
     {
+      "index": 4,
       "imagePrompt": "A vintage café interior from the 1950s in Kyoto.",
-      "index": 4
+      "image": "./images/kyoto_coffee/4p.png"
     },
     {
+      "index": 5,
       "imagePrompt": "A retro-style blueprint of a coffee extraction method, symbolizing innovation and creativity from the past.",
-      "index": 5
+      "image": "./images/kyoto_coffee/5p.png"
     },
     {
+      "index": 6,
       "imagePrompt": "An intricate water drip coffee system, with ice water slowly dripping into a carafe, highlighting precision and patience.",
-      "index": 6
+      "image": "./images/kyoto_coffee/6p.png"
     },
     {
+      "index": 7,
       "imagePrompt": "An hourglass with coffee beans, symbolizing the time-intensive process of making Kyoto-style coffee.",
-      "index": 7
+      "image": "./images/kyoto_coffee/7p.png"
     },
     {
+      "index": 8,
       "imagePrompt": "A traditional Kyoto townhouse with a cool, shaded interior, representing the innovative use of natural cooling for coffee extraction.",
-      "index": 8
+      "image": "./images/kyoto_coffee/8p.png"
     },
     {
+      "index": 9,
       "imagePrompt": "An architectural diagram of a Kyoto townhouse, with emphasis on the cool storage areas used for coffee production.",
-      "index": 9
+      "image": "./images/kyoto_coffee/9p.png"
     },
     {
+      "index": 10,
       "imagePrompt": "A cutaway view of a Kyoto townhouse showing the 'nando' or cool storage area used as a natural refrigerator.",
-      "index": 10
+      "image": "./images/kyoto_coffee/10p.png"
     },
     {
+      "index": 11,
       "imagePrompt": "A global map with different names for Kyoto-style coffee written in various languages, illustrating its international influence.",
-      "index": 11
+      "image": "./images/kyoto_coffee/11p.png"
     },
     {
+      "index": 12,
       "imagePrompt": "A collage of different coffee names in Japanese script, reflecting the diverse terminology used domestically.",
-      "index": 12
+      "image": "./images/kyoto_coffee/12p.png"
     },
     {
+      "index": 13,
       "imagePrompt": "A puzzle with coffee-related terms, symbolizing the complexity and variety of names for Kyoto-style coffee.",
-      "index": 13
+      "image": "./images/kyoto_coffee/13p.png"
     },
     {
+      "index": 14,
       "imagePrompt": "Kyoto-style coffee techniques.",
-      "index": 14
+      "image": "./images/kyoto_coffee/14p.png"
     },
     {
+      "index": 15,
       "imagePrompt": "A historical timeline highlighting the introduction of 'Kyoto Style' by Blue Bottle Coffee in 2012.",
-      "index": 15
+      "image": "./images/kyoto_coffee/15p.png"
     },
     {
+      "index": 16,
       "imagePrompt": "A bustling New York café, with a sign prominently advertising 'Kyoto-Style Cold Brew', emphasizing its international debut.",
-      "index": 16
+      "image": "./images/kyoto_coffee/16p.png"
     },
     {
+      "index": 17,
       "imagePrompt": "A globe with Kyoto highlighted, showcasing its global recognition and acceptance in the coffee industry.",
-      "index": 17
+      "image": "./images/kyoto_coffee/17p.png"
     },
     {
+      "index": 18,
       "imagePrompt": "A marketing poster for 'Kyoto-Style Coffee' featuring elegant and mysterious imagery often associated with Kyoto.",
-      "index": 18
+      "image": "./images/kyoto_coffee/18p.png"
     },
     {
+      "index": 19,
       "imagePrompt": "A balance scale with Japanese culture on one side and global recognition on the other, illustrating the irony of cultural appreciation.",
-      "index": 19
+      "image": "./images/kyoto_coffee/19p.png"
     },
     {
+      "index": 20,
       "imagePrompt": "A serene Kyoto garden, symbolizing the essence-seeking spirit and continuous innovation inherent in Kyoto's culture.",
-      "index": 20
+      "image": "./images/kyoto_coffee/20p.png"
     },
     {
+      "index": 21,
       "imagePrompt": "A futuristic coffee lab with advanced brewing equipment, illustrating the current evolution of Kyoto-style coffee techniques.",
-      "index": 21
+      "image": "./images/kyoto_coffee/21p.png"
     },
     {
+      "index": 22,
       "imagePrompt": "A sleek Kyoto-style coffee drip tower and a home brewing kit, symbolizing the evolution and accessibility of coffee brewing.",
-      "index": 22
+      "image": "./images/kyoto_coffee/22p.png"
     },
     {
+      "index": 23,
       "imagePrompt": "A home kitchen setting with a variety of coffee brewing gadgets, emphasizing personal coffee crafting.",
-      "index": 23
+      "image": "./images/kyoto_coffee/23p.png"
     },
     {
+      "index": 24,
       "imagePrompt": "A blend of traditional Japanese craftsmanship with modern coffee brewing technology, showcasing innovation and sustainability.",
-      "index": 24
+      "image": "./images/kyoto_coffee/24p.png"
     },
     {
+      "index": 25,
       "imagePrompt": "A digital collage of traditional Japanese art and modern coffee technology, symbolizing the fusion of past and present.",
-      "index": 25
+      "image": "./images/kyoto_coffee/25p.png"
     },
     {
+      "index": 26,
       "imagePrompt": "An evolving timeline of Kyoto-style coffee, showing continual innovation and adaptation, reflecting the concept of a 'transitional state'.",
-      "index": 26
+      "image": "./images/kyoto_coffee/26p.png"
     },
     {
+      "index": 27,
       "imagePrompt": "A modern coffee shop.",
-      "index": 27
+      "image": "./images/kyoto_coffee/27p.png"
     },
     {
+      "index": 28,
       "imagePrompt": "A serene setting with a person enjoying a cup of coffee, reflecting on its rich cultural and historical background.",
-      "index": 28
+      "image": "./images/kyoto_coffee/28p.png"
     },
     {
+      "index": 29,
       "imagePrompt": "A dynamic illustration of Kyoto's cultural and innovative spirit, encapsulating the journey of Kyoto-style coffee from its origins to global recognition.",
-      "index": 29
+      "image": "./images/kyoto_coffee/29p.png"
     }
-  ]
+  ],
+  "filename": "kyoto_coffee",
+  "ttsAgent": "ttsNijivoiceAgent",
+  "voicemap": {
+    "Announcer": "afd7df65-0fdc-4d31-ae8b-a29f0f5eed62",
+    "Student": "a7619e48-bf6a-4f9f-843f-40485651257f",
+    "Teacher": "bc06c63f-fef6-43b6-92f7-67f919bd5dae"
+  }
 }
