@@ -11,11 +11,11 @@ import {
 } from "graphai";
 import * as agents from "@graphai/agents";
 // import { ttsNijivoiceAgent } from "@graphai/tts_nijivoice_agent";
-import { ttsOpenaiAgent } from "@graphai/tts_openai_agent";
 import ttsNijivoiceAgent from "./agents/tts_nijivoice_agent";
 import addBGMAgent from "./agents/add_bgm_agent";
 import combineFilesAgent from "./agents/combine_files_agent";
-// import ttsOpenaiAgent from "./agents/tts_openai_agent";
+// import { ttsOpenaiAgent } from "@graphai/tts_openai_agent";
+import ttsOpenaiAgent from "./agents/tts_openai_agent";
 import { pathUtilsAgent, fileWriteAgent } from "@graphai/vanilla_node_agents";
 
 import { ScriptData, PodcastScript } from "./type";

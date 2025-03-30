@@ -1,20 +1,22 @@
 import { AgentFunction, AgentFunctionInfo } from "graphai";
 import OpenAI from "openai";
 
-export const ttsOpenaiAgent: AgentFunction = async ({
-  namedInputs,
-  params,
-}) => {
+export const ttsOpenaiAgent: AgentFunction = async ({ namedInputs, params }) => {
   const { text } = namedInputs;
-  const { apiKey, model, voice, throwError } = params;
+  const { apiKey, model, voice, throwError, instructions } = params;
   const openai = new OpenAI({ apiKey });
 
   try {
-    const response = await openai.audio.speech.create({
-      model: model ?? "tts-1",
+    const tts_options = {
+      model: model ?? "gpt-4o-mini-tts", // "tts-1",
       voice: voice ?? "shimmer",
-      input: text,
-    });
+      input: text
+    };
+    if (instructions) {
+      tts_options["instructions"] = instructions;
+    }
+    console.log("ttsOptions", tts_options);
+    const response = await openai.audio.speech.create(tts_options);
     const buffer = Buffer.from(await response.arrayBuffer());
     return { buffer };
   } catch (e) {
@@ -35,9 +37,10 @@ const ttsOpenaiAgentInfo: AgentFunctionInfo = {
   samples: [],
   description: "OpenAI TTS agent",
   category: ["tts"],
-  author: "isamu arimoto",
-  repository: "https://github.com/isamu/graphai-agents/tts/tts-openai-agent/",
+  author: "Receptron Team",
+  repository: "https://github.com/receptron/graphai-agents/tree/main/tts/tts-openai-agent",
   license: "MIT",
+  environmentVariables: ["OPENAI_API_KEY"],
 };
 
 export default ttsOpenaiAgentInfo;
