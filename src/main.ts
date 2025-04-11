@@ -87,7 +87,7 @@ const graph_data: GraphData = {
       agent: "fileWriteAgent",
       inputs: {
         file: "./output/${:script.filename}.json",
-        text: ":script.toJSON()",
+        text: ":combineFiles.script.toJSON()",
       },
       params: { baseDir: __dirname + "/../" },
     },
