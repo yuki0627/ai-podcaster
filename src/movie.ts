@@ -128,9 +128,8 @@ const createVideo = (
     // Add filter for each image
     if (omitCaptions) {
       filterComplexParts.push(
-        // Resize background image to match canvas dimensions
-        `[${element.imageIndex}:v]scale=${canvasInfo.width * 4}:${canvasInfo.height * 4},setsar=1,format=yuv420p,zoompan=z=zoom+0.0004:x=iw/2-(iw/zoom/2):y=ih-(ih/zoom):s=${canvasInfo.width}x${canvasInfo.height}:fps=30:d=${element.duration * 30},trim=duration=${element.duration}[v${index}]`,
-        // `[${element.imageIndex}:v]scale=${canvasInfo.width}:${canvasInfo.height},setsar=1,trim=duration=${element.duration}[v${index}]`
+        // BUGBUG: I am not able to remove this unnecessary zooming code
+        `[${element.imageIndex}:v]scale=${canvasInfo.width * 4}:${canvasInfo.height * 4},setsar=1,format=yuv420p,zoompan=z=zoom:x=iw/2-(iw/zoom/2):y=ih-(ih/zoom):s=${canvasInfo.width}x${canvasInfo.height}:fps=30:d=${element.duration * 30},trim=duration=${element.duration}[v${index}]`,
       );
     } else {
       filterComplexParts.push(
