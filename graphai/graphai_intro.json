@@ -3,7 +3,7 @@
   "description": "Declarative Dataflow Programming environment for AI agents.",
   "speakers": ["Host"],
   "voices": ["shimmer"],
-  "imagePath": "./images/graphai_intro/GraphAI_pararel.",
+  "imagePath": "./images/graphai_intro/\u200EGraphAI_pararel.\u200E",
   "omitCaptions": true,
   "script": [
     {
@@ -24,7 +24,7 @@
     {
       "speaker": "Host",
       "text": "All those services are accessible via asynchronous API, which makes it possible to concurrently execute those operations, but taking advantage of this concurrency is not easy.",
-      "imageIndex": 1
+      "imageIndex": 3
     }
   ]
 }

@@ -261,6 +261,11 @@ const main = async () => {
       imagePrompt: undefined,
       image: jsonData.imagePath + "003.png",
     });
+    images.push({
+      index: 0,
+      imagePrompt: undefined,
+      image: jsonData.imagePath + "004.png",
+    });
   }
 
   createVideo(
