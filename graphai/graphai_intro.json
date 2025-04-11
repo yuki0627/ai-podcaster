@@ -1,8 +1,10 @@
 {
   "title": "Introduction to GraphAI",
+  "description": "Declarative Dataflow Programming environment for AI agents.",
   "speakers": ["Host"],
   "voices": ["shimmer"],
   "imagePath": "./images/graphai_intro/GraphAI_pararel.",
+  "omitCaptions": true,
   "script": [
     {
       "speaker": "Host",
@@ -17,7 +19,7 @@
     {
       "speaker": "Host",
       "text": "It utilizes various AI components and services, such as LLM and Text2Speech. It also interact with external data sources, tools and other agents via standard protocol like MCP. ",
-      "imageIndex": 1
+      "imageIndex": 2
     },
     {
       "speaker": "Host",

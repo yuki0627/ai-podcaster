@@ -106,6 +106,7 @@ const createVideo = (
   images: ImageInfo[],
   outputVideoPath: string,
   canvasInfo: CanvasInfo,
+  omitCaptions: boolean,
 ) => {
   const start = performance.now();
   let command = ffmpeg();
@@ -125,12 +126,19 @@ const createVideo = (
 
   captions.forEach((element, index) => {
     // Add filter for each image
-    filterComplexParts.push(
-      // Resize background image to match canvas dimensions
-      `[${element.imageIndex}:v]scale=${canvasInfo.width}:${canvasInfo.height},setsar=1,trim=duration=${element.duration}[bg${index}];` +
-        `[${imageCount + index}:v]scale=${canvasInfo.width * 2}:${canvasInfo.height * 2},setsar=1,format=rgba,zoompan=z=zoom+0.0004:x=iw/2-(iw/zoom/2):y=ih-(ih/zoom):s=${canvasInfo.width}x${canvasInfo.height}:fps=30:d=${element.duration * 30},trim=duration=${element.duration}[cap${index}];` +
-        `[bg${index}][cap${index}]overlay=(W-w)/2:(H-h)/2:format=auto[v${index}]`,
-    );
+    if (omitCaptions) {
+      filterComplexParts.push(
+        // Resize background image to match canvas dimensions
+        `[${element.imageIndex}:v]scale=${canvasInfo.width}:${canvasInfo.height},setsar=1,trim=duration=${element.duration}[v${index}]`
+      );
+    } else {
+      filterComplexParts.push(
+        // Resize background image to match canvas dimensions
+        `[${element.imageIndex}:v]scale=${canvasInfo.width}:${canvasInfo.height},setsar=1,trim=duration=${element.duration}[bg${index}];` +
+          `[${imageCount + index}:v]scale=${canvasInfo.width * 2}:${canvasInfo.height * 2},setsar=1,format=rgba,zoompan=z=zoom+0.0004:x=iw/2-(iw/zoom/2):y=ih-(ih/zoom):s=${canvasInfo.width}x${canvasInfo.height}:fps=30:d=${element.duration * 30},trim=duration=${element.duration}[cap${index}];` +
+          `[bg${index}][cap${index}]overlay=(W-w)/2:(H-h)/2:format=auto[v${index}]`,
+      );
+    }
   });
 
   // Concatenate the trimmed images
@@ -248,6 +256,11 @@ const main = async () => {
       imagePrompt: undefined,
       image: jsonData.imagePath + "002.png",
     });
+    images.push({
+      index: 0,
+      imagePrompt: undefined,
+      image: jsonData.imagePath + "003.png",
+    });
   }
 
   createVideo(
@@ -256,6 +269,7 @@ const main = async () => {
     images.length > 0 ? images : jsonDataTm.images,
     outputVideoPath,
     canvasInfo,
+    !!jsonData.omitCaptions
   );
 };
 

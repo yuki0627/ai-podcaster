@@ -31,4 +31,5 @@ export type PodcastScript = {
   aspectRatio: string | undefined; // "16:9" or "9:16"
   images: ImageInfo[]; // generated
   imagePath: string | undefined; // for Keynote images
+  omitCaptions: boolean | undefined; // default is false
 };
