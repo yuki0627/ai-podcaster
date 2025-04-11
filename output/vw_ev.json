@@ -71,10 +71,7 @@
     }
   ],
   "filename": "vw_ev",
-  "voices": [
-    "shimmer",
-    "echo"
-  ],
+  "voices": ["shimmer", "echo"],
   "voicemap": {
     "Host": "shimmer",
     "Guest": "echo"

@@ -1,1 +1,23 @@
-{"title":"The Honey Trap vs. The Frontier: Engineering at Tesla and SpaceX","description":"We dive into Elon Musk's philosophy on building environments where engineers can truly flourish, contrasting the comfort-focused 'honey trap' with the high-expectation culture at Tesla and SpaceX.","speakers":["Host","Guest"],"voices":["onyx","shimmer"],"script":[{"speaker":"Host","text":"Hello and welcome to another episode of 'life is artificial', where we explore the cutting edge of technology, innovation, and what the future could look like.","instructions":"Voice: Deep and rugged, with a hearty, boisterous quality, like a seasoned sea captain who's seen many voyages.\nTone: Friendly and spirited, with a sense of adventure and enthusiasm, making every detail feel like part of a grand journey.\nDialect: Classic pirate speech with old-timey nautical phrases, dropped 'g's, and exaggerated 'Arrrs' to stay in character.","filename":"test10"},{"speaker":"Guest","text":"こんにちは、ポッドキャスト版、ライフ・イズ・ビューティフルへようこそ。新しいテクノロジーについて分かりやすく語ります","instructions":"voice: 赤ちゃん\nVoice: 高い声で、舌ったらず。甘えっぽく。語尾に’ぽよ’と付ける","filename":"test11"}],"filename":"test1","ttsAgent":"ttsOpenaiAgent","voicemap":{"Host":"onyx","Guest":"shimmer"}}
+{
+  "title": "The Honey Trap vs. The Frontier: Engineering at Tesla and SpaceX",
+  "description": "We dive into Elon Musk's philosophy on building environments where engineers can truly flourish, contrasting the comfort-focused 'honey trap' with the high-expectation culture at Tesla and SpaceX.",
+  "speakers": ["Host", "Guest"],
+  "voices": ["onyx", "shimmer"],
+  "script": [
+    {
+      "speaker": "Host",
+      "text": "Hello and welcome to another episode of 'life is artificial', where we explore the cutting edge of technology, innovation, and what the future could look like.",
+      "instructions": "Voice: Deep and rugged, with a hearty, boisterous quality, like a seasoned sea captain who's seen many voyages.\nTone: Friendly and spirited, with a sense of adventure and enthusiasm, making every detail feel like part of a grand journey.\nDialect: Classic pirate speech with old-timey nautical phrases, dropped 'g's, and exaggerated 'Arrrs' to stay in character.",
+      "filename": "test10"
+    },
+    {
+      "speaker": "Guest",
+      "text": "こんにちは、ポッドキャスト版、ライフ・イズ・ビューティフルへようこそ。新しいテクノロジーについて分かりやすく語ります",
+      "instructions": "voice: 赤ちゃん\nVoice: 高い声で、舌ったらず。甘えっぽく。語尾に’ぽよ’と付ける",
+      "filename": "test11"
+    }
+  ],
+  "filename": "test1",
+  "ttsAgent": "ttsOpenaiAgent",
+  "voicemap": { "Host": "onyx", "Guest": "shimmer" }
+}

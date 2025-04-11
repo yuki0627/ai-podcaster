@@ -1,0 +1,40 @@
+{
+  "title": "AIの進化と私たちの未来 - サム・アルトマン氏の3つの観察",
+  "description": "OpenAIのサム・アルトマン氏による、AIの進化と社会への影響に関する洞察を、高校生向けに分かりやすく解説する対話形式のスクリプト。",
+  "tts": "nijivoice",
+  "voices": [
+    "afd7df65-0fdc-4d31-ae8b-a29f0f5eed62",
+    "a7619e48-bf6a-4f9f-843f-40485651257f",
+    "bc06c63f-fef6-43b6-92f7-67f919bd5dae"
+  ],
+  "charactors": ["春玲", "太郎", "山田先生"],
+  "speakers": ["Announcer", "Student", "Teacher"],
+  "reference": "https://blog.samaltman.com/three-observations",
+  "script": [
+    {
+      "speaker": "Announcer",
+      "text": "私たちの目の前で、人工知能の革命が静かに、",
+      "speed": 1.5,
+      "imageIndex": 0
+    },
+    {
+      "speaker": "Announcer",
+      "text": "しかし確実に進んでいます。",
+      "speed": 1.5,
+      "imageIndex": 0
+    },
+    {
+      "speaker": "Announcer",
+      "caption": "OpenAIのサム・アルトマン氏が語る「3つの重要な観察」とは何か？",
+      "text": "オープンエーアイのサム・アルトマン氏が語る「3つの重要な観察」とは何か？",
+      "speed": 1.5,
+      "imageIndex": 0
+    }
+  ],
+  "images": [
+    {
+      "imagePrompt": "A futuristic scene depicting the quiet but certain advancement of AI, with digital interfaces and abstract representations of AI technology shaping the future.",
+      "index": 0
+    }
+  ]
+}

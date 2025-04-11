@@ -3,10 +3,7 @@
   "reference": "https://www.wired.com/story/big-interview-tim-cook-wants-apple-to-literally-save-your-life/",
   "description": "Tim Cook discusses Apple's new AI venture, Apple Intelligence, its privacy-centric approach, and Apple's future in health technology.",
   "tts": "openAI",
-  "voices": [
-    "nova",
-    "onyx"
-  ],
+  "voices": ["nova", "onyx"],
   "script": [
     {
       "speaker": "Host",

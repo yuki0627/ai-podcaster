@@ -2,16 +2,8 @@
   "title": "The Great AI Chip Race: Understanding Tomorrow's Technology",
   "description": "A friendly discussion between a curious student and an insightful teacher about the competition in the AI chip market, focusing on Nvidia, Broadcom, and Marvell.",
   "tts": "openAI",
-  "voices": [
-    "nova",
-    "echo",
-    "shimmer"
-  ],
-  "speakers": [
-    "Announcer",
-    "Student",
-    "Teacher"
-  ],
+  "voices": ["nova", "echo", "shimmer"],
+  "speakers": ["Announcer", "Student", "Teacher"],
   "script": [
     {
       "speaker": "Announcer",

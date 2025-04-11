@@ -236,11 +236,24 @@ const main = async () => {
   };
   const captionsWithTitle = [titleInfo].concat(captions);
   // const captionsWithTitle = [captions[0], captions[1], captions[5], captions[8]];
+  const images: ImageInfo[] = [];
+  if (jsonData.imagePath) {
+    images.push({
+      index: 0,
+      imagePrompt: undefined,
+      image: jsonData.imagePath + "001.png",
+    });
+    images.push({
+      index: 0,
+      imagePrompt: undefined,
+      image: jsonData.imagePath + "002.png",
+    });
+  }
 
   createVideo(
     audioPath,
     captionsWithTitle,
-    jsonDataTm.images,
+    images.length > 0 ? images : jsonDataTm.images,
     outputVideoPath,
     canvasInfo,
   );

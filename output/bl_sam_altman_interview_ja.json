@@ -2,16 +2,8 @@
   "title": "OpenAIとサム・アルトマンの物語",
   "description": "OpenAIの旅路、ChatGPTの影響、サム・アルトマンのリーダーシップを簡単に説明する会話。",
   "tts": "openAI",
-  "voices": [
-    "nova",
-    "echo",
-    "shimmer"
-  ],
-  "speakers": [
-    "アナウンサー",
-    "学生",
-    "先生"
-  ],
+  "voices": ["nova", "echo", "shimmer"],
+  "speakers": ["アナウンサー", "学生", "先生"],
   "script": [
     {
       "speaker": "アナウンサー",

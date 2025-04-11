@@ -2,16 +2,8 @@
   "title": "The Story of OpenAI and Sam Altman",
   "description": "A conversation explaining OpenAI's journey, ChatGPT's impact, and Sam Altman's leadership in simple terms.",
   "tts": "openAI",
-  "voices": [
-    "nova",
-    "echo",
-    "shimmer"
-  ],
-  "speakers": [
-    "Announcer",
-    "Student",
-    "Teacher"
-  ],
+  "voices": ["nova", "echo", "shimmer"],
+  "speakers": ["Announcer", "Student", "Teacher"],
   "script": [
     {
       "speaker": "Announcer",

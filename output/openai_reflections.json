@@ -3,16 +3,8 @@
   "description": "A conversation explaining OpenAI's evolution, recent developments, and future vision through Sam Altman's reflections",
   "tts": "openAI",
   "reference": "https://blog.samaltman.com/reflections",
-  "voices": [
-    "nova",
-    "echo",
-    "shimmer"
-  ],
-  "speakers": [
-    "Announcer",
-    "Student",
-    "Teacher"
-  ],
+  "voices": ["nova", "echo", "shimmer"],
+  "speakers": ["Announcer", "Student", "Teacher"],
   "script": [
     {
       "speaker": "Announcer",
