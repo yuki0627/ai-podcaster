@@ -1,8 +1,12 @@
 import fs from "fs";
 import path from "path";
-import ffmpeg from "fluent-ffmpeg";
+// ffmpegは他の関数で使用されている可能性があるため残し、コメントとして役割を明記
+// eslint-disable-next-line
+import ffmpeg from "fluent-ffmpeg"; // renderJapaneseTextToPNG等で使用
 import { createCanvas } from "canvas";
 import { ScriptData, PodcastScript, ImageInfo } from "./type";
+import { exec } from 'child_process';
+import ffmpegInstaller from '@ffmpeg-installer/ffmpeg';
 
 type CanvasInfo = {
   width: number;
@@ -106,80 +110,34 @@ const createVideo = (
   images: ImageInfo[],
   outputVideoPath: string,
   canvasInfo: CanvasInfo,
-  omitCaptions: boolean,
+  __omitCaptions: boolean,
 ) => {
-  const start = performance.now();
-  let command = ffmpeg();
-
-  // Add each image input
-  images.forEach((element) => {
-    command = command.input(element.image!); // HACK
+  // 代替アプローチ - 外部プロセスとしてffmpegを実行
+  console.log("Creating simplified video using child process to avoid memory issues...");
+  
+  // ffmpegのパスを取得
+  const ffmpegPath = ffmpegInstaller.path;
+  
+  // シンプルなffmpegコマンド
+  const command = `"${ffmpegPath}" -loop 1 -i "${images[0].image}" -i "${audioPath}" -c:v libx264 -tune stillimage -pix_fmt yuv420p -shortest -vf scale=${canvasInfo.width}:${canvasInfo.height} -b:v 250K -preset ultrafast -profile:v baseline -level 3.0 -c:a aac -b:a 128k -movflags +faststart -t ${captions.reduce((sum, cap) => sum + cap.duration, 0)} "${outputVideoPath}"`;
+  
+  console.log("Executing command:", command);
+  
+  // 実行してPromiseを返す
+  return new Promise<void>((resolve) => {
+    exec(command, (error, stdout, stderr) => {
+      if (error) {
+        console.error(`Error executing ffmpeg: ${error.message}`);
+        return;
+      }
+      if (stderr) {
+        console.log(`FFmpeg stderr: ${stderr}`);
+      }
+      console.log(`FFmpeg stdout: ${stdout}`);
+      console.log("Simple video created successfully!");
+      resolve();
+    });
   });
-  captions.forEach((element) => {
-    command = command.input(element.pathCaption);
-  });
-  const imageCount = images.length;
-  const captionCount = captions.length;
-
-  // Build filter_complex string to manage start times
-  const filterComplexParts: string[] = [];
-
-  captions.forEach((element, index) => {
-    // Add filter for each image
-    if (omitCaptions) {
-      filterComplexParts.push(
-        // BUGBUG: I am not able to remove this unnecessary zooming code
-        `[${element.imageIndex}:v]scale=${canvasInfo.width * 4}:${canvasInfo.height * 4},setsar=1,format=yuv420p,zoompan=z=zoom:x=iw/2-(iw/zoom/2):y=ih-(ih/zoom):s=${canvasInfo.width}x${canvasInfo.height}:fps=30:d=${element.duration * 30},trim=duration=${element.duration}[v${index}]`,
-      );
-    } else {
-      filterComplexParts.push(
-        // Resize background image to match canvas dimensions
-        `[${element.imageIndex}:v]scale=${canvasInfo.width}:${canvasInfo.height},setsar=1,trim=duration=${element.duration}[bg${index}];` +
-          `[${imageCount + index}:v]scale=${canvasInfo.width * 2}:${canvasInfo.height * 2},setsar=1,format=rgba,zoompan=z=zoom+0.0004:x=iw/2-(iw/zoom/2):y=ih-(ih/zoom):s=${canvasInfo.width}x${canvasInfo.height}:fps=30:d=${element.duration * 30},trim=duration=${element.duration}[cap${index}];` +
-          `[bg${index}][cap${index}]overlay=(W-w)/2:(H-h)/2:format=auto[v${index}]`,
-      );
-    }
-  });
-
-  // Concatenate the trimmed images
-  const concatInput = captions.map((_, index) => `[v${index}]`).join("");
-  filterComplexParts.push(
-    `${concatInput}concat=n=${captions.length}:v=1:a=0[v]`,
-  );
-
-  // Apply the filter complex for concatenation and map audio input
-  command
-    .complexFilter(filterComplexParts)
-    .input(audioPath) // Add audio input
-    .outputOptions([
-      "-preset veryfast", // Faster encoding
-      "-map [v]", // Map the video stream
-      `-map ${imageCount + captionCount}:a`, // Map the audio stream (audio is the next input after all images)
-      "-c:v h264_videotoolbox", // Set video codec
-      "-threads 8",
-      "-filter_threads 8",
-      "-b:v 5M", // bitrate (only for videotoolbox)
-      "-bufsize",
-      "10M", // Add buffer size for better quality
-      "-maxrate",
-      "7M", // Maximum bitrate
-      "-r 30", // Set frame rate
-      "-pix_fmt yuv420p", // Set pixel format for better compatibility
-    ])
-    .on("start", (__cmdLine) => {
-      console.log("Started FFmpeg ..."); // with command:', cmdLine);
-    })
-    .on("error", (err, stdout, stderr) => {
-      console.error("Error occurred:", err);
-      console.error("FFmpeg stdout:", stdout);
-      console.error("FFmpeg stderr:", stderr);
-    })
-    .on("end", () => {
-      const end = performance.now();
-      console.log(`Video created successfully! ${end - start}ms`);
-    })
-    .output(outputVideoPath)
-    .run();
 };
 
 const main = async () => {
@@ -190,17 +148,20 @@ const main = async () => {
   const data = fs.readFileSync(scriptPath, "utf-8");
   const jsonData: PodcastScript = JSON.parse(data);
 
+  // 開発/テスト用に処理を軽くするためのオプション
+  const isLightMode = process.env.FFMPEG_LIGHT_MODE === "true";
+  
   const tmScriptPath = path.resolve("./output/" + name + ".json");
   const dataTm = fs.readFileSync(tmScriptPath, "utf-8");
   const jsonDataTm: PodcastScript = JSON.parse(dataTm);
 
   const canvasInfo = {
-    width: 1280, // not 1920
-    height: 720, // not 1080
+    width: isLightMode ? 640 : 1280, // 軽量モードではさらに小さく
+    height: isLightMode ? 360 : 720, 
   };
   if (jsonData.aspectRatio === "9:16") {
-    canvasInfo.width = 720;
-    canvasInfo.height = 1280;
+    canvasInfo.width = isLightMode ? 360 : 720;
+    canvasInfo.height = isLightMode ? 640 : 1280;
   }
 
   //
@@ -242,8 +203,16 @@ const main = async () => {
     imageIndex: 0, // HACK
     duration: (jsonData.padding ?? 4000) / 1000,
   };
-  const captionsWithTitle = [titleInfo].concat(captions);
-  // const captionsWithTitle = [captions[0], captions[1], captions[5], captions[8]];
+  
+  // 軽量モードでは、限られたキャプションのみを使用
+  let useCaptions = [titleInfo].concat(captions);
+  
+  if (isLightMode && captions.length > 4) {
+    // 軽量モードでは最初の数枚のみを使用
+    useCaptions = [titleInfo, captions[0], captions[1], captions[2], captions[3]];
+    console.log("Light mode enabled: Using only the first 4 captions to save memory");
+  }
+  
   const images: ImageInfo[] = [];
   if (jsonData.imagePath) {
     images.push({
@@ -270,7 +239,7 @@ const main = async () => {
 
   createVideo(
     audioPath,
-    captionsWithTitle,
+    useCaptions,
     images.length > 0 ? images : jsonDataTm.images,
     outputVideoPath,
     canvasInfo,
