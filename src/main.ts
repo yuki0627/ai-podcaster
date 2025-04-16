@@ -12,6 +12,7 @@ import {
 import * as agents from "@graphai/agents";
 // import { ttsNijivoiceAgent } from "@graphai/tts_nijivoice_agent";
 import ttsNijivoiceAgent from "./agents/tts_nijivoice_agent";
+import ttsGoogleAgent from "./agents/tts_google_agent";
 import addBGMAgent from "./agents/add_bgm_agent";
 import combineFilesAgent from "./agents/combine_files_agent";
 // import { ttsOpenaiAgent } from "@graphai/tts_openai_agent";
@@ -180,18 +181,27 @@ const main = async () => {
   }
 
   if (script.tts === "nijivoice") {
+    console.log("[DEBUG] Using Nijivoice TTS service");
     graph_data.concurrency = 1;
     script.voices = script.voices ?? [rion_takanashi_voice, ben_carter_voice];
     script.ttsAgent = "ttsNijivoiceAgent";
-  } else {
+  } else if (script.tts === "google") {
+    console.log("[DEBUG] Using Google TTS service");
     graph_data.concurrency = 8;
-    script.voices = script.voices ?? ["shimmer", "echo"];
-    script.ttsAgent = "ttsOpenaiAgent";
+    script.voices = script.voices ?? ["ja-JP-Standard-A", "ja-JP-Standard-B"];
+    script.ttsAgent = "ttsGoogleAgent";
+  } else {
+    console.log("[DEBUG] Using Google TTS service (default)");
+    graph_data.concurrency = 8;
+    script.voices = script.voices ?? ["ja-JP-Standard-A", "ja-JP-Standard-B"];
+    script.ttsAgent = "ttsGoogleAgent";
   }
+  console.log("[DEBUG] Selected voices:", script.voices);
   const speakers = script.speakers ?? ["Host", "Guest"];
   script.voicemap = speakers.reduce(
     (map: any, speaker: string, index: number) => {
       map[speaker] = script.voices![index];
+      console.log(`[DEBUG] Mapping speaker "${speaker}" to voice "${script.voices![index]}"`);
       return map;
     },
     {},
@@ -210,8 +220,8 @@ const main = async () => {
       ...agents,
       pathUtilsAgent,
       fileWriteAgent,
-      ttsOpenaiAgent,
       ttsNijivoiceAgent,
+      ttsGoogleAgent,
       addBGMAgent,
       combineFilesAgent,
     },

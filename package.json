@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/snakajima/ai-podcaster#readme",
   "dependencies": {
+    "@google-cloud/text-to-speech": "^6.0.1",
     "@google/generative-ai": "^0.21.0",
     "@graphai/agents": "^0.2.3",
     "@graphai/tts_nijivoice_agent": "^0.0.2",
@@ -46,5 +47,6 @@
     "prettier": "^3.3.3",
     "typescript": "^5.7.3",
     "typescript-eslint": "^8.22.0"
-  }
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }

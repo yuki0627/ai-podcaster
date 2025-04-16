@@ -18,13 +18,14 @@ export const ttsOpenaiAgent: AgentFunction = async ({
     if (instructions) {
       tts_options["instructions"] = instructions;
     }
-    console.log("ttsOptions", tts_options);
+    console.log("[DEBUG] OpenAI TTS options:", tts_options);
     const response = await openai.audio.speech.create(tts_options);
     const buffer = Buffer.from(await response.arrayBuffer());
+    console.log("[DEBUG] Generated audio buffer size:", buffer.length);
     return { buffer };
   } catch (e) {
     if (throwError) {
-      console.error(e);
+      console.error("[DEBUG] OpenAI TTS error:", e);
       throw new Error("TTS OpenAI Error");
     }
     return {
