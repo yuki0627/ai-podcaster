@@ -2,21 +2,20 @@
   "title": "簡単な会話テスト",
   "description": "基本機能を試すための短い会話",
   "tts": "google",
-  "speed": "1.0",
   "voices": [
-    "ja-JP-Neural2-C",
-    "ja-JP-Neural2-B"
+    "ja-JP-Chirp3-HD-Fenrir",
+    "ja-JP-Chirp3-HD-Leda"
   ],
   "charactors": ["ベン・カーター", "エリオル"],
-  "speakers": ["マスター", "わかば"],
+  "speakers": ["朝日", "若葉"],
   "script": [
     {
-      "speaker": "マスター",
-      "text": "こんにちは、これはテスト音声です。介護医療の、相談窓口、はまリハの、開所式。"
+      "speaker": "朝日",
+      "text": "若葉台のわっかで開催されます。電話番号は045-987-1234です。"
     },
     {
-      "speaker": "わかば",
-      "text": "はい、テストの応答です。"
+      "speaker": "若葉",
+      "text": "大人のかたは料金は3850円です。14:30から開始です。保護者からSOSが出ている、AIについてのお話がPTAからあります。"
     }
   ]
 }
