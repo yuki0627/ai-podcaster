@@ -57,7 +57,11 @@ const addBgmToTalk = async (talkFile: string, bgmFile: string, outputFilename: s
       // トークの音量を調整
       "[1:a]volume=1.0[talk]",
       // BGMとトークを合成
-      "[bgm][talk]amix=inputs=2:duration=longest:dropout_transition=2[out]"
+      "[bgm][talk]amix=inputs=2:dropout_transition=2[mixed]",
+      // トークが終わってからさらに5秒間続ける
+      `[mixed]atrim=0:${talkDuration + 5}[trimmed]`,
+      // トークが終わった位置からフェードアウト開始
+      `[trimmed]afade=t=out:st=${talkDuration}:d=5[out]`
     ])
     .outputOptions(['-map [out]'])
     .save(outputFile);
