@@ -11,7 +11,8 @@
     "combine": "tsx ./src/combine.ts",
     "test": "ts-node ./src/test.ts",
     "format": "prettier --write '{src,scripts,draft,scripts_mag2}/**/*.{ts,json}'",
-    "simple-movie": "tsx ./src/simple_movie.ts"
+    "simple-movie": "tsx ./src/simple_movie.ts",
+    "simple-bgm": "tsx ./src/simple_bgm.ts"
   },
   "repository": "git+ssh://git@github.com/snakajima/ai-podcaster.git",
   "author": "snakajima",
