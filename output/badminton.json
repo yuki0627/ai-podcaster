@@ -1,0 +1,154 @@
+{
+  "title": "4月のバドミントン教室のご案内",
+  "description": "若葉台地区センターで開催される、バドミントン教室の詳細をご紹介します。",
+  "tts": "nijivoice",
+  "speed": "0.82",
+  "voices": [
+    "311a59fa-01b2-4d2e-9968-10d2034f8f86",
+    "249d8d02-2c25-4a24-8faf-26d6f734b7bc"
+  ],
+  "charactors": [
+    "有馬 慎一郎",
+    "蘭華"
+  ],
+  "speakers": [
+    "朝陽",
+    "若葉"
+  ],
+  "script": [
+    {
+      "speaker": "朝陽",
+      "text": "若葉台地区センターのホームページから、4月のイベントをご紹介します。今回はバドミントン教室のお知らせです。",
+      "filename": "badminton0",
+      "duration": 8.319600000000001
+    },
+    {
+      "speaker": "若葉",
+      "text": "開催日は4月19日、土曜日。時間は、午後3時から夕方5時まで。場所は若葉台地区センターの体育室です。この教室は毎月第3土曜日に開催されています。",
+      "filename": "badminton1",
+      "duration": 12.9955
+    },
+    {
+      "speaker": "朝陽",
+      "text": "そして今年度から、講師が変わります。中村正樹さんと中村由香さんが担当されるとのことです。",
+      "filename": "badminton2",
+      "duration": 7.82325
+    },
+    {
+      "speaker": "若葉",
+      "text": "対象は小学生以上で、定員は15名。申し込みは当日の午後2時45分から、会場での受付となります。",
+      "filename": "badminton3",
+      "duration": 9.390600000000001
+    },
+    {
+      "speaker": "朝陽",
+      "text": "参加費は一般が500円、小学生は200円です。当日は、うわばきとラケットをご持参ください。",
+      "filename": "badminton4",
+      "duration": 8.26735
+    },
+    {
+      "speaker": "若葉",
+      "text": "バドミントンというと、学校の体育やレクリエーションで経験されたかたも多いのではないでしょうか。",
+      "filename": "badminton5",
+      "duration": 6.8045
+    },
+    {
+      "speaker": "朝陽",
+      "text": "実は、気軽に楽しめるのに、運動量はしっかり。全身を使うスポーツなんです。",
+      "filename": "badminton6",
+      "duration": 6.9351
+    },
+    {
+      "speaker": "若葉",
+      "text": "ラリーが続くと自然と笑顔になったり、いい汗をかけたりと、リフレッシュにもぴったりですよ。",
+      "filename": "badminton7",
+      "duration": 7.0396
+    },
+    {
+      "speaker": "朝陽",
+      "text": "年齢や体力に応じて、ペースを調整できるのも魅力ですね。",
+      "filename": "badminton8",
+      "duration": 5.34165
+    },
+    {
+      "speaker": "若葉",
+      "text": "この機会に、久しぶりにラケットを振ってみませんか？",
+      "filename": "badminton9",
+      "duration": 3.8526499999999997
+    },
+    {
+      "speaker": "朝陽",
+      "text": "詳しいことが知りたいかたは、若葉台地区センターまでお問い合わせください。",
+      "filename": "badminton10",
+      "duration": 5.3155
+    },
+    {
+      "speaker": "若葉",
+      "text": "春の気分転換に、体を動かしてみませんか？皆さんのご参加、お待ちしています。",
+      "filename": "badminton11",
+      "duration": 6.7
+    },
+    {
+      "speaker": "朝陽",
+      "text": "こちらの情報は、若葉台地区センターのブログにてご確認いただけます。",
+      "filename": "badminton12",
+      "duration": 5.84165
+    },
+    {
+      "speaker": "若葉",
+      "text": "以上、4月19日に、地区センターで開催されるバドミントン教室のご案内でした。",
+      "filename": "badminton13",
+      "duration": 6.85675
+    }
+  ],
+  "filename": "badminton",
+  "ttsAgent": "ttsNijivoiceAgent",
+  "voicemap": {
+    "朝陽": "311a59fa-01b2-4d2e-9968-10d2034f8f86",
+    "若葉": "249d8d02-2c25-4a24-8faf-26d6f734b7bc"
+  },
+  "imageInfo": [
+    {
+      "index": 0
+    },
+    {
+      "index": 1
+    },
+    {
+      "index": 2
+    },
+    {
+      "index": 3
+    },
+    {
+      "index": 4
+    },
+    {
+      "index": 5
+    },
+    {
+      "index": 6
+    },
+    {
+      "index": 7
+    },
+    {
+      "index": 8
+    },
+    {
+      "index": 9
+    },
+    {
+      "index": 10
+    },
+    {
+      "index": 11
+    },
+    {
+      "index": 12
+    },
+    {
+      "index": 13
+    }
+  ]
+}

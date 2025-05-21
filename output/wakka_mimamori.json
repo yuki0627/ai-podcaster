@@ -1,0 +1,181 @@
+{
+  "title": "わっか朝見守りのご紹介",
+  "description": "共働き家庭や早朝出勤の保護者のかたを支える、地域の朝の見守り活動をご紹介します。",
+  "tts": "nijivoice",
+  "speed": "0.82",
+  "voices": [
+    "311a59fa-01b2-4d2e-9968-10d2034f8f86",
+    "249d8d02-2c25-4a24-8faf-26d6f734b7bc"
+  ],
+  "charactors": [
+    "有馬 慎一郎",
+    "蘭華"
+  ],
+  "speakers": [
+    "朝陽",
+    "若葉"
+  ],
+  "script": [
+    {
+      "speaker": "朝陽",
+      "text": "わかばダイバーシティスペース、わっかから届いた情報をご紹介します。地域の子育てを支える取り組み、あさわっかです。",
+      "filename": "wakka_mimamori0",
+      "duration": 9.7302
+    },
+    {
+      "speaker": "若葉",
+      "text": "共働きのご家庭や、早朝から出勤される保護者のかたに向けたサービスで、朝の時間帯に小学生のお子さんを見守る活動なんですよ。",
+      "filename": "wakka_mimamori1",
+      "duration": 10.2788
+    },
+    {
+      "speaker": "朝陽",
+      "text": "時間は、朝7時から8時10分まで。小学校の登校時間まで、お子さんが安心して過ごせる環境が用意されています。",
+      "filename": "wakka_mimamori2",
+      "duration": 10.35715
+    },
+    {
+      "speaker": "若葉",
+      "text": "この取り組みは、保護者の声から始まりました。「あと1時間早く出勤できたら…」という切実な声に、地域が応えた形です。",
+      "filename": "wakka_mimamori3",
+      "duration": 10.513900000000001
+    },
+    {
+      "speaker": "朝陽",
+      "text": "子育てと仕事の両立に悩むご家庭にとっては、本当にありがたいサービスですよね。",
+      "filename": "wakka_mimamori4",
+      "duration": 6.2036999999999995
+    },
+    {
+      "speaker": "若葉",
+      "text": "見守りの場所は、ショッピングタウンわかば内にある、わかばダイバーシティスペース、わっか。運営しているのは、認定エヌピーオー法人若葉台です。",
+      "filename": "wakka_mimamori5",
+      "duration": 11.114700000000001
+    },
+    {
+      "speaker": "朝陽",
+      "text": "信頼できる団体が関わっていることで、安心感がありますね。",
+      "filename": "wakka_mimamori6",
+      "duration": 5.158799999999999
+    },
+    {
+      "speaker": "若葉",
+      "text": "利用には登録が必要で、年間の登録料は1000円。それ以外の、都度の利用料は一切かかりません。",
+      "filename": "wakka_mimamori7",
+      "duration": 8.29345
+    },
+    {
+      "speaker": "朝陽",
+      "text": "家計にも優しく、継続して利用しやすい仕組みになっているのがうれしいですね。",
+      "filename": "wakka_mimamori8",
+      "duration": 5.83795
+    },
+    {
+      "speaker": "若葉",
+      "text": "ただし、利用する際は、保護者がわっかまでお子さんを連れてくることが原則となっています。安全面を考慮してのルールですので、ご協力をお願いします。",
+      "filename": "wakka_mimamori9",
+      "duration": 11.402050000000001
+    },
+    {
+      "speaker": "朝陽",
+      "text": "朝の時間帯は何かと慌ただしいですよね。家を出る時間と、子どもの登校時間が合わないというかたも多いと思います。",
+      "filename": "wakka_mimamori10",
+      "duration": 9.103250000000001
+    },
+    {
+      "speaker": "若葉",
+      "text": "そんなときに、子どもを安心して預けられる場所があると、心にも時間にも余裕が生まれますね。",
+      "filename": "wakka_mimamori11",
+      "duration": 7.19635
+    },
+    {
+      "speaker": "朝陽",
+      "text": "地域で子どもを見守る体制があるというのは、本当に心強いことだと感じます。",
+      "filename": "wakka_mimamori12",
+      "duration": 6.4649
+    },
+    {
+      "speaker": "若葉",
+      "text": "お問い合わせは、認定エヌピーオー法人若葉台の事務局まで。お問合せ先はわっかのホームページでご確認ください",
+      "filename": "wakka_mimamori13",
+      "duration": 8.894300000000001
+    },
+    {
+      "speaker": "朝陽",
+      "text": "子どもたちの安全を守りながら、保護者の働き方にも寄り添う。そんな温かい朝の見守り活動、ぜひ多くのかたに知っていただきたいですね。",
+      "filename": "wakka_mimamori14",
+      "duration": 11.271450000000002
+    },
+    {
+      "speaker": "若葉",
+      "text": "気になったかたは、まずは一度、お問い合わせしてみてくださいね。",
+      "filename": "wakka_mimamori15",
+      "duration": 5.39755
+    },
+    {
+      "speaker": "朝陽",
+      "text": "こちらの情報やお問合せ先の詳細は、若葉台コミュニティーラジオのブログでもご確認いただけます。",
+      "filename": "wakka_mimamori16",
+      "duration": 7.1441
+    }
+  ],
+  "filename": "wakka_mimamori",
+  "ttsAgent": "ttsNijivoiceAgent",
+  "voicemap": {
+    "朝陽": "311a59fa-01b2-4d2e-9968-10d2034f8f86",
+    "若葉": "249d8d02-2c25-4a24-8faf-26d6f734b7bc"
+  },
+  "imageInfo": [
+    {
+      "index": 0
+    },
+    {
+      "index": 1
+    },
+    {
+      "index": 2
+    },
+    {
+      "index": 3
+    },
+    {
+      "index": 4
+    },
+    {
+      "index": 5
+    },
+    {
+      "index": 6
+    },
+    {
+      "index": 7
+    },
+    {
+      "index": 8
+    },
+    {
+      "index": 9
+    },
+    {
+      "index": 10
+    },
+    {
+      "index": 11
+    },
+    {
+      "index": 12
+    },
+    {
+      "index": 13
+    },
+    {
+      "index": 14
+    },
+    {
+      "index": 15
+    },
+    {
+      "index": 16
+    }
+  ]
+}

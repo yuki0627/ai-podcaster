@@ -1,0 +1,73 @@
+{
+  "title": "オープニング",
+  "description": "若葉台コミュニティーラジオのオープニング",
+  "tts": "nijivoice",
+  "speed": "0.82",
+  "voices": [
+    "311a59fa-01b2-4d2e-9968-10d2034f8f86",
+    "249d8d02-2c25-4a24-8faf-26d6f734b7bc"
+  ],
+  "charactors": [
+    "有馬 慎一郎",
+    "蘭華"
+  ],
+  "speakers": [
+    "朝陽",
+    "若葉"
+  ],
+  "script": [
+    {
+      "speaker": "朝陽",
+      "text": "こんにちは、朝陽です。今週は31日にふれあい広場と、わかばの広場で行われる、ブルームマルシェ。さらに同日に開催される団地のブックフェス。そして麻雀大会のお誘いをお届けします。",
+      "filename": "000_opeining0",
+      "duration": 16.65265
+    },
+    {
+      "speaker": "若葉",
+      "text": "こんにちは、若葉です。さらに、2丁目にお住まいの画家、寺井あつしさんのわっかでの絵画展や、新しく図書室に加わった本の紹介もお届けします。",
+      "filename": "000_opeining1",
+      "duration": 11.950600000000001
+    },
+    {
+      "speaker": "朝陽",
+      "text": "番組で紹介する情報は、若葉台コミュニティーラジオのブログでもご確認いただけます。",
+      "filename": "000_opeining2",
+      "duration": 6.3081499999999995
+    },
+    {
+      "speaker": "若葉",
+      "text": "ご質問やお便りなどは、公式LINEからお気軽にお送りください",
+      "filename": "000_opeining3",
+      "duration": 5.4237
+    },
+    {
+      "speaker": "朝陽",
+      "text": "それでは今週最初の話題です。",
+      "filename": "000_opeining4",
+      "duration": 2.651
+    }
+  ],
+  "filename": "000_opeining",
+  "ttsAgent": "ttsNijivoiceAgent",
+  "voicemap": {
+    "朝陽": "311a59fa-01b2-4d2e-9968-10d2034f8f86",
+    "若葉": "249d8d02-2c25-4a24-8faf-26d6f734b7bc"
+  },
+  "imageInfo": [
+    {
+      "index": 0
+    },
+    {
+      "index": 1
+    },
+    {
+      "index": 2
+    },
+    {
+      "index": 3
+    },
+    {
+      "index": 4
+    }
+  ]
+}

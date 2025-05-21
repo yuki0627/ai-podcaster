@@ -1,0 +1,145 @@
+{
+  "title": "若葉台FC 小学生メンバー募集のお知らせ",
+  "description": "若葉台エリアで活動するサッカーチーム・若葉台FCの募集内容をご紹介します。",
+  "tts": "nijivoice",
+  "speed": "0.82",
+  "voices": [
+    "311a59fa-01b2-4d2e-9968-10d2034f8f86",
+    "249d8d02-2c25-4a24-8faf-26d6f734b7bc"
+  ],
+  "charactors": [
+    "有馬 慎一郎",
+    "蘭華"
+  ],
+  "speakers": [
+    "朝陽",
+    "若葉"
+  ],
+  "script": [
+    {
+      "speaker": "朝陽",
+      "text": "若葉台中央バス停のわかまちインフォメーションに掲示されていたポスターから、サッカーチーム・若葉台FCの募集についてご紹介します。",
+      "filename": "wakabadai_fc0",
+      "duration": 8.711450000000001
+    },
+    {
+      "speaker": "若葉",
+      "text": "若葉台FCでは、現在、小学生のメンバーを募集しているそうです。サッカーに興味のあるお子さんに向けて、見学や体験も受け付けているとのこと。初心者のかたも、もちろん歓迎されています。",
+      "filename": "wakabadai_fc1",
+      "duration": 15.1898
+    },
+    {
+      "speaker": "朝陽",
+      "text": "キャッチコピーは、「一緒に楽しくサッカーをやろう」。まずは気軽に体験からでも大丈夫とのことです。",
+      "filename": "wakabadai_fc2",
+      "duration": 7.5359
+    },
+    {
+      "speaker": "若葉",
+      "text": "お子さんが実際の練習にふれて、チームの雰囲気を知ることができるのは安心ですね。",
+      "filename": "wakabadai_fc3",
+      "duration": 6.28205
+    },
+    {
+      "speaker": "朝陽",
+      "text": "チームの目標は、応援されるチームをつくること。そして、選手の育成を目指すというメッセージもありました。",
+      "filename": "wakabadai_fc4",
+      "duration": 9.077150000000001
+    },
+    {
+      "speaker": "若葉",
+      "text": "活動場所は、若葉台小学校と、若葉台特別支援学校です。",
+      "filename": "wakabadai_fc5",
+      "duration": 5.0543
+    },
+    {
+      "speaker": "朝陽",
+      "text": "れんしゅうの時間は、土曜日と祝日が朝9時から昼12時まで。日曜日は朝10時から午後1時までとなっています。",
+      "filename": "wakabadai_fc6",
+      "duration": 9.33835
+    },
+    {
+      "speaker": "若葉",
+      "text": "必要な持ちものは、タオルと飲み物。そして、動きやすい服装での参加が求められています。服装に関しては、特別な指定はないようです。",
+      "filename": "wakabadai_fc7",
+      "duration": 11.3498
+    },
+    {
+      "speaker": "朝陽",
+      "text": "チームの指導をしているのは、藤原周一さん。こうにんA級ライセンス、アンダーじゅうにをお持ちで、写真からも親しみやすさが伝わってくるかたです。",
+      "filename": "wakabadai_fc8",
+      "duration": 12.00285
+    },
+    {
+      "speaker": "若葉",
+      "text": "見学や体験は、随時受付中とのことです。体験を希望されるかたは、チームのホームページからご連絡いただけます。",
+      "filename": "wakabadai_fc9",
+      "duration": 9.20775
+    },
+    {
+      "speaker": "朝陽",
+      "text": "チラシにはQRコードも掲載されていて、スマートフォンから簡単にアクセス可能です。",
+      "filename": "wakabadai_fc10",
+      "duration": 6.62165
+    },
+    {
+      "speaker": "若葉",
+      "text": "お子さんに合いそうだなと感じたら、ぜひ一度、体験に参加してみてください。",
+      "filename": "wakabadai_fc11",
+      "duration": 6.129
+    },
+    {
+      "speaker": "朝陽",
+      "text": "こちらの情報は、若葉台中央バス停のわかまちインフォメーションに掲示されていたポスターよりご紹介しました。若葉台コミュニティーラジオのブログでもこちらのチラシをご確認いただけます。",
+      "filename": "wakabadai_fc12",
+      "duration": 12.8649
+    }
+  ],
+  "filename": "wakabadai_fc",
+  "ttsAgent": "ttsNijivoiceAgent",
+  "voicemap": {
+    "朝陽": "311a59fa-01b2-4d2e-9968-10d2034f8f86",
+    "若葉": "249d8d02-2c25-4a24-8faf-26d6f734b7bc"
+  },
+  "imageInfo": [
+    {
+      "index": 0
+    },
+    {
+      "index": 1
+    },
+    {
+      "index": 2
+    },
+    {
+      "index": 3
+    },
+    {
+      "index": 4
+    },
+    {
+      "index": 5
+    },
+    {
+      "index": 6
+    },
+    {
+      "index": 7
+    },
+    {
+      "index": 8
+    },
+    {
+      "index": 9
+    },
+    {
+      "index": 10
+    },
+    {
+      "index": 11
+    },
+    {
+      "index": 12
+    }
+  ]
+}

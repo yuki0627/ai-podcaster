@@ -1,0 +1,64 @@
+{
+  "title": "オープニング",
+  "description": "若葉台コミュニティーラジオのオープニング",
+  "tts": "nijivoice",
+  "speed": "0.82",
+  "voices": [
+    "311a59fa-01b2-4d2e-9968-10d2034f8f86",
+    "249d8d02-2c25-4a24-8faf-26d6f734b7bc"
+  ],
+  "charactors": [
+    "有馬 慎一郎",
+    "蘭華"
+  ],
+  "speakers": [
+    "朝陽",
+    "若葉"
+  ],
+  "script": [
+    {
+      "speaker": "若葉",
+      "text": "今週も最後までお聴きいただき、ありがとうございました。",
+      "filename": "xxx_closing0",
+      "duration": 4.1139
+    },
+    {
+      "speaker": "朝陽",
+      "text": "これからも若葉台のさまざまな話題をお届けしていきますので、ぜひお楽しみに。",
+      "filename": "xxx_closing1",
+      "duration": 6.2298
+    },
+    {
+      "speaker": "若葉",
+      "text": "また次回もお付き合いよろしくお願いします。",
+      "filename": "xxx_closing2",
+      "duration": 3.3861
+    },
+    {
+      "speaker": "朝陽",
+      "text": "お相手は朝陽と若葉でした。また来週お会いしましょう。",
+      "filename": "xxx_closing3",
+      "duration": 4.584099999999999
+    }
+  ],
+  "filename": "xxx_closing",
+  "ttsAgent": "ttsNijivoiceAgent",
+  "voicemap": {
+    "朝陽": "311a59fa-01b2-4d2e-9968-10d2034f8f86",
+    "若葉": "249d8d02-2c25-4a24-8faf-26d6f734b7bc"
+  },
+  "imageInfo": [
+    {
+      "index": 0
+    },
+    {
+      "index": 1
+    },
+    {
+      "index": 2
+    },
+    {
+      "index": 3
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "title": "横浜国大吹奏楽団コンサートのご案内",
+  "description": "若葉台地区センターで開催される、横浜国立大学吹奏楽団のコンサートをご紹介します。",
+  "tts": "nijivoice",
+  "speed": "0.82",
+  "voices": [
+    "311a59fa-01b2-4d2e-9968-10d2034f8f86",
+    "249d8d02-2c25-4a24-8faf-26d6f734b7bc"
+  ],
+  "charactors": [
+    "有馬 慎一郎",
+    "蘭華"
+  ],
+  "speakers": [
+    "朝陽",
+    "若葉"
+  ],
+  "script": [
+    {
+      "speaker": "朝陽",
+      "text": "今回は、横浜国大、吹奏楽団のコンサートについてご紹介いたします。若葉台地区センターのホームページでも紹介されているイベントです。",
+      "filename": "yokohama_kokudai_concert0",
+      "duration": 10.905700000000001
+    },
+    {
+      "speaker": "若葉",
+      "text": "開催されるのは、5月24日、土曜日です。時間は午後1時半から2時半まで。場所は若葉台地区センターの体育室です。",
+      "filename": "yokohama_kokudai_concert1",
+      "duration": 9.91305
+    },
+    {
+      "speaker": "朝陽",
+      "text": "このコンサートは、横浜市若葉台、地域ケアプラザと若葉台地区センターの共催でおこなわれます。",
+      "filename": "yokohama_kokudai_concert2",
+      "duration": 7.66655
+    },
+    {
+      "speaker": "若葉",
+      "text": "出演するのは、横浜国大、吹奏楽団。演奏者は40名から50名ほどが予定されています。",
+      "filename": "yokohama_kokudai_concert3",
+      "duration": 7.9539
+    },
+    {
+      "speaker": "朝陽",
+      "text": "演奏予定曲は、となりのトトロのハイライト、八木節、ふるさとなど、どれもなじみのある曲ばかり。楽しい時間になること間違いなしですね。",
+      "filename": "yokohama_kokudai_concert4",
+      "duration": 11.74165
+    },
+    {
+      "speaker": "若葉",
+      "text": "参加費は無料ですが、申し込みが必要です。定員は150名で、申し込み多数の場合は抽選となります。",
+      "filename": "yokohama_kokudai_concert5",
+      "duration": 8.6592
+    },
+    {
+      "speaker": "朝陽",
+      "text": "申し込み期間は、5月5日から始まっていて、締め切りは5月14日、水曜日の午後3時までです。",
+      "filename": "yokohama_kokudai_concert6",
+      "duration": 8.63305
+    },
+    {
+      "speaker": "若葉",
+      "text": "申し込みは、若葉台地域ケアプラザ、または若葉台地区センターで受け付けています。直接行っていただくか、お電話でも可能です。",
+      "filename": "yokohama_kokudai_concert7",
+      "duration": 10.2788
+    },
+    {
+      "speaker": "朝陽",
+      "text": "1回の申し込みで、最大4名まで申し込めます。参加者全員の名前と電話番号が必要になりますのでご準備ください。",
+      "filename": "yokohama_kokudai_concert8",
+      "duration": 8.998800000000001
+    },
+    {
+      "speaker": "若葉",
+      "text": "抽選結果は、5月16日、金曜日の朝9時に発表されます。申し込み施設の掲示板やホームページでご確認いただけます。",
+      "filename": "yokohama_kokudai_concert9",
+      "duration": 9.7302
+    },
+    {
+      "speaker": "朝陽",
+      "text": "当選されたかたへのご案内です。当日の開場は午後1時ちょうどです。待合場所がありませんので、早めの来場はお控えください。",
+      "filename": "yokohama_kokudai_concert10",
+      "duration": 10.0959
+    },
+    {
+      "speaker": "若葉",
+      "text": "参加券と上履き、靴袋をお持ちください。会場は体育室のため、土足でははいれません。履き替えが難しいかたは、スタッフまでお声がけください。",
+      "filename": "yokohama_kokudai_concert11",
+      "duration": 11.663250000000001
+    },
+    {
+      "speaker": "朝陽",
+      "text": "地域の皆さんに元気を届ける、音楽のひととき。関心のあるかたは、ぜひお申し込みください。",
+      "filename": "yokohama_kokudai_concert12",
+      "duration": 8.189
+    },
+    {
+      "speaker": "若葉",
+      "text": "なお、締め切りは5月14日、水曜日の午後3時までです。それ以降は申し込みできませんので、お気をつけください。",
+      "filename": "yokohama_kokudai_concert13",
+      "duration": 10.047350000000002
+    },
+    {
+      "speaker": "朝陽",
+      "text": "こちらの情報は、若葉台地区センターのホームページでご確認いただけます。",
+      "filename": "yokohama_kokudai_concert14",
+      "duration": 5.60285
+    }
+  ],
+  "filename": "yokohama_kokudai_concert",
+  "ttsAgent": "ttsNijivoiceAgent",
+  "voicemap": {
+    "朝陽": "311a59fa-01b2-4d2e-9968-10d2034f8f86",
+    "若葉": "249d8d02-2c25-4a24-8faf-26d6f734b7bc"
+  },
+  "imageInfo": [
+    {
+      "index": 0
+    },
+    {
+      "index": 1
+    },
+    {
+      "index": 2
+    },
+    {
+      "index": 3
+    },
+    {
+      "index": 4
+    },
+    {
+      "index": 5
+    },
+    {
+      "index": 6
+    },
+    {
+      "index": 7
+    },
+    {
+      "index": 8
+    },
+    {
+      "index": 9
+    },
+    {
+      "index": 10
+    },
+    {
+      "index": 11
+    },
+    {
+      "index": 12
+    },
+    {
+      "index": 13
+    },
+    {
+      "index": 14
+    }
+  ]
+}

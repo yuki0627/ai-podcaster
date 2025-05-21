@@ -1,0 +1,154 @@
+{
+  "title": "子育て世帯向け スタンプラリーのご案内",
+  "description": "若葉台地区社会福祉協議会が実施している、親子で楽しめるスタンプラリーをご紹介します。",
+  "tts": "nijivoice",
+  "speed": "0.82",
+  "voices": [
+    "311a59fa-01b2-4d2e-9968-10d2034f8f86",
+    "249d8d02-2c25-4a24-8faf-26d6f734b7bc"
+  ],
+  "charactors": [
+    "有馬 慎一郎",
+    "蘭華"
+  ],
+  "speakers": [
+    "朝陽",
+    "若葉"
+  ],
+  "script": [
+    {
+      "speaker": "朝陽",
+      "text": "団地の掲示板に掲示されていた情報から、若葉台地区社会福祉協議会が主催の、子育てせたい向けのスタンプラリーについてご紹介します。",
+      "filename": "stamp_rally_nijivoice0",
+      "duration": 10.46165
+    },
+    {
+      "speaker": "若葉",
+      "text": "このスタンプラリーは、3月20日から始まっていて、対象となるのは3月20日時点で未就学のお子さんがいる保護者のかたです。",
+      "filename": "stamp_rally_nijivoice1",
+      "duration": 8.972650000000002
+    },
+    {
+      "speaker": "朝陽",
+      "text": "地域の遊び場をまわって、スタンプをいつつ集めると、地域の専門店街で使えるお買い物券と交換ができます。",
+      "filename": "stamp_rally_nijivoice2",
+      "duration": 8.606950000000001
+    },
+    {
+      "speaker": "若葉",
+      "text": "参加できる場所は、若葉台プレイパークやそらまめ、若葉台地域ケアプラザの事業、若葉台市民図書館、それに移動サロン・ほっこりなどです。",
+      "filename": "stamp_rally_nijivoice3",
+      "duration": 11.3498
+    },
+    {
+      "speaker": "朝陽",
+      "text": "ただし、公園はスタンプの対象外となっていますのでご注意ください。ですが、さまざまな遊び場が参加していますので、いろいろ楽しめそうですね。",
+      "filename": "stamp_rally_nijivoice4",
+      "duration": 11.375900000000001
+    },
+    {
+      "speaker": "若葉",
+      "text": "スタンプはそれぞれの場所で絵柄が違いますので、できれば2種類以上集めてみると良いですよ。",
+      "filename": "stamp_rally_nijivoice5",
+      "duration": 6.5954999999999995
+    },
+    {
+      "speaker": "朝陽",
+      "text": "スタンプをいつつ集めたら、若葉台地区センターへ行ってください。お買い物券との交換ができます。",
+      "filename": "stamp_rally_nijivoice6",
+      "duration": 7.22245
+    },
+    {
+      "speaker": "若葉",
+      "text": "スタンプカードはそれぞれの遊び場に置かれていて、遊び終わったあとにスタンプを押してもらうのを忘れないようにしてくださいね。",
+      "filename": "stamp_rally_nijivoice7",
+      "duration": 7.771
+    },
+    {
+      "speaker": "朝陽",
+      "text": "対象となる遊び場については、若葉台地区センターや、ケアプラザでも確認できますので、ぜひチェックしてみてください。",
+      "filename": "stamp_rally_nijivoice8",
+      "duration": 8.711450000000001
+    },
+    {
+      "speaker": "若葉",
+      "text": "お買い物券の交換と有効期間は4月16日から6月9日まで、そしてスタンプラリー自体の実施期間は5月31日までとなっています。",
+      "filename": "stamp_rally_nijivoice9",
+      "duration": 11.558800000000002
+    },
+    {
+      "speaker": "朝陽",
+      "text": "また、公園でのルールや注意点などは、配布されているスタンプカードでご確認ください。",
+      "filename": "stamp_rally_nijivoice10",
+      "duration": 6.1253
+    },
+    {
+      "speaker": "若葉",
+      "text": "親子で楽しく遊びながら、地域とのつながりも感じられる素敵なイベントです。気になるかたは、ぜひ参加してみてくださいね。",
+      "filename": "stamp_rally_nijivoice11",
+      "duration": 9.103250000000001
+    },
+    {
+      "speaker": "朝陽",
+      "text": "こちらの情報は、団地の掲示板でご案内されていた内容です。本日、4月現在も開催中のスタンプラリーについてお伝えしました。",
+      "filename": "stamp_rally_nijivoice12",
+      "duration": 10.96165
+    },
+    {
+      "speaker": "若葉",
+      "text": "こちらのチラシは、若葉台コミュニティーラジオのホームページでもご確認できます。",
+      "filename": "stamp_rally_nijivoice13",
+      "duration": 5.6551
+    }
+  ],
+  "filename": "stamp_rally_nijivoice",
+  "ttsAgent": "ttsNijivoiceAgent",
+  "voicemap": {
+    "朝陽": "311a59fa-01b2-4d2e-9968-10d2034f8f86",
+    "若葉": "249d8d02-2c25-4a24-8faf-26d6f734b7bc"
+  },
+  "imageInfo": [
+    {
+      "index": 0
+    },
+    {
+      "index": 1
+    },
+    {
+      "index": 2
+    },
+    {
+      "index": 3
+    },
+    {
+      "index": 4
+    },
+    {
+      "index": 5
+    },
+    {
+      "index": 6
+    },
+    {
+      "index": 7
+    },
+    {
+      "index": 8
+    },
+    {
+      "index": 9
+    },
+    {
+      "index": 10
+    },
+    {
+      "index": 11
+    },
+    {
+      "index": 12
+    },
+    {
+      "index": 13
+    }
+  ]
+}

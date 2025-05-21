@@ -1,0 +1,127 @@
+{
+  "title": "太極拳 横浜若葉台朝の会 会員募集中",
+  "description": "初心者のかたも安心して参加できる太極拳の朝の会についてご紹介します。",
+  "tts": "nijivoice",
+  "speed": "0.82",
+  "voices": [
+    "311a59fa-01b2-4d2e-9968-10d2034f8f86",
+    "249d8d02-2c25-4a24-8faf-26d6f734b7bc"
+  ],
+  "charactors": [
+    "有馬 慎一郎",
+    "蘭華"
+  ],
+  "speakers": [
+    "朝陽",
+    "若葉"
+  ],
+  "script": [
+    {
+      "speaker": "朝陽",
+      "text": "太極拳のサークル、横浜若葉台朝の会についてご紹介します。",
+      "filename": "vosc_taikyokuken0",
+      "duration": 5.60285
+    },
+    {
+      "speaker": "若葉",
+      "text": "太極拳、横浜若葉台朝の会では、現在会員を募集中です。初心者のかたも安心して参加できる、やさしい雰囲気の活動なんですよ。",
+      "filename": "vosc_taikyokuken1",
+      "duration": 11.74165
+    },
+    {
+      "speaker": "朝陽",
+      "text": "太極拳といえば、ゆったりとした動きで、呼吸と心のバランスを整える健康運動として知られていますよね。特に年齢を問わず続けられるのが魅力です。",
+      "filename": "vosc_taikyokuken2",
+      "duration": 11.82
+    },
+    {
+      "speaker": "若葉",
+      "text": "活動は毎朝7時から。朝のすがすがしい時間に体を動かすことで、心も身体もすっきりします。見学もOKだそうです。",
+      "filename": "vosc_taikyokuken3",
+      "duration": 9.80855
+    },
+    {
+      "speaker": "朝陽",
+      "text": "会場はVOSC、旧西中学校の体育館です。1丁目や2丁目の方には少し遠いですが、朝の散歩がてらにいかがでしょうか。",
+      "filename": "vosc_taikyokuken4",
+      "duration": 10.696750000000002
+    },
+    {
+      "speaker": "若葉",
+      "text": "太極拳は、無理のない運動でありながら、体幹やバランス感覚をしっかり鍛えられるのが特徴です。姿勢や呼吸が整って、気持ちも落ち着くという声もよく聞きます。",
+      "filename": "vosc_taikyokuken5",
+      "duration": 13.17835
+    },
+    {
+      "speaker": "朝陽",
+      "text": "朝の静かな時間にゆっくりと身体を動かすというのは、とても理想的な習慣だと思います。",
+      "filename": "vosc_taikyokuken6",
+      "duration": 6.8306
+    },
+    {
+      "speaker": "若葉",
+      "text": "継続は力、のばせ健康寿命というスローガンにもあるように、無理なく健康を保てる活動としておすすめです。",
+      "filename": "vosc_taikyokuken7",
+      "duration": 8.189
+    },
+    {
+      "speaker": "朝陽",
+      "text": "詳しくはVOSCに掲示されているチラシを確認してください。",
+      "filename": "vosc_taikyokuken8",
+      "duration": 3.98325
+    },
+    {
+      "speaker": "若葉",
+      "text": "若葉台コミュニティーラジオのブログでもチラシをご確認いただけます。",
+      "filename": "vosc_taikyokuken9",
+      "duration": 4.8751
+    },
+    {
+      "speaker": "朝陽",
+      "text": "今回は、太極拳サークル、横浜若葉台朝の会の会員募集をご紹介しました。朝のさわやかな時間におこなう健康づくりの取り組み、興味のあるかたはぜひご参加ください。",
+      "filename": "vosc_taikyokuken10",
+      "duration": 13.674700000000001
+    }
+  ],
+  "filename": "vosc_taikyokuken",
+  "ttsAgent": "ttsNijivoiceAgent",
+  "voicemap": {
+    "朝陽": "311a59fa-01b2-4d2e-9968-10d2034f8f86",
+    "若葉": "249d8d02-2c25-4a24-8faf-26d6f734b7bc"
+  },
+  "imageInfo": [
+    {
+      "index": 0
+    },
+    {
+      "index": 1
+    },
+    {
+      "index": 2
+    },
+    {
+      "index": 3
+    },
+    {
+      "index": 4
+    },
+    {
+      "index": 5
+    },
+    {
+      "index": 6
+    },
+    {
+      "index": 7
+    },
+    {
+      "index": 8
+    },
+    {
+      "index": 9
+    },
+    {
+      "index": 10
+    }
+  ]
+}

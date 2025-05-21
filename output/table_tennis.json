@@ -1,0 +1,136 @@
+{
+  "title": "5月開催 卓球教室のお知らせ",
+  "description": "若葉台地区センターで開かれる卓球教室についてご紹介します。",
+  "tts": "nijivoice",
+  "speed": "0.82",
+  "voices": [
+    "311a59fa-01b2-4d2e-9968-10d2034f8f86",
+    "249d8d02-2c25-4a24-8faf-26d6f734b7bc"
+  ],
+  "charactors": [
+    "有馬 慎一郎",
+    "蘭華"
+  ],
+  "speakers": [
+    "朝陽",
+    "若葉"
+  ],
+  "script": [
+    {
+      "speaker": "朝陽",
+      "text": "若葉台地区センターのホームページで紹介されていた、毎月第二土曜日に開催されている卓球教室のご案内です。",
+      "filename": "table_tennis0",
+      "duration": 8.319600000000001
+    },
+    {
+      "speaker": "若葉",
+      "text": "次回の開催日は、5月10日、土曜日です。時間は、午後3時から夕方5時までの2時間となっています。",
+      "filename": "table_tennis1",
+      "duration": 8.37185
+    },
+    {
+      "speaker": "朝陽",
+      "text": "場所は若葉台地区センターの体育室です。広々としたスペースで、気持ちよく練習できそうですね。",
+      "filename": "table_tennis2",
+      "duration": 7.82325
+    },
+    {
+      "speaker": "若葉",
+      "text": "対象は、小学生以上のかた、定員は15名までです。少人数なので、じっくりと教えてもらえる環境ですよ。",
+      "filename": "table_tennis3",
+      "duration": 9.260000000000002
+    },
+    {
+      "speaker": "朝陽",
+      "text": "申し込みは、当日の受付になります。受付は午後2時45分からです。",
+      "filename": "table_tennis4",
+      "duration": 6.4649
+    },
+    {
+      "speaker": "若葉",
+      "text": "参加費は、一般が500円、小学生は200円です。とても参加しやすい料金設定ですね。",
+      "filename": "table_tennis5",
+      "duration": 7.92775
+    },
+    {
+      "speaker": "朝陽",
+      "text": "持ち物は、うわばきとラケットです。忘れ物がないように、前日までにしっかり準備しておきたいですね。",
+      "filename": "table_tennis6",
+      "duration": 8.606950000000001
+    },
+    {
+      "speaker": "若葉",
+      "text": "講師は井関英生さんです。卓球マシンを使いながら、ひとりひとりに合った指導をしてくださいます。",
+      "filename": "table_tennis7",
+      "duration": 7.22245
+    },
+    {
+      "speaker": "朝陽",
+      "text": "初心者のかたも、小学生も、安心して参加できる内容になっています。待ち時間には空いている台で練習もできますよ。",
+      "filename": "table_tennis8",
+      "duration": 9.31225
+    },
+    {
+      "speaker": "若葉",
+      "text": "そして何より、丁寧な指導が魅力です。卓球が初めてのかたでも、安心して楽しく学べる時間になりそうですね。",
+      "filename": "table_tennis9",
+      "duration": 9.469000000000001
+    },
+    {
+      "speaker": "朝陽",
+      "text": "卓球に興味があるかた、体を動かしたいかた。この機会に、ぜひチャレンジしてみてはいかがでしょうか。",
+      "filename": "table_tennis10",
+      "duration": 8.6106
+    },
+    {
+      "speaker": "若葉",
+      "text": "こちらの情報は、若葉台地区センターのホームページでご確認いただけます。開催日は5月10日の土曜日、卓球教室のお知らせでした。",
+      "filename": "table_tennis11",
+      "duration": 10.122050000000002
+    }
+  ],
+  "filename": "table_tennis",
+  "ttsAgent": "ttsNijivoiceAgent",
+  "voicemap": {
+    "朝陽": "311a59fa-01b2-4d2e-9968-10d2034f8f86",
+    "若葉": "249d8d02-2c25-4a24-8faf-26d6f734b7bc"
+  },
+  "imageInfo": [
+    {
+      "index": 0
+    },
+    {
+      "index": 1
+    },
+    {
+      "index": 2
+    },
+    {
+      "index": 3
+    },
+    {
+      "index": 4
+    },
+    {
+      "index": 5
+    },
+    {
+      "index": 6
+    },
+    {
+      "index": 7
+    },
+    {
+      "index": 8
+    },
+    {
+      "index": 9
+    },
+    {
+      "index": 10
+    },
+    {
+      "index": 11
+    }
+  ]
+}

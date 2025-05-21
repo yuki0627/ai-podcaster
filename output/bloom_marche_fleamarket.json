@@ -1,0 +1,136 @@
+{
+  "title": "Bloom marché 出店者募集のお知らせ",
+  "description": "ショッピングタウンわかばで開催されるフリーマーケット「Bloom marché」の出店者募集についてご紹介します。",
+  "tts": "nijivoice",
+  "speed": "0.82",
+  "voices": [
+    "311a59fa-01b2-4d2e-9968-10d2034f8f86",
+    "249d8d02-2c25-4a24-8faf-26d6f734b7bc"
+  ],
+  "charactors": [
+    "有馬 慎一郎",
+    "蘭華"
+  ],
+  "speakers": [
+    "朝陽",
+    "若葉"
+  ],
+  "script": [
+    {
+      "speaker": "朝陽",
+      "text": "Team Bloom主催のブルームマルシェでフリーマーケットの出店者を募集しています。",
+      "filename": "bloom_marche_fleamarket0",
+      "duration": 4.9759
+    },
+    {
+      "speaker": "若葉",
+      "text": "開催場所は、ショッピングタウンわかばの、ふれあい広場です。日にちは5月31日、土曜日。時間は朝10時から午後3時までとなっています。なお、雨天時は中止となりますので、ご了承ください。",
+      "filename": "bloom_marche_fleamarket1",
+      "duration": 14.9808
+    },
+    {
+      "speaker": "朝陽",
+      "text": "今回募集しているのは、このマルシェを一緒に盛り上げてくださる、フリーマーケットのしゅってん者のかたです。応募の締め切りは、4月にじゅうななにち、日曜日。たくさんのかたに参加していただきたいですが、応募多数の場合は抽選となります。",
+      "filename": "bloom_marche_fleamarket2",
+      "duration": 18.507350000000002
+    },
+    {
+      "speaker": "若葉",
+      "text": "しゅってん料は1区画につき1000円です。スペースの大きさは、およそ横180センチ、奥行き150センチほど。テーブルの貸し出しを希望する場合は、追加で500円が必要です。",
+      "filename": "bloom_marche_fleamarket3",
+      "duration": 14.850200000000001
+    },
+    {
+      "speaker": "朝陽",
+      "text": "搬入は当日の朝9時ごろから可能です。会場の設営が終わり次第、ご自身のタイミングで準備していただけます。前日の搬入はできませんので、ご注意ください。",
+      "filename": "bloom_marche_fleamarket4",
+      "duration": 12.6037
+    },
+    {
+      "speaker": "若葉",
+      "text": "なお、食品や生き物の販売はご遠慮いただいています。椅子は2脚まで無料で使える予定です。また、しゅってん時間内であれば、販売は自由におこなっていただけます。",
+      "filename": "bloom_marche_fleamarket5",
+      "duration": 11.9245
+    },
+    {
+      "speaker": "朝陽",
+      "text": "申し込みには、しゅってん内容をできるだけ詳しく記入してください。そのほか、お名前とふりがな、それと年齢と住所と電話番号が必要です。",
+      "filename": "bloom_marche_fleamarket6",
+      "duration": 10.46165
+    },
+    {
+      "speaker": "若葉",
+      "text": "お申し込みやお問い合わせは、TeamBloomのインスタグラムのダイレクトメッセージにて受け付けています。当日の開催の可否は、5月29日、水曜日の天気予報をもとに判断し、インスタグラムでお知らせされるとのことです。",
+      "filename": "bloom_marche_fleamarket7",
+      "duration": 16.75715
+    },
+    {
+      "speaker": "朝陽",
+      "text": "地域のつながりを大切にした、あたたかいマルシェです。フリーマーケットにしゅってんしてみたいかた、ぜひこの機会にご応募ください。",
+      "filename": "bloom_marche_fleamarket8",
+      "duration": 9.80855
+    },
+    {
+      "speaker": "若葉",
+      "text": "この情報は、Team Bloomからの提供でお届けしました。",
+      "filename": "bloom_marche_fleamarket9",
+      "duration": 4.349
+    },
+    {
+      "speaker": "朝陽",
+      "text": "TeamBloomのインスタグラムのアカウントや、募集の情報は若葉台コミュニティーラジオのブログでもご確認いただけます。",
+      "filename": "bloom_marche_fleamarket10",
+      "duration": 9.028550000000001
+    },
+    {
+      "speaker": "若葉",
+      "text": "5月の31日、土曜日開催のBloom マルシェでのフリーマーケットのしゅってん者募集のご案内でした。4月にじゅうななにちの日曜日に申し込みが締切となりますので、希望されるかたはお早めにお申し込みください。",
+      "filename": "bloom_marche_fleamarket11",
+      "duration": 15.712250000000001
+    }
+  ],
+  "filename": "bloom_marche_fleamarket",
+  "ttsAgent": "ttsNijivoiceAgent",
+  "voicemap": {
+    "朝陽": "311a59fa-01b2-4d2e-9968-10d2034f8f86",
+    "若葉": "249d8d02-2c25-4a24-8faf-26d6f734b7bc"
+  },
+  "imageInfo": [
+    {
+      "index": 0
+    },
+    {
+      "index": 1
+    },
+    {
+      "index": 2
+    },
+    {
+      "index": 3
+    },
+    {
+      "index": 4
+    },
+    {
+      "index": 5
+    },
+    {
+      "index": 6
+    },
+    {
+      "index": 7
+    },
+    {
+      "index": 8
+    },
+    {
+      "index": 9
+    },
+    {
+      "index": 10
+    },
+    {
+      "index": 11
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "title": "サロンみんなあつまれ！",
+  "description": "若葉台地域ケアプラザでおこなわれる、子育て世代を中心とした多世代交流サロンのご案内です。",
+  "tts": "nijivoice",
+  "speed": "0.82",
+  "voices": [
+    "311a59fa-01b2-4d2e-9968-10d2034f8f86",
+    "249d8d02-2c25-4a24-8faf-26d6f734b7bc"
+  ],
+  "charactors": [
+    "有馬 慎一郎",
+    "蘭華"
+  ],
+  "speakers": [
+    "朝陽",
+    "若葉"
+  ],
+  "script": [
+    {
+      "speaker": "朝陽",
+      "text": "若葉台地域ケアプラザから、あたたかな交流イベントのご案内です。地域のサロン活動として親しまれている、サロンみんなあつまれが開催されます。",
+      "filename": "minnaatsumare_salon0",
+      "duration": 11.297550000000001
+    },
+    {
+      "speaker": "若葉",
+      "text": "今回の開催は、5月23日金曜日。時間は午前10時からお昼の12時までとなっています。時間内は出入り自由ですので、お好きなタイミングで気軽にお立ち寄りください。",
+      "filename": "minnaatsumare_salon1",
+      "duration": 13.4657
+    },
+    {
+      "speaker": "朝陽",
+      "text": "会場は若葉台地域ケアプラザの2階です。地図も掲示されているので、場所に不安のあるかたは事前に確認してみてくださいね。",
+      "filename": "minnaatsumare_salon2",
+      "duration": 9.7041
+    },
+    {
+      "speaker": "若葉",
+      "text": "参加費は100円です。こちらには、損害保険料など含まれています。",
+      "filename": "minnaatsumare_salon3",
+      "duration": 5.4460999999999995
+    },
+    {
+      "speaker": "朝陽",
+      "text": "持ち物は上履きです。入り口からサロンのお部屋までの間で使います。それから、飲み物は各自ご持参ください。",
+      "filename": "minnaatsumare_salon4",
+      "duration": 8.972650000000002
+    },
+    {
+      "speaker": "若葉",
+      "text": "そして、大人のかたはマスクの着用をお願いします。感染症対策にご協力をお願いいたします。",
+      "filename": "minnaatsumare_salon5",
+      "duration": 7.19635
+    },
+    {
+      "speaker": "朝陽",
+      "text": "申し込みは不要ですので、当日そのまま直接会場へお越しいただけます。思い立ったその日に参加できるのも魅力ですね。",
+      "filename": "minnaatsumare_salon6",
+      "duration": 9.20775
+    },
+    {
+      "speaker": "若葉",
+      "text": "このサロンは、子育て中のかたを中心に、世代を越えた交流ができる場として親しまれています。お母さんやお父さん、祖父母のかた、妊婦さんも大歓迎です。",
+      "filename": "minnaatsumare_salon7",
+      "duration": 12.525300000000001
+    },
+    {
+      "speaker": "朝陽",
+      "text": "ご近所にお住まいのかたはもちろん、若葉台以外の地域からのご参加も歓迎しています。どなたでも気軽にご参加いただけるひらかれた場なんですよね。",
+      "filename": "minnaatsumare_salon8",
+      "duration": 10.5661
+    },
+    {
+      "speaker": "若葉",
+      "text": "おしゃべりや情報交換、育児の悩みの共有など、ほっとひと息つける時間を過ごしてみませんか？",
+      "filename": "minnaatsumare_salon9",
+      "duration": 7.4052999999999995
+    },
+    {
+      "speaker": "朝陽",
+      "text": "こうした場が、日々子育てに励んでいるかたの心の支えにもなっているのだと感じます。",
+      "filename": "minnaatsumare_salon10",
+      "duration": 6.4649
+    },
+    {
+      "speaker": "若葉",
+      "text": "このチラシや地域ケアプラザのホームページのアドレスは、若葉台コミュニティーラジオのブログでもご確認いただけます。",
+      "filename": "minnaatsumare_salon11",
+      "duration": 8.29715
+    },
+    {
+      "speaker": "朝陽",
+      "text": "以上、5月23日金曜日に開催される、サロンみんなあつまれのご案内でした。会場は若葉台地域ケアプラザ2階、時間は午前10時から正午12時までです。",
+      "filename": "minnaatsumare_salon12",
+      "duration": 13.674700000000001
+    }
+  ],
+  "filename": "minnaatsumare_salon",
+  "ttsAgent": "ttsNijivoiceAgent",
+  "voicemap": {
+    "朝陽": "311a59fa-01b2-4d2e-9968-10d2034f8f86",
+    "若葉": "249d8d02-2c25-4a24-8faf-26d6f734b7bc"
+  },
+  "imageInfo": [
+    {
+      "index": 0
+    },
+    {
+      "index": 1
+    },
+    {
+      "index": 2
+    },
+    {
+      "index": 3
+    },
+    {
+      "index": 4
+    },
+    {
+      "index": 5
+    },
+    {
+      "index": 6
+    },
+    {
+      "index": 7
+    },
+    {
+      "index": 8
+    },
+    {
+      "index": 9
+    },
+    {
+      "index": 10
+    },
+    {
+      "index": 11
+    },
+    {
+      "index": 12
+    }
+  ]
+}

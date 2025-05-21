@@ -1,0 +1,154 @@
+{
+  "title": "体験セミナー「恐竜の進化と、絶滅の謎」のご案内",
+  "description": "わかばダイバーシティスペースわっかで開催される、恐竜に関するセミナーについてご紹介します。",
+  "tts": "nijivoice",
+  "speed": "0.82",
+  "voices": [
+    "311a59fa-01b2-4d2e-9968-10d2034f8f86",
+    "249d8d02-2c25-4a24-8faf-26d6f734b7bc"
+  ],
+  "charactors": [
+    "有馬 慎一郎",
+    "蘭華"
+  ],
+  "speakers": [
+    "朝陽",
+    "若葉"
+  ],
+  "script": [
+    {
+      "speaker": "朝陽",
+      "text": "わかばダイバーシティースペースわっかで開催される、体験セミナーのご案内です。今回のテーマは、恐竜の進化と、絶滅の謎です。モンゴル恐竜発掘隊に参加された、講師のお話も交えながら、学んでいきます。",
+      "filename": "kyouryu_seminar0",
+      "duration": 17.90655
+    },
+    {
+      "speaker": "若葉",
+      "text": "恐竜がどうやって生まれ、そしてどうして姿を消していったのか。長い地球の歴史をたどりながら、わかりやすく学べる内容のようです",
+      "filename": "kyouryu_seminar1",
+      "duration": 10.331000000000001
+    },
+    {
+      "speaker": "朝陽",
+      "text": "開催日は4月25日の金曜日、時間は朝10時30分からお昼の12時までです。",
+      "filename": "kyouryu_seminar2",
+      "duration": 7.32695
+    },
+    {
+      "speaker": "若葉",
+      "text": "会場は、ショッピングタウンわかばのダイバーシティースペースわっかです。",
+      "filename": "kyouryu_seminar3",
+      "duration": 4.76695
+    },
+    {
+      "speaker": "朝陽",
+      "text": "講師は志村 はじめさん。元々高校の生物の先生で、恐竜研究にも長年関わってこられた方です。",
+      "filename": "kyouryu_seminar4",
+      "duration": 8.319600000000001
+    },
+    {
+      "speaker": "若葉",
+      "text": "志村さんは1955年生まれで、2000年にはモンゴルのゴビ砂漠で恐竜化石の発掘に参加されたそうです。",
+      "filename": "kyouryu_seminar5",
+      "duration": 8.5808
+    },
+    {
+      "speaker": "朝陽",
+      "text": "また、群馬県にある県立恐竜博物館の運営にも携わっていたとのこと。研究だけでなく、教育現場での経験も豊富なんですね。",
+      "filename": "kyouryu_seminar6",
+      "duration": 11.16695
+    },
+    {
+      "speaker": "若葉",
+      "text": "今回のセミナーでは、恐竜が生きていた時代の環境や、一緒に暮らしていた動物の話題にもふれるそうです。",
+      "filename": "kyouryu_seminar7",
+      "duration": 7.90165
+    },
+    {
+      "speaker": "朝陽",
+      "text": "鳥と恐竜のつながりなど、身近な生きものとの関係についてもお話があるかもしれませんね。",
+      "filename": "kyouryu_seminar8",
+      "duration": 6.491
+    },
+    {
+      "speaker": "若葉",
+      "text": "恐竜は遠い昔の存在ですが、いまの自然や、生物への理解にもつながるヒントが詰まっています。",
+      "filename": "kyouryu_seminar9",
+      "duration": 7.82325
+    },
+    {
+      "speaker": "朝陽",
+      "text": "参加費は資料代もふくめて300円となっています。申し込みは、わっかの窓口で受け付け中です。",
+      "filename": "kyouryu_seminar10",
+      "duration": 7.2747
+    },
+    {
+      "speaker": "若葉",
+      "text": "子どものころ恐竜に夢中だったかたも、大人も子どもも楽しめる時間になりそうですね。",
+      "filename": "kyouryu_seminar11",
+      "duration": 6.3343
+    },
+    {
+      "speaker": "朝陽",
+      "text": "地球の歴史にふれてみたいかた、ぜひご参加ください。",
+      "filename": "kyouryu_seminar12",
+      "duration": 4.71835
+    },
+    {
+      "speaker": "若葉",
+      "text": "こちらの情報は、わっかに掲示されているポスターをご覧いただくか、若葉台コミュニティーラジオのブログでもご確認いただけます。以上、4月25日の金曜日、わっかで開催される体験セミナーの、恐竜と進化と滅びの謎のご案内でした。",
+      "filename": "kyouryu_seminar13",
+      "duration": 18.1939
+    }
+  ],
+  "filename": "kyouryu_seminar",
+  "ttsAgent": "ttsNijivoiceAgent",
+  "voicemap": {
+    "朝陽": "311a59fa-01b2-4d2e-9968-10d2034f8f86",
+    "若葉": "249d8d02-2c25-4a24-8faf-26d6f734b7bc"
+  },
+  "imageInfo": [
+    {
+      "index": 0
+    },
+    {
+      "index": 1
+    },
+    {
+      "index": 2
+    },
+    {
+      "index": 3
+    },
+    {
+      "index": 4
+    },
+    {
+      "index": 5
+    },
+    {
+      "index": 6
+    },
+    {
+      "index": 7
+    },
+    {
+      "index": 8
+    },
+    {
+      "index": 9
+    },
+    {
+      "index": 10
+    },
+    {
+      "index": 11
+    },
+    {
+      "index": 12
+    },
+    {
+      "index": 13
+    }
+  ]
+}

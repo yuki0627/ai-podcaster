@@ -1,0 +1,127 @@
+{
+  "title": "4月のおはなし会のご案内",
+  "description": "若葉台市民図書館で開催される、春のおはなし会についてご紹介します。",
+  "tts": "nijivoice",
+  "speed": "0.82",
+  "voices": [
+    "311a59fa-01b2-4d2e-9968-10d2034f8f86",
+    "249d8d02-2c25-4a24-8faf-26d6f734b7bc"
+  ],
+  "charactors": [
+    "有馬 慎一郎",
+    "蘭華"
+  ],
+  "speakers": [
+    "朝陽",
+    "若葉"
+  ],
+  "script": [
+    {
+      "speaker": "朝陽",
+      "text": "若葉台市民図書館のブログから、4月のおはなし会のご案内をお届けします。",
+      "filename": "oyako_ohanashi0",
+      "duration": 5.8902
+    },
+    {
+      "speaker": "若葉",
+      "text": "春のような、夏のような陽気のなか、若葉台の花や木が芽吹いてきましたね。そんな季節にぴったりの、楽しいおはなしが、いつつ用意されています。",
+      "filename": "oyako_ohanashi1",
+      "duration": 11.7155
+    },
+    {
+      "speaker": "朝陽",
+      "text": "開催日は、4月20日、日曜日です。時間は、朝10時30分から午前11時20分までとなっています。",
+      "filename": "oyako_ohanashi2",
+      "duration": 10.409400000000002
+    },
+    {
+      "speaker": "若葉",
+      "text": "場所は、若葉台市民図書館ソラの2階、音楽室です。ソラは旧西中学校の図書館で、その2階にある音楽室で開催されます。",
+      "filename": "oyako_ohanashi3",
+      "duration": 11.088550000000001
+    },
+    {
+      "speaker": "朝陽",
+      "text": "今回読まれるおはなしは、まず、「おかあさんといっしょ、おとうさんといっしょ」。そして「おべんとうをたべたかったおひさまのはなし」です。",
+      "filename": "oyako_ohanashi4",
+      "duration": 8.84205
+    },
+    {
+      "speaker": "若葉",
+      "text": "そのほかにも、「ゆうちゃんのゆうは？」、「くれよんのくろくん」。そして紙芝居でゆかいなくらげくん、エス・オー・エスが読まれます。",
+      "filename": "oyako_ohanashi5",
+      "duration": 9.103250000000001
+    },
+    {
+      "speaker": "朝陽",
+      "text": "どれも親子で楽しめる内容ばかりですね。",
+      "filename": "oyako_ohanashi6",
+      "duration": 3.4869499999999998
+    },
+    {
+      "speaker": "若葉",
+      "text": "当日は、手や指の消毒とマスクの着用にご協力をお願いいたします。図書館のスタッフのかたたちも、皆さんと一緒に楽しみたいそうですよ。",
+      "filename": "oyako_ohanashi7",
+      "duration": 10.38325
+    },
+    {
+      "speaker": "朝陽",
+      "text": "ご家族やお友達と、ぜひ遊びに行ってみてくださいね。",
+      "filename": "oyako_ohanashi8",
+      "duration": 4.45345
+    },
+    {
+      "speaker": "若葉",
+      "text": "こちらの情報は、若葉台市民図書館のブログでご確認いただけます。",
+      "filename": "oyako_ohanashi9",
+      "duration": 5.7894
+    },
+    {
+      "speaker": "朝陽",
+      "text": "今回は、4月20日の日曜日に旧西中学校で開催される、春の楽しいおはなし会についてご紹介しました。",
+      "filename": "oyako_ohanashi10",
+      "duration": 8.63305
+    }
+  ],
+  "filename": "oyako_ohanashi",
+  "ttsAgent": "ttsNijivoiceAgent",
+  "voicemap": {
+    "朝陽": "311a59fa-01b2-4d2e-9968-10d2034f8f86",
+    "若葉": "249d8d02-2c25-4a24-8faf-26d6f734b7bc"
+  },
+  "imageInfo": [
+    {
+      "index": 0
+    },
+    {
+      "index": 1
+    },
+    {
+      "index": 2
+    },
+    {
+      "index": 3
+    },
+    {
+      "index": 4
+    },
+    {
+      "index": 5
+    },
+    {
+      "index": 6
+    },
+    {
+      "index": 7
+    },
+    {
+      "index": 8
+    },
+    {
+      "index": 9
+    },
+    {
+      "index": 10
+    }
+  ]
+}

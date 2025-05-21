@@ -1,0 +1,136 @@
+{
+  "title": "若葉台なんでも相談のご案内",
+  "description": "地域の困りごとやおしゃべり相手としても活用できる、若葉台の相談窓口をご紹介します。",
+  "tts": "nijivoice",
+  "speed": "0.82",
+  "voices": [
+    "311a59fa-01b2-4d2e-9968-10d2034f8f86",
+    "249d8d02-2c25-4a24-8faf-26d6f734b7bc"
+  ],
+  "charactors": [
+    "有馬 慎一郎",
+    "蘭華"
+  ],
+  "speakers": [
+    "朝陽",
+    "若葉"
+  ],
+  "script": [
+    {
+      "speaker": "朝陽",
+      "text": "ショッピングタウンわかばの入口の掲示板に掲載されていた、地域の相談窓口のご案内です。",
+      "filename": "nandemo_soudan0",
+      "duration": 7.09185
+    },
+    {
+      "speaker": "若葉",
+      "text": "名前は、若葉台何でもそうだん。その名の通り、困りごとや問い合わせに応じてくれる、頼れる相談窓口です。電話や対面での相談に対応しているそうですよ。",
+      "filename": "nandemo_soudan1",
+      "duration": 12.9694
+    },
+    {
+      "speaker": "朝陽",
+      "text": "たとえば、ひとりで悩んでしまったときや、誰かに話を聞いてほしいと感じた時などにも、気軽に利用できるとのこと。電話するだけでも気持ちが少し軽くなりますよね。",
+      "filename": "nandemo_soudan2",
+      "duration": 12.6037
+    },
+    {
+      "speaker": "若葉",
+      "text": "相談内容は守秘義務のもとで扱われるので、安心してお話しいただけます。そして、相談以外にも嬉しいサービスがあるんです。",
+      "filename": "nandemo_soudan3",
+      "duration": 9.834700000000002
+    },
+    {
+      "speaker": "朝陽",
+      "text": "まずは、おしゃべりテレホン。これは、ちょっと話したいときや、誰かとおしゃべりしたいときにぴったりの電話サービスです。",
+      "filename": "nandemo_soudan4",
+      "duration": 9.181650000000001
+    },
+    {
+      "speaker": "若葉",
+      "text": "さらに、声の訪問という取り組みもあります。月に1回から2回、電話でお話しするサービスで、こちらは無料で登録できます。",
+      "filename": "nandemo_soudan5",
+      "duration": 9.91305
+    },
+    {
+      "speaker": "朝陽",
+      "text": "受付は、月曜日、水曜日、金曜日。時間は朝10時から夕方4時までです。",
+      "filename": "nandemo_soudan6",
+      "duration": 6.7
+    },
+    {
+      "speaker": "若葉",
+      "text": "電話とFAXの番号は、若葉台地域ケアプラザ内、ぜろよんご、きゅうにいよん、よんごうろくぜろ<wait: 0.6>ぜろ、よんご、きゅうにいよん、よんごうろくぜろです。",
+      "filename": "nandemo_soudan7",
+      "duration": 11.92449
+    },
+    {
+      "speaker": "朝陽",
+      "text": "また、相談員として活動してみたいというかたも募集中です。地域を支える活動に参加してみるのも素敵ですね。",
+      "filename": "nandemo_soudan8",
+      "duration": 7.92775
+    },
+    {
+      "speaker": "若葉",
+      "text": "この若葉台何でもそうだんは、若葉台地区社協の協力で運営されています。身近な支え合いの仕組みとして、ぜひ多くのかたに知っていただきたいです。",
+      "filename": "nandemo_soudan9",
+      "duration": 11.010200000000001
+    },
+    {
+      "speaker": "朝陽",
+      "text": "この情報は、ショッピングタウンわかばの入口の掲示板よりお届けしました。",
+      "filename": "nandemo_soudan10",
+      "duration": 5.998349999999999
+    },
+    {
+      "speaker": "若葉",
+      "text": "若葉台コミュニティーラジオのブログでもそちらのチラシをご確認いただけます。",
+      "filename": "nandemo_soudan11",
+      "duration": 4.8191999999999995
+    }
+  ],
+  "filename": "nandemo_soudan",
+  "ttsAgent": "ttsNijivoiceAgent",
+  "voicemap": {
+    "朝陽": "311a59fa-01b2-4d2e-9968-10d2034f8f86",
+    "若葉": "249d8d02-2c25-4a24-8faf-26d6f734b7bc"
+  },
+  "imageInfo": [
+    {
+      "index": 0
+    },
+    {
+      "index": 1
+    },
+    {
+      "index": 2
+    },
+    {
+      "index": 3
+    },
+    {
+      "index": 4
+    },
+    {
+      "index": 5
+    },
+    {
+      "index": 6
+    },
+    {
+      "index": 7
+    },
+    {
+      "index": 8
+    },
+    {
+      "index": 9
+    },
+    {
+      "index": 10
+    },
+    {
+      "index": 11
+    }
+  ]
+}

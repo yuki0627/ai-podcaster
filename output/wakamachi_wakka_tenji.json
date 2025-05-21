@@ -1,0 +1,136 @@
+{
+  "title": "わかまち わっか展示会のお知らせ",
+  "description": "若葉台で開催中の写真展示会についてご紹介します。",
+  "tts": "nijivoice",
+  "speed": "0.82",
+  "voices": [
+    "311a59fa-01b2-4d2e-9968-10d2034f8f86",
+    "249d8d02-2c25-4a24-8faf-26d6f734b7bc"
+  ],
+  "charactors": [
+    "有馬 慎一郎",
+    "蘭華"
+  ],
+  "speakers": [
+    "朝陽",
+    "若葉"
+  ],
+  "script": [
+    {
+      "speaker": "朝陽",
+      "text": "ショッピングタウンわかば内の、わっかで開催されている展示会のお知らせです。こちらの情報は、わっかに掲示されていたポスターからご紹介しています。",
+      "filename": "wakamachi_wakka_tenji0",
+      "duration": 10.827350000000001
+    },
+    {
+      "speaker": "若葉",
+      "text": "展示会の名称は、わかまち、わっか展示会です。5月1日から始まっていて、5月15日の木曜日まで開催されています。",
+      "filename": "wakamachi_wakka_tenji1",
+      "duration": 10.5661
+    },
+    {
+      "speaker": "朝陽",
+      "text": "会場は、ショッピングタウンわかばのわっかですので、お買い物ついでなどにも、気軽に立ち寄れる場所ですね。",
+      "filename": "wakamachi_wakka_tenji2",
+      "duration": 7.8494
+    },
+    {
+      "speaker": "若葉",
+      "text": "この展示では、横浜若葉台フォトコンテスト2024で入賞した写真が紹介されています。全部で12点の作品が展示されているそうですよ。",
+      "filename": "wakamachi_wakka_tenji3",
+      "duration": 10.93185
+    },
+    {
+      "speaker": "朝陽",
+      "text": "どれも、若葉台の自然やまちの様子、人々の暮らしを切り取った作品で、眺めていると、何気ない風景の中に美しさやあたたかさがあることに気づかされます。",
+      "filename": "wakamachi_wakka_tenji4",
+      "duration": 12.4208
+    },
+    {
+      "speaker": "若葉",
+      "text": "ふだん見慣れた場所が、写真を通してちょっと違って見えるかもしれませんね。",
+      "filename": "wakamachi_wakka_tenji5",
+      "duration": 5.3938999999999995
+    },
+    {
+      "speaker": "朝陽",
+      "text": "さらに、わかまちのSNSに投稿された写真も展示されているということで、インスタグラムなどのSNSで発信された写真も紹介されています。",
+      "filename": "wakamachi_wakka_tenji6",
+      "duration": 11.1408
+    },
+    {
+      "speaker": "若葉",
+      "text": "デジタルで見るのとはまた違って、じっくりと眺められる楽しさがありますよね。",
+      "filename": "wakamachi_wakka_tenji7",
+      "duration": 5.629
+    },
+    {
+      "speaker": "朝陽",
+      "text": "この展示会は、地域の魅力を再発見する良い機会になりそうです。地域のかたはもちろん、若葉台を訪れるかたにもぜひおすすめです。",
+      "filename": "wakamachi_wakka_tenji8",
+      "duration": 10.905700000000001
+    },
+    {
+      "speaker": "若葉",
+      "text": "開催は5月15日木曜日までとなっていますので、お時間のあるときに、ふらっと立ち寄ってみてはいかがでしょうか。",
+      "filename": "wakamachi_wakka_tenji9",
+      "duration": 8.424100000000001
+    },
+    {
+      "speaker": "朝陽",
+      "text": "写真を通して、まちと人とのつながりを感じられる、そんな展示になっています。",
+      "filename": "wakamachi_wakka_tenji10",
+      "duration": 7.1739
+    },
+    {
+      "speaker": "若葉",
+      "text": "こちらの情報は、わっかに掲示されていたポスターからご紹介しました。若葉台コミュニティーラジオのブログでもこちらのポスターをご確認いただけます。",
+      "filename": "wakamachi_wakka_tenji11",
+      "duration": 9.939200000000001
+    }
+  ],
+  "filename": "wakamachi_wakka_tenji",
+  "ttsAgent": "ttsNijivoiceAgent",
+  "voicemap": {
+    "朝陽": "311a59fa-01b2-4d2e-9968-10d2034f8f86",
+    "若葉": "249d8d02-2c25-4a24-8faf-26d6f734b7bc"
+  },
+  "imageInfo": [
+    {
+      "index": 0
+    },
+    {
+      "index": 1
+    },
+    {
+      "index": 2
+    },
+    {
+      "index": 3
+    },
+    {
+      "index": 4
+    },
+    {
+      "index": 5
+    },
+    {
+      "index": 6
+    },
+    {
+      "index": 7
+    },
+    {
+      "index": 8
+    },
+    {
+      "index": 9
+    },
+    {
+      "index": 10
+    },
+    {
+      "index": 11
+    }
+  ]
+}

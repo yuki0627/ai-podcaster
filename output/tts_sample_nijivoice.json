@@ -1,0 +1,47 @@
+{
+  "title": "簡単な会話テスト",
+  "description": "基本機能を試すための短い会話",
+  "tts": "nijivoice",
+  "cache": false,
+  "speed": "0.85",
+  "voices": [
+    "311a59fa-01b2-4d2e-9968-10d2034f8f86",
+    "249d8d02-2c25-4a24-8faf-26d6f734b7bc"
+  ],
+  "charactors": [
+    "有馬 慎一郎",
+    "蘭華"
+  ],
+  "speakers": [
+    "朝日",
+    "若葉"
+  ],
+  "script": [
+    {
+      "speaker": "朝日",
+      "text": "若葉台のわっかで開催されます。電話番号は045-987-1234です。",
+      "filename": "tts_sample_nijivoice0",
+      "duration": 6.78205
+    },
+    {
+      "speaker": "若葉",
+      "text": "大人のかたは料金は3850円です。14:30から開始です。保護者からSOSが出ている、AIについてのお話がPTAからあります。",
+      "filename": "tts_sample_nijivoice1",
+      "duration": 10.6445
+    }
+  ],
+  "filename": "tts_sample_nijivoice",
+  "ttsAgent": "ttsNijivoiceAgent",
+  "voicemap": {
+    "朝日": "311a59fa-01b2-4d2e-9968-10d2034f8f86",
+    "若葉": "249d8d02-2c25-4a24-8faf-26d6f734b7bc"
+  },
+  "imageInfo": [
+    {
+      "index": 0
+    },
+    {
+      "index": 1
+    }
+  ]
+}
