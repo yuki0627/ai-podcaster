@@ -3,8 +3,8 @@
   "description": "基本機能を試すための短い会話",
   "tts": "google",
   "voices": [
-    "ja-JP-Chirp3-HD-Fenrir",
-    "ja-JP-Chirp3-HD-Leda"
+    "ja-JP-Neural2-C",
+    "ja-JP-Neural2-B"
   ],
   "charactors": [
     "ベン・カーター",
@@ -17,22 +17,22 @@
   "script": [
     {
       "speaker": "朝日",
-      "text": "若葉台のわっかで開催されます。電話番号は045-987-1234です。",
+      "text": "こんにちは。若葉台のわっかで開催されます。電話番号は045-987-1234です。",
       "filename": "tts_sample_google0",
-      "duration": 8.648
+      "duration": 9.512
     },
     {
       "speaker": "若葉",
-      "text": "大人のかたは料金は3850円です。14:30から開始です。保護者からSOSが出ている、AIについてのお話がPTAからあります。",
+      "text": "こんにちは。大人のかたは料金は3850円です。14:30から開始です。保護者からSOSが出ている、AIについてのお話がPTAからあります。",
       "filename": "tts_sample_google1",
-      "duration": 13.884
+      "duration": 14.940000000000001
     }
   ],
   "filename": "tts_sample_google",
   "ttsAgent": "ttsGoogleAgent",
   "voicemap": {
-    "朝日": "ja-JP-Chirp3-HD-Fenrir",
-    "若葉": "ja-JP-Chirp3-HD-Leda"
+    "朝日": "ja-JP-Neural2-C",
+    "若葉": "ja-JP-Neural2-B"
   },
   "imageInfo": [
     {

@@ -1,0 +1,142 @@
+{
+  "title": "箏と朗読のコンサート",
+  "description": "わかばダイバーシティスペース わっかで開催される、箏と朗読のコンサートについてご紹介します。",
+  "tts": "openai",
+  "speed": "1.0",
+  "voices": [
+    "alloy",
+    "nova"
+  ],
+  "model": "tts-1-hd",
+  "speakers": [
+    "朝陽",
+    "若葉"
+  ],
+  "script": [
+    {
+      "speaker": "朝陽",
+      "text": "わかばダイバーシティスペースわっかで開催される、箏と朗読のコンサートのご案内です。",
+      "filename": "koto_roudoku_openAI0",
+      "duration": 7.356
+    },
+    {
+      "speaker": "若葉",
+      "text": "今回のコンサートは、ブレーメン since 1990、と記載があり、箏と朗読のユニットのブレーメンによる1990年から続く活動と読み取れます。",
+      "filename": "koto_roudoku_openAI1",
+      "duration": 11.940000000000001
+    },
+    {
+      "speaker": "朝陽",
+      "text": "箏の音色は皆さんも一度は耳にしたことがあると思いますが、実際にじっくり聴く機会って意外と少ないのではないでしょうか。",
+      "filename": "koto_roudoku_openAI2",
+      "duration": 10.716000000000001
+    },
+    {
+      "speaker": "若葉",
+      "text": "柔らかく透き通るような響きで、ふとした瞬間に心の奥に染み入る。そんな音が、箏の魅力ですよね。この機会に、改めて耳を傾けてみませんか。",
+      "filename": "koto_roudoku_openAI3",
+      "duration": 11.964
+    },
+    {
+      "speaker": "朝陽",
+      "text": "演目には、初恋や荒城の月といったよく知られた名曲も含まれています。初恋は島崎藤村の詩に曲をのせた、甘くもせつない雰囲気が印象的な作品です。",
+      "filename": "koto_roudoku_openAI4",
+      "duration": 13.332
+    },
+    {
+      "speaker": "若葉",
+      "text": "「荒城の月」は、明治時代を代表する唱歌で、箏の音色と合わさることで一層の情感が生まれそうです。他にも、千曲川旅情の歌、花嫁の歌、そして夜想曲なども演奏される予定です。",
+      "filename": "koto_roudoku_openAI5",
+      "duration": 15.540000000000001
+    },
+    {
+      "speaker": "朝陽",
+      "text": "箏の演奏は長嶋めぐみさん、朗読は木村さんがご担当されます。音楽と語りが静かに交わる、そんな豊かな時間が流れそうですね。",
+      "filename": "koto_roudoku_openAI6",
+      "duration": 11.100000000000001
+    },
+    {
+      "speaker": "若葉",
+      "text": "開催日は6月7日土曜日、午後2時からの開演です。",
+      "filename": "koto_roudoku_openAI7",
+      "duration": 5.076
+    },
+    {
+      "speaker": "朝陽",
+      "text": "会場は、わかばダイバーシティスペース わっかです。地域の中で、こんな本格的な演奏と朗読にふれられるのは嬉しいですね。",
+      "filename": "koto_roudoku_openAI8",
+      "duration": 10.332
+    },
+    {
+      "speaker": "若葉",
+      "text": "チケットは1000円で、予約が必要です。お問い合わせは、わっか、またはチラシに記載されている電話番号までお願いします。",
+      "filename": "koto_roudoku_openAI9",
+      "duration": 10.932
+    },
+    {
+      "speaker": "朝陽",
+      "text": "日々の慌ただしさから少し離れて、日本の音と、言葉に耳をすませてみませんか。",
+      "filename": "koto_roudoku_openAI10",
+      "duration": 6.732
+    },
+    {
+      "speaker": "若葉",
+      "text": "こちらの情報は、わっかに掲示されているポスターをもとにお届けしました。若葉台コミュニティーラジオのブログでもこちらのチラシをご確認いただけます。",
+      "filename": "koto_roudoku_openAI11",
+      "duration": 12.680000000000001
+    },
+    {
+      "speaker": "朝陽",
+      "text": "今回は6月7日の土曜日に開催される、箏と朗読のコンサートについてお伝えしました。",
+      "filename": "koto_roudoku_openAI12",
+      "duration": 7.9079999999999995
+    }
+  ],
+  "filename": "koto_roudoku_openAI",
+  "ttsAgent": "ttsOpenaiAgent",
+  "voicemap": {
+    "朝陽": "alloy",
+    "若葉": "nova"
+  },
+  "imageInfo": [
+    {
+      "index": 0
+    },
+    {
+      "index": 1
+    },
+    {
+      "index": 2
+    },
+    {
+      "index": 3
+    },
+    {
+      "index": 4
+    },
+    {
+      "index": 5
+    },
+    {
+      "index": 6
+    },
+    {
+      "index": 7
+    },
+    {
+      "index": 8
+    },
+    {
+      "index": 9
+    },
+    {
+      "index": 10
+    },
+    {
+      "index": 11
+    },
+    {
+      "index": 12
+    }
+  ]
+}
