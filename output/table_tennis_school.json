@@ -1,0 +1,100 @@
+{
+  "title": "6月 卓球教室のご案内",
+  "description": "若葉台地区センターで毎月開かれている卓球教室。6月の開催についてお知らせします。",
+  "tts": "nijivoice",
+  "speed": "0.82",
+  "voices": [
+    "311a59fa-01b2-4d2e-9968-10d2034f8f86",
+    "249d8d02-2c25-4a24-8faf-26d6f734b7bc"
+  ],
+  "charactors": [
+    "有馬 慎一郎",
+    "蘭華"
+  ],
+  "speakers": [
+    "朝陽",
+    "若葉"
+  ],
+  "script": [
+    {
+      "speaker": "朝陽",
+      "text": "若葉台地区センターで毎月おこなわれている卓球教室。6月の開催についてご案内します。",
+      "filename": "table_tennis_school0",
+      "duration": 7.09185
+    },
+    {
+      "speaker": "若葉",
+      "text": "次回の開催日は6月14日、土曜日。午後3時から5時まで、場所は若葉台地区センターの体育室です。",
+      "filename": "table_tennis_school1",
+      "duration": 9.1294
+    },
+    {
+      "speaker": "朝陽",
+      "text": "対象は小学生以上で、定員は15名です。当日の午後2時45分から受付が始まりますので、少し早めにお越しくださいね。",
+      "filename": "table_tennis_school2",
+      "duration": 10.7751
+    },
+    {
+      "speaker": "若葉",
+      "text": "講師は井関英生先生。卓球マシンを使って、技術レベルに合わせたきめ細かな指導をしてくださいます。初心者の肩も、小学生の肩も大歓迎です。",
+      "filename": "table_tennis_school3",
+      "duration": 11.8461
+    },
+    {
+      "speaker": "朝陽",
+      "text": "参加費は一般の肩が500円、小学生は200円となっています。持ち物は、うわばきとラケットです。",
+      "filename": "table_tennis_school4",
+      "duration": 8.94655
+    },
+    {
+      "speaker": "若葉",
+      "text": "また6月22日、日曜日は、別の話題でもご紹介しました卓球大会があります。日ごろの練習の成果を試す場として、興味のあるかたはぜひそちらもご検討ください。",
+      "filename": "table_tennis_school5",
+      "duration": 13.100000000000001
+    },
+    {
+      "speaker": "朝陽",
+      "text": "まずは教室から参加して、卓球の楽しさを体験してみてはいかがでしょうか。",
+      "filename": "table_tennis_school6",
+      "duration": 6.1551
+    },
+    {
+      "speaker": "若葉",
+      "text": "卓球教室、そして卓球大会の情報は、若葉台コミュニティーラジオのブログでもご確認いただけます。6月14日、土曜日開催の卓球教室のご紹介でした。",
+      "filename": "table_tennis_school7",
+      "duration": 12.9955
+    }
+  ],
+  "filename": "table_tennis_school",
+  "ttsAgent": "ttsNijivoiceAgent",
+  "voicemap": {
+    "朝陽": "311a59fa-01b2-4d2e-9968-10d2034f8f86",
+    "若葉": "249d8d02-2c25-4a24-8faf-26d6f734b7bc"
+  },
+  "imageInfo": [
+    {
+      "index": 0
+    },
+    {
+      "index": 1
+    },
+    {
+      "index": 2
+    },
+    {
+      "index": 3
+    },
+    {
+      "index": 4
+    },
+    {
+      "index": 5
+    },
+    {
+      "index": 6
+    },
+    {
+      "index": 7
+    }
+  ]
+}
