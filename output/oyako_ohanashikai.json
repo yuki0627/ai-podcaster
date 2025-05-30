@@ -1,0 +1,127 @@
+{
+  "title": "おやこおはなしかい 6月開催のご案内",
+  "description": "絵本やわらべうたで親子一緒に楽しめる、そらまめのおはなし会をご紹介します。",
+  "tts": "nijivoice",
+  "speed": "0.82",
+  "voices": [
+    "311a59fa-01b2-4d2e-9968-10d2034f8f86",
+    "249d8d02-2c25-4a24-8faf-26d6f734b7bc"
+  ],
+  "charactors": [
+    "有馬 慎一郎",
+    "蘭華"
+  ],
+  "speakers": [
+    "朝陽",
+    "若葉"
+  ],
+  "script": [
+    {
+      "speaker": "朝陽",
+      "text": "若葉台地区センターとそらまめの共催による、未就学児と保護者の肩を対象にした楽しいイベント。おやこおはなしかいのご紹介です。",
+      "filename": "oyako_ohanashikai0",
+      "duration": 9.834700000000002
+    },
+    {
+      "speaker": "若葉",
+      "text": "おはなしの世界へようこそ。小さなお子さんにもわかりやすい絵本の読み聞かせや、みんなで楽しめるわらべうたなど、親子でほっこりできる内容となっています。",
+      "filename": "oyako_ohanashikai1",
+      "duration": 11.114700000000001
+    },
+    {
+      "speaker": "朝陽",
+      "text": "2025年度のスケジュールの中で、次回は6月10日火曜日に開催されます。時間は午前11時30分から11時45分まで。ちょうどお昼前の、落ち着いた時間帯ですね。",
+      "filename": "oyako_ohanashikai2",
+      "duration": 15.424900000000001
+    },
+    {
+      "speaker": "若葉",
+      "text": "場所は、ショッピングタウンわかばにある子育て支援施設そらまめです。普段から親子連れでにぎわっている、安心して過ごせる空間ですよ。",
+      "filename": "oyako_ohanashikai3",
+      "duration": 10.122050000000002
+    },
+    {
+      "speaker": "朝陽",
+      "text": "対象は、未就学児のお子さんとその保護者の肩です。お子さんと一緒に、物語の世界を楽しんでみてはいかがでしょうか。",
+      "filename": "oyako_ohanashikai4",
+      "duration": 10.122050000000002
+    },
+    {
+      "speaker": "若葉",
+      "text": "参加は予約不要で、当日そのまま会場にお越しください。費用は100円で、これはそらまめの利用料として頂いているものです。",
+      "filename": "oyako_ohanashikai5",
+      "duration": 9.573450000000001
+    },
+    {
+      "speaker": "朝陽",
+      "text": "当日は、おはなしサポーターもぐもぐさんによる読み聞かせや、わらべうた遊びが行われる予定です。",
+      "filename": "oyako_ohanashikai6",
+      "duration": 7.56205
+    },
+    {
+      "speaker": "若葉",
+      "text": "お子さんが初めて絵本に触れる機会としてもぴったりですし、すでに読み聞かせが日課というご家庭にもおすすめです。",
+      "filename": "oyako_ohanashikai7",
+      "duration": 7.82325
+    },
+    {
+      "speaker": "朝陽",
+      "text": "改めて、次回のおやこおはなし会は、6月10日の火曜日。午前11時30分から11時45分まで、場所はそらまめで開催されます。",
+      "filename": "oyako_ohanashikai8",
+      "duration": 12.629800000000001
+    },
+    {
+      "speaker": "若葉",
+      "text": "ご興味のあるかたは、ぜひお気軽に足をお運びください。親子で楽しい時間を過ごせると思いますよ。",
+      "filename": "oyako_ohanashikai9",
+      "duration": 8.1404
+    },
+    {
+      "speaker": "朝陽",
+      "text": "この情報は、若葉台地区センターのホームページ、または若葉台コミュニティーラジオのブログでもご確認いただけます。",
+      "filename": "oyako_ohanashikai10",
+      "duration": 8.5547
+    }
+  ],
+  "filename": "oyako_ohanashikai",
+  "ttsAgent": "ttsNijivoiceAgent",
+  "voicemap": {
+    "朝陽": "311a59fa-01b2-4d2e-9968-10d2034f8f86",
+    "若葉": "249d8d02-2c25-4a24-8faf-26d6f734b7bc"
+  },
+  "imageInfo": [
+    {
+      "index": 0
+    },
+    {
+      "index": 1
+    },
+    {
+      "index": 2
+    },
+    {
+      "index": 3
+    },
+    {
+      "index": 4
+    },
+    {
+      "index": 5
+    },
+    {
+      "index": 6
+    },
+    {
+      "index": 7
+    },
+    {
+      "index": 8
+    },
+    {
+      "index": 9
+    },
+    {
+      "index": 10
+    }
+  ]
+}
