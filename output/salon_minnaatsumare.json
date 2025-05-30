@@ -1,0 +1,127 @@
+{
+  "title": "サロンみんなあつまれ！！ 6月の開催案内",
+  "description": "若葉台地域ケアプラザで開催される、多世代交流サロンのご案内です。",
+  "tts": "nijivoice",
+  "speed": "0.82",
+  "voices": [
+    "311a59fa-01b2-4d2e-9968-10d2034f8f86",
+    "249d8d02-2c25-4a24-8faf-26d6f734b7bc"
+  ],
+  "charactors": [
+    "有馬 慎一郎",
+    "蘭華"
+  ],
+  "speakers": [
+    "朝陽",
+    "若葉"
+  ],
+  "script": [
+    {
+      "speaker": "朝陽",
+      "text": "団地の掲示板からのお知らせです。地域の皆さんに向けて、子育て中のかたを中心にした多世代交流の場、サロンみんなあつまれのご案内をいたします。",
+      "filename": "salon_minnaatsumare0",
+      "duration": 10.801250000000001
+    },
+    {
+      "speaker": "若葉",
+      "text": "次回の開催は6月13日金曜日、時間は午前10時から正午までとなっています。時間内の出入りは自由ですので、気軽に立ち寄っていただけますよ。",
+      "filename": "salon_minnaatsumare1",
+      "duration": 12.21185
+    },
+    {
+      "speaker": "朝陽",
+      "text": "今回のテーマは「おとうさん ありがとう」。ちょうど父の日が近いこともあって、感謝の気持ちを伝える機会になりそうですね。",
+      "filename": "salon_minnaatsumare2",
+      "duration": 9.860800000000001
+    },
+    {
+      "speaker": "若葉",
+      "text": "会場は、若葉台地域ケアプラザの2階。参加費は100円で、これは損害保険料などに充てられます。",
+      "filename": "salon_minnaatsumare3",
+      "duration": 8.47635
+    },
+    {
+      "speaker": "朝陽",
+      "text": "持ち物は上履きのみです。入り口からサロンの部屋までの間で使います。そして、飲み物はご自身でご用意ください。大人の肩はマスクの着用をお願いします。",
+      "filename": "salon_minnaatsumare4",
+      "duration": 12.237950000000001
+    },
+    {
+      "speaker": "若葉",
+      "text": "申し込みは不要ですので、直接会場へお越しください。予約などの手続きは一切ありません。",
+      "filename": "salon_minnaatsumare5",
+      "duration": 7.0396
+    },
+    {
+      "speaker": "朝陽",
+      "text": "このサロンは、子育て中のかたを中心に、幅広い世代が交流できる場として開催されています。お母さんやお父さん、おじいちゃんおばあちゃん、妊娠中のかたや近所の肩も大歓迎です。",
+      "filename": "salon_minnaatsumare6",
+      "duration": 14.9547
+    },
+    {
+      "speaker": "若葉",
+      "text": "赤ちゃん連れでも、若葉台以外にお住まいでも、どなたでもお気軽にどうぞ。ほっとひといきできる場所として、ぜひご利用ください。",
+      "filename": "salon_minnaatsumare7",
+      "duration": 9.88695
+    },
+    {
+      "speaker": "朝陽",
+      "text": "改めて、開催は6月13日金曜日、時間は10時から12時まで。若葉台地域ケアプラザ2階にて行われます。",
+      "filename": "salon_minnaatsumare8",
+      "duration": 10.122050000000002
+    },
+    {
+      "speaker": "若葉",
+      "text": "参加費は100円、上履きをご持参のうえ、マスク着用でお越しください。申し込みは不要です。",
+      "filename": "salon_minnaatsumare9",
+      "duration": 8.0098
+    },
+    {
+      "speaker": "朝陽",
+      "text": "この情報は、団地の掲示板からのご案内でした。こちらのチラシは若葉台コミュニティーラジオのブログでもご確認いただけます。",
+      "filename": "salon_minnaatsumare10",
+      "duration": 9.181650000000001
+    }
+  ],
+  "filename": "salon_minnaatsumare",
+  "ttsAgent": "ttsNijivoiceAgent",
+  "voicemap": {
+    "朝陽": "311a59fa-01b2-4d2e-9968-10d2034f8f86",
+    "若葉": "249d8d02-2c25-4a24-8faf-26d6f734b7bc"
+  },
+  "imageInfo": [
+    {
+      "index": 0
+    },
+    {
+      "index": 1
+    },
+    {
+      "index": 2
+    },
+    {
+      "index": 3
+    },
+    {
+      "index": 4
+    },
+    {
+      "index": 5
+    },
+    {
+      "index": 6
+    },
+    {
+      "index": 7
+    },
+    {
+      "index": 8
+    },
+    {
+      "index": 9
+    },
+    {
+      "index": 10
+    }
+  ]
+}
