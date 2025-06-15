@@ -1,57 +1,54 @@
 {
   "title": "オープニング",
-  "description": "若葉台コミュニティーラジオのオープニング",
-  "tts": "nijivoice",
+  "description": "フローラ台コミュニティーラジオのオープニング",
+  "tts": "openai",
   "speed": "0.82",
   "voices": [
-    "311a59fa-01b2-4d2e-9968-10d2034f8f86",
-    "249d8d02-2c25-4a24-8faf-26d6f734b7bc"
+    "alloy",
+    "nova"
   ],
-  "charactors": [
-    "有馬 慎一郎",
-    "蘭華"
-  ],
+  "model": "tts-1-hd",
   "speakers": [
-    "朝陽",
-    "若葉"
+    "マイケル",
+    "フローラ"
   ],
   "script": [
     {
-      "speaker": "朝陽",
-      "text": "こんにちは、朝陽です。今週は、子育て中の親御さん向けのイベントを３つ紹介します。それから6月の配架図書でもある、アンパンマンの作者のやなせたかしさんの評伝もご紹介します。",
+      "speaker": "マイケル",
+      "text": "こんにちは、マイケルです。今週は、子育て中の親御さん向けのイベントを３つ紹介します。それから6月の配架図書でもある、アンパンマンの作者のやなせたかしさんの評伝もご紹介します。",
       "filename": "000_opeining0",
-      "duration": 14.850200000000001
+      "duration": 15.732000000000001
     },
     {
-      "speaker": "若葉",
-      "text": "こんにちは、若葉です。さらに卓球大会の開催のお知らせや、卓球教室のご案内もお届けします。",
+      "speaker": "フローラ",
+      "text": "こんにちは、フローラです。さらに卓球大会の開催のお知らせや、卓球教室のご案内もお届けします。",
       "filename": "000_opeining1",
-      "duration": 7.9799999999999995
+      "duration": 8.604000000000001
     },
     {
-      "speaker": "朝陽",
+      "speaker": "マイケル",
       "text": "番組で紹介する情報は、若葉台コミュニティーラジオのブログでもご確認いただけます。",
       "filename": "000_opeining2",
       "duration": 6.3081499999999995
     },
     {
-      "speaker": "若葉",
+      "speaker": "フローラ",
       "text": "ご質問やお便りなどは、公式LINEからお気軽にお送りください",
       "filename": "000_opeining3",
       "duration": 5.4237
     },
     {
-      "speaker": "朝陽",
+      "speaker": "マイケル",
       "text": "それでは今週最初の話題です。",
       "filename": "000_opeining4",
       "duration": 2.651
     }
   ],
   "filename": "000_opeining",
-  "ttsAgent": "ttsNijivoiceAgent",
+  "ttsAgent": "ttsOpenaiAgent",
   "voicemap": {
-    "朝陽": "311a59fa-01b2-4d2e-9968-10d2034f8f86",
-    "若葉": "249d8d02-2c25-4a24-8faf-26d6f734b7bc"
+    "マイケル": "alloy",
+    "フローラ": "nova"
   },
   "imageInfo": [
     {
